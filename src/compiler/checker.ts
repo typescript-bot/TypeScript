@@ -6584,7 +6584,7 @@ namespace ts {
         }
 
         function isStringConcatExpression(expr: Node): boolean {
-            if (expr.kind === SyntaxKind.StringLiteral) {
+            if (isStringLiteralLike(expr)) {
                 return true;
             }
             else if (expr.kind === SyntaxKind.BinaryExpression) {
@@ -6601,6 +6601,7 @@ namespace ts {
             switch (expr.kind) {
                 case SyntaxKind.StringLiteral:
                 case SyntaxKind.NumericLiteral:
+                case SyntaxKind.NoSubstitutionTemplateLiteral:
                     return true;
                 case SyntaxKind.PrefixUnaryExpression:
                     return (<PrefixUnaryExpression>expr).operator === SyntaxKind.MinusToken &&
@@ -6623,7 +6624,7 @@ namespace ts {
             for (const declaration of symbol.declarations) {
                 if (declaration.kind === SyntaxKind.EnumDeclaration) {
                     for (const member of (<EnumDeclaration>declaration).members) {
-                        if (member.initializer && member.initializer.kind === SyntaxKind.StringLiteral) {
+                        if (member.initializer && isStringLiteralLike(member.initializer)) {
                             return links.enumKind = EnumKind.Literal;
                         }
                         if (!isLiteralEnumMember(member)) {
@@ -30095,7 +30096,8 @@ namespace ts {
                         }
                         break;
                     case SyntaxKind.StringLiteral:
-                        return (<StringLiteral>expr).text;
+                    case SyntaxKind.NoSubstitutionTemplateLiteral:
+                        return (<StringLiteralLike>expr).text;
                     case SyntaxKind.NumericLiteral:
                         checkGrammarNumericLiteral(<NumericLiteral>expr);
                         return +(<NumericLiteral>expr).text;
