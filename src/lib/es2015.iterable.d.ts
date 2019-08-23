@@ -204,14 +204,6 @@ interface PromiseConstructor {
      * @returns A new Promise.
      */
     all<TAll>(values: Iterable<TAll | PromiseLike<TAll>>): Promise<TAll[]>;
-
-    /**
-     * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
-     * or rejected.
-     * @param values An array of Promises.
-     * @returns A new Promise.
-     */
-    race<T>(values: Iterable<T | PromiseLike<T>>): Promise<T>;
 }
 
 declare namespace Reflect {
