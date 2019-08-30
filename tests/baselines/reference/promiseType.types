@@ -1583,3 +1583,39 @@ const pc9 = p.then(() => Promise.reject("1"), () => Promise.reject(1));
 >reject : <T = never>(reason?: any) => Promise<T>
 >1 : 1
 
+const result: undefined = undefined as Awaited<undefined>;
+>result : undefined
+>undefined as Awaited<undefined> : undefined
+>undefined : undefined
+
+// #28427
+
+Promise.all([undefined as Promise<number> | string]);
+>Promise.all([undefined as Promise<number> | string]) : Promise<(string | number)[]>
+>Promise.all : { <TAll>(values: Iterable<TAll>): Promise<(TAll extends undefined ? TAll : TAll extends PromiseLike<infer UAll> ? UAll : TAll)[]>; <T extends readonly any[]>(values: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]>; }>; }
+>Promise : PromiseConstructor
+>all : { <TAll>(values: Iterable<TAll>): Promise<(TAll extends undefined ? TAll : TAll extends PromiseLike<infer UAll> ? UAll : TAll)[]>; <T extends readonly any[]>(values: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]>; }>; }
+>[undefined as Promise<number> | string] : (string | Promise<number>)[]
+>undefined as Promise<number> | string : string | Promise<number>
+>undefined : undefined
+
+Promise.resolve(undefined as Promise<number> | string);
+>Promise.resolve(undefined as Promise<number> | string) : Promise<string | number>
+>Promise.resolve : { <T>(value: T): Promise<Awaited<T>>; (): Promise<void>; }
+>Promise : PromiseConstructor
+>resolve : { <T>(value: T): Promise<Awaited<T>>; (): Promise<void>; }
+>undefined as Promise<number> | string : string | Promise<number>
+>undefined : undefined
+
+// #30390
+
+(undefined as Promise<any>).then(undefined as () => Promise<number> | string);
+>(undefined as Promise<any>).then(undefined as () => Promise<number> | string) : Promise<string | number>
+>(undefined as Promise<any>).then : <TResult1 = any, TResult2 = never>(onfulfilled?: (value: any) => TResult1, onrejected?: (reason: any) => TResult2) => Promise<(TResult1 extends undefined ? TResult1 : TResult1 extends PromiseLike<infer UResult1> ? UResult1 : TResult1) | (TResult2 extends undefined ? TResult2 : TResult2 extends PromiseLike<infer UResult2> ? UResult2 : TResult2)>
+>(undefined as Promise<any>) : Promise<any>
+>undefined as Promise<any> : Promise<any>
+>undefined : undefined
+>then : <TResult1 = any, TResult2 = never>(onfulfilled?: (value: any) => TResult1, onrejected?: (reason: any) => TResult2) => Promise<(TResult1 extends undefined ? TResult1 : TResult1 extends PromiseLike<infer UResult1> ? UResult1 : TResult1) | (TResult2 extends undefined ? TResult2 : TResult2 extends PromiseLike<infer UResult2> ? UResult2 : TResult2)>
+>undefined as () => Promise<number> | string : () => string | Promise<number>
+>undefined : undefined
+

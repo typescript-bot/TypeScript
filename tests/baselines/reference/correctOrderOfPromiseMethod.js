@@ -15,7 +15,7 @@ async function countEverything(): Promise<number> {
     const [resultA, resultB] = await Promise.all([
         providerA(),
         providerB(),
-    ] as const);
+    ]);
 
     const dataA: A[] = resultA;
     const dataB: B[] = resultB;
@@ -24,6 +24,10 @@ async function countEverything(): Promise<number> {
     }
     return 0;
 }
+
+// #31179
+
+const result: Promise<[0, 1, '']> = Promise.all(undefined as readonly [0, 1, '']);
 
 
 //// [correctOrderOfPromiseMethod.js]
@@ -92,3 +96,5 @@ function countEverything() {
         });
     });
 }
+// #31179
+var result = Promise.all(undefined);
