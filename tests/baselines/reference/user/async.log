@@ -90,7 +90,9 @@ node_modules/async/dist/async.js(31,28): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(31,29): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(31,30): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(298,7): error TS2454: Variable 'unmasked' is used before being assigned.
+node_modules/async/dist/async.js(386,24): error TS1357: Numeric literals with absolute values equal to 2^53 or greater are too large to be represented accurately as an integer.
 node_modules/async/dist/async.js(622,80): error TS2339: Property 'nodeType' does not exist on type 'NodeModule'.
+node_modules/async/dist/async.js(653,26): error TS1357: Numeric literals with absolute values equal to 2^53 or greater are too large to be represented accurately as an integer.
 node_modules/async/dist/async.js(748,84): error TS2339: Property 'nodeType' does not exist on type 'NodeModule'.
 node_modules/async/dist/async.js(754,49): error TS2339: Property 'process' does not exist on type 'false | Global'.
   Property 'process' does not exist on type 'false'.
