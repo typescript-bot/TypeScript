@@ -84,6 +84,7 @@ Standard output:
 @uifabric/merge-styles:  PASS  src/Stylesheet.test.ts
 @uifabric/merge-styles:  PASS  src/extractStyleParts.test.ts
 @uifabric/merge-styles:  PASS  src/server.test.ts
+@uifabric/merge-styles:  PASS  src/fontFace.test.ts
 @uifabric/merge-styles: [XX:XX:XX XM] ■ Extracting Public API surface from '/office-ui-fabric-react/packages/merge-styles/lib/index.d.ts'
 @uifabric/merge-styles: Done in ?s.
 @uifabric/jest-serializer-merge-styles: yarn run vX.X.X
@@ -214,6 +215,7 @@ Standard output:
 @uifabric/foundation: [XX:XX:XX XM] ■ Webpack Config Path: /office-ui-fabric-react/packages/foundation/webpack.config.js
 @uifabric/foundation: Webpack version: 4.29.5
 @uifabric/foundation:  FAIL  src/slots.test.tsx
+@uifabric/foundation:  PASS  src/next/composed.test.tsx
 @uifabric/foundation: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
@@ -459,7 +461,6 @@ lerna info Executing command in 41 packages: "yarn run build --production --lint
 @uifabric/foundation:     at Process.ChildProcess._handle.onexit (internal/child_process.js:272:12)
 @uifabric/foundation: [XX:XX:XX XM] x ------------------------------------
 @uifabric/foundation: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/foundation: [XX:XX:XX XM] x Other tasks that did not complete: [webpack]
 @uifabric/foundation: error Command failed with exit code 1.
 lerna ERR! yarn run build --production --lint exited 1 in '@uifabric/foundation'
 lerna WARN complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
