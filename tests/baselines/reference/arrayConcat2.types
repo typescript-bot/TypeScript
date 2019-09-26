@@ -1,7 +1,7 @@
 === tests/cases/compiler/arrayConcat2.ts ===
 var a: string[] = [];
 >a : string[]
->[] : undefined[]
+>[] : never[]
 
 a.concat("hello", 'world');
 >a.concat("hello", 'world') : string[]
@@ -29,4 +29,49 @@ b.concat('hello');
 >b : string[]
 >concat : { (...items: ConcatArray<string>[]): string[]; <U extends any[]>(...items: U): (string | ConcatFlatten<U[number]>)[]; }
 >'hello' : "hello"
+
+const expected: undefined = undefined as ConcatFlatten<undefined>;
+>expected : undefined
+>undefined as ConcatFlatten<undefined> : undefined
+>undefined : undefined
+
+// #19535
+
+const [x] = (undefined as unknown as number[][]).concat([1]);
+>x : number | number[]
+>(undefined as unknown as number[][]).concat([1]) : (number | number[])[]
+>(undefined as unknown as number[][]).concat : { (...items: ConcatArray<number[]>[]): number[][]; <U extends any[]>(...items: U): (number[] | ConcatFlatten<U[number]>)[]; }
+>(undefined as unknown as number[][]) : number[][]
+>undefined as unknown as number[][] : number[][]
+>undefined as unknown : unknown
+>undefined : undefined
+>concat : { (...items: ConcatArray<number[]>[]): number[][]; <U extends any[]>(...items: U): (number[] | ConcatFlatten<U[number]>)[]; }
+>[1] : number[]
+>1 : 1
+
+x == 1;
+>x == 1 : boolean
+>x : number | number[]
+>1 : 1
+
+// #26378
+
+[1].concat(['']);
+>[1].concat(['']) : (string | number)[]
+>[1].concat : { (...items: ConcatArray<number>[]): number[]; <U extends any[]>(...items: U): (number | ConcatFlatten<U[number]>)[]; }
+>[1] : number[]
+>1 : 1
+>concat : { (...items: ConcatArray<number>[]): number[]; <U extends any[]>(...items: U): (number | ConcatFlatten<U[number]>)[]; }
+>[''] : string[]
+>'' : ""
+
+// #26976
+
+[].concat([1]);
+>[].concat([1]) : number[]
+>[].concat : { (...items: ConcatArray<never>[]): never[]; <U extends any[]>(...items: U): ConcatFlatten<U[number]>[]; }
+>[] : never[]
+>concat : { (...items: ConcatArray<never>[]): never[]; <U extends any[]>(...items: U): ConcatFlatten<U[number]>[]; }
+>[1] : number[]
+>1 : 1
 

@@ -21,3 +21,31 @@ b.concat('hello');
 >b : Symbol(b, Decl(arrayConcat2.ts, 5, 3))
 >concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
 
+const expected: undefined = undefined as ConcatFlatten<undefined>;
+>expected : Symbol(expected, Decl(arrayConcat2.ts, 8, 5))
+>undefined : Symbol(undefined)
+>ConcatFlatten : Symbol(ConcatFlatten, Decl(lib.es5.d.ts, --, --))
+
+// #19535
+
+const [x] = (undefined as unknown as number[][]).concat([1]);
+>x : Symbol(x, Decl(arrayConcat2.ts, 12, 7))
+>(undefined as unknown as number[][]).concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
+>undefined : Symbol(undefined)
+>concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
+
+x == 1;
+>x : Symbol(x, Decl(arrayConcat2.ts, 12, 7))
+
+// #26378
+
+[1].concat(['']);
+>[1].concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
+>concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
+
+// #26976
+
+[].concat([1]);
+>[].concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
+>concat : Symbol(Array.concat, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --))
+

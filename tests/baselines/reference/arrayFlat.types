@@ -1,0 +1,26 @@
+=== tests/cases/compiler/arrayFlat.ts ===
+const expected: undefined = undefined as Flatten<undefined>;
+>expected : undefined
+>undefined as Flatten<undefined> : undefined
+>undefined : undefined
+
+// #24579 and #29604
+
+const [x] = [[1], ['']].flat();
+>x : string | number
+>[[1], ['']].flat() : (string | number)[]
+>[[1], ['']].flat : { (depth: 4): (string | number)[]; (depth: 3): (string | number)[]; (depth: 2): (string | number)[]; (depth?: 1): (string | number)[]; (depth: 0): (number[] | string[])[]; (depth: number): any[]; }
+>[[1], ['']] : (number[] | string[])[]
+>[1] : number[]
+>1 : 1
+>[''] : string[]
+>'' : ""
+>flat : { (depth: 4): (string | number)[]; (depth: 3): (string | number)[]; (depth: 2): (string | number)[]; (depth?: 1): (string | number)[]; (depth: 0): (number[] | string[])[]; (depth: number): any[]; }
+
+const assert: any extends typeof x ? false : true = true;
+>assert : boolean
+>x : string | number
+>false : false
+>true : true
+>true : true
+

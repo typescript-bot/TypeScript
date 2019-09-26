@@ -1,0 +1,17 @@
+=== tests/cases/compiler/arrayFlat.ts ===
+const expected: undefined = undefined as Flatten<undefined>;
+>expected : Symbol(expected, Decl(arrayFlat.ts, 0, 5))
+>undefined : Symbol(undefined)
+>Flatten : Symbol(Flatten, Decl(lib.es2019.array.d.ts, --, --))
+
+// #24579 and #29604
+
+const [x] = [[1], ['']].flat();
+>x : Symbol(x, Decl(arrayFlat.ts, 4, 7))
+>[[1], ['']].flat : Symbol(Array.flat, Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --) ... and 1 more)
+>flat : Symbol(Array.flat, Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --), Decl(lib.es2019.array.d.ts, --, --) ... and 1 more)
+
+const assert: any extends typeof x ? false : true = true;
+>assert : Symbol(assert, Decl(arrayFlat.ts, 5, 5))
+>x : Symbol(x, Decl(arrayFlat.ts, 4, 7))
+
