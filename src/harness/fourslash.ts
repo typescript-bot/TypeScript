@@ -4687,6 +4687,7 @@ namespace FourSlashInterface {
             varEntry("JSON"),
             interfaceEntry("ReadonlyArray"),
             interfaceEntry("ConcatArray"),
+            typeEntry("ConcatFlatten"),
             varEntry("Array"),
             interfaceEntry("ArrayConstructor"),
             interfaceEntry("TypedPropertyDescriptor"),
