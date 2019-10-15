@@ -17780,7 +17780,6 @@ namespace ts {
                     inferFromProperties(source, target);
                     inferFromSignatures(source, target, SignatureKind.Call);
                     inferFromSignatures(source, target, SignatureKind.Construct);
-                    inferFromIndexTypes(source, target);
                 }
             }
 
@@ -17818,6 +17817,7 @@ namespace ts {
                         inferFromTypes(getTypeOfSymbol(sourceProp), getTypeOfSymbol(targetProp));
                     }
                 }
+                inferFromIndexTypes(source, target);
             }
 
             function inferFromSignatures(source: Type, target: Type, kind: SignatureKind) {
