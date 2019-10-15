@@ -109,4 +109,34 @@ var zipResultEleEle = zipResult[0][0]; // string
 >0 : 0
 >0 : 0
 
+// #33559 and #33752
+
+interface I<T> {}
+declare function f1<T1, T2>(values: [I<T1>, I<T2>]): T1;
+>f1 : <T1, T2>(values: [I<T1>, I<T2>]) => T1
+>values : [I<T1>, I<T2>]
+
+declare function f2<T1, T2>(values: readonly [I<T1>, I<T2>]): T1;
+>f2 : <T1, T2>(values: readonly [I<T1>, I<T2>]) => T1
+>values : readonly [I<T1>, I<T2>]
+
+declare const values: [I<1>, I<number>];
+>values : [I<1>, I<number>]
+
+let one: 1;
+>one : 1
+
+one = f1(values);
+>one = f1(values) : 1
+>one : 1
+>f1(values) : 1
+>f1 : <T1, T2>(values: [I<T1>, I<T2>]) => T1
+>values : [I<1>, I<number>]
+
+one = f2(values);
+>one = f2(values) : 1
+>one : 1
+>f2(values) : 1
+>f2 : <T1, T2>(values: readonly [I<T1>, I<T2>]) => T1
+>values : [I<1>, I<number>]
 

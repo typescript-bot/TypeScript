@@ -23,6 +23,16 @@ var zipResult = zip(["foo", "bar"], [5, 6]);
 var zipResultEle = zipResult[0]; // [string, number]
 var zipResultEleEle = zipResult[0][0]; // string
 
+// #33559 and #33752
+
+interface I<T> {}
+declare function f1<T1, T2>(values: [I<T1>, I<T2>]): T1;
+declare function f2<T1, T2>(values: readonly [I<T1>, I<T2>]): T1;
+
+declare const values: [I<1>, I<number>];
+let one: 1;
+one = f1(values);
+one = f2(values);
 
 
 //// [typeInferenceWithTupleType.js]
@@ -46,3 +56,6 @@ function zip(array1, array2) {
 var zipResult = zip(["foo", "bar"], [5, 6]);
 var zipResultEle = zipResult[0]; // [string, number]
 var zipResultEleEle = zipResult[0][0]; // string
+var one;
+one = f1(values);
+one = f2(values);
