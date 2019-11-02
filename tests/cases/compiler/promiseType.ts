@@ -217,3 +217,15 @@ const pc6 = p.then(() => Promise.reject("1"), () => {});
 const pc7 = p.then(() => Promise.reject("1"), () => {throw 1});
 const pc8 = p.then(() => Promise.reject("1"), () => Promise.resolve(1));
 const pc9 = p.then(() => Promise.reject("1"), () => Promise.reject(1));
+
+const expected: undefined = undefined as Awaited<undefined>;
+
+// #28427
+
+Promise.all([undefined as Promise<number> | string]);
+
+Promise.resolve(undefined as Promise<number> | string);
+
+// #30390
+
+(undefined as Promise<any>).then(undefined as () => Promise<number> | string);
