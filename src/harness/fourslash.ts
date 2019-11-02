@@ -4694,6 +4694,7 @@ namespace FourSlashInterface {
             typeEntry("PropertyDecorator"),
             typeEntry("MethodDecorator"),
             typeEntry("ParameterDecorator"),
+            typeEntry("Awaited"),
             typeEntry("PromiseConstructorLike"),
             interfaceEntry("PromiseLike"),
             interfaceEntry("Promise"),

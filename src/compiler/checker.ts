@@ -800,6 +800,7 @@ namespace ts {
         let deferredGlobalESSymbolConstructorSymbol: Symbol | undefined;
         let deferredGlobalESSymbolType: ObjectType;
         let deferredGlobalTypedPropertyDescriptorType: GenericType;
+        let deferredGlobalAwaitedSymbol: Symbol | undefined;
         let deferredGlobalPromiseType: GenericType;
         let deferredGlobalPromiseLikeType: GenericType;
         let deferredGlobalPromiseConstructorSymbol: Symbol | undefined;
@@ -853,7 +854,6 @@ namespace ts {
         const flowNodeReachable: (boolean | undefined)[] = [];
         const potentialThisCollisions: Node[] = [];
         const potentialNewTargetCollisions: Node[] = [];
-        const awaitedTypeStack: number[] = [];
 
         const diagnostics = createDiagnosticCollection();
         const suggestionDiagnostics = createDiagnosticCollection();
@@ -11057,6 +11057,10 @@ namespace ts {
 
         function getGlobalESSymbolType(reportErrors: boolean) {
             return deferredGlobalESSymbolType || (deferredGlobalESSymbolType = getGlobalType("Symbol" as __String, /*arity*/ 0, reportErrors)) || emptyObjectType;
+        }
+
+        function getGlobalAwaitedSymbol(reportErrors: boolean) {
+            return deferredGlobalAwaitedSymbol || (deferredGlobalAwaitedSymbol = getGlobalTypeSymbol("Awaited" as __String, reportErrors));
         }
 
         function getGlobalPromiseType(reportErrors: boolean) {
@@ -25719,7 +25723,7 @@ namespace ts {
                     // Promise/A+ compatible implementation will always assimilate any foreign promise, so the
                     // return type of the body should be unwrapped to its awaited type, which we will wrap in
                     // the native Promise<T> type later in this function.
-                    returnType = checkAwaitedType(returnType, /*errorNode*/ func, Diagnostics.The_return_type_of_an_async_function_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member);
+                    returnType = checkAwaitedType(returnType);
                 }
             }
             else if (isGenerator) { // Generator or AsyncGenerator function
@@ -25858,9 +25862,7 @@ namespace ts {
             const errorNode = node.expression || node;
             // A `yield*` expression effectively yields everything that its operand yields
             const yieldedType = node.asteriskToken ? checkIteratedTypeOrElementType(isAsync ? IterationUse.AsyncYieldStar : IterationUse.YieldStar, expressionType, sentType, errorNode) : expressionType;
-            return !isAsync ? yieldedType : getAwaitedType(yieldedType, errorNode, node.asteriskToken
-                ? Diagnostics.Type_of_iterated_elements_of_a_yield_Asterisk_operand_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member
-                : Diagnostics.Type_of_yield_operand_in_an_async_generator_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member);
+            return !isAsync ? yieldedType : getAwaitedType(yieldedType);
         }
 
         /**
@@ -25951,7 +25953,7 @@ namespace ts {
                         // Promise/A+ compatible implementation will always assimilate any foreign promise, so the
                         // return type of the body should be unwrapped to its awaited type, which should be wrapped in
                         // the native Promise<T> type by the caller.
-                        type = checkAwaitedType(type, func, Diagnostics.The_return_type_of_an_async_function_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member);
+                        type = checkAwaitedType(type);
                     }
                     if (type.flags & TypeFlags.Never) {
                         hasReturnOfTypeNever = true;
@@ -26155,7 +26157,7 @@ namespace ts {
                     const returnOrPromisedType = getReturnOrPromisedType(returnType, functionFlags);
                     if (returnOrPromisedType) {
                         if ((functionFlags & FunctionFlags.AsyncGenerator) === FunctionFlags.Async) { // Async function
-                            const awaitedType = checkAwaitedType(exprType, node.body, Diagnostics.The_return_type_of_an_async_function_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member);
+                            const awaitedType = checkAwaitedType(exprType);
                             checkTypeAssignableToAndOptionallyElaborate(awaitedType, returnOrPromisedType, node.body, node.body);
                         }
                         else { // Normal function
@@ -26324,7 +26326,7 @@ namespace ts {
             }
 
             const operandType = checkExpression(node.expression);
-            const awaitedType = checkAwaitedType(operandType, node, Diagnostics.Type_of_await_operand_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member);
+            const awaitedType = checkAwaitedType(operandType);
             if (awaitedType === operandType && awaitedType !== errorType && !(operandType.flags & TypeFlags.AnyOrUnknown)) {
                 addErrorOrSuggestion(/*isError*/ false, createDiagnosticForNode(node, Diagnostics.await_has_no_effect_on_the_type_of_this_expression));
             }
@@ -28830,9 +28832,9 @@ namespace ts {
             }
         }
 
-        function getAwaitedTypeOfPromise(type: Type, errorNode?: Node, diagnosticMessage?: DiagnosticMessage, arg0?: string | number): Type | undefined {
+        function getAwaitedTypeOfPromise(type: Type, errorNode?: Node): Type | undefined {
             const promisedType = getPromisedTypeOfPromise(type, errorNode);
-            return promisedType && getAwaitedType(promisedType, errorNode, diagnosticMessage, arg0);
+            return promisedType && getAwaitedType(promisedType);
         }
 
         /**
@@ -28900,12 +28902,12 @@ namespace ts {
          * Promise-like type; otherwise, it is the type of the expression. This is used to reflect
          * The runtime behavior of the `await` keyword.
          */
-        function checkAwaitedType(type: Type, errorNode: Node, diagnosticMessage: DiagnosticMessage, arg0?: string | number): Type {
-            const awaitedType = getAwaitedType(type, errorNode, diagnosticMessage, arg0);
+        function checkAwaitedType(type: Type): Type {
+            const awaitedType = getAwaitedType(type);
             return awaitedType || errorType;
         }
 
-        function getAwaitedType(type: Type, errorNode?: Node, diagnosticMessage?: DiagnosticMessage, arg0?: string | number): Type | undefined {
+        function getAwaitedType(type: Type): Type | undefined {
             const typeAsAwaitable = <PromiseOrAwaitableType>type;
             if (typeAsAwaitable.awaitedTypeOfType) {
                 return typeAsAwaitable.awaitedTypeOfType;
@@ -28915,95 +28917,10 @@ namespace ts {
                 return typeAsAwaitable.awaitedTypeOfType = type;
             }
 
-            if (type.flags & TypeFlags.Union) {
-                let types: Type[] | undefined;
-                for (const constituentType of (<UnionType>type).types) {
-                    types = append<Type>(types, getAwaitedType(constituentType, errorNode, diagnosticMessage, arg0));
-                }
-
-                if (!types) {
-                    return undefined;
-                }
-
-                return typeAsAwaitable.awaitedTypeOfType = getUnionType(types);
-            }
-
-            const promisedType = getPromisedTypeOfPromise(type);
-            if (promisedType) {
-                if (type.id === promisedType.id || awaitedTypeStack.indexOf(promisedType.id) >= 0) {
-                    // Verify that we don't have a bad actor in the form of a promise whose
-                    // promised type is the same as the promise type, or a mutually recursive
-                    // promise. If so, we return undefined as we cannot guess the shape. If this
-                    // were the actual case in the JavaScript, this Promise would never resolve.
-                    //
-                    // An example of a bad actor with a singly-recursive promise type might
-                    // be:
-                    //
-                    //  interface BadPromise {
-                    //      then(
-                    //          onfulfilled: (value: BadPromise) => any,
-                    //          onrejected: (error: any) => any): BadPromise;
-                    //  }
-                    // The above interface will pass the PromiseLike check, and return a
-                    // promised type of `BadPromise`. Since this is a self reference, we
-                    // don't want to keep recursing ad infinitum.
-                    //
-                    // An example of a bad actor in the form of a mutually-recursive
-                    // promise type might be:
-                    //
-                    //  interface BadPromiseA {
-                    //      then(
-                    //          onfulfilled: (value: BadPromiseB) => any,
-                    //          onrejected: (error: any) => any): BadPromiseB;
-                    //  }
-                    //
-                    //  interface BadPromiseB {
-                    //      then(
-                    //          onfulfilled: (value: BadPromiseA) => any,
-                    //          onrejected: (error: any) => any): BadPromiseA;
-                    //  }
-                    //
-                    if (errorNode) {
-                        error(errorNode, Diagnostics.Type_is_referenced_directly_or_indirectly_in_the_fulfillment_callback_of_its_own_then_method);
-                    }
-                    return undefined;
-                }
-
-                // Keep track of the type we're about to unwrap to avoid bad recursive promise types.
-                // See the comments above for more information.
-                awaitedTypeStack.push(type.id);
-                const awaitedType = getAwaitedType(promisedType, errorNode, diagnosticMessage, arg0);
-                awaitedTypeStack.pop();
-
-                if (!awaitedType) {
-                    return undefined;
-                }
-
-                return typeAsAwaitable.awaitedTypeOfType = awaitedType;
-            }
-
-            // The type was not a promise, so it could not be unwrapped any further.
-            // As long as the type does not have a callable "then" property, it is
-            // safe to return the type; otherwise, an error will be reported in
-            // the call to getNonThenableType and we will return undefined.
-            //
-            // An example of a non-promise "thenable" might be:
-            //
-            //  await { then(): void {} }
-            //
-            // The "thenable" does not match the minimal definition for a promise. When
-            // a Promise/A+-compatible or ES6 promise tries to adopt this value, the promise
-            // will never settle. We treat this as an error to help flag an early indicator
-            // of a runtime problem. If the user wants to return this value from an async
-            // function, they would need to wrap it in some other value. If they want it to
-            // be treated as a promise, they can cast to <any>.
-            const thenFunction = getTypeOfPropertyOfType(type, "then" as __String);
-            if (thenFunction && getSignaturesOfType(thenFunction, SignatureKind.Call).length > 0) {
-                if (errorNode) {
-                    if (!diagnosticMessage) return Debug.fail();
-                    error(errorNode, diagnosticMessage, arg0);
-                }
-                return undefined;
+            const symbol = getGlobalAwaitedSymbol(/*reportErrors*/ false);
+            if (symbol) {
+                const result = getTypeAliasInstantiation(symbol, [type]) as PromiseOrAwaitableType;
+                return typeAsAwaitable.awaitedTypeOfType = result.awaitedTypeOfType = result;
             }
 
             return typeAsAwaitable.awaitedTypeOfType = type;
@@ -29109,7 +29026,7 @@ namespace ts {
                     return;
                 }
             }
-            checkAwaitedType(returnType, node, Diagnostics.The_return_type_of_an_async_function_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member);
+            checkAwaitedType(returnType);
         }
 
         /** Check a decorator */
@@ -30699,13 +30616,13 @@ namespace ts {
             return iterationTypes === noIterationTypes ? undefined : iterationTypes;
         }
 
-        function getAsyncFromSyncIterationTypes(iterationTypes: IterationTypes, errorNode: Node | undefined) {
+        function getAsyncFromSyncIterationTypes(iterationTypes: IterationTypes) {
             if (iterationTypes === noIterationTypes) return noIterationTypes;
             if (iterationTypes === anyIterationTypes) return anyIterationTypes;
             const { yieldType, returnType, nextType } = iterationTypes;
             return createIterationTypes(
-                getAwaitedType(yieldType, errorNode) || anyType,
-                getAwaitedType(returnType, errorNode) || anyType,
+                getAwaitedType(yieldType) || anyType,
+                getAwaitedType(returnType) || anyType,
                 nextType);
         }
 
@@ -30741,7 +30658,7 @@ namespace ts {
                     if (use & IterationUse.AllowsAsyncIterablesFlag) {
                         // for a sync iterable in an async context, only use the cached types if they are valid.
                         if (iterationTypes !== noIterationTypes) {
-                            return (type as IterableOrIteratorType).iterationTypesOfAsyncIterable = getAsyncFromSyncIterationTypes(iterationTypes, errorNode);
+                            return (type as IterableOrIteratorType).iterationTypesOfAsyncIterable = getAsyncFromSyncIterationTypes(iterationTypes);
                         }
                     }
                     else {
@@ -30762,7 +30679,7 @@ namespace ts {
                 if (iterationTypes !== noIterationTypes) {
                     if (use & IterationUse.AllowsAsyncIterablesFlag) {
                         return (type as IterableOrIteratorType).iterationTypesOfAsyncIterable = iterationTypes
-                            ? getAsyncFromSyncIterationTypes(iterationTypes, errorNode)
+                            ? getAsyncFromSyncIterationTypes(iterationTypes)
                             : noIterationTypes;
                     }
                     else {
@@ -31170,7 +31087,7 @@ namespace ts {
                 else if (getReturnTypeFromAnnotation(func)) {
                     const unwrappedReturnType = unwrapReturnType(returnType, functionFlags);
                     const unwrappedExprType = functionFlags & FunctionFlags.Async
-                        ? checkAwaitedType(exprType, node, Diagnostics.The_return_type_of_an_async_function_must_either_be_a_valid_promise_or_must_not_contain_a_callable_then_member)
+                        ? checkAwaitedType(exprType)
                         : exprType;
                     if (unwrappedReturnType) {
                         // If the function has a return type, but promisedType is

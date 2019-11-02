@@ -203,7 +203,7 @@ interface PromiseConstructor {
      * @param values An array of Promises.
      * @returns A new Promise.
      */
-    all<TAll>(values: Iterable<TAll | PromiseLike<TAll>>): Promise<TAll[]>;
+    all<TAll>(values: Iterable<TAll>): Promise<Awaited<TAll>[]>;
 }
 
 declare namespace Reflect {
