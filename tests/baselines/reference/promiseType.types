@@ -1583,3 +1583,43 @@ const pc9 = p.then(() => Promise.reject("1"), () => Promise.reject(1));
 >reject : <T = never>(reason?: any) => Promise<T>
 >1 : 1
 
+const expected1: undefined = undefined as Awaited<undefined>;
+>expected1 : undefined
+>undefined as Awaited<undefined> : undefined
+>undefined : undefined
+
+// #27711
+
+const expected2: Promise<string> = new Promise<Promise<string>>(() => {});
+>expected2 : Promise<string>
+>new Promise<Promise<string>>(() => {}) : Promise<string>
+>Promise : PromiseConstructor
+>() => {} : () => void
+
+// #28427
+
+Promise.all([undefined as Promise<string> | number]);
+>Promise.all([undefined as Promise<string> | number]) : Promise<(string | number)[]>
+>Promise.all : { <TAll>(values: Iterable<TAll>): Promise<Awaited<TAll>[]>; <T extends readonly any[]>(values: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]>; }>; }
+>Promise : PromiseConstructor
+>all : { <TAll>(values: Iterable<TAll>): Promise<Awaited<TAll>[]>; <T extends readonly any[]>(values: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]>; }>; }
+>[undefined as Promise<string> | number] : (number | Promise<string>)[]
+>undefined as Promise<string> | number : number | Promise<string>
+>undefined : undefined
+
+Promise.resolve(undefined as Promise<string> | number);
+>Promise.resolve(undefined as Promise<string> | number) : Promise<string | number>
+>Promise.resolve : { <T>(value: T): Promise<Awaited<T>>; (): Promise<void>; }
+>Promise : PromiseConstructor
+>resolve : { <T>(value: T): Promise<Awaited<T>>; (): Promise<void>; }
+>undefined as Promise<string> | number : number | Promise<string>
+>undefined : undefined
+
+new Promise(undefined as (resolve: (value: Promise<string> | number) => void) => void);
+>new Promise(undefined as (resolve: (value: Promise<string> | number) => void) => void) : Promise<string | number>
+>Promise : PromiseConstructor
+>undefined as (resolve: (value: Promise<string> | number) => void) => void : (resolve: (value: number | Promise<string>) => void) => void
+>undefined : undefined
+>resolve : (value: number | Promise<string>) => void
+>value : number | Promise<string>
+
