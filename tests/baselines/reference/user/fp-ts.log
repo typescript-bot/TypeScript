@@ -1,5 +1,23 @@
 Exit Code: 1
 Standard output:
+src/Task.ts(78,5): error TS2322: Type 'Promise<Awaited<A>>' is not assignable to type 'Promise<A>'.
+  Type 'Awaited<A>' is not assignable to type 'A'.
+    Type 'A | (A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A)' is not assignable to type 'A'.
+      Type 'A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A' is not assignable to type 'A'.
+        Type 'unknown' is not assignable to type 'A'.
+src/Task.ts(90,16): error TS2322: Type 'Promise<Awaited<A>>' is not assignable to type 'Promise<A>'.
+  Type 'Awaited<A>' is not assignable to type 'A'.
+    Type 'A | (A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A)' is not assignable to type 'A'.
+      Type 'A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A' is not assignable to type 'A'.
+        Type 'unknown' is not assignable to type 'A'.
+src/Task.ts(99,16): error TS2322: Type 'Promise<Awaited<A>>' is not assignable to type 'Promise<A>'.
+  Type 'Awaited<A>' is not assignable to type 'A'.
+    Type 'A | (A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A)' is not assignable to type 'A'.
+      Type 'A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A' is not assignable to type 'A'.
+        Type 'unknown' is not assignable to type 'A'.
+src/Task.ts(123,70): error TS2349: This expression is not callable.
+  Not all constituents of type 'A | ((a: A) => B)' are callable.
+    Type 'A' has no call signatures.
 test/Applicative.ts(6,1): error TS2593: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
 test/Applicative.ts(7,3): error TS2593: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
 test/Apply.ts(8,1): error TS2593: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
@@ -702,6 +720,11 @@ test/Store.ts(48,3): error TS2593: Cannot find name 'it'. Do you need to install
 test/Strong.ts(5,1): error TS2593: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
 test/Strong.ts(6,3): error TS2593: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
 test/Strong.ts(13,3): error TS2593: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
+test/Task.ts(9,3): error TS2322: Type 'Promise<Awaited<A>>' is not assignable to type 'Promise<A>'.
+  Type 'Awaited<A>' is not assignable to type 'A'.
+    Type 'A | (A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A)' is not assignable to type 'A'.
+      Type 'A extends PromiseLike<infer U> ? U : A extends { then(...args: any[]): any; } ? unknown : A' is not assignable to type 'A'.
+        Type 'unknown' is not assignable to type 'A'.
 test/Task.ts(15,1): error TS2593: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
 test/Task.ts(16,3): error TS2593: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
 test/Task.ts(19,5): error TS2593: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
