@@ -4,15 +4,93 @@ yarn run vX.X.X
 $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Node flags detected: --max_old_space_size=4095
 [XX:XX:XX] Using gulpfile /vscode/gulpfile.js
-[XX:XX:XX] Error: /vscode/extensions/typescript-language-features/src/features/fileConfigurationManager.ts(170,4): Type 'string | undefined' is not assignable to type 'SemicolonPreference | undefined'.
-  Type 'string' is not assignable to type 'SemicolonPreference | undefined'.
+[XX:XX:XX] Error: /vscode/src/vs/base/common/async.ts(42,4): TResult2)>' is not assignable to type 'Promise<TResult1 | TResult2>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(182,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+  The types returned by '[Symbol.iterator]().next(...)' are incompatible between these types.
+    Type 'IteratorResult<Thenable<CompletionList | undefined>, any>' is not assignable to type 'IteratorResult<CompletionList, any>'.
+      Type 'IteratorYieldResult<Thenable<CompletionList | undefined>>' is not assignable to type 'IteratorResult<CompletionList, any>'.
+        Type 'IteratorYieldResult<Thenable<CompletionList | undefined>>' is not assignable to type 'IteratorYieldResult<CompletionList>'.
+          Property 'items' is missing in type 'Thenable<CompletionList | undefined>' but required in type 'CompletionList'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(182,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(182,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(243,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(243,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(243,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(302,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(302,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(302,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(360,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(360,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(360,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,128): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,137): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,146): Binding element 'result3' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,155): Binding element 'result4' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/git/src/commands.ts(189,60): Argument of type 'Promise<boolean>[]' is not assignable to parameter of type 'Iterable<boolean>'.
+  The types returned by '[Symbol.iterator]().next(...)' are incompatible between these types.
+    Type 'IteratorResult<Promise<boolean>, any>' is not assignable to type 'IteratorResult<boolean, any>'.
+      Type 'IteratorYieldResult<Promise<boolean>>' is not assignable to type 'IteratorResult<boolean, any>'.
+        Type 'IteratorYieldResult<Promise<boolean>>' is not assignable to type 'IteratorYieldResult<boolean>'.
+          Type 'Promise<boolean>' is not assignable to type 'boolean'.
+[XX:XX:XX] Error: /vscode/extensions/merge-conflict/src/delayer.ts(33,4): Type 'Promise<(T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<infer UResult2> ? UResult2 : T)>' is not assignable to type 'Promise<T>'.
+  Type '(T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<infer UResult2> ? UResult2 : T)' is not assignable to type 'T'.
+    Type 'T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+      Type 'T | (T extends PromiseLike<infer UResult1> ? UResult1 : T)' is not assignable to type 'T'.
+        Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+          Type 'unknown' is not assignable to type 'T'.
+[XX:XX:XX] Error: /vscode/extensions/merge-conflict/src/delayer.ts(51,3): Type 'Promise<T> | null' is not assignable to type 'Promise<T>'.
+  Type 'null' is not assignable to type 'Promise<T>'.
+[XX:XX:XX] Error: /vscode/extensions/php-language-features/src/features/utils/async.ts(124,4): Type 'Promise<(T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<infer UResult2> ? UResult2 : T)>' is not assignable to type 'Promise<T>'.
+  Type '(T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<infer UResult2> ? UResult2 : T)' is not assignable to type 'T'.
+    Type 'T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+      Type 'T | (T extends PromiseLike<infer UResult1> ? UResult1 : T)' is not assignable to type 'T'.
+        Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+          Type 'unknown' is not assignable to type 'T'.
+[XX:XX:XX] Error: /vscode/extensions/php-language-features/src/features/utils/async.ts(142,3): Type 'Promise<T> | null' is not assignable to type 'Promise<T>'.
+  Type 'null' is not assignable to type 'Promise<T>'.
+[XX:XX:XX] Error: /vscode/extensions/typescript-language-features/src/utils/async.ts(33,4): Type 'Promise<(T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<infer UResult2> ? UResult2 : T) | null>' is not assignable to type 'Promise<T | null>'.
+  Type '(T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<infer UResult2> ? UResult2 : T) | null' is not assignable to type 'T | null'.
+    Type 'T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T | null'.
+      Type 'T | (T extends PromiseLike<infer UResult1> ? UResult1 : T)' is not assignable to type 'T | null'.
+        Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T | null'.
+          Type 'unknown' is not assignable to type 'T | null'.
+            Type 'unknown' is not assignable to type 'T'.
+              Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+                Type 'T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+                  Type 'T | (T extends PromiseLike<infer UResult1> ? UResult1 : T)' is not assignable to type 'T'.
+                    Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'T'.
+                      Type 'unknown' is not assignable to type 'T'.
+[XX:XX:XX] Error: /vscode/extensions/typescript-language-features/src/utils/async.ts(53,3): Type 'Promise<T | null> | null' is not assignable to type 'Promise<T | null>'.
+  Type 'null' is not assignable to type 'Promise<T | null>'.
+[XX:XX:XX] Error: /vscode/extensions/typescript-language-features/src/tsServer/cachedResponse.ts(31,4): Type 'Promise<Cancelled | (Anonymous class) | T | (T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<...> ? UResult2 : T)>' is not assignable to type 'Promise<Response<T>>'.
+[XX:XX:XX] Error: /vscode/extensions/typescript-language-features/src/tsServer/cachedResponse.ts(31,11): Type 'Promise<Cancelled | (Anonymous class) | T | (T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<...> ? UResult2 : T)>' is not assignable to type 'Promise<Response<T>>'.
+  Type 'Cancelled | (Anonymous class) | T | (T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T) | (T extends undefined ? T : T extends PromiseLike<...> ? UResult2 : T)' is not assignable to type 'Response<T>'.
+    Type 'T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'Response<T>'.
+      Type 'T | (T extends PromiseLike<infer UResult1> ? UResult1 : T)' is not assignable to type 'Response<T>'.
+        Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'Response<T>'.
+          Type 'unknown' is not assignable to type 'Response<T>'.
+            Type 'unknown' is not assignable to type 'T'.
+              Type 'Response' is not assignable to type 'Response<T>'.
+                Type 'Response' is not assignable to type 'T'.
+                  'Response' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Response'.
+                    Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'Cancelled'.
+                      Type 'Response' is not assignable to type 'Response<T>'.
+                        Type 'Response' is not assignable to type 'T'.
+                          'Response' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Response'.
+                            Type 'T extends undefined ? T : T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'Cancelled'.
+                              Type 'T | (T extends PromiseLike<infer UResult1> ? UResult1 : T)' is not assignable to type 'Cancelled'.
+                                Type 'T extends PromiseLike<infer UResult1> ? UResult1 : T' is not assignable to type 'Cancelled'.
+                                  Type 'unknown' is not assignable to type 'Cancelled'.
+                                    Type 'Response' is not assignable to type 'Cancelled'.
+                                      Property 'reason' is missing in type 'Response' but required in type 'Cancelled'.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
 
 Standard error:
 [XX:XX:XX] 'compile' errored after ?s
-[XX:XX:XX] Error: Found 1 errors
+[XX:XX:XX] Error: Found 2 errors
     at Stream.<anonymous> (/vscode/build/lib/reporter.js:74:29)
     at _end (/vscode/node_modules/through/index.js:65:9)
     at Stream.stream.end (/vscode/node_modules/through/index.js:74:5)

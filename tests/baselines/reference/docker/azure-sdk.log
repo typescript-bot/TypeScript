@@ -33,15 +33,6 @@ npm ERR!     /root/.npm/_logs/XXXX-XX-XXXXXXXXX-debug.log
 ERROR: "build:lib" exited with 1.
 XX of XX: [@azure/core-asynciterator-polyfill] completed successfully in ? seconds
 XX of XX: [@azure/core-paging] completed successfully in ? seconds
-Warning: You have changed the public API signature for this project. Updating review/event-processor-host.api.md
-Warning: typings/src/eventProcessorHost.d.ts:32:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/eventProcessorHost.d.ts:36:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/eventProcessorHost.d.ts:66:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionContext.d.ts:22:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionContext.d.ts:27:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionContext.d.ts:32:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionPump.d.ts:17:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionPump.d.ts:18:9 - (TS1086) An accessor cannot be declared in an ambient context.
 XX of XX: [@azure/test-utils-recorder] completed successfully in ? seconds
 Warning: You have changed the public API signature for this project. Updating review/cosmos.api.md
 Warning: dist-esm/ChangeFeedIterator.d.ts:27:9 - (TS1056) Accessors are only available when targeting ECMAScript 5 and higher.
@@ -87,17 +78,7 @@ os-name (imported by dist-esm/utils/user-agent.js)
 Use output.globals to specify browser global variable names corresponding to external modules
 os-name (guessing 'osName')
 created dist/index.js in ?s
-Warning: You have changed the public API signature for this project. Updating review/service-bus.api.md
-Warning: typings/src/receiver.d.ts:28:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:34:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:153:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:159:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:165:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:175:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/sender.d.ts:24:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/serviceBusMessage.d.ts:453:9 - (TS1086) An accessor cannot be declared in an ambient context.
-XX of XX: [testhub] completed successfully in ? seconds
-SUCCESS (7)
+SUCCESS (6)
 ================================
 @azure/abort-controller (? seconds)
 @azure/core-tracing (? seconds)
@@ -105,24 +86,13 @@ SUCCESS (7)
 @azure/core-asynciterator-polyfill (? seconds)
 @azure/core-paging (? seconds)
 @azure/test-utils-recorder (? seconds)
-testhub (? seconds)
 ================================
-SUCCESS WITH WARNINGS (4)
+SUCCESS WITH WARNINGS (2)
 ================================
 @azure/core-auth (? seconds)
 Warning: /azure-sdk/sdk/core/abort-controller/types/src/AbortController.d.ts:73:9 - (TS1086) An accessor cannot be declared in an ambient context.
 Warning: /azure-sdk/sdk/core/abort-controller/types/src/AbortSignal.d.ts:44:9 - (TS1086) An accessor cannot be declared in an ambient context.
 Warning: /azure-sdk/sdk/core/abort-controller/types/src/AbortSignal.d.ts:53:16 - (TS1086) An accessor cannot be declared in an ambient context.
-@azure/event-processor-host (? seconds)
-Warning: You have changed the public API signature for this project. Updating review/event-processor-host.api.md
-Warning: typings/src/eventProcessorHost.d.ts:32:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/eventProcessorHost.d.ts:36:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/eventProcessorHost.d.ts:66:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionContext.d.ts:22:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionContext.d.ts:27:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionContext.d.ts:32:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionPump.d.ts:17:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/partitionPump.d.ts:18:9 - (TS1086) An accessor cannot be declared in an ambient context.
 @azure/cosmos (? seconds)
 Warning: You have changed the public API signature for this project. Updating review/cosmos.api.md
 Warning: dist-esm/ChangeFeedIterator.d.ts:27:9 - (TS1056) Accessors are only available when targeting ECMAScript 5 and higher.
@@ -155,38 +125,30 @@ os-name (imported by dist-esm/utils/user-agent.js)
 Use output.globals to specify browser global variable names corresponding to external modules
 os-name (guessing 'osName')
 created dist/index.js in ?s
-@azure/service-bus (? seconds)
-Warning: You have changed the public API signature for this project. Updating review/service-bus.api.md
-Warning: typings/src/receiver.d.ts:28:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:34:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:153:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:159:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:165:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/receiver.d.ts:175:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/sender.d.ts:24:9 - (TS1086) An accessor cannot be declared in an ambient context.
-Warning: typings/src/serviceBusMessage.d.ts:453:9 - (TS1086) An accessor cannot be declared in an ambient context.
 ================================
-BLOCKED (15)
+BLOCKED (17)
 ================================
+@azure/core-arm
 @azure/identity
 @azure/core-amqp
-@azure/core-arm
 @azure/core-lro
 @azure/event-hubs
+@azure/keyvault-keys
+@azure/keyvault-secrets
 @azure/app-configuration
 @azure/cognitiveservices-inkrecognizer
 @azure/eventhubs-checkpointstore-blob
 @azure/keyvault-certificates
-@azure/keyvault-keys
-@azure/keyvault-secrets
+@azure/service-bus
 @azure/storage-blob
 @azure/storage-file-share
 @azure/storage-queue
 @azure/template
+testhub
 ================================
-FAILURE (1)
+FAILURE (2)
 ================================
-@azure/core-http ( ? seconds)
+@azure/core-http (? seconds)
 npm ERR! code ELIFECYCLE
 npm ERR! errno 2
 npm ERR! @azure/core-http@X.X.X build:tsc: `tsc -p tsconfig.es.json`
@@ -207,6 +169,16 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /root/.npm/_logs/XXXX-XX-XXXXXXXXX-debug.log
 ERROR: "build:lib" exited with 1.
+@azure/event-processor-host (? seconds)
+>>> @azure/event-processor-host
+tsc -p . && rollup -c 2>&1 && npm run extract-api
+src/partitionScanner.ts(382,54): error TS2345: Argument of type 'Promise<boolean>[]' is not assignable to parameter of type 'Iterable<boolean>'.
+  The types returned by '[Symbol.iterator]().next(...)' are incompatible between these types.
+    Type 'IteratorResult<Promise<boolean>, any>' is not assignable to type 'IteratorResult<boolean, any>'.
+      Type 'IteratorYieldResult<Promise<boolean>>' is not assignable to type 'IteratorResult<boolean, any>'.
+        Type 'IteratorYieldResult<Promise<boolean>>' is not assignable to type 'IteratorYieldResult<boolean>'.
+          Type 'Promise<boolean>' is not assignable to type 'boolean'.
+src/partitionScanner.ts(386,41): error TS7006: Parameter 'x' implicitly has an 'any' type.
 ================================
 Error: Project(s) failed to build
 rush rebuild - Errors! ( ? seconds)
@@ -221,17 +193,19 @@ XX of XX: [@azure/cognitiveservices-inkrecognizer] blocked by [@azure/core-http]
 XX of XX: [@azure/core-arm] blocked by [@azure/core-http]!
 XX of XX: [@azure/core-lro] blocked by [@azure/core-http]!
 XX of XX: [@azure/keyvault-keys] blocked by [@azure/core-http]!
+XX of XX: [@azure/keyvault-certificates] blocked by [@azure/core-http]!
 XX of XX: [@azure/keyvault-secrets] blocked by [@azure/core-http]!
 XX of XX: [@azure/storage-blob] blocked by [@azure/core-http]!
-XX of XX: [@azure/keyvault-certificates] blocked by [@azure/core-http]!
 XX of XX: [@azure/identity] blocked by [@azure/core-http]!
 XX of XX: [@azure/core-amqp] blocked by [@azure/core-http]!
 XX of XX: [@azure/event-hubs] blocked by [@azure/core-http]!
 XX of XX: [@azure/eventhubs-checkpointstore-blob] blocked by [@azure/core-http]!
 XX of XX: [@azure/storage-queue] blocked by [@azure/core-http]!
+XX of XX: [@azure/service-bus] blocked by [@azure/core-http]!
 XX of XX: [@azure/storage-file-share] blocked by [@azure/core-http]!
 XX of XX: [@azure/template] blocked by [@azure/core-http]!
-XX of XX: [@azure/event-processor-host] completed with warnings in ? seconds
+XX of XX: [@azure/event-processor-host] failed to build!
+XX of XX: [testhub] blocked by [@azure/event-processor-host]!
 XX of XX: [@azure/cosmos] completed with warnings in ? seconds
-XX of XX: [@azure/service-bus] completed with warnings in ? seconds
 [@azure/core-http] Returned error code: 1
+[@azure/event-processor-host] Returned error code: 2
