@@ -1,11 +1,51 @@
-Exit Code: 0
+Exit Code: 1
 Standard output:
 yarn run vX.X.X
 $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Node flags detected: --max_old_space_size=4095
 [XX:XX:XX] Using gulpfile /vscode/gulpfile.js
-Done in ?s.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(182,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+  The types returned by '[Symbol.iterator]().next(...)' are incompatible between these types.
+    Type 'IteratorResult<Thenable<CompletionList | undefined>, any>' is not assignable to type 'IteratorResult<CompletionList, any>'.
+      Type 'IteratorYieldResult<Thenable<CompletionList | undefined>>' is not assignable to type 'IteratorResult<CompletionList, any>'.
+        Type 'IteratorYieldResult<Thenable<CompletionList | undefined>>' is not assignable to type 'IteratorYieldResult<CompletionList>'.
+          Property 'items' is missing in type 'Thenable<CompletionList | undefined>' but required in type 'CompletionList'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(182,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(182,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(243,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(243,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(243,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(302,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(302,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(302,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(360,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(360,88): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(360,97): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,39): Argument of type 'Thenable<CompletionList | undefined>[]' is not assignable to parameter of type 'Iterable<CompletionList>'.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,128): Binding element 'result1' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,137): Binding element 'result2' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,146): Binding element 'result3' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/emmet/src/test/cssAbbreviationAction.test.ts(420,155): Binding element 'result4' implicitly has an 'any' type.
+[XX:XX:XX] Error: /vscode/extensions/git/src/commands.ts(189,60): Argument of type 'Promise<boolean>[]' is not assignable to parameter of type 'Iterable<boolean>'.
+  The types returned by '[Symbol.iterator]().next(...)' are incompatible between these types.
+    Type 'IteratorResult<Promise<boolean>, any>' is not assignable to type 'IteratorResult<boolean, any>'.
+      Type 'IteratorYieldResult<Promise<boolean>>' is not assignable to type 'IteratorResult<boolean, any>'.
+        Type 'IteratorYieldResult<Promise<boolean>>' is not assignable to type 'IteratorYieldResult<boolean>'.
+          Type 'Promise<boolean>' is not assignable to type 'boolean'.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
 
 Standard error:
+[XX:XX:XX] 'compile' errored after ?s
+[XX:XX:XX] Error: Found 1 errors
+    at Stream.<anonymous> (/vscode/build/lib/reporter.js:74:29)
+    at _end (/vscode/node_modules/through/index.js:65:9)
+    at Stream.stream.end (/vscode/node_modules/through/index.js:74:5)
+    at StreamFilter.onend (/vscode/node_modules/readable-stream/lib/_stream_readable.js:570:10)
+    at Object.onceWrapper (events.js:286:20)
+    at StreamFilter.emit (events.js:203:15)
+    at StreamFilter.EventEmitter.emit (domain.js:466:23)
+    at endReadableNT (/vscode/node_modules/readable-stream/lib/_stream_readable.js:992:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+error Command failed with exit code 1.
