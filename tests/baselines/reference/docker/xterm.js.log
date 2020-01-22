@@ -5,14 +5,18 @@ Standard output:
 > tsc -b ./tsconfig.all.json
 node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
+test/api/TestUtils.ts(16,26): error TS2345: Argument of type 'Promise<void>' is not assignable to parameter of type 'void'.
+node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
+node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
+addons/xterm-addon-attach/src/AttachAddon.api.ts(76,26): error TS2345: Argument of type 'Promise<void>' is not assignable to parameter of type 'void'.
 node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
+addons/xterm-addon-web-links/src/WebLinksAddon.api.ts(98,26): error TS2345: Argument of type 'Promise<void>' is not assignable to parameter of type 'void'.
 node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
-node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
-node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
+addons/xterm-addon-webgl/src/WebglRenderer.api.ts(919,26): error TS2345: Argument of type 'Promise<void>' is not assignable to parameter of type 'void'.
 node_modules/@types/ws/index.d.ts(44,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 node_modules/@types/ws/index.d.ts(45,39): error TS2694: Namespace '"url"' has no exported member 'URL'.
 
