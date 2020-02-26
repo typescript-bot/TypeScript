@@ -1,0 +1,10 @@
+Exit Code: 1
+Standard output:
+node_modules/@octokit/types/src/generated/Endpoints.ts(6297,6): error TS2300: Duplicate identifier 'ReactionsDeleteEndpoint'.
+node_modules/@octokit/types/src/generated/Endpoints.ts(6303,6): error TS2300: Duplicate identifier 'ReactionsDeleteRequestOptions'.
+node_modules/@octokit/types/src/generated/Endpoints.ts(6309,6): error TS2300: Duplicate identifier 'ReactionsDeleteEndpoint'.
+node_modules/@octokit/types/src/generated/Endpoints.ts(6315,6): error TS2300: Duplicate identifier 'ReactionsDeleteRequestOptions'.
+
+
+
+Standard error:
