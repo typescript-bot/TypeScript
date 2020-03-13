@@ -70,10 +70,10 @@ Standard output:
 @fluentui/docs: [XX:XX:XX] Requiring external module @uifabric/build/babel/register
 @fluentui/docs: [XX:XX:XX] Working directory changed to /office-ui-fabric-react
 @fluentui/docs: [XX:XX:XX] Using gulpfile /office-ui-fabric-react/gulpfile.ts
-@fluentui/docs: DocToccing single file "/office-ui-fabric-react/.github/CONTRIBUTING.md" for github.com.
-@fluentui/docs: ==================
 @fluentui/docs: > @fluentui/ability-attributes@X.X.X schema /office-ui-fabric-react/packages/fluentui/ability-attributes
 @fluentui/docs: > allyschema -c "process.env.NODE_ENV !== 'production'" schema.json > ./src/schema.ts
+@fluentui/docs: DocToccing single file "/office-ui-fabric-react/.github/CONTRIBUTING.md" for github.com.
+@fluentui/docs: ==================
 @fluentui/docs: "/office-ui-fabric-react/.github/CONTRIBUTING.md" will be updated
 @fluentui/docs: Everything is OK.
 @fluentui/docs: DocToccing single file "/office-ui-fabric-react/.github/setup-local-development.md" for github.com.
@@ -101,11 +101,133 @@ Standard output:
 @fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/examples/components/Toolbar/Content/ToolbarExampleMenuRadioGroup.shorthand.tsx(35,25):
 @fluentui/docs: TS2345: Argument of type 'boolean' is not assignable to parameter of type '(prevState: undefined) => undefined'.
 @fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx
-@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(34,22):
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(32,22):
 @fluentui/docs: TS2345: Argument of type 'number' is not assignable to parameter of type '(prevState: undefined) => undefined'.
 @fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx
-@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(64,31):
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(62,31):
 @fluentui/docs: TS2538: Type 'undefined' cannot be used as an index type.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Debug/DebugPanel.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Debug/DebugPanel.tsx(226,55):
+@fluentui/docs: TS2322: Type '{ [x: string]: AnimationIterationCountProperty; position: "fixed"; top: number; zIndex: number; width: string; height: string; color: string; background: string; lineHeight: number; fontSize: string; overflowY: "scroll"; boxShadow: string; }' is not assignable to type 'CSSProperties'.
+@fluentui/docs:   Index signature is incompatible with property 'alignContent'.
+@fluentui/docs:     Type 'AnimationIterationCountProperty' is not assignable to type 'string'.
+@fluentui/docs:       Type 'number' is not assignable to type 'string'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx(835,55):
+@fluentui/docs: TS2345: Argument of type 'ShorthandValue<DropdownItemProps>' is not assignable to parameter of type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:   Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:     Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'string'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx(1042,7):
+@fluentui/docs: TS2322: Type '(string | number | boolean | ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)>) | (new (props: any) => Component<...>)> | ReactNodeArray | (DropdownItemProps & ... 1 more ... & { ...; }))[]' is not assignable to type 'ShorthandCollection<DropdownItemProps, never>'.
+@fluentui/docs:   Type 'string | number | boolean | ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)>) | (new (props: any) => Component<...>)> | ReactNodeArray | (DropdownItemProps & ... 1 more ... & { ...; })' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:     Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:       Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'string'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx(1047,41):
+@fluentui/docs: TS2345: Argument of type 'ShorthandValue<DropdownItemProps>' is not assignable to parameter of type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:   Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:     Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'string'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Slider/Slider.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Slider/Slider.tsx(235,11):
+@fluentui/docs: TS2322: Type '{ [x: string]: string; }' is not assignable to type 'CSSProperties'.
+@fluentui/docs:   Index signature is incompatible with property 'appearance'.
+@fluentui/docs:     Type 'string' is not assignable to type 'AppearanceProperty'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Tooltip/Tooltip.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Tooltip/Tooltip.tsx(216,89):
+@fluentui/docs: TS2769: No overload matches this call.
+@fluentui/docs:   The last overload gave the following error.
+@fluentui/docs:     Argument of type 'MergedProps<HTMLAttributes<HTMLElement>>' is not assignable to parameter of type 'Partial<any> & Attributes'.
+@fluentui/docs:       Type 'MergedProps<HTMLAttributes<HTMLElement>>' is not assignable to type 'Attributes'.
+@fluentui/docs:         Index signature is incompatible with property 'key'.
+@fluentui/docs:           Type 'AccessibilityAttributes' is not assignable to type 'AnimationIterationCountProperty'.
+@fluentui/docs:             Type 'AccessibilityAttributes' is not assignable to type 'number'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Attachment/attachmentStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Attachment/attachmentStyles.ts(17,5):
+@fluentui/docs: TS2322: Type '{ cursor: string; ':focus-visible': any; ':hover': { [x: string]: string | { color: string; }; background: string; color: string; }; speak?: "-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"; ... 764 more ...; animationName?: string | ... 1 more ... | AnimationName<...>; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Types of property '':hover'' are incompatible.
+@fluentui/docs:     Type '{ [x: string]: string | { color: string; }; background: string; color: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:       Index signature is incompatible with property 'speak'.
+@fluentui/docs:         Type 'string | { color: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:           Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts(11,82):
+@fluentui/docs: TS2322: Type '{ paddingTop: string; paddingBottom: string; ':hover': { [x: string]: { opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }; }; speak?: "-moz-initial" | "inherit" | "initial" | ... 4 more ... | "spell-out"; ... 763 more ...; animationName?: string | ... 1 more ... | AnimationName<...>; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Types of property '':hover'' are incompatible.
+@fluentui/docs:     Type '{ [x: string]: { opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:       Index signature is incompatible with property 'speak'.
+@fluentui/docs:         Type '{ opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:           Type '{ opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }' is not assignable to type '"spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts(144,3):
+@fluentui/docs: TS2322: Type '({ props: p, variables: v }: ComponentStyleFunctionParam<ChatMessageStylesProps, ChatMessageVariables>) => { [x: string]: AnimationIterationCountProperty; ... 10 more ...; transform: string; }' is not assignable to type 'ComponentSlotStyleFunction<ChatMessageStylesProps, ChatMessageVariables>'.
+@fluentui/docs:   Type '{ [x: string]: AnimationIterationCountProperty; backgroundColor: string; color: string; boxShadow: string; position: "absolute"; padding: string; height: string; ... 4 more ...; transform: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'AnimationIterationCountProperty' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Checkbox/checkboxStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Checkbox/checkboxStyles.ts(36,5):
+@fluentui/docs: TS2322: Type '{ [x: string]: string | { borderColor: string; background: string; ':before': { margin: string; background: string; content: string; display: string; borderRadius: string; width: any; height: any; transition: string; }; backgroundImage: string; }; color: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'string | { borderColor: string; background: string; ':before': { margin: string; background: string; content: string; display: string; borderRadius: string; width: any; height: any; transition: string; }; backgroundImage: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Embed/embedStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Embed/embedStyles.ts(31,7):
+@fluentui/docs: TS2322: Type '{ [x: string]: { opacity: number; zIndex: number; }; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type '{ opacity: number; zIndex: number; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type '{ opacity: number; zIndex: number; }' is not assignable to type '"spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts(31,3):
+@fluentui/docs: TS2322: Type '{ color: string; } | { [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Type '{ [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'string | { backgroundImage: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts(84,3):
+@fluentui/docs: TS2322: Type '{ color: string; } | { [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Type '{ [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'string | { backgroundImage: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/MenuButton/menuButtonStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/MenuButton/menuButtonStyles.ts(10,23):
+@fluentui/docs: TS2322: Type '{ [x: string]: string | { padding: string; }; borderWidth: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'string | { padding: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Reaction/reactionStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Reaction/reactionStyles.ts(19,5):
+@fluentui/docs: TS2322: Type '{ [x: string]: string | { fontWeight: FontWeightProperty; }; color: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'string | { fontWeight: FontWeightProperty; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts(72,7):
+@fluentui/docs: TS2322: Type '{ [x: string]: React.CSSProperties; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'CSSProperties' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'CSSProperties' is not assignable to type '"spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts(74,7):
+@fluentui/docs: TS2322: Type '{ [x: string]: number | ICSSInJSStyle; outline: number; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'number | ICSSInJSStyle' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'number' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/getIconFillOrOutlineStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/getIconFillOrOutlineStyles.ts(4,90):
+@fluentui/docs: TS2322: Type '{ [x: string]: { display: string; }; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type '{ display: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type '{ display: string; }' is not assignable to type '"spell-out"'.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/utils/felaExpandCssShorthandsPlugin.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/utils/felaExpandCssShorthandsPlugin.ts(45,65):
+@fluentui/docs: TS2345: Argument of type 'Record<string, ICSSInJSStyle> | AnimationName<Record<string, any>>' is not assignable to parameter of type 'ICSSInJSStyle'.
+@fluentui/docs:   Type 'Record<string, ICSSInJSStyle>' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'ICSSInJSStyle' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'ICSSInJSStyle' is not assignable to type '"spell-out"'.
 @fluentui/docs: Child HtmlWebpackCompiler:
 @fluentui/docs:     Entrypoint HtmlWebpackPlugin_0 = __child-HtmlWebpackPlugin_0
 @fluentui/docs: [XX:XX:XX] Webpack compiler encountered errors.
@@ -126,10 +248,113 @@ info cli using local version of lerna
 @fluentui/docs:     /office-ui-fabric-react/packages/fluentui/docs/src/examples/components/Toolbar/Content/ToolbarExampleMenuRadioGroup.shorthand.tsx
 @fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/examples/components/Toolbar/Content/ToolbarExampleMenuRadioGroup.shorthand.tsx(35,25):
 @fluentui/docs: TS2345: Argument of type 'boolean' is not assignable to parameter of type '(prevState: undefined) => undefined'.,/office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx
-@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(34,22):
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(32,22):
 @fluentui/docs: TS2345: Argument of type 'number' is not assignable to parameter of type '(prevState: undefined) => undefined'.,/office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx
-@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(64,31):
-@fluentui/docs: TS2538: Type 'undefined' cannot be used as an index type.
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/docs/src/prototypes/VirtualizedTree/VirtualizedTree.tsx(62,31):
+@fluentui/docs: TS2538: Type 'undefined' cannot be used as an index type.,/office-ui-fabric-react/packages/fluentui/react/src/components/Debug/DebugPanel.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Debug/DebugPanel.tsx(226,55):
+@fluentui/docs: TS2322: Type '{ [x: string]: AnimationIterationCountProperty; position: "fixed"; top: number; zIndex: number; width: string; height: string; color: string; background: string; lineHeight: number; fontSize: string; overflowY: "scroll"; boxShadow: string; }' is not assignable to type 'CSSProperties'.
+@fluentui/docs:   Index signature is incompatible with property 'alignContent'.
+@fluentui/docs:     Type 'AnimationIterationCountProperty' is not assignable to type 'string'.
+@fluentui/docs:       Type 'number' is not assignable to type 'string'.,/office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx(835,55):
+@fluentui/docs: TS2345: Argument of type 'ShorthandValue<DropdownItemProps>' is not assignable to parameter of type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:   Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:     Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'string'.,/office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx(1042,7):
+@fluentui/docs: TS2322: Type '(string | number | boolean | ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)>) | (new (props: any) => Component<...>)> | ReactNodeArray | (DropdownItemProps & ... 1 more ... & { ...; }))[]' is not assignable to type 'ShorthandCollection<DropdownItemProps, never>'.
+@fluentui/docs:   Type 'string | number | boolean | ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)>) | (new (props: any) => Component<...>)> | ReactNodeArray | (DropdownItemProps & ... 1 more ... & { ...; })' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:     Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:       Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'string'.,/office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Dropdown/Dropdown.tsx(1047,41):
+@fluentui/docs: TS2345: Argument of type 'ShorthandValue<DropdownItemProps>' is not assignable to parameter of type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:   Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'ShorthandValue<DropdownItemProps & { kind?: never; }>'.
+@fluentui/docs:     Type 'DropdownItemProps & ObjectOf<any> & { children?: unknown; }' is not assignable to type 'string'.,/office-ui-fabric-react/packages/fluentui/react/src/components/Slider/Slider.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Slider/Slider.tsx(235,11):
+@fluentui/docs: TS2322: Type '{ [x: string]: string; }' is not assignable to type 'CSSProperties'.
+@fluentui/docs:   Index signature is incompatible with property 'appearance'.
+@fluentui/docs:     Type 'string' is not assignable to type 'AppearanceProperty'.,/office-ui-fabric-react/packages/fluentui/react/src/components/Tooltip/Tooltip.tsx
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/components/Tooltip/Tooltip.tsx(216,89):
+@fluentui/docs: TS2769: No overload matches this call.
+@fluentui/docs:   The last overload gave the following error.
+@fluentui/docs:     Argument of type 'MergedProps<HTMLAttributes<HTMLElement>>' is not assignable to parameter of type 'Partial<any> & Attributes'.
+@fluentui/docs:       Type 'MergedProps<HTMLAttributes<HTMLElement>>' is not assignable to type 'Attributes'.
+@fluentui/docs:         Index signature is incompatible with property 'key'.
+@fluentui/docs:           Type 'AccessibilityAttributes' is not assignable to type 'AnimationIterationCountProperty'.
+@fluentui/docs:             Type 'AccessibilityAttributes' is not assignable to type 'number'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Attachment/attachmentStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Attachment/attachmentStyles.ts(17,5):
+@fluentui/docs: TS2322: Type '{ cursor: string; ':focus-visible': any; ':hover': { [x: string]: string | { color: string; }; background: string; color: string; }; speak?: "-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"; ... 764 more ...; animationName?: string | ... 1 more ... | AnimationName<...>; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Types of property '':hover'' are incompatible.
+@fluentui/docs:     Type '{ [x: string]: string | { color: string; }; background: string; color: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:       Index signature is incompatible with property 'speak'.
+@fluentui/docs:         Type 'string | { color: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:           Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts(11,82):
+@fluentui/docs: TS2322: Type '{ paddingTop: string; paddingBottom: string; ':hover': { [x: string]: { opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }; }; speak?: "-moz-initial" | "inherit" | "initial" | ... 4 more ... | "spell-out"; ... 763 more ...; animationName?: string | ... 1 more ... | AnimationName<...>; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Types of property '':hover'' are incompatible.
+@fluentui/docs:     Type '{ [x: string]: { opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:       Index signature is incompatible with property 'speak'.
+@fluentui/docs:         Type '{ opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:           Type '{ opacity: number; width: string; '[x-out-of-boundaries]': { opacity: number; }; }' is not assignable to type '"spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Chat/chatMessageStyles.ts(144,3):
+@fluentui/docs: TS2322: Type '({ props: p, variables: v }: ComponentStyleFunctionParam<ChatMessageStylesProps, ChatMessageVariables>) => { [x: string]: AnimationIterationCountProperty; ... 10 more ...; transform: string; }' is not assignable to type 'ComponentSlotStyleFunction<ChatMessageStylesProps, ChatMessageVariables>'.
+@fluentui/docs:   Type '{ [x: string]: AnimationIterationCountProperty; backgroundColor: string; color: string; boxShadow: string; position: "absolute"; padding: string; height: string; ... 4 more ...; transform: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'AnimationIterationCountProperty' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Checkbox/checkboxStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Checkbox/checkboxStyles.ts(36,5):
+@fluentui/docs: TS2322: Type '{ [x: string]: string | { borderColor: string; background: string; ':before': { margin: string; background: string; content: string; display: string; borderRadius: string; width: any; height: any; transition: string; }; backgroundImage: string; }; color: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'string | { borderColor: string; background: string; ':before': { margin: string; background: string; content: string; display: string; borderRadius: string; width: any; height: any; transition: string; }; backgroundImage: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Embed/embedStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Embed/embedStyles.ts(31,7):
+@fluentui/docs: TS2322: Type '{ [x: string]: { opacity: number; zIndex: number; }; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type '{ opacity: number; zIndex: number; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type '{ opacity: number; zIndex: number; }' is not assignable to type '"spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts(31,3):
+@fluentui/docs: TS2322: Type '{ color: string; } | { [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Type '{ [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'string | { backgroundImage: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Menu/menuItemStyles.ts(84,3):
+@fluentui/docs: TS2322: Type '{ color: string; } | { [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Type '{ [x: string]: string | { backgroundImage: string; }; color: string; background: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'string | { backgroundImage: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/MenuButton/menuButtonStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/MenuButton/menuButtonStyles.ts(10,23):
+@fluentui/docs: TS2322: Type '{ [x: string]: string | { padding: string; }; borderWidth: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'string | { padding: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Reaction/reactionStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Reaction/reactionStyles.ts(19,5):
+@fluentui/docs: TS2322: Type '{ [x: string]: string | { fontWeight: FontWeightProperty; }; color: string; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'string | { fontWeight: FontWeightProperty; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts(72,7):
+@fluentui/docs: TS2322: Type '{ [x: string]: React.CSSProperties; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'CSSProperties' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'CSSProperties' is not assignable to type '"spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/components/Slider/sliderStyles.ts(74,7):
+@fluentui/docs: TS2322: Type '{ [x: string]: number | ICSSInJSStyle; outline: number; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type 'number | ICSSInJSStyle' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type 'number' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/themes/teams/getIconFillOrOutlineStyles.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/themes/teams/getIconFillOrOutlineStyles.ts(4,90):
+@fluentui/docs: TS2322: Type '{ [x: string]: { display: string; }; }' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:   Index signature is incompatible with property 'speak'.
+@fluentui/docs:     Type '{ display: string; }' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:       Type '{ display: string; }' is not assignable to type '"spell-out"'.,/office-ui-fabric-react/packages/fluentui/react/src/utils/felaExpandCssShorthandsPlugin.ts
+@fluentui/docs: ERROR in /office-ui-fabric-react/packages/fluentui/react/src/utils/felaExpandCssShorthandsPlugin.ts(45,65):
+@fluentui/docs: TS2345: Argument of type 'Record<string, ICSSInJSStyle> | AnimationName<Record<string, any>>' is not assignable to parameter of type 'ICSSInJSStyle'.
+@fluentui/docs:   Type 'Record<string, ICSSInJSStyle>' is not assignable to type 'ICSSInJSStyle'.
+@fluentui/docs:     Index signature is incompatible with property 'speak'.
+@fluentui/docs:       Type 'ICSSInJSStyle' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "normal" | "none" | "spell-out"'.
+@fluentui/docs:         Type 'ICSSInJSStyle' is not assignable to type '"spell-out"'.
 @fluentui/docs: Details:
 @fluentui/docs:     domainThrown: true
 @fluentui/docs: [XX:XX:XX] 'build:docs' errored after 
