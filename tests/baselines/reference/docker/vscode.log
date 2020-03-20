@@ -9,7 +9,7 @@ $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Error: /vscode/src/vs/workbench/electron-browser/parts/titlebar/titlebarPart.ts(229,7): Type 'null' is not assignable to type 'string'.
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/common/searchModel.ts(609,21): Type 'FileMatch | FileMatch[]' must have a '[Symbol.iterator]()' method that returns an iterator.
 [XX:XX:XX] Error: /vscode/src/vs/workbench/browser/parts/titlebar/titlebarPart.ts(470,5): Type 'null' is not assignable to type 'string'.
-[XX:XX:XX] Error: /vscode/src/vs/base/parts/quickinput/browser/quickInputList.ts(474,3): Type '"none" | null' is not assignable to type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/base/parts/quickinput/browser/quickInputList.ts(484,3): Type '"none" | null' is not assignable to type 'string'.
   Type 'null' is not assignable to type 'string'.
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/ui/splitview/splitview.ts(113,3): Type '"none" | null' is not assignable to type 'string'.
   Type 'null' is not assignable to type 'string'.
@@ -22,7 +22,7 @@ $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Error: /vscode/src/vs/workbench/electron-browser/parts/titlebar/titlebarPart.ts(229,7): Type 'null' is not assignable to type 'string'.
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/common/searchModel.ts(609,21): Type 'FileMatch | FileMatch[]' must have a '[Symbol.iterator]()' method that returns an iterator.
 [XX:XX:XX] Error: /vscode/src/vs/workbench/browser/parts/titlebar/titlebarPart.ts(470,5): Type 'null' is not assignable to type 'string'.
-[XX:XX:XX] Error: /vscode/src/vs/base/parts/quickinput/browser/quickInputList.ts(474,3): Type '"none" | null' is not assignable to type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/base/parts/quickinput/browser/quickInputList.ts(484,3): Type '"none" | null' is not assignable to type 'string'.
   Type 'null' is not assignable to type 'string'.
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/ui/splitview/splitview.ts(113,3): Type '"none" | null' is not assignable to type 'string'.
   Type 'null' is not assignable to type 'string'.
