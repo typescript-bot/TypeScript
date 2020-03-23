@@ -76,7 +76,7 @@ testhub
 ================================
 FAILURE (3)
 ================================
-@azure/core-http (? seconds)
+@azure/core-http ( ? seconds)
 npm ERR! code ELIFECYCLE
 npm ERR! errno 2
 npm ERR! @azure/core-http@X.X.X build:tsc: `tsc -p tsconfig.es.json`
