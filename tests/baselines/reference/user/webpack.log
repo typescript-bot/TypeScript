@@ -2,6 +2,14 @@ Exit Code: 1
 Standard output:
 lib/ExternalModule.js(305,28): error TS2554: Expected 1 arguments, but got 0.
 lib/Stats.js(68,31): error TS2554: Expected 3 arguments, but got 2.
+lib/cache/PackFileCacheStrategy.js(692,25): error TS2345: Argument of type 'false' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(698,25): error TS2345: Argument of type 'false' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(701,24): error TS2345: Argument of type 'true' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(714,25): error TS2345: Argument of type 'false' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(721,25): error TS2345: Argument of type 'true' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(734,27): error TS2345: Argument of type 'false' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(739,27): error TS2345: Argument of type 'true' is not assignable to parameter of type 'PromiseLike<never>'.
+lib/cache/PackFileCacheStrategy.js(744,26): error TS2345: Argument of type 'false' is not assignable to parameter of type 'PromiseLike<never>'.
 lib/library/SystemLibraryPlugin.js(127,35): error TS2554: Expected 1 arguments, but got 0.
 lib/optimize/ConcatenatedModule.js(205,32): error TS2554: Expected 1 arguments, but got 0.
 lib/wasm-async/AsyncWebAssemblyModulesPlugin.js(36,15): error TS2304: Cannot find name 'Chunk'.
