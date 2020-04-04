@@ -4,9 +4,9 @@ yarn run vX.X.X
 $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Node flags detected: --max_old_space_size=4095
 [XX:XX:XX] Using gulpfile /vscode/gulpfile.js
-[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/scm/browser/repositoryPane.ts(804,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/services/search/common/search.ts(617,20): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/webview/electron-browser/webviewCommands.ts(156,13): This condition will always return true since the function is always defined. Did you mean to call it instead?
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/scm/browser/repositoryPane.ts(804,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/preferences/browser/preferencesSearch.ts(522,18): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/test/browser/workbenchTestServices.ts(1032,183): Property 'getTypeId' does not exist on type 'never'.
   The intersection 'TestEditorInput & TestFileEditorInput' was reduced to 'never' because property 'typeId' exists in multiple constituents and is private in some.
@@ -23,9 +23,9 @@ $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(54,76): Property 'navigator' does not exist on type 'never'.
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(55,76): Property 'navigator' does not exist on type 'never'.
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(55,147): Property 'navigator' does not exist on type 'never'.
-[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/scm/browser/repositoryPane.ts(804,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/services/search/common/search.ts(617,20): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/webview/electron-browser/webviewCommands.ts(156,13): This condition will always return true since the function is always defined. Did you mean to call it instead?
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/scm/browser/repositoryPane.ts(804,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/preferences/browser/preferencesSearch.ts(522,18): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/test/browser/workbenchTestServices.ts(1032,183): Property 'getTypeId' does not exist on type 'never'.
   The intersection 'TestEditorInput & TestFileEditorInput' was reduced to 'never' because property 'typeId' exists in multiple constituents and is private in some.
