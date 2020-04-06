@@ -9,6 +9,8 @@ lib/wasm-async/AsyncWebAssemblyModulesPlugin.js(37,15): error TS2304: Cannot fin
 lib/wasm-async/AsyncWebAssemblyModulesPlugin.js(38,15): error TS2304: Cannot find name 'RuntimeTemplate'.
 lib/wasm-async/AsyncWebAssemblyModulesPlugin.js(39,15): error TS2304: Cannot find name 'ModuleGraph'.
 lib/wasm-async/AsyncWebAssemblyModulesPlugin.js(40,15): error TS2304: Cannot find name 'ChunkGraph'.
+lib/webpack.js(107,19): error TS2345: Argument of type 'WatchOptions | WatchOptions[]' is not assignable to parameter of type 'WatchOptions'.
+  Type 'WatchOptions[]' has no properties in common with type 'WatchOptions'.
 tooling/format-file-header.js(151,34): error TS2556: Expected 1-2 arguments, but got 0 or more.
 
 
