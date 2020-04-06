@@ -80,17 +80,17 @@ created packages/reactivity/dist/reactivity.esm.prod.js in ?s
 packages/runtime-core/src/componentOptions.ts
 Error: /vue-next/packages/runtime-core/src/componentOptions.ts(160,18): semantic error TS2344: Type 'Function & T[key]["get"]' does not satisfy the constraint '(...args: any) => any'.
   Type 'Function' provides no match for the signature '(...args: any): any'.
-    at error (/vue-next/node_modules/rollup/dist/shared/rollup.js:10120:30)
-    at throwPluginError (/vue-next/node_modules/rollup/dist/shared/rollup.js:16254:12)
-    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:17262:24)
-    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:16427:38)
+    at error (/vue-next/node_modules/rollup/dist/shared/rollup.js:10123:30)
+    at throwPluginError (/vue-next/node_modules/rollup/dist/shared/rollup.js:16260:12)
+    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:17268:24)
+    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:16433:38)
     at RollupContext.error (/vue-next/node_modules/rollup-plugin-typescript2/src/rollupcontext.ts:37:18)
     at /vue-next/node_modules/rollup-plugin-typescript2/src/print-diagnostics.ts:41:11
     at arrayEach (/vue-next/node_modules/rollup-plugin-typescript2/node_modules/lodash/lodash.js:516:11)
     at forEach (/vue-next/node_modules/rollup-plugin-typescript2/node_modules/lodash/lodash.js:9342:14)
     at _.each (/vue-next/node_modules/rollup-plugin-typescript2/src/print-diagnostics.ts:9:2)
     at Object.transform (/vue-next/node_modules/rollup-plugin-typescript2/src/index.ts:242:5)
-(node:17) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1 (EPERM): rollup -c --environment COMMIT:899287a,NODE_ENV:production,TARGET:runtime-core,TYPES:true
+(node:17) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1 (EPERM): rollup -c --environment COMMIT:4d19636,NODE_ENV:production,TARGET:runtime-core,TYPES:true
     at makeError (/vue-next/node_modules/execa/lib/error.js:59:11)
     at handlePromise (/vue-next/node_modules/execa/index.js:112:26)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
