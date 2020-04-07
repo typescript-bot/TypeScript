@@ -4357,6 +4357,7 @@ node_modules/chrome-devtools-frontend/front_end/coverage/CoverageModel.js(230,25
 node_modules/chrome-devtools-frontend/front_end/coverage/CoverageModel.js(267,37): error TS2339: Property 'peekLast' does not exist on type '{ end: number; count: number; }[]'.
 node_modules/chrome-devtools-frontend/front_end/coverage/CoverageModel.js(268,21): error TS2345: Argument of type '{ end: number; }' is not assignable to parameter of type '{ end: number; count: number; }'.
   Property 'count' is missing in type '{ end: number; }' but required in type '{ end: number; count: number; }'.
+node_modules/chrome-devtools-frontend/front_end/coverage/CoverageModel.js(418,32): error TS2339: Property 'upperBound' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/coverage/CoverageModel.js(441,25): error TS2339: Property 'peekLast' does not exist on type '{ end: number; count: number; }[]'.
 node_modules/chrome-devtools-frontend/front_end/coverage/CoverageView.js(20,48): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/coverage/CoverageView.js(32,53): error TS2555: Expected at least 2 arguments, but got 1.
@@ -12535,7 +12536,6 @@ node_modules/chrome-devtools-frontend/front_end/ui/ListControl.js(523,39): error
 node_modules/chrome-devtools-frontend/front_end/ui/ListControl.js(529,35): error TS2339: Property 'constrain' does not exist on type 'NumberConstructor'.
 node_modules/chrome-devtools-frontend/front_end/ui/ListControl.js(557,33): error TS2339: Property 'constrain' does not exist on type 'NumberConstructor'.
 node_modules/chrome-devtools-frontend/front_end/ui/ListControl.js(592,18): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/ui/ListControl.js(637,14): error TS2403: Subsequent variable declarations must have the same type.  Variable 'index' must be of type 'number', but here has type 'any'.
 node_modules/chrome-devtools-frontend/front_end/ui/ListWidget.js(16,38): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/ListWidget.js(17,18): error TS2339: Property 'tabIndex' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/ListWidget.js(127,14): error TS2339: Property 'createChild' does not exist on type 'Element'.
