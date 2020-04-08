@@ -15,14 +15,10 @@ $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Error: /vscode/src/vs/workbench/api/common/extHostDebugService.ts(1093,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/editor/contrib/hover/hoverOperation.ts(146,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/editor/contrib/hover/hoverOperation.ts(160,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/touch.ts(134,77): Property 'navigator' does not exist on type 'never'.
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(83,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(89,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(211,8): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(219,8): This condition will always return true since the function is always defined. Did you mean to call it instead?
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(54,76): Property 'navigator' does not exist on type 'never'.
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(55,76): Property 'navigator' does not exist on type 'never'.
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(55,147): Property 'navigator' does not exist on type 'never'.
 [XX:XX:XX] Error: /vscode/src/vs/workbench/services/search/common/search.ts(617,20): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/webview/electron-browser/webviewCommands.ts(156,13): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/scm/browser/repositoryPane.ts(804,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
@@ -34,21 +30,17 @@ $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Error: /vscode/src/vs/workbench/api/common/extHostDebugService.ts(1093,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/editor/contrib/hover/hoverOperation.ts(146,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/editor/contrib/hover/hoverOperation.ts(160,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/touch.ts(134,77): Property 'navigator' does not exist on type 'never'.
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(83,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(89,7): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(211,8): This condition will always return true since the function is always defined. Did you mean to call it instead?
 [XX:XX:XX] Error: /vscode/src/vs/base/browser/mouseEvent.ts(219,8): This condition will always return true since the function is always defined. Did you mean to call it instead?
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(54,76): Property 'navigator' does not exist on type 'never'.
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(55,76): Property 'navigator' does not exist on type 'never'.
-[XX:XX:XX] Error: /vscode/src/vs/base/browser/canIUse.ts(55,147): Property 'navigator' does not exist on type 'never'.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
 
 Standard error:
 [XX:XX:XX] 'compile' errored after 
-[XX:XX:XX] Error: Found 18 errors
+[XX:XX:XX] Error: Found 14 errors
     at Stream.<anonymous> (/vscode/build/lib/reporter.js:75:29)
     at _end (/vscode/node_modules/through/index.js:65:9)
     at Stream.stream.end (/vscode/node_modules/through/index.js:74:5)
