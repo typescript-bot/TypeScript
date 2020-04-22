@@ -1,11 +1,74 @@
-Exit Code: 0
+Exit Code: 1
 Standard output:
 yarn run vX.X.X
 $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Node flags detected: --max_old_space_size=4095
 [XX:XX:XX] Using gulpfile /vscode/gulpfile.js
-Done in ?s.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/test/browser/queryBuilder.test.ts(954,10): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/test/browser/queryBuilder.test.ts(955,10): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(663,10): Type '[string, TimelineAggregate] | undefined' must have a '[Symbol.iterator]()' method that returns an iterator.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(665,13): Property 'lastRenderedIndex' does not exist on type 'string | TimelineAggregate'.
+  Property 'lastRenderedIndex' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(667,33): Argument of type 'string | TimelineAggregate' is not assignable to parameter of type 'string'.
+  Type 'TimelineAggregate' is not assignable to type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(673,17): Property 'items' does not exist on type 'string | TimelineAggregate'.
+  Property 'items' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(678,20): Property 'more' does not exist on type 'string | TimelineAggregate'.
+  Property 'more' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(681,32): Property 'items' does not exist on type 'string | TimelineAggregate'.
+  Property 'items' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(695,13): Property 'lastRenderedIndex' does not exist on type 'string | TimelineAggregate'.
+  Property 'lastRenderedIndex' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/tasks/common/taskConfiguration.ts(1204,13): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/tasks/browser/taskQuickPick.ts(56,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/tasks/browser/taskQuickPick.ts(57,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/common/searchModel.ts(1104,10): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/debug/browser/debugToolBar.ts(274,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/browser/parts/statusbar/statusbarPart.ts(706,12): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/api/node/extHostDebugService.ts(100,12): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/platform/environment/node/argv.ts(253,9): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/code/electron-main/window.ts(762,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/code/electron-main/app.ts(196,12): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/test/browser/queryBuilder.test.ts(954,10): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/test/browser/queryBuilder.test.ts(955,10): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(663,10): Type '[string, TimelineAggregate] | undefined' must have a '[Symbol.iterator]()' method that returns an iterator.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(665,13): Property 'lastRenderedIndex' does not exist on type 'string | TimelineAggregate'.
+  Property 'lastRenderedIndex' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(667,33): Argument of type 'string | TimelineAggregate' is not assignable to parameter of type 'string'.
+  Type 'TimelineAggregate' is not assignable to type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(673,17): Property 'items' does not exist on type 'string | TimelineAggregate'.
+  Property 'items' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(678,20): Property 'more' does not exist on type 'string | TimelineAggregate'.
+  Property 'more' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(681,32): Property 'items' does not exist on type 'string | TimelineAggregate'.
+  Property 'items' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/timeline/browser/timelinePane.ts(695,13): Property 'lastRenderedIndex' does not exist on type 'string | TimelineAggregate'.
+  Property 'lastRenderedIndex' does not exist on type 'string'.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/tasks/common/taskConfiguration.ts(1204,13): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/tasks/browser/taskQuickPick.ts(56,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/tasks/browser/taskQuickPick.ts(57,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/search/common/searchModel.ts(1104,10): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/contrib/debug/browser/debugToolBar.ts(274,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/browser/parts/statusbar/statusbarPart.ts(706,12): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/workbench/api/node/extHostDebugService.ts(100,12): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/platform/environment/node/argv.ts(253,9): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/code/electron-main/window.ts(762,11): The operand of a 'delete' operator must be optional.
+[XX:XX:XX] Error: /vscode/src/vs/code/electron-main/app.ts(196,12): The operand of a 'delete' operator must be optional.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
 
 Standard error:
+[XX:XX:XX] 'compile' errored after 
+[XX:XX:XX] Error: Found 19 errors
+    at Stream.<anonymous> (/vscode/build/lib/reporter.js:75:29)
+    at _end (/vscode/node_modules/through/index.js:65:9)
+    at Stream.stream.end (/vscode/node_modules/through/index.js:74:5)
+    at Stream.onend (internal/streams/legacy.js:42:10)
+    at Stream.emit (events.js:203:15)
+    at Stream.EventEmitter.emit (domain.js:466:23)
+    at drain (/vscode/node_modules/through/index.js:34:23)
+    at Stream.stream.queue.stream.push (/vscode/node_modules/through/index.js:45:5)
+    at Stream.end (/vscode/node_modules/through/index.js:15:35)
+    at _end (/vscode/node_modules/through/index.js:65:9)
+error Command failed with exit code 1.
