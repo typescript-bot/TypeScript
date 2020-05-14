@@ -108,12 +108,6 @@ node_modules/acorn/acorn/dist/acorn.js(3111,16): error TS2339: Property 'value' 
 node_modules/acorn/acorn/dist/acorn.js(3111,42): error TS2339: Property 'inGeneratorContext' does not exist on type 'TokenType'.
 node_modules/acorn/acorn/dist/acorn.js(3114,10): error TS2339: Property 'exprAllowed' does not exist on type 'TokenType'.
 node_modules/acorn/acorn/dist/bin.js(46,27): error TS2339: Property 'getToken' does not exist on type 'Parser'.
-node_modules/acorn/acorn/dist/bin.js(54,30): error TS2769: No overload matches this call.
-  Overload 1 of 2, '(value: any, replacer?: ((this: any, key: string, value: any) => any) | undefined, space?: string | number | undefined): string', gave the following error.
-    Argument of type 'null' is not assignable to parameter of type '((this: any, key: string, value: any) => any) | undefined'.
-  Overload 2 of 2, '(value: any, replacer?: (string | number)[] | null | undefined, space?: string | number | undefined): string', gave the following error.
-    Argument of type '2 | null' is not assignable to parameter of type 'string | number | undefined'.
-      Type 'null' is not assignable to type 'string | number | undefined'.
 node_modules/acorn/acorn/dist/bin.js(58,23): error TS2769: No overload matches this call.
   Overload 1 of 3, '(path: string | number | Buffer | URL, options?: { encoding?: null | undefined; flag?: string | undefined; } | null | undefined): Buffer', gave the following error.
     Argument of type 'string | undefined' is not assignable to parameter of type 'string | number | Buffer | URL'.
@@ -125,12 +119,6 @@ node_modules/acorn/acorn/dist/bin.js(58,23): error TS2769: No overload matches t
     Argument of type 'string | undefined' is not assignable to parameter of type 'string | number | Buffer | URL'.
       Type 'undefined' is not assignable to type 'string | number | Buffer | URL'.
 node_modules/acorn/bin/_acorn.js(51,30): error TS2339: Property 'getToken' does not exist on type 'Parser'.
-node_modules/acorn/bin/_acorn.js(59,30): error TS2769: No overload matches this call.
-  Overload 1 of 2, '(value: any, replacer?: ((this: any, key: string, value: any) => any) | undefined, space?: string | number | undefined): string', gave the following error.
-    Argument of type 'null' is not assignable to parameter of type '((this: any, key: string, value: any) => any) | undefined'.
-  Overload 2 of 2, '(value: any, replacer?: (string | number)[] | null | undefined, space?: string | number | undefined): string', gave the following error.
-    Argument of type '2 | null' is not assignable to parameter of type 'string | number | undefined'.
-      Type 'null' is not assignable to type 'string | number | undefined'.
 node_modules/acorn/bin/_acorn.js(63,23): error TS2769: No overload matches this call.
   Overload 1 of 3, '(path: string | number | Buffer | URL, options?: { encoding?: null | undefined; flag?: string | undefined; } | null | undefined): Buffer', gave the following error.
     Argument of type 'string | undefined' is not assignable to parameter of type 'string | number | Buffer | URL'.
