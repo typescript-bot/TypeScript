@@ -1,0 +1,11 @@
+Exit Code: 1
+Standard output:
+src/Either.ts(392,3): error TS2322: Type 'Either<E, string | undefined>' is not assignable to type 'Either<E, string>'.
+  Type 'Right<string | undefined>' is not assignable to type 'Either<E, string>'.
+    Type 'Right<string | undefined>' is not assignable to type 'Right<string>'.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+
+
+
+Standard error:

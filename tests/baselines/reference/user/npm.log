@@ -308,10 +308,8 @@ node_modules/npm/lib/doctor.js(108,92): error TS2339: Property 'config' does not
 node_modules/npm/lib/doctor/check-files-permission.js(11,14): error TS2339: Property 'config' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/doctor/check-files-permission.js(11,38): error TS2339: Property 'config' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/doctor/verify-cached-files.js(10,90): error TS2769: No overload matches this call.
-  Overload 1 of 2, '(value: any, replacer?: ((this: any, key: string, value: any) => any) | undefined, space?: string | number | undefined): string', gave the following error.
+  The last overload gave the following error.
     Argument of type '2' is not assignable to parameter of type '((this: any, key: string, value: any) => any) | undefined'.
-  Overload 2 of 2, '(value: any, replacer?: (string | number)[] | null | undefined, space?: string | number | undefined): string', gave the following error.
-    Argument of type '2' is not assignable to parameter of type '(string | number)[] | null | undefined'.
 node_modules/npm/lib/edit.js(18,15): error TS2339: Property 'config' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/edit.js(27,28): error TS2339: Property 'dir' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/edit.js(32,11): error TS2339: Property 'commands' does not exist on type 'typeof EventEmitter'.
@@ -865,9 +863,9 @@ node_modules/npm/lib/utils/error-handler.js(146,27): error TS2339: Property 'con
 node_modules/npm/lib/utils/error-handler.js(166,14): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/npm/lib/utils/error-handler.js(167,16): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/npm/lib/utils/error-handler.js(168,8): error TS2339: Property 'code' does not exist on type 'Error'.
-node_modules/npm/lib/utils/error-handler.js(186,40): error TS2345: Argument of type '{ (value: any, replacer?: ((this: any, key: string, value: any) => any) | undefined, space?: string | number | undefined): string; (value: any, replacer?: (string | number)[] | null | undefined, space?: string | ... 1 more ... | undefined): string; }' is not assignable to parameter of type '(value: string, index: number, array: string[]) => string'.
+node_modules/npm/lib/utils/error-handler.js(186,40): error TS2345: Argument of type '{ (value: string | number | boolean | unknown[] | null, replacer?: (string | number)[] | null | undefined, space?: string | number | undefined): string; (value: Function | Symbol | undefined, replacer?: (string | number)[] | ... 1 more ... | undefined, space?: any): undefined; (value: object, replacer?: (string | nu...' is not assignable to parameter of type '(value: string, index: number, array: string[]) => string | undefined'.
   Types of parameters 'replacer' and 'index' are incompatible.
-    Type 'number' is not assignable to type '((this: any, key: string, value: any) => any) | undefined'.
+    Type 'number' is not assignable to type '(string | number)[] | null | undefined'.
 node_modules/npm/lib/utils/error-handler.js(188,33): error TS2339: Property 'version' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/utils/error-handler.js(205,11): error TS2339: Property 'config' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/utils/error-handler.js(208,18): error TS2339: Property 'code' does not exist on type 'Error'.
@@ -898,6 +896,8 @@ node_modules/npm/lib/utils/metrics.js(23,11): error TS2339: Property 'metricsPro
 node_modules/npm/lib/utils/metrics.js(23,31): error TS2339: Property 'metricsProcess' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/utils/metrics.js(31,35): error TS2339: Property 'config' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/utils/metrics.js(34,26): error TS2345: Argument of type 'Buffer' is not assignable to parameter of type 'string'.
+node_modules/npm/lib/utils/metrics.js(53,35): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
+  Type 'undefined' is not assignable to type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
 node_modules/npm/lib/utils/metrics.js(61,31): error TS2345: Argument of type 'Buffer' is not assignable to parameter of type 'string'.
 node_modules/npm/lib/utils/metrics.js(62,7): error TS2339: Property 'load' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/utils/metrics.js(64,9): error TS2339: Property 'registry' does not exist on type 'typeof EventEmitter'.
@@ -1262,6 +1262,8 @@ node_modules/npm/test/tap/dedupe.js(6,18): error TS2307: Cannot find module 'npm
 node_modules/npm/test/tap/dedupe.js(8,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/deprecate.js(1,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
 node_modules/npm/test/tap/deprecate.js(3,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
+node_modules/npm/test/tap/deprecate.js(68,31): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
 node_modules/npm/test/tap/dist-tag.js(5,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
 node_modules/npm/test/tap/dist-tag.js(7,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/dist-tag.js(49,15): error TS2345: Argument of type '(er: any) => void' is not assignable to parameter of type 'string | number | Options | undefined'.
@@ -1544,6 +1546,8 @@ node_modules/npm/test/tap/outdated.js(100,13): error TS2339: Property 'install' 
 node_modules/npm/test/tap/outdated.js(103,39): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
 node_modules/npm/test/tap/outdated.js(105,15): error TS2339: Property 'outdated' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/test/tap/override-bundled.js(3,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
+node_modules/npm/test/tap/override-bundled.js(94,52): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
+  Type 'undefined' is not assignable to type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
 node_modules/npm/test/tap/owner.js(1,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
 node_modules/npm/test/tap/owner.js(2,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/pack-files-and-ignores.js(2,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
@@ -1740,8 +1744,12 @@ node_modules/npm/test/tap/shrinkwrap-prod-dependency.js(8,20): error TS2307: Can
 node_modules/npm/test/tap/shrinkwrap-resolve-conflict.js(9,22): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/shrinkwrap-resolve-conflict.js(10,23): error TS2307: Cannot find module 'tacks' or its corresponding type declarations.
 node_modules/npm/test/tap/shrinkwrap-save-dev-with-existing-deps.js(7,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
+node_modules/npm/test/tap/shrinkwrap-save-dev-with-existing-deps.js(72,30): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
+  Type 'undefined' is not assignable to type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
 node_modules/npm/test/tap/shrinkwrap-save-dev-with-existing-deps.js(90,33): error TS2345: Argument of type 'Buffer' is not assignable to parameter of type 'string'.
 node_modules/npm/test/tap/shrinkwrap-save-with-existing-dev-deps.js(7,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
+node_modules/npm/test/tap/shrinkwrap-save-with-existing-dev-deps.js(55,30): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
+  Type 'undefined' is not assignable to type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
 node_modules/npm/test/tap/shrinkwrap-save-with-existing-dev-deps.js(72,33): error TS2345: Argument of type 'Buffer' is not assignable to parameter of type 'string'.
 node_modules/npm/test/tap/shrinkwrap-scoped-auth.js(8,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
 node_modules/npm/test/tap/shrinkwrap-scoped-auth.js(12,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
