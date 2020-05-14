@@ -186,6 +186,7 @@ node_modules/npm/lib/config/core.js(409,29): error TS2769: No overload matches t
         Type 'undefined' is not assignable to type 'string'.
 node_modules/npm/lib/config/defaults.js(20,52): error TS2345: Argument of type 'never[]' is not assignable to parameter of type '[any, ...any[]]'.
   Property '0' is missing in type 'never[]' but required in type '[any, ...any[]]'.
+node_modules/npm/lib/config/defaults.js(240,36): error TS2554: Expected 1 arguments, but got 0.
 node_modules/npm/lib/config/gentle-fs.js(16,11): error TS2339: Property 'prefix' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/config/gentle-fs.js(17,11): error TS2339: Property 'globalPrefix' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/lib/config/gentle-fs.js(18,11): error TS2339: Property 'dir' does not exist on type 'typeof EventEmitter'.
@@ -1628,6 +1629,8 @@ node_modules/npm/test/tap/publish-access-unscoped.js(31,35): error TS2345: Argum
 node_modules/npm/test/tap/publish-config.js(4,22): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(2,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(8,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
+node_modules/npm/test/tap/publish-invalid-semver-tag.js(26,59): error TS2345: Argument of type '{ name: string; version: string; }' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
+  Type '{ name: string; version: string; }' is missing the following properties from type 'Float64Array': BYTES_PER_ELEMENT, buffer, byteLength, byteOffset, and 26 more.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(37,9): error TS2339: Property 'load' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(53,7): error TS2339: Property 'config' does not exist on type 'typeof EventEmitter'.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(54,7): error TS2339: Property 'commands' does not exist on type 'typeof EventEmitter'.
@@ -1775,6 +1778,7 @@ node_modules/npm/test/tap/test-run-ls.js(2,20): error TS2307: Cannot find module
 node_modules/npm/test/tap/test-run-ls.js(5,26): error TS2732: Cannot find module '../../package.json'. Consider using '--resolveJsonModule' to import module with '.json' extension
 node_modules/npm/test/tap/tree-style.js(3,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/umask-lifecycle.js(6,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
+node_modules/npm/test/tap/umask-lifecycle.js(24,21): error TS2554: Expected 1 arguments, but got 0.
 node_modules/npm/test/tap/uninstall-in-reverse.js(2,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/uninstall-in-reverse.js(3,29): error TS2307: Cannot find module 'require-inject' or its corresponding type declarations.
 node_modules/npm/test/tap/uninstall-in-reverse.js(28,14): error TS2555: Expected at least 4 arguments, but got 3.
