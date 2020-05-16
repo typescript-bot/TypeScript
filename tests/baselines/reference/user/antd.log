@@ -1,0 +1,8 @@
+Exit Code: 1
+Standard output:
+node_modules/antd/lib/upload/Upload.d.ts(2,22): error TS7016: Could not find a declaration file for module 'rc-upload'. '../../../tests/cases/user/antd/node_modules/rc-upload/lib/index.js' implicitly has an 'any' type.
+  Try `npm install @types/rc-upload` if it exists or add a new declaration (.d.ts) file containing `declare module 'rc-upload';`
+
+
+
+Standard error:
