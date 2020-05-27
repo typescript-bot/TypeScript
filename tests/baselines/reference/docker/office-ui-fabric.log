@@ -51,19 +51,19 @@ info cli using local version of lerna
 @uifabric/tslint-rules: (node:28) Warning: Accessing non-existent property 'which' of module exports inside circular dependency
 @uifabric/tslint-rules: [XX:XX:XX XM] ▲ One of these [node-sass, postcss, autoprefixer] is not installed, so this task has no effect
 @fluentui/ability-attributes: npm WARN lifecycle The node binary used for scripts is  but npm is using /usr/local/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
-@fluentui/ability-attributes: internal/modules/cjs/loader.js:491
+@fluentui/ability-attributes: internal/modules/cjs/loader.js:497
 @fluentui/ability-attributes:   throw new ERR_PACKAGE_PATH_NOT_EXPORTED(basePath, mappingKey);
 @fluentui/ability-attributes:   ^
 @fluentui/ability-attributes: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main resolved in /office-ui-fabric-react/node_modules/@babel/helper-compilation-targets/package.json
-@fluentui/ability-attributes:     at applyExports (internal/modules/cjs/loader.js:491:9)
-@fluentui/ability-attributes:     at resolveExports (internal/modules/cjs/loader.js:507:23)
-@fluentui/ability-attributes:     at Function.Module._findPath (internal/modules/cjs/loader.js:635:31)
-@fluentui/ability-attributes:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1007:27)
-@fluentui/ability-attributes:     at Function.Module._load (internal/modules/cjs/loader.js:890:27)
-@fluentui/ability-attributes:     at Module.require (internal/modules/cjs/loader.js:1080:19)
-@fluentui/ability-attributes:     at require (internal/modules/cjs/helpers.js:72:18)
+@fluentui/ability-attributes:     at applyExports (internal/modules/cjs/loader.js:497:9)
+@fluentui/ability-attributes:     at resolveExports (internal/modules/cjs/loader.js:513:23)
+@fluentui/ability-attributes:     at Function.Module._findPath (internal/modules/cjs/loader.js:641:31)
+@fluentui/ability-attributes:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1016:27)
+@fluentui/ability-attributes:     at Function.Module._load (internal/modules/cjs/loader.js:898:27)
+@fluentui/ability-attributes:     at Module.require (internal/modules/cjs/loader.js:1089:19)
+@fluentui/ability-attributes:     at require (internal/modules/cjs/helpers.js:73:18)
 @fluentui/ability-attributes:     at Object.<anonymous> (/office-ui-fabric-react/node_modules/@babel/preset-env/lib/debug.js:8:33)
-@fluentui/ability-attributes:     at Module._compile (internal/modules/cjs/loader.js:1176:30)
+@fluentui/ability-attributes:     at Module._compile (internal/modules/cjs/loader.js:1200:30)
 @fluentui/ability-attributes:     at Module._compile (/office-ui-fabric-react/node_modules/pirates/lib/index.js:99:24) {
 @fluentui/ability-attributes:   code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
 @fluentui/ability-attributes: }
