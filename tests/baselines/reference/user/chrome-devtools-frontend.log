@@ -3963,9 +3963,10 @@ node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(122,25
   Type 'Element' is missing the following properties from type 'Icon': createdCallback, _descriptor, _spriteSheet, _iconType, and 113 more.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(147,27): error TS2322: Type 'Element' is not assignable to type 'Icon'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(177,67): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(209,41): error TS2339: Property 'asParsedURL' does not exist on type 'string'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(213,28): error TS2555: Expected at least 2 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(214,31): error TS2345: Argument of type '{ key: string; text: any; negative: false; }' is not assignable to parameter of type '{ key: string; text: string; regex: RegExp; negative: boolean; }'.
-  Property 'regex' is missing in type '{ key: string; text: any; negative: false; }' but required in type '{ key: string; text: string; regex: RegExp; negative: boolean; }'.
+node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(214,31): error TS2345: Argument of type '{ key: string; text: string; negative: false; }' is not assignable to parameter of type '{ key: string; text: string; regex: RegExp; negative: boolean; }'.
+  Property 'regex' is missing in type '{ key: string; text: string; negative: false; }' but required in type '{ key: string; text: string; regex: RegExp; negative: boolean; }'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(227,22): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(228,15): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(229,17): error TS2555: Expected at least 2 arguments, but got 1.
