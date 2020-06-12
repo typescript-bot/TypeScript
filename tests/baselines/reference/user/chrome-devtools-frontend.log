@@ -12,7 +12,7 @@ node_modules/chrome-devtools-frontend/front_end/Runtime.js(270,9): error TS2322:
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(280,5): error TS2322: Type 'Promise<void>' is not assignable to type 'Promise<undefined>'.
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(283,12): error TS2554: Expected 2-3 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(525,9): error TS2322: Type 'Window' is not assignable to type 'Window & typeof globalThis'.
-  Type 'Window' is missing the following properties from type 'typeof globalThis': globalThis, eval, parseInt, parseFloat, and 872 more.
+  Type 'Window' is missing the following properties from type 'typeof globalThis': globalThis, eval, parseInt, parseFloat, and 280 more.
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(527,49): error TS2352: Conversion of type 'Window & typeof globalThis' to type 'new () => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'Window & typeof globalThis' provides no match for the signature 'new (): any'.
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(539,24): error TS2351: This expression is not constructable.
@@ -218,98 +218,63 @@ node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeV
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(535,24): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(619,26): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilitySidebarView.js(195,29): error TS2339: Property 'createChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationGroupPreviewUI.js(7,11): error TS2339: Property 'AnimationGroupPreviewUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationGroupPreviewUI.js(14,18): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationGroupPreviewUI.js(15,39): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationGroupPreviewUI.js(17,47): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationGroupPreviewUI.js(18,30): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationGroupPreviewUI.js(70,37): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(8,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(15,26): error TS2339: Property 'animationAgent' does not exist on type 'Target'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(16,12): error TS2339: Property 'registerAnimationDispatcher' does not exist on type 'Target'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(16,54): error TS2339: Property 'AnimationDispatcher' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(28,47): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(35,45): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(49,29): error TS2339: Property 'remove' does not exist on type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(54,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(61,31): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(65,31): error TS2339: Property 'remove' does not exist on type 'string[]'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(104,45): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(123,26): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(168,33): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(171,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(180,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(183,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(188,34): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(189,46): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(194,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(198,26): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(202,25): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(328,35): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(330,40): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(358,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(367,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(370,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(376,43): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(474,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(476,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(481,28): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(486,32): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(490,28): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(512,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(514,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(553,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(583,43): error TS2339: Property 'remove' does not exist on type 'Map<string, AnimationGroup>'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(665,37): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(705,26): error TS2694: Namespace 'Protocol' has no exported member 'AnimationDispatcher'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(708,11): error TS2339: Property 'AnimationDispatcher' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(731,24): error TS2694: Namespace 'Protocol' has no exported member 'Animation'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(741,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(751,53): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(778,24): error TS2694: Namespace 'Protocol' has no exported member 'Page'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationModel.js(811,11): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(7,11): error TS2339: Property 'AnimationScreenshotPopover' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(18,39): error TS2345: Argument of type 'new (width?: number, height?: number) => HTMLImageElement' is not assignable to parameter of type 'Node'.
-  Type 'new (width?: number, height?: number) => HTMLImageElement' is missing the following properties from type 'Node': baseURI, childNodes, firstChild, isConnected, and 47 more.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(19,13): error TS2339: Property 'style' does not exist on type 'new (width?: number, height?: number) => HTMLImageElement'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(22,21): error TS2339: Property 'style' does not exist on type 'new (width?: number, height?: number) => HTMLImageElement'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(18,39): error TS2345: Argument of type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is not assignable to parameter of type 'Node'.
+  Type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is missing the following properties from type 'Node': baseURI, childNodes, firstChild, isConnected, and 47 more.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(19,13): error TS2339: Property 'style' does not exist on type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(22,21): error TS2339: Property 'style' does not exist on type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(23,45): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(30,39): error TS2339: Property 'window' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(37,25): error TS2339: Property 'window' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(42,39): error TS2339: Property 'window' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(53,50): error TS2339: Property 'style' does not exist on type 'new (width?: number, height?: number) => HTMLImageElement'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(55,52): error TS2339: Property 'style' does not exist on type 'new (width?: number, height?: number) => HTMLImageElement'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(8,11): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(53,50): error TS2339: Property 'style' does not exist on type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationScreenshotPopover.js(55,52): error TS2339: Property 'style' does not exist on type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(14,38): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(19,53): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(20,44): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(21,32): error TS2554: Expected 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(26,32): error TS2694: Namespace 'Protocol' has no exported member 'DOM'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(36,47): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(36,63): error TS2345: Argument of type 'this' is not assignable to parameter of type 'SDKModelObserver<any>'.
-  Type 'AnimationTimeline' is not assignable to type 'SDKModelObserver<any>'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(36,63): error TS2345: Argument of type 'this' is not assignable to parameter of type 'SDKModelObserver<AnimationModel>'.
+  Type 'AnimationTimeline' is not assignable to type 'SDKModelObserver<AnimationModel>'.
     Types of property 'modelAdded' are incompatible.
       Type '(animationModel: AnimationModel) => void' is not assignable to type '(model: T) => void'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(44,67): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(52,67): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(61,3): error TS2416: Property 'modelAdded' in type 'AnimationTimeline' is not assignable to the same property in base type 'SDKModelObserver<AnimationModel>'.
+  Type '(animationModel: AnimationModel) => void' is not assignable to type '(model: T) => void'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(61,3): error TS2416: Property 'modelAdded' in type 'AnimationTimeline' is not assignable to the same property in base type 'SDKModelObserver<AnimationModel>'.
   Type '(animationModel: AnimationModel) => void' is not assignable to type '(model: T) => void'.
     Types of parameters 'animationModel' and 'model' are incompatible.
       Type 'T' is not assignable to type 'AnimationModel'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(70,3): error TS2416: Property 'modelRemoved' in type 'AnimationTimeline' is not assignable to the same property in base type 'SDKModelObserver<AnimationModel>'.
   Type '(animationModel: AnimationModel) => void' is not assignable to type '(model: T) => void'.
+node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(70,3): error TS2416: Property 'modelRemoved' in type 'AnimationTimeline' is not assignable to the same property in base type 'SDKModelObserver<AnimationModel>'.
+  Type '(animationModel: AnimationModel) => void' is not assignable to type '(model: T) => void'.
     Types of parameters 'animationModel' and 'model' are incompatible.
       Type 'T' is not assignable to type 'AnimationModel'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(80,19): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(81,47): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(89,19): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(90,50): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(103,57): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(105,28): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(110,48): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(112,44): error TS2554: Expected 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(117,46): error TS2554: Expected 2 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(123,40): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(125,45): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
   Type 'TemplateStringsArray' is missing the following properties from type 'string[]': pop, push, reverse, shift, and 6 more.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(125,72): error TS2554: Expected 2 arguments, but got 1.
@@ -320,31 +285,20 @@ node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(1
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(138,35): error TS2554: Expected 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(139,41): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(144,48): error TS2554: Expected 2 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(145,36): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(169,18): error TS2339: Property 'isDescendant' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(172,5): error TS2741: Property 'hide' is missing in type '{ box: any; show: (popover: GlassPane) => Promise<any>; }' but required in type '{ box: AnchorBox; show: (arg0: GlassPane) => Promise<boolean>; hide: () => any; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(173,25): error TS2339: Property 'boxInWindow' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(176,44): error TS2339: Property 'keysArray' does not exist on type 'Map<AnimationGroup, AnimationGroupPreviewUI>'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(177,63): error TS2339: Property 'parentElement' does not exist on type 'EventTarget'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(197,25): error TS2339: Property 'AnimationScreenshotPopover' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(208,50): error TS2554: Expected 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(208,67): error TS2554: Expected 2 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(216,67): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(233,42): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(235,47): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(244,38): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(246,36): error TS2554: Expected 2 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(249,38): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(251,36): error TS2554: Expected 2 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(254,38): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(256,36): error TS2554: Expected 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(359,28): error TS2345: Argument of type '(left: AnimationGroup, right: AnimationGroup) => boolean' is not assignable to parameter of type '(a: any, b: any) => number'.
   Type 'boolean' is not assignable to type 'number'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(373,33): error TS2339: Property 'AnimationGroupPreviewUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(386,23): error TS2339: Property 'remove' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(390,11): error TS2339: Property 'consume' does not exist on type 'Event'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(445,30): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(450,37): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(484,36): error TS2339: Property 'millisToString' does not exist on type 'NumberConstructor'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(571,18): error TS2339: Property 'window' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(587,44): error TS2339: Property 'millisToString' does not exist on type 'NumberConstructor'.
@@ -355,71 +309,28 @@ node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(6
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(627,41): error TS2339: Property 'x' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(637,23): error TS2339: Property 'x' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(640,44): error TS2339: Property 'millisToString' does not exist on type 'NumberConstructor'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(655,11): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(658,11): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(667,11): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(673,38): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(674,42): error TS2339: Property 'createChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(713,11): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(730,28): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(733,28): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(7,11): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(21,39): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(24,31): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(25,48): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(26,50): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(30,73): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(37,29): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(45,39): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(46,27): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(46,59): error TS2339: Property 'hashCode' does not exist on type 'StringConstructor'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(69,30): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(70,39): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(71,39): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(72,39): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(87,71): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(100,28): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(129,23): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(131,41): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(133,40): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(145,29): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(147,29): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(149,29): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(170,32): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(173,41): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(174,41): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(181,53): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(182,53): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(185,11): error TS2339: Property 'style' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(188,13): error TS2339: Property 'style' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(193,13): error TS2339: Property 'style' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(196,36): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(197,13): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(206,55): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(208,63): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(213,68): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(240,52): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(242,61): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(245,70): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(255,94): error TS2339: Property 'createSVGChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(258,11): error TS2339: Property 'style' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(264,21): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(272,70): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(281,44): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(282,44): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(293,44): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(295,49): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(306,44): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(321,15): error TS2339: Property 'buttons' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(327,30): error TS2339: Property 'clientX' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(328,11): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(338,33): error TS2339: Property 'clientX' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(348,33): error TS2339: Property 'clientX' does not exist on type 'Event'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(351,44): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(380,11): error TS2339: Property 'consume' does not exist on type 'Event'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(387,11): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(394,11): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
-node_modules/chrome-devtools-frontend/front_end/animation/AnimationUI.js(402,11): error TS2339: Property 'AnimationUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/application_test_runner/AppcacheTestRunner.js(53,47): error TS2339: Property 'resources' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/application_test_runner/AppcacheTestRunner.js(102,25): error TS2339: Property 'resources' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/application_test_runner/AppcacheTestRunner.js(130,39): error TS2339: Property 'resources' does not exist on type 'any[]'.
@@ -648,6 +559,7 @@ node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighth
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(13608,7): error TS2339: Property 'protocolError' does not exist on type 'Error'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(14352,1): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(14940,8): error TS2339: Property '____lastLongTask' does not exist on type 'Window & typeof globalThis'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(14941,27): error TS2339: Property 'PerformanceObserver' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(14946,8): error TS2339: Property '____lastLongTask' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(14946,41): error TS2339: Property '____lastLongTask' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(14957,8): error TS2339: Property '____lhPerformanceObserver' does not exist on type 'Window & typeof globalThis'.
@@ -687,6 +599,8 @@ node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighth
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(17089,45): error TS2339: Property '__proto__' does not exist on type 'Document'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(17501,1): error TS2322: Type 'any[]' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(18010,29): error TS2554: Expected 0 arguments, but got 1.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(18844,43): error TS2339: Property 'URL' does not exist on type 'Window & typeof globalThis'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(18846,53): error TS2339: Property 'URLSearchParams' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(19499,6): error TS2339: Property 'Util' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(19585,1): error TS2322: Type 'Promise<void | { artifacts: any; auditResults: any[]; }>' is not assignable to type 'Promise<void>'.
   Type 'void | { artifacts: any; auditResults: any[]; }' is not assignable to type 'void'.
@@ -3477,6 +3391,8 @@ node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6022,42): error
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6164,32): error TS2322: Type 'string' is not assignable to type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6378,11): error TS2339: Property 'setHistory' does not exist on type 'Doc'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6391,10): error TS2339: Property 'linked' does not exist on type 'Doc'.
+node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6454,39): error TS2339: Property 'FileReader' does not exist on type 'Window & typeof globalThis'.
+node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6454,60): error TS2339: Property 'File' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6464,44): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'string'.
   Type 'ArrayBuffer' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6553,25): error TS2339: Property 'CodeMirror' does not exist on type 'Element'.
@@ -3960,7 +3876,7 @@ node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(34,63)
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(94,38): error TS2339: Property '_filter' does not exist on type 'TreeElement'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(119,47): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(122,25): error TS2345: Argument of type 'Element' is not assignable to parameter of type 'Icon'.
-  Type 'Element' is missing the following properties from type 'Icon': createdCallback, _descriptor, _spriteSheet, _iconType, and 113 more.
+  Type 'Element' is missing the following properties from type 'Icon': createdCallback, _descriptor, _spriteSheet, _iconType, and 114 more.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(147,27): error TS2322: Type 'Element' is not assignable to type 'Icon'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(177,67): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleSidebar.js(209,41): error TS2339: Property 'asParsedURL' does not exist on type 'string'.
@@ -4851,9 +4767,11 @@ node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(574,17
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(662,16): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1059,16): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1123,19): error TS2339: Property 'observe' does not exist on type 'ObjectConstructor'.
+node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1207,17): error TS2339: Property 'KeyboardEvent' does not exist on type 'Window & typeof globalThis'.
+node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1208,36): error TS2339: Property 'KeyboardEvent' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1224,18): error TS2304: Cannot find name 'CSSValue'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1231,28): error TS2304: Cannot find name 'CSSValue'.
-node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1246,42): error TS2339: Property 'getPropertyCSSValue' does not exist on type 'CSSStyleDeclaration'.
+node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1246,12): error TS2339: Property 'CSSStyleDeclaration' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1251,12): error TS2339: Property 'CSSPrimitiveValue' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1267,21): error TS2339: Property 'deepPath' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1270,12): error TS2339: Property 'FileError' does not exist on type 'Window & typeof globalThis'.
@@ -4951,7 +4869,7 @@ node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(27
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(289,16): error TS2339: Property 'window' does not exist on type 'Node'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(293,19): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(305,10): error TS2769: No overload matches this call.
-  Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLElement | ... 70 more ... | HTMLUListElement', gave the following error.
+  Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLCanvasElement | ... 70 more ... | HTMLUListElement', gave the following error.
     Argument of type 'string' is not assignable to parameter of type '"object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr"'.
   Overload 2 of 3, '(tagName: "listing" | "xmp", options?: ElementCreationOptions): HTMLPreElement', gave the following error.
     Argument of type 'string' is not assignable to parameter of type '"listing" | "xmp"'.
@@ -4961,7 +4879,7 @@ node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(31
   Type 'number' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(323,20): error TS2339: Property 'createElementWithClass' does not exist on type 'Document'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(324,17): error TS2769: No overload matches this call.
-  Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLElement | ... 70 more ... | HTMLUListElement', gave the following error.
+  Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLCanvasElement | ... 70 more ... | HTMLUListElement', gave the following error.
     Argument of type 'string' is not assignable to parameter of type '"object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr"'.
   Overload 2 of 3, '(tagName: "listing" | "xmp", options?: ElementCreationOptions): HTMLPreElement', gave the following error.
     Argument of type 'string' is not assignable to parameter of type '"listing" | "xmp"'.
@@ -5710,7 +5628,6 @@ node_modules/chrome-devtools-frontend/front_end/elements_test_runner/ElementsTes
 node_modules/chrome-devtools-frontend/front_end/elements_test_runner/ElementsTestRunner.js(1024,26): error TS2339: Property 'elements' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/elements_test_runner/ElementsTestRunner.js(1048,13): error TS2339: Property 'elements' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/elements_test_runner/ElementsTestRunner.js(1052,13): error TS2339: Property 'elements' does not exist on type 'any[]'.
-node_modules/chrome-devtools-frontend/front_end/elements_test_runner/ElementsTestRunner.js(1080,35): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/elements_test_runner/StylesUpdateLinksTestRunner.js(99,35): error TS2339: Property 'sprintf' does not exist on type 'StringConstructor'.
 node_modules/chrome-devtools-frontend/front_end/elements_test_runner/StylesUpdateLinksTestRunner.js(119,31): error TS2339: Property 'elements' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/emulation/AdvancedApp.js(142,44): error TS2339: Property 'style' does not exist on type 'Element'.
@@ -6017,9 +5934,7 @@ node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(46
   Type '{ url: string; type: string; }' is missing the following properties from type 'ContentProvider': contentURL, contentType, contentEncoded, requestContent, searchInContent
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(471,22): error TS2339: Property 'valuesArray' does not exist on type 'Map<string, ContentProvider>'.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(542,14): error TS2339: Property '_extensionOrigin' does not exist on type 'MessagePort'.
-node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(570,9): error TS2345: Argument of type '{ key: any; code: any; keyCode: any; location: any; ctrlKey: any; altKey: any; shiftKey: any; metaKey: any; }' is not assignable to parameter of type 'KeyboardEventInit'.
-  Object literal may only specify known properties, and 'keyCode' does not exist in type 'KeyboardEventInit'.
-node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(577,13): error TS2551: Property '__keyCode' does not exist on type 'KeyboardEvent'. Did you mean 'keyCode'?
+node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(567,30): error TS2339: Property 'KeyboardEvent' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(599,76): error TS2345: Argument of type 'symbol' is not assignable to parameter of type 'string'.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(603,9): error TS2345: Argument of type 'symbol' is not assignable to parameter of type 'string'.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(649,10): error TS2555: Expected at least 2 arguments, but got 1.
@@ -9064,6 +8979,8 @@ node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(221,
 node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(228,27): error TS2339: Property 'placeholder' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(228,48): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(295,52): error TS2339: Property 'value' does not exist on type 'Element'.
+node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(346,36): error TS2339: Property 'IDBKeyRange' does not exist on type 'Window & typeof globalThis'.
+node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(393,86): error TS2339: Property 'IDBKeyRange' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBViews.js(433,14): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/resources/ResourcesPanel.js(22,47): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/resources/ResourcesSection.js(69,33): error TS2339: Property 'remove' does not exist on type 'Map<string, FrameTreeElement>'.
@@ -10731,8 +10648,8 @@ node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptBreakpointsSid
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptBreakpointsSidebarPane.js(206,35): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptCompilerPlugin.js(5,43): error TS2694: Namespace 'Sources.UISourceCodeFrame' has no exported member 'Plugin'.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptCompilerPlugin.js(51,5): error TS2322: Type 'Timeout' is not assignable to type 'number'.
-node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptSourceFrame.js(60,50): error TS2345: Argument of type 'Event' is not assignable to parameter of type 'MouseEvent | KeyboardEvent'.
-  Type 'Event' is missing the following properties from type 'KeyboardEvent': altKey, char, charCode, code, and 16 more.
+node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptSourceFrame.js(60,50): error TS2345: Argument of type 'Event' is not assignable to parameter of type 'KeyboardEvent | MouseEvent'.
+  Type 'Event' is missing the following properties from type 'MouseEvent': altKey, button, buttons, clientX, and 20 more.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptSourceFrame.js(107,33): error TS2339: Property 'asParsedURL' does not exist on type 'string'.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptSourceFrame.js(128,66): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptSourceFrame.js(132,16): error TS2555: Expected at least 2 arguments, but got 1.
@@ -11603,9 +11520,9 @@ node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.j
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(204,36): error TS2339: Property '_overviewIndex' does not exist on type 'TimelineCategory'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(246,68): error TS2339: Property 'peekLast' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(248,81): error TS2339: Property '_overviewIndex' does not exist on type 'TimelineCategory'.
-node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(384,7): error TS2322: Type 'Promise<HTMLImageElement | (new (width?: number, height?: number) => HTMLImageElement)>' is not assignable to type 'Promise<HTMLImageElement>'.
-  Type 'HTMLImageElement | (new (width?: number, height?: number) => HTMLImageElement)' is not assignable to type 'HTMLImageElement'.
-    Type 'new (width?: number, height?: number) => HTMLImageElement' is missing the following properties from type 'HTMLImageElement': align, alt, border, complete, and 257 more.
+node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(384,7): error TS2322: Type 'Promise<HTMLImageElement | { new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }>' is not assignable to type 'Promise<HTMLImageElement>'.
+  Type 'HTMLImageElement | { new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is not assignable to type 'HTMLImageElement'.
+    Type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is missing the following properties from type 'HTMLImageElement': align, alt, border, complete, and 258 more.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(457,17): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(483,31): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineEventOverview.js(524,28): error TS2339: Property 'peekLast' does not exist on type 'TimelineFrame[]'.
@@ -11651,10 +11568,10 @@ node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataP
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(541,38): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(548,25): error TS2339: Property 'createChild' does not exist on type 'DocumentFragment'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(621,36): error TS2339: Property 'preciseMillisToString' does not exist on type 'NumberConstructor'.
-node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(654,37): error TS2339: Property 'naturalHeight' does not exist on type 'new (width?: number, height?: number) => HTMLImageElement'.
-node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(655,39): error TS2339: Property 'naturalWidth' does not exist on type 'new (width?: number, height?: number) => HTMLImageElement'.
-node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(660,23): error TS2345: Argument of type 'new (width?: number, height?: number) => HTMLImageElement' is not assignable to parameter of type 'CanvasImageSource'.
-  Type 'new (width?: number, height?: number) => HTMLImageElement' is missing the following properties from type 'OffscreenCanvas': height, width, convertToBlob, getContext, and 4 more.
+node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(654,37): error TS2339: Property 'naturalHeight' does not exist on type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }'.
+node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(655,39): error TS2339: Property 'naturalWidth' does not exist on type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }'.
+node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(660,23): error TS2345: Argument of type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is not assignable to parameter of type 'CanvasImageSource'.
+  Type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is missing the following properties from type 'OffscreenCanvas': height, width, convertToBlob, getContext, and 4 more.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(862,44): error TS2339: Property 'id' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(865,63): error TS2339: Property 'id' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineFlameChartDataProvider.js(866,44): error TS2339: Property 'id' does not exist on type 'Event'.
@@ -12120,7 +12037,7 @@ node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1649
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1651,40): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1652,40): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1652,69): error TS2339: Property 'millisToString' does not exist on type 'NumberConstructor'.
-node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1657,64): error TS2345: Argument of type 'new (width?: number, height?: number) => HTMLImageElement' is not assignable to parameter of type 'Node'.
+node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1657,64): error TS2345: Argument of type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }' is not assignable to parameter of type 'Node'.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1664,18): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1665,74): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js(1675,5): error TS2740: Type 'DocumentFragment' is missing the following properties from type 'Element': assignedSlot, attributes, classList, className, and 64 more.
@@ -12895,6 +12812,7 @@ node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(241,23): error 
 node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(242,21): error TS2339: Property 'tabIndex' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(249,19): error TS2339: Property 'tabIndex' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(268,68): error TS2345: Argument of type 'Event' is not assignable to parameter of type 'KeyboardEvent'.
+  Type 'Event' is missing the following properties from type 'KeyboardEvent': altKey, char, charCode, code, and 16 more.
 node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(269,13): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(273,19): error TS2339: Property 'key' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/ui/TextPrompt.js(299,19): error TS2339: Property 'ctrlKey' does not exist on type 'Event'.
@@ -13103,8 +13021,8 @@ node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1910,22): error TS
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1911,22): error TS2339: Property 'constrain' does not exist on type 'NumberConstructor'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1912,22): error TS2339: Property 'constrain' does not exist on type 'NumberConstructor'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1913,22): error TS2339: Property 'constrain' does not exist on type 'NumberConstructor'.
-node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1943,50): error TS2345: Argument of type 'HTMLImageElement' is not assignable to parameter of type '(new (width?: number, height?: number) => HTMLImageElement) | PromiseLike<new (width?: number, height?: number) => HTMLImageElement>'.
-  Property 'then' is missing in type 'HTMLImageElement' but required in type 'PromiseLike<new (width?: number, height?: number) => HTMLImageElement>'.
+node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1943,50): error TS2345: Argument of type 'HTMLImageElement' is not assignable to parameter of type '{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; } | PromiseLike<{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }>'.
+  Property 'then' is missing in type 'HTMLImageElement' but required in type 'PromiseLike<{ new (width?: number, height?: number): HTMLImageElement; readonly prototype: HTMLImageElement; }>'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1961,12): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1966,23): error TS2339: Property 'type' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1967,23): error TS2339: Property 'style' does not exist on type 'Element'.
