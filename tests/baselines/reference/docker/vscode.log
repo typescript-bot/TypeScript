@@ -1,11 +1,24 @@
-Exit Code: 0
+Exit Code: 1
 Standard output:
 yarn run vX.X.X
 $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Node flags detected: --max_old_space_size=4095
 [XX:XX:XX] Using gulpfile /vscode/gulpfile.js
-Done in ?s.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
 
 Standard error:
+[XX:XX:XX] 'compile' errored after ?s
+[XX:XX:XX] TypeError: Cannot read property 'flags' of undefined
+    at getMembersOfSymbol (/vscode/build/node_modules/typescript/lib/typescript.js:50411:27)
+    at resolveDeclaredMembers (/vscode/build/node_modules/typescript/lib/typescript.js:50200:31)
+    at resolveTypeReferenceMembers (/vscode/build/node_modules/typescript/lib/typescript.js:50501:26)
+    at resolveStructuredTypeMembers (/vscode/build/node_modules/typescript/lib/typescript.js:51139:25)
+    at getSignaturesOfStructuredType (/vscode/build/node_modules/typescript/lib/typescript.js:51789:32)
+    at getSignaturesOfType (/vscode/build/node_modules/typescript/lib/typescript.js:51799:20)
+    at signaturesRelatedTo (/vscode/build/node_modules/typescript/lib/typescript.js:57858:40)
+    at structuredTypeRelatedTo (/vscode/build/node_modules/typescript/lib/typescript.js:57339:39)
+    at recursiveTypeRelatedTo (/vscode/build/node_modules/typescript/lib/typescript.js:57027:64)
+    at isRelatedTo (/vscode/build/node_modules/typescript/lib/typescript.js:56624:38)
+error Command failed with exit code 1.
