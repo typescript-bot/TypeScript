@@ -1,0 +1,23 @@
+Exit Code: 2
+Standard output:
+node_modules/immutable/dist/immutable-nonambient.d.ts(1961,20): error TS2430: Interface 'Stack<T>' incorrectly extends interface 'Indexed<T>'.
+  The types returned by 'concat(...).filter(...)' are incompatible between these types.
+    Type 'Set<any>' is not assignable to type 'Indexed<any>'.
+node_modules/immutable/dist/immutable-nonambient.d.ts(2701,22): error TS2430: Interface 'Keyed<K, V>' incorrectly extends interface 'Seq<K, V>'.
+  The types returned by 'map(...).map(...).findKey(...)' are incompatible between these types.
+    Type 'K | undefined' is not assignable to type 'undefined'.
+      Type 'K' is not assignable to type 'undefined'.
+node_modules/immutable/dist/immutable-nonambient.d.ts(2824,22): error TS2430: Interface 'Indexed<T>' incorrectly extends interface 'Seq<number, T>'.
+  The types returned by 'map(...).map(...).concat(...).map(...).flatMap(...).findKey(...)' are incompatible between these types.
+    Type 'number | undefined' is not assignable to type 'undefined'.
+      Type 'number' is not assignable to type 'undefined'.
+node_modules/immutable/dist/immutable-nonambient.d.ts(3252,22): error TS2430: Interface 'Keyed<K, V>' incorrectly extends interface 'Collection<K, V>'.
+  The types returned by 'toSeq().map(...)' are incompatible between these types.
+    Type 'Keyed<K, any>' is not assignable to type 'Seq<K, any>'.
+node_modules/immutable/dist/immutable-nonambient.d.ts(3412,22): error TS2430: Interface 'Indexed<T>' incorrectly extends interface 'Collection<number, T>'.
+  The types returned by 'toSeq().map(...)' are incompatible between these types.
+    Type 'Indexed<any>' is not assignable to type 'Seq<number, any>'.
+
+
+
+Standard error:
