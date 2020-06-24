@@ -1,11 +1,80 @@
-Exit Code: 0
+Exit Code: 1
 Standard output:
 yarn run vX.X.X
 $ gulp compile --max_old_space_size=4095
 [XX:XX:XX] Node flags detected: --max_old_space_size=4095
 [XX:XX:XX] Using gulpfile /vscode/gulpfile.js
-Done in ?s.
+[XX:XX:XX] Error: /vscode/extensions/grunt/src/main.ts(116,5): Type 'Promise<Task[]>' is not assignable to type 'Thenable<Task[]>'.
+  The types of 'then(...).then' are incompatible between these types.
+    Type '<TResult1 = never, TResult2 = never>(onfulfilled?: ((value: never) => TResult1 | PromiseLike<TResult1>) | null | undefined, onrejected?: ((reason: any) => TResult2 | PromiseLike<...>) | null | undefined) => Promise<...>' is not assignable to type '{ <TResult>(onfulfilled?: ((value: any) => TResult | Thenable<TResult>) | undefined, onrejected?: ((reason: any) => TResult | Thenable<TResult>) | undefined): Thenable<...>; <TResult>(onfulfilled?: ((value: any) => TResult | Thenable<...>) | undefined, onrejected?: ((reason: any) => void) | undefined): Thenable<...>...'.
+      Types of parameters 'onrejected' and 'onrejected' are incompatible.
+        Type '((reason: any) => void) | undefined' is not assignable to type '((reason: any) => PromiseLike<any>) | null | undefined'.
+          Type '(reason: any) => void' is not assignable to type '(reason: any) => PromiseLike<any>'.
+            Type 'void' is not assignable to type 'PromiseLike<any>'.
+[XX:XX:XX] Error: /vscode/extensions/grunt/src/main.ts(118,4): Type 'Task[] | undefined' is not assignable to type 'Task[]'.
+  Type 'undefined' is not assignable to type 'Task[]'.
+[XX:XX:XX] Error: /vscode/extensions/grunt/src/main.ts(299,5): Type '() => Promise<vscode.Task[]>' is not assignable to type '(token?: CancellationToken | undefined) => ProviderResult<Task[]>'.
+  Type 'Promise<Task[]>' is not assignable to type 'ProviderResult<Task[]>'.
+    Type 'Promise<Task[]>' is not assignable to type 'Thenable<Task[] | null | undefined>'.
+      The types returned by 'then(...)' are incompatible between these types.
+        Type 'Promise<never>' is not assignable to type 'Thenable<any>'.
+[XX:XX:XX] Error: /vscode/extensions/grunt/src/main.ts(302,5): Type '(_task: Task) => Promise<Task | undefined>' is not assignable to type '(task: Task, token?: CancellationToken | undefined) => ProviderResult<Task>'.
+  Type 'Promise<Task | undefined>' is not assignable to type 'ProviderResult<Task>'.
+    Type 'Promise<Task | undefined>' is not assignable to type 'Thenable<Task | null | undefined>'.
+      The types returned by 'then(...)' are incompatible between these types.
+        Type 'Promise<never>' is not assignable to type 'Thenable<any>'.
+[XX:XX:XX] Error: /vscode/extensions/gulp/src/main.ts(124,5): Type 'Promise<Task[]>' is not assignable to type 'Thenable<Task[]>'.
+  The types of 'then(...).then' are incompatible between these types.
+    Type '<TResult1 = never, TResult2 = never>(onfulfilled?: ((value: never) => TResult1 | PromiseLike<TResult1>) | null | undefined, onrejected?: ((reason: any) => TResult2 | PromiseLike<...>) | null | undefined) => Promise<...>' is not assignable to type '{ <TResult>(onfulfilled?: ((value: any) => TResult | Thenable<TResult>) | undefined, onrejected?: ((reason: any) => TResult | Thenable<TResult>) | undefined): Thenable<...>; <TResult>(onfulfilled?: ((value: any) => TResult | Thenable<...>) | undefined, onrejected?: ((reason: any) => void) | undefined): Thenable<...>...'.
+      Types of parameters 'onrejected' and 'onrejected' are incompatible.
+        Type '((reason: any) => void) | undefined' is not assignable to type '((reason: any) => PromiseLike<any>) | null | undefined'.
+          Type '(reason: any) => void' is not assignable to type '(reason: any) => PromiseLike<any>'.
+            Type 'void' is not assignable to type 'PromiseLike<any>'.
+[XX:XX:XX] Error: /vscode/extensions/gulp/src/main.ts(126,4): Type 'Task[] | undefined' is not assignable to type 'Task[]'.
+  Type 'undefined' is not assignable to type 'Task[]'.
+[XX:XX:XX] Error: /vscode/extensions/gulp/src/main.ts(281,5): Type '() => Promise<Task[]>' is not assignable to type '(token?: CancellationToken | undefined) => ProviderResult<Task[]>'.
+  Type 'Promise<Task[]>' is not assignable to type 'ProviderResult<Task[]>'.
+    Type 'Promise<Task[]>' is not assignable to type 'Thenable<Task[] | null | undefined>'.
+      The types returned by 'then(...)' are incompatible between these types.
+        Type 'Promise<never>' is not assignable to type 'Thenable<any>'.
+[XX:XX:XX] Error: /vscode/extensions/gulp/src/main.ts(284,5): Type '(_task: Task) => Promise<Task | undefined>' is not assignable to type '(task: Task, token?: CancellationToken | undefined) => ProviderResult<Task>'.
+  Type 'Promise<Task | undefined>' is not assignable to type 'ProviderResult<Task>'.
+    Type 'Promise<Task | undefined>' is not assignable to type 'Thenable<Task | null | undefined>'.
+      The types returned by 'then(...)' are incompatible between these types.
+        Type 'Promise<never>' is not assignable to type 'Thenable<any>'.
+[XX:XX:XX] Error: /vscode/extensions/jake/src/main.ts(116,5): Type 'Promise<Task[]>' is not assignable to type 'Thenable<Task[]>'.
+  The types of 'then(...).then' are incompatible between these types.
+    Type '<TResult1 = never, TResult2 = never>(onfulfilled?: ((value: never) => TResult1 | PromiseLike<TResult1>) | null | undefined, onrejected?: ((reason: any) => TResult2 | PromiseLike<...>) | null | undefined) => Promise<...>' is not assignable to type '{ <TResult>(onfulfilled?: ((value: any) => TResult | Thenable<TResult>) | undefined, onrejected?: ((reason: any) => TResult | Thenable<TResult>) | undefined): Thenable<...>; <TResult>(onfulfilled?: ((value: any) => TResult | Thenable<...>) | undefined, onrejected?: ((reason: any) => void) | undefined): Thenable<...>...'.
+      Types of parameters 'onrejected' and 'onrejected' are incompatible.
+        Type '((reason: any) => void) | undefined' is not assignable to type '((reason: any) => PromiseLike<any>) | null | undefined'.
+          Type '(reason: any) => void' is not assignable to type '(reason: any) => PromiseLike<any>'.
+            Type 'void' is not assignable to type 'PromiseLike<any>'.
+[XX:XX:XX] Error: /vscode/extensions/jake/src/main.ts(118,4): Type 'Task[] | undefined' is not assignable to type 'Task[]'.
+  Type 'undefined' is not assignable to type 'Task[]'.
+[XX:XX:XX] Error: /vscode/extensions/jake/src/main.ts(273,5): Type '() => Promise<Task[]>' is not assignable to type '(token?: CancellationToken | undefined) => ProviderResult<Task[]>'.
+  Type 'Promise<Task[]>' is not assignable to type 'ProviderResult<Task[]>'.
+    Type 'Promise<Task[]>' is not assignable to type 'Thenable<Task[] | null | undefined>'.
+      The types returned by 'then(...)' are incompatible between these types.
+        Type 'Promise<never>' is not assignable to type 'Thenable<any>'.
+[XX:XX:XX] Error: /vscode/extensions/jake/src/main.ts(276,5): Type '(_task: Task) => Promise<Task | undefined>' is not assignable to type '(task: Task, token?: CancellationToken | undefined) => ProviderResult<Task>'.
+  Type 'Promise<Task | undefined>' is not assignable to type 'ProviderResult<Task>'.
+    Type 'Promise<Task | undefined>' is not assignable to type 'Thenable<Task | null | undefined>'.
+      The types returned by 'then(...)' are incompatible between these types.
+        Type 'Promise<never>' is not assignable to type 'Thenable<any>'.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 
 
 Standard error:
+[XX:XX:XX] 'compile' errored after ?s
+[XX:XX:XX] Error: Found 4 errors
+    at Stream.<anonymous> (/vscode/build/lib/reporter.js:75:29)
+    at _end (/vscode/node_modules/through/index.js:65:9)
+    at Stream.stream.end (/vscode/node_modules/through/index.js:74:5)
+    at StreamFilter.onend (/vscode/node_modules/readable-stream/lib/_stream_readable.js:570:10)
+    at Object.onceWrapper (events.js:286:20)
+    at StreamFilter.emit (events.js:203:15)
+    at StreamFilter.EventEmitter.emit (domain.js:466:23)
+    at endReadableNT (/vscode/node_modules/readable-stream/lib/_stream_readable.js:992:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+error Command failed with exit code 1.
