@@ -8524,7 +8524,6 @@ node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(335
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(340,103): error TS2339: Property 'nodeFilter' does not exist on type 'DataGrid<any>'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(344,50): error TS2551: Property 'jumpBackwards' does not exist on type 'SearchConfig'. Did you mean 'jumpBackward'?
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(375,37): error TS2339: Property 'revealObjectByHeapSnapshotId' does not exist on type 'DataGrid<any>'.
-node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(397,25): error TS2339: Property '_loadPromise' does not exist on type 'ProfileHeader'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(405,24): error TS2345: Argument of type 'SearchConfig' is not assignable to parameter of type 'SearchConfig'.
   Property 'toSearchRegex' is missing in type 'SearchConfig' but required in type 'SearchConfig'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(410,20): error TS2339: Property 'filterSelectIndexChanged' does not exist on type 'DataGrid<any>'.
@@ -8535,7 +8534,6 @@ node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(492
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(500,31): error TS2339: Property 'snapshot' does not exist on type 'DataGrid<any>'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(507,18): error TS2339: Property 'snapshot' does not exist on type 'DataGrid<any>'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(508,16): error TS2339: Property 'setDataSource' does not exist on type 'DataGrid<any>'.
-node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(514,53): error TS2339: Property '_loadPromise' does not exist on type 'ProfileHeader'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(524,42): error TS2339: Property 'selectedOptions' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(554,24): error TS2345: Argument of type 'SearchConfig' is not assignable to parameter of type 'SearchConfig'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotView.js(559,24): error TS2694: Namespace 'Protocol' has no exported member 'HeapProfiler'.
