@@ -182,6 +182,7 @@ node_modules/lodash/_overRest.js(24,27): error TS2532: Object is possibly 'undef
 node_modules/lodash/_overRest.js(27,27): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_overRest.js(28,22): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_overRest.js(31,15): error TS2538: Type 'undefined' cannot be used as an index type.
+node_modules/lodash/_stackDelete.js(11,19): error TS2339: Property '__data__' does not exist on type 'stackDelete'.
 node_modules/lodash/_stackSet.js(21,22): error TS2339: Property '__data__' does not exist on type 'ListCache'.
 node_modules/lodash/_stackSet.js(24,26): error TS2339: Property 'size' does not exist on type 'ListCache'.
 node_modules/lodash/_unicodeWords.js(62,20): error TS8024: JSDoc '@param' tag has name 'The', but there is no parameter with that name.
@@ -383,6 +384,9 @@ node_modules/lodash/minBy.js(30,50): error TS2554: Expected 0-1 arguments, but g
 node_modules/lodash/mixin.js(45,24): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/lodash/mixin.js(49,49): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/mixin.js(66,61): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
+node_modules/lodash/next.js(27,36): error TS2339: Property 'value' does not exist on type 'wrapperNext'.
+node_modules/lodash/next.js(29,19): error TS2339: Property '__index__' does not exist on type 'wrapperNext'.
+node_modules/lodash/next.js(30,55): error TS2339: Property '__index__' does not exist on type 'wrapperNext'.
 node_modules/lodash/nthArg.js(28,26): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
   Type 'undefined' is not assignable to type 'number'.
 node_modules/lodash/omit.js(48,32): error TS2345: Argument of type 'number' is not assignable to parameter of type 'boolean'.
