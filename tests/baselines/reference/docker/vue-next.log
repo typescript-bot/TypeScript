@@ -1,7 +1,7 @@
 Exit Code: 0
 Standard output:
 
-> @X.X.X-beta.19 build /vue-next
+> @X.X.X-beta.20 build /vue-next
 > node scripts/build.js "--types"
 Rolling up type definitions for compiler-core...
 Analysis will use the bundled TypeScript version 3.9.6
@@ -105,16 +105,16 @@ created packages/reactivity/dist/reactivity.global.prod.js in ?s
 packages/runtime-core/src/apiInject.ts
 Error: /vue-next/packages/runtime-core/src/apiInject.ts(40,9): semantic error TS2360: The left-hand side of an 'in' expression must be of type 'any', 'string', 'number', or 'symbol'.
     at error (/vue-next/node_modules/rollup/dist/shared/rollup.js:5171:30)
-    at throwPluginError (/vue-next/node_modules/rollup/dist/shared/rollup.js:17415:12)
-    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:18036:24)
-    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:17588:38)
+    at throwPluginError (/vue-next/node_modules/rollup/dist/shared/rollup.js:17416:12)
+    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:18035:24)
+    at Object.error (/vue-next/node_modules/rollup/dist/shared/rollup.js:17589:38)
     at RollupContext.error (/vue-next/node_modules/rollup-plugin-typescript2/src/rollupcontext.ts:37:18)
     at /vue-next/node_modules/rollup-plugin-typescript2/src/print-diagnostics.ts:41:11
     at arrayEach (/vue-next/node_modules/rollup-plugin-typescript2/node_modules/lodash/lodash.js:516:11)
     at forEach (/vue-next/node_modules/rollup-plugin-typescript2/node_modules/lodash/lodash.js:9342:14)
     at _.each (/vue-next/node_modules/rollup-plugin-typescript2/src/print-diagnostics.ts:9:2)
     at Object.transform (/vue-next/node_modules/rollup-plugin-typescript2/src/index.ts:242:5)
-(node:17) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1: rollup -c --environment COMMIT:9b04ea3,NODE_ENV:production,TARGET:runtime-core,TYPES:true
+(node:17) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1: rollup -c --environment COMMIT:18c537d,NODE_ENV:production,TARGET:runtime-core,TYPES:true
     at makeError (/vue-next/node_modules/execa/lib/error.js:59:11)
     at handlePromise (/vue-next/node_modules/execa/index.js:114:26)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
