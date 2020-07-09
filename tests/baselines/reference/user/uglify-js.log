@@ -135,7 +135,7 @@ node_modules/uglify-js/lib/compress.js(6136,57): error TS2345: Argument of type 
   Target requires 1 element(s) but source may have fewer.
 node_modules/uglify-js/lib/compress.js(6294,32): error TS2554: Expected 2 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(6300,45): error TS2554: Expected 0 arguments, but got 1.
-node_modules/uglify-js/lib/compress.js(6307,25): error TS2403: Subsequent variable declarations must have the same type.  Variable 'code' must be of type 'string', but here has type '{ get: () => string; toString: () => string; indent: (half: any) => void; indentation: () => number; current_width: () => number; should_break: () => boolean; has_parens: () => boolean; newline: () => void; print: (str: any) => void; ... 23 more ...; parent: (n: any) => any; }'.
+node_modules/uglify-js/lib/compress.js(6307,25): error TS2403: Subsequent variable declarations must have the same type.  Variable 'code' must be of type 'string', but here has type '{ get: () => string; toString: () => string; indent: (half: any) => void; indentation: () => number; current_width: () => number; should_break: () => any; has_parens: () => boolean; newline: () => void; print: (str: any) => void; ... 23 more ...; parent: (n: any) => any; }'.
 node_modules/uglify-js/lib/compress.js(6311,36): error TS2532: Object is possibly 'undefined'.
 node_modules/uglify-js/lib/compress.js(6316,41): error TS2339: Property 'get' does not exist on type 'string'.
 node_modules/uglify-js/lib/compress.js(6355,59): error TS2554: Expected 2 arguments, but got 1.
@@ -147,7 +147,6 @@ node_modules/uglify-js/lib/compress.js(6509,32): error TS2532: Object is possibl
 node_modules/uglify-js/lib/compress.js(6513,27): error TS2532: Object is possibly 'undefined'.
 node_modules/uglify-js/lib/compress.js(6732,38): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(7008,18): error TS2454: Variable 'is_strict_comparison' is used before being assigned.
-node_modules/uglify-js/lib/compress.js(7635,29): error TS2367: This condition will always return 'false' since the types 'boolean' and 'string' have no overlap.
 node_modules/uglify-js/lib/compress.js(7679,47): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(7701,66): error TS2554: Expected 2 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(7769,39): error TS2554: Expected 0 arguments, but got 1.
