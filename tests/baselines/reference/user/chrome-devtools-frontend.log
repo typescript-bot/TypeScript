@@ -9363,8 +9363,8 @@ node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(4
 node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(42,60): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(77,18): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(114,37): error TS2339: Property 'valuesArray' does not exist on type 'Set<any>'.
-node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(124,40): error TS2345: Argument of type '{ 0: boolean; }' is not assignable to parameter of type '{ [x: string]: boolean; }'.
-  Index signature is missing in type '{ 0: boolean; }'.
+node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(124,40): error TS2345: Argument of type '{ '0': boolean; }' is not assignable to parameter of type '{ [x: string]: boolean; }'.
+  Index signature is missing in type '{ '0': boolean; }'.
 node_modules/chrome-devtools-frontend/front_end/resources/DatabaseTableView.js(130,18): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBModel.js(32,26): error TS2694: Namespace 'Protocol' has no exported member 'StorageDispatcher'.
 node_modules/chrome-devtools-frontend/front_end/resources/IndexedDBModel.js(41,12): error TS2339: Property 'registerStorageDispatcher' does not exist on type 'Target'.
