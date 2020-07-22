@@ -1,0 +1,7 @@
+Exit Code: 2
+Standard output:
+node_modules/immutable/dist/immutable-nonambient.d.ts(187,20): error TS2589: Type instantiation is excessively deep and possibly infinite.
+
+
+
+Standard error:
