@@ -1,0 +1,9 @@
+Exit Code: 2
+Standard output:
+src/common/Coverage.ts(249,7): error TS2558: Expected 1 type arguments, but got 4.
+src/common/FrameManager.ts(117,38): error TS2558: Expected 1 type arguments, but got 2.
+src/common/Page.ts(1294,38): error TS2558: Expected 1 type arguments, but got 2.
+
+
+
+Standard error:
