@@ -5,17 +5,17 @@ Standard output:
 @microsoft/fast-components-msft: ┌───────────────────────────────────────────────┐
 @microsoft/fast-components-msft: │                                               │
 @microsoft/fast-components-msft: │   Destination: dist/fast-components-msft.js   │
-@microsoft/fast-components-msft: │   Bundle Size:  490.64 KB                     │
-@microsoft/fast-components-msft: │   Gzipped Size:  50.64 KB                     │
-@microsoft/fast-components-msft: │   Brotli size: 74.92 KB                       │
+@microsoft/fast-components-msft: │   Bundle Size:  498.1 KB                      │
+@microsoft/fast-components-msft: │   Gzipped Size:  51.57 KB                     │
+@microsoft/fast-components-msft: │   Brotli size: 76.27 KB                       │
 @microsoft/fast-components-msft: │                                               │
 @microsoft/fast-components-msft: └───────────────────────────────────────────────┘
 @microsoft/fast-components-msft: ┌───────────────────────────────────────────────────┐
 @microsoft/fast-components-msft: │                                                   │
 @microsoft/fast-components-msft: │   Destination: dist/fast-components-msft.min.js   │
-@microsoft/fast-components-msft: │   Bundle Size:  201.49 KB                         │
-@microsoft/fast-components-msft: │   Gzipped Size:  46.05 KB                         │
-@microsoft/fast-components-msft: │   Brotli size: 39.62 KB                           │
+@microsoft/fast-components-msft: │   Bundle Size:  203.67 KB                         │
+@microsoft/fast-components-msft: │   Gzipped Size:  46.9 KB                          │
+@microsoft/fast-components-msft: │   Brotli size: 40.2 KB                            │
 @microsoft/fast-components-msft: │                                                   │
 @microsoft/fast-components-msft: └───────────────────────────────────────────────────┘
 @microsoft/fast-components-msft: > @microsoft/fast-components-msft@X.X.X doc /office-ui-fabric-react/packages/web-components
