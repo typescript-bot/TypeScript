@@ -2,7 +2,7 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 14.7.0 (pre-LTS)
+Node.js version is 14.8.0 (pre-LTS)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
 XX of XX: [@azure/abort-controller] completed successfully in ? seconds
@@ -25,7 +25,7 @@ SUCCESS (4)
 @azure/core-asynciterator-polyfill (? seconds)
 @azure/core-paging (? seconds)
 ================================
-BLOCKED (36)
+BLOCKED (37)
 ================================
 @azure/core-auth
 @azure/core-http
@@ -52,6 +52,7 @@ BLOCKED (36)
 @azure/keyvault-certificates
 @azure/keyvault-common
 @azure/keyvault-keys
+@azure/schema-registry
 @azure/search-documents
 @azure/service-bus
 @azure/storage-blob-changefeed
@@ -124,6 +125,7 @@ XX of XX: [@azure/storage-internal-avro] blocked by [@azure/eslint-plugin-azure-
 XX of XX: [@azure/storage-queue] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-admin] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-common] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/schema-registry] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/search-documents] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-file-share] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/tables] blocked by [@azure/eslint-plugin-azure-sdk]!

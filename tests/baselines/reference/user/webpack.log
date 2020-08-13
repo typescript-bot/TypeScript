@@ -1,7 +1,7 @@
 Exit Code: 2
 Standard output:
-lib/ExportsInfo.js(949,28): error TS1016: A required parameter cannot follow an optional parameter.
-lib/dependencies/HarmonyExportImportedSpecifierDependency.js(94,37): error TS1016: A required parameter cannot follow an optional parameter.
+lib/ExportsInfo.js(1054,28): error TS1016: A required parameter cannot follow an optional parameter.
+lib/dependencies/HarmonyExportImportedSpecifierDependency.js(95,37): error TS1016: A required parameter cannot follow an optional parameter.
 
 
 
