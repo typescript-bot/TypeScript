@@ -14,7 +14,12 @@ node_modules/uglify-js/lib/ast.js(1246,29): error TS2339: Property 'parent' does
 node_modules/uglify-js/lib/compress.js(188,42): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(557,41): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(698,27): error TS2339: Property 'name' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/compress.js(757,21): error TS2339: Property 'name' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/compress.js(760,20): error TS2339: Property 'walk' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(760,40): error TS2554: Expected 0 arguments, but got 1.
+node_modules/uglify-js/lib/compress.js(770,20): error TS2339: Property 'argnames' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/compress.js(772,55): error TS2339: Property 'uses_arguments' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/compress.js(777,40): error TS2339: Property 'argnames' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(820,26): error TS2339: Property 'definition' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(831,30): error TS2339: Property 'fixed_value' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(841,49): error TS2339: Property 'scope' does not exist on type '(Anonymous function)'.
@@ -92,9 +97,12 @@ node_modules/uglify-js/lib/compress.js(4381,29): error TS2339: Property 'parent'
 node_modules/uglify-js/lib/compress.js(4555,52): error TS2345: Argument of type 'any[]' is not assignable to parameter of type 'never[]'.
   Type 'any' is not assignable to type 'never'.
 node_modules/uglify-js/lib/compress.js(4656,12): error TS2339: Property 'push' does not exist on type 'TreeTransformer'.
+node_modules/uglify-js/lib/compress.js(4788,18): error TS2339: Property 'walk' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(4788,38): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(4809,24): error TS2339: Property 'parent' does not exist on type 'TreeTransformer'.
 node_modules/uglify-js/lib/compress.js(4819,28): error TS2339: Property 'parent' does not exist on type 'TreeTransformer'.
+node_modules/uglify-js/lib/compress.js(4833,14): error TS2339: Property 'transform' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/compress.js(4839,34): error TS2339: Property 'argnames' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(4904,32): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(4997,18): error TS2339: Property 'enclosed' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(5000,18): error TS2339: Property 'variables' does not exist on type '(Anonymous function)'.
@@ -189,9 +197,15 @@ node_modules/uglify-js/lib/propmangle.js(146,29): error TS2554: Expected 0 argum
 node_modules/uglify-js/lib/scope.js(87,21): error TS2339: Property 'defun' does not exist on type 'SymbolDef'.
 node_modules/uglify-js/lib/scope.js(87,35): error TS2339: Property 'defun' does not exist on type 'SymbolDef'.
 node_modules/uglify-js/lib/scope.js(101,29): error TS2554: Expected 0 arguments, but got 1.
+node_modules/uglify-js/lib/scope.js(153,10): error TS2339: Property 'walk' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(157,29): error TS2554: Expected 0 arguments, but got 1.
+node_modules/uglify-js/lib/scope.js(166,28): error TS2339: Property 'def_global' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(171,33): error TS2339: Property 'parent' does not exist on type 'TreeWalker'.
+node_modules/uglify-js/lib/scope.js(177,26): error TS2339: Property 'uses_eval' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/scope.js(194,10): error TS2339: Property 'walk' does not exist on type '(Anonymous function)'.
+node_modules/uglify-js/lib/scope.js(197,27): error TS2339: Property 'walk' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(197,47): error TS2554: Expected 0 arguments, but got 1.
+node_modules/uglify-js/lib/scope.js(239,38): error TS2339: Property 'variables' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(275,10): error TS2339: Property 'def_variable' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(277,21): error TS2339: Property 'start' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(278,19): error TS2339: Property 'end' does not exist on type '(Anonymous function)'.

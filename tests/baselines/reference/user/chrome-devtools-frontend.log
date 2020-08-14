@@ -3461,75 +3461,6 @@ node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(44,23): error T
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(45,23): error TS2365: Operator '>=' cannot be applied to types 'RegExpMatchArray' and 'number'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(47,76): error TS2365: Operator '<' cannot be applied to types 'RegExpMatchArray' and 'number'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(94,25): error TS2339: Property 'createTextRange' does not exist on type 'HTMLElement'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(306,5): error TS2339: Property 'scrollbarFiller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(307,5): error TS2339: Property 'scrollbarFiller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(310,5): error TS2339: Property 'gutterFiller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(311,5): error TS2339: Property 'gutterFiller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(313,5): error TS2339: Property 'lineDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(315,5): error TS2339: Property 'selectionDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(316,5): error TS2339: Property 'cursorDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(318,5): error TS2339: Property 'measure' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(320,5): error TS2339: Property 'lineMeasure' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(322,5): error TS2339: Property 'lineSpace' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(322,32): error TS2339: Property 'measure' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(322,43): error TS2339: Property 'lineMeasure' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(322,58): error TS2339: Property 'selectionDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(322,74): error TS2339: Property 'cursorDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(322,87): error TS2339: Property 'lineDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(324,30): error TS2339: Property 'lineSpace' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(326,5): error TS2339: Property 'mover' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(328,5): error TS2339: Property 'sizer' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(328,27): error TS2339: Property 'mover' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(329,5): error TS2339: Property 'sizerWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(333,5): error TS2339: Property 'heightForcer' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(335,5): error TS2339: Property 'gutters' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(336,5): error TS2339: Property 'lineGutter' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(338,5): error TS2339: Property 'scroller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(338,30): error TS2339: Property 'sizer' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(338,39): error TS2339: Property 'heightForcer' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(338,55): error TS2339: Property 'gutters' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(339,5): error TS2339: Property 'scroller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(341,5): error TS2339: Property 'wrapper' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(341,29): error TS2339: Property 'scrollbarFiller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(341,48): error TS2339: Property 'gutterFiller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(341,64): error TS2339: Property 'scroller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(344,33): error TS2339: Property 'gutters' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(344,62): error TS2339: Property 'scroller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(345,42): error TS2339: Property 'scroller' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(348,50): error TS2339: Property 'wrapper' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(349,20): error TS2339: Property 'wrapper' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(353,5): error TS2339: Property 'viewFrom' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(353,18): error TS2339: Property 'viewTo' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(354,5): error TS2339: Property 'reportedViewFrom' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(354,26): error TS2339: Property 'reportedViewTo' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(356,5): error TS2339: Property 'view' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(357,5): error TS2339: Property 'renderedView' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(360,5): error TS2339: Property 'externalMeasured' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(362,5): error TS2339: Property 'viewOffset' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(363,5): error TS2339: Property 'lastWrapHeight' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(363,24): error TS2339: Property 'lastWrapWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(364,5): error TS2339: Property 'updateLineNumbers' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(366,5): error TS2339: Property 'nativeBarWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(366,24): error TS2339: Property 'barHeight' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(366,38): error TS2339: Property 'barWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(367,5): error TS2339: Property 'scrollbarsClipped' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(371,5): error TS2339: Property 'lineNumWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(371,22): error TS2339: Property 'lineNumInnerWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(371,44): error TS2339: Property 'lineNumChars' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(375,5): error TS2339: Property 'alignWidgets' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(377,5): error TS2339: Property 'cachedCharWidth' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(377,25): error TS2339: Property 'cachedTextHeight' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(377,46): error TS2339: Property 'cachedPaddingH' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(381,5): error TS2339: Property 'maxLine' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(382,5): error TS2339: Property 'maxLineLength' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(383,5): error TS2339: Property 'maxLineChanged' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(386,5): error TS2339: Property 'wheelDX' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(386,17): error TS2339: Property 'wheelDY' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(386,29): error TS2339: Property 'wheelStartX' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(386,45): error TS2339: Property 'wheelStartY' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(389,5): error TS2339: Property 'shift' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(393,5): error TS2339: Property 'selForContextMenu' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(395,5): error TS2339: Property 'activeTouch' does not exist on type 'Display'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(683,31): error TS2339: Property 'length' does not exist on type 'never'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(684,33): error TS2339: Property 'find' does not exist on type 'never'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(689,28): error TS2339: Property 'inclusiveLeft' does not exist on type 'never'.
@@ -3626,18 +3557,13 @@ node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6464,44): error
   Type 'ArrayBuffer' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6553,25): error TS2339: Property 'CodeMirror' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7343,11): error TS2339: Property 'copy' does not exist on type '(...args: any[]) => any'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7777,11): error TS2339: Property 'wrapper' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7781,20): error TS2339: Property 'wrapper' does not exist on type 'Display'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7810,8): error TS2339: Property 'curOp' does not exist on type 'CodeMirror$1'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7813,46): error TS2339: Property 'hasFocus' does not exist on type 'CodeMirror$1'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7827,32): error TS2339: Property 'lineDiv' does not exist on type 'Display'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7828,15): error TS2339: Property 'lineDiv' does not exist on type 'Display'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7895,25): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8259,62): error TS2339: Property 'state' does not exist on type 'any[] | Token'.
   Property 'state' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8658,17): error TS2339: Property 'outside' does not exist on type 'Pos'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8659,54): error TS2339: Property 'hitSide' does not exist on type 'Pos'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8680,19): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8743,16): error TS2339: Property 'focus' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8786,5): error TS2739: Type '{ node: any; offset: number; }' is missing the following properties from type '{ node: any; start: number; end: number; collapse: any; coverStart: any; coverEnd: any; }': start, end, collapse, coverStart, coverEnd
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8795,39): error TS2339: Property 'offset' does not exist on type '{ node: any; start: number; end: number; collapse: any; coverStart: any; coverEnd: any; } | { node: any; offset: number; }'.
@@ -3650,17 +3576,6 @@ node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8817,16): error
   Overload 2 of 2, '(handle?: number): void', gave the following error.
     Argument of type 'boolean' is not assignable to parameter of type 'number'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8818,3): error TS2322: Type 'Timeout' is not assignable to type 'boolean'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8840,24): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8847,10): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8850,58): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8851,69): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8984,8): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(8985,8): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(9020,8): error TS2339: Property 'div' does not exist on type 'ContentEditableInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(9299,12): error TS2339: Property 'contextMenuPending' does not exist on type 'TextareaInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(9372,12): error TS2339: Property 'contextMenuPending' does not exist on type 'TextareaInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(9446,9): error TS2339: Property 'contextMenuPending' does not exist on type 'TextareaInput'.
-node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(9467,11): error TS2339: Property 'contextMenuPending' does not exist on type 'TextareaInput'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(9527,40): error TS2339: Property 'getValue' does not exist on type 'CodeMirror$1'.
 node_modules/chrome-devtools-frontend/front_end/cm/comment.js(6,17): error TS2792: Cannot find module '../../lib/codemirror'. Did you mean to set the 'moduleResolution' option to 'node', or to add aliases to the 'paths' option?
 node_modules/chrome-devtools-frontend/front_end/cm/comment.js(7,19): error TS2304: Cannot find name 'define'.
@@ -11600,8 +11515,6 @@ node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2721,1): error TS2323: Cannot redeclare exported variable '__esModule'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2732,1): error TS2323: Cannot redeclare exported variable '__esModule'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2766,1): error TS2323: Cannot redeclare exported variable '__esModule'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2789,10): error TS2339: Property 'browser' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2790,10): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2828,14): error TS2339: Property 'on' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2836,10): error TS2339: Property 'convertEol' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2852,10): error TS2339: Property 'decLocator' does not exist on type 'Terminal'.
@@ -11619,7 +11532,6 @@ node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2868,10): error TS2339: Property 'savedCols' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2886,55): error TS2339: Property 'scrollback' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(2925,9): error TS2322: Type 'number' is not assignable to type 'number[]'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3087,14): error TS2339: Property 'browser' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3151,54): error TS2339: Property 'theme' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3176,14): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3179,14): error TS2339: Property 'emit' does not exist on type 'Terminal'.
@@ -11630,40 +11542,27 @@ node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3332,18): error TS2339: Property 'urxvtMouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3340,18): error TS2339: Property 'sgrMouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3352,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'data' must be of type 'string', but here has type 'any[]'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3367,26): error TS2339: Property 'browser' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3389,18): error TS2339: Property 'vt200Mouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3392,24): error TS2339: Property 'normalMouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3399,19): error TS2339: Property 'mouseEvents' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3403,18): error TS2339: Property 'vt200Mouse' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3406,25): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3408,18): error TS2339: Property 'normalMouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3410,19): error TS2339: Property 'x10Mouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3413,26): error TS2339: Property 'normalMouse' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3416,29): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3419,21): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3422,19): error TS2339: Property 'mouseEvents' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3424,18): error TS2339: Property 'x10Mouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3425,21): error TS2339: Property 'vt300Mouse' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3426,21): error TS2339: Property 'decLocator' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3429,21): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3432,18): error TS2339: Property 'mouseEvents' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3435,21): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3442,10): error TS2300: Duplicate identifier 'handler'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3443,10): error TS2300: Duplicate identifier 'write'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3498,10): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3515,14): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3528,20): error TS2300: Duplicate identifier 'write'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3569,16): error TS2554: Expected 0 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3623,21): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3629,14): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3634,10): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3635,10): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3637,18): error TS2554: Expected 0 arguments, but got 1.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3638,17): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3675,40): error TS2339: Property 'browser' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3689,40): error TS2339: Property 'browser' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3892,28): error TS2339: Property 'browser' does not exist on type 'Terminal'.
-node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3919,10): error TS2339: Property 'cancel' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3936,10): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3937,10): error TS2339: Property 'emit' does not exist on type 'Terminal'.
 node_modules/chrome-devtools-frontend/front_end/terminal/xterm.js/build/xterm.js(3939,18): error TS2554: Expected 0 arguments, but got 1.
