@@ -17,5 +17,5 @@ TypeError: Cannot read property '0' of undefined
     at resolveName (../../../src/compiler/checker.ts:1635:20)
     at getResolvedSymbol (../../../src/compiler/checker.ts:20125:21)
     at checkIdentifier (../../../src/compiler/checker.ts:22143:28)
-    at checkExpressionWorker (../../../src/compiler/checker.ts:30289:28)
-    at checkExpression (../../../src/compiler/checker.ts:30233:40)
+    at checkExpressionWorker (../../../src/compiler/checker.ts:30300:28)
+    at checkExpression (../../../src/compiler/checker.ts:30244:40)
