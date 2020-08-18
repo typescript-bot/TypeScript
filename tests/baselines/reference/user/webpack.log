@@ -1,8 +1,21 @@
-Exit Code: 2
+Exit Code: 1
 Standard output:
-lib/ExportsInfo.js(949,28): error TS1016: A required parameter cannot follow an optional parameter.
-lib/dependencies/HarmonyExportImportedSpecifierDependency.js(94,37): error TS1016: A required parameter cannot follow an optional parameter.
 
 
 
 Standard error:
+
+../../../src/compiler/checker.ts:2397
+                const name = (node.initializer.expression as CallExpression).arguments[0] as StringLiteral;
+                                                                                      ^
+TypeError: Cannot read property '0' of undefined
+    at getTargetOfImportEqualsDeclaration (../../../src/compiler/checker.ts:2397:87)
+    at getTargetOfAliasDeclaration (../../../src/compiler/checker.ts:2788:28)
+    at resolveAlias (../../../src/compiler/checker.ts:2838:32)
+    at getSymbol (../../../src/compiler/checker.ts:1349:40)
+    at resolveNameHelper (../../../src/compiler/checker.ts:1662:34)
+    at resolveName (../../../src/compiler/checker.ts:1635:20)
+    at getResolvedSymbol (../../../src/compiler/checker.ts:20125:21)
+    at checkIdentifier (../../../src/compiler/checker.ts:22143:28)
+    at checkExpressionWorker (../../../src/compiler/checker.ts:30289:28)
+    at checkExpression (../../../src/compiler/checker.ts:30233:40)
