@@ -3798,6 +3798,10 @@ node_modules/chrome-devtools-frontend/front_end/bindings/StylesSourceMapping.js(
 node_modules/chrome-devtools-frontend/front_end/bindings/StylesSourceMapping.js(323,26): error TS2339: Property 'firstValue' does not exist on type 'Set<CSSStyleSheetHeader>'.
 node_modules/chrome-devtools-frontend/front_end/bindings/StylesSourceMapping.js(331,26): error TS2339: Property 'firstValue' does not exist on type 'Set<CSSStyleSheetHeader>'.
 node_modules/chrome-devtools-frontend/front_end/bindings/StylesSourceMapping.js(342,26): error TS2339: Property 'firstValue' does not exist on type 'Set<CSSStyleSheetHeader>'.
+node_modules/chrome-devtools-frontend/front_end/bindings/TempFile.js(77,9): error TS2322: Type '(value?: void | PromiseLike<void>) => void' is not assignable to type '(this: FileReader, ev: ProgressEvent<FileReader>) => any'.
+  Types of parameters 'value' and 'ev' are incompatible.
+    Type 'ProgressEvent<FileReader>' is not assignable to type 'void | PromiseLike<void>'.
+      Property 'then' is missing in type 'ProgressEvent<FileReader>' but required in type 'PromiseLike<void>'.
 node_modules/chrome-devtools-frontend/front_end/bindings/TempFile.js(85,5): error TS2322: Type 'string | ArrayBuffer' is not assignable to type 'string'.
   Type 'ArrayBuffer' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/bindings/TempFile.js(91,25): error TS2304: Cannot find name 'FileError'.
@@ -12140,6 +12144,10 @@ node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1968,48): error TS
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1969,23): error TS2339: Property 'onchange' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1971,34): error TS2339: Property 'files' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1993,30): error TS2339: Property 'createChild' does not exist on type 'DocumentFragment'.
+node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1995,65): error TS2345: Argument of type '(value?: void | PromiseLike<void>) => void' is not assignable to parameter of type '(arg0: Event) => any'.
+  Types of parameters 'value' and 'arg0' are incompatible.
+    Type 'Event' is not assignable to type 'void | PromiseLike<void>'.
+      Property 'then' is missing in type 'Event' but required in type 'PromiseLike<void>'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(1999,15): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(2003,16): error TS2339: Property 'focus' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/UIUtils.js(2020,30): error TS2339: Property 'createChild' does not exist on type 'DocumentFragment'.
