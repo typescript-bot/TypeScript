@@ -1,0 +1,10 @@
+Exit Code: 2
+Standard output:
+src/node/BrowserFetcher.ts(335,64): error TS2345: Argument of type '(value?: void | PromiseLike<void>) => void' is not assignable to parameter of type '(error: Error) => void'.
+  Types of parameters 'value' and 'error' are incompatible.
+    Type 'Error' is not assignable to type 'void | PromiseLike<void>'.
+      Property 'then' is missing in type 'Error' but required in type 'PromiseLike<void>'.
+
+
+
+Standard error:
