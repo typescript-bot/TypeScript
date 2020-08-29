@@ -232,6 +232,7 @@ node_modules/adonis-framework/src/Session/index.js(249,15): error TS2304: Cannot
 node_modules/adonis-framework/src/Session/index.js(267,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Session/index.js(287,15): error TS2322: Type 'Generator<any, any, any>' is not assignable to type 'boolean'.
 node_modules/adonis-framework/src/Session/index.js(293,12): error TS2532: Object is possibly 'undefined'.
+node_modules/adonis-framework/src/Static/index.js(45,18): error TS2554: Expected 1 arguments, but got 0.
 node_modules/adonis-framework/src/View/Form/index.js(75,11): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/View/Form/index.js(115,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/View/Form/index.js(147,63): error TS2345: Argument of type 'string | any[]' is not assignable to parameter of type 'any[]'.
