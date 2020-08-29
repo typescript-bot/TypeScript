@@ -3751,6 +3751,7 @@ node_modules/chrome-devtools-frontend/front_end/bindings/FileUtils.js(143,22): e
 node_modules/chrome-devtools-frontend/front_end/bindings/FileUtils.js(146,31): error TS2339: Property 'result' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/bindings/FileUtils.js(178,32): error TS2339: Property 'error' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/bindings/FileUtils.js(194,23): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
+node_modules/chrome-devtools-frontend/front_end/bindings/FileUtils.js(210,33): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => any'.
 node_modules/chrome-devtools-frontend/front_end/bindings/LiveLocation.js(11,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/bindings/LiveLocation.js(18,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/bindings/LiveLocation.js(29,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
@@ -7858,6 +7859,7 @@ node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceB
 node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(381,22): error TS2345: Argument of type 'string' is not assignable to parameter of type 'boolean'.
 node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(432,23): error TS2339: Property 'intersectOrdered' does not exist on type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(432,61): error TS2339: Property 'naturalOrderComparator' does not exist on type 'StringConstructor'.
+node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(526,106): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => any'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(75,10): error TS2339: Property 'catchException' does not exist on type 'Promise<IsolatedFileSystem>'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(83,59): error TS2339: Property 'message' does not exist on type 'DOMError'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(97,17): error TS2304: Cannot find name 'FileEntry'.
@@ -10737,9 +10739,11 @@ node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(12,64)
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(12,94): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(13,6): error TS2551: Property 'testRunner' does not exist on type 'Window & typeof globalThis'. Did you mean 'TestRunner'?
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(24,8): error TS2551: Property 'testRunner' does not exist on type 'Window & typeof globalThis'. Did you mean 'TestRunner'?
+node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(28,5): error TS2554: Expected 1 arguments, but got 0.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(42,21): error TS2551: Property 'testRunner' does not exist on type 'Window & typeof globalThis'. Did you mean 'TestRunner'?
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(76,8): error TS2551: Property 'testRunner' does not exist on type 'Window & typeof globalThis'. Did you mean 'TestRunner'?
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(117,19): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
+node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(207,40): error TS2322: Type '(value: any) => void' is not assignable to type '() => void'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(287,22): error TS2339: Property 'traverseNextNode' does not exist on type 'Node'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(288,31): error TS2339: Property 'traverseNextNode' does not exist on type 'Node'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(297,33): error TS2339: Property 'traverseNextNode' does not exist on type 'Node'.
@@ -10766,6 +10770,7 @@ node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(363,62
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(368,34): error TS2694: Namespace 'Protocol' has no exported member 'Runtime'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(372,42): error TS2339: Property 'result' does not exist on type '{ response: RemoteObject; exceptionDetails: any; }'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(381,35): error TS2694: Namespace 'Protocol' has no exported member 'Runtime'.
+node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(502,107): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => any'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(503,30): error TS2345: Argument of type 'Function' is not assignable to parameter of type '(value: any[]) => any[] | PromiseLike<any[]>'.
   Type 'Function' provides no match for the signature '(value: any[]): any[] | PromiseLike<any[]>'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(641,59): error TS2551: Property 'testRunner' does not exist on type 'Window & typeof globalThis'. Did you mean 'TestRunner'?
@@ -10780,6 +10785,8 @@ node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(806,44
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(839,78): error TS2339: Property 'deepTextContent' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(842,43): error TS2339: Property 'property' does not exist on type 'TreeElement'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(868,31): error TS2345: Argument of type '{ data: any; }' is not assignable to parameter of type 'symbol'.
+node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(947,58): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => void'.
+node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(981,55): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => void'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(1035,19): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(1049,34): error TS2345: Argument of type '(arg0: () => void) => any' is not assignable to parameter of type 'string'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(1203,19): error TS2339: Property 'naturalOrderComparator' does not exist on type 'StringConstructor'.
@@ -10936,6 +10943,7 @@ node_modules/chrome-devtools-frontend/front_end/timeline/EventsTimelineTreeView.
 node_modules/chrome-devtools-frontend/front_end/timeline/EventsTimelineTreeView.js(97,54): error TS2339: Property 'width' does not exist on type '{ id: string; title: string; titleDOMFragment: DocumentFragment; sortable: boolean; sort: string; align: string; fixedWidth: boolean; editable: boolean; nonSelectable: boolean; longText: boolean; disclosure: boolean; weight: number; }'.
 node_modules/chrome-devtools-frontend/front_end/timeline/EventsTimelineTreeView.js(183,56): error TS2339: Property 'value' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/timeline/ExtensionTracingSession.js(17,16): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
+node_modules/chrome-devtools-frontend/front_end/timeline/ExtensionTracingSession.js(20,7): error TS2322: Type '(value: any) => void' is not assignable to type '() => any'.
 node_modules/chrome-devtools-frontend/front_end/timeline/PerformanceModel.js(157,25): error TS2304: Cannot find name 'FileError'.
 node_modules/chrome-devtools-frontend/front_end/timeline/PerformanceMonitor.js(26,46): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/timeline/PerformanceMonitor.js(28,25): error TS2339: Property 'createChild' does not exist on type 'Element'.
