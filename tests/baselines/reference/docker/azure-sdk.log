@@ -2,7 +2,7 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 14.8.0 (pre-LTS)
+Node.js version is 14.9.0 (pre-LTS)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
 XX of XX: [@azure/abort-controller] completed successfully in ? seconds
@@ -16,7 +16,7 @@ SUCCESS (4)
 @azure/core-asynciterator-polyfill (? seconds)
 @azure/core-paging (? seconds)
 ================================
-BLOCKED (38)
+BLOCKED (40)
 ================================
 @azure/core-auth
 @azure/core-http
@@ -30,6 +30,7 @@ BLOCKED (38)
 @azure/event-processor-host
 @azure/keyvault-secrets
 @azure/storage-blob
+@azure/ai-anomaly-detector
 @azure/ai-form-recognizer
 @azure/ai-text-analytics
 @azure/app-configuration
@@ -37,6 +38,8 @@ BLOCKED (38)
 @azure/core-client
 @azure/core-tracing
 @azure/cosmos
+@azure/data-tables
+@azure/digitaltwins
 @azure/event-hubs
 @azure/eventhubs-checkpointstore-blob
 @azure/keyvault-admin
@@ -52,7 +55,6 @@ BLOCKED (38)
 @azure/storage-file-share
 @azure/storage-internal-avro
 @azure/storage-queue
-@azure/tables
 @azure/template
 @azure/test-utils-perfstress
 testhub
@@ -84,6 +86,7 @@ rush rebuild - Errors! (? seconds)
 Standard error:
 
 XX of XX: [@azure/eslint-plugin-azure-sdk] failed!
+XX of XX: [@azure/ai-anomaly-detector] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/ai-form-recognizer] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/ai-text-analytics] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-amqp] blocked by [@azure/eslint-plugin-azure-sdk]!
@@ -95,6 +98,7 @@ XX of XX: [@azure/core-http] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/app-configuration] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-arm] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-lro] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/keyvault-admin] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-certificates] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-keys] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-secrets] blocked by [@azure/eslint-plugin-azure-sdk]!
@@ -102,16 +106,16 @@ XX of XX: [@azure/storage-blob] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/eventhubs-checkpointstore-blob] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-blob-changefeed] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-file-datalake] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/data-tables] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/digitaltwins] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/identity] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/schema-registry] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-internal-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-queue] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/keyvault-admin] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-common] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/monitor-opentelemetry-exporter] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/schema-registry] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/search-documents] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-file-share] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/tables] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/template] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-perfstress] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-recorder] blocked by [@azure/eslint-plugin-azure-sdk]!
