@@ -85,9 +85,9 @@ Writing package typings: /vue-next/dist/vue.d.ts
 API Extractor completed successfully.
 compiler-dom.global.prod.js min:43.89kb / gzip:16.92kb / brotli:15.35kb
 reactivity.global.prod.js min:8.02kb / gzip:3.11kb / brotli:2.88kb
-runtime-dom.global.prod.js min:65.60kb / gzip:25.29kb / brotli:22.92kb
-size-check.global.prod.js min:38.00kb / gzip:15.20kb / brotli:13.86kb
-vue.global.prod.js min:102.43kb / gzip:38.93kb / brotli:35.11kb
+runtime-dom.global.prod.js min:65.58kb / gzip:25.28kb / brotli:22.91kb
+size-check.global.prod.js min:37.98kb / gzip:15.19kb / brotli:13.85kb
+vue.global.prod.js min:102.42kb / gzip:38.92kb / brotli:35.07kb
 
 
 
