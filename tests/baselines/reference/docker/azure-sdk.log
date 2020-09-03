@@ -110,7 +110,6 @@ XX of XX: [@azure/data-tables] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/digitaltwins] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/identity] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/schema-registry] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/storage-internal-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-queue] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-common] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/monitor-opentelemetry-exporter] blocked by [@azure/eslint-plugin-azure-sdk]!
@@ -119,6 +118,7 @@ XX of XX: [@azure/storage-file-share] blocked by [@azure/eslint-plugin-azure-sdk
 XX of XX: [@azure/template] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-perfstress] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-recorder] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/storage-internal-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-https] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-tracing] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-xml] blocked by [@azure/eslint-plugin-azure-sdk]!

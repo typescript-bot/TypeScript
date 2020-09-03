@@ -121,26 +121,26 @@ lib/Watching.js(185,11): error TS2339: Property 'time' does not exist on type 't
 lib/Watching.js(189,13): error TS2339: Property 'timeEnd' does not exist on type 'typeof WebpackLogger'.
 lib/Watching.js(191,13): error TS2339: Property 'time' does not exist on type 'typeof WebpackLogger'.
 lib/Watching.js(194,13): error TS2339: Property 'timeEnd' does not exist on type 'typeof WebpackLogger'.
-lib/WebpackOptionsApply.js(76,12): error TS2300: Duplicate identifier 'FetchCompileWasmPlugin'.
-lib/WebpackOptionsApply.js(77,12): error TS2300: Duplicate identifier 'FetchCompileAsyncWasmPlugin'.
-lib/WebpackOptionsApply.js(78,12): error TS2300: Duplicate identifier 'NodeSourcePlugin'.
-lib/WebpackOptionsApply.js(88,12): error TS2300: Duplicate identifier 'FetchCompileWasmPlugin'.
-lib/WebpackOptionsApply.js(89,12): error TS2300: Duplicate identifier 'FetchCompileAsyncWasmPlugin'.
-lib/WebpackOptionsApply.js(90,12): error TS2300: Duplicate identifier 'NodeSourcePlugin'.
-lib/WebpackOptionsApply.js(103,12): error TS2300: Duplicate identifier 'NodeTargetPlugin'.
-lib/WebpackOptionsApply.js(113,12): error TS2300: Duplicate identifier 'NodeTargetPlugin'.
-lib/WebpackOptionsApply.js(114,12): error TS2300: Duplicate identifier 'ExternalsPlugin'.
-lib/WebpackOptionsApply.js(121,12): error TS2300: Duplicate identifier 'NodeTargetPlugin'.
-lib/WebpackOptionsApply.js(122,12): error TS2300: Duplicate identifier 'ElectronTargetPlugin'.
-lib/WebpackOptionsApply.js(130,12): error TS2300: Duplicate identifier 'FetchCompileWasmPlugin'.
-lib/WebpackOptionsApply.js(131,12): error TS2300: Duplicate identifier 'FetchCompileAsyncWasmPlugin'.
-lib/WebpackOptionsApply.js(132,12): error TS2300: Duplicate identifier 'ElectronTargetPlugin'.
-lib/WebpackOptionsApply.js(193,10): error TS2300: Duplicate identifier 'ExternalsPlugin'.
-lib/WebpackOptionsApply.js(455,12): error TS2300: Duplicate identifier 'OccurrenceChunkIdsPlugin'.
-lib/WebpackOptionsApply.js(462,12): error TS2300: Duplicate identifier 'OccurrenceChunkIdsPlugin'.
-lib/WebpackOptionsApply.js(513,12): error TS2300: Duplicate identifier 'MemoryCachePlugin'.
-lib/WebpackOptionsApply.js(523,12): error TS2300: Duplicate identifier 'MemoryCachePlugin'.
-lib/WebpackOptionsApply.js(536,18): error TS2322: Type 'typeof WebpackLogger' is not assignable to type 'WebpackLogger'.
+lib/WebpackOptionsApply.js(77,12): error TS2300: Duplicate identifier 'FetchCompileWasmPlugin'.
+lib/WebpackOptionsApply.js(78,12): error TS2300: Duplicate identifier 'FetchCompileAsyncWasmPlugin'.
+lib/WebpackOptionsApply.js(79,12): error TS2300: Duplicate identifier 'NodeSourcePlugin'.
+lib/WebpackOptionsApply.js(89,12): error TS2300: Duplicate identifier 'FetchCompileWasmPlugin'.
+lib/WebpackOptionsApply.js(90,12): error TS2300: Duplicate identifier 'FetchCompileAsyncWasmPlugin'.
+lib/WebpackOptionsApply.js(91,12): error TS2300: Duplicate identifier 'NodeSourcePlugin'.
+lib/WebpackOptionsApply.js(104,12): error TS2300: Duplicate identifier 'NodeTargetPlugin'.
+lib/WebpackOptionsApply.js(114,12): error TS2300: Duplicate identifier 'NodeTargetPlugin'.
+lib/WebpackOptionsApply.js(115,12): error TS2300: Duplicate identifier 'ExternalsPlugin'.
+lib/WebpackOptionsApply.js(122,12): error TS2300: Duplicate identifier 'NodeTargetPlugin'.
+lib/WebpackOptionsApply.js(123,12): error TS2300: Duplicate identifier 'ElectronTargetPlugin'.
+lib/WebpackOptionsApply.js(131,12): error TS2300: Duplicate identifier 'FetchCompileWasmPlugin'.
+lib/WebpackOptionsApply.js(132,12): error TS2300: Duplicate identifier 'FetchCompileAsyncWasmPlugin'.
+lib/WebpackOptionsApply.js(133,12): error TS2300: Duplicate identifier 'ElectronTargetPlugin'.
+lib/WebpackOptionsApply.js(194,10): error TS2300: Duplicate identifier 'ExternalsPlugin'.
+lib/WebpackOptionsApply.js(452,12): error TS2300: Duplicate identifier 'OccurrenceChunkIdsPlugin'.
+lib/WebpackOptionsApply.js(459,12): error TS2300: Duplicate identifier 'OccurrenceChunkIdsPlugin'.
+lib/WebpackOptionsApply.js(510,12): error TS2300: Duplicate identifier 'MemoryCachePlugin'.
+lib/WebpackOptionsApply.js(520,12): error TS2300: Duplicate identifier 'MemoryCachePlugin'.
+lib/WebpackOptionsApply.js(533,18): error TS2322: Type 'typeof WebpackLogger' is not assignable to type 'WebpackLogger'.
 lib/buildChunkGraph.js(1075,9): error TS2339: Property 'time' does not exist on type 'typeof WebpackLogger'.
 lib/buildChunkGraph.js(1077,3): error TS2345: Argument of type 'typeof WebpackLogger' is not assignable to parameter of type 'WebpackLogger'.
 lib/buildChunkGraph.js(1085,9): error TS2339: Property 'timeEnd' does not exist on type 'typeof WebpackLogger'.

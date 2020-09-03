@@ -402,7 +402,7 @@ dom-tests: Done in ?s.
 @uifabric/charting: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/charting/tsconfig.json"
 @uifabric/charting: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/packages/charting/tsconfig.json
 @uifabric/charting: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/charting/tsconfig.json"
-@uifabric/charting: Done in ?s.
+@uifabric/charting: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 @uifabric/date-time: yarn run vX.X.X
 @uifabric/date-time: $ just-scripts ts
 @uifabric/date-time: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/packages/date-time/tsconfig.json
@@ -707,7 +707,6 @@ Standard error:
 @uifabric/webpack-utils: Found 1 error.
 @uifabric/webpack-utils: [XX:XX:XX XM] x ------------------------------------
 @uifabric/webpack-utils: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/webpack-utils: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/webpack-utils: error Command failed with exit code 1.
 @fluentui/docs-components: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/docs-components: [XX:XX:XX XM] x Command not defined: ts
@@ -841,9 +840,9 @@ Standard error:
 @uifabric/foundation: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @uifabric/foundation: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @uifabric/foundation: error Command failed with exit code 1.
-@fluentui/react-theme-provider: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-theme-provider: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-theme-provider: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-theme-provider: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-theme-provider/tsconfig.json"
+@fluentui/react-theme-provider: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-theme-provider/tsconfig.json"
 @fluentui/react-theme-provider:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-theme-provider:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-theme-provider:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -857,7 +856,7 @@ Standard error:
 @fluentui/react-theme-provider: Found 1 error.
 @fluentui/react-theme-provider: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-theme-provider: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-theme-provider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-theme-provider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-theme-provider: error Command failed with exit code 1.
 @fluentui/react-northstar: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-northstar: [XX:XX:XX XM] x Command not defined: ts
@@ -890,17 +889,17 @@ office-ui-fabric-react:                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
 office-ui-fabric-react: src/components/DetailsList/DetailsColumn.base.tsx:208:14 - error TS2790: The operand of a 'delete' operator must be optional.
 office-ui-fabric-react: 208       delete this._dragDropSubscription;
 office-ui-fabric-react:                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
-office-ui-fabric-react: src/components/DetailsList/DetailsHeader.base.tsx:130:14 - error TS2790: The operand of a 'delete' operator must be optional.
-office-ui-fabric-react: 130       delete this._subscriptionObject;
+office-ui-fabric-react: src/components/DetailsList/DetailsHeader.base.tsx:132:14 - error TS2790: The operand of a 'delete' operator must be optional.
+office-ui-fabric-react: 132       delete this._subscriptionObject;
 office-ui-fabric-react:                  ~~~~~~~~~~~~~~~~~~~~~~~~
-office-ui-fabric-react: src/components/DetailsList/DetailsHeader.base.tsx:152:14 - error TS2790: The operand of a 'delete' operator must be optional.
-office-ui-fabric-react: 152       delete this._subscriptionObject;
+office-ui-fabric-react: src/components/DetailsList/DetailsHeader.base.tsx:154:14 - error TS2790: The operand of a 'delete' operator must be optional.
+office-ui-fabric-react: 154       delete this._subscriptionObject;
 office-ui-fabric-react:                  ~~~~~~~~~~~~~~~~~~~~~~~~
-office-ui-fabric-react: src/components/DetailsList/DetailsRow.base.tsx:110:16 - error TS2790: The operand of a 'delete' operator must be optional.
-office-ui-fabric-react: 110         delete this._dragDropSubscription;
+office-ui-fabric-react: src/components/DetailsList/DetailsRow.base.tsx:109:16 - error TS2790: The operand of a 'delete' operator must be optional.
+office-ui-fabric-react: 109         delete this._dragDropSubscription;
 office-ui-fabric-react:                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
-office-ui-fabric-react: src/components/DetailsList/DetailsRow.base.tsx:148:14 - error TS2790: The operand of a 'delete' operator must be optional.
-office-ui-fabric-react: 148       delete this._dragDropSubscription;
+office-ui-fabric-react: src/components/DetailsList/DetailsRow.base.tsx:147:14 - error TS2790: The operand of a 'delete' operator must be optional.
+office-ui-fabric-react: 147       delete this._dragDropSubscription;
 office-ui-fabric-react:                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
 office-ui-fabric-react: src/components/FloatingPicker/PeoplePicker/PeoplePickerItems/SuggestionItemDefault.tsx:12:72 - error TS2339: Property 'peoplePickerPersonaContent' does not exist on type 'typeof import("*.scss")'.
 office-ui-fabric-react: 12     <div className={css('ms-PeoplePicker-personaContent', stylesImport.peoplePickerPersonaContent)}>
@@ -957,9 +956,9 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/local-sandbox: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/projects-test: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/projects-test: [XX:XX:XX XM] x Command not defined: ts
-@uifabric/tsx-editor: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@uifabric/tsx-editor: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @uifabric/tsx-editor: [XX:XX:XX XM] x ------------------------------------
-@uifabric/tsx-editor: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/tsx-editor/tsconfig.json"
+@uifabric/tsx-editor: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/tsx-editor/tsconfig.json"
 @uifabric/tsx-editor:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/tsx-editor:     at ChildProcess.emit (events.js:315:20)
 @uifabric/tsx-editor:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1000,11 +999,11 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @uifabric/tsx-editor: Found 10 errors.
 @uifabric/tsx-editor: [XX:XX:XX XM] x ------------------------------------
 @uifabric/tsx-editor: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/tsx-editor: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@uifabric/tsx-editor: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @uifabric/tsx-editor: error Command failed with exit code 1.
-codesandbox-react-northstar-template: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+codesandbox-react-northstar-template: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 codesandbox-react-northstar-template: [XX:XX:XX XM] x ------------------------------------
-codesandbox-react-northstar-template: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/codesandbox-react-northstar-template/tsconfig.json"
+codesandbox-react-northstar-template: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/codesandbox-react-northstar-template/tsconfig.json"
 codesandbox-react-northstar-template:     at ChildProcess.exithandler (child_process.js:303:12)
 codesandbox-react-northstar-template:     at ChildProcess.emit (events.js:315:20)
 codesandbox-react-northstar-template:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1021,7 +1020,7 @@ codesandbox-react-northstar-template:                               ~~~~~~~~~~~~
 codesandbox-react-northstar-template: Found 2 errors.
 codesandbox-react-northstar-template: [XX:XX:XX XM] x ------------------------------------
 codesandbox-react-northstar-template: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-codesandbox-react-northstar-template: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+codesandbox-react-northstar-template: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-builder: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-builder: [XX:XX:XX XM] x Command not defined: ts
@@ -1087,9 +1086,34 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @uifabric/example-app-base: error Command failed with exit code 1.
 @fluentui/perf: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/perf: [XX:XX:XX XM] x Command not defined: ts
-@uifabric/date-time: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/charting: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@uifabric/charting: [XX:XX:XX XM] x ------------------------------------
+@uifabric/charting: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/charting/tsconfig.json"
+@uifabric/charting:     at ChildProcess.exithandler (child_process.js:303:12)
+@uifabric/charting:     at ChildProcess.emit (events.js:315:20)
+@uifabric/charting:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
+@uifabric/charting:     at maybeClose (internal/child_process.js:1021:16)
+@uifabric/charting:     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+@uifabric/charting:     at Process.callbackTrampoline (internal/async_hooks.js:120:14)
+@uifabric/charting: [XX:XX:XX XM] x stdout:
+@uifabric/charting: [XX:XX:XX XM] x src/components/VerticalStackedBarChart/examples/VerticalStackedBarChart.Styled.Example.tsx:47:9 - error TS2322: Type '() => { chart: { paddingBottom: string; }; chartLabel: { displayName?: string | undefined; selectors?: { [key: string]: IStyle; } | undefined; MsHighContrastAdjust?: string | undefined; MsOverflowStyle?: string | undefined; ... 277 more ...; fontWeight?: string | ... 9 more ... | undefined; }; xAxisText: { ...; }; }' is not assignable to type 'IStyleFunction<IVerticalStackedBarChartStyleProps, IVerticalStackedBarChartStyles> | DeepPartial<...> | undefined'.
+@uifabric/charting:   Type '() => { chart: { paddingBottom: string; }; chartLabel: { displayName?: string | undefined; selectors?: { [key: string]: IStyle; } | undefined; MsHighContrastAdjust?: string | undefined; MsOverflowStyle?: string | undefined; ... 277 more ...; fontWeight?: string | ... 9 more ... | undefined; }; xAxisText: { ...; }; }' is not assignable to type 'IStyleFunction<IVerticalStackedBarChartStyleProps, IVerticalStackedBarChartStyles>'.
+@uifabric/charting:     Type '{ chart: { paddingBottom: string; }; chartLabel: { displayName?: string | undefined; selectors?: { [key: string]: IStyle; } | undefined; MsHighContrastAdjust?: string | undefined; MsOverflowStyle?: string | undefined; ... 277 more ...; fontWeight?: string | ... 9 more ... | undefined; }; xAxisText: { ...; }; }' is not assignable to type 'DeepPartial<IVerticalStackedBarChartStyles>'.
+@uifabric/charting:       Object literal may only specify known properties, and 'chart' does not exist in type 'DeepPartial<IVerticalStackedBarChartStyles>'.
+@uifabric/charting: 47         chart: {
+@uifabric/charting:            ~~~~~~~~
+@uifabric/charting: 48           paddingBottom: '45px',
+@uifabric/charting:    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@uifabric/charting: 49         },
+@uifabric/charting:    ~~~~~~~~~
+@uifabric/charting: Found 1 error.
+@uifabric/charting: [XX:XX:XX XM] x ------------------------------------
+@uifabric/charting: [XX:XX:XX XM] x Error previously detected. See above for error messages.
+@uifabric/charting: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@uifabric/charting: error Command failed with exit code 1.
+@uifabric/date-time: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/date-time: [XX:XX:XX XM] x ------------------------------------
-@uifabric/date-time: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/date-time/tsconfig.json"
+@uifabric/date-time: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/date-time/tsconfig.json"
 @uifabric/date-time:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/date-time:     at ChildProcess.emit (events.js:315:20)
 @uifabric/date-time:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1106,6 +1130,12 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @uifabric/date-time: src/components/Calendar/examples/Calendar.Inline.DateBoundaries.Example.tsx:27:30 - error TS2339: Property 'wrapper' does not exist on type 'typeof import("*.scss")'.
 @uifabric/date-time: 27       <div className={styles.wrapper}>
 @uifabric/date-time:                                 ~~~~~~~
+@uifabric/date-time: src/components/Calendar/examples/Calendar.Inline.DateBoundaries.Example.tsx:73:9 - error TS2345: Argument of type '(prevState: ICalendarInlineExampleState) => { selectedDate: Date; selectedDateRange: Date[]; }' is not assignable to parameter of type 'ICalendarInlineExampleState | ((prevState: Readonly<ICalendarInlineExampleState>, props: Readonly<{}>) => ICalendarInlineExampleState | ... 1 more ... | null) | Pick<...> | null'.
+@uifabric/date-time:   Type '(prevState: ICalendarInlineExampleState) => { selectedDate: Date; selectedDateRange: Date[]; }' is not assignable to type '(prevState: Readonly<ICalendarInlineExampleState>, props: Readonly<{}>) => ICalendarInlineExampleState | Pick<...> | null'.
+@uifabric/date-time:     Type '{ selectedDate: Date; selectedDateRange: Date[]; }' is not assignable to type 'ICalendarInlineExampleState | Pick<ICalendarInlineExampleState, "selectedDate"> | null'.
+@uifabric/date-time:       Object literal may only specify known properties, and 'selectedDateRange' does not exist in type 'ICalendarInlineExampleState | Pick<ICalendarInlineExampleState, "selectedDate">'.
+@uifabric/date-time: 73         selectedDateRange: dateRangeArray,
+@uifabric/date-time:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @uifabric/date-time: src/components/Calendar/examples/Calendar.Inline.MonthOnly.Example.tsx:30:30 - error TS2339: Property 'wrapper' does not exist on type 'typeof import("*.scss")'.
 @uifabric/date-time: 30       <div className={styles.wrapper}>
 @uifabric/date-time:                                 ~~~~~~~
@@ -1169,10 +1199,10 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @uifabric/date-time: ../tsx-editor/lib/interfaces/monaco.d.ts:1:25 - error TS2307: Cannot find module '@uifabric/monaco-editor/esm/vs/editor/editor.api' or its corresponding type declarations.
 @uifabric/date-time: 1 import * as monaco from '@uifabric/monaco-editor/esm/vs/editor/editor.api';
 @uifabric/date-time:                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@uifabric/date-time: Found 24 errors.
+@uifabric/date-time: Found 25 errors.
 @uifabric/date-time: [XX:XX:XX XM] x ------------------------------------
 @uifabric/date-time: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/date-time: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/date-time: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/date-time: error Command failed with exit code 1.
 @uifabric/experiments: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/experiments: [XX:XX:XX XM] x ------------------------------------
@@ -1398,9 +1428,9 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @uifabric/react-cards: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @uifabric/react-cards: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/react-cards: error Command failed with exit code 1.
-@fluentui/react-avatar: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-avatar: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-avatar: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-avatar: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-avatar/tsconfig.json"
+@fluentui/react-avatar: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-avatar/tsconfig.json"
 @fluentui/react-avatar:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-avatar:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-avatar:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1425,7 +1455,7 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-avatar: Found 4 errors.
 @fluentui/react-avatar: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-avatar: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-avatar: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-avatar: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-avatar: error Command failed with exit code 1.
 @fluentui/react-button: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-button: [XX:XX:XX XM] x ------------------------------------
@@ -1565,9 +1595,9 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-link: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-link: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-link: error Command failed with exit code 1.
-@fluentui/react-slider: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-slider: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-slider: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-slider: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-slider/tsconfig.json"
+@fluentui/react-slider: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-slider/tsconfig.json"
 @fluentui/react-slider:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-slider:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-slider:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1611,17 +1641,21 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-slider: src/next/Slider.tsx:55:31 - error TS2339: Property 'titleLabel' does not exist on type 'typeof import("*.scss")'.
 @fluentui/react-slider: 55       titleLabel: css(classes.titleLabel, titleLabelClassName, ...propClasses),
 @fluentui/react-slider:                                  ~~~~~~~~~~
+@fluentui/react-slider: src/next/Slider.tsx:56:7 - error TS2322: Type '{ root: string; container: string; slideBox: string; line: string; thumb: string; activeSection: string; inactiveSection: string; lineContainer: string; valueLabel: string; titleLabel: string; showTransitions: string; zeroTick: string; }' is not assignable to type 'Required<ISliderStyles>'.
+@fluentui/react-slider:   Object literal may only specify known properties, and 'showTransitions' does not exist in type 'Required<ISliderStyles>'.
+@fluentui/react-slider: 56       showTransitions: css(globalClassNames.showTransitions, ...propClasses),
+@fluentui/react-slider:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @fluentui/react-slider: src/next/Slider.tsx:57:29 - error TS2339: Property 'zeroTick' does not exist on type 'typeof import("*.scss")'.
 @fluentui/react-slider: 57       zeroTick: css(classes.zeroTick, globalClassNames.zeroTick, ...propClasses),
 @fluentui/react-slider:                                ~~~~~~~~
-@fluentui/react-slider: Found 13 errors.
+@fluentui/react-slider: Found 14 errors.
 @fluentui/react-slider: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-slider: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-slider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-slider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-slider: error Command failed with exit code 1.
-@fluentui/react-tabs: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-tabs: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-tabs: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-tabs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-tabs/tsconfig.json"
+@fluentui/react-tabs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-tabs/tsconfig.json"
 @fluentui/react-tabs:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-tabs:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-tabs:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1665,11 +1699,11 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-tabs: Found 11 errors.
 @fluentui/react-tabs: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-tabs: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-tabs: error Command failed with exit code 1.
-@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
+@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
 @fluentui/react-toggle:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-toggle:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-toggle:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1710,11 +1744,11 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-toggle: Found 10 errors.
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-toggle: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-toggle: error Command failed with exit code 1.
-theming-designer: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+theming-designer: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 theming-designer: [XX:XX:XX XM] x ------------------------------------
-theming-designer: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/theming-designer/tsconfig.json"
+theming-designer: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/theming-designer/tsconfig.json"
 theming-designer:     at ChildProcess.exithandler (child_process.js:303:12)
 theming-designer:     at ChildProcess.emit (events.js:315:20)
 theming-designer:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1728,7 +1762,7 @@ theming-designer:                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 theming-designer: Found 1 error.
 theming-designer: [XX:XX:XX XM] x ------------------------------------
 theming-designer: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-theming-designer: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+theming-designer: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 theming-designer: error Command failed with exit code 1.
 @fluentui/react-flex: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-flex: [XX:XX:XX XM] x ------------------------------------
@@ -1782,17 +1816,17 @@ theming-designer: error Command failed with exit code 1.
 @fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsColumn.base.tsx:208:14 - error TS2790: The operand of a 'delete' operator must be optional.
 @fluentui/react-next: 208       delete this._dragDropSubscription;
 @fluentui/react-next:                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
-@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsHeader.base.tsx:130:14 - error TS2790: The operand of a 'delete' operator must be optional.
-@fluentui/react-next: 130       delete this._subscriptionObject;
+@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsHeader.base.tsx:132:14 - error TS2790: The operand of a 'delete' operator must be optional.
+@fluentui/react-next: 132       delete this._subscriptionObject;
 @fluentui/react-next:                  ~~~~~~~~~~~~~~~~~~~~~~~~
-@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsHeader.base.tsx:152:14 - error TS2790: The operand of a 'delete' operator must be optional.
-@fluentui/react-next: 152       delete this._subscriptionObject;
+@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsHeader.base.tsx:154:14 - error TS2790: The operand of a 'delete' operator must be optional.
+@fluentui/react-next: 154       delete this._subscriptionObject;
 @fluentui/react-next:                  ~~~~~~~~~~~~~~~~~~~~~~~~
-@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsRow.base.tsx:110:16 - error TS2790: The operand of a 'delete' operator must be optional.
-@fluentui/react-next: 110         delete this._dragDropSubscription;
+@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsRow.base.tsx:109:16 - error TS2790: The operand of a 'delete' operator must be optional.
+@fluentui/react-next: 109         delete this._dragDropSubscription;
 @fluentui/react-next:                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
-@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsRow.base.tsx:148:14 - error TS2790: The operand of a 'delete' operator must be optional.
-@fluentui/react-next: 148       delete this._dragDropSubscription;
+@fluentui/react-next: ../office-ui-fabric-react/src/components/DetailsList/DetailsRow.base.tsx:147:14 - error TS2790: The operand of a 'delete' operator must be optional.
+@fluentui/react-next: 147       delete this._dragDropSubscription;
 @fluentui/react-next:                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
 @fluentui/react-next: ../office-ui-fabric-react/src/components/FloatingPicker/PeoplePicker/PeoplePickerItems/SuggestionItemDefault.tsx:12:72 - error TS2339: Property 'peoplePickerPersonaContent' does not exist on type 'typeof import("*.scss")'.
 @fluentui/react-next: 12     <div className={css('ms-PeoplePicker-personaContent', stylesImport.peoplePickerPersonaContent)}>
