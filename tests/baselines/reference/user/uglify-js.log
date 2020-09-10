@@ -4,7 +4,7 @@ Standard output:
 
 
 Standard error:
-../../../built/local/tsc.js:104661
+../../../built/local/tsc.js:104667
                 throw e;
                 ^
 
