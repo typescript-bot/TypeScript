@@ -7859,7 +7859,6 @@ node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceB
 node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(381,22): error TS2345: Argument of type 'string' is not assignable to parameter of type 'boolean'.
 node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(432,23): error TS2339: Property 'intersectOrdered' does not exist on type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(432,61): error TS2339: Property 'naturalOrderComparator' does not exist on type 'StringConstructor'.
-node_modules/chrome-devtools-frontend/front_end/persistence/FileSystemWorkspaceBinding.js(526,106): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => any'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(75,10): error TS2339: Property 'catchException' does not exist on type 'Promise<IsolatedFileSystem>'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(83,59): error TS2339: Property 'message' does not exist on type 'DOMError'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(97,17): error TS2304: Cannot find name 'FileEntry'.
@@ -10770,7 +10769,6 @@ node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(363,62
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(368,34): error TS2694: Namespace 'Protocol' has no exported member 'Runtime'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(372,42): error TS2339: Property 'result' does not exist on type '{ response: RemoteObject; exceptionDetails: any; }'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(381,35): error TS2694: Namespace 'Protocol' has no exported member 'Runtime'.
-node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(502,107): error TS2345: Argument of type '(value: any) => void' is not assignable to parameter of type '() => any'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(503,30): error TS2345: Argument of type 'Function' is not assignable to parameter of type '(value: any[]) => any[] | PromiseLike<any[]>'.
   Type 'Function' provides no match for the signature '(value: any[]): any[] | PromiseLike<any[]>'.
 node_modules/chrome-devtools-frontend/front_end/test_runner/TestRunner.js(641,59): error TS2551: Property 'testRunner' does not exist on type 'Window & typeof globalThis'. Did you mean 'TestRunner'?

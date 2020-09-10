@@ -194,6 +194,10 @@ lib/optimize/SplitChunksPlugin.js(1393,13): error TS2339: Property 'timeEnd' doe
 lib/optimize/SplitChunksPlugin.js(1395,13): error TS2339: Property 'time' does not exist on type 'typeof WebpackLogger'.
 lib/optimize/SplitChunksPlugin.js(1513,13): error TS2339: Property 'timeEnd' does not exist on type 'typeof WebpackLogger'.
 lib/runtime/LoadScriptRuntimeModule.js(8,7): error TS2440: Import declaration conflicts with local declaration of 'Compilation'.
+lib/sharing/ConsumeSharedPlugin.js(238,9): error TS2322: Type 'string | false | void' is not assignable to type 'string'.
+  Type 'boolean' is not assignable to type 'string'.
+lib/sharing/ConsumeSharedPlugin.js(240,9): error TS2322: Type 'false | void | (string | number | [])[]' is not assignable to type 'false | (string | number | [])[]'.
+  Type 'void' is not assignable to type 'false | (string | number | [])[]'.
 lib/wasm-async/AsyncWebAssemblyModulesPlugin.js(9,7): error TS2440: Import declaration conflicts with local declaration of 'Compilation'.
 lib/webpack.js(9,7): error TS2440: Import declaration conflicts with local declaration of 'Compiler'.
 lib/webpack.js(10,7): error TS2440: Import declaration conflicts with local declaration of 'MultiCompiler'.

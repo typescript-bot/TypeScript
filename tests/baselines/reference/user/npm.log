@@ -56,7 +56,6 @@ node_modules/npm/lib/audit.js(88,61): error TS2339: Property 'config' does not e
 node_modules/npm/lib/audit.js(89,10): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/npm/lib/audit.js(90,10): error TS2339: Property 'wrapped' does not exist on type 'Error'.
 node_modules/npm/lib/auth/legacy.js(12,30): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
-node_modules/npm/lib/auth/legacy.js(12,81): error TS2554: Expected 1 arguments, but got 0.
 node_modules/npm/lib/auth/legacy.js(35,16): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/auth/legacy.js(69,33): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/auth/oauth.js(5,7): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
