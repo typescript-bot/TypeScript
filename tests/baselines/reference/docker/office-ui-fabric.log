@@ -746,9 +746,9 @@ Standard error:
 @fluentui/styles: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/accessibility: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/accessibility: [XX:XX:XX XM] x Command not defined: ts
-@uifabric/merge-styles: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@uifabric/merge-styles: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @uifabric/merge-styles: [XX:XX:XX XM] x ------------------------------------
-@uifabric/merge-styles: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/merge-styles/tsconfig.json"
+@uifabric/merge-styles: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/merge-styles/tsconfig.json"
 @uifabric/merge-styles:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/merge-styles:     at ChildProcess.emit (events.js:315:20)
 @uifabric/merge-styles:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -765,7 +765,7 @@ Standard error:
 @uifabric/merge-styles: Found 2 errors.
 @uifabric/merge-styles: [XX:XX:XX XM] x ------------------------------------
 @uifabric/merge-styles: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/merge-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@uifabric/merge-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @uifabric/merge-styles: error Command failed with exit code 1.
 @fluentui/react-northstar-styles-renderer: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-northstar-styles-renderer: [XX:XX:XX XM] x Command not defined: ts
@@ -773,9 +773,9 @@ Standard error:
 @fluentui/react-northstar-emotion-renderer: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/react-northstar-fela-renderer: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-northstar-fela-renderer: [XX:XX:XX XM] x Command not defined: ts
-@uifabric/utilities: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/utilities: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/utilities: [XX:XX:XX XM] x ------------------------------------
-@uifabric/utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/utilities/tsconfig.json"
+@uifabric/utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/utilities/tsconfig.json"
 @uifabric/utilities:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/utilities:     at ChildProcess.emit (events.js:315:20)
 @uifabric/utilities:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -807,7 +807,7 @@ Standard error:
 @uifabric/utilities: Found 7 errors.
 @uifabric/utilities: [XX:XX:XX XM] x ------------------------------------
 @uifabric/utilities: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/utilities: error Command failed with exit code 1.
 @fluentui/react-icons: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-icons: [XX:XX:XX XM] x ------------------------------------
@@ -833,9 +833,9 @@ Standard error:
 @fluentui/react-icons-northstar: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/react-telemetry: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-telemetry: [XX:XX:XX XM] x Command not defined: ts
-@uifabric/foundation: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/foundation: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/foundation: [XX:XX:XX XM] x ------------------------------------
-@uifabric/foundation: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/foundation/tsconfig.json"
+@uifabric/foundation: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/foundation/tsconfig.json"
 @uifabric/foundation:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/foundation:     at ChildProcess.emit (events.js:315:20)
 @uifabric/foundation:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -858,13 +858,13 @@ Standard error:
 @uifabric/foundation: Found 1 error.
 @uifabric/foundation: [XX:XX:XX XM] x ------------------------------------
 @uifabric/foundation: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/foundation: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/foundation: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/foundation: error Command failed with exit code 1.
 @fluentui/react-northstar: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-northstar: [XX:XX:XX XM] x Command not defined: ts
-office-ui-fabric-react: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+office-ui-fabric-react: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 office-ui-fabric-react: [XX:XX:XX XM] x ------------------------------------
-office-ui-fabric-react: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/office-ui-fabric-react/tsconfig.json"
+office-ui-fabric-react: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/office-ui-fabric-react/tsconfig.json"
 office-ui-fabric-react:     at ChildProcess.exithandler (child_process.js:303:12)
 office-ui-fabric-react:     at ChildProcess.emit (events.js:315:20)
 office-ui-fabric-react:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -946,7 +946,7 @@ office-ui-fabric-react:               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 office-ui-fabric-react: Found 21 errors.
 office-ui-fabric-react: [XX:XX:XX XM] x ------------------------------------
 office-ui-fabric-react: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-office-ui-fabric-react: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+office-ui-fabric-react: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/react-avatar: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-avatar: [XX:XX:XX XM] x ------------------------------------
@@ -971,9 +971,9 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/react-avatar: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-avatar: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-avatar: error Command failed with exit code 1.
-@fluentui/react-image: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-image: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-image: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-image: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-image/tsconfig.json"
+@fluentui/react-image: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-image/tsconfig.json"
 @fluentui/react-image:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-image:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-image:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -989,7 +989,7 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/react-image: Found 1 error.
 @fluentui/react-image: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-image: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-image: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-image: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-image: error Command failed with exit code 1.
 @fluentui/circulars-test: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/circulars-test: [XX:XX:XX XM] x Command not defined: ts
@@ -999,9 +999,9 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/local-sandbox: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/projects-test: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/projects-test: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react-checkbox: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-checkbox: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-checkbox: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-checkbox: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-checkbox/tsconfig.json"
+@fluentui/react-checkbox: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-checkbox/tsconfig.json"
 @fluentui/react-checkbox:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-checkbox:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-checkbox:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1017,7 +1017,7 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/react-checkbox: Found 1 error.
 @fluentui/react-checkbox: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-checkbox: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-checkbox: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-checkbox: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-checkbox: error Command failed with exit code 1.
 @fluentui/react-link: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-link: [XX:XX:XX XM] x ------------------------------------
@@ -1145,9 +1145,9 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/react-tabs: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-tabs: error Command failed with exit code 1.
-@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
+@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
 @fluentui/react-toggle:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-toggle:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-toggle:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1188,11 +1188,11 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @fluentui/react-toggle: Found 10 errors.
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-toggle: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-toggle: error Command failed with exit code 1.
-@uifabric/tsx-editor: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/tsx-editor: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/tsx-editor: [XX:XX:XX XM] x ------------------------------------
-@uifabric/tsx-editor: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/tsx-editor/tsconfig.json"
+@uifabric/tsx-editor: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/tsx-editor/tsconfig.json"
 @uifabric/tsx-editor:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/tsx-editor:     at ChildProcess.emit (events.js:315:20)
 @uifabric/tsx-editor:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1233,7 +1233,7 @@ office-ui-fabric-react: error Command failed with exit code 1.
 @uifabric/tsx-editor: Found 10 errors.
 @uifabric/tsx-editor: [XX:XX:XX XM] x ------------------------------------
 @uifabric/tsx-editor: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/tsx-editor: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/tsx-editor: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/tsx-editor: error Command failed with exit code 1.
 @fluentui/e2e: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/e2e: [XX:XX:XX XM] x Command not defined: ts
@@ -1512,9 +1512,9 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-flex: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-flex: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-flex: error Command failed with exit code 1.
-@fluentui/react-next: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-next: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-next: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-next: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-next/tsconfig.json"
+@fluentui/react-next: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-next/tsconfig.json"
 @fluentui/react-next:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-next:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-next:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1602,11 +1602,11 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-next: Found 23 errors.
 @fluentui/react-next: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-next: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-next: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-next: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-next: error Command failed with exit code 1.
-theming-designer: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+theming-designer: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 theming-designer: [XX:XX:XX XM] x ------------------------------------
-theming-designer: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/theming-designer/tsconfig.json"
+theming-designer: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/theming-designer/tsconfig.json"
 theming-designer:     at ChildProcess.exithandler (child_process.js:303:12)
 theming-designer:     at ChildProcess.emit (events.js:315:20)
 theming-designer:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1620,11 +1620,11 @@ theming-designer:                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 theming-designer: Found 1 error.
 theming-designer: [XX:XX:XX XM] x ------------------------------------
 theming-designer: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-theming-designer: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+theming-designer: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 theming-designer: error Command failed with exit code 1.
-@uifabric/api-docs: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/api-docs: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/api-docs: [XX:XX:XX XM] x ------------------------------------
-@uifabric/api-docs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/api-docs/tsconfig.json"
+@uifabric/api-docs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/api-docs/tsconfig.json"
 @uifabric/api-docs:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/api-docs:     at ChildProcess.emit (events.js:315:20)
 @uifabric/api-docs:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1639,7 +1639,7 @@ theming-designer: error Command failed with exit code 1.
 @uifabric/api-docs: Found 1 error.
 @uifabric/api-docs: [XX:XX:XX XM] x ------------------------------------
 @uifabric/api-docs: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/api-docs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/api-docs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/api-docs: error Command failed with exit code 1.
 codesandbox-react-next-template: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 codesandbox-react-next-template: [XX:XX:XX XM] x ------------------------------------
@@ -1648,8 +1648,11 @@ codesandbox-react-next-template:     at ChildProcess.exithandler (child_process.
 codesandbox-react-next-template:     at ChildProcess.emit (events.js:315:20)
 codesandbox-react-next-template:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
 codesandbox-react-next-template:     at maybeClose (internal/child_process.js:1021:16)
-codesandbox-react-next-template:     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
-codesandbox-react-next-template:     at Process.callbackTrampoline (internal/async_hooks.js:120:14)
+codesandbox-react-next-template:     at Socket.<anonymous> (internal/child_process.js:443:11)
+codesandbox-react-next-template:     at Socket.emit (events.js:315:20)
+codesandbox-react-next-template:     at Socket.EventEmitter.emit (domain.js:506:15)
+codesandbox-react-next-template:     at Pipe.<anonymous> (net.js:674:12)
+codesandbox-react-next-template:     at Pipe.callbackTrampoline (internal/async_hooks.js:120:14)
 codesandbox-react-next-template: [XX:XX:XX XM] x stdout:
 codesandbox-react-next-template: [XX:XX:XX XM] x ../../packages/office-ui-fabric-react/src/components/ChoiceGroup/ChoiceGroup.base.tsx:147:19 - error TS2783: 'key' is specified more than once, so this usage will be overwritten.
 codesandbox-react-next-template: 147                   key={option.key}
@@ -1711,9 +1714,9 @@ codesandbox-react-next-template: [XX:XX:XX XM] x -------------------------------
 codesandbox-react-next-template: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 codesandbox-react-next-template: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 codesandbox-react-next-template: error Command failed with exit code 1.
-perf-test: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+perf-test: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 perf-test: [XX:XX:XX XM] x ------------------------------------
-perf-test: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/perf-test/tsconfig.json"
+perf-test: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/perf-test/tsconfig.json"
 perf-test:     at ChildProcess.exithandler (child_process.js:303:12)
 perf-test:     at ChildProcess.emit (events.js:315:20)
 perf-test:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1812,7 +1815,7 @@ perf-test:                                 ~~~~~~~~~~~~~~~~~~~~
 perf-test: Found 28 errors.
 perf-test: [XX:XX:XX XM] x ------------------------------------
 perf-test: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-perf-test: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+perf-test: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 perf-test: error Command failed with exit code 1.
 vr-tests: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 vr-tests: [XX:XX:XX XM] x ------------------------------------
@@ -2143,9 +2146,9 @@ vr-tests: error Command failed with exit code 1.
 @fluentui/examples: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/examples: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/examples: error Command failed with exit code 1.
-@uifabric/fabric-website: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/fabric-website: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/fabric-website: [XX:XX:XX XM] x ------------------------------------
-@uifabric/fabric-website: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/fabric-website/tsconfig.json"
+@uifabric/fabric-website: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/fabric-website/tsconfig.json"
 @uifabric/fabric-website:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/fabric-website:     at ChildProcess.emit (events.js:315:20)
 @uifabric/fabric-website:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -2651,6 +2654,6 @@ vr-tests: error Command failed with exit code 1.
 @uifabric/fabric-website: Found 165 errors.
 @uifabric/fabric-website: [XX:XX:XX XM] x ------------------------------------
 @uifabric/fabric-website: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/fabric-website: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/fabric-website: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/fabric-website: error Command failed with exit code 1.
 lerna ERR! Received non-zero exit code 1 during execution
