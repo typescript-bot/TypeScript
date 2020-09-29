@@ -1,0 +1,130 @@
+Exit Code: 2
+Standard output:
+src/ReadonlyMap.ts(132,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+src/ReadonlyMap.ts(132,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'A'.
+        'A' could be instantiated with an arbitrary type which could be unrelated to 'void | undefined'.
+          Type 'undefined' is not assignable to type 'A'.
+            'A' could be instantiated with an arbitrary type which could be unrelated to 'undefined'.
+src/ReadonlyMap.ts(327,14): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(327,14): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(391,14): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(391,14): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(436,16): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(436,16): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(512,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(512,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(528,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(528,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(552,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(552,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(571,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(571,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(586,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+src/ReadonlyMap.ts(586,12): error TS2322: Type 'IteratorResult<[K, A], any>' is not assignable to type 'Next<readonly [K, A]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, A]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, A]'.
+        Type 'undefined' is not assignable to type 'readonly [K, A]'.
+src/ReadonlyMap.ts(622,12): error TS2322: Type 'IteratorResult<[K, Option<A>], any>' is not assignable to type 'Next<readonly [K, Option<A>]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, Option<A>]>'.
+src/ReadonlyMap.ts(622,12): error TS2322: Type 'IteratorResult<[K, Option<A>], any>' is not assignable to type 'Next<readonly [K, Option<A>]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, Option<A>]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, Option<A>]'.
+        Type 'undefined' is not assignable to type 'readonly [K, Option<A>]'.
+src/ReadonlyMap.ts(696,12): error TS2322: Type 'IteratorResult<[K, Either<A, B>], any>' is not assignable to type 'Next<readonly [K, Either<A, B>]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, Either<A, B>]>'.
+src/ReadonlyMap.ts(696,12): error TS2322: Type 'IteratorResult<[K, Either<A, B>], any>' is not assignable to type 'Next<readonly [K, Either<A, B>]>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<readonly [K, Either<A, B>]>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'readonly [K, Either<A, B>]'.
+        Type 'undefined' is not assignable to type 'readonly [K, Either<A, B>]'.
+src/ReadonlySet.ts(90,24): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+src/ReadonlySet.ts(90,24): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'A'.
+        'A' could be instantiated with an arbitrary type which could be unrelated to 'void | undefined'.
+          Type 'undefined' is not assignable to type 'A'.
+            'A' could be instantiated with an arbitrary type which could be unrelated to 'undefined'.
+src/ReadonlySet.ts(180,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+src/ReadonlySet.ts(180,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'A'.
+        'A' could be instantiated with an arbitrary type which could be unrelated to 'void | undefined'.
+          Type 'undefined' is not assignable to type 'A'.
+            'A' could be instantiated with an arbitrary type which could be unrelated to 'undefined'.
+src/ReadonlySet.ts(208,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+src/ReadonlySet.ts(208,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'A'.
+        'A' could be instantiated with an arbitrary type which could be unrelated to 'void | undefined'.
+          Type 'undefined' is not assignable to type 'A'.
+            'A' could be instantiated with an arbitrary type which could be unrelated to 'undefined'.
+src/ReadonlySet.ts(242,24): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+src/ReadonlySet.ts(242,24): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'A'.
+        'A' could be instantiated with an arbitrary type which could be unrelated to 'void | undefined'.
+          Type 'undefined' is not assignable to type 'A'.
+            'A' could be instantiated with an arbitrary type which could be unrelated to 'undefined'.
+src/ReadonlySet.ts(337,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+src/ReadonlySet.ts(337,14): error TS2322: Type 'IteratorResult<A, any>' is not assignable to type 'Next<A>'.
+  Type 'IteratorVoidReturnResult' is not assignable to type 'Next<A>'.
+    Types of property 'value' are incompatible.
+      Type 'void | undefined' is not assignable to type 'A'.
+        'A' could be instantiated with an arbitrary type which could be unrelated to 'void | undefined'.
+          Type 'undefined' is not assignable to type 'A'.
+            'A' could be instantiated with an arbitrary type which could be unrelated to 'undefined'.
+
+
+
+Standard error:
