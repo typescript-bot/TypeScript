@@ -5,15 +5,11 @@ Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
 Node.js version is 14.11.0 (pre-LTS)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-XX of XX: [@azure/logger] completed successfully in ? seconds
-SUCCESS (1)
-================================
-@azure/logger (? seconds)
-================================
-BLOCKED (49)
+BLOCKED (50)
 ================================
 @azure/abort-controller
 @azure/core-auth
+@azure/logger
 @azure/core-asynciterator-polyfill
 @azure/core-http
 @azure/communication-common
@@ -138,4 +134,5 @@ XX of XX: [@azure/cosmos] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/dev-tool] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/event-processor-host] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [testhub] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/logger] blocked by [@azure/eslint-plugin-azure-sdk]!
 [@azure/eslint-plugin-azure-sdk] Returned error code: 2
