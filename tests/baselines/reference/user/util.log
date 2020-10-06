@@ -1,5 +1,6 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.esnext.d.ts(25,21): error TS2726: Cannot find lib definition for 'esnext.weakref'.
 node_modules/util/util.js(27,20): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/util/util.js(35,45): error TS2769: No overload matches this call.
   The last overload gave the following error.
