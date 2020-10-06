@@ -83,11 +83,11 @@ The API report is up to date: temp/vue.api.md
 Writing package typings: /vue-next/packages/vue/dist/vue.d.ts
 Writing package typings: /vue-next/dist/vue.d.ts
 API Extractor completed successfully.
-compiler-dom.global.prod.js min:43.87kb / gzip:16.91kb / brotli:15.31kb
-reactivity.global.prod.js min:8.28kb / gzip:3.20kb / brotli:2.97kb
-runtime-dom.global.prod.js min:68.37kb / gzip:26.23kb / brotli:23.76kb
-size-check.global.prod.js min:39.41kb / gzip:15.72kb / brotli:14.34kb
-vue.global.prod.js min:105.19kb / gzip:39.87kb / brotli:35.89kb
+compiler-dom.global.prod.js min:43.93kb / gzip:16.94kb / brotli:15.35kb
+reactivity.global.prod.js min:8.30kb / gzip:3.21kb / brotli:2.97kb
+runtime-dom.global.prod.js min:68.43kb / gzip:26.26kb / brotli:23.80kb
+size-check.global.prod.js min:39.47kb / gzip:15.74kb / brotli:14.36kb
+vue.global.prod.js min:105.31kb / gzip:39.92kb / brotli:35.89kb
 
 
 
