@@ -1,5 +1,6 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.esnext.d.ts(25,21): error TS2726: Cannot find lib definition for 'esnext.weakref'.
 node_modules/lodash/_Hash.js(20,17): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_ListCache.js(20,17): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_MapCache.js(20,17): error TS2532: Object is possibly 'undefined'.

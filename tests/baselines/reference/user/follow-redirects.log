@@ -1,5 +1,6 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.esnext.d.ts(25,21): error TS2726: Cannot find lib definition for 'esnext.weakref'.
 node_modules/follow-redirects/index.js(38,17): error TS2345: Argument of type 'this' is not assignable to parameter of type 'Writable'.
   Type 'RedirectableRequest' is missing the following properties from type 'Writable': writable, writableEnded, writableFinished, writableHighWaterMark, and 27 more.
 node_modules/follow-redirects/index.js(50,10): error TS2339: Property 'on' does not exist on type 'RedirectableRequest'.

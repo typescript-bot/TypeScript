@@ -1,5 +1,6 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.esnext.d.ts(25,21): error TS2726: Cannot find lib definition for 'esnext.weakref'.
 node_modules/minimatch/minimatch.js(77,17): error TS2551: Property 'minimatch' does not exist on type 'typeof minimatch'. Did you mean 'Minimatch'?
 node_modules/minimatch/minimatch.js(144,12): error TS2339: Property '_made' does not exist on type 'make'.
 node_modules/minimatch/minimatch.js(146,22): error TS2339: Property 'pattern' does not exist on type 'make'.
