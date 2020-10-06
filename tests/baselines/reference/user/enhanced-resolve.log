@@ -1,5 +1,6 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.esnext.d.ts(25,21): error TS2726: Cannot find lib definition for 'esnext.weakref'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(120,20): error TS2532: Object is possibly 'undefined'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(123,17): error TS2532: Object is possibly 'undefined'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(124,3): error TS2532: Object is possibly 'undefined'.
