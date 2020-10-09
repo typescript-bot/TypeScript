@@ -556,13 +556,13 @@ vr-tests: Done in ?s.
 @fluentui/react-examples: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/packages/react-examples/tsconfig.json
 @fluentui/react-examples: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-examples/tsconfig.json"
 @fluentui/react-examples: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-@uifabric/fabric-website-resources: yarn run vX.X.X
-@uifabric/fabric-website-resources: $ just-scripts ts
-@uifabric/fabric-website-resources: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/fabric-website-resources/tsconfig.json
-@uifabric/fabric-website-resources: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/fabric-website-resources/tsconfig.json"
-@uifabric/fabric-website-resources: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/fabric-website-resources/tsconfig.json
-@uifabric/fabric-website-resources: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/fabric-website-resources/tsconfig.json"
-@uifabric/fabric-website-resources: Done in ?s.
+@fluentui/public-docsite-resources: yarn run vX.X.X
+@fluentui/public-docsite-resources: $ just-scripts ts
+@fluentui/public-docsite-resources: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/public-docsite-resources/tsconfig.json
+@fluentui/public-docsite-resources: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/public-docsite-resources/tsconfig.json"
+@fluentui/public-docsite-resources: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/public-docsite-resources/tsconfig.json
+@fluentui/public-docsite-resources: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/public-docsite-resources/tsconfig.json"
+@fluentui/public-docsite-resources: Done in ?s.
 a11y-tests: yarn run vX.X.X
 a11y-tests: $ just-scripts ts
 a11y-tests: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/a11y-tests/tsconfig.json
@@ -570,13 +570,13 @@ a11y-tests: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-
 a11y-tests: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/a11y-tests/tsconfig.json
 a11y-tests: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/a11y-tests/tsconfig.json"
 a11y-tests: Done in ?s.
-@uifabric/fabric-website: yarn run vX.X.X
-@uifabric/fabric-website: $ just-scripts ts
-@uifabric/fabric-website: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/fabric-website/tsconfig.json
-@uifabric/fabric-website: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/fabric-website/tsconfig.json"
-@uifabric/fabric-website: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/fabric-website/tsconfig.json
-@uifabric/fabric-website: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/fabric-website/tsconfig.json"
-@uifabric/fabric-website: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@fluentui/public-docsite: yarn run vX.X.X
+@fluentui/public-docsite: $ just-scripts ts
+@fluentui/public-docsite: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/public-docsite/tsconfig.json
+@fluentui/public-docsite: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/public-docsite/tsconfig.json"
+@fluentui/public-docsite: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/apps/public-docsite/tsconfig.json
+@fluentui/public-docsite: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/public-docsite/tsconfig.json"
+@fluentui/public-docsite: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ssr-tests: yarn run vX.X.X
 ssr-tests: $ just-scripts ts
 ssr-tests: Done in ?s.
@@ -630,6 +630,19 @@ Standard error:
 @uifabric/build: create-package/plop-templates-react/src/version.ts:3:28 - error TS2307: Cannot find module '@uifabric/set-version' or its corresponding type declarations.
 @uifabric/build: 3 import { setVersion } from '@uifabric/set-version';
 @uifabric/build:                              ~~~~~~~~~~~~~~~~~~~~~~~
+@uifabric/build: create-package/plopfile.ts:23:5 - error TS2322: Type 'Question<Partial<Answers>>[]' is not assignable to type 'Question<Answers>[]'.
+@uifabric/build:   Type 'Question<Partial<Answers>>' is not assignable to type 'Question<Answers>'.
+@uifabric/build:     Types of property 'message' are incompatible.
+@uifabric/build:       Type 'DynamicQuestionProperty<string | Promise<string>, Partial<Answers>>' is not assignable to type 'string | ((answers: Answers) => string)'.
+@uifabric/build:         Type 'Promise<string>' is not assignable to type 'string | ((answers: Answers) => string)'.
+@uifabric/build:           Type 'Promise<string>' is not assignable to type '(answers: Answers) => string'.
+@uifabric/build:             Type 'Promise<string>' provides no match for the signature '(answers: Answers): string'.
+@uifabric/build: 23     prompts: [
+@uifabric/build:        ~~~~~~~
+@uifabric/build:   ../node_modules/node-plop/index.d.ts:126:3
+@uifabric/build:     126   prompts: inquirer.Question[];
+@uifabric/build:           ~~~~~~~
+@uifabric/build:     The expected type comes from property 'prompts' which is declared here on type 'PlopGenerator'
 @uifabric/build: gulp/plugins/gulp-component-menu-behaviors.ts:1:38 - error TS2307: Cannot find module '@fluentui/a11y-testing' or its corresponding type declarations.
 @uifabric/build: 1 import * as behaviorDefinitions from '@fluentui/a11y-testing';
 @uifabric/build:                                        ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -692,7 +705,7 @@ Standard error:
 @uifabric/build: update-package-versions.js:47:12 - error TS1250: Function declarations are not allowed inside blocks in strict mode when targeting 'ES3' or 'ES5'.
 @uifabric/build: 47   function updateDependencies(deps) {
 @uifabric/build:               ~~~~~~~~~~~~~~~~~~
-@uifabric/build: Found 18 errors.
+@uifabric/build: Found 19 errors.
 @uifabric/build: [XX:XX:XX XM] x ------------------------------------
 @uifabric/build: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @uifabric/build: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
@@ -739,9 +752,9 @@ Standard error:
 @fluentui/styles: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/accessibility: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/accessibility: [XX:XX:XX XM] x Command not defined: ts
-@uifabric/merge-styles: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@uifabric/merge-styles: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @uifabric/merge-styles: [XX:XX:XX XM] x ------------------------------------
-@uifabric/merge-styles: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/merge-styles/tsconfig.json"
+@uifabric/merge-styles: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/merge-styles/tsconfig.json"
 @uifabric/merge-styles:     at ChildProcess.exithandler (child_process.js:303:12)
 @uifabric/merge-styles:     at ChildProcess.emit (events.js:315:20)
 @uifabric/merge-styles:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -758,7 +771,7 @@ Standard error:
 @uifabric/merge-styles: Found 2 errors.
 @uifabric/merge-styles: [XX:XX:XX XM] x ------------------------------------
 @uifabric/merge-styles: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/merge-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@uifabric/merge-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @uifabric/merge-styles: error Command failed with exit code 1.
 @fluentui/react-northstar-styles-renderer: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-northstar-styles-renderer: [XX:XX:XX XM] x Command not defined: ts
@@ -855,9 +868,9 @@ Standard error:
 @uifabric/foundation: error Command failed with exit code 1.
 @fluentui/react-northstar: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-northstar: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react-avatar: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-avatar: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-avatar: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-avatar: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-avatar/tsconfig.json"
+@fluentui/react-avatar: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-avatar/tsconfig.json"
 @fluentui/react-avatar:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-avatar:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-avatar:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -876,7 +889,7 @@ Standard error:
 @fluentui/react-avatar: Found 2 errors.
 @fluentui/react-avatar: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-avatar: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-avatar: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-avatar: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-avatar: error Command failed with exit code 1.
 @fluentui/react-image: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-image: [XX:XX:XX XM] x ------------------------------------
@@ -952,9 +965,9 @@ Standard error:
 @fluentui/local-sandbox: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/projects-test: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/projects-test: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react-checkbox: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-checkbox: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-checkbox: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-checkbox: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-checkbox/tsconfig.json"
+@fluentui/react-checkbox: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-checkbox/tsconfig.json"
 @fluentui/react-checkbox:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-checkbox:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-checkbox:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -970,11 +983,11 @@ Standard error:
 @fluentui/react-checkbox: Found 1 error.
 @fluentui/react-checkbox: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-checkbox: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-checkbox: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-checkbox: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-checkbox: error Command failed with exit code 1.
-@fluentui/react-link: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-link: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-link: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-link: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-link/tsconfig.json"
+@fluentui/react-link: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-link/tsconfig.json"
 @fluentui/react-link:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-link:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-link:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -994,7 +1007,7 @@ Standard error:
 @fluentui/react-link: Found 3 errors.
 @fluentui/react-link: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-link: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-link: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-link: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-link: error Command failed with exit code 1.
 @fluentui/react-slider: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-slider: [XX:XX:XX XM] x ------------------------------------
@@ -1050,9 +1063,9 @@ Standard error:
 @fluentui/react-slider: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-slider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-slider: error Command failed with exit code 1.
-@fluentui/react-tabs: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-tabs: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-tabs: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-tabs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-tabs/tsconfig.json"
+@fluentui/react-tabs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-tabs/tsconfig.json"
 @fluentui/react-tabs:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-tabs:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-tabs:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1096,11 +1109,11 @@ Standard error:
 @fluentui/react-tabs: Found 11 errors.
 @fluentui/react-tabs: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-tabs: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-tabs: error Command failed with exit code 1.
-@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
+@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
 @fluentui/react-toggle:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react-toggle:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react-toggle:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1141,7 +1154,7 @@ Standard error:
 @fluentui/react-toggle: Found 10 errors.
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-toggle: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-toggle: error Command failed with exit code 1.
 codesandbox-react-northstar-template: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 codesandbox-react-northstar-template: [XX:XX:XX XM] x ------------------------------------
@@ -1166,9 +1179,9 @@ codesandbox-react-northstar-template: [XX:XX:XX XM] x Other tasks that did not c
 codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-builder: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-builder: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react/tsconfig.json"
+@fluentui/react: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react/tsconfig.json"
 @fluentui/react:     at ChildProcess.exithandler (child_process.js:303:12)
 @fluentui/react:     at ChildProcess.emit (events.js:315:20)
 @fluentui/react:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1203,7 +1216,7 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react: Found 8 errors.
 @fluentui/react: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react: error Command failed with exit code 1.
 @fluentui/docs: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/docs: [XX:XX:XX XM] x Command not defined: ts
@@ -1733,514 +1746,514 @@ theming-designer: error Command failed with exit code 1.
 @fluentui/react-examples: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-examples: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-examples: error Command failed with exit code 1.
-@uifabric/fabric-website: [XX:XX:XX XM] x Error detected while running 'ts:esm'
-@uifabric/fabric-website: [XX:XX:XX XM] x ------------------------------------
-@uifabric/fabric-website: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/fabric-website/tsconfig.json"
-@uifabric/fabric-website:     at ChildProcess.exithandler (child_process.js:303:12)
-@uifabric/fabric-website:     at ChildProcess.emit (events.js:315:20)
-@uifabric/fabric-website:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
-@uifabric/fabric-website:     at maybeClose (internal/child_process.js:1021:16)
-@uifabric/fabric-website:     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
-@uifabric/fabric-website:     at Process.callbackTrampoline (internal/async_hooks.js:120:14)
-@uifabric/fabric-website: [XX:XX:XX XM] x stdout:
-@uifabric/fabric-website: [XX:XX:XX XM] x src/components/Nav/Nav.tsx:73:35 - error TS2339: Property 'navWrapper' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 73     return <div className={styles.navWrapper}>{this._renderPageNav(pages)}</div>;
-@uifabric/fabric-website:                                      ~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:90:34 - error TS2339: Property 'nav' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 90           <nav className={styles.nav} role="navigation">
-@uifabric/fabric-website:                                     ~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:115:33 - error TS2339: Property 'links' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 115       <ul className={css(styles.links, isSubMenu && styles.isSubMenu)} aria-label="Main website navigation">
-@uifabric/fabric-website:                                     ~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:115:60 - error TS2339: Property 'isSubMenu' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 115       <ul className={css(styles.links, isSubMenu && styles.isSubMenu)} aria-label="Main website navigation">
-@uifabric/fabric-website:                                                                ~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:137:56 - error TS2339: Property 'matchesFilter' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 137         const highlightMatch = <span className={styles.matchesFilter}>{match}</span>;
-@uifabric/fabric-website:                                                            ~~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:151:18 - error TS2339: Property 'link' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 151           styles.link,
-@uifabric/fabric-website:                      ~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:152:44 - error TS2339: Property 'isActive' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 152           isPageActive(page.url) && styles.isActive,
-@uifabric/fabric-website:                                                ~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:153:42 - error TS2339: Property 'hasActiveChild' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 153           hasActiveChild(page) && styles.hasActiveChild,
-@uifabric/fabric-website:                                              ~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:154:37 - error TS2339: Property 'isHomePage' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 154           page.isHomePage && styles.isHomePage,
-@uifabric/fabric-website:                                         ~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:167:91 - error TS2339: Property 'externalIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 167             {page.isExternal && <Icon iconName="NavigateExternalInline" className={styles.externalIcon} />}
-@uifabric/fabric-website:                                                                                               ~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:189:45 - error TS2339: Property 'section' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 189         <li key={key} className={css(styles.section, hasActiveChild(page) && styles.hasActiveChild)}>
-@uifabric/fabric-website:                                                 ~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:189:85 - error TS2339: Property 'hasActiveChild' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 189         <li key={key} className={css(styles.section, hasActiveChild(page) && styles.hasActiveChild)}>
-@uifabric/fabric-website:                                                                                         ~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:257:30 - error TS2339: Property 'searchBoxWrapper' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 257       <div className={styles.searchBoxWrapper}>
-@uifabric/fabric-website:                                  ~~~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:259:29 - error TS2339: Property 'searchBox' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 259           className={styles.searchBox}
-@uifabric/fabric-website:                                 ~~~~~~~~~
-@uifabric/fabric-website: src/components/Nav/Nav.tsx:269:29 - error TS2339: Property 'filterButton' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 269           className={styles.filterButton}
-@uifabric/fabric-website:                                 ~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:157:41 - error TS2339: Property 'siteRoot' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 157       <div key="site" className={styles.siteRoot}>
-@uifabric/fabric-website:                                             ~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:160:36 - error TS2339: Property 'siteWrapper' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 160         <div className={css(styles.siteWrapper, isContentFullBleed && styles.fullWidth)}>
-@uifabric/fabric-website:                                        ~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:160:78 - error TS2339: Property 'fullWidth' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 160         <div className={css(styles.siteWrapper, isContentFullBleed && styles.fullWidth)}>
-@uifabric/fabric-website:                                                                                  ~~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:163:31 - error TS2339: Property 'siteContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 163             className={styles.siteContent}
-@uifabric/fabric-website:                                   ~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:280:32 - error TS2339: Property 'siteNavScrollWrapper' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 280         <div className={styles.siteNavScrollWrapper}>
-@uifabric/fabric-website:                                    ~~~~~~~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:282:36 - error TS2339: Property 'siteNavWrapper' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 282             <div className={styles.siteNavWrapper}>
-@uifabric/fabric-website:                                        ~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/components/Site/Site.tsx:283:38 - error TS2339: Property 'siteNavHeader' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 283               <div className={styles.siteNavHeader}>{this._renderPlatformPicker()}</div>
-@uifabric/fabric-website:                                          ~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/ControlsPage/ControlsPage.tsx:37:41 - error TS2339: Property 'uListFlex' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 37               <ul className={PageStyles.uListFlex}>
-@uifabric/fabric-website:                                            ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/ControlsPage/ControlsPage.tsx:43:61 - error TS2339: Property 'uThird' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 43                     <li key={url} className={css(PageStyles.uThird)}>
-@uifabric/fabric-website:                                                                ~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:23:39 - error TS2339: Property 'cardWrapper' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 23       sectionWrapperClassName={styles.cardWrapper}
-@uifabric/fabric-website:                                          ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:33:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 33           className: styles.card,
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:35:73 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 35             <Link href="#/styles/web/colors/products" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                            ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:36:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 36               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                         ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:37:71 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 37                 <MarkdownHeader as="h2" id="colors" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                          ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:40:58 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 40                 <Icon iconName="Color" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                             ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:46:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 46           className: styles.card,
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:48:67 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 48             <Link href="#/styles/web/elevation" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:49:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 49               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                         ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:50:74 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 50                 <MarkdownHeader as="h2" id="elevation" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                             ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:53:72 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 53                 <Icon iconName="ArrangeSendBackward" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                                           ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:59:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 59           className: styles.card,
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:61:63 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 61             <Link href="#/styles/web/icons" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                  ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:62:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 62               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                         ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:63:76 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 63                 <MarkdownHeader as="h2" id="iconography" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:66:68 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 66                 <Icon iconName="EmojiTabSymbols" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                                       ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:72:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 72           className: styles.card,
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:74:64 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 74             <Link href="#/styles/web/layout" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                   ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:75:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 75               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                         ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:76:71 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 76                 <MarkdownHeader as="h2" id="layout" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                          ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:79:58 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 79                 <Icon iconName="Tiles" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                             ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:85:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 85           className: styles.card,
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:87:64 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 87             <Link href="#/styles/web/motion" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                   ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:88:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 88               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                         ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:89:71 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 89                 <MarkdownHeader as="h2" id="motion" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                          ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:92:63 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 92                 <Icon iconName="MiniExpand" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                                  ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:98:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 98           className: styles.card,
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:100:68 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 100             <Link href="#/styles/web/typography" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                        ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:101:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 101               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                          ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:102:75 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 102                 <MarkdownHeader as="h2" id="typography" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:105:61 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 105                 <Icon iconName="FontSize" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                                 ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:111:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 111           className: styles.card,
-@uifabric/fabric-website:                                 ~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:113:70 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 113             <Link href="#/styles/web/localization" className={styles.cardLink}>
-@uifabric/fabric-website:                                                                          ~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:114:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 114               <div className={styles.cardContent}>
-@uifabric/fabric-website:                                          ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:115:77 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 115                 <MarkdownHeader as="h2" id="localization" className={styles.cardTitle}>
-@uifabric/fabric-website:                                                                                 ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Overviews/StylesPage/StylesPage.tsx:118:58 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 118                 <Icon iconName="World" className={styles.cardIcon} />
-@uifabric/fabric-website:                                                              ~~~~~~~~
-@uifabric/fabric-website: src/pages/PageTemplates/TemplatePage/TemplatePage.tsx:101:33 - error TS2339: Property 'customSection' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 101           className: css(styles.customSection, 'customGlobalClassName', platform === 'web' && 'falseyGlobalClassName'),
-@uifabric/fabric-website:                                     ~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/ElevationPage/ElevationPage.tsx:112:37 - error TS2339: Property 'usageList' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 112               <ul className={styles.usageList}>
-@uifabric/fabric-website:                                         ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/ElevationPage/ElevationPage.tsx:114:53 - error TS2339: Property 'usageListItem' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 114                   <li key={index} className={styles.usageListItem}>
-@uifabric/fabric-website:                                                         ~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/ElevationPage/ElevationPage.tsx:122:42 - error TS2339: Property 'example' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 122               <div className={css(styles.example, styles.compact, `ms-depth-${row.level}`)}>
-@uifabric/fabric-website:                                              ~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/ElevationPage/ElevationPage.tsx:122:58 - error TS2339: Property 'compact' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 122               <div className={css(styles.example, styles.compact, `ms-depth-${row.level}`)}>
-@uifabric/fabric-website:                                                              ~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/ElevationPage/ElevationPage.tsx:123:41 - error TS2339: Property 'caption' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 123                 <span className={styles.caption}>Depth {row.level}</span>
-@uifabric/fabric-website:                                             ~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FabricIconsPage/FabricIconsPage.tsx:48:73 - error TS2339: Property 'iconGrid' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 48               <PivotItem headerText="Fluent UI React" className={styles.iconGrid}>
-@uifabric/fabric-website:                                                                            ~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FabricIconsPage/FabricIconsPage.tsx:51:69 - error TS2339: Property 'iconGrid' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 51               <PivotItem headerText="Fabric Core" className={styles.iconGrid}>
-@uifabric/fabric-website:                                                                        ~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:60:43 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 60                     <ul className={styles.exampleIcons}>
-@uifabric/fabric-website:                                              ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:64:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 64                           className={styles.productIcon}
-@uifabric/fabric-website:                                                ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:71:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 71                           className={styles.productIcon}
-@uifabric/fabric-website:                                                ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:78:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 78                           className={styles.productIcon}
-@uifabric/fabric-website:                                                ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:103:41 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 103                   <ul className={styles.exampleIcons}>
-@uifabric/fabric-website:                                             ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:142:37 - error TS2339: Property 'iconList' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 142               <ul className={styles.iconList}>
-@uifabric/fabric-website:                                         ~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:147:41 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 147                       className={styles.icon}
-@uifabric/fabric-website:                                             ~~~~
-@uifabric/fabric-website: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:150:45 - error TS2339: Property 'iconName' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 150                     <span className={styles.iconName}>{icon.name}</span>
-@uifabric/fabric-website:                                                 ~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:64:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 64                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:65:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 65                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:67:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 67                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:68:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 68                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:70:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 70                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:71:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 71                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:73:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 73                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:74:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 74                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:76:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 76                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:77:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 77                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:79:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 79                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:80:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 80                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:82:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 82                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:83:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 83                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:85:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 85                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:86:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 86                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:88:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 88                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:89:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 89                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:91:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 91                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:92:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 92                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:94:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 94                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:95:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 95                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:97:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 97                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                     ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:98:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 98                     <div className={styles.demoBlock}>1</div>
-@uifabric/fabric-website:                                               ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:102:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 102                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:103:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 103                     <div className={styles.demoBlock}>2</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:105:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 105                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:106:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 106                     <div className={styles.demoBlock}>2</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:108:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 108                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:109:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 109                     <div className={styles.demoBlock}>2</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:111:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 111                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:112:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 112                     <div className={styles.demoBlock}>2</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:114:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 114                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:115:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 115                     <div className={styles.demoBlock}>2</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:117:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 117                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:118:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 118                     <div className={styles.demoBlock}>2</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:122:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 122                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:123:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 123                     <div className={styles.demoBlock}>3</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:125:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 125                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:126:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 126                     <div className={styles.demoBlock}>3</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:128:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 128                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:129:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 129                     <div className={styles.demoBlock}>3</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:131:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 131                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:132:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 132                     <div className={styles.demoBlock}>3</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:136:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 136                   <div className={'ms-Grid-col ms-sm4 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:137:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 137                     <div className={styles.demoBlock}>4</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:139:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 139                   <div className={'ms-Grid-col ms-sm4 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:140:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 140                     <div className={styles.demoBlock}>4</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:142:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 142                   <div className={'ms-Grid-col ms-sm4 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:143:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 143                     <div className={styles.demoBlock}>4</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:147:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 147                   <div className={'ms-Grid-col ms-sm6 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:148:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 148                     <div className={styles.demoBlock}>6</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:150:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 150                   <div className={'ms-Grid-col ms-sm6 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                      ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:151:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 151                     <div className={styles.demoBlock}>6</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:155:67 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 155                   <div className={'ms-Grid-col ms-sm12 ' + styles.demoBlockCol}>
-@uifabric/fabric-website:                                                                       ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:156:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 156                     <div className={styles.demoBlock}>12</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:188:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 188                     <div className={styles.demoBlock}>Visible on smaller screens</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LayoutPage/LayoutPage.tsx:191:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 191                     <div className={styles.demoBlock}>Visible on larger screens</div>
-@uifabric/fabric-website:                                                ~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:48:37 - error TS2339: Property 'directionalIcons' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 48               <ul className={styles.directionalIcons}>
-@uifabric/fabric-website:                                        ~~~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:50:41 - error TS2339: Property 'directionalIconPair' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 50                   <li className={styles.directionalIconPair} key={pairIndex}>
-@uifabric/fabric-website:                                            ~~~~~~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:51:44 - error TS2339: Property 'directionalIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 51                     <div className={styles.directionalIcon}>
-@uifabric/fabric-website:                                               ~~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:55:44 - error TS2339: Property 'directionalIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 55                     <div className={styles.directionalIcon}>
-@uifabric/fabric-website:                                               ~~~~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:62:43 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 62                     <ul className={styles.exampleIcons}>
-@uifabric/fabric-website:                                              ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:66:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 66                           className={styles.productIcon}
-@uifabric/fabric-website:                                                ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:73:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 73                           className={styles.productIcon}
-@uifabric/fabric-website:                                                ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:80:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 80                           className={styles.productIcon}
-@uifabric/fabric-website:                                                ~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:105:41 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 105                   <ul className={styles.exampleIcons}>
-@uifabric/fabric-website:                                             ~~~~~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:175:37 - error TS2339: Property 'iconList' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 175               <ul className={styles.iconList}>
-@uifabric/fabric-website:                                         ~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:183:41 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 183                       className={styles.icon}
-@uifabric/fabric-website:                                             ~~~~
-@uifabric/fabric-website: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:185:45 - error TS2339: Property 'iconName' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 185                     <span className={styles.iconName}>{icon.name}</span>
-@uifabric/fabric-website:                                                 ~~~~~~~~
-@uifabric/fabric-website: src/pages/Styles/TypographyPage/TypographyPage.tsx:137:42 - error TS2339: Property 'example' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 137               <div className={css(styles.example, `ms-fontSize-${row.size}`)}>
-@uifabric/fabric-website:                                              ~~~~~~~
-@uifabric/fabric-website: src/root.tsx:19:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 19       className: platformPickerStyles.icon,
-@uifabric/fabric-website:                                          ~~~~
-@uifabric/fabric-website: src/root.tsx:22:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 22       className: platformPickerStyles.icon,
-@uifabric/fabric-website:                                          ~~~~
-@uifabric/fabric-website: src/root.tsx:25:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 25       className: platformPickerStyles.icon,
-@uifabric/fabric-website:                                          ~~~~
-@uifabric/fabric-website: src/root.tsx:28:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 28       className: platformPickerStyles.icon,
-@uifabric/fabric-website:                                          ~~~~
-@uifabric/fabric-website: src/root.tsx:31:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 31       className: platformPickerStyles.icon,
-@uifabric/fabric-website:                                          ~~~~
-@uifabric/fabric-website: src/root.tsx:34:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 34       className: platformPickerStyles.icon,
-@uifabric/fabric-website:                                          ~~~~
-@uifabric/fabric-website: src/utilities/svgIcons.tsx:16:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 16   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                 ~~~~
-@uifabric/fabric-website: src/utilities/svgIcons.tsx:49:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 49   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                 ~~~~
-@uifabric/fabric-website: src/utilities/svgIcons.tsx:67:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 67   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                 ~~~~
-@uifabric/fabric-website: src/utilities/svgIcons.tsx:91:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 91   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                 ~~~~
-@uifabric/fabric-website: src/utilities/svgIcons.tsx:126:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 126   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                  ~~~~
-@uifabric/fabric-website: src/utilities/svgIcons.tsx:158:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 158   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                  ~~~~
-@uifabric/fabric-website: src/utilities/svgIconsColor.tsx:9:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 9   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                ~~~~
-@uifabric/fabric-website: src/utilities/svgIconsColor.tsx:81:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 81   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                 ~~~~
-@uifabric/fabric-website: src/utilities/svgIconsColor.tsx:126:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 126   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                  ~~~~
-@uifabric/fabric-website: src/utilities/svgIconsColor.tsx:202:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 202   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                  ~~~~
-@uifabric/fabric-website: src/utilities/svgIconsColor.tsx:285:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 285   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                  ~~~~
-@uifabric/fabric-website: src/utilities/svgIconsColor.tsx:348:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
-@uifabric/fabric-website: 348   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
-@uifabric/fabric-website:                                  ~~~~
-@uifabric/fabric-website: Found 165 errors.
-@uifabric/fabric-website: [XX:XX:XX XM] x ------------------------------------
-@uifabric/fabric-website: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@uifabric/fabric-website: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
-@uifabric/fabric-website: error Command failed with exit code 1.
+@fluentui/public-docsite: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/public-docsite: [XX:XX:XX XM] x ------------------------------------
+@fluentui/public-docsite: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/public-docsite/tsconfig.json"
+@fluentui/public-docsite:     at ChildProcess.exithandler (child_process.js:303:12)
+@fluentui/public-docsite:     at ChildProcess.emit (events.js:315:20)
+@fluentui/public-docsite:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
+@fluentui/public-docsite:     at maybeClose (internal/child_process.js:1021:16)
+@fluentui/public-docsite:     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+@fluentui/public-docsite:     at Process.callbackTrampoline (internal/async_hooks.js:120:14)
+@fluentui/public-docsite: [XX:XX:XX XM] x stdout:
+@fluentui/public-docsite: [XX:XX:XX XM] x src/components/Nav/Nav.tsx:73:35 - error TS2339: Property 'navWrapper' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 73     return <div className={styles.navWrapper}>{this._renderPageNav(pages)}</div>;
+@fluentui/public-docsite:                                      ~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:90:34 - error TS2339: Property 'nav' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 90           <nav className={styles.nav} role="navigation">
+@fluentui/public-docsite:                                     ~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:115:33 - error TS2339: Property 'links' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 115       <ul className={css(styles.links, isSubMenu && styles.isSubMenu)} aria-label="Main website navigation">
+@fluentui/public-docsite:                                     ~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:115:60 - error TS2339: Property 'isSubMenu' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 115       <ul className={css(styles.links, isSubMenu && styles.isSubMenu)} aria-label="Main website navigation">
+@fluentui/public-docsite:                                                                ~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:137:56 - error TS2339: Property 'matchesFilter' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 137         const highlightMatch = <span className={styles.matchesFilter}>{match}</span>;
+@fluentui/public-docsite:                                                            ~~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:151:18 - error TS2339: Property 'link' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 151           styles.link,
+@fluentui/public-docsite:                      ~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:152:44 - error TS2339: Property 'isActive' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 152           isPageActive(page.url) && styles.isActive,
+@fluentui/public-docsite:                                                ~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:153:42 - error TS2339: Property 'hasActiveChild' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 153           hasActiveChild(page) && styles.hasActiveChild,
+@fluentui/public-docsite:                                              ~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:154:37 - error TS2339: Property 'isHomePage' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 154           page.isHomePage && styles.isHomePage,
+@fluentui/public-docsite:                                         ~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:167:91 - error TS2339: Property 'externalIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 167             {page.isExternal && <Icon iconName="NavigateExternalInline" className={styles.externalIcon} />}
+@fluentui/public-docsite:                                                                                               ~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:189:45 - error TS2339: Property 'section' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 189         <li key={key} className={css(styles.section, hasActiveChild(page) && styles.hasActiveChild)}>
+@fluentui/public-docsite:                                                 ~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:189:85 - error TS2339: Property 'hasActiveChild' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 189         <li key={key} className={css(styles.section, hasActiveChild(page) && styles.hasActiveChild)}>
+@fluentui/public-docsite:                                                                                         ~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:257:30 - error TS2339: Property 'searchBoxWrapper' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 257       <div className={styles.searchBoxWrapper}>
+@fluentui/public-docsite:                                  ~~~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:259:29 - error TS2339: Property 'searchBox' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 259           className={styles.searchBox}
+@fluentui/public-docsite:                                 ~~~~~~~~~
+@fluentui/public-docsite: src/components/Nav/Nav.tsx:269:29 - error TS2339: Property 'filterButton' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 269           className={styles.filterButton}
+@fluentui/public-docsite:                                 ~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:157:41 - error TS2339: Property 'siteRoot' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 157       <div key="site" className={styles.siteRoot}>
+@fluentui/public-docsite:                                             ~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:160:36 - error TS2339: Property 'siteWrapper' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 160         <div className={css(styles.siteWrapper, isContentFullBleed && styles.fullWidth)}>
+@fluentui/public-docsite:                                        ~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:160:78 - error TS2339: Property 'fullWidth' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 160         <div className={css(styles.siteWrapper, isContentFullBleed && styles.fullWidth)}>
+@fluentui/public-docsite:                                                                                  ~~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:163:31 - error TS2339: Property 'siteContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 163             className={styles.siteContent}
+@fluentui/public-docsite:                                   ~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:280:32 - error TS2339: Property 'siteNavScrollWrapper' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 280         <div className={styles.siteNavScrollWrapper}>
+@fluentui/public-docsite:                                    ~~~~~~~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:282:36 - error TS2339: Property 'siteNavWrapper' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 282             <div className={styles.siteNavWrapper}>
+@fluentui/public-docsite:                                        ~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/components/Site/Site.tsx:283:38 - error TS2339: Property 'siteNavHeader' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 283               <div className={styles.siteNavHeader}>{this._renderPlatformPicker()}</div>
+@fluentui/public-docsite:                                          ~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/ControlsPage/ControlsPage.tsx:37:41 - error TS2339: Property 'uListFlex' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 37               <ul className={PageStyles.uListFlex}>
+@fluentui/public-docsite:                                            ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/ControlsPage/ControlsPage.tsx:43:61 - error TS2339: Property 'uThird' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 43                     <li key={url} className={css(PageStyles.uThird)}>
+@fluentui/public-docsite:                                                                ~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:23:39 - error TS2339: Property 'cardWrapper' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 23       sectionWrapperClassName={styles.cardWrapper}
+@fluentui/public-docsite:                                          ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:33:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 33           className: styles.card,
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:35:73 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 35             <Link href="#/styles/web/colors/products" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                            ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:36:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 36               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                         ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:37:71 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 37                 <MarkdownHeader as="h2" id="colors" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                          ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:40:58 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 40                 <Icon iconName="Color" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                             ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:46:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 46           className: styles.card,
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:48:67 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 48             <Link href="#/styles/web/elevation" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:49:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 49               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                         ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:50:74 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 50                 <MarkdownHeader as="h2" id="elevation" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                             ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:53:72 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 53                 <Icon iconName="ArrangeSendBackward" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                                           ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:59:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 59           className: styles.card,
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:61:63 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 61             <Link href="#/styles/web/icons" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                  ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:62:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 62               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                         ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:63:76 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 63                 <MarkdownHeader as="h2" id="iconography" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:66:68 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 66                 <Icon iconName="EmojiTabSymbols" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                                       ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:72:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 72           className: styles.card,
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:74:64 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 74             <Link href="#/styles/web/layout" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                   ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:75:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 75               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                         ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:76:71 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 76                 <MarkdownHeader as="h2" id="layout" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                          ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:79:58 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 79                 <Icon iconName="Tiles" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                             ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:85:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 85           className: styles.card,
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:87:64 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 87             <Link href="#/styles/web/motion" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                   ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:88:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 88               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                         ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:89:71 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 89                 <MarkdownHeader as="h2" id="motion" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                          ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:92:63 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 92                 <Icon iconName="MiniExpand" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                                  ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:98:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 98           className: styles.card,
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:100:68 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 100             <Link href="#/styles/web/typography" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                        ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:101:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 101               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                          ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:102:75 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 102                 <MarkdownHeader as="h2" id="typography" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:105:61 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 105                 <Icon iconName="FontSize" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                                 ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:111:29 - error TS2339: Property 'card' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 111           className: styles.card,
+@fluentui/public-docsite:                                 ~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:113:70 - error TS2339: Property 'cardLink' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 113             <Link href="#/styles/web/localization" className={styles.cardLink}>
+@fluentui/public-docsite:                                                                          ~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:114:38 - error TS2339: Property 'cardContent' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 114               <div className={styles.cardContent}>
+@fluentui/public-docsite:                                          ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:115:77 - error TS2339: Property 'cardTitle' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 115                 <MarkdownHeader as="h2" id="localization" className={styles.cardTitle}>
+@fluentui/public-docsite:                                                                                 ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Overviews/StylesPage/StylesPage.tsx:118:58 - error TS2339: Property 'cardIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 118                 <Icon iconName="World" className={styles.cardIcon} />
+@fluentui/public-docsite:                                                              ~~~~~~~~
+@fluentui/public-docsite: src/pages/PageTemplates/TemplatePage/TemplatePage.tsx:101:33 - error TS2339: Property 'customSection' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 101           className: css(styles.customSection, 'customGlobalClassName', platform === 'web' && 'falseyGlobalClassName'),
+@fluentui/public-docsite:                                     ~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/ElevationPage/ElevationPage.tsx:112:37 - error TS2339: Property 'usageList' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 112               <ul className={styles.usageList}>
+@fluentui/public-docsite:                                         ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/ElevationPage/ElevationPage.tsx:114:53 - error TS2339: Property 'usageListItem' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 114                   <li key={index} className={styles.usageListItem}>
+@fluentui/public-docsite:                                                         ~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/ElevationPage/ElevationPage.tsx:122:42 - error TS2339: Property 'example' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 122               <div className={css(styles.example, styles.compact, `ms-depth-${row.level}`)}>
+@fluentui/public-docsite:                                              ~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/ElevationPage/ElevationPage.tsx:122:58 - error TS2339: Property 'compact' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 122               <div className={css(styles.example, styles.compact, `ms-depth-${row.level}`)}>
+@fluentui/public-docsite:                                                              ~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/ElevationPage/ElevationPage.tsx:123:41 - error TS2339: Property 'caption' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 123                 <span className={styles.caption}>Depth {row.level}</span>
+@fluentui/public-docsite:                                             ~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FabricIconsPage/FabricIconsPage.tsx:48:73 - error TS2339: Property 'iconGrid' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 48               <PivotItem headerText="Fluent UI React" className={styles.iconGrid}>
+@fluentui/public-docsite:                                                                            ~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FabricIconsPage/FabricIconsPage.tsx:51:69 - error TS2339: Property 'iconGrid' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 51               <PivotItem headerText="Fabric Core" className={styles.iconGrid}>
+@fluentui/public-docsite:                                                                        ~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:60:43 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 60                     <ul className={styles.exampleIcons}>
+@fluentui/public-docsite:                                              ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:64:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 64                           className={styles.productIcon}
+@fluentui/public-docsite:                                                ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:71:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 71                           className={styles.productIcon}
+@fluentui/public-docsite:                                                ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:78:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 78                           className={styles.productIcon}
+@fluentui/public-docsite:                                                ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:103:41 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 103                   <ul className={styles.exampleIcons}>
+@fluentui/public-docsite:                                             ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:142:37 - error TS2339: Property 'iconList' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 142               <ul className={styles.iconList}>
+@fluentui/public-docsite:                                         ~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:147:41 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 147                       className={styles.icon}
+@fluentui/public-docsite:                                             ~~~~
+@fluentui/public-docsite: src/pages/Styles/FileTypeIconsPage/FileTypeIconsPage.tsx:150:45 - error TS2339: Property 'iconName' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 150                     <span className={styles.iconName}>{icon.name}</span>
+@fluentui/public-docsite:                                                 ~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:64:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 64                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:65:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 65                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:67:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 67                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:68:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 68                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:70:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 70                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:71:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 71                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:73:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 73                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:74:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 74                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:76:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 76                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:77:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 77                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:79:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 79                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:80:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 80                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:82:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 82                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:83:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 83                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:85:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 85                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:86:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 86                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:88:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 88                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:89:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 89                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:91:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 91                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:92:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 92                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:94:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 94                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:95:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 95                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:97:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 97                   <div className={'ms-Grid-col ms-sm1 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                     ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:98:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 98                     <div className={styles.demoBlock}>1</div>
+@fluentui/public-docsite:                                               ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:102:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 102                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:103:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 103                     <div className={styles.demoBlock}>2</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:105:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 105                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:106:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 106                     <div className={styles.demoBlock}>2</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:108:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 108                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:109:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 109                     <div className={styles.demoBlock}>2</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:111:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 111                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:112:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 112                     <div className={styles.demoBlock}>2</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:114:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 114                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:115:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 115                     <div className={styles.demoBlock}>2</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:117:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 117                   <div className={'ms-Grid-col ms-sm2 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:118:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 118                     <div className={styles.demoBlock}>2</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:122:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 122                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:123:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 123                     <div className={styles.demoBlock}>3</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:125:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 125                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:126:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 126                     <div className={styles.demoBlock}>3</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:128:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 128                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:129:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 129                     <div className={styles.demoBlock}>3</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:131:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 131                   <div className={'ms-Grid-col ms-sm3 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:132:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 132                     <div className={styles.demoBlock}>3</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:136:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 136                   <div className={'ms-Grid-col ms-sm4 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:137:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 137                     <div className={styles.demoBlock}>4</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:139:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 139                   <div className={'ms-Grid-col ms-sm4 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:140:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 140                     <div className={styles.demoBlock}>4</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:142:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 142                   <div className={'ms-Grid-col ms-sm4 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:143:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 143                     <div className={styles.demoBlock}>4</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:147:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 147                   <div className={'ms-Grid-col ms-sm6 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:148:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 148                     <div className={styles.demoBlock}>6</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:150:66 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 150                   <div className={'ms-Grid-col ms-sm6 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                      ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:151:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 151                     <div className={styles.demoBlock}>6</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:155:67 - error TS2339: Property 'demoBlockCol' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 155                   <div className={'ms-Grid-col ms-sm12 ' + styles.demoBlockCol}>
+@fluentui/public-docsite:                                                                       ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:156:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 156                     <div className={styles.demoBlock}>12</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:188:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 188                     <div className={styles.demoBlock}>Visible on smaller screens</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LayoutPage/LayoutPage.tsx:191:44 - error TS2339: Property 'demoBlock' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 191                     <div className={styles.demoBlock}>Visible on larger screens</div>
+@fluentui/public-docsite:                                                ~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:48:37 - error TS2339: Property 'directionalIcons' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 48               <ul className={styles.directionalIcons}>
+@fluentui/public-docsite:                                        ~~~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:50:41 - error TS2339: Property 'directionalIconPair' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 50                   <li className={styles.directionalIconPair} key={pairIndex}>
+@fluentui/public-docsite:                                            ~~~~~~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:51:44 - error TS2339: Property 'directionalIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 51                     <div className={styles.directionalIcon}>
+@fluentui/public-docsite:                                               ~~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/LocalizationPage/LocalizationPage.tsx:55:44 - error TS2339: Property 'directionalIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 55                     <div className={styles.directionalIcon}>
+@fluentui/public-docsite:                                               ~~~~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:62:43 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 62                     <ul className={styles.exampleIcons}>
+@fluentui/public-docsite:                                              ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:66:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 66                           className={styles.productIcon}
+@fluentui/public-docsite:                                                ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:73:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 73                           className={styles.productIcon}
+@fluentui/public-docsite:                                                ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:80:45 - error TS2339: Property 'productIcon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 80                           className={styles.productIcon}
+@fluentui/public-docsite:                                                ~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:105:41 - error TS2339: Property 'exampleIcons' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 105                   <ul className={styles.exampleIcons}>
+@fluentui/public-docsite:                                             ~~~~~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:175:37 - error TS2339: Property 'iconList' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 175               <ul className={styles.iconList}>
+@fluentui/public-docsite:                                         ~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:183:41 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 183                       className={styles.icon}
+@fluentui/public-docsite:                                             ~~~~
+@fluentui/public-docsite: src/pages/Styles/OfficeBrandIconsPage/OfficeBrandIconsPage.tsx:185:45 - error TS2339: Property 'iconName' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 185                     <span className={styles.iconName}>{icon.name}</span>
+@fluentui/public-docsite:                                                 ~~~~~~~~
+@fluentui/public-docsite: src/pages/Styles/TypographyPage/TypographyPage.tsx:137:42 - error TS2339: Property 'example' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 137               <div className={css(styles.example, `ms-fontSize-${row.size}`)}>
+@fluentui/public-docsite:                                              ~~~~~~~
+@fluentui/public-docsite: src/root.tsx:19:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 19       className: platformPickerStyles.icon,
+@fluentui/public-docsite:                                          ~~~~
+@fluentui/public-docsite: src/root.tsx:22:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 22       className: platformPickerStyles.icon,
+@fluentui/public-docsite:                                          ~~~~
+@fluentui/public-docsite: src/root.tsx:25:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 25       className: platformPickerStyles.icon,
+@fluentui/public-docsite:                                          ~~~~
+@fluentui/public-docsite: src/root.tsx:28:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 28       className: platformPickerStyles.icon,
+@fluentui/public-docsite:                                          ~~~~
+@fluentui/public-docsite: src/root.tsx:31:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 31       className: platformPickerStyles.icon,
+@fluentui/public-docsite:                                          ~~~~
+@fluentui/public-docsite: src/root.tsx:34:39 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 34       className: platformPickerStyles.icon,
+@fluentui/public-docsite:                                          ~~~~
+@fluentui/public-docsite: src/utilities/svgIcons.tsx:16:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 16   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                 ~~~~
+@fluentui/public-docsite: src/utilities/svgIcons.tsx:49:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 49   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                 ~~~~
+@fluentui/public-docsite: src/utilities/svgIcons.tsx:67:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 67   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                 ~~~~
+@fluentui/public-docsite: src/utilities/svgIcons.tsx:91:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 91   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                 ~~~~
+@fluentui/public-docsite: src/utilities/svgIcons.tsx:126:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 126   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                  ~~~~
+@fluentui/public-docsite: src/utilities/svgIcons.tsx:158:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 158   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                  ~~~~
+@fluentui/public-docsite: src/utilities/svgIconsColor.tsx:9:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 9   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                ~~~~
+@fluentui/public-docsite: src/utilities/svgIconsColor.tsx:81:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 81   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                 ~~~~
+@fluentui/public-docsite: src/utilities/svgIconsColor.tsx:126:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 126   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                  ~~~~
+@fluentui/public-docsite: src/utilities/svgIconsColor.tsx:202:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 202   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                  ~~~~
+@fluentui/public-docsite: src/utilities/svgIconsColor.tsx:285:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 285   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                  ~~~~
+@fluentui/public-docsite: src/utilities/svgIconsColor.tsx:348:30 - error TS2339: Property 'icon' does not exist on type 'typeof import("*.scss")'.
+@fluentui/public-docsite: 348   const { className = styles.icon, iconColor, iconWidth, iconHeight, iconSize } = props;
+@fluentui/public-docsite:                                  ~~~~
+@fluentui/public-docsite: Found 165 errors.
+@fluentui/public-docsite: [XX:XX:XX XM] x ------------------------------------
+@fluentui/public-docsite: [XX:XX:XX XM] x Error previously detected. See above for error messages.
+@fluentui/public-docsite: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/public-docsite: error Command failed with exit code 1.
 lerna ERR! Received non-zero exit code 1 during execution
