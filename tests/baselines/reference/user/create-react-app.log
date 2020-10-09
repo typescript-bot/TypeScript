@@ -1,13 +1,21 @@
-Exit Code: 2
+Exit Code: 1
 Standard output:
-test/fixtures/issue-5176-flow-class-properties/src/App.js(5,8): error TS8010: Type annotations can only be used in TypeScript files.
-test/fixtures/issue-5176-flow-class-properties/src/App.js(5,13): error TS1005: ';' expected.
-test/fixtures/webpack-message-formatting/src/AppBabel.js(6,8): error TS17008: JSX element 'div' has no corresponding closing tag.
-test/fixtures/webpack-message-formatting/src/AppBabel.js(8,7): error TS17002: Expected corresponding JSX closing tag for 'span'.
-test/fixtures/webpack-message-formatting/src/AppBabel.js(10,3): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-test/fixtures/webpack-message-formatting/src/AppBabel.js(11,1): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-test/fixtures/webpack-message-formatting/src/AppBabel.js(14,1): error TS1005: '</' expected.
 
 
 
 Standard error:
+../../../built/local/tsc.js:105472
+                throw e;
+                ^
+
+TypeError: Cannot read property 'length' of undefined
+    at getSignatureFromDeclaration (../../../built/local/tsc.js:53357:89)
+    at addImplementationSuccessElaboration (../../../built/local/tsc.js:67988:37)
+    at resolveCall (../../../built/local/tsc.js:67907:33)
+    at resolveCallExpression (../../../built/local/tsc.js:68284:20)
+    at resolveSignature (../../../built/local/tsc.js:68657:28)
+    at getResolvedSignature (../../../built/local/tsc.js:68688:26)
+    at checkCallExpression (../../../built/local/tsc.js:68814:29)
+    at checkExpressionWorker (../../../built/local/tsc.js:71378:28)
+    at checkExpression (../../../built/local/tsc.js:71287:38)
+    at checkExpressionStatement (../../../built/local/tsc.js:73819:13)
