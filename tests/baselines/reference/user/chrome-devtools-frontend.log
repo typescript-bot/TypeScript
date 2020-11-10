@@ -5698,13 +5698,8 @@ node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(2
 node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(298,25): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(323,19): error TS2339: Property 'getComponentSelection' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(354,17): error TS2339: Property 'originalPropertyData' does not exist on type 'MetricsSidebarPane'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(361,48): error TS2339: Property '_inlineStyle' does not exist on type 'never'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(362,17): error TS2339: Property 'originalPropertyData' does not exist on type 'never'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(364,48): error TS2339: Property '_inlineStyle' does not exist on type 'never'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(366,16): error TS2339: Property '_inlineStyle' does not exist on type 'never'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(368,14): error TS2339: Property '_inlineStyle' does not exist on type 'never'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(368,48): error TS2339: Property 'originalPropertyData' does not exist on type 'never'.
-node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(369,18): error TS2339: Property 'originalPropertyData' does not exist on type 'never'.
+node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(368,69): error TS2339: Property 'index' does not exist on type 'unknown'.
+node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(369,39): error TS2339: Property 'propertyText' does not exist on type 'unknown'.
 node_modules/chrome-devtools-frontend/front_end/elements/MetricsSidebarPane.js(441,14): error TS2339: Property 'originalPropertyData' does not exist on type 'MetricsSidebarPane'.
 node_modules/chrome-devtools-frontend/front_end/elements/PlatformFontsWidget.js(49,50): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/elements/PlatformFontsWidget.js(68,32): error TS2694: Namespace 'Protocol' has no exported member 'CSS'.
