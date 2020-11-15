@@ -14,7 +14,7 @@ node_modules/npmlog/log.js(162,34): error TS2339: Property 'gauge' does not exis
 node_modules/npmlog/log.js(171,16): error TS2339: Property 'levels' does not exist on type '(Anonymous function)'.
 node_modules/npmlog/log.js(173,17): error TS2339: Property 'emit' does not exist on type '(Anonymous function)'.
 node_modules/npmlog/log.js(194,37): error TS2345: Argument of type 'any[]' is not assignable to parameter of type '[format: any, ...param: any[]]'.
-  Property '0' is optional in type 'any[]' but required in type '[format: any, ...param: any[]]'.
+  Source provides no match for required element at position 0 in target.
 node_modules/npmlog/log.js(202,8): error TS2339: Property 'emit' does not exist on type '(Anonymous function)'.
 node_modules/npmlog/log.js(203,8): error TS2339: Property 'emit' does not exist on type '(Anonymous function)'.
 node_modules/npmlog/log.js(204,22): error TS2339: Property 'emit' does not exist on type '(Anonymous function)'.
