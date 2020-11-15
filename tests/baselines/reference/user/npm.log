@@ -182,7 +182,7 @@ node_modules/npm/lib/config/core.js(409,29): error TS2769: No overload matches t
       Type 'string | undefined' is not assignable to type 'string'.
         Type 'undefined' is not assignable to type 'string'.
 node_modules/npm/lib/config/defaults.js(20,52): error TS2345: Argument of type 'never[]' is not assignable to parameter of type '[format: any, ...param: any[]]'.
-  Property '0' is optional in type 'never[]' but required in type '[format: any, ...param: any[]]'.
+  Source provides no match for required element at position 0 in target.
 node_modules/npm/lib/config/defaults.js(234,24): error TS2774: This condition will always return true since the function is always defined. Did you mean to call it instead?
 node_modules/npm/lib/config/defaults.js(234,42): error TS2774: This condition will always return true since the function is always defined. Did you mean to call it instead?
 node_modules/npm/lib/config/defaults.js(235,24): error TS2774: This condition will always return true since the function is always defined. Did you mean to call it instead?
@@ -952,7 +952,7 @@ node_modules/npm/test/common-tap.js(10,36): error TS2322: Type '(...args: any[])
   Type '(...args: any[]) => void' is not assignable to type '(callback: (...args: any[]) => void, ...args: any[]) => Immediate'.
     Type 'void' is not assignable to type 'Immediate'.
 node_modules/npm/test/common-tap.js(12,28): error TS2345: Argument of type 'any[]' is not assignable to parameter of type '[callback: (...args: any[]) => void, ms: number, ...args: any[]]'.
-  Property '0' is optional in type 'any[]' but required in type '[callback: (...args: any[]) => void, ms: number, ...args: any[]]'.
+  Source provides no match for required element at position 0 in target.
 node_modules/npm/test/common-tap.js(175,17): error TS2339: Property '_storage' does not exist on type 'Environment'.
 node_modules/npm/test/common-tap.js(181,31): error TS2339: Property '_storage' does not exist on type 'Environment'.
 node_modules/npm/test/common-tap.js(192,12): error TS2339: Property '_storage' does not exist on type 'Environment'.
