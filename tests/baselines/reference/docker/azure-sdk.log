@@ -2,10 +2,10 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 15.1.0 (unstable)
+Node.js version is 15.3.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-BLOCKED (51)
+BLOCKED (50)
 ================================
 @azure/abort-controller
 @azure/core-auth
@@ -34,7 +34,6 @@ BLOCKED (51)
 @azure/app-configuration
 @azure/communication-chat
 @azure/communication-sms
-@azure/core-arm
 @azure/core-client
 @azure/core-tracing
 @azure/cosmos
@@ -46,7 +45,6 @@ BLOCKED (51)
 @azure/keyvault-certificates
 @azure/keyvault-common
 @azure/keyvault-keys
-@azure/monitor-opentelemetry-exporter
 @azure/schema-registry-avro
 @azure/search-documents
 @azure/service-bus
@@ -57,6 +55,7 @@ BLOCKED (51)
 @azure/storage-queue
 @azure/template
 @azure/test-utils-perfstress
+@microsoft/opentelemetry-exporter-azure-monitor
 testhub
 ================================
 FAILURE (1)
@@ -104,7 +103,6 @@ XX of XX: [@azure/ai-text-analytics] blocked by [@azure/eslint-plugin-azure-sdk]
 XX of XX: [@azure/core-client] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-http] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/app-configuration] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/core-arm] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-lro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-admin] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-certificates] blocked by [@azure/eslint-plugin-azure-sdk]!
@@ -121,13 +119,13 @@ XX of XX: [@azure/schema-registry] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/schema-registry-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-queue] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-common] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/monitor-opentelemetry-exporter] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/search-documents] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-file-share] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/template] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-perfstress] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-recorder] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-internal-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@microsoft/opentelemetry-exporter-azure-monitor] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-https] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-asynciterator-polyfill] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-paging] blocked by [@azure/eslint-plugin-azure-sdk]!
