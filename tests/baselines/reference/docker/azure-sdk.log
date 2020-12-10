@@ -2,22 +2,22 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 15.1.0 (unstable)
+Node.js version is 15.3.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-BLOCKED (51)
+BLOCKED (55)
 ================================
 @azure/abort-controller
 @azure/core-auth
 @azure/logger
 @azure/core-http
 @azure/core-asynciterator-polyfill
+@azure/dev-tool
 @azure/identity
 @azure/communication-common
 @azure/core-amqp
 @azure/core-lro
 @azure/core-paging
-@azure/dev-tool
 @azure/test-utils-recorder
 @azure/communication-administration
 @azure/core-https
@@ -34,7 +34,6 @@ BLOCKED (51)
 @azure/app-configuration
 @azure/communication-chat
 @azure/communication-sms
-@azure/core-arm
 @azure/core-client
 @azure/core-tracing
 @azure/cosmos
@@ -46,7 +45,6 @@ BLOCKED (51)
 @azure/keyvault-certificates
 @azure/keyvault-common
 @azure/keyvault-keys
-@azure/monitor-opentelemetry-exporter
 @azure/schema-registry-avro
 @azure/search-documents
 @azure/service-bus
@@ -55,8 +53,14 @@ BLOCKED (51)
 @azure/storage-file-share
 @azure/storage-internal-avro
 @azure/storage-queue
+@azure/synapse-access-control
+@azure/synapse-artifacts
+@azure/synapse-managed-private-endpoints
+@azure/synapse-monitoring
+@azure/synapse-spark
 @azure/template
 @azure/test-utils-perfstress
+@microsoft/opentelemetry-exporter-azure-monitor
 testhub
 ================================
 FAILURE (1)
@@ -104,7 +108,6 @@ XX of XX: [@azure/ai-text-analytics] blocked by [@azure/eslint-plugin-azure-sdk]
 XX of XX: [@azure/core-client] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-http] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/app-configuration] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/core-arm] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-lro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-admin] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-certificates] blocked by [@azure/eslint-plugin-azure-sdk]!
@@ -113,6 +116,7 @@ XX of XX: [@azure/keyvault-secrets] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-blob] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-blob-changefeed] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-file-datalake] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/synapse-artifacts] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/data-tables] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/digital-twins-core] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/eventgrid] blocked by [@azure/eslint-plugin-azure-sdk]!
@@ -121,13 +125,17 @@ XX of XX: [@azure/schema-registry] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/schema-registry-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-queue] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/keyvault-common] blocked by [@azure/eslint-plugin-azure-sdk]!
-XX of XX: [@azure/monitor-opentelemetry-exporter] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/search-documents] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-file-share] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/synapse-access-control] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/synapse-managed-private-endpoints] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/synapse-monitoring] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@azure/synapse-spark] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/template] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-perfstress] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/test-utils-recorder] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/storage-internal-avro] blocked by [@azure/eslint-plugin-azure-sdk]!
+XX of XX: [@microsoft/opentelemetry-exporter-azure-monitor] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-https] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-asynciterator-polyfill] blocked by [@azure/eslint-plugin-azure-sdk]!
 XX of XX: [@azure/core-paging] blocked by [@azure/eslint-plugin-azure-sdk]!
