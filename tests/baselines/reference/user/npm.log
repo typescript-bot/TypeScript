@@ -435,6 +435,7 @@ node_modules/npm/lib/install/audit.js(172,19): error TS2339: Property 'config' d
 node_modules/npm/lib/install/audit.js(216,26): error TS2339: Property 'version' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/install/check-permissions.js(36,9): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/install/decompose-actions.js(47,30): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
+node_modules/npm/lib/install/deps.js(125,17): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/npm/lib/install/deps.js(253,15): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/install/deps.js(309,14): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/install/deps.js(310,29): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
@@ -485,6 +486,7 @@ node_modules/npm/lib/install/validate-tree.js(44,10): error TS2339: Property 'co
 node_modules/npm/lib/install/validate-tree.js(62,15): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/npm/lib/install/validate-tree.js(70,25): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/install/validate-tree.js(74,13): error TS2339: Property 'code' does not exist on type 'Error'.
+node_modules/npm/lib/install/validate-tree.js(87,16): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/npm/lib/install/validate-tree.js(89,15): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/npm/lib/install/writable.js(22,21): error TS2339: Property 'W_OK' does not exist on type 'typeof import("fs")'.
 node_modules/npm/lib/link.js(25,17): error TS2339: Property 'globalDir' does not exist on type 'EventEmitter'.
@@ -615,6 +617,7 @@ node_modules/npm/lib/outdated.js(245,11): error TS2339: Property 'config' does n
 node_modules/npm/lib/outdated.js(250,18): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/outdated.js(253,18): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/outdated.js(262,10): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
+node_modules/npm/lib/outdated.js(266,18): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/npm/lib/outdated.js(336,26): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/outdated.js(339,9): error TS2339: Property 'registry' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/owner.js(26,7): error TS2339: Property 'commands' does not exist on type 'EventEmitter'.
@@ -852,6 +855,7 @@ node_modules/npm/lib/utils/error-message.js(77,37): error TS2339: Property 'pref
 node_modules/npm/lib/utils/error-message.js(300,24): error TS2339: Property 'version' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/utils/error-message.js(301,25): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/utils/git.js(9,17): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
+node_modules/npm/lib/utils/is-registry.js(7,21): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/npm/lib/utils/is-windows-bash.js(3,53): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 node_modules/npm/lib/utils/lifecycle-cmd.js(8,9): error TS2339: Property 'commands' does not exist on type 'EventEmitter'.

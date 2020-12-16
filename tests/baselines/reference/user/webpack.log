@@ -1,7 +1,19 @@
 Exit Code: 2
 Standard output:
+lib/DelegatedModuleFactoryPlugin.js(34,27): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/DelegatedModuleFactoryPlugin.js(50,30): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/DelegatedModuleFactoryPlugin.js(74,22): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 lib/MultiCompiler.js(247,18): error TS2345: Argument of type '"Circular dependency found in compiler dependencies."' is not assignable to parameter of type '`${string} -> ${string}`'.
 lib/MultiCompiler.js(248,19): error TS2345: Argument of type 'string' is not assignable to parameter of type '`Compiler dependency \`${string}\` not found.`'.
+lib/rules/RuleSetCompiler.js(97,21): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/sharing/utils.js(65,18): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/sharing/utils.js(72,18): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/sharing/utils.js(79,18): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/sharing/utils.js(86,18): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/stats/DefaultStatsFactoryPlugin.js(636,17): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/stats/DefaultStatsFactoryPlugin.js(638,31): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/util/semver.js(184,13): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+lib/util/semver.js(220,18): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 
 
 
