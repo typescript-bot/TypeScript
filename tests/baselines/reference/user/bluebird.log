@@ -10,6 +10,12 @@ node_modules/bluebird/js/release/debuggability.js(301,9): error TS2322: Type 'Pr
 node_modules/bluebird/js/release/debuggability.js(301,28): error TS2684: The 'this' context of type '((...args: any[]) => Process) | ((name: any, ...args: any[]) => boolean)' is not assignable to method's 'this' of type '(this: null, args_0?: any, ...args_1: any[]) => Process'.
   Type '(name: any, ...args: any[]) => boolean' is not assignable to type '(this: null, args_0?: any, ...args_1: any[]) => Process'.
     Type 'boolean' is not assignable to type 'Process'.
+node_modules/bluebird/js/release/debuggability.js(321,30): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+node_modules/bluebird/js/release/debuggability.js(328,23): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+node_modules/bluebird/js/release/debuggability.js(334,39): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+node_modules/bluebird/js/release/debuggability.js(339,27): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+node_modules/bluebird/js/release/debuggability.js(355,25): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
+node_modules/bluebird/js/release/debuggability.js(364,25): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/bluebird/js/release/debuggability.js(456,14): error TS2339: Property '_setBoundTo' does not exist on type 'cancellationPropagateFrom'.
 node_modules/bluebird/js/release/debuggability.js(482,42): error TS2339: Property '_peekContext' does not exist on type 'longStackTracesCaptureStackTrace'.
 node_modules/bluebird/js/release/debuggability.js(562,19): error TS2350: Only a void function can be called with the 'new' keyword.
@@ -18,6 +24,7 @@ node_modules/bluebird/js/release/debuggability.js(807,5): error TS2721: Cannot i
 node_modules/bluebird/js/release/debuggability.js(825,30): error TS2339: Property 'stack' does not exist on type 'CapturedTrace'.
 node_modules/bluebird/js/release/debuggability.js(831,37): error TS2339: Property 'stack' does not exist on type 'CapturedTrace'.
 node_modules/bluebird/js/release/debuggability.js(870,38): error TS2339: Property 'stack' does not exist on type 'CapturedTrace'.
+node_modules/bluebird/js/release/debuggability.js(922,42): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/bluebird/js/release/debuggability.js(950,4): error TS2554: Expected 0 arguments, but got 1.
 node_modules/bluebird/js/release/errors.js(10,49): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/finally.js(50,24): error TS2339: Property 'promise' does not exist on type 'finallyHandler'.
@@ -119,6 +126,7 @@ node_modules/bluebird/js/release/props.js(75,26): error TS2339: Property '_value
 node_modules/bluebird/js/release/props.js(75,57): error TS2339: Property '_values' does not exist on type 'PropertiesPromiseArray'.
 node_modules/bluebird/js/release/props.js(78,14): error TS2339: Property '_resolve' does not exist on type 'PropertiesPromiseArray'.
 node_modules/bluebird/js/release/props.js(102,53): error TS2339: Property 'promise' does not exist on type 'PropertiesPromiseArray'.
+node_modules/bluebird/js/release/race.js(32,41): error TS2361: The right-hand side of an 'in' expression must be of type 'any', an object type or a type parameter.
 node_modules/bluebird/js/release/reduce.js(12,10): error TS2339: Property 'constructor$' does not exist on type 'ReductionPromiseArray'.
 node_modules/bluebird/js/release/reduce.js(22,39): error TS2339: Property '_length' does not exist on type 'ReductionPromiseArray'.
 node_modules/bluebird/js/release/reduce.js(28,10): error TS2339: Property '_promise' does not exist on type 'ReductionPromiseArray'.
