@@ -4,13 +4,24 @@ node_modules/bcryptjs/scripts/build.js(1,26): error TS2307: Cannot find module '
 node_modules/bcryptjs/scripts/build.js(32,1): error TS2741: Property 'ISAAC' is missing in type '{ VERSION: any; }' but required in type '{ VERSION: any; ISAAC: boolean; }'.
 node_modules/bcryptjs/src/bcrypt.js(25,13): error TS2740: Type 'Buffer' is missing the following properties from type 'number[]': pop, push, concat, shift, and 5 more.
 node_modules/bcryptjs/src/bcrypt.js(94,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+node_modules/bcryptjs/src/bcrypt.js(111,9): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/bcryptjs/src/bcrypt.js(150,5): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 node_modules/bcryptjs/src/bcrypt.js(160,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+node_modules/bcryptjs/src/bcrypt.js(174,13): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/bcryptjs/src/bcrypt.js(238,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+node_modules/bcryptjs/src/bcrypt.js(246,13): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt.js(250,13): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt/impl.js(490,13): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt/impl.js(498,13): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/bcryptjs/src/bcrypt/impl.js(516,22): error TS2345: Argument of type 'number[] | Int32Array' is not assignable to parameter of type 'number[]'.
   Type 'Int32Array' is missing the following properties from type 'number[]': pop, push, concat, shift, and 5 more.
 node_modules/bcryptjs/src/bcrypt/impl.js(546,26): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Error'.
+node_modules/bcryptjs/src/bcrypt/impl.js(552,13): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt/impl.js(583,13): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt/impl.js(595,13): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt/impl.js(609,17): error TS2555: Expected at least 2 arguments, but got 1.
+node_modules/bcryptjs/src/bcrypt/impl.js(621,13): error TS2555: Expected at least 2 arguments, but got 1.
 node_modules/bcryptjs/src/bcrypt/impl.js(658,23): error TS2345: Argument of type 'number[] | undefined' is not assignable to parameter of type 'number[]'.
   Type 'undefined' is not assignable to type 'number[]'.
 node_modules/bcryptjs/src/bcrypt/impl.js(664,31): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
