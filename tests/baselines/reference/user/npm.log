@@ -643,7 +643,8 @@ node_modules/npm/lib/pack.js(127,15): error TS2339: Property 'config' does not e
 node_modules/npm/lib/pack.js(147,36): error TS2339: Property 'tmp' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/pack.js(177,25): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/pack.js(299,17): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
-node_modules/npm/lib/pack.js(300,20): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+node_modules/npm/lib/pack.js(300,20): error TS2345: Argument of type '`--${string}=${any}`' is not assignable to parameter of type 'never'.
+  Type 'string' is not assignable to type 'never'.
 node_modules/npm/lib/pack.js(300,36): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/pack.js(333,15): error TS2531: Object is possibly 'null'.
 node_modules/npm/lib/pack.js(335,17): error TS2339: Property 'code' does not exist on type 'Error'.
@@ -1593,8 +1594,8 @@ node_modules/npm/test/tap/publish-access-unscoped.js(31,35): error TS2345: Argum
 node_modules/npm/test/tap/publish-config.js(4,22): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(2,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(8,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
-node_modules/npm/test/tap/publish-invalid-semver-tag.js(26,59): error TS2345: Argument of type '{ name: string; version: string; }' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
-  Type '{ name: string; version: string; }' is missing the following properties from type 'Float64Array': BYTES_PER_ELEMENT, buffer, byteLength, byteOffset, and 26 more.
+node_modules/npm/test/tap/publish-invalid-semver-tag.js(26,59): error TS2345: Argument of type '{ name: string; version: string; }' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | ... 5 more ... | BigUint64Array'.
+  Type '{ name: string; version: string; }' is missing the following properties from type 'BigUint64Array': BYTES_PER_ELEMENT, buffer, byteLength, byteOffset, and 26 more.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(37,9): error TS2339: Property 'load' does not exist on type 'EventEmitter'.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(53,7): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(54,7): error TS2339: Property 'commands' does not exist on type 'EventEmitter'.
