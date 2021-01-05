@@ -75,12 +75,12 @@ Warning: dist/packages/compiler-core/src/options.d.ts:149:35 - (tsdoc-malformed-
 Warning: dist/packages/compiler-core/src/options.d.ts:149:36 - (tsdoc-malformed-inline-tag) Expecting a TSDoc tag starting with "{@"
 /vue-next/packages/compiler-sfc/src/index.ts → packages/compiler-sfc/dist/compiler-sfc.cjs.js...
 created packages/compiler-dom/dist/compiler-dom.global.prod.js in ?s
-/vue-next/packages/compiler-ssr/src/index.ts → packages/compiler-ssr/dist/compiler-ssr.cjs.js...
 created packages/compiler-sfc/dist/compiler-sfc.cjs.js in ?s
 /vue-next/packages/compiler-sfc/src/index.ts → packages/compiler-sfc/dist/compiler-sfc.global.js...
+/vue-next/packages/compiler-ssr/src/index.ts → packages/compiler-ssr/dist/compiler-ssr.cjs.js...
+created packages/compiler-ssr/dist/compiler-ssr.cjs.js in ?s
 (!) Missing shims for Node.js built-ins
 Creating a browser bundle that depends on 'path', 'url' and 'util'. You might need to include https://github.com/ionic-team/rollup-plugin-node-polyfills
-created packages/compiler-ssr/dist/compiler-ssr.cjs.js in ?s
 (!) Missing global variable names
 Use output.globals to specify browser global variable names corresponding to external modules
 path (guessing 'path')

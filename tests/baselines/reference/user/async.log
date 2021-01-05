@@ -169,7 +169,6 @@ node_modules/async/dist/async.js(3003,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3019,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(3022,9): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(3022,9): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
-  Type 'undefined' is not assignable to type 'Function'.
 node_modules/async/dist/async.js(3035,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3063,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3095,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
@@ -209,7 +208,6 @@ node_modules/async/dist/async.js(4497,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4570,22): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/async/dist/async.js(4617,17): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(4617,17): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
-  Type 'undefined' is not assignable to type 'Function'.
 node_modules/async/dist/async.js(4634,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4653,33): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/async/dist/async.js(4777,9): error TS1003: Identifier expected.
@@ -227,11 +225,9 @@ node_modules/async/dist/async.js(5179,20): error TS2339: Property 'unmemoized' d
 node_modules/async/dist/async.js(5222,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(5225,9): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(5225,9): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
-  Type 'undefined' is not assignable to type 'Function'.
 node_modules/async/dist/async.js(5241,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(5329,20): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(5329,20): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
-  Type 'undefined' is not assignable to type 'Function'.
 node_modules/async/doDuring.js(35,9): error TS1003: Identifier expected.
 node_modules/async/doDuring.js(37,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/doDuring.js(39,12): error TS2304: Cannot find name 'AsyncFunction'.
@@ -696,7 +692,6 @@ node_modules/async/retry.js(119,81): error TS2695: Left side of comma operator i
 node_modules/async/retry.js(141,18): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/retry.js(149,17): error TS2532: Object is possibly 'undefined'.
 node_modules/async/retry.js(149,17): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
-  Type 'undefined' is not assignable to type 'Function'.
 node_modules/async/retryable.js(12,18): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/retryable.js(13,13): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/retryable.js(18,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -781,7 +776,6 @@ node_modules/async/whilst.js(65,25): error TS2722: Cannot invoke an object which
 node_modules/async/whilst.js(67,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/whilst.js(68,9): error TS2532: Object is possibly 'undefined'.
 node_modules/async/whilst.js(68,9): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
-  Type 'undefined' is not assignable to type 'Function'.
 node_modules/async/wrapSync.js(43,14): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/wrapSync.js(79,13): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/wrapSync.js(87,14): error TS2695: Left side of comma operator is unused and has no side effects.

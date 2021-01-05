@@ -3,6 +3,12 @@ Standard output:
 ../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
 ../../../../node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
 ../../../../node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
+node_modules/ts-toolbelt/out/index.d.ts(3527,92): error TS2321: Excessive stack depth comparing types 'MinusNegative<?, N2, IMap>' and 'MinusNegative<?, N2, IMap>'.
+node_modules/ts-toolbelt/out/index.d.ts(3527,92): error TS2321: Excessive stack depth comparing types 'MinusNegative<N1, ?, IMap>' and 'MinusNegative<N1, ?, IMap>'.
+node_modules/ts-toolbelt/out/index.d.ts(3527,92): error TS2321: Excessive stack depth comparing types 'MinusNegative<N1, N2, ?>' and 'MinusNegative<N1, N2, ?>'.
+node_modules/ts-toolbelt/out/index.d.ts(3527,92): error TS2321: Excessive stack depth comparing types 'MinusPositive<?, N2, IMap>' and 'MinusPositive<?, N2, IMap>'.
+node_modules/ts-toolbelt/out/index.d.ts(3527,92): error TS2321: Excessive stack depth comparing types 'MinusPositive<N1, ?, IMap>' and 'MinusPositive<N1, ?, IMap>'.
+node_modules/ts-toolbelt/out/index.d.ts(3527,92): error TS2321: Excessive stack depth comparing types 'MinusPositive<N1, N2, ?>' and 'MinusPositive<N1, N2, ?>'.
 
 
 

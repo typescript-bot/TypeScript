@@ -91,7 +91,6 @@ node_modules/chrome-devtools-frontend/front_end/Tests.js(1229,41): error TS2339:
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAAttributesView.js(9,13): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
   Type 'TemplateStringsArray' is missing the following properties from type 'string[]': pop, push, reverse, shift, and 6 more.
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAAttributesView.js(11,48): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAAttributesView.js(64,18): error TS2339: Property 'setTextContentTruncatedIfNeeded' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAAttributesView.js(77,26): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAAttributesView.js(79,26): error TS2339: Property 'createChild' does not exist on type 'Element'.
@@ -112,7 +111,6 @@ node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAMetadata.js(56
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAMetadata.js(57,32): error TS2339: Property '_instance' does not exist on type 'typeof ARIAMetadata'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/ARIAMetadata.js(58,37): error TS2339: Property '_instance' does not exist on type 'typeof ARIAMetadata'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(10,13): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(14,18): error TS2339: Property 'tabIndex' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(24,38): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(40,51): error TS2339: Property 'focus' does not exist on type 'Element'.
@@ -134,7 +132,6 @@ node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(208,42): error TS2339: Property 'enclosingNodeOrSelfWithClass' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(265,42): error TS2339: Property 'enclosingNodeOrSelfWithClass' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(274,44): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(298,19): error TS2339: Property 'breadcrumb' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(302,23): error TS2339: Property 'tabIndex' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(314,15): error TS1110: Type expected.
@@ -148,7 +145,6 @@ node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(473,24): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(481,17): error TS2339: Property 'setTextContentTruncatedIfNeeded' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AXBreadcrumbsPane.js(488,40): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityModel.js(10,24): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityModel.js(54,32): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityModel.js(61,25): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
@@ -165,11 +161,8 @@ node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityModel
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityModel.js(232,26): error TS2339: Property 'accessibilityAgent' does not exist on type 'Target'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityModel.js(303,26): error TS2339: Property 'printSelfAndChildren' does not exist on type 'DOMNode'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(9,13): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(13,42): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(14,43): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(56,28): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(62,61): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(78,26): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
@@ -207,16 +200,13 @@ node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeV
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(408,23): error TS2339: Property 'title' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(419,26): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(422,93): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(431,26): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(435,28): error TS2339: Property 'createTextChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(438,28): error TS2339: Property 'createTextChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(445,64): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(461,24): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(492,24): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(521,86): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(522,20): error TS2339: Property 'createTextChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(535,24): error TS2694: Namespace 'Protocol' has no exported member 'Accessibility'.
 node_modules/chrome-devtools-frontend/front_end/accessibility/AccessibilityNodeView.js(619,26): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
@@ -289,7 +279,6 @@ node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(1
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(19,53): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(20,44): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(21,34): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(26,32): error TS2694: Namespace 'Protocol' has no exported member 'DOM'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(36,47): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(36,63): error TS2345: Argument of type 'this' is not assignable to parameter of type 'SDKModelObserver<any>'.
@@ -314,23 +303,16 @@ node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(1
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(105,28): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(110,48): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(112,46): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(117,48): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(123,40): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(125,45): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(125,74): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(128,24): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(133,50): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(137,47): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(138,37): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(139,41): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(144,50): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(145,36): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(169,18): error TS2339: Property 'isDescendant' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(172,5): error TS2741: Property 'hide' is missing in type '{ box: any; show: (popover: GlassPane) => Promise<any>; }' but required in type 'PopoverRequest'.
@@ -339,21 +321,16 @@ node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(1
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(177,63): error TS2339: Property 'parentElement' does not exist on type 'EventTarget'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(197,25): error TS2339: Property 'AnimationScreenshotPopover' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(208,52): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(208,69): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(216,67): error TS2339: Property 'AnimationModel' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(233,42): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(235,47): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(244,38): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(246,38): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(249,38): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(251,38): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(254,38): error TS2339: Property 'AnimationTimeline' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(256,38): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(359,28): error TS2345: Argument of type '(left: AnimationGroup, right: AnimationGroup) => boolean' is not assignable to parameter of type '(a: any, b: any) => number'.
   Type 'boolean' is not assignable to type 'number'.
 node_modules/chrome-devtools-frontend/front_end/animation/AnimationTimeline.js(373,33): error TS2339: Property 'AnimationGroupPreviewUI' does not exist on type '{ new (effect?: AnimationEffect, timeline?: AnimationTimeline): Animation; prototype: Animation; }'.
@@ -484,15 +461,12 @@ node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(252,7): 
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(256,5): error TS2322: Type 'Promise<void>' is not assignable to type 'Promise<undefined>'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(356,23): error TS2339: Property 'disabled' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(363,24): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(363,57): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(379,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(399,15): error TS2503: Cannot find namespace 'ReportRenderer'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(439,37): error TS2503: Cannot find namespace 'ReportRenderer'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(463,38): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(553,32): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(679,53): error TS2304: Cannot find name 'ReportRenderer'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(690,15): error TS2503: Cannot find namespace 'ReportRenderer'.
 node_modules/chrome-devtools-frontend/front_end/audits2/Audits2Panel.js(701,15): error TS2503: Cannot find namespace 'ReportRenderer'.
@@ -1267,7 +1241,6 @@ node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighth
   The last overload gave the following error.
     Argument of type '(x: string) => string | number' is not assignable to parameter of type '(substring: string, ...args: any[]) => string'.
       Type 'string | number' is not assignable to type 'string'.
-        Type 'number' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(30729,1): error TS2323: Cannot redeclare exported variable 'isArray'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(30734,1): error TS2323: Cannot redeclare exported variable 'isBoolean'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(30739,1): error TS2323: Cannot redeclare exported variable 'isNull'.
@@ -3675,8 +3648,6 @@ node_modules/chrome-devtools-frontend/front_end/bindings/CSSWorkspaceBinding.js(
 node_modules/chrome-devtools-frontend/front_end/bindings/CSSWorkspaceBinding.js(155,5): error TS2322: Type 'Multimap<string | K, V | LiveLocation>.Multimap<string | K, V | LiveLocation>' is not assignable to type 'Multimap<string, LiveLocation>'.
   Type 'string | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'string | K'.
-      Type 'string' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/bindings/CSSWorkspaceBinding.js(160,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/bindings/CSSWorkspaceBinding.js(169,27): error TS2345: Argument of type 'CSSStyleSheetHeader' is not assignable to parameter of type 'K'.
   'K' could be instantiated with an arbitrary type which could be unrelated to 'CSSStyleSheetHeader'.
@@ -3857,12 +3828,9 @@ node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(31,56): e
   Type '{ lineNumbers: true; lineWrapping: false; maxHighlightLength: number; }' is missing the following properties from type 'Options': bracketMatchingSetting, mimeType, autoHeight, padBottom, placeholder
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(37,42): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(50,22): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(75,11): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(111,24): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(139,24): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(155,26): error TS2339: Property 'pushAll' does not exist on type '{ baselineLineNumber: number; currentLineNumber: number; tokens: { text: string; className: string; }[]; type: string; }[]'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(156,25): error TS2339: Property 'pushAll' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/changes/ChangesView.js(157,24): error TS2339: Property 'pushAll' does not exist on type 'any[]'.
@@ -3980,7 +3948,6 @@ node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6431,10): error
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6432,14): error TS2339: Property 'cm' does not exist on type '(Anonymous function)'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6432,42): error TS2339: Property 'cm' does not exist on type '(Anonymous function)'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6464,44): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'string'.
-  Type 'ArrayBuffer' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(6553,25): error TS2339: Property 'CodeMirror' does not exist on type 'HTMLElement'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7343,11): error TS2339: Property 'copy' does not exist on type '(...args: any[]) => any'.
 node_modules/chrome-devtools-frontend/front_end/cm/codemirror.js(7810,8): error TS2339: Property 'curOp' does not exist on type 'CodeMirror$1'.
@@ -4310,9 +4277,7 @@ node_modules/chrome-devtools-frontend/front_end/components/DOMPresentationUtils.
 node_modules/chrome-devtools-frontend/front_end/components/DOMPresentationUtils.js(239,13): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/components/DOMPresentationUtils.js(251,11): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/components/DOMPresentationUtils.js(256,15): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/components/DOMPresentationUtils.js(259,15): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/components/DOMPresentationUtils.js(643,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/components/DockController.js(116,33): error TS2339: Property 'deepActiveElement' does not exist on type 'Document'.
 node_modules/chrome-devtools-frontend/front_end/components/Linkifier.js(57,15): error TS2339: Property 'addEventListener' does not exist on type 'LinkDecorator'.
@@ -4516,11 +4481,9 @@ node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(13
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1360,52): error TS2339: Property 'value' does not exist on type '{ type: string; text: string; }'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1380,35): error TS2339: Property 'createChild' does not exist on type 'DocumentFragment'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1381,48): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1381,63): error TS2339: Property 'withThousandsSeparator' does not exist on type 'NumberConstructor'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1388,33): error TS2339: Property 'createChild' does not exist on type 'DocumentFragment'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1389,46): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1403,51): error TS2345: Argument of type '{ text: string; lineNumber: number; columnNumber: number; }' is not assignable to parameter of type 'LinkifyURLOptions'.
   Type '{ text: string; lineNumber: number; columnNumber: number; }' is missing the following properties from type 'LinkifyURLOptions': className, preventClick, maxLength
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewMessage.js(1412,37): error TS2339: Property '_tokenizerRegexes' does not exist on type 'typeof ConsoleViewMessage'.
@@ -4545,18 +4508,13 @@ node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(247,3
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(247,59): error TS2339: Property 'item' does not exist on type 'number | { item: number; node: Node; offset: number; }'.
   Property 'item' does not exist on type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(248,7): error TS2322: Type 'number | { item: number; node: Node; offset: number; }' is not assignable to type 'number'.
-  Type '{ item: number; node: Node; offset: number; }' is not assignable to type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(248,35): error TS2339: Property 'item' does not exist on type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(248,55): error TS2339: Property 'item' does not exist on type 'number | { item: number; node: Node; offset: number; }'.
   Property 'item' does not exist on type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(250,7): error TS2322: Type 'number | { item: number; node: Node; offset: number; }' is not assignable to type 'number'.
-  Type '{ item: number; node: Node; offset: number; }' is not assignable to type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(251,7): error TS2322: Type 'number | { item: number; node: Node; offset: number; }' is not assignable to type 'number'.
-  Type '{ item: number; node: Node; offset: number; }' is not assignable to type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(253,7): error TS2322: Type 'number | { item: number; node: Node; offset: number; }' is not assignable to type 'number'.
-  Type '{ item: number; node: Node; offset: number; }' is not assignable to type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(255,7): error TS2322: Type 'number | { item: number; node: Node; offset: number; }' is not assignable to type 'number'.
-  Type '{ item: number; node: Node; offset: number; }' is not assignable to type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(275,57): error TS2339: Property 'item' does not exist on type 'number | { item: number; node: Node; offset: number; }'.
   Property 'item' does not exist on type 'number'.
 node_modules/chrome-devtools-frontend/front_end/console/ConsoleViewport.js(275,87): error TS2339: Property 'item' does not exist on type 'number | { item: number; node: Node; offset: number; }'.
@@ -5260,7 +5218,6 @@ node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(30
   Overload 3 of 3, '(tagName: string, options?: ElementCreationOptions): HTMLElement', gave the following error.
     Type 'string' has no properties in common with type 'ElementCreationOptions'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(314,34): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
-  Type 'number' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(323,20): error TS2339: Property 'createElementWithClass' does not exist on type 'Document'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(324,17): error TS2769: No overload matches this call.
   Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLElement | ... 70 more ... | HTMLUListElement', gave the following error.
@@ -5295,7 +5252,6 @@ node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(49
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(503,31): error TS2339: Property 'totalOffsetLeft' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(504,31): error TS2339: Property 'totalOffsetTop' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(508,5): error TS2322: Type 'Window' is not assignable to type 'Window & typeof globalThis'.
-  Type 'Window' is not assignable to type 'typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(511,35): error TS2339: Property 'offsetWidth' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(512,36): error TS2339: Property 'offsetHeight' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(519,17): error TS2339: Property 'consume' does not exist on type 'Event'.
@@ -5521,9 +5477,7 @@ node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(534,54): error TS2339: Property 'toggleHideElement' does not exist on type 'TreeOutline'.
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(535,21): error TS2339: Property 'isToggledToHidden' does not exist on type 'TreeOutline'.
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(541,44): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(542,44): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(546,26): error TS2339: Property 'selectedDOMNode' does not exist on type 'TreeOutline'.
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(575,10): error TS2339: Property 'style' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/elements/ElementsTreeElement.js(576,10): error TS2339: Property 'style' does not exist on type 'Element'.
@@ -5806,7 +5760,6 @@ node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(12
 node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(1273,62): error TS2339: Property 'property' does not exist on type 'TreeElement'.
 node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(1296,13): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(1325,43): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(1346,7): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(1346,33): error TS2339: Property '_updateFilter' does not exist on type 'TreeElement'.
 node_modules/chrome-devtools-frontend/front_end/elements/StylesSidebarPane.js(1349,77): error TS2339: Property 'deepTextContent' does not exist on type 'Element'.
@@ -6800,9 +6753,7 @@ node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapsho
 node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapshot.js(3003,32): error TS2339: Property '_nodeFlags' does not exist on type 'HeapSnapshot'.
 node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapshot.js(3005,32): error TS2339: Property '_nodeFlags' does not exist on type 'HeapSnapshot'.
 node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapshot.js(3039,27): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
-  Type 'number' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapshot.js(3092,28): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
-  Type 'number' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapshotWorker.js(31,3): error TS2554: Expected 2-3 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/heap_snapshot_worker/HeapSnapshotWorker.js(37,12): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/help/ReleaseNoteView.js(10,42): error TS2339: Property 'createChild' does not exist on type 'Element'.
@@ -7534,9 +7485,7 @@ node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSectio
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(326,20): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(328,20): error TS2339: Property 'title' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(392,13): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(395,13): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(468,48): error TS2339: Property '_skipProto' does not exist on type 'TreeOutline'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(565,16): error TS2339: Property 'parentObject' does not exist on type 'RemoteObjectProperty'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(571,38): error TS2339: Property 'getter' does not exist on type 'RemoteObjectProperty'.
@@ -7567,12 +7516,9 @@ node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSectio
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(820,46): error TS2339: Property 'title' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(821,105): error TS2339: Property 'title' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(822,51): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(824,23): error TS2339: Property 'parentObject' does not exist on type 'RemoteObjectProperty'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(825,46): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(826,46): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(832,43): error TS2339: Property '_editable' does not exist on type 'TreeOutline'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(832,61): error TS2339: Property '_readOnly' does not exist on type 'ObjectPropertyTreeElement'.
 node_modules/chrome-devtools-frontend/front_end/object_ui/ObjectPropertiesSection.js(835,46): error TS2339: Property 'createChild' does not exist on type 'Element'.
@@ -7881,9 +7827,7 @@ node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.j
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(278,17): error TS2304: Cannot find name 'FileError'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(317,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(344,16): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'string'.
-  Type 'ArrayBuffer' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(344,31): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'string'.
-  Type 'ArrayBuffer' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(357,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(364,17): error TS2304: Cannot find name 'FileEntry'.
 node_modules/chrome-devtools-frontend/front_end/persistence/IsolatedFileSystem.js(372,17): error TS2304: Cannot find name 'FileWriter'.
@@ -9711,15 +9655,10 @@ node_modules/chrome-devtools-frontend/front_end/sdk/Script.js(251,54): error TS2
 node_modules/chrome-devtools-frontend/front_end/sdk/SecurityOriginManager.js(41,34): error TS2339: Property 'valuesArray' does not exist on type 'Set<string>'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(30,12): error TS2339: Property 'pushAll' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(110,28): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(129,32): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(134,32): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(139,30): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(149,26): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServerTiming.js(165,78): error TS2554: Expected 2 arguments, but got 3.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServiceWorkerCacheModel.js(5,26): error TS2694: Namespace 'Protocol' has no exported member 'StorageDispatcher'.
 node_modules/chrome-devtools-frontend/front_end/sdk/ServiceWorkerCacheModel.js(15,12): error TS2339: Property 'registerStorageDispatcher' does not exist on type 'Target'.
@@ -9776,8 +9715,6 @@ node_modules/chrome-devtools-frontend/front_end/sdk/SourceMap.js(559,29): error 
 node_modules/chrome-devtools-frontend/front_end/sdk/SourceMapManager.js(28,5): error TS2322: Type 'Multimap<string | K, T | V>.Multimap<string | K, T | V>' is not assignable to type 'Multimap<string, T>'.
   Type 'string | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'string | K'.
-      Type 'string' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/sdk/SourceMapManager.js(30,5): error TS2322: Type 'Multimap<string | K, T | V>.Multimap<string | K, T | V>' is not assignable to type 'Multimap<string, T>'.
 node_modules/chrome-devtools-frontend/front_end/sdk/SourceMapManager.js(85,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'K'.
   'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
@@ -9955,7 +9892,6 @@ node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(744,34
 node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(759,7): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(783,37): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(784,77): error TS2345: Argument of type 'TemplateStringsArray' is not assignable to parameter of type 'string | string[]'.
-  Type 'TemplateStringsArray' is not assignable to type 'string[]'.
 node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(794,9): error TS2339: Property 'consume' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(803,44): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/security/SecurityPanel.js(819,45): error TS2339: Property 'createChild' does not exist on type 'Element'.
@@ -10229,8 +10165,6 @@ node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptBreakpointsSid
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptBreakpointsSidebarPane.js(49,9): error TS2322: Type 'Multimap<string | K, V | { breakpoint: Breakpoint; uiLocation: UILocation; }>.Multimap<string | K, V | { breakpoint: Breakpoint; uiLocation: UILocation; }>' is not assignable to type 'Multimap<string, { breakpoint: Breakpoint; uiLocation: UILocation; }>'.
   Type 'string | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'string | K'.
-      Type 'string' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptBreakpointsSidebarPane.js(53,28): error TS2345: Argument of type 'string' is not assignable to parameter of type 'K'.
   'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptBreakpointsSidebarPane.js(66,35): error TS2339: Property 'createChild' does not exist on type 'Element'.
@@ -10295,8 +10229,6 @@ node_modules/chrome-devtools-frontend/front_end/sources/JavaScriptSourceFrame.js
 node_modules/chrome-devtools-frontend/front_end/sources/NavigatorView.js(44,5): error TS2322: Type 'Multimap<UISourceCode | K, V | NavigatorUISourceCodeTreeNode>.Multimap<UISourceCode | K, V | NavigatorUISourceCodeTreeNode>' is not assignable to type 'Multimap<UISourceCode, NavigatorUISourceCodeTreeNode>'.
   Type 'UISourceCode | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'UISourceCode | K'.
-      Type 'UISourceCode' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'UISourceCode'.
 node_modules/chrome-devtools-frontend/front_end/sources/NavigatorView.js(87,21): error TS2339: Property '_boostOrder' does not exist on type 'TreeElement'.
 node_modules/chrome-devtools-frontend/front_end/sources/NavigatorView.js(90,32): error TS2339: Property '_typeOrders' does not exist on type 'typeof NavigatorView'.
 node_modules/chrome-devtools-frontend/front_end/sources/NavigatorView.js(102,29): error TS2339: Property '_typeOrders' does not exist on type 'typeof NavigatorView'.
@@ -11359,9 +11291,7 @@ node_modules/chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTr
 node_modules/chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTree.js(168,31): error TS2345: Argument of type 'string | symbol' is not assignable to parameter of type 'string'.
   Type 'symbol' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTree.js(170,66): error TS2345: Argument of type 'string | symbol' is not assignable to parameter of type 'string'.
-  Type 'symbol' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTree.js(172,22): error TS2345: Argument of type 'string | symbol' is not assignable to parameter of type 'string'.
-  Type 'symbol' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTree.js(445,27): error TS2339: Property '_depth' does not exist on type 'Node'.
 node_modules/chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTree.js(501,46): error TS2322: Type 'Node' is not assignable to type 'this'.
   'this' could be instantiated with an arbitrary type which could be unrelated to 'Node'.
@@ -11735,13 +11665,9 @@ node_modules/chrome-devtools-frontend/front_end/ui/SettingsUI.js(155,15): error 
 node_modules/chrome-devtools-frontend/front_end/ui/ShortcutRegistry.js(15,5): error TS2322: Type 'Multimap<string | K, string | V>.Multimap<string | K, string | V>' is not assignable to type 'Multimap<string, string>'.
   Type 'string | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'string | K'.
-      Type 'string' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/ui/ShortcutRegistry.js(17,5): error TS2322: Type 'Multimap<string | K, V | { key: number; name: string; }>.Multimap<string | K, V | { key: number; name: string; }>' is not assignable to type 'Multimap<string, { key: number; name: string; }>'.
   Type 'string | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'string | K'.
-      Type 'string' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/ui/ShortcutRegistry.js(26,83): error TS2339: Property 'valuesArray' does not exist on type 'Set<string>'.
 node_modules/chrome-devtools-frontend/front_end/ui/ShortcutRegistry.js(34,5): error TS2322: Type 'Set<V>' is not assignable to type 'Set<string>'.
   Type 'V' is not assignable to type 'string'.
@@ -12355,8 +12281,6 @@ node_modules/chrome-devtools-frontend/front_end/workspace/UISourceCode.js(45,25)
 node_modules/chrome-devtools-frontend/front_end/workspace/UISourceCode.js(545,7): error TS2322: Type 'Multimap<string | K, V | LineMarker>.Multimap<string | K, V | LineMarker>' is not assignable to type 'Multimap<string, LineMarker>'.
   Type 'string | K' is not assignable to type 'K'.
     'K' could be instantiated with an arbitrary type which could be unrelated to 'string | K'.
-      Type 'string' is not assignable to type 'K'.
-        'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/workspace/UISourceCode.js(546,27): error TS2345: Argument of type 'string' is not assignable to parameter of type 'K'.
   'K' could be instantiated with an arbitrary type which could be unrelated to 'string'.
 node_modules/chrome-devtools-frontend/front_end/workspace/UISourceCode.js(556,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'K'.

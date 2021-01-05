@@ -5,26 +5,6 @@ node_modules/@types/node/globals.d.ts(163,5): error TS2687: All declarations of 
 node_modules/connect-mongo/src/types.d.ts(113,66): error TS2694: Namespace 'Express' has no exported member 'SessionData'.
 node_modules/connect-mongo/src/types.d.ts(114,45): error TS2694: Namespace 'Express' has no exported member 'SessionData'.
 node_modules/connect-mongo/src/types.d.ts(118,47): error TS2694: Namespace 'Express' has no exported member 'SessionData'.
-node_modules/express-validator/src/chain/context-runner-impl.ts(32,74): error TS7006: Parameter 'instance' implicitly has an 'any' type.
-node_modules/express-validator/src/chain/sanitizers-impl.ts(1,28): error TS7016: Could not find a declaration file for module 'validator'. '../../../tests/cases/user/TypeScript-Node-Starter/TypeScript-Node-Starter/node_modules/validator/index.js' implicitly has an 'any' type.
-  Try `npm i --save-dev @types/validator` if it exists or add a new declaration (.d.ts) file containing `declare module 'validator';`
-node_modules/express-validator/src/chain/validators-impl.ts(1,28): error TS7016: Could not find a declaration file for module 'validator'. '../../../tests/cases/user/TypeScript-Node-Starter/TypeScript-Node-Starter/node_modules/validator/index.js' implicitly has an 'any' type.
-  Try `npm i --save-dev @types/validator` if it exists or add a new declaration (.d.ts) file containing `declare module 'validator';`
-node_modules/express-validator/src/context.ts(40,12): error TS2349: This expression is not callable.
-  Type '{ default: LoDashStatic; VERSION: string; templateSettings: TemplateSettings; chunk<T>(array: List<T>, size?: number): T[][]; compact<T>(array: List<false | "" | 0 | T>): T[]; ... 302 more ...; uniqueId(prefix?: string): string; }' has no call signatures.
-node_modules/express-validator/src/context.ts(42,17): error TS7006: Parameter 'instances' implicitly has an 'any' type.
-node_modules/express-validator/src/context.ts(42,28): error TS7006: Parameter 'group' implicitly has an 'any' type.
-node_modules/express-validator/src/context.ts(50,46): error TS7006: Parameter 'instance' implicitly has an 'any' type.
-node_modules/express-validator/src/context.ts(56,15): error TS7006: Parameter 'instance' implicitly has an 'any' type.
-node_modules/express-validator/src/matched-data.ts(26,10): error TS2349: This expression is not callable.
-  Type '{ default: LoDashStatic; VERSION: string; templateSettings: TemplateSettings; chunk<T>(array: List<T>, size?: number): T[][]; compact<T>(array: List<false | "" | 0 | T>): T[]; ... 302 more ...; uniqueId(prefix?: string): string; }' has no call signatures.
-node_modules/express-validator/src/matched-data.ts(29,10): error TS7006: Parameter 'field' implicitly has an 'any' type.
-node_modules/express-validator/src/matched-data.ts(31,14): error TS7006: Parameter 'state' implicitly has an 'any' type.
-node_modules/express-validator/src/matched-data.ts(31,21): error TS7006: Parameter 'instance' implicitly has an 'any' type.
-node_modules/express-validator/src/matched-data.ts(38,27): error TS7006: Parameter 'instance' implicitly has an 'any' type.
-node_modules/express-validator/src/select-fields.ts(11,3): error TS2349: This expression is not callable.
-  Type '{ default: LoDashStatic; VERSION: string; templateSettings: TemplateSettings; chunk<T>(array: List<T>, size?: number): T[][]; compact<T>(array: List<false | "" | 0 | T>): T[]; ... 302 more ...; uniqueId(prefix?: string): string; }' has no call signatures.
-node_modules/express-validator/src/select-fields.ts(12,14): error TS7006: Parameter 'field' implicitly has an 'any' type.
 src/app.ts(31,10): error TS2540: Cannot assign to 'Promise' because it is a read-only property.
 src/app.ts(72,21): error TS2339: Property 'returnTo' does not exist on type 'Session & Partial<SessionData>'.
 src/app.ts(75,21): error TS2339: Property 'returnTo' does not exist on type 'Session & Partial<SessionData>'.
