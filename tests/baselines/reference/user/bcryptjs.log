@@ -1,5 +1,8 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
 node_modules/bcryptjs/scripts/build.js(1,26): error TS2307: Cannot find module 'metascript' or its corresponding type declarations.
 node_modules/bcryptjs/scripts/build.js(32,1): error TS2741: Property 'ISAAC' is missing in type '{ VERSION: any; }' but required in type '{ VERSION: any; ISAAC: boolean; }'.
 node_modules/bcryptjs/src/bcrypt.js(25,13): error TS2740: Type 'Buffer' is missing the following properties from type 'number[]': pop, push, concat, shift, and 5 more.
@@ -28,7 +31,7 @@ node_modules/bcryptjs/src/bcrypt/util.js(20,5): error TS2304: Cannot find name '
 node_modules/bcryptjs/src/wrap.js(37,26): error TS2304: Cannot find name 'define'.
 node_modules/bcryptjs/src/wrap.js(37,51): error TS2304: Cannot find name 'define'.
 node_modules/bcryptjs/src/wrap.js(38,9): error TS2304: Cannot find name 'define'.
-node_modules/bcryptjs/src/wrap.js(49,12): error TS2552: Cannot find name 'bcrypt'. Did you mean 'Crypto'?
+node_modules/bcryptjs/src/wrap.js(49,12): error TS2552: Cannot find name 'bcrypt'. Did you mean 'crypto'?
 node_modules/bcryptjs/tests/suite.js(3,23): error TS2307: Cannot find module 'bcrypt' or its corresponding type declarations.
 
 

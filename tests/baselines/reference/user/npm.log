@@ -1,5 +1,8 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
 node_modules/npm/bin/npm-cli.js(6,13): error TS2551: Property 'echo' does not exist on type '{ Echo(s: any): void; StdErr: TextStreamWriter; StdOut: TextStreamWriter; Arguments: { length: number; Item(n: number): string; }; ScriptFullName: string; ... 13 more ...; Sleep(intTime: number): void; }'. Did you mean 'Echo'?
 node_modules/npm/bin/npm-cli.js(13,13): error TS2551: Property 'quit' does not exist on type '{ Echo(s: any): void; StdErr: TextStreamWriter; StdOut: TextStreamWriter; Arguments: { length: number; Item(n: number): string; }; ScriptFullName: string; ... 13 more ...; Sleep(intTime: number): void; }'. Did you mean 'Quit'?
 node_modules/npm/bin/npm-cli.js(47,7): error TS2339: Property 'argv' does not exist on type 'EventEmitter'.
@@ -181,8 +184,6 @@ node_modules/npm/lib/config/core.js(409,29): error TS2769: No overload matches t
     Argument of type '(orig: string, esc: any, name: any) => string | undefined' is not assignable to parameter of type '(substring: string, ...args: any[]) => string'.
       Type 'string | undefined' is not assignable to type 'string'.
         Type 'undefined' is not assignable to type 'string'.
-node_modules/npm/lib/config/defaults.js(20,52): error TS2345: Argument of type 'never[]' is not assignable to parameter of type '[format: any, ...param: any[]]'.
-  Property '0' is optional in type 'never[]' but required in type '[format: any, ...param: any[]]'.
 node_modules/npm/lib/config/defaults.js(234,24): error TS2774: This condition will always return true since the function is always defined. Did you mean to call it instead?
 node_modules/npm/lib/config/defaults.js(234,42): error TS2774: This condition will always return true since the function is always defined. Did you mean to call it instead?
 node_modules/npm/lib/config/defaults.js(235,24): error TS2774: This condition will always return true since the function is always defined. Did you mean to call it instead?
@@ -643,7 +644,8 @@ node_modules/npm/lib/pack.js(127,15): error TS2339: Property 'config' does not e
 node_modules/npm/lib/pack.js(147,36): error TS2339: Property 'tmp' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/pack.js(177,25): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/pack.js(299,17): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
-node_modules/npm/lib/pack.js(300,20): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+node_modules/npm/lib/pack.js(300,20): error TS2345: Argument of type '`--${string}=${any}`' is not assignable to parameter of type 'never'.
+  Type 'string' is not assignable to type 'never'.
 node_modules/npm/lib/pack.js(300,36): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/lib/pack.js(333,15): error TS2531: Object is possibly 'null'.
 node_modules/npm/lib/pack.js(335,17): error TS2339: Property 'code' does not exist on type 'Error'.
@@ -1593,8 +1595,8 @@ node_modules/npm/test/tap/publish-access-unscoped.js(31,35): error TS2345: Argum
 node_modules/npm/test/tap/publish-config.js(4,22): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(2,20): error TS2307: Cannot find module 'tap' or its corresponding type declarations.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(8,18): error TS2307: Cannot find module 'npm-registry-mock' or its corresponding type declarations.
-node_modules/npm/test/tap/publish-invalid-semver-tag.js(26,59): error TS2345: Argument of type '{ name: string; version: string; }' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array'.
-  Type '{ name: string; version: string; }' is missing the following properties from type 'Float64Array': BYTES_PER_ELEMENT, buffer, byteLength, byteOffset, and 26 more.
+node_modules/npm/test/tap/publish-invalid-semver-tag.js(26,59): error TS2345: Argument of type '{ name: string; version: string; }' is not assignable to parameter of type 'string | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | ... 5 more ... | BigUint64Array'.
+  Type '{ name: string; version: string; }' is missing the following properties from type 'BigUint64Array': BYTES_PER_ELEMENT, buffer, byteLength, byteOffset, and 26 more.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(37,9): error TS2339: Property 'load' does not exist on type 'EventEmitter'.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(53,7): error TS2339: Property 'config' does not exist on type 'EventEmitter'.
 node_modules/npm/test/tap/publish-invalid-semver-tag.js(54,7): error TS2339: Property 'commands' does not exist on type 'EventEmitter'.
