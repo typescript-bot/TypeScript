@@ -103,11 +103,8 @@ node_modules/adonis-framework/src/Helpers/index.js(164,18): error TS2554: Expect
 node_modules/adonis-framework/src/Helpers/index.js(178,45): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(224,45): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
-  Type 'undefined' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(240,45): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
-  Type 'undefined' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(256,45): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
-  Type 'undefined' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(330,23): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/Middleware/index.js(13,21): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
 node_modules/adonis-framework/src/Middleware/index.js(87,38): error TS1016: A required parameter cannot follow an optional parameter.
@@ -247,7 +244,6 @@ node_modules/adonis-framework/src/View/Form/index.js(115,15): error TS2304: Cann
 node_modules/adonis-framework/src/View/Form/index.js(147,63): error TS2345: Argument of type 'string | any[]' is not assignable to parameter of type 'any[]'.
   Type 'string' is not assignable to type 'any[]'.
 node_modules/adonis-framework/src/View/Form/index.js(151,58): error TS2345: Argument of type 'string | any[]' is not assignable to parameter of type 'any[]'.
-  Type 'string' is not assignable to type 'any[]'.
 node_modules/adonis-framework/src/View/Form/index.js(415,37): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string'.
 node_modules/adonis-framework/src/View/Form/index.js(578,25): error TS2554: Expected 2 arguments, but got 1.
 node_modules/adonis-framework/src/View/Form/index.js(601,51): error TS2345: Argument of type 'number | any[]' is not assignable to parameter of type 'string | any[]'.
