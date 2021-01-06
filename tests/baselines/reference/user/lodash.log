@@ -1,5 +1,8 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
 node_modules/lodash/_Hash.js(20,17): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_ListCache.js(20,17): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_MapCache.js(20,17): error TS2532: Object is possibly 'undefined'.
@@ -254,8 +257,6 @@ node_modules/lodash/core.js(2489,21): error TS1345: An expression of type 'void'
 node_modules/lodash/core.js(2489,37): error TS2554: Expected 0 arguments, but got 1.
 node_modules/lodash/core.js(2660,12): error TS2554: Expected 3-5 arguments, but got 2.
 node_modules/lodash/core.js(3261,58): error TS2345: Argument of type 'string | any[]' is not assignable to parameter of type 'string | number | symbol'.
-  Type 'any[]' is not assignable to type 'string | number | symbol'.
-    Type 'any[]' is not assignable to type 'string'.
 node_modules/lodash/core.js(3370,53): error TS2538: Type 'any[]' cannot be used as an index type.
 node_modules/lodash/core.js(3440,41): error TS2769: No overload matches this call.
   The last overload gave the following error.

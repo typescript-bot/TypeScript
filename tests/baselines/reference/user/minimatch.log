@@ -1,5 +1,8 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
 node_modules/minimatch/minimatch.js(77,17): error TS2551: Property 'minimatch' does not exist on type 'typeof minimatch'. Did you mean 'Minimatch'?
 node_modules/minimatch/minimatch.js(144,12): error TS2339: Property '_made' does not exist on type 'make'.
 node_modules/minimatch/minimatch.js(146,22): error TS2339: Property 'pattern' does not exist on type 'make'.

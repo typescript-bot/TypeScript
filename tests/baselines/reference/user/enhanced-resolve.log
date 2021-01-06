@@ -1,5 +1,8 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
+node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(120,20): error TS2532: Object is possibly 'undefined'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(123,17): error TS2532: Object is possibly 'undefined'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(124,3): error TS2532: Object is possibly 'undefined'.
@@ -18,14 +21,12 @@ node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(143,18): error TS2769
       Type 'null' is not assignable to type 'Timeout'.
   Overload 2 of 2, '(handle?: number | undefined): void', gave the following error.
     Argument of type 'Timeout | null' is not assignable to parameter of type 'number | undefined'.
-      Type 'null' is not assignable to type 'number | undefined'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(162,18): error TS2769: No overload matches this call.
   Overload 1 of 2, '(intervalId: Timeout): void', gave the following error.
     Argument of type 'Timeout | null' is not assignable to parameter of type 'Timeout'.
       Type 'null' is not assignable to type 'Timeout'.
   Overload 2 of 2, '(handle?: number | undefined): void', gave the following error.
     Argument of type 'Timeout | null' is not assignable to parameter of type 'number | undefined'.
-      Type 'null' is not assignable to type 'number | undefined'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(192,20): error TS2322: Type 'null' is not assignable to type '(path: any, callback: any) => void'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(197,24): error TS2322: Type 'null' is not assignable to type '(path: any) => any'.
 node_modules/enhanced-resolve/lib/CachedInputFileSystem.js(202,23): error TS2322: Type 'null' is not assignable to type '(path: any, callback: any) => void'.

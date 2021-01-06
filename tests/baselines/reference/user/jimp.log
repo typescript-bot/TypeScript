@@ -3,7 +3,6 @@ Standard output:
 ../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
 node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
 node_modules/@types/node/globals.d.ts(30,5): error TS2717: Subsequent property declarations must have the same type.  Property 'url' must be of type 'string | undefined', but here has type 'string'.
-node_modules/url-search-params/build/url-search-params.node.js(174,1): error TS2539: Cannot assign to 'URLSearchParams' because it is not a variable.
 
 
 
