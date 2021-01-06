@@ -3,7 +3,7 @@ Standard output:
 ../../../../../built/local/lib.dom.d.ts(618,5): error TS2687: All declarations of 'url' must have identical modifiers.
 lib/MultiCompiler.js(247,18): error TS2345: Argument of type '"Circular dependency found in compiler dependencies."' is not assignable to parameter of type '`${string} -> ${string}`'.
 lib/MultiCompiler.js(248,19): error TS2345: Argument of type 'string' is not assignable to parameter of type '`Compiler dependency \`${string}\` not found.`'.
-lib/stats/DefaultStatsPrinterPlugin.js(418,55): error TS2345: Argument of type 'StatsPrinterContext' is not assignable to parameter of type '{ formatSize?: (n: any) => `${any}`; }'.
+lib/stats/DefaultStatsPrinterPlugin.js(420,55): error TS2345: Argument of type 'StatsPrinterContext' is not assignable to parameter of type '{ formatSize?: (n: any) => `${any}`; }'.
   The types returned by 'formatSize(...)' are incompatible between these types.
     Type 'string' is not assignable to type '`${any}`'.
 node_modules/@types/node/globals.d.ts(30,5): error TS2687: All declarations of 'url' must have identical modifiers.
