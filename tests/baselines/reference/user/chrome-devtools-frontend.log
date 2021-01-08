@@ -5252,20 +5252,20 @@ node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(27
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(289,16): error TS2339: Property 'window' does not exist on type 'Node'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(293,19): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(305,10): error TS2769: No overload matches this call.
-  Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLElement | ... 70 more ... | HTMLUListElement', gave the following error.
-    Argument of type 'string' is not assignable to parameter of type '"object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr"'.
-  Overload 2 of 3, '(tagName: "listing" | "xmp", options?: ElementCreationOptions): HTMLPreElement', gave the following error.
-    Argument of type 'string' is not assignable to parameter of type '"listing" | "xmp"'.
+  Overload 1 of 3, '(tagName: keyof HTMLElementTagNameMap, options?: ElementCreationOptions): HTMLElement | HTMLCanvasElement | ... 69 more ... | HTMLUListElement', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'keyof HTMLElementTagNameMap'.
+  Overload 2 of 3, '(tagName: keyof HTMLElementDeprecatedTagNameMap, options?: ElementCreationOptions): HTMLPreElement', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'keyof HTMLElementDeprecatedTagNameMap'.
   Overload 3 of 3, '(tagName: string, options?: ElementCreationOptions): HTMLElement', gave the following error.
     Type 'string' has no properties in common with type 'ElementCreationOptions'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(314,34): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
   Type 'number' is not assignable to type 'string'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(323,20): error TS2339: Property 'createElementWithClass' does not exist on type 'Document'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(324,17): error TS2769: No overload matches this call.
-  Overload 1 of 3, '(tagName: "object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr", options?: ElementCreationOptions): HTMLElement | ... 70 more ... | HTMLUListElement', gave the following error.
-    Argument of type 'string' is not assignable to parameter of type '"object" | "link" | "small" | "sub" | "sup" | "track" | "progress" | "a" | "abbr" | "address" | "applet" | "area" | "article" | "aside" | "audio" | "b" | "base" | "basefont" | "bdi" | ... 99 more ... | "wbr"'.
-  Overload 2 of 3, '(tagName: "listing" | "xmp", options?: ElementCreationOptions): HTMLPreElement', gave the following error.
-    Argument of type 'string' is not assignable to parameter of type '"listing" | "xmp"'.
+  Overload 1 of 3, '(tagName: keyof HTMLElementTagNameMap, options?: ElementCreationOptions): HTMLElement | HTMLCanvasElement | ... 69 more ... | HTMLUListElement', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'keyof HTMLElementTagNameMap'.
+  Overload 2 of 3, '(tagName: keyof HTMLElementDeprecatedTagNameMap, options?: ElementCreationOptions): HTMLPreElement', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'keyof HTMLElementDeprecatedTagNameMap'.
   Overload 3 of 3, '(tagName: string, options?: ElementCreationOptions): HTMLElement', gave the following error.
     Type 'string' has no properties in common with type 'ElementCreationOptions'.
 node_modules/chrome-devtools-frontend/front_end/dom_extension/DOMExtension.js(338,19): error TS2339: Property 'createElementWithClass' does not exist on type 'Document'.
@@ -12259,8 +12259,8 @@ node_modules/chrome-devtools-frontend/front_end/ui/XWidget.js(75,15): error TS70
 node_modules/chrome-devtools-frontend/front_end/ui/XWidget.js(82,15): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/ui/XWidget.js(89,15): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/ui/XWidget.js(100,7): error TS2769: No overload matches this call.
-  Overload 1 of 2, '(type: "fullscreenchange" | "fullscreenerror", listener: (this: Element, ev: Event) => any, options?: boolean | EventListenerOptions): void', gave the following error.
-    Argument of type '"scroll"' is not assignable to parameter of type '"fullscreenchange" | "fullscreenerror"'.
+  Overload 1 of 2, '(type: keyof ElementEventMap, listener: (this: Element, ev: Event) => any, options?: boolean | EventListenerOptions): void', gave the following error.
+    Argument of type '"scroll"' is not assignable to parameter of type 'keyof ElementEventMap'.
   Overload 2 of 2, '(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void', gave the following error.
     Argument of type '{ passive: boolean; capture: false; }' is not assignable to parameter of type 'boolean | EventListenerOptions'.
       Object literal may only specify known properties, and 'passive' does not exist in type 'EventListenerOptions'.
