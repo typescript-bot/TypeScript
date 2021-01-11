@@ -583,9 +583,9 @@ Standard error:
 @fluentui/web-components: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/ability-attributes: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/ability-attributes: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/scripts: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/scripts: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/scripts: [XX:XX:XX XM] x ------------------------------------
-@fluentui/scripts: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/scripts/tsconfig.json"
+@fluentui/scripts: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/scripts/tsconfig.json"
 @fluentui/scripts:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/scripts:     at ChildProcess.emit (events.js:314:20)
 @fluentui/scripts:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -641,7 +641,7 @@ Standard error:
 @fluentui/scripts: Found 11 errors.
 @fluentui/scripts: [XX:XX:XX XM] x ------------------------------------
 @fluentui/scripts: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/scripts: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/scripts: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/scripts: error Command failed with exit code 1.
 @fluentui/a11y-testing: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/a11y-testing: [XX:XX:XX XM] x ------------------------------------
@@ -671,9 +671,9 @@ Standard error:
 @fluentui/codemods:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 @fluentui/codemods:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
 @fluentui/codemods: [XX:XX:XX XM] x stdout:
-@fluentui/codemods: [XX:XX:XX XM] x src/codeMods/mods/configMod/configMod.mod.ts:52:5 - error TS2322: Type '(file: SourceFile) => Result<ModResult, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' is not assignable to type '(file: SourceFile) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Type 'Result<ModResult, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: [XX:XX:XX XM] x src/codeMods/mods/configMod/configMod.mod.ts:52:5 - error TS2322: Type '(file: SourceFile) => CodeModResult | Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type '(file: SourceFile) => CodeModResult'.
+@fluentui/codemods:   Type 'CodeModResult | Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:         Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:           Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -683,10 +683,10 @@ Standard error:
 @fluentui/codemods:     34   run: (file: T) => CodeModResult;
 @fluentui/codemods:          ~~~
 @fluentui/codemods:     The expected type comes from property 'run' which is declared here on type 'CodeMod<SourceFile>'
-@fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:70:3 - error TS2322: Type '(mod: RenamePropModType) => (file: SourceFile) => Ok<{ logs: string[]; }, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' is not assignable to type '(mod: any) => (file: SourceFile) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Call signature return types '(file: SourceFile) => Ok<{ logs: string[]; }, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' and '(file: SourceFile) => Result<ModResult, NoOp | ModError>' are incompatible.
-@fluentui/codemods:     Type 'Ok<{ logs: string[]; }, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:70:3 - error TS2322: Type '(mod: RenamePropModType) => (file: SourceFile) => Ok<{ logs: string[]; }, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' is not assignable to type '(mod: any) => (file: SourceFile) => CodeModResult'.
+@fluentui/codemods:   Call signature return types '(file: SourceFile) => Ok<{ logs: string[]; }, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' and '(file: SourceFile) => CodeModResult' are incompatible.
+@fluentui/codemods:     Type 'Ok<{ logs: string[]; }, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:         Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:           Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:             Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -699,9 +699,9 @@ Standard error:
 @fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:109:41 - error TS2343: This syntax requires an imported helper named '__spreadArray' which does not exist in 'tslib'. Consider upgrading your version of 'tslib'.
 @fluentui/codemods: 109         return Ok({ logs: v.logs.concat(...r.logs) });
 @fluentui/codemods:                                             ~~~~~~~~~
-@fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:128:3 - error TS2322: Type '(file: SourceFile) => Result<ModResult, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' is not assignable to type '(file: SourceFile) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Type 'Result<ModResult, NoOp | ModError> | Err<ModResult | Result<ModResult, NoOp | ModError>, { ...; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:128:3 - error TS2322: Type '(file: SourceFile) => CodeModResult | Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type '(file: SourceFile) => CodeModResult'.
+@fluentui/codemods:   Type 'CodeModResult | Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:         Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:           Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -711,9 +711,9 @@ Standard error:
 @fluentui/codemods:     34   run: (file: T) => CodeModResult;
 @fluentui/codemods:          ~~~
 @fluentui/codemods:     The expected type comes from property 'run' which is declared here on type 'CodeMod<SourceFile>'
-@fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:147:27 - error TS2345: Argument of type '(result: CodeModResult, result2: CodeModResult) => Result<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to parameter of type '(previousValue: Result<ModResult, NoOp | ModError>, currentValue: Result<ModResult, NoOp | ModError>, currentIndex: number, array: Result<...>[]) => Result<...>'.
-@fluentui/codemods:   Type 'Result<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:     Type 'Err<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/mods/configMod/configMod.mod.ts:147:27 - error TS2345: Argument of type '(result: CodeModResult, result2: CodeModResult) => Result<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to parameter of type '(previousValue: CodeModResult, currentValue: CodeModResult, currentIndex: number, array: CodeModResult[]) => CodeModResult'.
+@fluentui/codemods:   Type 'Result<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:     Type 'Err<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:       Type 'Err<{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:         Type '{ logs: string[]; } | Result<{ logs: string[]; }, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:           Property 'logs' is missing in type 'Ok<{ logs: string[]; }, NoOp | ModError>' but required in type 'ModResult'.
@@ -723,9 +723,9 @@ Standard error:
 @fluentui/codemods:     5   logs: string[];
 @fluentui/codemods:         ~~~~
 @fluentui/codemods:     'logs' is declared here.
-@fluentui/codemods: src/codeMods/mods/officeToFluentImport/officeToFluentImport.mod.ts:26:3 - error TS2322: Type '(file: SourceFile) => Result<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type '(file: SourceFile) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Type 'Result<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/mods/officeToFluentImport/officeToFluentImport.mod.ts:26:3 - error TS2322: Type '(file: SourceFile) => Result<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type '(file: SourceFile) => CodeModResult'.
+@fluentui/codemods:   Type 'Result<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, NoOp | ModError>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:         Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:           Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -747,9 +747,9 @@ Standard error:
 @fluentui/codemods:     31             logs: [i.getModuleSpecifierValue()],
 @fluentui/codemods:                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @fluentui/codemods:     'logs' is declared here.
-@fluentui/codemods: src/codeMods/mods/oldToNewButton/oldToNewButton.mod.ts:7:3 - error TS2322: Type '(file: SourceFile) => Result<{ logs: string[]; }, NoOp> | Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type '(file: SourceFile) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Type 'Result<{ logs: string[]; }, NoOp> | Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/mods/oldToNewButton/oldToNewButton.mod.ts:7:3 - error TS2322: Type '(file: SourceFile) => Result<{ logs: string[]; }, NoOp> | Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type '(file: SourceFile) => CodeModResult'.
+@fluentui/codemods:   Type 'Result<{ logs: string[]; }, NoOp> | Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:         Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:           Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -759,9 +759,9 @@ Standard error:
 @fluentui/codemods:     34   run: (file: T) => CodeModResult;
 @fluentui/codemods:          ~~~
 @fluentui/codemods:     The expected type comes from property 'run' which is declared here on type 'CodeMod<SourceFile>'
-@fluentui/codemods: src/codeMods/mods/personaToAvatar/personaToAvatar.mod.ts:165:3 - error TS2322: Type '(file: SourceFile) => Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }> | Ok<{ logs: string[]; }, NoOp | ModError>' is not assignable to type '(file: SourceFile) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }> | Ok<{ logs: string[]; }, NoOp | ModError>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/mods/personaToAvatar/personaToAvatar.mod.ts:165:3 - error TS2322: Type '(file: SourceFile) => Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }> | Ok<{ logs: string[]; }, NoOp | ModError>' is not assignable to type '(file: SourceFile) => CodeModResult'.
+@fluentui/codemods:   Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }> | Ok<{ logs: string[]; }, NoOp | ModError>' is not assignable to type 'CodeModResult'.
+@fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:       Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:         Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:           Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -781,7 +781,7 @@ Standard error:
 @fluentui/codemods:     5   logs: string[];
 @fluentui/codemods:         ~~~~
 @fluentui/codemods:     'logs' is declared here.
-@fluentui/codemods: src/codeMods/utilities/imports.ts:73:3 - error TS2322: Type 'Err<ImportDeclaration | Result<ImportDeclaration, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Result<ImportDeclaration, NoOp | ModError>'.
+@fluentui/codemods: src/codeMods/utilities/imports.ts:73:3 - error TS2322: Type 'Err<ImportDeclaration | Result<ImportDeclaration, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'ModFunctionResult<ImportDeclaration>'.
 @fluentui/codemods:   Type 'Err<ImportDeclaration | Result<ImportDeclaration, NoOp | ModError>, { logs: string[]; }>' is not assignable to type 'Err<ImportDeclaration, NoOp | ModError>'.
 @fluentui/codemods:     Type 'ImportDeclaration | Result<ImportDeclaration, NoOp | ModError>' is not assignable to type 'ImportDeclaration'.
 @fluentui/codemods:       Type 'Err<ImportDeclaration, NoOp | ModError>' is missing the following properties from type 'ImportDeclaration': setModuleSpecifier, getModuleSpecifier, getModuleSpecifierValue, getModuleSpecifierSourceFileOrThrow, and 133 more.
@@ -871,7 +871,7 @@ Standard error:
 @fluentui/codemods:           Type 'Err<RunResult, ErrorResult>' is missing the following properties from type 'RunResult': modName, logs
 @fluentui/codemods: 28         err => {
 @fluentui/codemods:            ~~~~~~~~
-@fluentui/codemods: src/modRunner/runnerUtilities.ts:52:5 - error TS2322: Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/modRunner/runnerUtilities.ts:52:5 - error TS2322: Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:   Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { error: any; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:     Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:       Property 'logs' is missing in type 'Err<ModResult, NoOp | ModError>' but required in type 'ModResult'.
@@ -881,8 +881,8 @@ Standard error:
 @fluentui/codemods:     5   logs: string[];
 @fluentui/codemods:         ~~~~
 @fluentui/codemods:     'logs' is declared here.
-@fluentui/codemods: src/modRunner/tests/mocks/MockMods/CodeMod.mock.ts:4:3 - error TS2322: Type '() => Err<ModResult | Result<ModResult, NoOp | ModError>, { reason: number; logs: never[]; }>' is not assignable to type '(file: string) => Result<ModResult, NoOp | ModError>'.
-@fluentui/codemods:   Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { reason: number; logs: never[]; }>' is not assignable to type 'Result<ModResult, NoOp | ModError>'.
+@fluentui/codemods: src/modRunner/tests/mocks/MockMods/CodeMod.mock.ts:4:3 - error TS2322: Type '() => Err<ModResult | Result<ModResult, NoOp | ModError>, { reason: number; logs: never[]; }>' is not assignable to type '(file: string) => CodeModResult'.
+@fluentui/codemods:   Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { reason: number; logs: never[]; }>' is not assignable to type 'CodeModResult'.
 @fluentui/codemods:     Type 'Err<ModResult | Result<ModResult, NoOp | ModError>, { reason: number; logs: never[]; }>' is not assignable to type 'Err<ModResult, NoOp | ModError>'.
 @fluentui/codemods:       Type 'ModResult | Result<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
 @fluentui/codemods:         Type 'Err<ModResult, NoOp | ModError>' is not assignable to type 'ModResult'.
@@ -979,9 +979,9 @@ Standard error:
 @fluentui/styles: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/accessibility: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/accessibility: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/date-time-utilities: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/date-time-utilities: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/date-time-utilities: [XX:XX:XX XM] x ------------------------------------
-@fluentui/date-time-utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/date-time-utilities/tsconfig.json"
+@fluentui/date-time-utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/date-time-utilities/tsconfig.json"
 @fluentui/date-time-utilities:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/date-time-utilities:     at ChildProcess.emit (events.js:314:20)
 @fluentui/date-time-utilities:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -995,7 +995,7 @@ Standard error:
 @fluentui/date-time-utilities: Found 1 error.
 @fluentui/date-time-utilities: [XX:XX:XX XM] x ------------------------------------
 @fluentui/date-time-utilities: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/date-time-utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/date-time-utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/date-time-utilities: error Command failed with exit code 1.
 @fluentui/dom-utilities: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/dom-utilities: [XX:XX:XX XM] x ------------------------------------
@@ -1015,9 +1015,9 @@ Standard error:
 @fluentui/dom-utilities: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/dom-utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/dom-utilities: error Command failed with exit code 1.
-@fluentui/make-styles: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/make-styles: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/make-styles: [XX:XX:XX XM] x ------------------------------------
-@fluentui/make-styles: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/make-styles/tsconfig.json"
+@fluentui/make-styles: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/make-styles/tsconfig.json"
 @fluentui/make-styles:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/make-styles:     at ChildProcess.emit (events.js:314:20)
 @fluentui/make-styles:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1040,7 +1040,7 @@ Standard error:
 @fluentui/make-styles: Found 2 errors.
 @fluentui/make-styles: [XX:XX:XX XM] x ------------------------------------
 @fluentui/make-styles: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/make-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/make-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/make-styles: error Command failed with exit code 1.
 @fluentui/merge-styles: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/merge-styles: [XX:XX:XX XM] x ------------------------------------
@@ -1092,9 +1092,9 @@ Standard error:
 @fluentui/react-stylesheets: error Command failed with exit code 1.
 @fluentui/react-bindings: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-bindings: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/utilities: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/utilities: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/utilities: [XX:XX:XX XM] x ------------------------------------
-@fluentui/utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/utilities/tsconfig.json"
+@fluentui/utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/utilities/tsconfig.json"
 @fluentui/utilities:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/utilities:     at ChildProcess.emit (events.js:314:20)
 @fluentui/utilities:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1132,15 +1132,15 @@ Standard error:
 @fluentui/utilities: Found 9 errors.
 @fluentui/utilities: [XX:XX:XX XM] x ------------------------------------
 @fluentui/utilities: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/utilities: error Command failed with exit code 1.
 @fluentui/react-icons-northstar: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-icons-northstar: [XX:XX:XX XM] x Command not defined: ts
 @fluentui/react-telemetry: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/react-telemetry: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react-compose: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-compose: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-compose: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-compose: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-compose/tsconfig.json"
+@fluentui/react-compose: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-compose/tsconfig.json"
 @fluentui/react-compose:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-compose:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-compose:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1154,7 +1154,7 @@ Standard error:
 @fluentui/react-compose: Found 1 error.
 @fluentui/react-compose: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-compose: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-compose: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-compose: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-compose: error Command failed with exit code 1.
 @fluentui/react-hooks: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-hooks: [XX:XX:XX XM] x ------------------------------------
@@ -1267,10 +1267,10 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-avatar:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 @fluentui/react-avatar:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
 @fluentui/react-avatar: [XX:XX:XX XM] x stdout:
-@fluentui/react-avatar: [XX:XX:XX XM] x src/components/Avatar/Avatar.tsx:11:38 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'Record<string, string>'.
+@fluentui/react-avatar: [XX:XX:XX XM] x src/components/Avatar/Avatar.tsx:11:38 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'ClassDictionary'.
 @fluentui/react-avatar: 11 const useAvatarClasses = makeClasses(classes);
 @fluentui/react-avatar:                                         ~~~~~~~
-@fluentui/react-avatar: src/components/Badge/Badge.tsx:10:44 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'Record<string, string>'.
+@fluentui/react-avatar: src/components/Badge/Badge.tsx:10:44 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'ClassDictionary'.
 @fluentui/react-avatar:   Property 'styles' is incompatible with index signature.
 @fluentui/react-avatar:     Type '{ [className: string]: string; }' is not assignable to type 'string'.
 @fluentui/react-avatar: 10 export const useBadgeClasses = makeClasses(classes);
@@ -1280,9 +1280,9 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-avatar: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-avatar: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-avatar: error Command failed with exit code 1.
-@fluentui/react-flex: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-flex: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-flex: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-flex: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-flex/tsconfig.json"
+@fluentui/react-flex: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-flex/tsconfig.json"
 @fluentui/react-flex:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-flex:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-flex:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1290,22 +1290,22 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-flex:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 @fluentui/react-flex:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
 @fluentui/react-flex: [XX:XX:XX XM] x stdout:
-@fluentui/react-flex: [XX:XX:XX XM] x src/components/Flex/Flex.tsx:22:34 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'Record<string, string>'.
+@fluentui/react-flex: [XX:XX:XX XM] x src/components/Flex/Flex.tsx:22:34 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'ClassDictionary'.
 @fluentui/react-flex:   Property 'styles' is incompatible with index signature.
 @fluentui/react-flex:     Type '{ [className: string]: string; }' is not assignable to type 'string'.
 @fluentui/react-flex: 22     classes: createClassResolver(classes),
 @fluentui/react-flex:                                     ~~~~~~~
-@fluentui/react-flex: src/components/FlexItem/FlexItem.tsx:20:34 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'Record<string, string>'.
+@fluentui/react-flex: src/components/FlexItem/FlexItem.tsx:20:34 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'ClassDictionary'.
 @fluentui/react-flex: 20     classes: createClassResolver(classes),
 @fluentui/react-flex:                                     ~~~~~~~
 @fluentui/react-flex: Found 2 errors.
 @fluentui/react-flex: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-flex: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-flex: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-flex: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-flex: error Command failed with exit code 1.
-@fluentui/react-image: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-image: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-image: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-image: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-image/tsconfig.json"
+@fluentui/react-image: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-image/tsconfig.json"
 @fluentui/react-image:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-image:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-image:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1313,7 +1313,7 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-image:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 @fluentui/react-image:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
 @fluentui/react-image: [XX:XX:XX XM] x stdout:
-@fluentui/react-image: [XX:XX:XX XM] x src/components/Image/Image.tsx:9:44 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'Record<string, string>'.
+@fluentui/react-image: [XX:XX:XX XM] x src/components/Image/Image.tsx:9:44 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'ClassDictionary'.
 @fluentui/react-image:   Property 'styles' is incompatible with index signature.
 @fluentui/react-image:     Type '{ [className: string]: string; }' is not assignable to type 'string'.
 @fluentui/react-image: 9 export const useImageClasses = makeClasses(classes);
@@ -1324,13 +1324,13 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-image: Found 2 errors.
 @fluentui/react-image: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-image: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-image: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-image: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-image: error Command failed with exit code 1.
 @fluentui/docs: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/docs: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react-internal: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-internal: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-internal: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-internal: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-internal/tsconfig.json"
+@fluentui/react-internal: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-internal/tsconfig.json"
 @fluentui/react-internal:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-internal:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-internal:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1382,13 +1382,13 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-internal: Found 11 errors.
 @fluentui/react-internal: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-internal: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-internal: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-internal: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-internal: error Command failed with exit code 1.
 @fluentui/perf: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/perf: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/react-checkbox: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-checkbox: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-checkbox: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-checkbox: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-checkbox/tsconfig.json"
+@fluentui/react-checkbox: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-checkbox/tsconfig.json"
 @fluentui/react-checkbox:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-checkbox:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-checkbox:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1396,7 +1396,7 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-checkbox:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 @fluentui/react-checkbox:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
 @fluentui/react-checkbox: [XX:XX:XX XM] x stdout:
-@fluentui/react-checkbox: [XX:XX:XX XM] x src/next/useCheckboxClasses.tsx:14:50 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'Record<string, string>'.
+@fluentui/react-checkbox: [XX:XX:XX XM] x src/next/useCheckboxClasses.tsx:14:50 - error TS2345: Argument of type 'typeof import("*.scss")' is not assignable to parameter of type 'ClassDictionary'.
 @fluentui/react-checkbox:   Property 'styles' is incompatible with index signature.
 @fluentui/react-checkbox:     Type '{ [className: string]: string; }' is not assignable to type 'string'.
 @fluentui/react-checkbox: 14 const defaultClassResolver = createClassResolver(classes);
@@ -1404,7 +1404,7 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-checkbox: Found 1 error.
 @fluentui/react-checkbox: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-checkbox: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-checkbox: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-checkbox: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-checkbox: error Command failed with exit code 1.
 @fluentui/react-date-time: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-date-time: [XX:XX:XX XM] x ------------------------------------
@@ -1451,9 +1451,9 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-link: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-link: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-link: error Command failed with exit code 1.
-@fluentui/react-slider: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-slider: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-slider: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-slider: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-slider/tsconfig.json"
+@fluentui/react-slider: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-slider/tsconfig.json"
 @fluentui/react-slider:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-slider:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-slider:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1506,11 +1506,11 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-slider: Found 14 errors.
 @fluentui/react-slider: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-slider: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-slider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-slider: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-slider: error Command failed with exit code 1.
-@fluentui/react-tabs: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-tabs: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-tabs: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-tabs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-tabs/tsconfig.json"
+@fluentui/react-tabs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-tabs/tsconfig.json"
 @fluentui/react-tabs:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-tabs:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-tabs:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1524,11 +1524,11 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-tabs: Found 1 error.
 @fluentui/react-tabs: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-tabs: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-tabs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-tabs: error Command failed with exit code 1.
-@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-toggle: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
+@fluentui/react-toggle: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-toggle/tsconfig.json"
 @fluentui/react-toggle:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-toggle:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-toggle:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1572,11 +1572,11 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react-toggle: Found 11 errors.
 @fluentui/react-toggle: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-toggle: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-toggle: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-toggle: error Command failed with exit code 1.
-@fluentui/react: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react/tsconfig.json"
+@fluentui/react: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react/tsconfig.json"
 @fluentui/react:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1617,7 +1617,7 @@ codesandbox-react-northstar-template: error Command failed with exit code 1.
 @fluentui/react: Found 10 errors.
 @fluentui/react: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react: error Command failed with exit code 1.
 a11y-tests: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 a11y-tests: [XX:XX:XX XM] x ------------------------------------
@@ -1637,9 +1637,9 @@ a11y-tests: [XX:XX:XX XM] x ------------------------------------
 a11y-tests: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 a11y-tests: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 a11y-tests: error Command failed with exit code 1.
-@fluentui/react-charting: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-charting: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/react-charting: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-charting: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-charting/tsconfig.json"
+@fluentui/react-charting: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-charting/tsconfig.json"
 @fluentui/react-charting:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-charting:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-charting:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1653,7 +1653,7 @@ a11y-tests: error Command failed with exit code 1.
 @fluentui/react-charting: Found 1 error.
 @fluentui/react-charting: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-charting: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-charting: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-charting: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/react-charting: error Command failed with exit code 1.
 @fluentui/react-experiments: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-experiments: [XX:XX:XX XM] x ------------------------------------
@@ -1689,7 +1689,7 @@ a11y-tests: error Command failed with exit code 1.
 @fluentui/react-experiments: src/components/SelectedItemsList/SelectedItemsList.tsx:27:36 - error TS2343: This syntax requires an imported helper named '__spreadArray' which does not exist in 'tslib'. Consider upgrading your version of 'tslib'.
 @fluentui/react-experiments: 27     const updatedItems: TItem[] = [...items];
 @fluentui/react-experiments:                                       ~~~~~~~~
-@fluentui/react-experiments: src/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList.test.tsx:94:9 - error TS2322: Type 'ComponentType<TriggerProps<unknown>>' is not assignable to type 'ComponentType<ISelectedItemProps<IPersonaProps & BaseSelectedItem>> | undefined'.
+@fluentui/react-experiments: src/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList.test.tsx:94:9 - error TS2322: Type 'ItemCanDispatchTrigger<unknown>' is not assignable to type 'ComponentType<ISelectedItemProps<IPersonaProps & BaseSelectedItem>> | undefined'.
 @fluentui/react-experiments:   Type 'ComponentClass<TriggerProps<unknown>, any>' is not assignable to type 'ComponentType<ISelectedItemProps<IPersonaProps & BaseSelectedItem>> | undefined'.
 @fluentui/react-experiments:     Type 'ComponentClass<TriggerProps<unknown>, any>' is not assignable to type 'ComponentClass<ISelectedItemProps<IPersonaProps & BaseSelectedItem>, any>'.
 @fluentui/react-experiments:       Types of property 'propTypes' are incompatible.
@@ -1892,9 +1892,9 @@ a11y-tests: error Command failed with exit code 1.
 @fluentui/react-monaco-editor: error Command failed with exit code 1.
 @fluentui/e2e: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/e2e: [XX:XX:XX XM] x Command not defined: ts
-@fluentui/api-docs: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/api-docs: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/api-docs: [XX:XX:XX XM] x ------------------------------------
-@fluentui/api-docs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/api-docs/tsconfig.json"
+@fluentui/api-docs: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/api-docs/tsconfig.json"
 @fluentui/api-docs:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/api-docs:     at ChildProcess.emit (events.js:314:20)
 @fluentui/api-docs:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1918,7 +1918,7 @@ a11y-tests: error Command failed with exit code 1.
 @fluentui/api-docs: Found 2 errors.
 @fluentui/api-docs: [XX:XX:XX XM] x ------------------------------------
 @fluentui/api-docs: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/api-docs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/api-docs: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/api-docs: error Command failed with exit code 1.
 @fluentui/react-docsite-components: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-docsite-components: [XX:XX:XX XM] x ------------------------------------
@@ -1981,9 +1981,9 @@ a11y-tests: error Command failed with exit code 1.
 @fluentui/react-docsite-components: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-docsite-components: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-docsite-components: error Command failed with exit code 1.
-@fluentui/storybook: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/storybook: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
 @fluentui/storybook: [XX:XX:XX XM] x ------------------------------------
-@fluentui/storybook: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/storybook/tsconfig.json"
+@fluentui/storybook: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/storybook/tsconfig.json"
 @fluentui/storybook:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/storybook:     at ChildProcess.emit (events.js:314:20)
 @fluentui/storybook:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -1997,7 +1997,7 @@ a11y-tests: error Command failed with exit code 1.
 @fluentui/storybook: Found 1 error.
 @fluentui/storybook: [XX:XX:XX XM] x ------------------------------------
 @fluentui/storybook: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/storybook: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/storybook: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
 @fluentui/storybook: error Command failed with exit code 1.
 theming-designer: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 theming-designer: [XX:XX:XX XM] x ------------------------------------
@@ -2158,9 +2158,9 @@ theming-designer: error Command failed with exit code 1.
 @fluentui/react-examples: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/react-examples: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-examples: error Command failed with exit code 1.
-@fluentui/public-docsite-resources: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/public-docsite-resources: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/public-docsite-resources: [XX:XX:XX XM] x ------------------------------------
-@fluentui/public-docsite-resources: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/public-docsite-resources/tsconfig.json"
+@fluentui/public-docsite-resources: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/public-docsite-resources/tsconfig.json"
 @fluentui/public-docsite-resources:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/public-docsite-resources:     at ChildProcess.emit (events.js:314:20)
 @fluentui/public-docsite-resources:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -2174,11 +2174,11 @@ theming-designer: error Command failed with exit code 1.
 @fluentui/public-docsite-resources: Found 1 error.
 @fluentui/public-docsite-resources: [XX:XX:XX XM] x ------------------------------------
 @fluentui/public-docsite-resources: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/public-docsite-resources: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/public-docsite-resources: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/public-docsite-resources: error Command failed with exit code 1.
-@fluentui/public-docsite: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/public-docsite: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/public-docsite: [XX:XX:XX XM] x ------------------------------------
-@fluentui/public-docsite: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/apps/public-docsite/tsconfig.json"
+@fluentui/public-docsite: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/apps/public-docsite/tsconfig.json"
 @fluentui/public-docsite:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/public-docsite:     at ChildProcess.emit (events.js:314:20)
 @fluentui/public-docsite:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -2687,6 +2687,6 @@ theming-designer: error Command failed with exit code 1.
 @fluentui/public-docsite: Found 166 errors.
 @fluentui/public-docsite: [XX:XX:XX XM] x ------------------------------------
 @fluentui/public-docsite: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/public-docsite: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/public-docsite: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/public-docsite: error Command failed with exit code 1.
 lerna ERR! Received non-zero exit code 1 during execution
