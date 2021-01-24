@@ -5,7 +5,7 @@ Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
 Node.js version is 15.6.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 59 ]==
+==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 60 ]==
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/communication-administration" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/communication-chat" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -42,6 +42,7 @@ Executing a maximum of ?simultaneous processes...
 "@azure/storage-queue" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-common" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/opentelemetry-exporter-azure-monitor" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/quantum" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/search-documents" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-file-share" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/synapse-access-control" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -64,7 +65,7 @@ Executing a maximum of ?simultaneous processes...
 "@azure/event-processor-host" is blocked by "@azure/eslint-plugin-azure-sdk".
 "testhub" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/logger" is blocked by "@azure/eslint-plugin-azure-sdk".
-==[ BLOCKED: 58 projects ]=====================================================
+==[ BLOCKED: 59 projects ]=====================================================
 These projects were blocked by dependencies that failed:
   @azure/abort-controller
   @azure/ai-anomaly-detector
@@ -104,6 +105,7 @@ These projects were blocked by dependencies that failed:
   @azure/keyvault-secrets
   @azure/logger
   @azure/opentelemetry-exporter-azure-monitor
+  @azure/quantum
   @azure/schema-registry
   @azure/schema-registry-avro
   @azure/search-documents
