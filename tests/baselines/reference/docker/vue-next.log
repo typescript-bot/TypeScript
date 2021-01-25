@@ -90,8 +90,8 @@ created packages/compiler-ssr/dist/compiler-ssr.cjs.js in ?s
 Warning: dist/packages/compiler-sfc/src/compileScript.d.ts:27:36 - (tsdoc-escape-greater-than) The ">" character should be escaped using a backslash to avoid confusion with an HTML tag
 Warning: dist/packages/compiler-sfc/src/compileScript.d.ts:27:23 - (tsdoc-html-tag-missing-equals) The HTML element has an invalid attribute: Expecting "=" after HTML attribute name
 Warning: dist/packages/compiler-sfc/src/compileStyle.d.ts:18:8 - (tsdoc-missing-deprecation-message) The @deprecated block must include a deprecation message, e.g. describing the recommended alternative
-/vue-next/packages/runtime-core/src/index.ts → packages/runtime-core/dist/runtime-core.esm-bundler.js...
 /vue-next/packages/reactivity/src/index.ts → packages/reactivity/dist/reactivity.esm-bundler.js...
+/vue-next/packages/runtime-core/src/index.ts → packages/runtime-core/dist/runtime-core.esm-bundler.js...
 [!] (plugin rpt2) Error: /vue-next/packages/reactivity/src/baseHandlers.ts(192,3): semantic error TS2322: Type '(target: object) => (string | number | symbol)[]' is not assignable to type '(target: object) => ArrayLike<string | symbol>'.
   Type '(string | number | symbol)[]' is not assignable to type 'ArrayLike<string | symbol>'.
     Index signatures are incompatible.
