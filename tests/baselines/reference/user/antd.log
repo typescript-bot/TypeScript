@@ -1,0 +1,7 @@
+Exit Code: 2
+Standard output:
+node_modules/antd/lib/tooltip/placements.d.ts(16,73): error TS2307: Cannot find module '_rc-trigger@5.2.1@rc-trigger' or its corresponding type declarations.
+
+
+
+Standard error:
