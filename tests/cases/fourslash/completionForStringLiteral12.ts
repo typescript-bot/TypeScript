@@ -3,8 +3,9 @@
 ////function foo(x: "bla"): void;
 ////function foo(x: "bla"): void;
 ////function foo(x: string) {}
-////foo("/**/")
+////foo("[|/**/|]")
 
-goTo.marker();
-verify.completionListContains("bla");
-verify.completionListCount(1);
+verify.completions({ marker: "", exact: {
+    name: "bla",
+    replacementSpan: test.ranges()[0]
+} });

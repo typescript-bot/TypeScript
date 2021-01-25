@@ -12,14 +12,13 @@ class a {
 >x : string
 >y : number
 >z : B[]
->B : B
 }
 
 
 
 var xx = new a(null, 7, new B());
->xx : any
->new a(null, 7, new B()) : any
+>xx : a
+>new a(null, 7, new B()) : a
 >a : typeof a
 >null : null
 >7 : 7

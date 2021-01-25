@@ -41,11 +41,11 @@ namespace ts.server {
         // path to start of range
         private readonly startPath: LineCollection[];
         private readonly endBranch: LineCollection[] = [];
-        private branchNode: LineNode;
+        private branchNode: LineNode | undefined;
         // path to current node
         private readonly stack: LineNode[];
         private state = CharRangeSection.Entire;
-        private lineCollectionAtBranch: LineCollection;
+        private lineCollectionAtBranch: LineCollection | undefined;
         private initialText = "";
         private trailingText = "";
 
@@ -55,7 +55,7 @@ namespace ts.server {
             this.stack = [this.lineIndex.root];
         }
 
-        insertLines(insertedText: string, suppressTrailingText: boolean) {
+        insertLines(insertedText: string | undefined, suppressTrailingText: boolean) {
             if (suppressTrailingText) {
                 this.trailingText = "";
             }
@@ -72,8 +72,8 @@ namespace ts.server {
                     lines.pop();
                 }
             }
-            let branchParent: LineNode;
-            let lastZeroCount: LineCollection;
+            let branchParent: LineNode | undefined;
+            let lastZeroCount: LineCollection | undefined;
 
             for (let k = this.endBranch.length - 1; k >= 0; k--) {
                 (<LineNode>this.endBranch[k]).updateCounts();
@@ -88,7 +88,7 @@ namespace ts.server {
                 }
             }
             if (lastZeroCount) {
-                branchParent.remove(lastZeroCount);
+                branchParent!.remove(lastZeroCount);
             }
 
             // path at least length two (root and leaf)
@@ -159,7 +159,7 @@ namespace ts.server {
                 this.lineCollectionAtBranch = lineCollection;
             }
 
-            let child: LineCollection;
+            let child: LineCollection | undefined;
             function fresh(node: LineCollection): LineCollection {
                 if (node.isLeaf()) {
                     return new LineLeaf("");
@@ -308,8 +308,8 @@ namespace ts.server {
             return this._getSnapshot().version;
         }
 
-        getLineInfo(line: number): AbsolutePositionAndLineText {
-            return this._getSnapshot().index.lineNumberToInfo(line);
+        getAbsolutePositionAndLineText(oneBasedLine: number): AbsolutePositionAndLineText {
+            return this._getSnapshot().index.lineNumberToInfo(oneBasedLine);
         }
 
         lineOffsetToPosition(line: number, column: number): number {
@@ -332,7 +332,7 @@ namespace ts.server {
                 if (oldVersion >= this.minVersion) {
                     const textChangeRanges: TextChangeRange[] = [];
                     for (let i = oldVersion + 1; i <= newVersion; i++) {
-                        const snap = this.versions[this.versionToIndex(i)];
+                        const snap = this.versions[this.versionToIndex(i)!]; // TODO: GH#18217
                         for (const textChange of snap.changesSincePreviousVersion) {
                             textChangeRanges.push(textChange.getTextChangeRange());
                         }
@@ -348,6 +348,10 @@ namespace ts.server {
             }
         }
 
+        getLineCount() {
+            return this._getSnapshot().index.getLineCount();
+        }
+
         static fromString(script: string) {
             const svc = new ScriptVersionCache();
             const snap = new LineIndexSnapshot(0, svc, new LineIndex());
@@ -359,7 +363,7 @@ namespace ts.server {
     }
 
     class LineIndexSnapshot implements IScriptSnapshot {
-        constructor(readonly version: number, readonly cache: ScriptVersionCache, readonly index: LineIndex, readonly changesSincePreviousVersion: ReadonlyArray<TextChange> = emptyArray) {
+        constructor(readonly version: number, readonly cache: ScriptVersionCache, readonly index: LineIndex, readonly changesSincePreviousVersion: readonly TextChange[] = emptyArray) {
         }
 
         getText(rangeStart: number, rangeEnd: number) {
@@ -370,7 +374,7 @@ namespace ts.server {
             return this.index.getLength();
         }
 
-        getChangeRange(oldSnapshot: IScriptSnapshot): TextChangeRange {
+        getChangeRange(oldSnapshot: IScriptSnapshot): TextChangeRange | undefined {
             if (oldSnapshot instanceof LineIndexSnapshot && this.cache === oldSnapshot.cache) {
                 if (this.version <= oldSnapshot.version) {
                     return unchangedTextChangeRange;
@@ -382,9 +386,8 @@ namespace ts.server {
         }
     }
 
-    /* @internal */
     export class LineIndex {
-        root: LineNode;
+        root!: LineNode;
         // set this to true to check each edit for accuracy
         checkEdits = false;
 
@@ -397,12 +400,16 @@ namespace ts.server {
             return { line: oneBasedLine, offset: zeroBasedColumn + 1 };
         }
 
-        private positionToColumnAndLineText(position: number): { zeroBasedColumn: number, lineText: string } {
+        private positionToColumnAndLineText(position: number): { zeroBasedColumn: number, lineText: string | undefined } {
             return this.root.charOffsetToLineInfo(1, position);
         }
 
+        getLineCount() {
+            return this.root.lineCount();
+        }
+
         lineNumberToInfo(oneBasedLine: number): AbsolutePositionAndLineText {
-            const lineCount = this.root.lineCount();
+            const lineCount = this.getLineCount();
             if (oneBasedLine <= lineCount) {
                 const { position, leaf } = this.root.lineNumberToInfo(oneBasedLine, 0);
                 return { absolutePosition: position, lineText: leaf && leaf.text };
@@ -471,9 +478,10 @@ namespace ts.server {
                     this.load(LineIndex.linesFromText(newText).lines);
                     return this;
                 }
+                return undefined!; // TODO: GH#18217
             }
             else {
-                let checkText: string;
+                let checkText: string | undefined;
                 if (this.checkEdits) {
                     const source = this.getText(0, this.root.charCount());
                     checkText = source.slice(0, pos) + newText + source.slice(pos + deleteLength);
@@ -499,7 +507,7 @@ namespace ts.server {
                     const { zeroBasedColumn, lineText } = this.positionToColumnAndLineText(e);
                     if (zeroBasedColumn === 0) {
                         // move range end just past line that will merge with previous line
-                        deleteLength += lineText.length;
+                        deleteLength += lineText!.length; // TODO: GH#18217
                         // store text by appending to end of insertedText
                         newText = newText ? newText + lineText : lineText;
                     }
@@ -700,7 +708,7 @@ namespace ts.server {
         }
 
         private splitAfter(childIndex: number) {
-            let splitNode: LineNode;
+            let splitNode: LineNode | undefined;
             const clen = this.children.length;
             childIndex++;
             const endLength = childIndex;

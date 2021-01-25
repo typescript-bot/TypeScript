@@ -12,6 +12,8 @@ verify.moveToNewFile({
 
         "/x.ts":
 `import f from "./a";
-const x = f();`,
+
+const x = f();
+`,
     },
 });

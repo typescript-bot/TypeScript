@@ -20,9 +20,11 @@ x; y;`,
 
         "/x.ts":
 `import { a, b } from "./a";
+
 export const x = 0;
 a;
 export const y = 1;
-b;`,
+b;
+`,
     },
 });

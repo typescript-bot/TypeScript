@@ -1,4 +1,4 @@
-/// <reference path="lib.es2015.symbol.d.ts" />
+/// <reference lib="es2015.symbol" />
 
 interface SymbolConstructor {
     /**
@@ -63,7 +63,12 @@ interface SymbolConstructor {
 }
 
 interface Symbol {
-    readonly [Symbol.toStringTag]: "Symbol";
+    /**
+     * Converts a Symbol object to a symbol.
+     */
+    [Symbol.toPrimitive](hint: string): symbol;
+
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface Array<T> {
@@ -107,23 +112,23 @@ interface Date {
 }
 
 interface Map<K, V> {
-    readonly [Symbol.toStringTag]: "Map";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface WeakMap<K extends object, V> {
-    readonly [Symbol.toStringTag]: "WeakMap";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface Set<T> {
-    readonly [Symbol.toStringTag]: "Set";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface WeakSet<T extends object> {
-    readonly [Symbol.toStringTag]: "WeakSet";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface JSON {
-    readonly [Symbol.toStringTag]: "JSON";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface Function {
@@ -138,15 +143,15 @@ interface Function {
 }
 
 interface GeneratorFunction {
-    readonly [Symbol.toStringTag]: "GeneratorFunction";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface Math {
-    readonly [Symbol.toStringTag]: "Math";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface Promise<T> {
-    readonly [Symbol.toStringTag]: "Promise";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface PromiseConstructor {
@@ -207,7 +212,8 @@ interface RegExpConstructor {
 
 interface String {
     /**
-     * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
+     * Matches a string or an object that supports being matched against, and returns an array
+     * containing the results of that search, or null if no matches are found.
      * @param matcher An object that supports being matched against.
      */
     match(matcher: { [Symbol.match](string: string): RegExpMatchArray | null; }): RegExpMatchArray | null;
@@ -241,11 +247,11 @@ interface String {
 }
 
 interface ArrayBuffer {
-    readonly [Symbol.toStringTag]: "ArrayBuffer";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface DataView {
-    readonly [Symbol.toStringTag]: "DataView";
+    readonly [Symbol.toStringTag]: string;
 }
 
 interface Int8Array {
@@ -253,7 +259,7 @@ interface Int8Array {
 }
 
 interface Uint8Array {
-    readonly [Symbol.toStringTag]: "UInt8Array";
+    readonly [Symbol.toStringTag]: "Uint8Array";
 }
 
 interface Uint8ClampedArray {

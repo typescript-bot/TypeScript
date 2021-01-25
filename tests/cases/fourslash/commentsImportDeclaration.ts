@@ -40,8 +40,7 @@ verify.completions({
     ]
 })
 
-goTo.marker('8');
-verify.currentSignatureHelpDocCommentIs("exported function");
+verify.signatureHelp({ marker: "8", docComment: "exported function" });
 verify.quickInfos({
     "8q": ["function extMod.m1.fooExport(): number", "exported function"],
     9: "var newVar: extMod.m1.m2.c"
@@ -50,7 +49,7 @@ verify.quickInfos({
 verify.completions({
     marker: "10",
     exact:  [
-        { name: "c", text: "constructor extMod.m1.m2.c(): extMod.m1.m2.c" },
+        { name: "c", text: "constructor extMod.m1.m2.c(): extMod.m1.m2.c", documentation: "class comment;" },
         { name: "i", text: "var extMod.m1.m2.i: extMod.m1.m2.c", documentation: "i" },
     ],
 });

@@ -4,35 +4,29 @@
 
 class C<T> {
 >C : C<T>
->T : T
 
     x: T;
 >x : T
->T : T
 }
 
 var c = new C<number, number>();
->c : any
->new C<number, number>() : any
+>c : C<number>
+>new C<number, number>() : C<number>
 >C : typeof C
 
 class D<T, U> {
 >D : D<T, U>
->T : T
->U : U
 
     x: T
 >x : T
->T : T
 
     y: U
 >y : U
->U : U
 }
 
 // BUG 794238
 var d = new D<number>();
->d : any
->new D<number>() : any
+>d : D<number, unknown>
+>new D<number>() : D<number, unknown>
 >D : typeof D
 

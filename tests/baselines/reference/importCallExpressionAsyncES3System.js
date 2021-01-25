@@ -30,11 +30,13 @@ export const l = async () => {
 
 //// [test.js]
 System.register([], function (exports_1, context_1) {
+    "use strict";
     var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
         return new (P || (P = Promise))(function (resolve, reject) {
             function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
             function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
             step((generator = generator.apply(thisArg, _arguments || [])).next());
         });
     };
@@ -45,8 +47,8 @@ System.register([], function (exports_1, context_1) {
         function step(op) {
             if (f) throw new TypeError("Generator is already executing.");
             while (_) try {
-                if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-                if (y = 0, t) op = [0, t.value];
+                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+                if (y = 0, t) op = [op[0] & 2, t.value];
                 switch (op[0]) {
                     case 0: case 1: t = op; break;
                     case 4: _.label++; return { value: op[1], done: false };
@@ -65,9 +67,7 @@ System.register([], function (exports_1, context_1) {
             if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
         }
     };
-    var _this, cl1, obj, cl2, l;
-    "use strict";
-    _this = this;
+    var cl1, obj, cl2, l;
     var __moduleName = context_1 && context_1.id;
     function fn() {
         return __awaiter(this, void 0, void 0, function () {
@@ -108,7 +108,7 @@ System.register([], function (exports_1, context_1) {
             }());
             exports_1("cl1", cl1);
             exports_1("obj", obj = {
-                m: function () { return __awaiter(_this, void 0, void 0, function () {
+                m: function () { return __awaiter(void 0, void 0, void 0, function () {
                     var req;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
@@ -142,7 +142,7 @@ System.register([], function (exports_1, context_1) {
                 return cl2;
             }());
             exports_1("cl2", cl2);
-            exports_1("l", l = function () { return __awaiter(_this, void 0, void 0, function () {
+            exports_1("l", l = function () { return __awaiter(void 0, void 0, void 0, function () {
                 var req;
                 return __generator(this, function (_a) {
                     switch (_a.label) {

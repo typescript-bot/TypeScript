@@ -9,11 +9,14 @@ foo();
 import Foo from "./a";
 export default function foo() { new Foo(); }
 
+// https://github.com/microsoft/TypeScript/issues/37429
+import("./a");
+
 
 //// [output.js]
 System.register("b", ["a"], function (exports_1, context_1) {
-    var a_1;
     "use strict";
+    var a_1;
     var __moduleName = context_1 && context_1.id;
     function foo() { new a_1.default(); }
     exports_1("default", foo);
@@ -24,12 +27,14 @@ System.register("b", ["a"], function (exports_1, context_1) {
             }
         ],
         execute: function () {
+            // https://github.com/microsoft/TypeScript/issues/37429
+            context_1.import("a");
         }
     };
 });
 System.register("a", ["b"], function (exports_2, context_2) {
-    var b_1, Foo;
     "use strict";
+    var b_1, Foo;
     var __moduleName = context_2 && context_2.id;
     return {
         setters: [

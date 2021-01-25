@@ -2,7 +2,6 @@
 export function removeClass (node:HTMLElement, className:string) {
 >removeClass : (node: HTMLElement, className: string) => void
 >node : HTMLElement
->HTMLElement : HTMLElement
 >className : string
 
 	node.className = node.className.replace(_classNameRegexp(className), function (everything, leftDelimiter, name, rightDelimiter) {
@@ -26,7 +25,7 @@ export function removeClass (node:HTMLElement, className:string) {
 >rightDelimiter : any
 
 		return leftDelimiter.length + rightDelimiter.length === 2 ? ' ' : '';
->leftDelimiter.length + rightDelimiter.length === 2 ? ' ' : '' : " " | ""
+>leftDelimiter.length + rightDelimiter.length === 2 ? ' ' : '' : "" | " "
 >leftDelimiter.length + rightDelimiter.length === 2 : boolean
 >leftDelimiter.length + rightDelimiter.length : any
 >leftDelimiter.length : any

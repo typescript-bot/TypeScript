@@ -77,7 +77,7 @@ declare function encodeURI(uri: string): string;
   * Encodes a text string as a valid component of a Uniform Resource Identifier (URI).
   * @param uriComponent A value representing an encoded URI component.
   */
-declare function encodeURIComponent(uriComponent: string): string;
+declare function encodeURIComponent(uriComponent: string | number | boolean): string;
 
 /**
   * Computes a new string in which certain characters have been replaced by a hexadecimal escape sequence.
@@ -1622,7 +1622,7 @@ interface Int8Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Int8Array;
+    subarray(begin?: number, end?: number): Int8Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -1895,7 +1895,7 @@ interface Uint8Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Uint8Array;
+    subarray(begin?: number, end?: number): Uint8Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -2169,7 +2169,7 @@ interface Uint8ClampedArray {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Uint8ClampedArray;
+    subarray(begin?: number, end?: number): Uint8ClampedArray;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -2442,7 +2442,7 @@ interface Int16Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Int16Array;
+    subarray(begin?: number, end?: number): Int16Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -2716,7 +2716,7 @@ interface Uint16Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Uint16Array;
+    subarray(begin?: number, end?: number): Uint16Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -2989,7 +2989,7 @@ interface Int32Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Int32Array;
+    subarray(begin?: number, end?: number): Int32Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -3262,7 +3262,7 @@ interface Uint32Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Uint32Array;
+    subarray(begin?: number, end?: number): Uint32Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -3535,7 +3535,7 @@ interface Float32Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Float32Array;
+    subarray(begin?: number, end?: number): Float32Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -3809,7 +3809,7 @@ interface Float64Array {
       * @param begin The index of the beginning of the array.
       * @param end The index of the end of the array.
       */
-    subarray(begin: number, end?: number): Float64Array;
+    subarray(begin?: number, end?: number): Float64Array;
 
     /**
       * Converts a number to a string by using the current locale.
@@ -3890,28 +3890,38 @@ declare module Intl {
     interface NumberFormatOptions {
         localeMatcher?: string;
         style?: string;
+        compactDisplay?: string;
         currency?: string;
         currencyDisplay?: string;
+        unit?: string;
+        unitDisplay?: string;
         useGrouping?: boolean;
         minimumIntegerDigits?: number;
         minimumFractionDigits?: number;
         maximumFractionDigits?: number;
         minimumSignificantDigits?: number;
         maximumSignificantDigits?: number;
+        notation?: string;
+        signDisplay?: string;
     }
 
     interface ResolvedNumberFormatOptions {
         locale: string;
         numberingSystem: string;
         style: string;
+        compactDisplay?: string;
         currency?: string;
         currencyDisplay?: string;
+        unit?: string;
+        unitDisplay?: string;
         minimumIntegerDigits: number;
         minimumFractionDigits: number;
         maximumFractionDigits: number;
         minimumSignificantDigits?: number;
         maximumSignificantDigits?: number;
         useGrouping: boolean;
+        notation?: string;
+        signDisplay?: string;
     }
 
     interface NumberFormat {
@@ -3928,19 +3938,26 @@ declare module Intl {
     }
 
     interface DateTimeFormatOptions {
-        localeMatcher?: string;
-        weekday?: string;
-        era?: string;
-        year?: string;
-        month?: string;
-        day?: string;
-        hour?: string;
-        minute?: string;
-        second?: string;
-        timeZoneName?: string;
-        formatMatcher?: string;
-        hour12?: boolean;
+        dateStyle?: "full" | "long" | "medium" | "short";
+        timeStyle?: "full" | "long" | "medium" | "short";
+        calendar?: "buddhist" | "chinese" | " coptic" | "ethiopia" | "ethiopic" | "gregory" | " hebrew" | "indian" | "islamic" | "iso8601" | " japanese" | "persian" | "roc";
+        dayPeriod?: "narrow" | "short" | " long";
+        numberingSystem?: "arab" | "arabext" | " bali" | "beng" | "deva" | "fullwide" | " gujr" | "guru" | "hanidec" | "khmr" | " knda" | "laoo" | "latn" | "limb" | "mlym" | " mong" | "mymr" | "orya" | "tamldec" | " telu" | "thai" | "tibt";
+        localeMatcher?: "best fit" | "lookup";
         timeZone?: string;
+        hour12?: boolean;
+        hourCycle?: "h11" | "h12" | "h23" | "h24";
+        formatMatcher?: "best fit" | "basic";
+        weekday?: "long" | "short" | "narrow";
+        era?: "long" | "short" | "narrow";
+        year?: "numeric" | "2-digit";
+        month?: "numeric" | "2-digit" |"long" | "short" | "narrow";
+        day?: "numeric" | "2-digit";
+        hour?: "numeric" | "2-digit";
+        minute?: "numeric" | "2-digit";
+        second?: "numeric" | "2-digit";
+        fractionalSecondDigits?: 0 | 1 | 2 | 3;
+        timeZoneName?: "long" | "short";
     }
 
     interface ResolvedDateTimeFormatOptions {

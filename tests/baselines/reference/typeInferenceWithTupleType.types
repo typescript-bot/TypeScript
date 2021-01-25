@@ -1,14 +1,8 @@
 === tests/cases/conformance/types/tuple/typeInferenceWithTupleType.ts ===
 function combine<T, U>(x: T, y: U): [T, U] {
 >combine : <T, U>(x: T, y: U) => [T, U]
->T : T
->U : U
 >x : T
->T : T
 >y : U
->U : U
->T : T
->U : U
 
     return [x, y];
 >[x, y] : [T, U]
@@ -37,14 +31,8 @@ var combineEle2 = combineResult[1]; // number
 
 function zip<T, U>(array1: T[], array2: U[]): [[T, U]] {
 >zip : <T, U>(array1: T[], array2: U[]) => [[T, U]]
->T : T
->U : U
 >array1 : T[]
->T : T
 >array2 : U[]
->U : U
->T : T
->U : U
 
     if (array1.length != array2.length) {
 >array1.length != array2.length : boolean
@@ -69,8 +57,6 @@ function zip<T, U>(array1: T[], array2: U[]): [[T, U]] {
 
     var zipResult: [[T, U]];
 >zipResult : [[T, U]]
->T : T
->U : U
 
     for (var i = 0; i < length; ++i) {
 >i : number
@@ -123,4 +109,32 @@ var zipResultEleEle = zipResult[0][0]; // string
 >0 : 0
 >0 : 0
 
+// #33559 and #33752
+
+declare function f1<T1, T2>(values: [T1[], T2[]]): T1;
+>f1 : <T1, T2>(values: [T1[], T2[]]) => T1
+>values : [T1[], T2[]]
+
+declare function f2<T1, T2>(values: readonly [T1[], T2[]]): T1;
+>f2 : <T1, T2>(values: readonly [T1[], T2[]]) => T1
+>values : readonly [T1[], T2[]]
+
+let expected: "a";
+>expected : "a"
+
+expected = f1(undefined as ["a"[], "b"[]]);
+>expected = f1(undefined as ["a"[], "b"[]]) : "a"
+>expected : "a"
+>f1(undefined as ["a"[], "b"[]]) : "a"
+>f1 : <T1, T2>(values: [T1[], T2[]]) => T1
+>undefined as ["a"[], "b"[]] : ["a"[], "b"[]]
+>undefined : undefined
+
+expected = f2(undefined as ["a"[], "b"[]]);
+>expected = f2(undefined as ["a"[], "b"[]]) : "a"
+>expected : "a"
+>f2(undefined as ["a"[], "b"[]]) : "a"
+>f2 : <T1, T2>(values: readonly [T1[], T2[]]) => T1
+>undefined as ["a"[], "b"[]] : ["a"[], "b"[]]
+>undefined : undefined
 

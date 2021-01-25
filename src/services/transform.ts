@@ -6,10 +6,10 @@ namespace ts {
      * @param compilerOptions Optional compiler options.
      */
     export function transform<T extends Node>(source: T | T[], transformers: TransformerFactory<T>[], compilerOptions?: CompilerOptions) {
-        const diagnostics: Diagnostic[] = [];
-        compilerOptions = fixupCompilerOptions(compilerOptions, diagnostics);
+        const diagnostics: DiagnosticWithLocation[] = [];
+        compilerOptions = fixupCompilerOptions(compilerOptions!, diagnostics); // TODO: GH#18217
         const nodes = isArray(source) ? source : [source];
-        const result = transformNodes(/*resolver*/ undefined, /*emitHost*/ undefined, compilerOptions, nodes, transformers, /*allowDtsFiles*/ true);
+        const result = transformNodes(/*resolver*/ undefined, /*emitHost*/ undefined, factory, compilerOptions, nodes, transformers, /*allowDtsFiles*/ true);
         result.diagnostics = concatenate(result.diagnostics, diagnostics);
         return result;
     }

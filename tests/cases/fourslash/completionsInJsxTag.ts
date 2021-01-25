@@ -9,6 +9,8 @@
 ////        div: {
 ////            /** Doc */
 ////            foo: string
+////            /** Label docs */
+////            "aria-label": string
 ////        }
 ////    }
 ////}
@@ -19,9 +21,22 @@
 ////    }
 ////}
 
-goTo.marker("1");
-verify.completionListCount(1);
-verify.completionListContains("foo", "(JSX attribute) foo: string", "Doc ", "JSX attribute");
-goTo.marker("2");
-verify.completionListCount(1);
-verify.completionListContains("foo", "(JSX attribute) foo: string", "Doc ", "JSX attribute");
+verify.completions({
+    marker: ["1", "2"],
+    exact: [
+        {
+            name: "foo",
+            text: "(JSX attribute) foo: string",
+            documentation: "Doc",
+            kind: "JSX attribute",
+            kindModifiers: "declare",
+        },
+        {
+            name: "aria-label",
+            text: "(JSX attribute) \"aria-label\": string",
+            documentation: "Label docs",
+            kind: "JSX attribute",
+            kindModifiers: "declare",
+        },
+    ],
+});

@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 define(["require", "exports", "angular2/core"], function (require, exports, ng) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.MyClass1 = void 0;
     var MyClass1 = /** @class */ (function () {
         function MyClass1(_elementRef) {
             this._elementRef = _elementRef;
@@ -17,7 +18,7 @@ define(["require", "exports", "angular2/core"], function (require, exports, ng) 
         var _a;
         MyClass1 = __decorate([
             foo,
-            __metadata("design:paramtypes", [typeof (_a = (typeof ng !== "undefined" && ng).ElementRef) === "function" && _a || Object])
+            __metadata("design:paramtypes", [typeof (_a = typeof ng !== "undefined" && ng.ElementRef) === "function" ? _a : Object])
         ], MyClass1);
         return MyClass1;
     }());

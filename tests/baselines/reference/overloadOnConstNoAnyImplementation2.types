@@ -1,11 +1,9 @@
 === tests/cases/compiler/overloadOnConstNoAnyImplementation2.ts ===
 interface I {
->I : I
-
     x1(a: number, callback: (x: 'hi') => number);
->x1 : (a: number, callback: (x: "hi") => number) => any
+>x1 : (a: number, callback: (x: 'hi') => number) => any
 >a : number
->callback : (x: "hi") => number
+>callback : (x: 'hi') => number
 >x : "hi"
 }
 
@@ -13,9 +11,9 @@ class C {
 >C : C
 
     x1(a: number, callback: (x: 'hi') => number);
->x1 : (a: number, callback: (x: "hi") => number) => any
+>x1 : (a: number, callback: (x: 'hi') => number) => any
 >a : number
->callback : (x: "hi") => number
+>callback : (x: 'hi') => number
 >x : "hi"
 
     x1(a: number, callback: (x: string) => number) {
@@ -52,7 +50,6 @@ class C {
 
 var c: C;
 >c : C
->C : C
 
 c.x1(1, (x: 'hi') => { return 1; } );
 >c.x1(1, (x: 'hi') => { return 1; } ) : any
@@ -60,7 +57,7 @@ c.x1(1, (x: 'hi') => { return 1; } );
 >c : C
 >x1 : (a: number, callback: (x: "hi") => number) => any
 >1 : 1
->(x: 'hi') => { return 1; } : (x: "hi") => number
+>(x: 'hi') => { return 1; } : (x: 'hi') => number
 >x : "hi"
 >1 : 1
 
@@ -70,7 +67,7 @@ c.x1(1, (x: 'bye') => { return 1; } );
 >c : C
 >x1 : (a: number, callback: (x: "hi") => number) => any
 >1 : 1
->(x: 'bye') => { return 1; } : (x: "bye") => number
+>(x: 'bye') => { return 1; } : (x: 'bye') => number
 >x : "bye"
 >1 : 1
 

@@ -5,6 +5,8 @@
 ////Foo./**/;
 /////*1*/var bar;
 
-goTo.marker();
-verify.completionListContains("fun");
+verify.completions({
+    marker: "",
+    includes: [{ name: "fun", sortText: completion.SortText.LocalDeclarationPriority }]
+});
 verify.not.errorExistsAfterMarker("1");

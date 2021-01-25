@@ -1,16 +1,16 @@
 /// <reference path='fourslash.ts'/>
 
 ////interface One {
-////    common: { [|{| "isWriteAccess": true, "isDefinition": true |}a|]: number; };
+////    common: { [|[|{| "isDefinition": true, "contextRangeIndex": 0 |}a|]: number;|] };
 ////}
 ////
 ////interface Base {
-////    [|{| "isWriteAccess": true, "isDefinition": true |}a|]: string;
+////    [|[|{| "isDefinition": true, "contextRangeIndex": 2 |}a|]: string;|]
 ////    b: string;
 ////}
 ////
 ////interface HasAOrB extends Base {
-////    [|{| "isWriteAccess": true, "isDefinition": true |}a|]: string;
+////    [|[|{| "isDefinition": true, "contextRangeIndex": 4 |}a|]: string;|]
 ////    b: string;
 ////}
 ////
@@ -22,7 +22,7 @@
 ////
 ////x.common.[|a|];
 
-const [one, base, hasAOrB, x] = test.ranges();
+const [oneDef, one, baseDef, base, hasAOrBDef, hasAOrB, x] = test.ranges();
 verify.referenceGroups(one, [
     { definition: "(property) a: number", ranges: [one] },
     { definition: "(property) a: string | number", ranges: [x] },

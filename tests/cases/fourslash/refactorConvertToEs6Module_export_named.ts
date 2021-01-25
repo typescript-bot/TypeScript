@@ -12,18 +12,16 @@
 ////exports.a3 = x => { x; };
 ////exports.a4 = x => x;
 
-verify.getSuggestionDiagnostics([{
-    message: "File is a CommonJS module; it may be converted to an ES6 module.",
-    code: 80001,
-}]);
+const [r0, r1, r2] = test.ranges();
+verify.getSuggestionDiagnostics([
+    { message: "File is a CommonJS module; it may be converted to an ES6 module.", code: 80001, range: r0 },
+]);
 
 verify.codeFix({
     description: "Convert to ES6 module",
     newFileContent:
 `export function f() {}
-const _C = class {
-};
-export { _C as C };
+export class C {}
 export const x = 0;
 export function a1() {}
 export function a2() { return 0; }

@@ -78,10 +78,15 @@ instance.returnThis().fn();
 //super.publicStaticMemberFunction in static member function of derived class
 //super.publicStaticMemberFunction in static member accessor(get and set) of derived class
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -125,7 +130,7 @@ var SomeDerivedClass = /** @class */ (function (_super) {
             var x = _super.prototype.func.call(this);
             var x;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     SomeDerivedClass.fn = function () {
@@ -142,7 +147,7 @@ var SomeDerivedClass = /** @class */ (function (_super) {
             var x = _super.func.call(this);
             var x;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     SomeDerivedClass.prototype.returnThis = function () {

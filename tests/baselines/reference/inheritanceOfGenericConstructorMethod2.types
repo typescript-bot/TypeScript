@@ -7,7 +7,6 @@ module M {
 
    export class C2<T> { }
 >C2 : C2<T>
->T : T
 }
 module N {
 >N : typeof N
@@ -20,11 +19,9 @@ module N {
 
    export class D2<T> extends M.C2<T> { }
 >D2 : D2<T>
->T : T
 >M.C2 : M.C2<T>
 >M : typeof M
 >C2 : typeof M.C2
->T : T
 }
 
 var c = new M.C2<number>(); // no error
@@ -49,8 +46,8 @@ var n2 = new N.D2<number>(); // error
 >D2 : typeof N.D2
 
 var n3 = new N.D2(); // no error, D2<any>
->n3 : N.D2<{}>
->new N.D2() : N.D2<{}>
+>n3 : N.D2<unknown>
+>new N.D2() : N.D2<unknown>
 >N.D2 : typeof N.D2
 >N : typeof N
 >D2 : typeof N.D2

@@ -9,21 +9,20 @@
 ////
 ////function f(this: { x: number }) { /*f*/ }
 
-goTo.marker("");
-
-verify.completionListContains("xyz", "(method) C.xyz(): any", "", "method", undefined, undefined, {
-    includeInsertTextCompletions: true,
-    insertText: "this.xyz",
-});
-
-verify.completionListContains("foo bar", '(property) C["foo bar"]: number', "", "property", undefined, undefined, {
-    includeInsertTextCompletions: true,
-    insertText: 'this["foo bar"]',
-});
-
-goTo.marker("f");
-
-verify.completionListContains("x", "(property) x: number", "", "property", undefined, undefined, {
-    includeInsertTextCompletions: true,
-    insertText: "this.x",
-});
+const preferences: FourSlashInterface.UserPreferences = { includeInsertTextCompletions: true };
+verify.completions(
+    {
+        marker: "",
+        includes: [
+            { name: "xyz", text: "(method) C.xyz(): any", kind: "method", insertText: "this.xyz", sortText: completion.SortText.SuggestedClassMembers, source: completion.CompletionSource.ThisProperty },
+            { name: "foo bar", text: '(property) C["foo bar"]: number', kind: "property", insertText: 'this["foo bar"]', sortText: completion.SortText.SuggestedClassMembers, source: completion.CompletionSource.ThisProperty },
+        ],
+        isNewIdentifierLocation: true,
+        preferences,
+    },
+    {
+        marker: "f",
+        includes: { name: "x", text: "(property) x: number", kind: "property", insertText: "this.x", sortText: completion.SortText.SuggestedClassMembers, source: completion.CompletionSource.ThisProperty },
+        preferences,
+    },
+);

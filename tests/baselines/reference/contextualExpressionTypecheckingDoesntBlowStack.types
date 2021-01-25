@@ -1,8 +1,6 @@
 === tests/cases/compiler/contextualExpressionTypecheckingDoesntBlowStack.ts ===
 // repro for: https://github.com/Microsoft/TypeScript/issues/23661
 export interface IValidationError {
->IValidationError : IValidationError
-
     message: string;
 >message : string
 }
@@ -13,21 +11,19 @@ export default class Operation {
     validateParameters(parameterValues: any) : IValidationError[] | null {
 >validateParameters : (parameterValues: any) => IValidationError[] | null
 >parameterValues : any
->IValidationError : IValidationError
 >null : null
 
         let result: IValidationError[] | null = null;
 >result : IValidationError[] | null
->IValidationError : IValidationError
 >null : null
 >null : null
 
         for(const parameterLocation of Object.keys(parameterValues)) {
 >parameterLocation : string
 >Object.keys(parameterValues) : string[]
->Object.keys : (o: {}) => string[]
+>Object.keys : { (o: object): string[]; (o: {}): string[]; }
 >Object : ObjectConstructor
->keys : (o: {}) => string[]
+>keys : { (o: object): string[]; (o: {}): string[]; }
 >parameterValues : any
 
             const parameter: any = (this as any).getParameter();;
@@ -63,7 +59,7 @@ export default class Operation {
 >name : any
 
             if(innerResult && innerResult.length > 0) {
->innerResult && innerResult.length > 0 : boolean
+>innerResult && innerResult.length > 0 : any
 >innerResult : any
 >innerResult.length > 0 : boolean
 >innerResult.length : any

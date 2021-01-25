@@ -21,10 +21,11 @@ declare const directory: string;
 declare const moduleFile: number;
 >moduleFile : number
 
-import(`${directory}\${moduleFile}`);
->import(`${directory}\${moduleFile}`) : Promise<any>
->`${directory}\${moduleFile}` : string
+import(`${directory}\\${moduleFile}`);
+>import(`${directory}\\${moduleFile}`) : Promise<any>
+>`${directory}\\${moduleFile}` : `${string}\\${number}`
 >directory : string
+>moduleFile : number
 
 import(getSpecifier());
 >import(getSpecifier()) : Promise<any>
@@ -42,14 +43,12 @@ var p1 = import(ValidSomeCondition() ? "./0" : "externalModule");
 
 var p1: Promise<any> = import(getSpecifier());
 >p1 : Promise<any>
->Promise : Promise<T>
 >import(getSpecifier()) : Promise<any>
 >getSpecifier() : string
 >getSpecifier : () => string
 
 var p11: Promise<typeof defaultModule> = import(getSpecifier());
 >p11 : Promise<typeof defaultModule>
->Promise : Promise<T>
 >defaultModule : typeof defaultModule
 >import(getSpecifier()) : Promise<any>
 >getSpecifier() : string
@@ -64,7 +63,6 @@ const p2 = import(whatToLoad ? getSpecifier() : "defaulPath") as Promise<typeof 
 >getSpecifier() : string
 >getSpecifier : () => string
 >"defaulPath" : "defaulPath"
->Promise : Promise<T>
 >defaultModule : typeof defaultModule
 
 p1.then(zero => {
@@ -88,7 +86,6 @@ let j: string;
 
 var p3: Promise<typeof defaultModule> = import(j=getSpecifier());
 >p3 : Promise<typeof defaultModule>
->Promise : Promise<T>
 >defaultModule : typeof defaultModule
 >import(j=getSpecifier()) : Promise<any>
 >j=getSpecifier() : string
@@ -97,22 +94,22 @@ var p3: Promise<typeof defaultModule> = import(j=getSpecifier());
 >getSpecifier : () => string
 
 function * loadModule(directories: string[]) {
->loadModule : (directories: string[]) => IterableIterator<string>
+>loadModule : (directories: string[]) => Generator<`${string}\\moduleFile`, void, string>
 >directories : string[]
 
     for (const directory of directories) {
 >directory : string
 >directories : string[]
 
-        const path = `${directory}\moduleFile`;
->path : string
->`${directory}\moduleFile` : string
+        const path = `${directory}\\moduleFile`;
+>path : `${string}\\moduleFile`
+>`${directory}\\moduleFile` : `${string}\\moduleFile`
 >directory : string
 
         import(yield path);
 >import(yield path) : Promise<any>
 >yield path : any
->path : string
+>path : `${string}\\moduleFile`
     }
 }
 

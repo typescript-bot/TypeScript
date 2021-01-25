@@ -41,6 +41,11 @@ var whitespace3 = <div>
 
 
 //// [file.jsx]
+var __spreadArray = (this && this.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
+};
 var p;
 var selfClosed1 = <div />;
 var selfClosed2 = <div x="1"/>;
@@ -60,10 +65,10 @@ var SomeClass = /** @class */ (function () {
     SomeClass.prototype.f = function () {
         var _this = this;
         var rewrites1 = <div>{function () { return _this; }}</div>;
-        var rewrites2 = <div>{[p].concat(p, [p])}</div>;
+        var rewrites2 = <div>{__spreadArray(__spreadArray([p], p), [p])}</div>;
         var rewrites3 = <div>{{ p: p }}</div>;
         var rewrites4 = <div a={function () { return _this; }}></div>;
-        var rewrites5 = <div a={[p].concat(p, [p])}></div>;
+        var rewrites5 = <div a={__spreadArray(__spreadArray([p], p), [p])}></div>;
         var rewrites6 = <div a={{ p: p }}></div>;
     };
     return SomeClass;

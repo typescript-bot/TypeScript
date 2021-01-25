@@ -1,52 +1,34 @@
 === tests/cases/compiler/promiseTypeInference.ts ===
-declare class Promise<T> {
->Promise : Promise<T>
->T : T
+declare class CPromise<T> {
+>CPromise : CPromise<T>
 
-    then<U>(success?: (value: T) => Promise<U>): Promise<U>;
->then : { <TResult1 = T, TResult2 = never>(onfulfilled?: (value: T) => TResult1 | PromiseLike<TResult1>, onrejected?: (reason: any) => TResult2 | PromiseLike<TResult2>): Promise<TResult1 | TResult2>; <U>(success?: (value: T) => Promise<U>): Promise<U>; }
->U : U
->success : (value: T) => Promise<U>
+    then<U>(success?: (value: T) => CPromise<U>): CPromise<U>;
+>then : <U>(success?: (value: T) => CPromise<U>) => CPromise<U>
+>success : (value: T) => CPromise<U>
 >value : T
->T : T
->Promise : Promise<T>
->U : U
->Promise : Promise<T>
->U : U
 }
 interface IPromise<T> {
->IPromise : IPromise<T>
->T : T
-
     then<U>(success?: (value: T) => IPromise<U>): IPromise<U>;
 >then : <U>(success?: (value: T) => IPromise<U>) => IPromise<U>
->U : U
 >success : (value: T) => IPromise<U>
 >value : T
->T : T
->IPromise : IPromise<T>
->U : U
->IPromise : IPromise<T>
->U : U
 }
-declare function load(name: string): Promise<string>;
->load : (name: string) => Promise<string>
+declare function load(name: string): CPromise<string>;
+>load : (name: string) => CPromise<string>
 >name : string
->Promise : Promise<T>
 
 declare function convert(s: string): IPromise<number>;
 >convert : (s: string) => IPromise<number>
 >s : string
->IPromise : IPromise<T>
 
 var $$x = load("something").then(s => convert(s));
->$$x : any
->load("something").then(s => convert(s)) : any
->load("something").then : { <TResult1 = string, TResult2 = never>(onfulfilled?: (value: string) => TResult1 | PromiseLike<TResult1>, onrejected?: (reason: any) => TResult2 | PromiseLike<TResult2>): Promise<TResult1 | TResult2>; <U>(success?: (value: string) => Promise<U>): Promise<U>; }
->load("something") : Promise<string>
->load : (name: string) => Promise<string>
+>$$x : CPromise<number>
+>load("something").then(s => convert(s)) : CPromise<number>
+>load("something").then : <U>(success?: (value: string) => CPromise<U>) => CPromise<U>
+>load("something") : CPromise<string>
+>load : (name: string) => CPromise<string>
 >"something" : "something"
->then : { <TResult1 = string, TResult2 = never>(onfulfilled?: (value: string) => TResult1 | PromiseLike<TResult1>, onrejected?: (reason: any) => TResult2 | PromiseLike<TResult2>): Promise<TResult1 | TResult2>; <U>(success?: (value: string) => Promise<U>): Promise<U>; }
+>then : <U>(success?: (value: string) => CPromise<U>) => CPromise<U>
 >s => convert(s) : (s: string) => IPromise<number>
 >s : string
 >convert(s) : IPromise<number>

@@ -7,6 +7,7 @@
 //// [|var y: new <T,U>(a:T)=>void;|]
 
 verify.codeFix({
-    description: "Remove declaration for: 'U'",
+    index: 0,
+    description: "Remove unused declaration for: 'U'",
     newRangeContent: "var y: new <T>(a:T)=>void;",
 });

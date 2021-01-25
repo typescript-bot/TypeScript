@@ -3,17 +3,14 @@ declare module "m" {
 >"m" : typeof import("m")
 
     module x {
->x : any
-
         interface c {
->c : c
         }
     }
     export import a = x.c;
 >a : any
->x : any
+>x : typeof x
 >c : a
 
     export = x;
->x : any
+>x : typeof x
 }

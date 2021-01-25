@@ -12,12 +12,10 @@ class C1 {
 }
 
 class T<T> {
->T : T<T>
->T : T
+>T : globalThis.T<T>
 
     constructor(n?: T) { }
 >n : T
->T : T
 }
 
 var anyCtor: {
@@ -35,13 +33,9 @@ var anyCtor1: {
 };
 
 interface nestedCtor {
->nestedCtor : nestedCtor
-
     new (): nestedCtor;
->nestedCtor : nestedCtor
 }
 var nestedCtor: nestedCtor;
->nestedCtor : nestedCtor
 >nestedCtor : nestedCtor
 
 // Construct expression with no parentheses for construct signature with > 0 parameters
@@ -55,13 +49,12 @@ var b = new C0 32, ''; // Parse error
 
 // Generic construct expression with no parentheses
 var c1 = new T;
->c1 : T<{}>
->new T : T<{}>
+>c1 : T<unknown>
+>new T : T<unknown>
 >T : typeof T
 
 var c1: T<{}>;
->c1 : T<{}>
->T : T<T>
+>c1 : T<unknown>
 
 var c2 = new T<string>; // Parse error
 >c2 : T<string>

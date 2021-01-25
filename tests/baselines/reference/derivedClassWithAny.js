@@ -61,10 +61,15 @@ var r = c.foo(); // e.foo would return string
 
 //// [derivedClassWithAny.js]
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -75,7 +80,7 @@ var C = /** @class */ (function () {
     }
     Object.defineProperty(C.prototype, "X", {
         get: function () { return 1; },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     C.prototype.foo = function () {
@@ -85,7 +90,7 @@ var C = /** @class */ (function () {
         get: function () {
             return 1;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     C.bar = function () {
@@ -102,7 +107,7 @@ var D = /** @class */ (function (_super) {
         get: function () {
             return null;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     D.prototype.foo = function () {
@@ -112,7 +117,7 @@ var D = /** @class */ (function (_super) {
         get: function () {
             return null;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     D.bar = function () {
@@ -128,7 +133,7 @@ var E = /** @class */ (function (_super) {
     }
     Object.defineProperty(E.prototype, "X", {
         get: function () { return ''; },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     E.prototype.foo = function () {
@@ -138,7 +143,7 @@ var E = /** @class */ (function (_super) {
         get: function () {
             return '';
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     E.bar = function () {

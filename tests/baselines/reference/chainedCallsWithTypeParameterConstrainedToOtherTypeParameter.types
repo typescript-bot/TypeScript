@@ -1,23 +1,14 @@
 === tests/cases/compiler/chainedCallsWithTypeParameterConstrainedToOtherTypeParameter.ts ===
 class Chain<T extends A> {
 >Chain : Chain<T>
->T : T
->A : A
 
     constructor(public value: T) { }
 >value : T
->T : T
 
     then<S extends T>(cb: (x: T) => S): Chain<S> {
 >then : <S extends T>(cb: (x: T) => S) => Chain<S>
->S : S
->T : T
 >cb : (x: T) => S
 >x : T
->T : T
->S : S
->Chain : Chain<T>
->S : S
 
         return null;
 >null : null
@@ -47,9 +38,9 @@ class C extends B {
 
 // Ok to go down the chain, but error to try to climb back up
 (new Chain(new A)).then(a => new B).then(b => new C).then(c => new B).then(b => new A);
->(new Chain(new A)).then(a => new B).then(b => new C).then(c => new B).then(b => new A) : any
->(new Chain(new A)).then(a => new B).then(b => new C).then(c => new B).then : any
->(new Chain(new A)).then(a => new B).then(b => new C).then(c => new B) : any
+>(new Chain(new A)).then(a => new B).then(b => new C).then(c => new B).then(b => new A) : Chain<C>
+>(new Chain(new A)).then(a => new B).then(b => new C).then(c => new B).then : <S extends C>(cb: (x: C) => S) => Chain<S>
+>(new Chain(new A)).then(a => new B).then(b => new C).then(c => new B) : Chain<C>
 >(new Chain(new A)).then(a => new B).then(b => new C).then : <S extends C>(cb: (x: C) => S) => Chain<S>
 >(new Chain(new A)).then(a => new B).then(b => new C) : Chain<C>
 >(new Chain(new A)).then(a => new B).then : <S extends B>(cb: (x: B) => S) => Chain<S>
@@ -75,9 +66,9 @@ class C extends B {
 >c : C
 >new B : B
 >B : typeof B
->then : any
->b => new A : (b: any) => A
->b : any
+>then : <S extends C>(cb: (x: C) => S) => Chain<S>
+>b => new A : (b: C) => A
+>b : C
 >new A : A
 >A : typeof A
 

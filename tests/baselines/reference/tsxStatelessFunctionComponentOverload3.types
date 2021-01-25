@@ -1,24 +1,19 @@
 === tests/cases/conformance/jsx/file.tsx ===
 interface Context {
->Context : Context
-
     color: any;
 >color : any
 }
 declare function ZeroThingOrTwoThing(): JSX.Element;
 >ZeroThingOrTwoThing : { (): JSX.Element; (l: { yy: number; yy1: string; }, context: Context): JSX.Element; }
 >JSX : any
->Element : JSX.Element
 
 declare function ZeroThingOrTwoThing(l: {yy: number, yy1: string}, context: Context): JSX.Element;
->ZeroThingOrTwoThing : { (): JSX.Element; (l: { yy: number; yy1: string; }, context: Context): JSX.Element; }
+>ZeroThingOrTwoThing : { (): JSX.Element; (l: {    yy: number;    yy1: string;}, context: Context): JSX.Element; }
 >l : { yy: number; yy1: string; }
 >yy : number
 >yy1 : string
 >context : Context
->Context : Context
 >JSX : any
->Element : JSX.Element
 
 let obj2: any;
 >obj2 : any
@@ -60,29 +55,25 @@ const two5 = <ZeroThingOrTwoThing  {...obj2} yy={1000} />;  // it is just any so
 >1000 : 1000
 
 declare function ThreeThing(l: {y1: string}): JSX.Element;
->ThreeThing : { (l: { y1: string; }): JSX.Element; (l: { y2: string; }): JSX.Element; (l: { yy: number; yy1: string; }, context: Context, updater: any): JSX.Element; }
+>ThreeThing : { (l: {    y1: string;}): JSX.Element; (l: { y2: string; }): JSX.Element; (l: { yy: number; yy1: string; }, context: Context, updater: any): JSX.Element; }
 >l : { y1: string; }
 >y1 : string
 >JSX : any
->Element : JSX.Element
 
 declare function ThreeThing(l: {y2: string}): JSX.Element;
->ThreeThing : { (l: { y1: string; }): JSX.Element; (l: { y2: string; }): JSX.Element; (l: { yy: number; yy1: string; }, context: Context, updater: any): JSX.Element; }
+>ThreeThing : { (l: { y1: string; }): JSX.Element; (l: {    y2: string;}): JSX.Element; (l: { yy: number; yy1: string; }, context: Context, updater: any): JSX.Element; }
 >l : { y2: string; }
 >y2 : string
 >JSX : any
->Element : JSX.Element
 
 declare function ThreeThing(l: {yy: number, yy1: string}, context: Context, updater: any): JSX.Element;
->ThreeThing : { (l: { y1: string; }): JSX.Element; (l: { y2: string; }): JSX.Element; (l: { yy: number; yy1: string; }, context: Context, updater: any): JSX.Element; }
+>ThreeThing : { (l: { y1: string; }): JSX.Element; (l: { y2: string; }): JSX.Element; (l: {    yy: number;    yy1: string;}, context: Context, updater: any): JSX.Element; }
 >l : { yy: number; yy1: string; }
 >yy : number
 >yy1 : string
 >context : Context
->Context : Context
 >updater : any
 >JSX : any
->Element : JSX.Element
 
 // OK
 const three1 = <ThreeThing yy={99} yy1="hello world" />;

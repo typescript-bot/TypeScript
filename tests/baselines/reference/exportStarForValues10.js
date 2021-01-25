@@ -13,8 +13,8 @@ var x = 1;
 
 //// [file0.js]
 System.register([], function (exports_1, context_1) {
-    var v;
     "use strict";
+    var v;
     var __moduleName = context_1 && context_1.id;
     return {
         setters: [],
@@ -34,9 +34,9 @@ System.register([], function (exports_1, context_1) {
     };
 });
 //// [file2.js]
-System.register(["file0"], function (exports_1, context_1) {
-    var x;
+System.register(["file0", "file1"], function (exports_1, context_1) {
     "use strict";
+    var x;
     var __moduleName = context_1 && context_1.id;
     function exportStar_1(m) {
         var exports = {};
@@ -49,6 +49,9 @@ System.register(["file0"], function (exports_1, context_1) {
         setters: [
             function (file0_1_1) {
                 exportStar_1(file0_1_1);
+            },
+            function (file1_1_1) {
+                exportStar_1(file1_1_1);
             }
         ],
         execute: function () {

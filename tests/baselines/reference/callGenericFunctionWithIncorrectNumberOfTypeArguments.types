@@ -4,25 +4,20 @@
 
 function f<T, U>(x: T, y: U): T { return null; }
 >f : <T, U>(x: T, y: U) => T
->T : T
->U : U
 >x : T
->T : T
 >y : U
->U : U
->T : T
 >null : null
 
 var r1 = f<number>(1, '');
->r1 : any
->f<number>(1, '') : any
+>r1 : number
+>f<number>(1, '') : number
 >f : <T, U>(x: T, y: U) => T
 >1 : 1
 >'' : ""
 
 var r1b = f<number, string, number>(1, '');
->r1b : any
->f<number, string, number>(1, '') : any
+>r1b : number
+>f<number, string, number>(1, '') : number
 >f : <T, U>(x: T, y: U) => T
 >1 : 1
 >'' : ""
@@ -30,49 +25,39 @@ var r1b = f<number, string, number>(1, '');
 var f2 = <T, U>(x: T, y: U): T => { return null; }
 >f2 : <T, U>(x: T, y: U) => T
 ><T, U>(x: T, y: U): T => { return null; } : <T, U>(x: T, y: U) => T
->T : T
->U : U
 >x : T
->T : T
 >y : U
->U : U
->T : T
 >null : null
 
 var r2 = f2<number>(1, '');
->r2 : any
->f2<number>(1, '') : any
+>r2 : number
+>f2<number>(1, '') : number
 >f2 : <T, U>(x: T, y: U) => T
 >1 : 1
 >'' : ""
 
 var r2b = f2<number, string, number>(1, '');
->r2b : any
->f2<number, string, number>(1, '') : any
+>r2b : number
+>f2<number, string, number>(1, '') : number
 >f2 : <T, U>(x: T, y: U) => T
 >1 : 1
 >'' : ""
 
 var f3: { <T, U>(x: T, y: U): T; }
 >f3 : <T, U>(x: T, y: U) => T
->T : T
->U : U
 >x : T
->T : T
 >y : U
->U : U
->T : T
 
 var r3 = f3<number>(1, '');
->r3 : any
->f3<number>(1, '') : any
+>r3 : number
+>f3<number>(1, '') : number
 >f3 : <T, U>(x: T, y: U) => T
 >1 : 1
 >'' : ""
 
 var r3b = f3<number, string, number>(1, '');
->r3b : any
->f3<number, string, number>(1, '') : any
+>r3b : number
+>f3<number, string, number>(1, '') : number
 >f3 : <T, U>(x: T, y: U) => T
 >1 : 1
 >'' : ""
@@ -82,21 +67,16 @@ class C {
 
     f<T, U>(x: T, y: U): T {
 >f : <T, U>(x: T, y: U) => T
->T : T
->U : U
 >x : T
->T : T
 >y : U
->U : U
->T : T
 
         return null;
 >null : null
     }
 }
 var r4 = (new C()).f<number>(1, '');
->r4 : any
->(new C()).f<number>(1, '') : any
+>r4 : number
+>(new C()).f<number>(1, '') : number
 >(new C()).f : <T, U>(x: T, y: U) => T
 >(new C()) : C
 >new C() : C
@@ -106,8 +86,8 @@ var r4 = (new C()).f<number>(1, '');
 >'' : ""
 
 var r4b = (new C()).f<number, string, number>(1, '');
->r4b : any
->(new C()).f<number, string, number>(1, '') : any
+>r4b : number
+>(new C()).f<number, string, number>(1, '') : number
 >(new C()).f : <T, U>(x: T, y: U) => T
 >(new C()) : C
 >new C() : C
@@ -117,25 +97,17 @@ var r4b = (new C()).f<number, string, number>(1, '');
 >'' : ""
 
 interface I {
->I : I
-
     f<T, U>(x: T, y: U): T;
 >f : <T, U>(x: T, y: U) => T
->T : T
->U : U
 >x : T
->T : T
 >y : U
->U : U
->T : T
 }
 var i: I;
 >i : I
->I : I
 
 var r5 = i.f<number>(1, '');
->r5 : any
->i.f<number>(1, '') : any
+>r5 : number
+>i.f<number>(1, '') : number
 >i.f : <T, U>(x: T, y: U) => T
 >i : I
 >f : <T, U>(x: T, y: U) => T
@@ -143,8 +115,8 @@ var r5 = i.f<number>(1, '');
 >'' : ""
 
 var r5b = i.f<number, string, number>(1, '');
->r5b : any
->i.f<number, string, number>(1, '') : any
+>r5b : number
+>i.f<number, string, number>(1, '') : number
 >i.f : <T, U>(x: T, y: U) => T
 >i : I
 >f : <T, U>(x: T, y: U) => T
@@ -153,59 +125,46 @@ var r5b = i.f<number, string, number>(1, '');
 
 class C2<T, U> {
 >C2 : C2<T, U>
->T : T
->U : U
 
     f(x: T, y: U): T {
 >f : (x: T, y: U) => T
 >x : T
->T : T
 >y : U
->U : U
->T : T
 
         return null;
 >null : null
     }
 }
 var r6 = (new C2()).f<number>(1, '');
->r6 : {}
->(new C2()).f<number>(1, '') : {}
->(new C2()).f : (x: {}, y: {}) => {}
->(new C2()) : C2<{}, {}>
->new C2() : C2<{}, {}>
+>r6 : unknown
+>(new C2()).f<number>(1, '') : unknown
+>(new C2()).f : (x: unknown, y: unknown) => unknown
+>(new C2()) : C2<unknown, unknown>
+>new C2() : C2<unknown, unknown>
 >C2 : typeof C2
->f : (x: {}, y: {}) => {}
+>f : (x: unknown, y: unknown) => unknown
 >1 : 1
 >'' : ""
 
 var r6b = (new C2()).f<number, string, number>(1, '');
->r6b : {}
->(new C2()).f<number, string, number>(1, '') : {}
->(new C2()).f : (x: {}, y: {}) => {}
->(new C2()) : C2<{}, {}>
->new C2() : C2<{}, {}>
+>r6b : unknown
+>(new C2()).f<number, string, number>(1, '') : unknown
+>(new C2()).f : (x: unknown, y: unknown) => unknown
+>(new C2()) : C2<unknown, unknown>
+>new C2() : C2<unknown, unknown>
 >C2 : typeof C2
->f : (x: {}, y: {}) => {}
+>f : (x: unknown, y: unknown) => unknown
 >1 : 1
 >'' : ""
 
 interface I2<T, U> {
->I2 : I2<T, U>
->T : T
->U : U
-
     f(x: T, y: U): T;
 >f : (x: T, y: U) => T
 >x : T
->T : T
 >y : U
->U : U
->T : T
 }
 var i2: I2<number, string>;
 >i2 : I2<number, string>
->I2 : I2<T, U>
 
 var r7 = i2.f<number>(1, '');
 >r7 : number

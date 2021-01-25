@@ -13,6 +13,8 @@ verify.moveToNewFile({
 j;`,
         "/y.ts":
 `import i = require("./i");
-const y = i;`,
+
+const y = i;
+`,
     },
 });

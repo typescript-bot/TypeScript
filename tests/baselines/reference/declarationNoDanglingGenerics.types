@@ -5,7 +5,7 @@ const kindCache: { [kind: string]: boolean } = {};
 >{} : {}
 
 function register(kind: string): void | never {
->register : (kind: string) => void
+>register : (kind: string) => void | never
 >kind : string
 
   if (kindCache[kind]) {
@@ -16,7 +16,7 @@ function register(kind: string): void | never {
     throw new Error(`Class with kind "${kind}" is already registered.`);
 >new Error(`Class with kind "${kind}" is already registered.`) : Error
 >Error : ErrorConstructor
->`Class with kind "${kind}" is already registered.` : string
+>`Class with kind "${kind}" is already registered.` : `Class with kind "${string}" is already registered.`
 >kind : string
   }
   kindCache[kind] = true;
@@ -29,9 +29,7 @@ function register(kind: string): void | never {
 
 function ClassFactory<TKind extends string>(kind: TKind) {
 >ClassFactory : <TKind extends string>(kind: TKind) => typeof (Anonymous class)
->TKind : TKind
 >kind : TKind
->TKind : TKind
 
   register(kind);
 >register(kind) : void
@@ -43,12 +41,10 @@ function ClassFactory<TKind extends string>(kind: TKind) {
 
     static readonly THE_KIND: TKind = kind;
 >THE_KIND : TKind
->TKind : TKind
 >kind : TKind
 
     readonly kind: TKind = kind;
 >kind : TKind
->TKind : TKind
 >kind : TKind
 
   };

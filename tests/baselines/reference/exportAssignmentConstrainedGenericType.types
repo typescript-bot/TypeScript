@@ -3,8 +3,8 @@ import foo = require("./foo_0");
 >foo : typeof foo
 
 var x = new foo(true); // Should error
->x : any
->new foo(true) : any
+>x : foo<{ a: string; b: number; }>
+>new foo(true) : foo<{ a: string; b: number; }>
 >foo : typeof foo
 >true : true
 
@@ -29,17 +29,14 @@ var z: number = y.test.b;
 === tests/cases/conformance/externalModules/foo_0.ts ===
 class Foo<T extends {a: string; b:number;}>{
 >Foo : Foo<T>
->T : T
 >a : string
 >b : number
 
 	test: T;
 >test : T
->T : T
 
 	constructor(x: T){}
 >x : T
->T : T
 }
 
 export = Foo;

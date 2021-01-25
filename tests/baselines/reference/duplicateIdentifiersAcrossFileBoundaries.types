@@ -1,7 +1,5 @@
 === tests/cases/compiler/file1.ts ===
 interface I { }
->I : I
-
 class C1 { }
 >C1 : C1
 
@@ -9,7 +7,7 @@ class C2 { }
 >C2 : C2
 
 function f() { }
->f : () => void
+>f : typeof f
 
 var v = 3;
 >v : number
@@ -38,10 +36,8 @@ class I { } // error -- cannot merge interface with non-ambient class
 >I : I
 
 interface C1 { } // error -- cannot merge interface with non-ambient class
->C1 : C1
-
 function C2() { } // error -- cannot merge function with non-ambient class
->C2 : () => void
+>C2 : typeof C2
 
 class f { } // error -- cannot merge function with non-ambient class
 >f : f

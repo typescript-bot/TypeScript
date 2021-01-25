@@ -1,15 +1,12 @@
 === tests/cases/conformance/es6/computedProperties/computedPropertyNames48_ES6.ts ===
 declare function extractIndexer<T>(p: { [n: number]: T }): T;
 >extractIndexer : <T>(p: { [n: number]: T; }) => T
->T : T
 >p : { [n: number]: T; }
 >n : number
->T : T
->T : T
 
 enum E { x }
 >E : E
->x : E
+>x : E.x
 
 var a: any;
 >a : any
@@ -29,7 +26,7 @@ extractIndexer({
 extractIndexer({
 >extractIndexer({    [E.x]: ""}) : string
 >extractIndexer : <T>(p: { [n: number]: T; }) => T
->{    [E.x]: ""} : { [E.x]: string; }
+>{    [E.x]: ""} : { 0: string; }
 
     [E.x]: ""
 >[E.x] : string
@@ -43,7 +40,7 @@ extractIndexer({
 extractIndexer({
 >extractIndexer({    ["" || 0]: ""}) : string
 >extractIndexer : <T>(p: { [n: number]: T; }) => T
->{    ["" || 0]: ""} : { ["" || 0]: string; }
+>{    ["" || 0]: ""} : { 0: string; }
 
     ["" || 0]: ""
 >["" || 0] : string

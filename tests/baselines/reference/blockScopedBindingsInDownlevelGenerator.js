@@ -14,8 +14,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
         while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
                 case 0: case 1: t = op; break;
                 case 4: _.label++; return { value: op[1], done: false };
@@ -34,29 +34,31 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __values = (this && this.__values) || function (o) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
     if (m) return m.call(o);
-    return {
+    if (o && typeof o.length === "number") return {
         next: function () {
             if (o && i >= o.length) o = void 0;
             return { value: o && o[i++], done: !o };
         }
     };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 };
 function a() {
-    var e_1, _a, _loop_1, _b, _c, i, e_1_1;
+    var _loop_1, _a, _b, i, e_1_1;
+    var e_1, _c;
     return __generator(this, function (_d) {
         switch (_d.label) {
             case 0:
                 _loop_1 = function (i) {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
+                    return __generator(this, function (_e) {
+                        switch (_e.label) {
                             case 0:
                                 (function () { return i; })();
                                 return [4 /*yield*/, i];
                             case 1:
-                                _a.sent();
+                                _e.sent();
                                 return [2 /*return*/];
                         }
                     });
@@ -64,17 +66,17 @@ function a() {
                 _d.label = 1;
             case 1:
                 _d.trys.push([1, 6, 7, 8]);
-                _b = __values([1, 2, 3]), _c = _b.next();
+                _a = __values([1, 2, 3]), _b = _a.next();
                 _d.label = 2;
             case 2:
-                if (!!_c.done) return [3 /*break*/, 5];
-                i = _c.value;
+                if (!!_b.done) return [3 /*break*/, 5];
+                i = _b.value;
                 return [5 /*yield**/, _loop_1(i)];
             case 3:
                 _d.sent();
                 _d.label = 4;
             case 4:
-                _c = _b.next();
+                _b = _a.next();
                 return [3 /*break*/, 2];
             case 5: return [3 /*break*/, 8];
             case 6:
@@ -83,7 +85,7 @@ function a() {
                 return [3 /*break*/, 8];
             case 7:
                 try {
-                    if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                    if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
                 }
                 finally { if (e_1) throw e_1.error; }
                 return [7 /*endfinally*/];

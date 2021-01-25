@@ -9,8 +9,8 @@ var a: any;
 >a : any
 
 var v = {
->v : { [x: string]: string | number; [x: number]: string | number; [""]: number; [0]: number; [`hello bye`]: number; }
->{    [s]: 0,    [n]: n,    [s + s]: 1,    [s + n]: 2,    [+s]: s,    [""]: 0,    [0]: 0,    [a]: 1,    [<any>true]: 0,    [`hello bye`]: 0,    [`hello ${a} bye`]: 0} : { [x: string]: string | number; [x: number]: string | number; [""]: number; [0]: number; [`hello bye`]: number; }
+>v : { [x: string]: string | number; [x: number]: string | number; "": number; 0: number; "hello bye": number; }
+>{    [s]: 0,    [n]: n,    [s + s]: 1,    [s + n]: 2,    [+s]: s,    [""]: 0,    [0]: 0,    [a]: 1,    [<any>true]: 0,    [`hello bye`]: 0,    [`hello ${a} bye`]: 0} : { [x: string]: string | number; [x: number]: string | number; "": number; 0: number; "hello bye": number; }
 
     [s]: 0,
 >[s] : number
@@ -70,7 +70,7 @@ var v = {
 
     [`hello ${a} bye`]: 0
 >[`hello ${a} bye`] : number
->`hello ${a} bye` : string
+>`hello ${a} bye` : `hello ${any} bye`
 >a : any
 >0 : 0
 }

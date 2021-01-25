@@ -7,11 +7,10 @@ var iterableWithOptionalIterator: {
 >Symbol.iterator : symbol
 >Symbol : SymbolConstructor
 >iterator : symbol
->Iterator : Iterator<T>
 
 };
 
 for (var v of iterableWithOptionalIterator) { }
->v : string
->iterableWithOptionalIterator : { [Symbol.iterator]?(): Iterator<string>; }
+>v : any
+>iterableWithOptionalIterator : { [Symbol.iterator]?(): Iterator<string, any, undefined>; }
 

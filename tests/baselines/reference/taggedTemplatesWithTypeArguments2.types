@@ -1,35 +1,24 @@
 === tests/cases/conformance/es6/templates/taggedTemplatesWithTypeArguments2.ts ===
 export interface SomethingTaggable {
->SomethingTaggable : SomethingTaggable
-
     <T>(t: TemplateStringsArray, ...args: T[]): SomethingNewable;
->T : T
 >t : TemplateStringsArray
->TemplateStringsArray : TemplateStringsArray
 >args : T[]
->T : T
->SomethingNewable : SomethingNewable
 }
 
 export interface SomethingNewable {
->SomethingNewable : SomethingNewable
-
     new <T>(...args: T[]): any;
->T : T
 >args : T[]
->T : T
 }
 
 declare const tag: SomethingTaggable;
 >tag : SomethingTaggable
->SomethingTaggable : SomethingTaggable
 
 const a = new tag `${100} ${200}`<string>("hello", "world");
 >a : any
 >new tag `${100} ${200}`<string>("hello", "world") : any
 >tag `${100} ${200}` : SomethingNewable
 >tag : SomethingTaggable
->`${100} ${200}` : string
+>`${100} ${200}` : "100 200"
 >100 : 100
 >200 : 200
 >"hello" : "hello"
@@ -38,9 +27,9 @@ const a = new tag `${100} ${200}`<string>("hello", "world");
 const b = new tag<number> `${"hello"} ${"world"}`(100, 200);
 >b : any
 >new tag<number> `${"hello"} ${"world"}`(100, 200) : any
->tag<number> `${"hello"} ${"world"}` : any
+>tag<number> `${"hello"} ${"world"}` : SomethingNewable
 >tag : SomethingTaggable
->`${"hello"} ${"world"}` : string
+>`${"hello"} ${"world"}` : "hello world"
 >"hello" : "hello"
 >"world" : "world"
 >100 : 100
@@ -52,7 +41,7 @@ const c = new tag<number> `${100} ${200}`<string>("hello", "world");
 >new tag<number> `${100} ${200}` : any
 >tag<number> `${100} ${200}` : SomethingNewable
 >tag : SomethingTaggable
->`${100} ${200}` : string
+>`${100} ${200}` : "100 200"
 >100 : 100
 >200 : 200
 >"hello" : "hello"
@@ -62,9 +51,9 @@ const d = new tag<number> `${"hello"} ${"world"}`<string>(100, 200);
 >d : any
 >new tag<number> `${"hello"} ${"world"}`<string>(100, 200) : any
 >new tag<number> `${"hello"} ${"world"}` : any
->tag<number> `${"hello"} ${"world"}` : any
+>tag<number> `${"hello"} ${"world"}` : SomethingNewable
 >tag : SomethingTaggable
->`${"hello"} ${"world"}` : string
+>`${"hello"} ${"world"}` : "hello world"
 >"hello" : "hello"
 >"world" : "world"
 >100 : 100
@@ -89,32 +78,23 @@ const e = new tag<number>
 
 class SomeBase<A, B, C> {
 >SomeBase : SomeBase<A, B, C>
->A : A
->B : B
->C : C
 
     a!: A; b!: B; c!: C;
 >a : A
->A : A
 >b : B
->B : B
 >c : C
->C : C
 }
 
 class SomeDerived<T> extends SomeBase<number, string, T> {
 >SomeDerived : SomeDerived<T>
->T : T
 >SomeBase : SomeBase<number, string, T>
->T : T
 
     constructor() {
         super<number, string, T> `hello world`;
 >super<number, string, T> `hello world` : any
->super : any
+>super<number, string, T> : any
 >super : SomeBase<number, string, T>
 > : any
->T : T
 >`hello world` : "hello world"
     }
 }

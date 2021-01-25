@@ -9,18 +9,23 @@ export class B extends A { }
 
 //// [all.js]
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
 System.register("ref/a", [], function (exports_1, context_1) {
-    var A;
     "use strict";
+    var A;
     var __moduleName = context_1 && context_1.id;
     return {
         setters: [],
@@ -35,8 +40,8 @@ System.register("ref/a", [], function (exports_1, context_1) {
     };
 });
 System.register("b", ["ref/a"], function (exports_2, context_2) {
-    var a_1, B;
     "use strict";
+    var a_1, B;
     var __moduleName = context_2 && context_2.id;
     return {
         setters: [

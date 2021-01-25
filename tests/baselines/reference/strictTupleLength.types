@@ -44,13 +44,10 @@ var t2 = t1; // error
 >t1 : [number]
 
 type A<T extends any[]> = T['length'];
->A : T["length"]
->T : T
->T : T
+>A : A<T>
 
 var b: A<[boolean]>;
 >b : 1
->A : T["length"]
 
 var c: 1 = b;
 >c : 1

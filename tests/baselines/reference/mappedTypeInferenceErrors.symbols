@@ -22,7 +22,7 @@ declare function foo<P, C>(options: { props: P, computed: ComputedOf<C> } & This
 >computed : Symbol(computed, Decl(mappedTypeInferenceErrors.ts, 6, 47))
 >ComputedOf : Symbol(ComputedOf, Decl(mappedTypeInferenceErrors.ts, 0, 0))
 >C : Symbol(C, Decl(mappedTypeInferenceErrors.ts, 6, 23))
->ThisType : Symbol(ThisType, Decl(lib.d.ts, --, --))
+>ThisType : Symbol(ThisType, Decl(lib.es5.d.ts, --, --))
 >P : Symbol(P, Decl(mappedTypeInferenceErrors.ts, 6, 21))
 >C : Symbol(C, Decl(mappedTypeInferenceErrors.ts, 6, 23))
 
@@ -43,7 +43,6 @@ foo({
             let z = this.bar;
 >z : Symbol(z, Decl(mappedTypeInferenceErrors.ts, 12, 15))
 >this.bar : Symbol(bar, Decl(mappedTypeInferenceErrors.ts, 10, 15))
->this : Symbol(__object, Decl(mappedTypeInferenceErrors.ts, 10, 13))
 >bar : Symbol(bar, Decl(mappedTypeInferenceErrors.ts, 10, 15))
 
             return 42;

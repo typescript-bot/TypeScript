@@ -10,7 +10,7 @@ class C1 {
 }
 
 type TupleType1 =[string, number, boolean];
->TupleType1 : [string, number, boolean]
+>TupleType1 : TupleType1
 
 class C2 {
 >C2 : C2
@@ -19,7 +19,6 @@ class C2 {
 >x : string
 >y : number
 >z : boolean
->TupleType1 : [string, number, boolean]
     }
 }
 
@@ -36,6 +35,5 @@ class C3 {
 >x : number
 >y : string
 >z : boolean
->ObjType1 : ObjType1
     }
 }

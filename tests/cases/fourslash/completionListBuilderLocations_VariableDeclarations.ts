@@ -11,7 +11,7 @@
 //// var y : any = "", x = (a/*var5*/
 
 ////class C{}
-////var y = new C(
+////var y = new C(/*var6*/
 
 //// class C{}
 //// var y = new C(0, /*var7*/
@@ -26,4 +26,15 @@
 
 ////var y = 10; y=/*var12*/
 
-goTo.eachMarker(() => verify.completionListAllowsNewIdentifier());
+// first declaration
+verify.completions({
+    marker: ["var1"],
+    exact: completion.globalsPlus(["y", "C"]),
+    isNewIdentifierLocation: true
+});
+
+verify.completions({
+    marker: ["var2", "var3", "var4", "var5", "var6", "var7", "var8", "var9", "var10", "var11", "var12"],
+    exact: completion.globalsPlus(["x", "y", "C"]),
+    isNewIdentifierLocation: true
+});

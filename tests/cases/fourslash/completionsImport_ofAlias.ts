@@ -16,13 +16,27 @@
 // @Filename: /a_reexport_2.ts
 ////export * from "./a";
 
+// @Filename: /a_reexport_3.ts
+////export { foo } from "./a_reexport";
+
 // @Filename: /b.ts
 ////fo/**/
 
 verify.completions({
     marker: "",
-    includes: { name: "foo", source: "/a", sourceDisplay: "./a", text: "(alias) const foo: 0\nexport foo", kind: "alias", hasAction: true },
-    excludes: [{ name: "foo", source: "/a_reexport" }, { name: "foo", source: "/a_reexport_2" }],
+    includes: [
+        completion.undefinedVarEntry,
+        {
+            name: "foo",
+            source: "/a",
+            sourceDisplay: "./a",
+            text: "(alias) const foo: 0\nexport foo",
+            kind: "alias",
+            hasAction: true,
+            sortText: completion.SortText.AutoImportSuggestions
+        },
+        ...completion.statementKeywordsWithTypes,
+    ],
     preferences: { includeCompletionsForModuleExports: true },
 });
 

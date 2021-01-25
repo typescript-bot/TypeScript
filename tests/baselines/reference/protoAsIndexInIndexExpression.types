@@ -15,14 +15,14 @@ var WorkspacePrototype = {
 };
 WorkspacePrototype['__proto__'] = EntityPrototype;
 >WorkspacePrototype['__proto__'] = EntityPrototype : any
->WorkspacePrototype['__proto__'] : any
+>WorkspacePrototype['__proto__'] : error
 >WorkspacePrototype : { serialize: () => any; }
 >'__proto__' : "__proto__"
 >EntityPrototype : any
 
 var o = {
->o : { "__proto__": number; }
->{    "__proto__": 0} : { "__proto__": number; }
+>o : { __proto__: number; }
+>{    "__proto__": 0} : { __proto__: number; }
 
     "__proto__": 0
 >"__proto__" : number

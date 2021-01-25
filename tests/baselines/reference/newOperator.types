@@ -1,7 +1,5 @@
 === tests/cases/compiler/newOperator.ts ===
 interface ifc { }
->ifc : ifc
-
 // Attempting to 'new' an interface yields poor error
 var i = new ifc();
 >i : any
@@ -86,6 +84,37 @@ new String;
 >new String : String
 >String : StringConstructor
 
+// Error on union
+declare const union: { a: string } | { b: string }
+>union : { a: string; } | { b: string; }
+>a : string
+>b : string
+
+new union;
+>new union : any
+>union : { a: string; } | { b: string; }
+
+// Error on union with one constructor
+declare const ctorUnion: { a: string } | (new (a: string) => void)
+>ctorUnion : { a: string; } | (new (a: string) => void)
+>a : string
+>a : string
+
+new ctorUnion("");
+>new ctorUnion("") : any
+>ctorUnion : { a: string; } | (new (a: string) => void)
+>"" : ""
+
+// Error on union with incompatible constructors
+declare const ctorUnion2: (new <T extends number>(a: T) => void) | (new <T>(a: string) => void)
+>ctorUnion2 : (new <T extends number>(a: T) => void) | (new <T>(a: string) => void)
+>a : T
+>a : string
+
+new ctorUnion2("");
+>new ctorUnion2("") : any
+>ctorUnion2 : (new <T extends number>(a: T) => void) | (new <T>(a: string) => void)
+>"" : ""
 
 module M {
 >M : typeof M
@@ -104,7 +133,6 @@ class S {
     public get xs(): M.T[] {
 >xs : M.T[]
 >M : any
->T : M.T
 
         return new M.T[];
 >new M.T[] : any

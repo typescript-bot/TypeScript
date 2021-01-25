@@ -21,16 +21,16 @@ namespace ts.codefix {
     });
 
     function getQualifiedName(sourceFile: SourceFile, pos: number): QualifiedName & { left: Identifier } | undefined {
-        const qualifiedName = findAncestor(getTokenAtPosition(sourceFile, pos, /*includeJsDocComment*/ true), isQualifiedName)!;
+        const qualifiedName = findAncestor(getTokenAtPosition(sourceFile, pos), isQualifiedName)!;
         Debug.assert(!!qualifiedName, "Expected position to be owned by a qualified name.");
         return isIdentifier(qualifiedName.left) ? qualifiedName as QualifiedName & { left: Identifier } : undefined;
     }
 
     function doChange(changeTracker: textChanges.ChangeTracker, sourceFile: SourceFile, qualifiedName: QualifiedName): void {
         const rightText = qualifiedName.right.text;
-        const replacement = createIndexedAccessTypeNode(
-            createTypeReferenceNode(qualifiedName.left, /*typeArguments*/ undefined),
-            createLiteralTypeNode(createLiteral(rightText)));
+        const replacement = factory.createIndexedAccessTypeNode(
+            factory.createTypeReferenceNode(qualifiedName.left, /*typeArguments*/ undefined),
+            factory.createLiteralTypeNode(factory.createStringLiteral(rightText)));
         changeTracker.replaceNode(sourceFile, qualifiedName, replacement);
     }
 }

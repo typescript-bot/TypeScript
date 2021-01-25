@@ -3,6 +3,5 @@ class C {
 >C : C
 
    *foo<T>() { }
->foo : <T>() => IterableIterator<any>
->T : T
+>foo : <T>() => Generator<never, void, unknown>
 }

@@ -1,32 +1,19 @@
 === tests/cases/compiler/declarationEmitTypeAliasWithTypeParameters6.ts ===
 type Foo<T, Y> = {
 >Foo : Foo<T, Y>
->T : T
->Y : Y
 
     foo<U, J>(): Foo<U, J>
 >foo : <U, J>() => Foo<U, J>
->U : U
->J : J
->Foo : Foo<T, Y>
->U : U
->J : J
 
 };
 type SubFoo<R, S> = Foo<S, R>;
->SubFoo : Foo<S, R>
->R : R
->S : S
->Foo : Foo<T, Y>
->S : S
->R : R
+>SubFoo : SubFoo<R, S>
 
 function foo() {
->foo : () => Foo<string, number>
+>foo : () => SubFoo<number, string>
 
     return {} as SubFoo<number, string>;
->{} as SubFoo<number, string> : Foo<string, number>
+>{} as SubFoo<number, string> : SubFoo<number, string>
 >{} : {}
->SubFoo : Foo<S, R>
 }
 

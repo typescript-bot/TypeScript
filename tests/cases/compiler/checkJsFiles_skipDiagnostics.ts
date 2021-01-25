@@ -23,7 +23,19 @@ x(
 // come comment
 // some other comment
 
-// @anohter
+// @another
+
+x();
+
+/* @ts-ignore */
+/*another comment
+ that could be multiline*/
+
+x();
+
+/* @ts-ignore
+continuing comment
+ that could be multiline*/
 
 x();
 

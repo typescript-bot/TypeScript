@@ -30,16 +30,17 @@ export const l = async () => {
 
 //// [test.js]
 System.register([], function (exports_1, context_1) {
+    "use strict";
     var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
         return new (P || (P = Promise))(function (resolve, reject) {
             function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
             function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
             step((generator = generator.apply(thisArg, _arguments || [])).next());
         });
     };
     var cl1, obj, cl2, l;
-    "use strict";
     var __moduleName = context_1 && context_1.id;
     function fn() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -59,7 +60,7 @@ System.register([], function (exports_1, context_1) {
             };
             exports_1("cl1", cl1);
             exports_1("obj", obj = {
-                m: () => __awaiter(this, void 0, void 0, function* () {
+                m: () => __awaiter(void 0, void 0, void 0, function* () {
                     const req = yield context_1.import('./test'); // THREE
                 })
             });
@@ -73,7 +74,7 @@ System.register([], function (exports_1, context_1) {
                 }
             };
             exports_1("cl2", cl2);
-            exports_1("l", l = () => __awaiter(this, void 0, void 0, function* () {
+            exports_1("l", l = () => __awaiter(void 0, void 0, void 0, function* () {
                 const req = yield context_1.import('./test'); // FIVE
             }));
         }

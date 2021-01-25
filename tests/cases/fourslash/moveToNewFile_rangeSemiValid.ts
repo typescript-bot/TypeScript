@@ -9,11 +9,11 @@
 verify.moveToNewFile({
     newFileContents: {
         "/a.ts":
-`
-/** Comment */
+`/** Comment */
 const y = 0;`,
 
         "/x.ts":
-`const x = 0;`,
+`const x = 0;
+`,
     },
 });

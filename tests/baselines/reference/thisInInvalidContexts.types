@@ -63,9 +63,7 @@ module M {
 //'this' as a type argument
 function genericFunc<T>(x: T) { }
 >genericFunc : <T>(x: T) => void
->T : T
 >x : T
->T : T
 
 genericFunc<this>(undefined);  // Should be an error
 >genericFunc<this>(undefined) : void
@@ -74,7 +72,7 @@ genericFunc<this>(undefined);  // Should be an error
 
 class ErrClass3 extends this {
 >ErrClass3 : ErrClass3
->this : any
+>this : typeof globalThis
 
 }
 

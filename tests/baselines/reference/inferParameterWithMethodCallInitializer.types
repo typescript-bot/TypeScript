@@ -15,7 +15,7 @@ class Example {
 >1 : 1
     }
     doSomething(a = this.getNumber()): typeof a {
->doSomething : (a?: number) => number
+>doSomething : (a?: number) => typeof a
 >a : number
 >this.getNumber() : number
 >this.getNumber : () => number
@@ -30,7 +30,6 @@ class Example {
 function weird(this: Example, a = this.getNumber()) {
 >weird : (this: Example, a?: number) => number
 >this : Example
->Example : Example
 >a : number
 >this.getNumber() : number
 >this.getNumber : () => number
@@ -46,7 +45,6 @@ class Weird {
     doSomething(this: Example, a = this.getNumber()) {
 >doSomething : (this: Example, a?: number) => number
 >this : Example
->Example : Example
 >a : number
 >this.getNumber() : number
 >this.getNumber : () => number

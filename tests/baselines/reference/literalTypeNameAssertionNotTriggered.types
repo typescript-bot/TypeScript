@@ -4,14 +4,11 @@ import a = require('./a');
 
 declare function f<T>(obj: T, key: keyof T): void;
 >f : <T>(obj: T, key: keyof T) => void
->T : T
 >obj : T
->T : T
 >key : keyof T
->T : T
 
 f(a, "");
->f(a, "") : any
+>f(a, "") : void
 >f : <T>(obj: T, key: keyof T) => void
 >a : typeof a
 >"" : ""

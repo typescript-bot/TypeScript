@@ -81,7 +81,10 @@ namespace N {
     var x;
 }
 
-    
+for (let x: y) {
+    z(x);
+}
+
 
 //// [unusedLocalsAndParameters.js]
 "use strict";
@@ -107,7 +110,7 @@ var C = /** @class */ (function () {
         // Accessor declaration paramter
         set: function (v) {
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return C;
@@ -122,7 +125,7 @@ var E = /** @class */ (function () {
         // Accessor declaration paramter
         set: function (v) {
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return class_1;
@@ -166,3 +169,5 @@ var N;
 (function (N) {
     var x;
 })(N || (N = {}));
+for (var x = void 0, z = (void 0).z; (x); )
+    ;

@@ -2,11 +2,8 @@
 // Parameter Declaration with generic
 
 interface F { }
->F : F
-
 class Class implements F {
 >Class : Class
->F : F
 
     constructor() { }
 }
@@ -25,7 +22,6 @@ class SubClass extends Class {
 
 class D implements F {
 >D : D
->F : F
 
     foo: boolean
 >foo : boolean
@@ -50,8 +46,6 @@ class SubD extends D {
 
 function d0<T extends Class>({x} = { x: new Class() }) { }
 >d0 : <T extends Class>({ x }?: { x: Class; }) => void
->T : T
->Class : Class
 >x : Class
 >{ x: new Class() } : { x: Class; }
 >x : Class
@@ -59,33 +53,22 @@ function d0<T extends Class>({x} = { x: new Class() }) { }
 >Class : typeof Class
 
 function d1<T extends F>({x}: { x: F }) { }
->d1 : <T extends F>({ x }: { x: F; }) => void
->T : T
->F : F
+>d1 : <T extends F>({ x }: {    x: F;}) => void
 >x : F
 >x : F
->F : F
 
 function d2<T extends Class>({x}: { x: Class }) { }
->d2 : <T extends Class>({ x }: { x: Class; }) => void
->T : T
->Class : Class
+>d2 : <T extends Class>({ x }: {    x: Class;}) => void
 >x : Class
 >x : Class
->Class : Class
 
 function d3<T extends D>({y}: { y: D }) { }
->d3 : <T extends D>({ y }: { y: D; }) => void
->T : T
->D : D
+>d3 : <T extends D>({ y }: {    y: D;}) => void
 >y : D
 >y : D
->D : D
 
 function d4<T extends D>({y} = { y: new D() }) { }
 >d4 : <T extends D>({ y }?: { y: D; }) => void
->T : T
->D : D
 >y : D
 >{ y: new D() } : { y: D; }
 >y : D
@@ -173,7 +156,7 @@ d3({ y: new SubClass() });
 
 // Error
 d3({ y: new Class() });
->d3({ y: new Class() }) : any
+>d3({ y: new Class() }) : void
 >d3 : <T extends D>({ y }: { y: D; }) => void
 >{ y: new Class() } : { y: Class; }
 >y : Class
@@ -181,19 +164,19 @@ d3({ y: new Class() });
 >Class : typeof Class
 
 d3({});
->d3({}) : any
+>d3({}) : void
 >d3 : <T extends D>({ y }: { y: D; }) => void
 >{} : {}
 
 d3({ y: 1 });
->d3({ y: 1 }) : any
+>d3({ y: 1 }) : void
 >d3 : <T extends D>({ y }: { y: D; }) => void
 >{ y: 1 } : { y: number; }
 >y : number
 >1 : 1
 
 d3({ y: "world" });
->d3({ y: "world" }) : any
+>d3({ y: "world" }) : void
 >d3 : <T extends D>({ y }: { y: D; }) => void
 >{ y: "world" } : { y: string; }
 >y : string

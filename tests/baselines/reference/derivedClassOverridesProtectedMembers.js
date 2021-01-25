@@ -37,10 +37,15 @@ class Derived extends Base {
 
 //// [derivedClassOverridesProtectedMembers.js]
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -55,14 +60,14 @@ var Base = /** @class */ (function () {
     Object.defineProperty(Base.prototype, "c", {
         get: function () { return x; },
         set: function (v) { },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Base.s = function (a) { };
     Object.defineProperty(Base, "t", {
         get: function () { return x; },
         set: function (v) { },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return Base;
@@ -76,14 +81,14 @@ var Derived = /** @class */ (function (_super) {
     Object.defineProperty(Derived.prototype, "c", {
         get: function () { return y; },
         set: function (v) { },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Derived.s = function (a) { };
     Object.defineProperty(Derived, "t", {
         get: function () { return y; },
         set: function (a) { },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return Derived;

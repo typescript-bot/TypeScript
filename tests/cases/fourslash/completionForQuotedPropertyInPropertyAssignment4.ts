@@ -3,22 +3,19 @@
 //// export interface ConfigFiles {
 ////   jspm: string;
 ////   'jspm:browser': string;
-////   'jspm:dev': string;
-////   'jspm:node': string;
 //// }
 
 //// function foo(c: ConfigFiles) {}
 //// foo({
 ////     j/*0*/: "",
-////     "/*1*/": "",
+////     "[|/*1*/|]": "",
 //// })
 
-goTo.marker('0');
-verify.completionListContains("jspm");
-//verify.completionListAllowsNewIdentifier();
-//verify.completionListCount(1);
-
-/*goTo.marker('1');
-verify.completionListContains("jspm:dev");
-verify.completionListAllowsNewIdentifier();
-verify.completionListCount(4);*/
+const replacementSpan = test.ranges()[0]
+verify.completions(
+    { marker: "0", exact: ["jspm", '"jspm:browser"'] },
+    { marker: "1", exact: [
+        { name: "jspm", replacementSpan },
+        { name: "jspm:browser", replacementSpan }
+    ] }
+);

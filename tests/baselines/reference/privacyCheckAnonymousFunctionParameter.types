@@ -4,8 +4,6 @@ export var x = 1;  // Makes this an external module
 >1 : 1
 
 interface Iterator<T> {
->Iterator : Iterator<T>
->T : T
 }
 
 module Query {
@@ -13,26 +11,21 @@ module Query {
 
     export function fromDoWhile<T>(doWhile: (test: Iterator<T>) => boolean): Iterator<T> {
 >fromDoWhile : <T>(doWhile: (test: Iterator<T>) => boolean) => Iterator<T>
->T : T
 >doWhile : (test: Iterator<T>) => boolean
 >test : Iterator<T>
->Iterator : Iterator<T>
->T : T
->Iterator : Iterator<T>
->T : T
 
         return null;
 >null : null
     }
 
     function fromOrderBy() {
->fromOrderBy : () => Iterator<{}>
+>fromOrderBy : () => Iterator<unknown>
 
         return fromDoWhile(test => {
->fromDoWhile(test => {            return true;        }) : Iterator<{}>
+>fromDoWhile(test => {            return true;        }) : Iterator<unknown>
 >fromDoWhile : <T>(doWhile: (test: Iterator<T>) => boolean) => Iterator<T>
->test => {            return true;        } : (test: Iterator<{}>) => true
->test : Iterator<{}>
+>test => {            return true;        } : (test: Iterator<unknown>) => true
+>test : Iterator<unknown>
 
             return true;
 >true : true

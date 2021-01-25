@@ -6,9 +6,8 @@ tests/cases/compiler/weakType.ts(19,13): error TS2559: Type '"completely wrong"'
 tests/cases/compiler/weakType.ts(20,13): error TS2559: Type 'false' has no properties in common with type 'Settings'.
 tests/cases/compiler/weakType.ts(37,18): error TS2559: Type '{ error?: number; }' has no properties in common with type 'ChangeOptions'.
 tests/cases/compiler/weakType.ts(62,5): error TS2322: Type '{ properties: { wrong: string; }; }' is not assignable to type 'Weak & Spoiler'.
-  Type '{ properties: { wrong: string; }; }' is not assignable to type 'Weak'.
-    Types of property 'properties' are incompatible.
-      Type '{ wrong: string; }' has no properties in common with type '{ b?: number; }'.
+  Types of property 'properties' are incompatible.
+    Type '{ wrong: string; }' has no properties in common with type '{ b?: number; }'.
 
 
 ==== tests/cases/compiler/weakType.ts (8 errors) ====
@@ -29,12 +28,15 @@ tests/cases/compiler/weakType.ts(62,5): error TS2322: Type '{ properties: { wron
     doSomething(getDefaultSettings);
                 ~~~~~~~~~~~~~~~~~~
 !!! error TS2560: Value of type '() => { timeout: number; }' has no properties in common with type 'Settings'. Did you mean to call it?
+!!! related TS6212 tests/cases/compiler/weakType.ts:15:13: Did you mean to call this expression?
     doSomething(() => ({ timeout: 1000 }));
                 ~~~~~~~~~~~~~~~~~~~~~~~~~
 !!! error TS2560: Value of type '() => { timeout: number; }' has no properties in common with type 'Settings'. Did you mean to call it?
+!!! related TS6212 tests/cases/compiler/weakType.ts:16:13: Did you mean to call this expression?
     doSomething(null as CtorOnly);
                 ~~~~~~~~~~~~~~~~
 !!! error TS2560: Value of type 'CtorOnly' has no properties in common with type 'Settings'. Did you mean to call it?
+!!! related TS6213 tests/cases/compiler/weakType.ts:17:13: Did you mean to use 'new' with this expression?
     doSomething(12);
                 ~~
 !!! error TS2559: Type '12' has no properties in common with type 'Settings'.
@@ -82,16 +84,15 @@ tests/cases/compiler/weakType.ts(62,5): error TS2322: Type '{ properties: { wron
             b?: number
         }
     }
-    declare let unknown: {
+    declare let propertiesWrong: {
         properties: {
             wrong: string
         }
     }
-    let weak: Weak & Spoiler = unknown
+    let weak: Weak & Spoiler = propertiesWrong
         ~~~~
 !!! error TS2322: Type '{ properties: { wrong: string; }; }' is not assignable to type 'Weak & Spoiler'.
-!!! error TS2322:   Type '{ properties: { wrong: string; }; }' is not assignable to type 'Weak'.
-!!! error TS2322:     Types of property 'properties' are incompatible.
-!!! error TS2322:       Type '{ wrong: string; }' has no properties in common with type '{ b?: number; }'.
+!!! error TS2322:   Types of property 'properties' are incompatible.
+!!! error TS2322:     Type '{ wrong: string; }' has no properties in common with type '{ b?: number; }'.
     
     

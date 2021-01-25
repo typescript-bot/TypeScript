@@ -3,8 +3,6 @@ import React = require('react');
 >React : typeof React
 
 interface PoisonedProp {
->PoisonedProp : PoisonedProp
-
     x: string;
 >x : string
 
@@ -17,7 +15,6 @@ class Poisoned extends React.Component<PoisonedProp, {}> {
 >React.Component : React.Component<PoisonedProp, {}>
 >React : typeof React
 >Component : typeof React.Component
->PoisonedProp : PoisonedProp
 
     render() {
 >render : () => JSX.Element
@@ -32,6 +29,16 @@ class Poisoned extends React.Component<PoisonedProp, {}> {
 const obj = {};
 >obj : {}
 >{} : {}
+
+// OK
+<Poisoned {...{x: "ok", y: "2"}} />;
+><Poisoned {...{x: "ok", y: "2"}} /> : JSX.Element
+>Poisoned : typeof Poisoned
+>{x: "ok", y: "2"} : { x: string; y: "2"; }
+>x : string
+>"ok" : "ok"
+>y : "2"
+>"2" : "2"
 
 // Error
 let p = <Poisoned {...obj} />;

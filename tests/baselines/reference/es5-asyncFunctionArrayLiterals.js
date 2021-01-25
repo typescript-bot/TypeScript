@@ -63,11 +63,14 @@ function arrayLiteral1() {
 }
 function arrayLiteral2() {
     return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, y];
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    _a = [[]];
+                    return [4 /*yield*/, y];
                 case 1:
-                    x = (_a.sent()).concat([z]);
+                    x = __spreadArray.apply(void 0, [__spreadArray.apply(void 0, _a.concat([(_b.sent())])), [z]]);
                     return [2 /*return*/];
             }
         });
@@ -75,14 +78,14 @@ function arrayLiteral2() {
 }
 function arrayLiteral3() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
-                    _b = (_a = y).concat;
+                    _a = [__spreadArray([], y)];
                     return [4 /*yield*/, z];
                 case 1:
-                    x = _b.apply(_a, [[_c.sent()]]);
+                    x = __spreadArray.apply(void 0, _a.concat([[_b.sent()]]));
                     return [2 /*return*/];
             }
         });
@@ -94,7 +97,7 @@ function arrayLiteral4() {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, y];
                 case 1:
-                    x = [_a.sent()].concat(z);
+                    x = __spreadArray.apply(void 0, [[_a.sent()], z]);
                     return [2 /*return*/];
             }
         });
@@ -102,14 +105,14 @@ function arrayLiteral4() {
 }
 function arrayLiteral5() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
-                    _b = (_a = [y]).concat;
+                    _a = [[y]];
                     return [4 /*yield*/, z];
                 case 1:
-                    x = _b.apply(_a, [(_c.sent())]);
+                    x = __spreadArray.apply(void 0, _a.concat([(_b.sent())]));
                     return [2 /*return*/];
             }
         });

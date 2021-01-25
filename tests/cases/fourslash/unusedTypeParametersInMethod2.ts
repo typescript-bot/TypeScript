@@ -6,6 +6,7 @@
 //// }
 
 verify.codeFix({
-    description: "Remove declaration for: 'T'",
+    index: 0,
+    description: "Remove unused declaration for: 'T'",
     newRangeContent: "f1<U>(a: U)",
 });

@@ -12,17 +12,17 @@ namespace ts.codefix {
         },
         fixIds: [fixId],
         getAllCodeActions: context => codeFixAll(context, errorCodes, (changes, diag) =>
-            doChange(changes, context.sourceFile, getNode(diag.file, diag.start!))),
+            doChange(changes, context.sourceFile, getNode(diag.file, diag.start))),
     });
 
     function getNode(sourceFile: SourceFile, pos: number): ConstructorDeclaration {
-        const token = getTokenAtPosition(sourceFile, pos, /*includeJsDocComment*/ false);
-        Debug.assert(token.kind === SyntaxKind.ConstructorKeyword);
-        return token.parent as ConstructorDeclaration;
+        const token = getTokenAtPosition(sourceFile, pos);
+        Debug.assert(isConstructorDeclaration(token.parent), "token should be at the constructor declaration");
+        return token.parent;
     }
 
     function doChange(changes: textChanges.ChangeTracker, sourceFile: SourceFile, ctr: ConstructorDeclaration) {
-        const superCall = createStatement(createCall(createSuper(), /*typeArguments*/ undefined, /*argumentsArray*/ emptyArray));
+        const superCall = factory.createExpressionStatement(factory.createCallExpression(factory.createSuper(), /*typeArguments*/ undefined, /*argumentsArray*/ emptyArray));
         changes.insertNodeAtConstructorStart(sourceFile, ctr, superCall);
     }
 }

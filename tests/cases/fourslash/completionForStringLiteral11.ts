@@ -3,12 +3,7 @@
 ////type As = 'arf' | 'abacus' | 'abaddon';
 ////let a: As;
 ////switch (a) {
-////    case '/**/
+////    case '[|/**/|]
 ////}
 
-goTo.marker();
-verify.completionListContains("arf");
-verify.completionListContains("abacus");
-verify.completionListContains("abaddon");
-verify.completionListCount(3);
-
+verify.completions({ marker: "", exact: ["arf", "abacus", "abaddon" ] });

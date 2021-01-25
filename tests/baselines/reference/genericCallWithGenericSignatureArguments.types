@@ -4,21 +4,14 @@
 
 function foo<T>(a: (x: T) => T, b: (x: T) => T) {
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->T : T
 >a : (x: T) => T
 >x : T
->T : T
->T : T
 >b : (x: T) => T
 >x : T
->T : T
->T : T
 
     var r: (x: T) => T;
 >r : (x: T) => T
 >x : T
->T : T
->T : T
 
     return r;
 >r : (x: T) => T
@@ -26,14 +19,14 @@ function foo<T>(a: (x: T) => T, b: (x: T) => T) {
 
 //var r1 = foo((x: number) => 1, (x: string) => ''); // error
 var r1b = foo((x) => 1, (x) => ''); // {} => {}
->r1b : (x: {}) => {}
->foo((x) => 1, (x) => '') : (x: {}) => {}
+>r1b : (x: unknown) => unknown
+>foo((x) => 1, (x) => '') : (x: unknown) => unknown
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->(x) => 1 : (x: {}) => number
->x : {}
+>(x) => 1 : (x: unknown) => number
+>x : unknown
 >1 : 1
->(x) => '' : (x: {}) => string
->x : {}
+>(x) => '' : (x: unknown) => string
+>x : unknown
 >'' : ""
 
 var r2 = foo((x: Object) => null, (x: string) => ''); // Object => Object
@@ -42,7 +35,6 @@ var r2 = foo((x: Object) => null, (x: string) => ''); // Object => Object
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
 >(x: Object) => null : (x: Object) => any
 >x : Object
->Object : Object
 >null : null
 >(x: string) => '' : (x: string) => string
 >x : string
@@ -57,7 +49,6 @@ var r3 = foo((x: number) => 1, (x: Object) => null); // number => number
 >1 : 1
 >(x: Object) => null : (x: Object) => any
 >x : Object
->Object : Object
 >null : null
 
 var r3ii = foo((x: number) => 1, (x: number) => 1); // number => number
@@ -85,11 +76,11 @@ var r4 = foo((x: typeof a) => a, (x: typeof b) => b); // typeof a => typeof a
 >r4 : (x: { x: number; y?: number; }) => { x: number; y?: number; }
 >foo((x: typeof a) => a, (x: typeof b) => b) : (x: { x: number; y?: number; }) => { x: number; y?: number; }
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->(x: typeof a) => a : (x: { x: number; y?: number; }) => { x: number; y?: number; }
+>(x: typeof a) => a : (x: typeof a) => { x: number; y?: number; }
 >x : { x: number; y?: number; }
 >a : { x: number; y?: number; }
 >a : { x: number; y?: number; }
->(x: typeof b) => b : (x: { x: number; z?: number; }) => { x: number; z?: number; }
+>(x: typeof b) => b : (x: typeof b) => { x: number; z?: number; }
 >x : { x: number; z?: number; }
 >b : { x: number; z?: number; }
 >b : { x: number; z?: number; }
@@ -98,20 +89,18 @@ var r5 = foo((x: typeof b) => b, (x: typeof a) => a); // typeof b => typeof b
 >r5 : (x: { x: number; z?: number; }) => { x: number; z?: number; }
 >foo((x: typeof b) => b, (x: typeof a) => a) : (x: { x: number; z?: number; }) => { x: number; z?: number; }
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->(x: typeof b) => b : (x: { x: number; z?: number; }) => { x: number; z?: number; }
+>(x: typeof b) => b : (x: typeof b) => { x: number; z?: number; }
 >x : { x: number; z?: number; }
 >b : { x: number; z?: number; }
 >b : { x: number; z?: number; }
->(x: typeof a) => a : (x: { x: number; y?: number; }) => { x: number; y?: number; }
+>(x: typeof a) => a : (x: typeof a) => { x: number; y?: number; }
 >x : { x: number; y?: number; }
 >a : { x: number; y?: number; }
 >a : { x: number; y?: number; }
 
 function other<T>(x: T) {
 >other : <T>(x: T) => void
->T : T
 >x : T
->T : T
 
     var r6 = foo((a: T) => a, (b: T) => b); // T => T
 >r6 : (x: T) => T
@@ -119,31 +108,26 @@ function other<T>(x: T) {
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
 >(a: T) => a : (a: T) => T
 >a : T
->T : T
 >a : T
 >(b: T) => b : (b: T) => T
 >b : T
->T : T
 >b : T
 
     var r6b = foo((a) => a, (b) => b); // {} => {}
->r6b : (x: {}) => {}
->foo((a) => a, (b) => b) : (x: {}) => {}
+>r6b : (x: unknown) => unknown
+>foo((a) => a, (b) => b) : (x: unknown) => unknown
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->(a) => a : (a: {}) => {}
->a : {}
->a : {}
->(b) => b : (b: {}) => {}
->b : {}
->b : {}
+>(a) => a : (a: unknown) => unknown
+>a : unknown
+>a : unknown
+>(b) => b : (b: unknown) => unknown
+>b : unknown
+>b : unknown
 }
 
 function other2<T extends Date>(x: T) {
 >other2 : <T extends Date>(x: T) => void
->T : T
->Date : Date
 >x : T
->T : T
 
     var r7 = foo((a: T) => a, (b: T) => b); // T => T
 >r7 : (x: T) => T
@@ -151,23 +135,21 @@ function other2<T extends Date>(x: T) {
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
 >(a: T) => a : (a: T) => T
 >a : T
->T : T
 >a : T
 >(b: T) => b : (b: T) => T
 >b : T
->T : T
 >b : T
 
     var r7b = foo((a) => a, (b) => b); // {} => {}
->r7b : (x: {}) => {}
->foo((a) => a, (b) => b) : (x: {}) => {}
+>r7b : (x: unknown) => unknown
+>foo((a) => a, (b) => b) : (x: unknown) => unknown
 >foo : <T>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->(a) => a : (a: {}) => {}
->a : {}
->a : {}
->(b) => b : (b: {}) => {}
->b : {}
->b : {}
+>(a) => a : (a: unknown) => unknown
+>a : unknown
+>a : unknown
+>(b) => b : (b: unknown) => unknown
+>b : unknown
+>b : unknown
 
     var r8 = r7(null);
 >r8 : T
@@ -182,22 +164,14 @@ function other2<T extends Date>(x: T) {
 
 function foo2<T extends Date>(a: (x: T) => T, b: (x: T) => T) {
 >foo2 : <T extends Date>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
->T : T
->Date : Date
 >a : (x: T) => T
 >x : T
->T : T
->T : T
 >b : (x: T) => T
 >x : T
->T : T
->T : T
 
     var r: (x: T) => T;
 >r : (x: T) => T
 >x : T
->T : T
->T : T
 
     return r;
 >r : (x: T) => T
@@ -205,10 +179,7 @@ function foo2<T extends Date>(a: (x: T) => T, b: (x: T) => T) {
 
 function other3<T extends RegExp>(x: T) {
 >other3 : <T extends RegExp>(x: T) => void
->T : T
->RegExp : RegExp
 >x : T
->T : T
 
     var r8 = foo2((a: Date) => a, (b: Date) => b); // Date => Date
 >r8 : (x: Date) => Date
@@ -216,10 +187,8 @@ function other3<T extends RegExp>(x: T) {
 >foo2 : <T extends Date>(a: (x: T) => T, b: (x: T) => T) => (x: T) => T
 >(a: Date) => a : (a: Date) => Date
 >a : Date
->Date : Date
 >a : Date
 >(b: Date) => b : (b: Date) => Date
 >b : Date
->Date : Date
 >b : Date
 }

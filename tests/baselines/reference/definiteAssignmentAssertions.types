@@ -43,6 +43,9 @@ class C3 {
 
     static c!: number;
 >c : number
+
+    d!;
+>d : any
 }
 
 // Definite assignment assertion not permitted in ambient context
@@ -91,7 +94,7 @@ function f2() {
 
     if (typeof x === "string") {
 >typeof x === "string" : boolean
->typeof x : "string" | "number" | "boolean" | "symbol" | "undefined" | "object" | "function"
+>typeof x : "string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function"
 >x : string | number
 >"string" : "string"
 
@@ -154,4 +157,11 @@ declare let v1!: number;
 
 declare var v2!: number;
 >v2 : number
+
+declare namespace foo {
+>foo : typeof foo
+
+	var v!: number;
+>v : number
+}
 

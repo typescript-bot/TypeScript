@@ -16,7 +16,7 @@ module NonGenericParameter {
     }
 
     function foo4(cb: typeof a) {
->foo4 : (cb: { new (x: boolean): boolean; new (x: string): string; }) => boolean
+>foo4 : (cb: typeof a) => boolean
 >cb : { new (x: boolean): boolean; new (x: string): string; }
 >a : { new (x: boolean): boolean; new (x: string): string; }
 
@@ -34,10 +34,7 @@ module NonGenericParameter {
 
     var b: { new <T>(x: T): T };
 >b : new <T>(x: T) => T
->T : T
 >x : T
->T : T
->T : T
 
     var r2 = foo4(b);
 >r2 : boolean
@@ -51,12 +48,9 @@ module GenericParameter {
 
     function foo5<T>(cb: { new(x: T): string; new(x: number): T }) {
 >foo5 : <T>(cb: { new (x: T): string; new (x: number): T; }) => { new (x: T): string; new (x: number): T; }
->T : T
 >cb : { new (x: T): string; new (x: number): T; }
 >x : T
->T : T
 >x : number
->T : T
 
         return cb;
 >cb : { new (x: T): string; new (x: number): T; }
@@ -79,29 +73,21 @@ module GenericParameter {
 
     var b: { new<T>(x: T): string; new<T>(x: number): T; }
 >b : { new <T>(x: T): string; new <T>(x: number): T; }
->T : T
 >x : T
->T : T
->T : T
 >x : number
->T : T
 
     var r7 = foo5(b); // new any => string; new(x:number) => any
->r7 : { new (x: {}): string; new (x: number): {}; }
->foo5(b) : { new (x: {}): string; new (x: number): {}; }
+>r7 : { new (x: unknown): string; new (x: number): unknown; }
+>foo5(b) : { new (x: unknown): string; new (x: number): unknown; }
 >foo5 : <T>(cb: { new (x: T): string; new (x: number): T; }) => { new (x: T): string; new (x: number): T; }
 >b : { new <T>(x: T): string; new <T>(x: number): T; }
 
     function foo6<T>(cb: { new(x: T): string; new(x: T, y?: T): string }) {
 >foo6 : <T>(cb: { new (x: T): string; new (x: T, y?: T): string; }) => { new (x: T): string; new (x: T, y?: T): string; }
->T : T
 >cb : { new (x: T): string; new (x: T, y?: T): string; }
 >x : T
->T : T
 >x : T
->T : T
 >y : T
->T : T
 
         return cb;
 >cb : { new (x: T): string; new (x: T, y?: T): string; }
@@ -114,63 +100,50 @@ module GenericParameter {
 >a : { new (x: boolean): string; new (x: number): boolean; }
 
     var r9 = foo6(b); // new any => string; new(x:any, y?:any) => string
->r9 : { new (x: {}): string; new (x: {}, y?: {}): string; }
->foo6(b) : { new (x: {}): string; new (x: {}, y?: {}): string; }
+>r9 : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
+>foo6(b) : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
 >foo6 : <T>(cb: { new (x: T): string; new (x: T, y?: T): string; }) => { new (x: T): string; new (x: T, y?: T): string; }
 >b : { new <T>(x: T): string; new <T>(x: number): T; }
 
     function foo7<T>(x:T, cb: { new(x: T): string; new(x: T, y?: T): string }) {
 >foo7 : <T>(x: T, cb: { new (x: T): string; new (x: T, y?: T): string; }) => { new (x: T): string; new (x: T, y?: T): string; }
->T : T
 >x : T
->T : T
 >cb : { new (x: T): string; new (x: T, y?: T): string; }
 >x : T
->T : T
 >x : T
->T : T
 >y : T
->T : T
 
         return cb;
 >cb : { new (x: T): string; new (x: T, y?: T): string; }
     }
 
     var r13 = foo7(1, b); // new any => string; new(x:any, y?:any) => string
->r13 : { new (x: {}): string; new (x: {}, y?: {}): string; }
->foo7(1, b) : { new (x: {}): string; new (x: {}, y?: {}): string; }
+>r13 : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
+>foo7(1, b) : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
 >foo7 : <T>(x: T, cb: { new (x: T): string; new (x: T, y?: T): string; }) => { new (x: T): string; new (x: T, y?: T): string; }
 >1 : 1
 >b : { new <T>(x: T): string; new <T>(x: number): T; }
 
     var c: { new <T>(x: T): string; <T>(x: number): T; }
 >c : { <T>(x: number): T; new <T>(x: T): string; }
->T : T
 >x : T
->T : T
->T : T
 >x : number
->T : T
 
     var c2: { new <T>(x: T): string; new<T>(x: number): T; }
 >c2 : { new <T>(x: T): string; new <T>(x: number): T; }
->T : T
 >x : T
->T : T
->T : T
 >x : number
->T : T
 
     var r14 = foo7(1, c); // new any => string; new(x:any, y?:any) => string
->r14 : { new (x: {}): string; new (x: {}, y?: {}): string; }
->foo7(1, c) : { new (x: {}): string; new (x: {}, y?: {}): string; }
+>r14 : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
+>foo7(1, c) : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
 >foo7 : <T>(x: T, cb: { new (x: T): string; new (x: T, y?: T): string; }) => { new (x: T): string; new (x: T, y?: T): string; }
 >1 : 1
 >c : { <T>(x: number): T; new <T>(x: T): string; }
 
     var r15 = foo7(1, c2); // new any => string; new(x:any, y?:any) => string
->r15 : { new (x: {}): string; new (x: {}, y?: {}): string; }
->foo7(1, c2) : { new (x: {}): string; new (x: {}, y?: {}): string; }
+>r15 : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
+>foo7(1, c2) : { new (x: unknown): string; new (x: unknown, y?: unknown): string; }
 >foo7 : <T>(x: T, cb: { new (x: T): string; new (x: T, y?: T): string; }) => { new (x: T): string; new (x: T, y?: T): string; }
 >1 : 1
 >c2 : { new <T>(x: T): string; new <T>(x: number): T; }

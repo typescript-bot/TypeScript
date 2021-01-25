@@ -17,26 +17,20 @@
 ////}
 ////
 ////var c = new C/*1*/(C./*2*/x);
-////c/*3*/.foo = C./*4*/foo;
+////c./*3*/foo = C./*4*/foo;
 
-goTo.marker('1');
-verify.completionListContains('C');
-
-goTo.marker('2');
-verify.completionListContains('x');
-verify.completionListContains('foo');
-
-verify.completionListContains('boo');
-verify.not.completionListContains('bar');
-
-goTo.marker('3');
-// editor is doing the right thing, fourslash is not
-//verify.completionListContains('foo');
-//verify.completionListContains('bar');
-
-goTo.marker('4');
-verify.completionListContains('x');
-verify.completionListContains('foo');
-verify.completionListContains('boo');
-
+verify.completions(
+    { marker: "1", includes: "C" },
+    {
+        marker: ["2", "4"],
+        exact: [
+            { name: "prototype", sortText: completion.SortText.LocationPriority },
+            { name: "boo", sortText: completion.SortText.LocalDeclarationPriority },
+            { name: "x", sortText: completion.SortText.LocationPriority },
+            { name: "foo", sortText: completion.SortText.LocationPriority },
+            ...completion.functionMembers
+        ]
+    },
+    { marker: "3", exact: ["foo", "bar"] },
+);
 verify.noErrors();

@@ -22,26 +22,14 @@
 //// let opt3 = <Opt propx={100} optional /*4*/ />;
 //// let opt4 = <Opt wrong /*5*/ />;
 
-goTo.marker("1");
-verify.completionListContains('propx');
-verify.completionListContains('propString');
-verify.completionListContains('optional');
-
-goTo.marker("2");
-verify.completionListContains('propx');
-verify.completionListContains('propString');
-
-goTo.marker("3");
-verify.completionListContains("propString")
-verify.completionListContains("optional")
-verify.not.completionListContains("propx")
-
-goTo.marker("4");
-verify.completionListContains("propString");
-verify.not.completionListContains("propx");
-verify.not.completionListContains("optional");
-
-goTo.marker("5");
-verify.completionListContains('propx');
-verify.completionListContains('propString');
-verify.completionListContains('optional');
+verify.completions(
+    {
+        marker: ["1", "2", "5"],
+        exact: ["propx", "propString", { name: "optional", kind: "JSX attribute", kindModifiers: "optional", sortText: completion.SortText.OptionalMember }]
+    },
+    {
+        marker: "3",
+        exact: ["propString", { name: "optional", kind: "JSX attribute", kindModifiers: "optional", sortText: completion.SortText.OptionalMember }]
+    },
+    { marker: "4", exact: "propString" },
+);

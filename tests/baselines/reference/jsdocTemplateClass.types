@@ -1,8 +1,9 @@
 === tests/cases/conformance/jsdoc/templateTagOnClasses.js ===
 /**
- * @template {T}
+ * @template T
  * @typedef {(t: T) => T} Id
  */
+/** @template T */
 class Foo {
 >Foo : Foo<T>
 
@@ -13,29 +14,29 @@ class Foo {
 
         this.a = x
 >this.a = x : T
->this.a : T
+>this.a : any
 >this : this
->a : T
+>a : any
 >x : T
     }
     /**
      * 
      * @param {T} x 
-     * @param {Id} y
+     * @param {Id<T>} y
      * @param {Id2} alpha
      * @return {T}
      */
     foo(x, y, alpha) {
->foo : (x: T, y: (t: T) => T, alpha: (t: T) => T) => T
+>foo : (x: T, y: Id<T>, alpha: (t: T) => T) => T
 >x : T
->y : (t: T) => T
+>y : Id<T>
 >alpha : (t: T) => T
 
         return alpha(y(x))
 >alpha(y(x)) : T
 >alpha : (t: T) => T
 >y(x) : T
->y : (t: T) => T
+>y : Id<T>
 >x : T
     }
 }

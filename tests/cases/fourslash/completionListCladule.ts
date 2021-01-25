@@ -14,15 +14,18 @@
 
 goTo.marker("c1");
 edit.insert(".");
-verify.completionListContains("x");
-verify.completionListContains("prototype");
-verify.completionListContains("staticMethod");
+verify.completions({
+    includes: [
+        { name: "x", sortText: completion.SortText.LocationPriority },
+        { name: "prototype", sortText: completion.SortText.LocationPriority },
+        { name: "staticMethod", sortText: completion.SortText.LocalDeclarationPriority }
+    ]
+});
 
 goTo.marker("c2");
 edit.insert(".");
-verify.completionListIsEmpty();
+verify.completions({ exact: undefined });
 
 goTo.marker("c3");
 edit.insert(".");
-verify.completionListContains("doStuff");
-verify.completionListCount(1);
+verify.completions({ exact: "doStuff" });

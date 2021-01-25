@@ -12,13 +12,14 @@ tests/cases/conformance/parser/ecmascript5/SkippedTokens/parserSkippedTokens16.t
     foo(): Bar { }
     ~~~
 !!! error TS2552: Cannot find name 'foo'. Did you mean 'Foo'?
+!!! related TS2728 tests/cases/conformance/parser/ecmascript5/SkippedTokens/parserSkippedTokens16.ts:2:10: 'Foo' is declared here.
          ~
 !!! error TS1005: ';' expected.
            ~~~
 !!! error TS2304: Cannot find name 'Bar'.
                ~
 !!! error TS1005: ';' expected.
-    function Foo      () #   { }
+    function Foo      () ¬   { }
                          
 !!! error TS1127: Invalid character.
     4+:5

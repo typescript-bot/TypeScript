@@ -106,13 +106,43 @@ class C6 extends Mix(Public, Public2) {
 	}
 }
 
+class ProtectedGeneric<T> {
+	private privateMethod() {}
+	protected protectedMethod() {}
+}
+
+class ProtectedGeneric2<T> {
+	private privateMethod() {}
+	protected protectedMethod() {}
+}
+
+function f7(x: ProtectedGeneric<{}> & ProtectedGeneric<{}>) {
+	x.privateMethod(); // Error, private constituent makes method inaccessible
+	x.protectedMethod(); // Error, protected when all constituents are protected
+}
+
+function f8(x: ProtectedGeneric<{a: void;}> & ProtectedGeneric2<{a:void;b:void;}>) {
+	x.privateMethod(); // Error, private constituent makes method inaccessible
+	x.protectedMethod(); // Error, protected when all constituents are protected
+}
+
+function f9(x: ProtectedGeneric<{a: void;}> & ProtectedGeneric<{a:void;b:void;}>) {
+	x.privateMethod(); // Error, private constituent makes method inaccessible
+	x.protectedMethod(); // Error, protected when all constituents are protected
+}
+
 
 //// [mixinAccessModifiers.js]
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -263,6 +293,32 @@ var C6 = /** @class */ (function (_super) {
     };
     return C6;
 }(Mix(Public, Public2)));
+var ProtectedGeneric = /** @class */ (function () {
+    function ProtectedGeneric() {
+    }
+    ProtectedGeneric.prototype.privateMethod = function () { };
+    ProtectedGeneric.prototype.protectedMethod = function () { };
+    return ProtectedGeneric;
+}());
+var ProtectedGeneric2 = /** @class */ (function () {
+    function ProtectedGeneric2() {
+    }
+    ProtectedGeneric2.prototype.privateMethod = function () { };
+    ProtectedGeneric2.prototype.protectedMethod = function () { };
+    return ProtectedGeneric2;
+}());
+function f7(x) {
+    x.privateMethod(); // Error, private constituent makes method inaccessible
+    x.protectedMethod(); // Error, protected when all constituents are protected
+}
+function f8(x) {
+    x.privateMethod(); // Error, private constituent makes method inaccessible
+    x.protectedMethod(); // Error, protected when all constituents are protected
+}
+function f9(x) {
+    x.privateMethod(); // Error, private constituent makes method inaccessible
+    x.protectedMethod(); // Error, protected when all constituents are protected
+}
 
 
 //// [mixinAccessModifiers.d.ts]
@@ -326,3 +382,24 @@ declare class C6 extends C6_base {
     f(c4: C4, c5: C5, c6: C6): void;
     static g(): void;
 }
+declare class ProtectedGeneric<T> {
+    private privateMethod;
+    protected protectedMethod(): void;
+}
+declare class ProtectedGeneric2<T> {
+    private privateMethod;
+    protected protectedMethod(): void;
+}
+declare function f7(x: ProtectedGeneric<{}> & ProtectedGeneric<{}>): void;
+declare function f8(x: ProtectedGeneric<{
+    a: void;
+}> & ProtectedGeneric2<{
+    a: void;
+    b: void;
+}>): void;
+declare function f9(x: ProtectedGeneric<{
+    a: void;
+}> & ProtectedGeneric<{
+    a: void;
+    b: void;
+}>): void;

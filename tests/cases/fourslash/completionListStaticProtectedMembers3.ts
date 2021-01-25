@@ -22,24 +22,13 @@
 ////Base./*1*/;
 ////C3./*2*/;
 
-
 // Only public properties are visible outside the class
-goTo.marker("1");
-verify.not.completionListContains('privateMethod');
-verify.not.completionListContains('privateProperty');
-verify.not.completionListContains('protectedMethod');
-verify.not.completionListContains('protectedProperty');
-verify.completionListContains('publicMethod');
-verify.completionListContains('publicProperty');
-verify.not.completionListContains('protectedOverriddenMethod');
-verify.not.completionListContains('protectedOverriddenProperty');
-
-goTo.marker("2");
-verify.not.completionListContains('privateMethod');
-verify.not.completionListContains('privateProperty');
-verify.not.completionListContains('protectedMethod');
-verify.not.completionListContains('protectedProperty');
-verify.completionListContains('publicMethod');
-verify.completionListContains('publicProperty');
-verify.not.completionListContains('protectedOverriddenMethod');
-verify.not.completionListContains('protectedOverriddenProperty');
+verify.completions({
+    marker: ["1", "2"],
+    exact: [
+        { name: "prototype", sortText: completion.SortText.LocationPriority },
+        { name: "publicMethod", sortText: completion.SortText.LocalDeclarationPriority },
+        { name: "publicProperty", sortText: completion.SortText.LocalDeclarationPriority },
+        ...completion.functionMembers
+    ],
+});
