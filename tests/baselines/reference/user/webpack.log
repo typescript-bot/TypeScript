@@ -1,0 +1,12 @@
+Exit Code: 2
+Standard output:
+lib/util/cleverMerge.js(538,3): error TS2322: Type 'T' is not assignable to type 'Omit<T, P>'.
+lib/util/cleverMerge.js(546,4): error TS2322: Type 'T' is not assignable to type 'Omit<T, P>'.
+lib/util/cleverMerge.js(548,4): error TS2322: Type 'T' is not assignable to type 'Omit<T, P>'.
+lib/util/cleverMerge.js(550,4): error TS2322: Type 'T' is not assignable to type 'Omit<T, P>'.
+lib/util/cleverMerge.js(554,3): error TS2322: Type 'T | Omit<any, P> | (T & Omit<any, P>)' is not assignable to type 'Omit<T, P>'.
+  Type 'T' is not assignable to type 'Omit<T, P>'.
+
+
+
+Standard error:
