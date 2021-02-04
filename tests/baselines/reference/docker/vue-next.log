@@ -80,6 +80,7 @@ created packages/compiler-sfc/dist/compiler-sfc.cjs.js in ?s
 /vue-next/packages/compiler-ssr/src/index.ts → packages/compiler-ssr/dist/compiler-ssr.cjs.js...
 (!) Missing shims for Node.js built-ins
 Creating a browser bundle that depends on 'path', 'url' and 'util'. You might need to include https://github.com/ionic-team/rollup-plugin-node-polyfills
+created packages/compiler-ssr/dist/compiler-ssr.cjs.js in ?s
 (!) Missing global variable names
 Use output.globals to specify browser global variable names corresponding to external modules
 path (guessing 'path')
