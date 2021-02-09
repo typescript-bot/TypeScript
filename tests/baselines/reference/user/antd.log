@@ -1,0 +1,224 @@
+Exit Code: 1
+Standard output:
+node_modules/@ant-design/icons/lib/components/AntdIcon.d.ts(2,13): error TS1005: '=' expected.
+node_modules/@ant-design/icons/lib/components/AntdIcon.d.ts(2,37): error TS1005: ';' expected.
+node_modules/@ant-design/icons/lib/components/AntdIcon.d.ts(3,13): error TS1005: '=' expected.
+node_modules/@ant-design/icons/lib/components/AntdIcon.d.ts(3,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(1,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(1,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(1,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(3,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(3,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(3,51): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(5,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(5,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(5,40): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(7,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(7,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(7,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(9,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(9,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(9,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(11,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(11,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(11,35): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(13,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(13,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(13,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(15,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(15,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(15,59): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(17,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(17,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(17,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(19,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(19,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(19,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(21,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(21,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(21,32): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(23,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(23,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(23,56): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(25,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(25,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(25,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(27,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(27,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(27,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(29,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(29,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(29,56): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(31,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(31,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(31,31): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(33,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(33,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(33,35): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(36,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(36,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(36,38): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(38,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(38,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(38,40): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(40,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(40,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(40,35): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(42,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(42,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(42,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(44,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(44,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(44,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(46,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(46,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(46,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(48,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(48,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(48,61): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(51,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(51,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(51,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(53,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(53,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(53,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(55,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(55,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(55,39): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(57,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(57,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(57,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(59,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(59,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(59,32): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(61,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(61,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(61,52): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(63,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(63,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(63,72): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(65,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(65,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(65,35): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(67,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(67,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(67,49): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(69,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(69,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(69,37): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(72,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(72,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(72,38): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(74,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(74,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(74,38): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(76,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(76,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(76,38): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(78,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(78,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(78,35): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(80,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(80,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(80,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(82,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(82,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(82,68): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(84,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(84,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(84,32): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(86,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(86,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(86,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(88,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(88,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(88,31): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(90,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(90,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(90,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(92,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(92,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(92,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(94,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(94,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(94,40): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(96,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(96,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(96,33): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(98,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(98,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(98,32): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(100,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(100,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(100,44): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(102,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(102,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(102,34): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(104,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(104,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(104,155): error TS1109: Expression expected.
+node_modules/antd/lib/index.d.ts(104,162): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(106,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(106,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(106,36): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(108,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(108,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(108,67): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(110,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(110,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(110,38): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(112,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(112,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(112,46): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(114,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(114,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(114,40): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(116,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(116,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(116,60): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(118,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(118,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(118,55): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(120,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(120,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(120,35): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(122,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(122,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(122,38): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(124,1): error TS1128: Declaration or statement expected.
+node_modules/antd/lib/index.d.ts(124,13): error TS1005: ';' expected.
+node_modules/antd/lib/index.d.ts(124,34): error TS1005: ';' expected.
+node_modules/rc-field-form/es/useForm.d.ts(1,13): error TS1005: '=' expected.
+node_modules/rc-field-form/es/useForm.d.ts(1,87): error TS1005: ';' expected.
+node_modules/rc-field-form/lib/useForm.d.ts(1,13): error TS1005: '=' expected.
+node_modules/rc-field-form/lib/useForm.d.ts(1,87): error TS1005: ';' expected.
+node_modules/rc-picker/lib/Picker.d.ts(14,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/Picker.d.ts(14,32): error TS1005: ';' expected.
+node_modules/rc-picker/lib/Picker.d.ts(15,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/Picker.d.ts(15,87): error TS1005: ';' expected.
+node_modules/rc-picker/lib/Picker.d.ts(16,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/Picker.d.ts(16,35): error TS1005: ';' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(8,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(8,38): error TS1005: ';' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(9,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(9,37): error TS1005: ';' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(10,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(10,93): error TS1005: ';' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(11,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(11,33): error TS1005: ';' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(12,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/PickerPanel.d.ts(12,38): error TS1005: ';' expected.
+node_modules/rc-picker/lib/RangePicker.d.ts(2,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/RangePicker.d.ts(2,71): error TS1005: ';' expected.
+node_modules/rc-picker/lib/RangePicker.d.ts(3,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/RangePicker.d.ts(3,89): error TS1005: ';' expected.
+node_modules/rc-picker/lib/RangePicker.d.ts(4,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/RangePicker.d.ts(4,38): error TS1005: ';' expected.
+node_modules/rc-picker/lib/interface.d.ts(2,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/interface.d.ts(2,37): error TS1005: ';' expected.
+node_modules/rc-picker/lib/panels/TimePanel/index.d.ts(2,13): error TS1005: '=' expected.
+node_modules/rc-picker/lib/panels/TimePanel/index.d.ts(2,54): error TS1005: ';' expected.
+
+
+
+Standard error:

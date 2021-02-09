@@ -1,5 +1,95 @@
 Exit Code: 1
 Standard output:
+node_modules/@jest/core/build/SearchSource.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(7,29): error TS1005: ';' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(8,35): error TS1005: ';' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(9,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(9,27): error TS1005: ';' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(10,30): error TS1005: ';' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(11,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/SearchSource.d.ts(11,36): error TS1005: ';' expected.
+node_modules/@jest/core/build/TestScheduler.d.ts(9,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/TestScheduler.d.ts(9,29): error TS1005: ';' expected.
+node_modules/@jest/core/build/TestScheduler.d.ts(11,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/TestScheduler.d.ts(11,25): error TS1005: ';' expected.
+node_modules/@jest/core/build/TestScheduler.d.ts(11,30): error TS1005: ';' expected.
+node_modules/@jest/core/build/cli/index.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/cli/index.d.ts(7,39): error TS1005: ';' expected.
+node_modules/@jest/core/build/cli/index.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/core/build/cli/index.d.ts(8,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/BaseReporter.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/BaseReporter.d.ts(7,67): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/BaseReporter.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/BaseReporter.d.ts(8,70): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/CoverageReporter.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/CoverageReporter.d.ts(7,51): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/CoverageReporter.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/CoverageReporter.d.ts(8,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/CoverageReporter.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/CoverageReporter.d.ts(10,61): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/DefaultReporter.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/DefaultReporter.d.ts(7,67): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/DefaultReporter.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/DefaultReporter.d.ts(8,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/DefaultReporter.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/DefaultReporter.d.ts(10,51): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/NotifyReporter.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/NotifyReporter.d.ts(7,39): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/NotifyReporter.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/NotifyReporter.d.ts(8,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/NotifyReporter.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/NotifyReporter.d.ts(10,52): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/SummaryReporter.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/SummaryReporter.d.ts(7,39): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/SummaryReporter.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/SummaryReporter.d.ts(8,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/SummaryReporter.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/SummaryReporter.d.ts(10,54): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/VerboseReporter.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/VerboseReporter.d.ts(7,75): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/VerboseReporter.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/VerboseReporter.d.ts(8,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/VerboseReporter.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/reporters/build/VerboseReporter.d.ts(10,27): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/index.d.ts(7,1): error TS1128: Declaration or statement expected.
+node_modules/@jest/reporters/build/index.d.ts(7,13): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/index.d.ts(7,29): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/index.d.ts(8,1): error TS1128: Declaration or statement expected.
+node_modules/@jest/reporters/build/index.d.ts(8,13): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/index.d.ts(8,62): error TS1109: Expression expected.
+node_modules/@jest/reporters/build/index.d.ts(8,69): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/index.d.ts(15,1): error TS1128: Declaration or statement expected.
+node_modules/@jest/reporters/build/index.d.ts(15,13): error TS1005: ';' expected.
+node_modules/@jest/reporters/build/index.d.ts(15,80): error TS1109: Expression expected.
+node_modules/@jest/reporters/build/index.d.ts(15,87): error TS1005: ';' expected.
+node_modules/@jest/test-result/build/formatTestResults.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/test-result/build/formatTestResults.d.ts(7,106): error TS1005: ';' expected.
+node_modules/@jest/test-result/build/helpers.d.ts(7,13): error TS1005: '=' expected.
+node_modules/@jest/test-result/build/helpers.d.ts(7,29): error TS1005: ';' expected.
+node_modules/@jest/test-result/build/helpers.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/test-result/build/helpers.d.ts(8,70): error TS1005: ';' expected.
+node_modules/@jest/test-result/build/index.d.ts(9,1): error TS1128: Declaration or statement expected.
+node_modules/@jest/test-result/build/index.d.ts(9,13): error TS1005: ';' expected.
+node_modules/@jest/test-result/build/index.d.ts(9,243): error TS1109: Expression expected.
+node_modules/@jest/test-result/build/index.d.ts(9,250): error TS1005: ';' expected.
+node_modules/@jest/types/build/Config.d.ts(8,13): error TS1005: '=' expected.
+node_modules/@jest/types/build/Config.d.ts(8,38): error TS1005: ';' expected.
+node_modules/@jest/types/build/Config.d.ts(9,13): error TS1005: '=' expected.
+node_modules/@jest/types/build/Config.d.ts(9,36): error TS1005: ';' expected.
+node_modules/@jest/types/build/Config.d.ts(10,13): error TS1005: '=' expected.
+node_modules/@jest/types/build/Config.d.ts(10,32): error TS1005: ';' expected.
+node_modules/jest-runner/build/index.d.ts(8,13): error TS1005: '=' expected.
+node_modules/jest-runner/build/index.d.ts(8,29): error TS1005: ';' expected.
+node_modules/jest-runner/build/index.d.ts(9,13): error TS1005: '=' expected.
+node_modules/jest-runner/build/index.d.ts(9,329): error TS1005: ';' expected.
+node_modules/jest/node_modules/jest-cli/build/cli/index.d.ts(7,13): error TS1005: '=' expected.
+node_modules/jest/node_modules/jest-cli/build/cli/index.d.ts(7,29): error TS1005: ';' expected.
+node_modules/pretty-format/build/index.d.ts(7,13): error TS1005: '=' expected.
+node_modules/pretty-format/build/index.d.ts(7,18): error TS1005: ';' expected.
+node_modules/pretty-format/build/index.d.ts(7,31): error TS1005: ';' expected.
+node_modules/pretty-format/build/index.d.ts(7,36): error TS1005: ';' expected.
 test/fixtures/issue-5176-flow-class-properties/src/App.js(5,8): error TS8010: 'types' can only be used in a .ts file.
 test/fixtures/issue-5176-flow-class-properties/src/App.js(5,13): error TS1005: ';' expected.
 test/fixtures/webpack-message-formatting/src/AppBabel.js(6,8): error TS17008: JSX element 'div' has no corresponding closing tag.
