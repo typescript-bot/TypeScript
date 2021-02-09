@@ -26,7 +26,6 @@ Writing: /vue-next/temp/compiler-ssr.api.json
 The API report is up to date: temp/compiler-ssr.api.md
 Writing package typings: /vue-next/packages/compiler-ssr/dist/compiler-ssr.d.ts
 Writing package typings: /vue-next/dist/compiler-ssr.d.ts
-API Extractor completed successfully.
 Rolling up type definitions for compiler-sfc...
 Analysis will use the bundled TypeScript version 4.1.3
 *** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
@@ -34,6 +33,7 @@ Writing: /vue-next/temp/compiler-sfc.api.json
 The API report is up to date: temp/compiler-sfc.api.md
 Writing package typings: /vue-next/packages/compiler-sfc/dist/compiler-sfc.d.ts
 Writing package typings: /vue-next/dist/compiler-sfc.d.ts
+API Extractor completed successfully.
 API Extractor completed successfully.
 
 
