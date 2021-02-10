@@ -1,4 +1,4 @@
-Exit Code: 0
+Exit Code: 1
 Standard output:
 
 
@@ -6,4 +6,53 @@ Standard output:
 Standard error:
 lerna notice cli vX.X.X
 lerna info Executing command in 3 packages: "tsc --noEmit"
+pyright-internal: /pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:88083
+pyright-internal:                 throw e;
+pyright-internal:                 ^
+pyright-internal: TypeError: Cannot read property 'get' of undefined
+pyright-internal:     at getTypeAliasInstantiation (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:45345:54)
+pyright-internal:     at getInstanceOfAliasOrReferenceWithMarker (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:49694:45)
+pyright-internal:     at structuredTypeRelatedToWorker (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:49786:49)
+pyright-internal:     at structuredTypeRelatedTo (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:49689:30)
+pyright-internal:     at recursiveTypeRelatedTo (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:49665:53)
+pyright-internal:     at isRelatedTo (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:49279:34)
+pyright-internal:     at checkTypeRelatedTo (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:48974:26)
+pyright-internal:     at isTypeRelatedTo (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:48938:24)
+pyright-internal:     at checkTypeRelatedToAndOptionallyElaborate (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:48252:17)
+pyright-internal:     at checkTypeAssignableToAndOptionallyElaborate (/pyright/packages/pyright-internal/node_modules/typescript/lib/tsc.js:48249:20)
+pyright: /pyright/packages/pyright/node_modules/typescript/lib/tsc.js:88083
+pyright:                 throw e;
+pyright:                 ^
+pyright: TypeError: Cannot read property 'get' of undefined
+pyright:     at getTypeAliasInstantiation (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:45345:54)
+pyright:     at getInstanceOfAliasOrReferenceWithMarker (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:49694:45)
+pyright:     at structuredTypeRelatedToWorker (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:49786:49)
+pyright:     at structuredTypeRelatedTo (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:49689:30)
+pyright:     at recursiveTypeRelatedTo (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:49665:53)
+pyright:     at isRelatedTo (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:49279:34)
+pyright:     at checkTypeRelatedTo (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:48974:26)
+pyright:     at isTypeRelatedTo (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:48938:24)
+pyright:     at checkTypeRelatedToAndOptionallyElaborate (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:48252:17)
+pyright:     at checkTypeAssignableToAndOptionallyElaborate (/pyright/packages/pyright/node_modules/typescript/lib/tsc.js:48249:20)
+vscode-pyright: /pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:88083
+vscode-pyright:                 throw e;
+vscode-pyright:                 ^
+vscode-pyright: TypeError: Cannot read property 'get' of undefined
+vscode-pyright:     at getTypeAliasInstantiation (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:45345:54)
+vscode-pyright:     at getInstanceOfAliasOrReferenceWithMarker (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:49694:45)
+vscode-pyright:     at structuredTypeRelatedToWorker (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:49786:49)
+vscode-pyright:     at structuredTypeRelatedTo (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:49689:30)
+vscode-pyright:     at recursiveTypeRelatedTo (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:49665:53)
+vscode-pyright:     at isRelatedTo (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:49279:34)
+vscode-pyright:     at checkTypeRelatedTo (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:48974:26)
+vscode-pyright:     at isTypeRelatedTo (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:48938:24)
+vscode-pyright:     at checkTypeRelatedToAndOptionallyElaborate (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:48252:17)
+vscode-pyright:     at checkTypeAssignableToAndOptionallyElaborate (/pyright/packages/vscode-pyright/node_modules/typescript/lib/tsc.js:48249:20)
+lerna ERR! Received non-zero exit code 1 during execution
 lerna success exec Executed command in 3 packages: "tsc --noEmit"
+npm ERR! code 1
+npm ERR! path /pyright
+npm ERR! command failed
+npm ERR! command sh -c lerna "exec" "--stream" "--concurrency" "1" "--no-bail" "--" "tsc" "--noEmit"
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/XXXX-XX-XXXXXXXXX-debug.log
