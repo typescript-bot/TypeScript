@@ -1,0 +1,25 @@
+Exit Code: 1
+Standard output:
+lib/ProgressPlugin.js(395,15): error TS2304: Cannot find name '__webpack_require__'.
+lib/Watching.js(266,47): error TS2339: Property 'aggregatedChanges' does not exist on type 'Watcher'.
+lib/Watching.js(267,46): error TS2339: Property 'aggregatedRemovals' does not exist on type 'Watcher'.
+lib/WebpackOptionsApply.js(566,57): error TS2339: Property 'type' does not exist on type 'never'.
+lib/config/normalization.js(148,58): error TS2339: Property 'type' does not exist on type 'never'.
+lib/dependencies/ContextDependencyHelpers.js(49,12): error TS2314: Generic type 'Pick' requires 2 type argument(s).
+lib/dependencies/ContextDependencyHelpers.js(49,40): error TS1009: Trailing comma not allowed.
+lib/dependencies/ContextDependencyHelpers.js(49,41): error TS1003: Identifier expected.
+lib/dependencies/ContextDependencyHelpers.js(49,41): error TS8024: JSDoc '@param' tag has name '', but there is no parameter with that name.
+lib/dependencies/ContextDependencyHelpers.js(49,42): error TS1005: '>' expected.
+lib/hmr/lazyCompilationBackend.js(56,19): error TS2554: Expected 2 arguments, but got 1.
+lib/javascript/JavascriptParser.js(3330,12): error TS2678: Type '"ClassProperty"' is not comparable to type '"MethodDefinition"'.
+lib/optimize/ConcatenatedModule.js(1540,67): error TS2339: Property 'type' does not exist on type 'never'.
+lib/stats/StatsFactory.js(174,40): error TS2557: Expected at least 2 arguments, but got 1 or more.
+lib/stats/StatsFactory.js(229,41): error TS2557: Expected at least 2 arguments, but got 1 or more.
+lib/util/registerExternalSerializer.js(303,31): error TS2556: Expected 3-6 arguments, but got 0 or more.
+lib/util/semver.js(44,2): error TS2322: Type '(string | number | [])[]' is not assignable to type 'string'.
+lib/util/semver.js(46,2): error TS2322: Type '(string | number | [])[]' is not assignable to type 'string'.
+lib/util/semver.js(283,3): error TS2322: Type '(string | number | [])[]' is not assignable to type 'string'.
+
+
+
+Standard error:

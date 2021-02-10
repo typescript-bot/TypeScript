@@ -1,0 +1,62 @@
+Exit Code: 1
+Standard output:
+node_modules/ajv/dist/ajv.d.ts(10,13): error TS1005: '=' expected.
+node_modules/ajv/dist/ajv.d.ts(10,38): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/codegen/index.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/codegen/index.d.ts(1,76): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/context.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/context.d.ts(1,97): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/error_classes.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/error_classes.d.ts(1,34): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/index.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/index.d.ts(1,107): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/index.d.ts(2,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/index.d.ts(2,17): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/index.d.ts(2,22): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/index.d.ts(3,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/index.d.ts(3,38): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/resolve.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/resolve.d.ts(1,49): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/resolve.d.ts(2,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/resolve.d.ts(2,17): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/resolve.d.ts(2,22): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/rules.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/rules.d.ts(1,45): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/subschema.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/subschema.d.ts(1,32): error TS1005: ';' expected.
+node_modules/ajv/dist/compile/subschema.d.ts(2,13): error TS1005: '=' expected.
+node_modules/ajv/dist/compile/subschema.d.ts(2,46): error TS1005: ';' expected.
+node_modules/ajv/dist/core.d.ts(13,13): error TS1005: '=' expected.
+node_modules/ajv/dist/core.d.ts(13,235): error TS1005: ';' expected.
+node_modules/ajv/dist/core.d.ts(14,13): error TS1005: '=' expected.
+node_modules/ajv/dist/core.d.ts(14,37): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/types/index.d.ts(1,74): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(2,13): error TS1005: '=' expected.
+node_modules/ajv/dist/types/index.d.ts(2,57): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(3,13): error TS1005: '=' expected.
+node_modules/ajv/dist/types/index.d.ts(3,31): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(4,13): error TS1005: '=' expected.
+node_modules/ajv/dist/types/index.d.ts(4,24): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(4,29): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(5,13): error TS1005: '=' expected.
+node_modules/ajv/dist/types/index.d.ts(5,17): error TS1005: ';' expected.
+node_modules/ajv/dist/types/index.d.ts(5,22): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(1,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(1,32): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(2,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(2,45): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(3,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(3,45): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(4,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(4,34): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(5,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(5,49): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(6,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(6,44): error TS1005: ';' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(7,13): error TS1005: '=' expected.
+node_modules/ajv/dist/vocabularies/errors.d.ts(7,45): error TS1005: ';' expected.
+
+
+
+Standard error:
