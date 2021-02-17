@@ -26,7 +26,6 @@ Writing: /vue-next/temp/compiler-ssr.api.json
 The API report is up to date: temp/compiler-ssr.api.md
 Writing package typings: /vue-next/packages/compiler-ssr/dist/compiler-ssr.d.ts
 Writing package typings: /vue-next/dist/compiler-ssr.d.ts
-API Extractor completed successfully.
 Rolling up type definitions for compiler-sfc...
 Analysis will use the bundled TypeScript version 4.1.5
 *** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
@@ -35,13 +34,14 @@ The API report is up to date: temp/compiler-sfc.api.md
 Writing package typings: /vue-next/packages/compiler-sfc/dist/compiler-sfc.d.ts
 Writing package typings: /vue-next/dist/compiler-sfc.d.ts
 API Extractor completed successfully.
+API Extractor completed successfully.
 
 
 
 Standard error:
 
-/vue-next/packages/compiler-dom/src/index.ts → packages/compiler-dom/dist/compiler-dom.esm-bundler.js...
 /vue-next/packages/compiler-core/src/index.ts → packages/compiler-core/dist/compiler-core.esm-bundler.js...
+/vue-next/packages/compiler-dom/src/index.ts → packages/compiler-dom/dist/compiler-dom.esm-bundler.js...
 created packages/compiler-dom/dist/compiler-dom.esm-bundler.js in ?s
 /vue-next/packages/compiler-dom/src/index.ts → packages/compiler-dom/dist/compiler-dom.esm-browser.js...
 created packages/compiler-core/dist/compiler-core.esm-bundler.js in ?s
