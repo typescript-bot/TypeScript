@@ -27,8 +27,6 @@ node_modules/debug/src/common.js(244,34): error TS2339: Property 'load' does not
 node_modules/debug/src/index.js(7,47): error TS2339: Property 'type' does not exist on type 'Process'.
 node_modules/debug/src/index.js(7,78): error TS2339: Property 'browser' does not exist on type 'Process'.
 node_modules/debug/src/index.js(7,106): error TS2339: Property '__nwjs' does not exist on type 'Process'.
-node_modules/debug/src/node.js(24,1): error TS2323: Cannot redeclare exported variable 'colors'.
-node_modules/debug/src/node.js(32,5): error TS2323: Cannot redeclare exported variable 'colors'.
 node_modules/debug/src/node.js(53,39): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 node_modules/debug/src/node.js(54,5): error TS2322: Type 'true' is not assignable to type 'string | undefined'.
