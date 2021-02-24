@@ -2,7 +2,6 @@ Exit Code: 2
 Standard output:
 lib/auth/legacy.js(9,81): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/auth/sso.js(68,17): error TS2554: Expected 0 arguments, but got 2.
-lib/birthday.js(5,20): error TS2538: Type 'Buffer' cannot be used as an index type.
 lib/bugs.js(44,17): error TS2554: Expected 0 arguments, but got 2.
 lib/cache.js(108,32): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
@@ -22,6 +21,7 @@ lib/completion.js(62,24): error TS2345: Argument of type 'string | undefined' is
 lib/completion.js(179,7): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/completion.js(199,9): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/config.js(201,14): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+lib/dedupe.js(15,8): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/docs.js(37,17): error TS2554: Expected 0 arguments, but got 2.
 lib/doctor.js(246,17): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)'.
 lib/doctor.js(246,29): error TS2349: This expression is not callable.
@@ -54,23 +54,23 @@ lib/ls.js(288,68): error TS2345: Argument of type '{ node: any; seenNodes: any; 
   Object literal may only specify known properties, and 'seenNodes' does not exist in type '{ node: any; }'.
 lib/ls.js(392,5): error TS2345: Argument of type '{ arb: any; args: any; global: any; json: any; }' is not assignable to parameter of type '{ arb: any; args: any; json: any; }'.
   Object literal may only specify known properties, and 'global' does not exist in type '{ arb: any; args: any; json: any; }'.
-lib/npm.js(72,18): error TS2769: No overload matches this call.
+lib/npm.js(73,18): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"time"' is not assignable to parameter of type 'Signals'.
-lib/npm.js(97,18): error TS2769: No overload matches this call.
+lib/npm.js(102,18): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"time"' is not assignable to parameter of type 'Signals'.
-lib/npm.js(120,22): error TS2769: No overload matches this call.
+lib/npm.js(125,22): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"timeEnd"' is not assignable to parameter of type 'Signals'.
-lib/npm.js(142,18): error TS2769: No overload matches this call.
+lib/npm.js(147,18): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"time"' is not assignable to parameter of type 'Signals'.
-lib/npm.js(153,20): error TS2769: No overload matches this call.
+lib/npm.js(158,20): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"timeEnd"' is not assignable to parameter of type 'Signals'.
-lib/npm.js(191,40): error TS2554: Expected 0-1 arguments, but got 2.
-lib/npm.js(290,44): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+lib/npm.js(196,40): error TS2554: Expected 0-1 arguments, but got 2.
+lib/npm.js(295,44): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 lib/owner.js(193,25): error TS2339: Property 'name' does not exist on type 'string'.
 lib/owner.js(193,35): error TS2339: Property 'error' does not exist on type 'string'.
@@ -105,13 +105,13 @@ lib/utils/config.js(38,3): error TS2345: Argument of type 'string | undefined' i
 lib/utils/error-handler.js(34,16): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"timeEnd"' is not assignable to parameter of type 'Signals'.
-lib/utils/error-handler.js(141,11): error TS2339: Property 'code' does not exist on type 'Error'.
-lib/utils/error-handler.js(143,8): error TS2339: Property 'code' does not exist on type 'Error'.
-lib/utils/error-handler.js(174,18): error TS2339: Property 'code' does not exist on type 'Error'.
-lib/utils/error-handler.js(182,18): error TS2339: Property 'errno' does not exist on type 'Error'.
-lib/utils/error-handler.js(182,42): error TS2339: Property 'errno' does not exist on type 'Error'.
-lib/utils/error-handler.js(182,60): error TS2339: Property 'code' does not exist on type 'Error'.
-lib/utils/error-handler.js(182,83): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/utils/error-handler.js(149,11): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/utils/error-handler.js(151,8): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/utils/error-handler.js(182,18): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/utils/error-handler.js(190,18): error TS2339: Property 'errno' does not exist on type 'Error'.
+lib/utils/error-handler.js(190,42): error TS2339: Property 'errno' does not exist on type 'Error'.
+lib/utils/error-handler.js(190,60): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/utils/error-handler.js(190,83): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/utils/is-windows-bash.js(3,26): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 lib/utils/npm-usage.js(66,15): error TS2322: Type 'string' is not assignable to type 'never'.
