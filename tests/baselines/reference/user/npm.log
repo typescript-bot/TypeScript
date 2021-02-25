@@ -2,54 +2,55 @@ Exit Code: 2
 Standard output:
 lib/auth/legacy.js(9,81): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/auth/sso.js(68,17): error TS2554: Expected 0 arguments, but got 2.
-lib/bugs.js(44,17): error TS2554: Expected 0 arguments, but got 2.
+lib/bugs.js(43,17): error TS2554: Expected 0 arguments, but got 2.
 lib/cache.js(108,32): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 lib/cache.js(109,24): error TS2532: Object is possibly 'undefined'.
-lib/ci.js(20,16): error TS2769: No overload matches this call.
+lib/ci.js(19,16): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"time"' is not assignable to parameter of type 'Signals'.
-lib/ci.js(25,16): error TS2769: No overload matches this call.
+lib/ci.js(24,16): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"timeEnd"' is not assignable to parameter of type 'Signals'.
-lib/ci.js(31,9): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/ci.js(30,9): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/cli.js(45,27): error TS2339: Property 'exit' does not exist on type '(er: any) => void'.
-lib/completion.js(61,24): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+lib/completion.js(59,24): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
-lib/completion.js(62,24): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+lib/completion.js(60,24): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
-lib/completion.js(179,7): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
-lib/completion.js(199,9): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+lib/completion.js(173,7): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+lib/completion.js(193,9): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/config.js(201,14): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
-lib/dedupe.js(15,8): error TS2339: Property 'code' does not exist on type 'Error'.
-lib/docs.js(37,17): error TS2554: Expected 0 arguments, but got 2.
-lib/doctor.js(246,17): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)'.
-lib/doctor.js(246,29): error TS2349: This expression is not callable.
+lib/dedupe.js(14,8): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/docs.js(36,17): error TS2554: Expected 0 arguments, but got 2.
+lib/doctor.js(245,17): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)'.
+lib/doctor.js(245,29): error TS2349: This expression is not callable.
   Not all constituents of type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' are callable.
     Type 'string' has no call signatures.
-lib/doctor.js(246,35): error TS2488: Type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' must have a '[Symbol.iterator]()' method that returns an iterator.
-lib/doctor.js(248,17): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)'.
-lib/doctor.js(260,7): error TS2322: Type 'string | false | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' is not assignable to type 'boolean'.
+lib/doctor.js(245,35): error TS2488: Type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' must have a '[Symbol.iterator]()' method that returns an iterator.
+lib/doctor.js(247,17): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)'.
+lib/doctor.js(259,7): error TS2322: Type 'string | false | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' is not assignable to type 'boolean'.
   Type 'string' is not assignable to type 'boolean'.
-lib/doctor.js(266,7): error TS2322: Type 'string | false | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' is not assignable to type 'boolean'.
+lib/doctor.js(265,7): error TS2322: Type 'string | false | any[] | ((root: any, shouldOwn: any, mask?: any) => Promise<string>) | (() => Promise<any>)' is not assignable to type 'boolean'.
 lib/fund.js(144,11): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/fund.js(155,20): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/fund.js(174,9): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/fund.js(180,9): error TS2339: Property 'code' does not exist on type 'Error'.
-lib/help.js(135,7): error TS2322: Type 'boolean' is not assignable to type 'string'.
-lib/help.js(150,35): error TS2769: No overload matches this call.
+lib/help.js(149,7): error TS2322: Type 'boolean' is not assignable to type 'string'.
+lib/help.js(164,35): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '{ env: { MANPATH: string; }; stdio: string; }' is not assignable to parameter of type 'SpawnOptions'.
       Types of property 'stdio' are incompatible.
         Type 'string' is not assignable to type 'StdioOptions | undefined'.
-lib/help.js(151,10): error TS2339: Property 'on' does not exist on type 'never'.
+lib/help.js(165,10): error TS2339: Property 'on' does not exist on type 'never'.
   The intersection 'ChildProcessWithoutNullStreams & ChildProcessByStdio<Writable, Readable, Readable> & ... 7 more ... & ChildProcess' was reduced to 'never' because property 'stdin' has conflicting types in some constituents.
-lib/help.js(165,7): error TS2322: Type 'string' is not assignable to type 'number'.
-lib/help.js(168,7): error TS2322: Type 'string' is not assignable to type 'number'.
-lib/help.js(171,7): error TS2322: Type 'string' is not assignable to type 'number'.
-lib/help.js(176,70): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
-lib/init.js(46,55): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
-lib/init.js(77,16): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+lib/help.js(179,7): error TS2322: Type 'string' is not assignable to type 'number'.
+lib/help.js(182,7): error TS2322: Type 'string' is not assignable to type 'number'.
+lib/help.js(185,7): error TS2322: Type 'string' is not assignable to type 'number'.
+lib/help.js(190,70): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+lib/init.js(45,55): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+lib/init.js(76,16): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+lib/install-ci-test.js(14,23): error TS2339: Property 'completion' does not exist on type '((args: any, cb: any) => Promise<any>) & { usage: any; }'.
 lib/ls.js(288,68): error TS2345: Argument of type '{ node: any; seenNodes: any; }' is not assignable to parameter of type '{ node: any; }'.
   Object literal may only specify known properties, and 'seenNodes' does not exist in type '{ node: any; }'.
 lib/ls.js(392,5): error TS2345: Argument of type '{ arb: any; args: any; global: any; json: any; }' is not assignable to parameter of type '{ arb: any; args: any; json: any; }'.
@@ -72,14 +73,14 @@ lib/npm.js(158,20): error TS2769: No overload matches this call.
 lib/npm.js(196,40): error TS2554: Expected 0-1 arguments, but got 2.
 lib/npm.js(295,44): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
-lib/owner.js(193,25): error TS2339: Property 'name' does not exist on type 'string'.
-lib/owner.js(193,35): error TS2339: Property 'error' does not exist on type 'string'.
-lib/owner.js(203,3): error TS2322: Type '{ name: any; email: any; }' is not assignable to type 'string'.
-lib/owner.js(203,17): error TS2339: Property 'name' does not exist on type 'string'.
-lib/owner.js(203,32): error TS2339: Property 'email' does not exist on type 'string'.
+lib/owner.js(182,25): error TS2339: Property 'name' does not exist on type 'string'.
+lib/owner.js(182,35): error TS2339: Property 'error' does not exist on type 'string'.
+lib/owner.js(192,3): error TS2322: Type '{ name: any; email: any; }' is not assignable to type 'string'.
+lib/owner.js(192,17): error TS2339: Property 'name' does not exist on type 'string'.
+lib/owner.js(192,32): error TS2339: Property 'email' does not exist on type 'string'.
 lib/profile.js(20,3): error TS2554: Expected 0-3 arguments, but got 4.
-lib/repo.js(49,17): error TS2554: Expected 0 arguments, but got 2.
-lib/run-script.js(99,22): error TS2769: No overload matches this call.
+lib/repo.js(48,17): error TS2554: Expected 0 arguments, but got 2.
+lib/run-script.js(97,22): error TS2769: No overload matches this call.
   Overload 2 of 2, '(...items: ConcatArray<never>[]): never[]', gave the following error.
     Type 'string' is not assignable to type 'never'.
   Overload 2 of 2, '(...items: ConcatArray<never>[]): never[]', gave the following error.
@@ -87,7 +88,8 @@ lib/run-script.js(99,22): error TS2769: No overload matches this call.
   Overload 2 of 2, '(...items: ConcatArray<never>[]): never[]', gave the following error.
     Type 'string' is not assignable to type 'never'.
 lib/search/format-package-stream.js(40,19): error TS2339: Property 'emit' does not exist on type 'JSONOutputStream'.
-lib/shrinkwrap.js(25,8): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/shrinkwrap.js(24,8): error TS2339: Property 'code' does not exist on type 'Error'.
+lib/test.js(3,9): error TS2339: Property 'completion' does not exist on type '((args: any, cb: any) => any) & { usage: any; }'.
 lib/utils/cleanup-log-files.js(15,16): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/utils/cleanup-log-files.js(19,16): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/utils/cleanup-log-files.js(27,13): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
@@ -138,7 +140,7 @@ lib/utils/usage.js(8,21): error TS2769: No overload matches this call.
 lib/view.js(117,8): error TS2339: Property 'statusCode' does not exist on type 'Error'.
 lib/view.js(118,8): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/view.js(119,8): error TS2339: Property 'pkgid' does not exist on type 'Error'.
-lib/whoami.js(13,44): error TS2554: Expected 0-1 arguments, but got 2.
+lib/whoami.js(12,44): error TS2554: Expected 0-1 arguments, but got 2.
 
 
 
