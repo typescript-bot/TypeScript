@@ -2,10 +2,10 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 15.7.0 (unstable)
+Node.js version is 15.10.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 61 ]==
+==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 64 ]==
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/communication-administration" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/communication-chat" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -25,6 +25,7 @@ Executing a maximum of ?simultaneous processes...
 "@azure/core-client" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/data-tables" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-http" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-storage-blob" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/app-configuration" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/attestation" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-lro" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -33,20 +34,20 @@ Executing a maximum of ?simultaneous processes...
 "@azure/keyvault-keys" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-secrets" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-blob" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/storage-blob-changefeed" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-file-datalake" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/storage-blob-changefeed" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/synapse-artifacts" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/digital-twins-core" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/identity" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/cosmos" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/keyvault-common" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/mixedreality-authentication" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/monitor-opentelemetry-exporter" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/quantum-jobs" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/schema-registry" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/schema-registry-avro" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/storage-queue" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/keyvault-common" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/opentelemetry-exporter-azure-monitor" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/search-documents" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-file-share" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/storage-queue" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/synapse-access-control" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/synapse-managed-private-endpoints" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/synapse-monitoring" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -58,16 +59,19 @@ Executing a maximum of ?simultaneous processes...
 "@azure/test-utils-multi-version" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-https" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-crypto" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/mock-hub" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-asynciterator-polyfill" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-paging" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-tracing" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-xml" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/cosmos" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/dev-tool" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/event-processor-host" is blocked by "@azure/eslint-plugin-azure-sdk".
 "testhub" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/logger" is blocked by "@azure/eslint-plugin-azure-sdk".
-==[ BLOCKED: 60 projects ]=====================================================
+==[ BLOCKED: 63 projects ]=====================================================
 These projects were blocked by dependencies that failed:
+  @azure-tests/perf-storage-blob
   @azure/abort-controller
   @azure/ai-anomaly-detector
   @azure/ai-form-recognizer
@@ -106,7 +110,9 @@ These projects were blocked by dependencies that failed:
   @azure/keyvault-keys
   @azure/keyvault-secrets
   @azure/logger
-  @azure/opentelemetry-exporter-azure-monitor
+  @azure/mixedreality-authentication
+  @azure/mock-hub
+  @azure/monitor-opentelemetry-exporter
   @azure/quantum-jobs
   @azure/schema-registry
   @azure/schema-registry-avro
