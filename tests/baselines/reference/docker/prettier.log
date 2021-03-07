@@ -26,3 +26,217 @@ Done in ?s.
 
 
 Standard error:
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'SOURCEMAP_ERROR',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+  loc: {
+    column: 21,
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+    line: 1
+  },
+  message: "Error when using sourcemap for reporting an error: Can't resolve original location of error.",
+  pos: 21,
+  toString: [Function (anonymous)]
+}
+{
+  code: 'THIS_IS_UNDEFINED',
+  message: "The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten",
+  url: 'https://rollupjs.org/guide/en/#error-this-is-undefined',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+  pos: 21,
+  loc: {
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+    line: 1,
+    column: 21
+  },
+  frame: '1: var __spreadArrays = this && this.__spreadArrays || function () {\n' +
+    '                        ^\n' +
+    '2:   for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'SOURCEMAP_ERROR',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+  loc: {
+    column: 29,
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+    line: 1
+  },
+  message: "Error when using sourcemap for reporting an error: Can't resolve original location of error.",
+  pos: 29,
+  toString: [Function (anonymous)]
+}
+{
+  code: 'THIS_IS_UNDEFINED',
+  message: "The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten",
+  url: 'https://rollupjs.org/guide/en/#error-this-is-undefined',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+  pos: 29,
+  loc: {
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/printer.js',
+    line: 1,
+    column: 29
+  },
+  frame: '1: var __spreadArrays = this && this.__spreadArrays || function () {\n' +
+    '                                ^\n' +
+    '2:   for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'SOURCEMAP_ERROR',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+  loc: {
+    column: 21,
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+    line: 1
+  },
+  message: "Error when using sourcemap for reporting an error: Can't resolve original location of error.",
+  pos: 21,
+  toString: [Function (anonymous)]
+}
+{
+  code: 'THIS_IS_UNDEFINED',
+  message: "The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten",
+  url: 'https://rollupjs.org/guide/en/#error-this-is-undefined',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+  pos: 21,
+  loc: {
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+    line: 1,
+    column: 21
+  },
+  frame: '1: var __spreadArrays = this && this.__spreadArrays || function () {\n' +
+    '                        ^\n' +
+    '2:   for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'SOURCEMAP_ERROR',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+  loc: {
+    column: 29,
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+    line: 1
+  },
+  message: "Error when using sourcemap for reporting an error: Can't resolve original location of error.",
+  pos: 29,
+  toString: [Function (anonymous)]
+}
+{
+  code: 'THIS_IS_UNDEFINED',
+  message: "The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten",
+  url: 'https://rollupjs.org/guide/en/#error-this-is-undefined',
+  id: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+  pos: 29,
+  loc: {
+    file: '/prettier/node_modules/@handlebars/parser/dist/esm/helpers.js',
+    line: 1,
+    column: 29
+  },
+  frame: '1: var __spreadArrays = this && this.__spreadArrays || function () {\n' +
+    '                                ^\n' +
+    '2:   for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
