@@ -39,9 +39,23 @@ Standard error:
   toString: [Function (anonymous)]
 }
 {
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
   message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
   code: 'PLUGIN_WARNING',
   plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
   toString: [Function (anonymous)]
 }
 {
@@ -63,9 +77,75 @@ Standard error:
   toString: [Function (anonymous)]
 }
 {
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
   message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
   code: 'PLUGIN_WARNING',
   plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
+  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
+  code: 'PLUGIN_WARNING',
+  plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
   toString: [Function (anonymous)]
 }
 {
@@ -87,27 +167,10 @@ Standard error:
   toString: [Function (anonymous)]
 }
 {
-  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
-  code: 'PLUGIN_WARNING',
-  plugin: 'replace',
-  toString: [Function (anonymous)]
-}
-{
-  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
-  code: 'PLUGIN_WARNING',
-  plugin: 'replace',
-  toString: [Function (anonymous)]
-}
-{
-  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
-  code: 'PLUGIN_WARNING',
-  plugin: 'replace',
-  toString: [Function (anonymous)]
-}
-{
-  message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
-  code: 'PLUGIN_WARNING',
-  plugin: 'replace',
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
   toString: [Function (anonymous)]
 }
 {
@@ -235,8 +298,22 @@ Standard error:
   toString: [Function (anonymous)]
 }
 {
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
+  toString: [Function (anonymous)]
+}
+{
   message: "@rollup/plugin-replace: 'preventAssignment' currently defaults to false. It is recommended to set this option to `true`, as the next major version will default this option to `true`.",
   code: 'PLUGIN_WARNING',
   plugin: 'replace',
+  toString: [Function (anonymous)]
+}
+{
+  code: 'CIRCULAR_DEPENDENCY',
+  cycle: [ '\x00polyfill-node:global.js', '\x00polyfill-node:global.js' ],
+  importer: '\x00polyfill-node:global.js',
+  message: 'Circular dependency: \x00polyfill-node:global.js -> \x00polyfill-node:global.js',
   toString: [Function (anonymous)]
 }
