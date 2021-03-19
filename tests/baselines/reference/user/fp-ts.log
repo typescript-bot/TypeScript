@@ -1,0 +1,40 @@
+Exit Code: 134
+Standard output:
+Security context: 0x08d78291d9f1 <JSObject>
+    2: checkFunctionOrConstructorSymbol(aka checkFunctionOrConstructorSymbol) [0x22b7798db541] [../../../built/local/tsc.js:~74484] [pc=0x21c184533d46](this=0x39437fd825b1 <undefined>,0x1bcc158ff3e1 <Symbol map = 0x2f329ff8e1>)
+    3: checkFunctionOrMethodDeclaration(aka checkFunctionOrMethodDeclaration) [0x22...
+
+
+==== JS stack trace =========================================
+
+    0: ExitFrame [pc: 0x21c1832cfc5d]
+    1: StubFrame [pc: 0x21c18328fcbc]
+<--- JS stacktrace --->
+
+[10263:0x44aa7d0]    50879 ms: Mark-sweep 1345.7 (1424.8) -> 1345.0 (1424.8) MB, 1412.4 / 0.0 ms  (average mu = 0.083, current mu = 0.036) allocation failure scavenge might not succeed
+
+
+[10263:0x44aa7d0]    49450 ms: Scavenge 1345.5 (1424.3) -> 1344.9 (1424.8) MB, 23.0 / 0.0 ms  (average mu = 0.127, current mu = 0.048) allocation failure 
+<--- Last few GCs --->
+
+
+
+
+Standard error:
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+
+Writing Node.js report to file: report.20210319.203322.10263.0.001.json
+Node.js report completed
+ 1: 0x95bd00 node::Abort() [node]
+ 2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
+ 3: 0xb3dbde v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+ 4: 0xb3de14 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+ 5: 0xf3ce52  [node]
+ 6: 0xf3cf58 v8::internal::Heap::CheckIneffectiveMarkCompact(unsigned long, double) [node]
+ 7: 0xf49678 v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]
+ 8: 0xf4a18b v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+ 9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
+10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
+11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
+12: 0x21c1832cfc5d 
+Aborted (core dumped)
