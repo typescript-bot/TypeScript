@@ -1,20 +1,20 @@
 Exit Code: 134
 Standard output:
-Security context: 0x3d799089d9f1 <JSObject>
-    1: createPreprinter(aka createPreprinter) [0x51add6cf9e9] [../../../built/local/tsc.js:~107264] [pc=0x28bef278627a](this=0x3d2aced825b1 <undefined>,0x2c58afd16449 <Object map = 0x3d04b482521>)
-    2: createPrinter [0x51add6cf9a9] [../../../built/local/tsc.js:~103153] [pc=0x28bef259fa82](this=0x28d1818f8461 <Object map = 0x3d04b4cce4...
+Security context: 0x02ebddb1d9f1 <JSObject>
+    1: new Map(aka Map) [0x2ebddb10af9](this=0x2dfcc3402691 <the_hole>)
+    2: ConstructFrame [pc: 0x36e7f7c89e66]
+    3: getIntersectionType(aka getIntersectionType) [0x1de81e6c64e1] [../../../built/local/tsc.js:~57058] [pc=0x36e7f8817bf7](this=0x2dfcc34025b1 <undefined>,0x1c3230098251 <JSArray[1]>,0x2dfcc34025b1 <undefined>,0x2dfcc34025b1 <undef...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x28bef16cfc5d]
+    0: ExitFrame [pc: 0x36e7f7ccfc5d]
 <--- JS stacktrace --->
 
-[10785:0x2bea7d0]    52148 ms: Scavenge 1347.5 (1424.4) -> 1346.7 (1424.9) MB, 4.3 / 0.0 ms  (average mu = 0.085, current mu = 0.036) allocation failure 
+[10859:0x341d7d0]    46318 ms: Mark-sweep 1354.0 (1446.9) -> 1339.9 (1447.9) MB, 1190.7 / 0.0 ms  (average mu = 0.211, current mu = 0.184) allocation failure scavenge might not succeed
 
 
-[10785:0x2bea7d0]    52130 ms: Scavenge 1347.5 (1424.4) -> 1346.6 (1424.4) MB, 20.5 / 0.0 ms  (average mu = 0.085, current mu = 0.036) allocation failure 
-[10785:0x2bea7d0]    52105 ms: Scavenge 1347.5 (1423.9) -> 1346.6 (1424.4) MB, 12.8 / 0.0 ms  (average mu = 0.085, current mu = 0.036) allocation failure 
+[10859:0x341d7d0]    44860 ms: Mark-sweep 1352.9 (1445.4) -> 1338.8 (1446.4) MB, 1191.1 / 0.0 ms  (average mu = 0.238, current mu = 0.189) allocation failure scavenge might not succeed
 <--- Last few GCs --->
 
 
@@ -23,7 +23,7 @@ Security context: 0x3d799089d9f1 <JSObject>
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 
-Writing Node.js report to file: report.20210327.002655.10785.0.001.json
+Writing Node.js report to file: report.20210327.002805.10859.0.001.json
 Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
@@ -36,5 +36,5 @@ Node.js report completed
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
 10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
 11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x28bef16cfc5d 
+12: 0x36e7f7ccfc5d 
 Aborted (core dumped)
