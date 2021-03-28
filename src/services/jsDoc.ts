@@ -82,21 +82,28 @@ namespace ts.JsDoc {
     let jsDocTagNameCompletionEntries: CompletionEntry[];
     let jsDocTagCompletionEntries: CompletionEntry[];
 
-    export function getJsDocCommentsFromDeclarations(declarations: readonly Declaration[]): SymbolDisplayPart[] {
+    export function getJsDocCommentsFromDeclarations(declarations: readonly Declaration[], checker?: TypeChecker): SymbolDisplayPart[] {
         // Only collect doc comments from duplicate declarations once:
         // In case of a union property there might be same declaration multiple times
         // which only varies in type parameter
         // Eg. const a: Array<string> | Array<number>; a.length
         // The property length will have two declarations of property length coming
         // from Array<T> - Array<string> and Array<number>
-        const documentationComment: string[] = [];
+        const parts: SymbolDisplayPart[][] = [];
         forEachUnique(declarations, declaration => {
             for (const { comment } of getCommentHavingNodes(declaration)) {
                 if (comment === undefined) continue;
-                pushIfUnique(documentationComment, comment);
+                const newparts = getDisplayPartsFromComment(comment, checker);
+                if (!contains(parts, newparts, isIdenticalListOfDisplayParts)) {
+                    parts.push(newparts);
+                }
             }
         });
-        return intersperse(map(documentationComment, textPart), lineBreakPart());
+        return flatten(intersperse(parts, [lineBreakPart()]));
+    }
+
+    function isIdenticalListOfDisplayParts(parts1: SymbolDisplayPart[], parts2: SymbolDisplayPart[]) {
+        return arraysEqual(parts1, parts2, (p1, p2) => p1.kind === p2.kind && p1.text === p2.text);
     }
 
     function getCommentHavingNodes(declaration: Declaration): readonly (JSDoc | JSDocTag)[] {
@@ -112,18 +119,28 @@ namespace ts.JsDoc {
         }
     }
 
-    export function getJsDocTagsFromDeclarations(declarations?: Declaration[]): JSDocTagInfo[] {
+    export function getJsDocTagsFromDeclarations(declarations?: Declaration[], checker?: TypeChecker): JSDocTagInfo[] {
         // Only collect doc comments from duplicate declarations once.
         const tags: JSDocTagInfo[] = [];
         forEachUnique(declarations, declaration => {
             for (const tag of getJSDocTags(declaration)) {
-                tags.push({ name: tag.tagName.text, text: getCommentText(tag) });
+                tags.push({ name: tag.tagName.text, text: getCommentDisplayParts(tag, checker) });
             }
         });
         return tags;
     }
 
-    function getCommentText(tag: JSDocTag): string | undefined {
+    function getDisplayPartsFromComment(comment: string | readonly (JSDocText | JSDocLink)[], checker: TypeChecker | undefined): SymbolDisplayPart[] {
+        if (typeof comment === "string") {
+            return [textPart(comment)];
+        }
+        return flatMap(
+            comment,
+            node => node.kind === SyntaxKind.JSDocText ? [textPart(node.text)] : buildLinkParts(node, checker)
+        ) as SymbolDisplayPart[];
+    }
+
+    function getCommentDisplayParts(tag: JSDocTag, checker?: TypeChecker): SymbolDisplayPart[] | undefined {
         const { comment } = tag;
         switch (tag.kind) {
             case SyntaxKind.JSDocImplementsTag:
@@ -131,7 +148,7 @@ namespace ts.JsDoc {
             case SyntaxKind.JSDocAugmentsTag:
                 return withNode((tag as JSDocAugmentsTag).class);
             case SyntaxKind.JSDocTemplateTag:
-                return withList((tag as JSDocTemplateTag).typeParameters);
+                return addComment((tag as JSDocTemplateTag).typeParameters.map(tp => tp.getText()).join(", "));
             case SyntaxKind.JSDocTypeTag:
                 return withNode((tag as JSDocTypeTag).typeExpression);
             case SyntaxKind.JSDocTypedefTag:
@@ -140,21 +157,17 @@ namespace ts.JsDoc {
             case SyntaxKind.JSDocParameterTag:
             case SyntaxKind.JSDocSeeTag:
                 const { name } = tag as JSDocTypedefTag | JSDocPropertyTag | JSDocParameterTag | JSDocSeeTag;
-                return name ? withNode(name) : comment;
+                return name ? withNode(name) : comment === undefined ? undefined : getDisplayPartsFromComment(comment, checker);
             default:
-                return comment;
+                return comment === undefined ? undefined : getDisplayPartsFromComment(comment, checker);
         }
 
         function withNode(node: Node) {
             return addComment(node.getText());
         }
 
-        function withList(list: NodeArray<Node>): string {
-            return addComment(list.map(x => x.getText()).join(", "));
-        }
-
         function addComment(s: string) {
-            return comment === undefined ? s : `${s} ${comment}`;
+            return comment ? [textPart(s), spacePart(), ...getDisplayPartsFromComment(comment, checker)] : [textPart(s)];
         }
     }
 
@@ -251,7 +264,7 @@ namespace ts.JsDoc {
      * @param position The (character-indexed) position in the file where the check should
      * be performed.
      */
-    export function getDocCommentTemplateAtPosition(newLine: string, sourceFile: SourceFile, position: number): TextInsertion | undefined {
+    export function getDocCommentTemplateAtPosition(newLine: string, sourceFile: SourceFile, position: number, options?: DocCommentTemplateOptions): TextInsertion | undefined {
         const tokenAtPos = getTokenAtPosition(sourceFile, position);
         const existingDocComment = findAncestor(tokenAtPos, isJSDoc);
         if (existingDocComment && (existingDocComment.comment !== undefined || length(existingDocComment.tags))) {
@@ -265,7 +278,7 @@ namespace ts.JsDoc {
             return undefined;
         }
 
-        const commentOwnerInfo = getCommentOwnerInfo(tokenAtPos);
+        const commentOwnerInfo = getCommentOwnerInfo(tokenAtPos, options);
         if (!commentOwnerInfo) {
             return undefined;
         }
@@ -325,10 +338,10 @@ namespace ts.JsDoc {
         readonly parameters?: readonly ParameterDeclaration[];
         readonly hasReturn?: boolean;
     }
-    function getCommentOwnerInfo(tokenAtPos: Node): CommentOwnerInfo | undefined {
-        return forEachAncestor(tokenAtPos, getCommentOwnerInfoWorker);
+    function getCommentOwnerInfo(tokenAtPos: Node, options: DocCommentTemplateOptions | undefined): CommentOwnerInfo | undefined {
+        return forEachAncestor(tokenAtPos, n => getCommentOwnerInfoWorker(n, options));
     }
-    function getCommentOwnerInfoWorker(commentOwner: Node): CommentOwnerInfo | undefined | "quit" {
+    function getCommentOwnerInfoWorker(commentOwner: Node, options: DocCommentTemplateOptions | undefined): CommentOwnerInfo | undefined | "quit" {
         switch (commentOwner.kind) {
             case SyntaxKind.FunctionDeclaration:
             case SyntaxKind.FunctionExpression:
@@ -337,10 +350,10 @@ namespace ts.JsDoc {
             case SyntaxKind.MethodSignature:
             case SyntaxKind.ArrowFunction:
                 const host = commentOwner as ArrowFunction | FunctionDeclaration | MethodDeclaration | ConstructorDeclaration | MethodSignature;
-                return { commentOwner, parameters: host.parameters, hasReturn: hasReturn(host) };
+                return { commentOwner, parameters: host.parameters, hasReturn: hasReturn(host, options) };
 
             case SyntaxKind.PropertyAssignment:
-                return getCommentOwnerInfoWorker((commentOwner as PropertyAssignment).initializer);
+                return getCommentOwnerInfoWorker((commentOwner as PropertyAssignment).initializer, options);
 
             case SyntaxKind.ClassDeclaration:
             case SyntaxKind.InterfaceDeclaration:
@@ -357,7 +370,7 @@ namespace ts.JsDoc {
                     ? getRightHandSideOfAssignment(varDeclarations[0].initializer)
                     : undefined;
                 return host
-                    ? { commentOwner, parameters: host.parameters, hasReturn: hasReturn(host) }
+                    ? { commentOwner, parameters: host.parameters, hasReturn: hasReturn(host, options) }
                     : { commentOwner };
             }
 
@@ -371,27 +384,28 @@ namespace ts.JsDoc {
                 return commentOwner.parent.kind === SyntaxKind.ModuleDeclaration ? undefined : { commentOwner };
 
             case SyntaxKind.ExpressionStatement:
-                return getCommentOwnerInfoWorker((commentOwner as ExpressionStatement).expression);
+                return getCommentOwnerInfoWorker((commentOwner as ExpressionStatement).expression, options);
             case SyntaxKind.BinaryExpression: {
                 const be = commentOwner as BinaryExpression;
                 if (getAssignmentDeclarationKind(be) === AssignmentDeclarationKind.None) {
                     return "quit";
                 }
                 return isFunctionLike(be.right)
-                    ? { commentOwner, parameters: be.right.parameters, hasReturn: hasReturn(be.right) }
+                    ? { commentOwner, parameters: be.right.parameters, hasReturn: hasReturn(be.right, options) }
                     : { commentOwner };
             }
             case SyntaxKind.PropertyDeclaration:
                 const init = (commentOwner as PropertyDeclaration).initializer;
                 if (init && (isFunctionExpression(init) || isArrowFunction(init))) {
-                    return { commentOwner, parameters: init.parameters, hasReturn: hasReturn(init) };
+                    return { commentOwner, parameters: init.parameters, hasReturn: hasReturn(init, options) };
                 }
         }
     }
 
-    function hasReturn(node: Node) {
-        return isArrowFunction(node) && isExpression(node.body)
-            || isFunctionLikeDeclaration(node) && node.body && isBlock(node.body) && !!forEachReturnStatement(node.body, n => n);
+    function hasReturn(node: Node, options: DocCommentTemplateOptions | undefined) {
+        return !!options?.generateReturnInDocTemplate &&
+            (isArrowFunction(node) && isExpression(node.body)
+                || isFunctionLikeDeclaration(node) && node.body && isBlock(node.body) && !!forEachReturnStatement(node.body, n => n));
     }
 
     function getRightHandSideOfAssignment(rightHandSide: Expression): FunctionExpression | ArrowFunction | ConstructorDeclaration | undefined {
