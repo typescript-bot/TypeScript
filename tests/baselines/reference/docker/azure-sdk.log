@@ -5,7 +5,7 @@ Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
 Node.js version is 15.12.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 72 ]==
+==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 75 ]==
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -35,8 +35,11 @@ Executing a maximum of ?simultaneous processes...
 "@azure/core-lro" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-admin" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-certificates" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-keyvault-certificates" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-keys" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-keyvault-keys" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-secrets" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-keyvault-secrets" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-blob" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/quantum-jobs" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-blob-changefeed" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -76,12 +79,15 @@ Executing a maximum of ?simultaneous processes...
 "@azure/event-processor-host" is blocked by "@azure/eslint-plugin-azure-sdk".
 "testhub" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/logger" is blocked by "@azure/eslint-plugin-azure-sdk".
-==[ @azure/dev-tool ]============================================[ 72 of 72 ]==
-==[ BLOCKED: 70 projects ]=====================================================
+==[ @azure/dev-tool ]============================================[ 75 of 75 ]==
+==[ BLOCKED: 73 projects ]=====================================================
 These projects were blocked by dependencies that failed:
   @azure-tests/perf-ai-form-recognizer
   @azure-tests/perf-ai-text-analytics
   @azure-tests/perf-eventgrid
+  @azure-tests/perf-keyvault-certificates
+  @azure-tests/perf-keyvault-keys
+  @azure-tests/perf-keyvault-secrets
   @azure-tests/perf-storage-blob
   @azure-tests/perf-storage-file-datalake
   @azure-tests/perf-storage-file-share
