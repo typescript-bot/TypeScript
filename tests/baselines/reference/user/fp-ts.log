@@ -1,21 +1,21 @@
 Exit Code: 134
 Standard output:
-Security context: 0x2e53f5f9d9f1 <JSObject>
-    1: createPrinter [0x1febadeda1c9] [../../../built/local/tsc.js:~103246] [pc=0x277c592ba969](this=0x2c1adb778461 <Object map = 0x3d31e824ce41>,0x3d52dd7142e1 <Object map = 0x3d31e827c5f1>,0x1c2dd3f825b1 <undefined>)
-    2: arguments adaptor frame: 1->2
-    3: typeToString(aka typeToString) [0x28ecd31e6f39] [../../../built/local/tsc.j...
+Security context: 0x374d66e1d9f1 <JSObject>
+    2: getWidenedTypeWithContext(aka getWidenedTypeWithContext) [0x19fc29d90049] [../../../built/local/tsc.js:1] [bytecode=0x1c16bde690f9 offset=0](this=0x37e2123825b1 <undefined>,0x19fc29d83489 <Type map = 0x1d6790c4ebf1>,0x2aa1a6d10c69 <Object map = 0x3ef616182de1>)
+    3: /* anonymous */(aka /* anonymous */...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x277c5834fc5d]
+    0: ExitFrame [pc: 0x22659764fc5d]
+    1: StubFrame [pc: 0x2265980dfcd9]
 <--- JS stacktrace --->
 
-[10561:0x2ebe7d0]    39627 ms: Mark-sweep 1348.2 (1424.9) -> 1347.1 (1424.9) MB, 1028.2 / 0.0 ms  (average mu = 0.174, current mu = 0.168) allocation failure scavenge might not succeed
+[11874:0x33457d0]    51058 ms: Scavenge 1343.3 (1424.4) -> 1342.7 (1425.4) MB, 13.1 / 0.0 ms  (average mu = 0.148, current mu = 0.089) allocation failure 
 
 
-[10561:0x2ebe7d0]    38597 ms: Scavenge 1348.1 (1424.4) -> 1347.2 (1424.9) MB, 2.1 / 0.0 ms  (average mu = 0.179, current mu = 0.128) allocation failure 
-[10561:0x2ebe7d0]    38593 ms: Scavenge 1348.1 (1424.4) -> 1347.2 (1424.4) MB, 2.2 / 0.0 ms  (average mu = 0.179, current mu = 0.128) allocation failure 
+[11874:0x33457d0]    51039 ms: Scavenge 1343.1 (1423.9) -> 1342.5 (1424.4) MB, 15.0 / 0.0 ms  (average mu = 0.148, current mu = 0.089) allocation failure 
+[11874:0x33457d0]    51001 ms: Mark-sweep 1343.1 (1424.9) -> 1342.2 (1423.9) MB, 1424.5 / 0.0 ms  (average mu = 0.148, current mu = 0.089) allocation failure scavenge might not succeed
 <--- Last few GCs --->
 
 
@@ -24,7 +24,7 @@ Security context: 0x2e53f5f9d9f1 <JSObject>
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 
-Writing Node.js report to file: report.20210330.044845.10561.0.001.json
+Writing Node.js report to file: report.20210330.165514.11874.0.001.json
 Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
@@ -37,5 +37,5 @@ Node.js report completed
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
 10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
 11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x277c5834fc5d 
+12: 0x22659764fc5d 
 Aborted (core dumped)
