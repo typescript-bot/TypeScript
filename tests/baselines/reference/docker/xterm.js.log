@@ -3,6 +3,11 @@ Standard output:
 
 > xterm@X.X.X build /xtermjs
 > tsc -b ./tsconfig.all.json
+src/browser/Terminal.test.ts(60,33): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+src/browser/Terminal.test.ts(66,31): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+src/browser/Terminal.test.ts(72,29): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+src/browser/Terminal.test.ts(79,29): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+src/browser/Terminal.test.ts(239,11): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 src/browser/Terminal2.test.ts(80,11): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 error TS2688: Cannot find type definition file for '../../../out-test/api/TestUtils'.
   The file is in the program because:
