@@ -1,20 +1,19 @@
 Exit Code: 134
 Standard output:
-Security context: 0x1d392f39d9f1 <JSObject>
-    0: builtin exit frame: splice(this=0x2595ce6aefc9 <JSArray[0]>,0x1230531f5231 <Type map = 0x1ab84ba49421>,0,0,0x2595ce6aefc9 <JSArray[0]>)
-
-    1: getUnionType(aka getUnionType) [0x24e8a130f601] [../../../built/local/tsc.js:~56771] [pc=0x397a4c28ae91](this=0x2f64a64025b1 <undefined>,0x2595ce6aeed1 <JSArray[2]>,1,0x2f64a64025b1 <undefined>,0x2f64a64025b1 <undefined>,0x2f64a64025b1 ...
+Security context: 0x317223d1d9f1 <JSObject>
+    1: isTypeParameterAtTopLevel(aka isTypeParameterAtTopLevel) [0x2d4b12ca77f9] [../../../built/local/tsc.js:~63208] [pc=0x5d8bb9718b4](this=0x3594a96825b1 <undefined>,0x28c0fab49609 <Type map = 0x337d0d253f61>,0x28c0fab49609 <Type map = 0x337d0d253f61>)
+    2: inferFromTypes(aka inferFromTypes) [0x3022a9aa62b9] [../../../built/local/ts...
 
 
 ==== JS stack trace =========================================
 
+    0: ExitFrame [pc: 0x5d8bad4fc5d]
 <--- JS stacktrace --->
 
-[11053:0x397b7d0]    49728 ms: Scavenge 1347.2 (1424.4) -> 1346.6 (1424.9) MB, 3.5 / 0.0 ms  (average mu = 0.139, current mu = 0.103) allocation failure 
+[10836:0x360c7d0]    46180 ms: Mark-sweep 1350.1 (1445.4) -> 1336.7 (1446.4) MB, 1361.6 / 0.0 ms  (average mu = 0.134, current mu = 0.091) allocation failure scavenge might not succeed
 
 
-[11053:0x397b7d0]    49713 ms: Scavenge 1347.1 (1424.4) -> 1346.4 (1424.4) MB, 3.7 / 0.0 ms  (average mu = 0.139, current mu = 0.103) allocation failure 
-[11053:0x397b7d0]    49691 ms: Scavenge 1347.0 (1424.4) -> 1346.2 (1424.4) MB, 3.5 / 0.0 ms  (average mu = 0.139, current mu = 0.103) allocation failure 
+[10836:0x360c7d0]    44682 ms: Mark-sweep 1348.8 (1444.4) -> 1335.2 (1445.4) MB, 1334.1 / 0.0 ms  (average mu = 0.175, current mu = 0.114) allocation failure scavenge might not succeed
 <--- Last few GCs --->
 
 
@@ -22,6 +21,9 @@ Security context: 0x1d392f39d9f1 <JSObject>
 
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+
+Writing Node.js report to file: report.20210405.043526.10836.0.001.json
+Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
  3: 0xb3dbde v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
@@ -31,11 +33,7 @@ FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaS
  7: 0xf49678 v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]
  8: 0xf4a18b v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
-10: 0xf16df6 v8::internal::Factory::AllocateRawArray(int, v8::internal::PretenureFlag) [node]
-11: 0xf177ba v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag) [node]
-12: 0xf17e87 v8::internal::Factory::NewUninitializedFixedArray(int, v8::internal::PretenureFlag) [node]
-13: 0xecd3eb  [node]
-14: 0xbcc0ae  [node]
-15: 0xbcce96 v8::internal::Builtin_ArraySplice(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-16: 0x397a4b5cfdbd 
+10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
+11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
+12: 0x5d8bad4fc5d 
 Aborted (core dumped)

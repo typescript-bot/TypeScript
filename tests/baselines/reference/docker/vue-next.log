@@ -19,6 +19,13 @@ The API report is up to date: temp/compiler-dom.api.md
 Writing package typings: /vue-next/packages/compiler-dom/dist/compiler-dom.d.ts
 Writing package typings: /vue-next/dist/compiler-dom.d.ts
 API Extractor completed successfully.
+Rolling up type definitions for compiler-ssr...
+Analysis will use the bundled TypeScript version 4.1.5
+*** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
+Writing: /vue-next/temp/compiler-ssr.api.json
+The API report is up to date: temp/compiler-ssr.api.md
+Writing package typings: /vue-next/packages/compiler-ssr/dist/compiler-ssr.d.ts
+Writing package typings: /vue-next/dist/compiler-ssr.d.ts
 Rolling up type definitions for compiler-sfc...
 Analysis will use the bundled TypeScript version 4.1.5
 *** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
@@ -27,13 +34,6 @@ The API report is up to date: temp/compiler-sfc.api.md
 Writing package typings: /vue-next/packages/compiler-sfc/dist/compiler-sfc.d.ts
 Writing package typings: /vue-next/dist/compiler-sfc.d.ts
 API Extractor completed successfully.
-Rolling up type definitions for compiler-ssr...
-Analysis will use the bundled TypeScript version 4.1.5
-*** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
-Writing: /vue-next/temp/compiler-ssr.api.json
-The API report is up to date: temp/compiler-ssr.api.md
-Writing package typings: /vue-next/packages/compiler-ssr/dist/compiler-ssr.d.ts
-Writing package typings: /vue-next/dist/compiler-ssr.d.ts
 API Extractor completed successfully.
 Rolling up type definitions for reactivity...
 Analysis will use the bundled TypeScript version 4.1.5
@@ -70,10 +70,10 @@ created packages/compiler-dom/dist/compiler-dom.esm-bundler.js in ?s
 /vue-next/packages/compiler-dom/src/index.ts → packages/compiler-dom/dist/compiler-dom.esm-browser.js...
 created packages/compiler-core/dist/compiler-core.esm-bundler.js in ?s
 /vue-next/packages/compiler-core/src/index.ts → packages/compiler-core/dist/compiler-core.cjs.js...
-created packages/compiler-core/dist/compiler-core.cjs.js in ?s
-/vue-next/packages/compiler-core/src/index.ts → packages/compiler-core/dist/compiler-core.cjs.prod.js...
 created packages/compiler-dom/dist/compiler-dom.esm-browser.js in ?s
 /vue-next/packages/compiler-dom/src/index.ts → packages/compiler-dom/dist/compiler-dom.cjs.js...
+created packages/compiler-core/dist/compiler-core.cjs.js in ?s
+/vue-next/packages/compiler-core/src/index.ts → packages/compiler-core/dist/compiler-core.cjs.prod.js...
 created packages/compiler-dom/dist/compiler-dom.cjs.js in ?s
 /vue-next/packages/compiler-dom/src/index.ts → packages/compiler-dom/dist/compiler-dom.global.js...
 created packages/compiler-core/dist/compiler-core.cjs.prod.js in ?s
@@ -102,20 +102,20 @@ Warning: /vue-next/packages/reactivity/src/baseHandlers.ts:198:3 - (TS2322) Type
     Type 'number' is not assignable to type 'string | symbol'.
 /vue-next/packages/compiler-sfc/src/index.ts → packages/compiler-sfc/dist/compiler-sfc.cjs.js...
 created packages/compiler-dom/dist/compiler-dom.global.prod.js in ?s
-created packages/compiler-sfc/dist/compiler-sfc.cjs.js in ?s
-/vue-next/packages/compiler-sfc/src/index.ts → packages/compiler-sfc/dist/compiler-sfc.esm-browser.js...
 Warning: /vue-next/packages/reactivity/src/baseHandlers.ts:198:3 - (TS2322) Type '(string | number | symbol)[]' is not assignable to type '(string | symbol)[]'.
   Type 'string | number | symbol' is not assignable to type 'string | symbol'.
     Type 'number' is not assignable to type 'string | symbol'.
 /vue-next/packages/compiler-ssr/src/index.ts → packages/compiler-ssr/dist/compiler-ssr.cjs.js...
-created packages/compiler-sfc/dist/compiler-sfc.esm-browser.js in ?s
+created packages/compiler-sfc/dist/compiler-sfc.cjs.js in ?s
+/vue-next/packages/compiler-sfc/src/index.ts → packages/compiler-sfc/dist/compiler-sfc.esm-browser.js...
 created packages/compiler-ssr/dist/compiler-ssr.cjs.js in ?s
-Warning: dist/packages/compiler-sfc/src/compileScript.d.ts:28:36 - (tsdoc-escape-greater-than) The ">" character should be escaped using a backslash to avoid confusion with an HTML tag
-Warning: dist/packages/compiler-sfc/src/compileScript.d.ts:28:23 - (tsdoc-html-tag-missing-equals) The HTML element has an invalid attribute: Expecting "=" after HTML attribute name
-Warning: dist/packages/compiler-sfc/src/compileStyle.d.ts:18:8 - (tsdoc-missing-deprecation-message) The @deprecated block must include a deprecation message, e.g. describing the recommended alternative
+created packages/compiler-sfc/dist/compiler-sfc.esm-browser.js in ?s
 Warning: /vue-next/packages/reactivity/src/baseHandlers.ts:198:3 - (TS2322) Type '(string | number | symbol)[]' is not assignable to type '(string | symbol)[]'.
   Type 'string | number | symbol' is not assignable to type 'string | symbol'.
     Type 'number' is not assignable to type 'string | symbol'.
+Warning: dist/packages/compiler-sfc/src/compileScript.d.ts:28:36 - (tsdoc-escape-greater-than) The ">" character should be escaped using a backslash to avoid confusion with an HTML tag
+Warning: dist/packages/compiler-sfc/src/compileScript.d.ts:28:23 - (tsdoc-html-tag-missing-equals) The HTML element has an invalid attribute: Expecting "=" after HTML attribute name
+Warning: dist/packages/compiler-sfc/src/compileStyle.d.ts:18:8 - (tsdoc-missing-deprecation-message) The @deprecated block must include a deprecation message, e.g. describing the recommended alternative
 Warning: /vue-next/packages/reactivity/src/baseHandlers.ts:198:3 - (TS2322) Type '(string | number | symbol)[]' is not assignable to type '(string | symbol)[]'.
   Type 'string | number | symbol' is not assignable to type 'string | symbol'.
     Type 'number' is not assignable to type 'string | symbol'.
