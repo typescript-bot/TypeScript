@@ -136,6 +136,7 @@ node_modules/adonis-framework/src/Response/index.js(56,7): error TS1056: Accesso
 node_modules/adonis-framework/src/Response/index.js(68,7): error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
 node_modules/adonis-framework/src/Response/index.js(76,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Response/index.js(95,16): error TS2304: Cannot find name 'Html'.
+node_modules/adonis-framework/src/Response/index.js(144,12): error TS1003: Identifier expected.
 node_modules/adonis-framework/src/Response/index.js(172,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Response/index.js(299,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Response/index.js(323,15): error TS2304: Cannot find name 'Mixed'.
