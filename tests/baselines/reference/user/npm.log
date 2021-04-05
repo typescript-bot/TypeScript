@@ -52,7 +52,6 @@ lib/edit.js(56,13): error TS2794: Expected 1 arguments, but got 0. Did you forge
 lib/exec.js(62,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Exec'.
 lib/exec.js(79,22): error TS2345: Argument of type '{ path: any; runPath: string; }' is not assignable to parameter of type '{ locationMsg: any; path: any; runPath: any; }'.
   Property 'locationMsg' is missing in type '{ path: any; runPath: string; }' but required in type '{ locationMsg: any; path: any; runPath: any; }'.
-lib/exec.js(98,21): error TS2321: Excessive stack depth comparing types 'FlatArray<Arr, ?>' and 'FlatArray<Arr, ?>'.
 lib/explain.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Explain'.
 lib/explain.js(27,33): error TS2554: Expected 0-1 arguments, but got 2.
 lib/explore.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Explore'.
