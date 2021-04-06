@@ -1,19 +1,21 @@
 Exit Code: 134
 Standard output:
-Security context: 0x3d0fd231d9f1 <JSObject>
-    2: getObjectTypeInstantiation(aka getObjectTypeInstantiation) [0x1e5b57b91841] [../../../built/local/tsc.js:~58759] [pc=0x341a15f78755](this=0x3cfce94825b1 <undefined>,0x2dd40d384e99 <Type map = 0x3cccf0cf1bf1>,0x356e0c63c849 <Object map = 0x3cccf0ce9f41>,0x3cfce94825b1 <undefined>,0x3cfce94825b1 <undefine...
+Security context: 0x09af29f9d9f1 <JSObject>
+    1: createPrinter [0x9c4963cae21] [../../../built/local/tsc.js:~103299] [pc=0x1e5789e8cb49](this=0x0e5b25a78499 <Object map = 0x2a1f0d44ce41>,0x2e74af207029 <Object map = 0x2a1f0d47c5a1>,0x36cde81025b1 <undefined>)
+    2: arguments adaptor frame: 1->2
+    3: typeToString(aka typeToString) [0x1164a4988529] [../../../built/local/tsc.js...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x341a150cfc5d]
-    1: StubFrame [pc: 0x341a1508fcbc]
+    0: ExitFrame [pc: 0x1e5788dcfc5d]
 <--- JS stacktrace --->
 
-[10577:0x41167d0]    47275 ms: Mark-sweep 1351.4 (1445.4) -> 1338.0 (1447.4) MB, 1374.2 / 0.0 ms  (average mu = 0.127, current mu = 0.088) allocation failure scavenge might not succeed
+[10396:0x348a7d0]    52569 ms: Scavenge 1348.6 (1424.4) -> 1347.7 (1424.9) MB, 9.7 / 0.0 ms  (average mu = 0.072, current mu = 0.026) allocation failure 
 
 
-[10577:0x41167d0]    45768 ms: Mark-sweep 1350.1 (1443.9) -> 1336.6 (1445.4) MB, 1373.8 / 0.0 ms  (average mu = 0.163, current mu = 0.117) allocation failure scavenge might not succeed
+[10396:0x348a7d0]    52556 ms: Mark-sweep 1348.6 (1424.9) -> 1347.7 (1424.4) MB, 1390.6 / 0.0 ms  (average mu = 0.072, current mu = 0.026) allocation failure scavenge might not succeed
+[10396:0x348a7d0]    51162 ms: Scavenge 1348.6 (1424.4) -> 1347.6 (1424.9) MB, 29.3 / 0.0 ms  (average mu = 0.115, current mu = 0.033) allocation failure 
 <--- Last few GCs --->
 
 
@@ -22,7 +24,7 @@ Security context: 0x3d0fd231d9f1 <JSObject>
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 
-Writing Node.js report to file: report.20210406.162402.10577.0.001.json
+Writing Node.js report to file: report.20210406.173902.10396.0.001.json
 Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
@@ -35,5 +37,5 @@ Node.js report completed
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
 10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
 11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x341a150cfc5d 
+12: 0x1e5788dcfc5d 
 Aborted (core dumped)
