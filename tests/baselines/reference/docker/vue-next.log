@@ -26,6 +26,7 @@ Writing: /vue-next/temp/compiler-ssr.api.json
 The API report is up to date: temp/compiler-ssr.api.md
 Writing package typings: /vue-next/packages/compiler-ssr/dist/compiler-ssr.d.ts
 Writing package typings: /vue-next/dist/compiler-ssr.d.ts
+API Extractor completed successfully.
 Rolling up type definitions for compiler-sfc...
 Analysis will use the bundled TypeScript version 4.1.5
 *** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
@@ -34,7 +35,6 @@ The API report is up to date: temp/compiler-sfc.api.md
 Writing package typings: /vue-next/packages/compiler-sfc/dist/compiler-sfc.d.ts
 Writing package typings: /vue-next/dist/compiler-sfc.d.ts
 API Extractor completed successfully.
-API Extractor completed successfully.
 Rolling up type definitions for reactivity...
 Analysis will use the bundled TypeScript version 4.1.5
 *** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
@@ -42,7 +42,6 @@ Writing: /vue-next/temp/reactivity.api.json
 The API report is up to date: temp/reactivity.api.md
 Writing package typings: /vue-next/packages/reactivity/dist/reactivity.d.ts
 Writing package typings: /vue-next/dist/reactivity.d.ts
-API Extractor completed successfully.
 Rolling up type definitions for runtime-core...
 Analysis will use the bundled TypeScript version 4.1.5
 *** The target project appears to use TypeScript X.X.X-insiders.xxxxxxxx which is newer than the bundled compiler engine; consider upgrading API Extractor.
@@ -50,6 +49,7 @@ Writing: /vue-next/temp/runtime-core.api.json
 The API report is up to date: temp/runtime-core.api.md
 Writing package typings: /vue-next/packages/runtime-core/dist/runtime-core.d.ts
 Writing package typings: /vue-next/dist/runtime-core.d.ts
+API Extractor completed successfully.
 API Extractor completed successfully.
 Rolling up type definitions for server-renderer...
 Analysis will use the bundled TypeScript version 4.1.5
@@ -157,6 +157,8 @@ created packages/runtime-dom/dist/runtime-dom.esm-browser.js in ?s
 created packages/runtime-dom/dist/runtime-dom.cjs.js in ?s
 /vue-next/packages/runtime-dom/src/index.ts → packages/runtime-dom/dist/runtime-dom.global.js...
 created packages/server-renderer/dist/server-renderer.cjs.prod.js in ?s
+created packages/runtime-dom/dist/runtime-dom.global.js in ?s
+/vue-next/packages/runtime-dom/src/index.ts → packages/runtime-dom/dist/runtime-dom.esm-browser.prod.js...
 Warning: /vue-next/packages/reactivity/src/baseHandlers.ts:198:3 - (TS2322) Type '(string | number | symbol)[]' is not assignable to type '(string | symbol)[]'.
   Type 'string | number | symbol' is not assignable to type 'string | symbol'.
     Type 'number' is not assignable to type 'string | symbol'.
