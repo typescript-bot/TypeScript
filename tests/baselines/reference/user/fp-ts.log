@@ -1,19 +1,20 @@
 Exit Code: 134
 Standard output:
-Security context: 0x04b278f1d9f1 <JSObject>
-    1: createInstantiatedSymbolTable(aka createInstantiatedSymbolTable) [0xcfd4da0d999] [../../../built/local/tsc.js:~53457] [pc=0x34e169e9cbbf](this=0x255c23c025b1 <undefined>,0x398568a07f21 <JSArray[32]>,0x2cc3ded3ffe9 <Object map = 0x259d72d8cb61>,0x255c23c02801 <false>)
-    2: resolveObjectTypeMembers(aka resolveObjectTypeMembers) [0xcfd4da0dd...
+Security context: 0x2dcce7b9d9f1 <JSObject>
+    1: createPrinter [0xe3e9809dbd1] [../../../built/local/tsc.js:~103400] [pc=0x2c6977d8cb49](this=0x36908c7f8d91 <Object map = 0x2f11d374ce41>,0x394002ce4641 <Object map = 0x2f11d377c781>,0x122e3b8025b1 <undefined>)
+    2: arguments adaptor frame: 1->2
+    3: typeToString(aka typeToString) [0x386ca9e8b661] [../../../built/local/tsc.js...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x34e168fcfc5d]
+    0: ExitFrame [pc: 0x2c697744fc5d]
 <--- JS stacktrace --->
 
-[10415:0x2db87d0]    46030 ms: Mark-sweep 1347.3 (1446.9) -> 1333.6 (1447.9) MB, 1272.2 / 0.0 ms  (average mu = 0.174, current mu = 0.145) allocation failure scavenge might not succeed
+[10560:0x30387d0]    51242 ms: Mark-sweep 1359.9 (1446.9) -> 1347.8 (1448.4) MB, 1250.9 / 0.0 ms  (average mu = 0.237, current mu = 0.231) allocation failure scavenge might not succeed
 
 
-[10415:0x2db87d0]    44543 ms: Mark-sweep 1345.7 (1444.9) -> 1331.5 (1445.9) MB, 1280.5 / 0.0 ms  (average mu = 0.202, current mu = 0.159) allocation failure scavenge might not succeed
+[10560:0x30387d0]    49616 ms: Mark-sweep 1358.6 (1444.9) -> 1344.7 (1446.9) MB, 1296.3 / 0.0 ms  (average mu = 0.243, current mu = 0.182) allocation failure scavenge might not succeed
 <--- Last few GCs --->
 
 
@@ -22,7 +23,7 @@ Security context: 0x04b278f1d9f1 <JSObject>
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 
-Writing Node.js report to file: report.20210409.221154.10415.0.001.json
+Writing Node.js report to file: report.20210409.222847.10560.0.001.json
 Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
@@ -35,5 +36,5 @@ Node.js report completed
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
 10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
 11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x34e168fcfc5d 
+12: 0x2c697744fc5d 
 Aborted (core dumped)
