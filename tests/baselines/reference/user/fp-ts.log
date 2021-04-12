@@ -1,20 +1,21 @@
 Exit Code: 134
 Standard output:
-Security context: 0x001b9879d9f1 <JSObject>
-    2: getTypeWithThisArgument(aka getTypeWithThisArgument) [0x2f97bc0d2a9] [../../../built/local/tsc.js:53727] [bytecode=0x99cbc4d1909 offset=127](this=0x28ef011025b1 <undefined>,0x01fe29672a61 <Type map = 0x3c615b339161>,0x28ef011025b1 <undefined>,0x28ef011025b1 <undefined>)
-    3: arguments adaptor frame: 1...
+Security context: 0x3ee0c219d9f1 <JSObject>
+    2: inferTypes(aka inferTypes) [0x30f124ff5c31] [../../../built/local/tsc.js:~63597] [pc=0x3e179701778c](this=0x3ef8f28025b1 <undefined>,0x2b0924592b19 <JSArray[15]>,0x037cba30efd1 <Type map = 0x36ae0b129671>,0x052e5c1ad021 <Type map = 0x36ae0b107cf1>,0x3ef8f28025b1 <undefined>,0x3ef8f28025b1 <undefined>)
+ ...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x2d3106f4fc5d]
-    1: StubFrame [pc: 0x2d3106f8afdc]
+    0: ExitFrame [pc: 0x3e179624fc5d]
+    1: StubFrame [pc: 0x3e179620a576]
 <--- JS stacktrace --->
 
-[10899:0x39907d0]    55173 ms: Mark-sweep 1350.4 (1424.9) -> 1349.7 (1424.9) MB, 1435.6 / 0.0 ms  (average mu = 0.124, current mu = 0.046) allocation failure scavenge might not succeed
+[10496:0x34957d0]    51360 ms: Scavenge 1345.6 (1424.4) -> 1344.8 (1424.9) MB, 4.2 / 0.0 ms  (average mu = 0.110, current mu = 0.069) allocation failure 
 
 
-[10899:0x39907d0]    53719 ms: Scavenge 1350.2 (1424.4) -> 1349.6 (1424.9) MB, 4.1 / 0.0 ms  (average mu = 0.197, current mu = 0.147) allocation failure 
+[10496:0x34957d0]    51351 ms: Scavenge 1345.5 (1424.4) -> 1344.7 (1424.4) MB, 4.1 / 0.0 ms  (average mu = 0.110, current mu = 0.069) allocation failure 
+[10496:0x34957d0]    51331 ms: Scavenge 1345.4 (1423.9) -> 1344.6 (1424.4) MB, 4.8 / 0.0 ms  (average mu = 0.110, current mu = 0.069) allocation failure 
 <--- Last few GCs --->
 
 
@@ -23,7 +24,7 @@ Security context: 0x001b9879d9f1 <JSObject>
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 
-Writing Node.js report to file: report.20210412.174203.10899.0.001.json
+Writing Node.js report to file: report.20210412.214242.10496.0.001.json
 Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
@@ -36,5 +37,5 @@ Node.js report completed
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
 10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
 11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x2d3106f4fc5d 
+12: 0x3e179624fc5d 
 Aborted (core dumped)
