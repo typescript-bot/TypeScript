@@ -38,7 +38,7 @@ lib/dedupe.js(14,14): error TS2699: Static property 'name' conflicts with built-
 lib/dedupe.js(25,10): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/deprecate.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Deprecate'.
 lib/diff.js(20,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Diff'.
-lib/dist-tag.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'DistTag'.
+lib/dist-tag.js(22,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'DistTag'.
 lib/docs.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Docs'.
 lib/doctor.js(41,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Doctor'.
 lib/doctor.js(80,19): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[]'.
@@ -163,7 +163,7 @@ lib/owner.js(150,37): error TS2339: Property 'error' does not exist on type 'str
 lib/owner.js(160,5): error TS2322: Type '{ name: any; email: any; }' is not assignable to type 'string'.
 lib/owner.js(160,19): error TS2339: Property 'name' does not exist on type 'string'.
 lib/owner.js(160,34): error TS2339: Property 'email' does not exist on type 'string'.
-lib/pack.js(20,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Pack'.
+lib/pack.js(21,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Pack'.
 lib/ping.js(17,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Ping'.
 lib/prefix.js(10,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Prefix'.
 lib/profile.js(46,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Profile'.
