@@ -1,19 +1,20 @@
 Exit Code: 134
 Standard output:
-Security context: 0x2ad3c6b1d9f1 <JSObject>
-    1: getFlowTypeOfReference(aka getFlowTypeOfReference) [0xb94132396c1] [../../../built/local/tsc.js:~65371] [pc=0x1a406aa1351a](this=0x29707c6025b1 <undefined>,0x389c8f084819 <Identifier map = 0x16c38588dd31>,0x1b017f8c4d69 <Type map = 0x2bc66bda9531>,0x1b017f8c4d69 <Type map = 0x2bc66bda9531>,0x1b62b96c14b1 <Node map = 0x2bc66bdfa021>,0x29707c...
+Security context: 0x15337eb9d9f1 <JSObject>
+    0: builtin exit frame: splice(this=0x169971525af1 <JSArray[0]>,0x2c182c4c8351 <Type map = 0x25c23f8826b1>,0,0,0x169971525af1 <JSArray[0]>)
+
+    1: getUnionType(aka getUnionType) [0x2375535c7069] [../../../built/local/tsc.js:~56885] [pc=0x3e6686fe02f1](this=0x285f0d4025b1 <undefined>,0x1699715259f9 <JSArray[2]>,1,0x285f0d4025b1 <undefined>,0x285f0d4025b1 <undefined>,0x285f0d4025b1 ...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x1a406994fc5d]
 <--- JS stacktrace --->
 
-[10112:0x2b757d0]    49310 ms: Scavenge 1337.7 (1424.4) -> 1337.0 (1424.9) MB, 6.8 / 0.0 ms  (average mu = 0.191, current mu = 0.122) allocation failure 
+[10497:0x3f547d0]    53896 ms: Scavenge 1347.2 (1424.4) -> 1346.6 (1424.9) MB, 12.8 / 0.0 ms  (average mu = 0.143, current mu = 0.099) allocation failure 
 
 
-[10112:0x2b757d0]    49289 ms: Scavenge 1337.6 (1424.4) -> 1336.9 (1424.4) MB, 15.1 / 0.0 ms  (average mu = 0.191, current mu = 0.122) allocation failure 
-[10112:0x2b757d0]    49253 ms: Scavenge 1337.5 (1423.9) -> 1336.7 (1424.4) MB, 25.5 / 0.0 ms  (average mu = 0.191, current mu = 0.122) allocation failure 
+[10497:0x3f547d0]    53822 ms: Scavenge 1347.0 (1423.9) -> 1346.4 (1424.4) MB, 9.2 / 0.0 ms  (average mu = 0.143, current mu = 0.099) allocation failure 
+[10497:0x3f547d0]    53765 ms: Mark-sweep 1346.9 (1424.9) -> 1346.2 (1423.9) MB, 1488.7 / 0.0 ms  (average mu = 0.143, current mu = 0.099) allocation failure scavenge might not succeed
 <--- Last few GCs --->
 
 
@@ -21,9 +22,6 @@ Security context: 0x2ad3c6b1d9f1 <JSObject>
 
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
-
-Writing Node.js report to file: report.20210414.203251.10112.0.001.json
-Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
  3: 0xb3dbde v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
@@ -33,7 +31,11 @@ Node.js report completed
  7: 0xf49678 v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]
  8: 0xf4a18b v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
-10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
-11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x1a406994fc5d 
+10: 0xf16df6 v8::internal::Factory::AllocateRawArray(int, v8::internal::PretenureFlag) [node]
+11: 0xf177ba v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag) [node]
+12: 0xf17e87 v8::internal::Factory::NewUninitializedFixedArray(int, v8::internal::PretenureFlag) [node]
+13: 0xecd3eb  [node]
+14: 0xbcc0ae  [node]
+15: 0xbcce96 v8::internal::Builtin_ArraySplice(int, v8::internal::Object**, v8::internal::Isolate*) [node]
+16: 0x3e668614fdbd 
 Aborted (core dumped)
