@@ -149,8 +149,6 @@ lib/npm.js(209,18): error TS2769: No overload matches this call.
 lib/npm.js(212,18): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '"timeEnd"' is not assignable to parameter of type 'Signals'.
-lib/npm.js(300,44): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
-  Type 'undefined' is not assignable to type 'string'.
 lib/org.js(12,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Org'.
 lib/outdated.js(22,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Outdated'.
 lib/outdated.js(119,7): error TS2532: Object is possibly 'undefined'.
