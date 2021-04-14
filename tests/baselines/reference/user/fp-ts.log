@@ -1,20 +1,19 @@
 Exit Code: 134
 Standard output:
-Security context: 0x3dea4659d9f1 <JSObject>
-    2: replace [0x3dea4658f591](this=0x03d0e4277831 <String[2]: 24>,0x03d0e4277891 <JSRegExp <String[4]: -\d+>>,0x03d0e42778c9 <JSFunction (sfi = 0x2a90a2730f99)>)
-    3: recursiveTypeRelatedTo(aka recursiveTypeRelatedTo) [0x3d0e4276bd9] [../../../built/local/tsc.js:~60789] [pc=0x1d8e6d0052c9](this=0x026cc8702...
+Security context: 0x2ad3c6b1d9f1 <JSObject>
+    1: getFlowTypeOfReference(aka getFlowTypeOfReference) [0xb94132396c1] [../../../built/local/tsc.js:~65371] [pc=0x1a406aa1351a](this=0x29707c6025b1 <undefined>,0x389c8f084819 <Identifier map = 0x16c38588dd31>,0x1b017f8c4d69 <Type map = 0x2bc66bda9531>,0x1b017f8c4d69 <Type map = 0x2bc66bda9531>,0x1b62b96c14b1 <Node map = 0x2bc66bdfa021>,0x29707c...
 
 
 ==== JS stack trace =========================================
 
-    0: ExitFrame [pc: 0x1d8e6bdcfc5d]
-    1: StubFrame [pc: 0x1d8e6bdc6db0]
+    0: ExitFrame [pc: 0x1a406994fc5d]
 <--- JS stacktrace --->
 
-[10593:0x40cb7d0]    46251 ms: Mark-sweep 1351.3 (1446.4) -> 1338.0 (1447.9) MB, 1143.3 / 0.0 ms  (average mu = 0.207, current mu = 0.203) allocation failure scavenge might not succeed
+[10112:0x2b757d0]    49310 ms: Scavenge 1337.7 (1424.4) -> 1337.0 (1424.9) MB, 6.8 / 0.0 ms  (average mu = 0.191, current mu = 0.122) allocation failure 
 
 
-[10593:0x40cb7d0]    44816 ms: Mark-sweep 1350.1 (1444.9) -> 1336.4 (1445.9) MB, 1217.8 / 0.0 ms  (average mu = 0.211, current mu = 0.155) allocation failure scavenge might not succeed
+[10112:0x2b757d0]    49289 ms: Scavenge 1337.6 (1424.4) -> 1336.9 (1424.4) MB, 15.1 / 0.0 ms  (average mu = 0.191, current mu = 0.122) allocation failure 
+[10112:0x2b757d0]    49253 ms: Scavenge 1337.5 (1423.9) -> 1336.7 (1424.4) MB, 25.5 / 0.0 ms  (average mu = 0.191, current mu = 0.122) allocation failure 
 <--- Last few GCs --->
 
 
@@ -23,7 +22,7 @@ Security context: 0x3dea4659d9f1 <JSObject>
 Standard error:
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 
-Writing Node.js report to file: report.20210406.144020.10593.0.001.json
+Writing Node.js report to file: report.20210414.203251.10112.0.001.json
 Node.js report completed
  1: 0x95bd00 node::Abort() [node]
  2: 0x95cc46 node::OnFatalError(char const*, char const*) [node]
@@ -36,5 +35,5 @@ Node.js report completed
  9: 0xf4cec1 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [node]
 10: 0xf170f4 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [node]
 11: 0x11cd3fe v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [node]
-12: 0x1d8e6bdcfc5d 
+12: 0x1a406994fc5d 
 Aborted (core dumped)

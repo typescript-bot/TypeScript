@@ -2,11 +2,10 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 15.13.0 (unstable)
+Node.js version is 15.14.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
 ==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 77 ]==
-"@azure-tests/perf-ai-metrics-advisor" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -67,6 +66,7 @@ Executing a maximum of ?simultaneous processes...
 "@azure/synapse-spark" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/template" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-perfstress" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-ai-metrics-advisor" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-recorder" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-internal-avro" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-multi-version" is blocked by "@azure/eslint-plugin-azure-sdk".
