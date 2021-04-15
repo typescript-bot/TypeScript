@@ -9,7 +9,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 
 Standard error:
-(node:20) [DEP0097] DeprecationWarning: Using a domain property in MakeCallback is deprecated. Use the async_context variant of MakeCallback or the AsyncResource class instead.
+(node:19) [DEP0097] DeprecationWarning: Using a domain property in MakeCallback is deprecated. Use the async_context variant of MakeCallback or the AsyncResource class instead.
 [XX:XX:XX] 'compile' errored after 
 [XX:XX:XX] Error: Found 1 errors
     at Stream.<anonymous> (/vscode/build/lib/reporter.js:91:29)

@@ -5,7 +5,9 @@ Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
 Node.js version is 15.14.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 77 ]==
+==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 79 ]==
+"@azure-rest/ai-document-translator" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-rest/core-client" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -81,9 +83,11 @@ Executing a maximum of ?simultaneous processes...
 "@azure/core-xml" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/event-processor-host" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/logger" is blocked by "@azure/eslint-plugin-azure-sdk".
-==[ @azure/dev-tool ]============================================[ 77 of 77 ]==
-==[ BLOCKED: 75 projects ]=====================================================
+==[ @azure/dev-tool ]============================================[ 79 of 79 ]==
+==[ BLOCKED: 77 projects ]=====================================================
 These projects were blocked by dependencies that failed:
+  @azure-rest/ai-document-translator
+  @azure-rest/core-client
   @azure-tests/perf-ai-form-recognizer
   @azure-tests/perf-ai-metrics-advisor
   @azure-tests/perf-ai-text-analytics
