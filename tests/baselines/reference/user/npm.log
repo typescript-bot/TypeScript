@@ -3,13 +3,13 @@ Standard output:
 lib/access.js(27,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Access'.
 lib/adduser.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'AddUser'.
 lib/audit.js(14,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Audit'.
-lib/base-command.js(15,29): error TS2339: Property 'description' does not exist on type 'Function'.
-lib/base-command.js(20,26): error TS2339: Property 'description' does not exist on type 'Function'.
-lib/base-command.js(21,43): error TS2339: Property 'description' does not exist on type 'Function'.
-lib/base-command.js(24,27): error TS2339: Property 'usage' does not exist on type 'Function'.
-lib/base-command.js(27,43): error TS2339: Property 'usage' does not exist on type 'Function'.
-lib/base-command.js(29,26): error TS2339: Property 'params' does not exist on type 'Function'.
-lib/base-command.js(31,58): error TS2339: Property 'params' does not exist on type 'Function'.
+lib/base-command.js(16,29): error TS2339: Property 'description' does not exist on type 'Function'.
+lib/base-command.js(21,26): error TS2339: Property 'description' does not exist on type 'Function'.
+lib/base-command.js(22,43): error TS2339: Property 'description' does not exist on type 'Function'.
+lib/base-command.js(25,27): error TS2339: Property 'usage' does not exist on type 'Function'.
+lib/base-command.js(28,43): error TS2339: Property 'usage' does not exist on type 'Function'.
+lib/base-command.js(30,26): error TS2339: Property 'params' does not exist on type 'Function'.
+lib/base-command.js(43,42): error TS2339: Property 'params' does not exist on type 'Function'.
 lib/bin.js(9,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Bin'.
 lib/bugs.js(12,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Bugs'.
 lib/cache.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Cache'.
@@ -38,7 +38,7 @@ lib/dedupe.js(14,14): error TS2699: Static property 'name' conflicts with built-
 lib/dedupe.js(25,10): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/deprecate.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Deprecate'.
 lib/diff.js(20,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Diff'.
-lib/dist-tag.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'DistTag'.
+lib/dist-tag.js(22,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'DistTag'.
 lib/docs.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Docs'.
 lib/doctor.js(41,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Doctor'.
 lib/doctor.js(80,19): error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | any[]'.
@@ -163,7 +163,7 @@ lib/owner.js(150,37): error TS2339: Property 'error' does not exist on type 'str
 lib/owner.js(160,5): error TS2322: Type '{ name: any; email: any; }' is not assignable to type 'string'.
 lib/owner.js(160,19): error TS2339: Property 'name' does not exist on type 'string'.
 lib/owner.js(160,34): error TS2339: Property 'email' does not exist on type 'string'.
-lib/pack.js(20,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Pack'.
+lib/pack.js(21,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Pack'.
 lib/ping.js(17,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Ping'.
 lib/prefix.js(10,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Prefix'.
 lib/profile.js(46,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Profile'.
@@ -256,7 +256,7 @@ lib/utils/usage.js(8,21): error TS2769: No overload matches this call.
     Argument of type 'string' is not assignable to parameter of type 'ConcatArray<never>'.
   Overload 2 of 2, '(...items: ConcatArray<never>[]): never[]', gave the following error.
     Argument of type 'string' is not assignable to parameter of type 'ConcatArray<never>'.
-lib/version.js(10,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Version'.
+lib/version.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Version'.
 lib/view.js(38,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'View'.
 lib/view.js(215,10): error TS2339: Property 'statusCode' does not exist on type 'Error'.
 lib/view.js(216,10): error TS2339: Property 'code' does not exist on type 'Error'.
