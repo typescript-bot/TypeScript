@@ -2,11 +2,12 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 15.13.0 (unstable)
+Node.js version is 15.14.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 77 ]==
-"@azure-tests/perf-ai-metrics-advisor" is blocked by "@azure/eslint-plugin-azure-sdk".
+==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 79 ]==
+"@azure-rest/ai-document-translator" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-rest/core-client" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-ai-text-analytics" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -67,12 +68,13 @@ Executing a maximum of ?simultaneous processes...
 "@azure/synapse-spark" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/template" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-perfstress" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-ai-metrics-advisor" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-recorder" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-internal-avro" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-multi-version" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-rest-pipeline" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/core-tracing" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/cosmos" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/core-tracing" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-crypto" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/mock-hub" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-asynciterator-polyfill" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -81,9 +83,11 @@ Executing a maximum of ?simultaneous processes...
 "@azure/core-xml" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/event-processor-host" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/logger" is blocked by "@azure/eslint-plugin-azure-sdk".
-==[ @azure/dev-tool ]============================================[ 77 of 77 ]==
-==[ BLOCKED: 75 projects ]=====================================================
+==[ @azure/dev-tool ]============================================[ 79 of 79 ]==
+==[ BLOCKED: 77 projects ]=====================================================
 These projects were blocked by dependencies that failed:
+  @azure-rest/ai-document-translator
+  @azure-rest/core-client
   @azure-tests/perf-ai-form-recognizer
   @azure-tests/perf-ai-metrics-advisor
   @azure-tests/perf-ai-text-analytics
@@ -162,17 +166,17 @@ These projects were blocked by dependencies that failed:
 ==[ FAILURE: 2 projects ]======================================================
 --[ FAILURE: @azure/eslint-plugin-azure-sdk ]----------------[ ? seconds ]--
 Invoking: tsc -p tsconfig.build.json && prettier --write dist/**/*.{js,json,md} 
-../../temp/node_modules/.pnpm/@typescript-eslint/experimental-utils@X.X.X_eslint@X.X.X+typescript@X.X.X/node_modules/@typescript-eslint/experimental-utils/_ts3.4/dist/ast-utils/eslint-utils/astUtilities.d.ts:22:136 - error TS2307: Cannot find module '@typescript-eslint/scope-manager/dist/scope/Scope'.
-22 declare const getPropertyName: (node: TSESTree.MemberExpression | TSESTree.Property | TSESTree.MethodDefinition, initialScope?: import("@typescript-eslint/scope-manager/dist/scope/Scope").Scope | undefined) => string | null;
-                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../temp/node_modules/.pnpm/@typescript-eslint/experimental-utils@X.X.X_eslint@X.X.X+typescript@X.X.X/node_modules/@typescript-eslint/experimental-utils/_ts3.4/dist/ast-utils/eslint-utils/astUtilities.d.ts:34:75 - error TS2307: Cannot find module '@typescript-eslint/scope-manager/dist/scope/Scope'.
-34 declare const getStaticValue: (node: TSESTree.Node, initialScope?: import("@typescript-eslint/scope-manager/dist/scope/Scope").Scope | undefined) => {
-  ...35 lines omitted...
-                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-src/rules/ts-use-interface-parameters.ts:13:8 - error TS2307: Cannot find module '@typescript-eslint/typescript-estree/dist/parser-options'.
-13 } from "@typescript-eslint/typescript-estree/dist/parser-options";
-          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Found 10 errors.
+src/rules/ts-package-json-name.ts:66:48 - error TS1109: Expression expected.
+66               const subScopeSuffix = subScope ?? "";
+                                                  ~
+src/rules/ts-package-json-name.ts:66:52 - error TS1005: ':' expected.
+66               const subScopeSuffix = subScope ?? "";
+  ...5 lines omitted...
+                                                                     ~
+src/rules/ts-package-json-name.ts:93:71 - error TS1005: ':' expected.
+93   const [_, subScope] = packageName.match(/^@azure(-[a-z]+)?\//) ?? [];
+                                                                         ~
+Found 4 errors.
 --[ FAILURE: @azure/dev-tool ]-------------------------------[ ? seconds ]--
 Invoking: tsc 
 src/commands/about.ts(39,44): error TS1109: Expression expected.
