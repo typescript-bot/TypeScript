@@ -5,7 +5,7 @@ Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
 Node.js version is 15.14.0 (unstable)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
-==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 79 ]==
+==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 81 ]==
 "@azure-rest/ai-document-translator" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-rest/core-client" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/abort-controller" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -72,6 +72,8 @@ Executing a maximum of ?simultaneous processes...
 "@azure/test-utils-recorder" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-internal-avro" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-multi-version" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/web-pubsub" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/web-pubsub-express" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-rest-pipeline" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/cosmos" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-tracing" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -83,8 +85,8 @@ Executing a maximum of ?simultaneous processes...
 "@azure/core-xml" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/event-processor-host" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/logger" is blocked by "@azure/eslint-plugin-azure-sdk".
-==[ @azure/dev-tool ]============================================[ 79 of 79 ]==
-==[ BLOCKED: 77 projects ]=====================================================
+==[ @azure/dev-tool ]============================================[ 81 of 81 ]==
+==[ BLOCKED: 79 projects ]=====================================================
 These projects were blocked by dependencies that failed:
   @azure-rest/ai-document-translator
   @azure-rest/core-client
@@ -163,6 +165,8 @@ These projects were blocked by dependencies that failed:
   @azure/test-utils-multi-version
   @azure/test-utils-perfstress
   @azure/test-utils-recorder
+  @azure/web-pubsub
+  @azure/web-pubsub-express
 ==[ FAILURE: 2 projects ]======================================================
 --[ FAILURE: @azure/eslint-plugin-azure-sdk ]----------------[ ? seconds ]--
 Invoking: tsc -p tsconfig.build.json && prettier --write dist/**/*.{js,json,md} 
