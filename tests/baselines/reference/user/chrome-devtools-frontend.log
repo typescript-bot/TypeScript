@@ -2141,7 +2141,11 @@ node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighth
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(51984,6): error TS2339: Property '_lastSelectedNode' does not exist on type 'TimelineTreeView'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(51987,1): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52034,11): error TS2304: Cannot find name 'WebInspector'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52066,10): error TS2339: Property 'children' does not exist on type 'never'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52070,23): error TS2339: Property 'children' does not exist on type 'never'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52074,23): error TS2339: Property 'children' does not exist on type 'never'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52076,18): error TS2304: Cannot find name 'WebInspector'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52076,72): error TS2339: Property 'totalTime' does not exist on type 'never'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52097,8): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52105,31): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(52106,32): error TS2304: Cannot find name 'WebInspector'.
@@ -3042,6 +3046,7 @@ node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighth
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58187,1): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58231,13): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58278,16): error TS2304: Cannot find name 'WebInspector'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58296,43): error TS2339: Property 'peekLast' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58309,20): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58322,34): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58343,17): error TS2304: Cannot find name 'WebInspector'.
@@ -3066,6 +3071,7 @@ node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighth
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58426,88): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58434,17): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58451,4): error TS2304: Cannot find name 'WebInspector'.
+node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58462,33): error TS2339: Property 'mergeOrdered' does not exist on type 'any[]'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58462,60): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58476,18): error TS2304: Cannot find name 'WebInspector'.
 node_modules/chrome-devtools-frontend/front_end/audits2_worker/lighthouse/lighthouse-background.js(58491,25): error TS2339: Property 'peekLast' does not exist on type 'any[]'.
@@ -13179,15 +13185,15 @@ node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(513,25): error TS23
 node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(593,55): error TS2339: Property 'removeChildren' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(669,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(693,51): error TS2339: Property 'deepActiveElement' does not exist on type 'Document'.
-node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(713,1): error TS2322: Type '<T extends Node>(child: Node) => Node' is not assignable to type '<T extends Node>(newChild: T) => T'.
+node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(713,1): error TS2322: Type '(child: Node) => Node' is not assignable to type '<T extends Node>(newChild: T) => T'.
   Type 'Node' is not assignable to type 'T'.
     'Node' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Node'.
 node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(715,14): error TS2339: Property '__widget' does not exist on type 'Node'.
-node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(726,1): error TS2322: Type '<T extends Node>(child: Node, anchor: Node) => Node' is not assignable to type '<T extends Node>(newChild: T, refChild: Node) => T'.
+node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(726,1): error TS2322: Type '(child: Node, anchor: Node) => Node' is not assignable to type '<T extends Node>(newChild: T, refChild: Node) => T'.
   Type 'Node' is not assignable to type 'T'.
     'Node' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Node'.
 node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(728,14): error TS2339: Property '__widget' does not exist on type 'Node'.
-node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(738,1): error TS2322: Type '<T extends Node>(child: Node) => Node' is not assignable to type '<T extends Node>(oldChild: T) => T'.
+node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(738,1): error TS2322: Type '(child: Node) => Node' is not assignable to type '<T extends Node>(oldChild: T) => T'.
   Type 'Node' is not assignable to type 'T'.
     'Node' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'Node'.
 node_modules/chrome-devtools-frontend/front_end/ui/Widget.js(740,14): error TS2339: Property '__widgetCounter' does not exist on type 'Node'.
