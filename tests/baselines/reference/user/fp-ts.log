@@ -1,0 +1,396 @@
+Exit Code: 2
+Standard output:
+src/Applicative.ts(95,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Applicative.ts(243,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(113,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(154,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(183,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(212,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(276,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(341,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Apply.ts(455,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Array.ts(1215,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: A[], f: (a: A) => HKT<F, B>) => HKT<F, B[]>' is not assignable to type 'Traverse1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1222,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: A[], f: (i: number, a: A) => HKT<F, B>) => HKT<F, B[]>' is not assignable to type 'TraverseWithIndex1<"Array", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1229,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: A[], f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, B[]>' is not assignable to type 'Wither1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1236,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(fa: A[], f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<B[], C[]>>' is not assignable to type 'Wilt1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1508,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (ta: A[]) => HKT<F, B[]>' is not assignable to type 'PipeableTraverse1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1519,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(ta: HKT<F, A>[]) => HKT<F, A[]>' is not assignable to type 'Sequence1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1534,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (i: number, a: A) => HKT<F, B>) => (ta: A[]) => HKT<F, B[]>' is not assignable to type 'PipeableTraverseWithIndex1<"Array", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1548,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, O.Option<B>>) => (fa: A[]) => HKT<F, B[]>' is not assignable to type 'PipeableWither1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Array.ts(1559,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(f: (a: A) => HKT<F, Either<B, C>>) => (fa: A[]) => HKT<F, Separated<B[], C[]>>' is not assignable to type 'PipeableWilt1<"Array">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Chain.ts(84,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Chain.ts(114,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Choice.ts(93,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Choice.ts(141,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Choice.ts(179,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Choice.ts(202,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Compactable.ts(131,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Compactable.ts(157,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Compactable.ts(317,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Either.ts(754,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => <E>(ta: Either<E, A>) => HKT<F, Either<E, B>>' is not assignable to type 'PipeableTraverse2<"Either">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Either.ts(779,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <E, A>(ma: Either<E, HKT<F, A>>) => HKT<F, Either<E, A>>' is not assignable to type 'Sequence2<"Either">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Either.ts(961,5): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <E, A, B>(ta: Either<E, A>, f: (a: A) => HKT<F, B>) => HKT<F, Either<E, B>>' is not assignable to type 'Traverse2C<"Either", E>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Either.ts(966,5): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ma: Either<E, A>, f: (a: A) => HKT<F, Option<B>>) => HKT<F, Either<E, B>>' is not assignable to type 'Wither2C<"Either", E>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Either.ts(967,5): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(ma: Either<E, A>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Either<E, B>, Either<...>>>' is not assignable to type 'Wilt2C<"Either", E>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Either.ts(1153,3): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <E, A, B>(ta: Either<E, A>, f: (a: A) => HKT<F, B>) => HKT<F, Either<E, B>>' is not assignable to type 'Traverse2<"Either">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Either.ts(1440,3): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <E, A, B>(ta: Either<E, A>, f: (a: A) => HKT<F, B>) => HKT<F, Either<E, B>>' is not assignable to type 'Traverse2<"Either">'.
+src/Either.ts(1526,5): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <E, A, B>(ta: Either<E, A>, f: (a: A) => HKT<F, B>) => HKT<F, Either<E, B>>' is not assignable to type 'Traverse2<"Either">'.
+src/EitherT.ts(52,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(73,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(98,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(121,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(156,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(189,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(222,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(255,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(282,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(337,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(367,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(406,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(437,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(476,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(497,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/EitherT.ts(614,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Filterable.ts(288,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Filterable.ts(317,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Filterable.ts(346,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Filterable.ts(387,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Filterable.ts(630,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(103,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(124,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(149,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(184,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(229,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(261,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(296,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(337,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Foldable.ts(473,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FoldableWithIndex.ts(119,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FoldableWithIndex.ts(141,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FoldableWithIndex.ts(166,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FoldableWithIndex.ts(305,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromEither.ts(221,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromEither.ts(286,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromEither.ts(340,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromIO.ts(119,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromIO.ts(155,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromTask.ts(111,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FromTask.ts(153,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Functor.ts(96,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Functor.ts(119,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Functor.ts(141,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Functor.ts(284,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FunctorWithIndex.ts(105,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/FunctorWithIndex.ts(209,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Identity.ts(146,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (ta: A) => HKT<F, B>' is not assignable to type 'PipeableTraverse1<"Identity">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Identity.ts(153,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(ta: HKT<F, A>) => HKT<F, A>' is not assignable to type 'Sequence1<"Identity">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Identity.ts(340,3): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: A, f: (a: A) => HKT<F, B>) => HKT<F, B>' is not assignable to type 'Traverse1<"Identity">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Identity.ts(433,3): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: A, f: (a: A) => HKT<F, B>) => HKT<F, B>' is not assignable to type 'Traverse1<"Identity">'.
+src/Map.ts(337,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Map.ts(644,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(wa: Map<K, A>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Map<K, B>, Map<K, C>>>' is not assignable to type 'Wilt2C<"Map", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Map.ts(650,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(wa: Map<K, A>, f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, Map<K, B>>' is not assignable to type 'Wither2C<"Map", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Map.ts(757,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Map<K, A>, f: (a: A) => HKT<F, B>) => HKT<F, Map<K, B>>' is not assignable to type 'Traverse2C<"Map", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Map.ts(758,5): error TS2322: Type '<F>(F: Applicative<F>) => <A>(ta: Map<K, HKT<F, A>>) => HKT<F, Map<K, A>>' is not assignable to type 'Sequence2C<"Map", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Map.ts(759,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Map<K, A>, f: (k: K, a: A) => HKT<F, B>) => HKT<F, Map<K, B>>' is not assignable to type 'TraverseWithIndex2C<"Map", K, K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/NonEmptyArray.ts(540,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: NonEmptyArray<A>, f: (a: A) => HKT<F, B>) => HKT<F, NonEmptyArray<B>>' is not assignable to type 'Traverse1<"NonEmptyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/NonEmptyArray.ts(560,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: NonEmptyArray<A>, f: (i: number, a: A) => HKT<F, B>) => HKT<F, NonEmptyArray<B>>' is not assignable to type 'TraverseWithIndex1<"NonEmptyArray", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/NonEmptyArray.ts(691,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (as: NonEmptyArray<A>) => HKT<F, NonEmptyArray<B>>' is not assignable to type 'PipeableTraverse1<"NonEmptyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/NonEmptyArray.ts(701,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(as: NonEmptyArray<HKT<F, A>>) => HKT<F, NonEmptyArray<A>>' is not assignable to type 'Sequence1<"NonEmptyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/NonEmptyArray.ts(708,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (i: number, a: A) => HKT<F, B>) => (as: NonEmptyArray<A>) => HKT<F, NonEmptyArray<B>>' is not assignable to type 'PipeableTraverseWithIndex1<"NonEmptyArray", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Option.ts(481,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: Option<A>, f: (a: A) => HKT<F, B>) => HKT<F, Option<B>>' is not assignable to type 'Traverse1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+      Types of property 'ap' are incompatible.
+        Type '<S, R, E, A, B>(fab: Kind4<any, S, R, E, (a: A) => B>, fa: Kind4<any, S, R, E, A>) => Kind4<any, S, R, E, B>' is not assignable to type '<A, B>(fab: HKT<any, (a: A) => B>, fa: HKT<any, A>) => HKT<any, B>'.
+          Types of parameters 'fab' and 'fab' are incompatible.
+            Type 'HKT<any, (a: A) => B>' is not assignable to type 'Kind4<any, unknown, unknown, unknown, (a: unknown) => unknown>'.
+src/Option.ts(500,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(fa: Option<A>, f: (a: A) => HKT<F, Option<B>>) => HKT<F, Option<B>>' is not assignable to type 'Wither1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+      Types of property 'ap' are incompatible.
+        Type '<R, E, A, B>(fab: Kind3<any, R, E, (a: A) => B>, fa: Kind3<any, R, E, A>) => Kind3<any, R, E, B>' is not assignable to type '<A, B>(fab: HKT<any, (a: A) => B>, fa: HKT<any, A>) => HKT<any, B>'.
+          Types of parameters 'fab' and 'fab' are incompatible.
+            Type 'HKT<any, (a: A) => B>' is not assignable to type 'Kind3<any, unknown, unknown, (a: unknown) => unknown>'.
+src/Option.ts(507,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(fa: Option<A>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Option<B>, Option<C>>>' is not assignable to type 'Wilt1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Option.ts(710,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (ta: Option<A>) => HKT<F, Option<B>>' is not assignable to type 'PipeableTraverse1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Option.ts(718,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(ta: Option<HKT<F, A>>) => HKT<F, Option<A>>' is not assignable to type 'Sequence1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Option.ts(726,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, Option<B>>) => (fa: Option<A>) => HKT<F, Option<B>>' is not assignable to type 'PipeableWither1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Option.ts(734,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(f: (a: A) => HKT<F, Either<B, C>>) => (fa: Option<A>) => HKT<F, Separated<Option<B>, Option<C>>>' is not assignable to type 'PipeableWilt1<"Option">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/OptionT.ts(57,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(140,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(210,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(321,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(351,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(396,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(426,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(452,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(486,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(523,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/OptionT.ts(644,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReaderT.ts(30,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReaderT.ts(56,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReaderT.ts(96,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReaderT.ts(284,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyArray.ts(1295,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: readonly A[], f: (a: A) => HKT<F, B>) => HKT<F, readonly B[]>' is not assignable to type 'Traverse1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1302,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: readonly A[], f: (i: number, a: A) => HKT<F, B>) => HKT<F, readonly B[]>' is not assignable to type 'TraverseWithIndex1<"ReadonlyArray", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1309,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: readonly A[], f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, readonly B[]>' is not assignable to type 'Wither1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1316,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(fa: readonly A[], f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<readonly B[], readonly C[]>>' is not assignable to type 'Wilt1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1621,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (ta: readonly A[]) => HKT<F, readonly B[]>' is not assignable to type 'PipeableTraverse1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1632,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(ta: readonly HKT<F, A>[]) => HKT<F, readonly A[]>' is not assignable to type 'Sequence1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1647,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (i: number, a: A) => HKT<F, B>) => (ta: readonly A[]) => HKT<F, readonly B[]>' is not assignable to type 'PipeableTraverseWithIndex1<"ReadonlyArray", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1661,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, O.Option<B>>) => (fa: readonly A[]) => HKT<F, readonly B[]>' is not assignable to type 'PipeableWither1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyArray.ts(1672,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B, C>(f: (a: A) => HKT<F, Either<B, C>>) => (fa: readonly A[]) => HKT<F, Separated<readonly B[], readonly C[]>>' is not assignable to type 'PipeableWilt1<"ReadonlyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyMap.ts(464,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyMap.ts(953,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: ReadonlyMap<K, A>, f: (a: A) => HKT<F, B>) => HKT<F, ReadonlyMap<K, B>>' is not assignable to type 'Traverse2C<"ReadonlyMap", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyMap.ts(954,5): error TS2322: Type '<F>(F: Applicative<F>) => <A>(ta: ReadonlyMap<K, HKT<F, A>>) => HKT<F, ReadonlyMap<K, A>>' is not assignable to type 'Sequence2C<"ReadonlyMap", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyMap.ts(955,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: ReadonlyMap<K, A>, f: (k: K, a: A) => HKT<F, B>) => HKT<F, ReadonlyMap<K, B>>' is not assignable to type 'TraverseWithIndex2C<"ReadonlyMap", K, K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyMap.ts(985,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(wa: ReadonlyMap<K, A>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<ReadonlyMap<K, B>, ReadonlyMap<...>>>' is not assignable to type 'Wilt2C<"ReadonlyMap", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyMap.ts(994,5): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(wa: ReadonlyMap<K, A>, f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, ReadonlyMap<K, B>>' is not assignable to type 'Wither2C<"ReadonlyMap", K>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyNonEmptyArray.ts(542,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: ReadonlyNonEmptyArray<A>, f: (a: A) => HKT<F, B>) => HKT<F, ReadonlyNonEmptyArray<B>>' is not assignable to type 'Traverse1<"ReadonlyNonEmptyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyNonEmptyArray.ts(562,7): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: ReadonlyNonEmptyArray<A>, f: (i: number, a: A) => HKT<F, B>) => HKT<F, ReadonlyNonEmptyArray<B>>' is not assignable to type 'TraverseWithIndex1<"ReadonlyNonEmptyArray", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyNonEmptyArray.ts(730,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (as: ReadonlyNonEmptyArray<A>) => HKT<F, ReadonlyNonEmptyArray<B>>' is not assignable to type 'PipeableTraverse1<"ReadonlyNonEmptyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyNonEmptyArray.ts(741,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(as: ReadonlyNonEmptyArray<HKT<F, A>>) => HKT<F, ReadonlyNonEmptyArray<A>>' is not assignable to type 'Sequence1<"ReadonlyNonEmptyArray">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyNonEmptyArray.ts(749,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (i: number, a: A) => HKT<F, B>) => (as: ReadonlyNonEmptyArray<A>) => HKT<F, ReadonlyNonEmptyArray<B>>' is not assignable to type 'PipeableTraverseWithIndex1<"ReadonlyNonEmptyArray", number>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(401,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyRecord.ts(454,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyRecord.ts(490,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyRecord.ts(518,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(f: (a: A) => HKT<F, O.Option<B>>) => (fa: Readonly<Record<string, A>>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'PipeableWither1<"ReadonlyRecord">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(529,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(f: (a: A) => HKT<F, Either<B, C>>) => (fa: Readonly<Record<string, A>>) => HKT<F, Separated<Readonly<Record<string, B>>, Readonly<...>>>' is not assignable to type 'PipeableWilt1<"ReadonlyRecord">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(655,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyRecord.ts(714,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/ReadonlyRecord.ts(1181,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Readonly<Record<string, A>>, f: (a: A) => HKT<F, B>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'Traverse1<"ReadonlyRecord">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(1199,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Readonly<Record<string, A>>, f: (a: A) => HKT<F, B>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'Traverse1<"ReadonlyRecord">'.
+src/ReadonlyRecord.ts(1201,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Readonly<Record<string, A>>, f: (k: string, a: A) => HKT<F, B>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'TraverseWithIndex1<"ReadonlyRecord", string>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(1214,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Readonly<Record<string, A>>, f: (a: A) => HKT<F, B>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'Traverse1<"ReadonlyRecord">'.
+src/ReadonlyRecord.ts(1222,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(fa: Readonly<Record<string, A>>, f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'Wither1<"ReadonlyRecord">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(1223,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(fa: Readonly<Record<string, A>>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Readonly<Record<string, B>>, Readonly<...>>>' is not assignable to type 'Wilt1<"ReadonlyRecord">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyRecord.ts(1270,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Readonly<Record<string, A>>, f: (a: A) => HKT<F, B>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'Traverse1<"ReadonlyRecord">'.
+src/ReadonlyRecord.ts(1286,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Readonly<Record<string, A>>, f: (k: string, a: A) => HKT<F, B>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'TraverseWithIndex1<"ReadonlyRecord", string>'.
+src/ReadonlyRecord.ts(1287,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(fa: Readonly<Record<string, A>>, f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, Readonly<Record<string, B>>>' is not assignable to type 'Wither1<"ReadonlyRecord">'.
+src/ReadonlyRecord.ts(1288,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(fa: Readonly<Record<string, A>>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Readonly<Record<string, B>>, Readonly<...>>>' is not assignable to type 'Wilt1<"ReadonlyRecord">'.
+src/ReadonlyTuple.ts(272,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(f: (a: A) => HKT<F, B>) => <E>(as: readonly [A, E]) => HKT<F, readonly [B, E]>' is not assignable to type 'PipeableTraverse2<"ReadonlyTuple">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyTuple.ts(281,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, E>(fas: readonly [HKT<F, A>, E]) => HKT<F, readonly [A, E]>' is not assignable to type 'Sequence2<"ReadonlyTuple">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyTuple.ts(379,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, S, B>(ta: readonly [A, S], f: (a: A) => HKT<F, B>) => HKT<F, readonly [B, S]>' is not assignable to type 'Traverse2<"ReadonlyTuple">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/ReadonlyTuple.ts(425,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, S, B>(ta: readonly [A, S], f: (a: A) => HKT<F, B>) => HKT<F, readonly [B, S]>' is not assignable to type 'Traverse2<"ReadonlyTuple">'.
+src/Record.ts(243,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Record.ts(274,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Record.ts(301,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Record.ts(325,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(f: (a: A) => HKT<F, O.Option<B>>) => (fa: Record<string, A>) => HKT<F, Record<string, B>>' is not assignable to type 'PipeableWither1<"Record">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Record.ts(336,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(f: (a: A) => HKT<F, Either<B, C>>) => (fa: Record<string, A>) => HKT<F, Separated<Record<string, B>, Record<...>>>' is not assignable to type 'PipeableWilt1<"Record">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Record.ts(395,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Record.ts(447,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Record.ts(803,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Record<string, A>, f: (a: A) => HKT<F, B>) => HKT<F, Record<string, B>>' is not assignable to type 'Traverse1<"Record">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Record.ts(821,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Record<string, A>, f: (a: A) => HKT<F, B>) => HKT<F, Record<string, B>>' is not assignable to type 'Traverse1<"Record">'.
+src/Record.ts(823,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Record<string, A>, f: (k: string, a: A) => HKT<F, B>) => HKT<F, Record<string, B>>' is not assignable to type 'TraverseWithIndex1<"Record", string>'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Record.ts(836,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Record<string, A>, f: (a: A) => HKT<F, B>) => HKT<F, Record<string, B>>' is not assignable to type 'Traverse1<"Record">'.
+src/Record.ts(844,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(fa: Record<string, A>, f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, Record<string, B>>' is not assignable to type 'Wither1<"Record">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Record.ts(845,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(fa: Record<string, A>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Record<string, B>, Record<...>>>' is not assignable to type 'Wilt1<"Record">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Record.ts(894,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Record<string, A>, f: (a: A) => HKT<F, B>) => HKT<F, Record<string, B>>' is not assignable to type 'Traverse1<"Record">'.
+src/Record.ts(910,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(ta: Record<string, A>, f: (k: string, a: A) => HKT<F, B>) => HKT<F, Record<string, B>>' is not assignable to type 'TraverseWithIndex1<"Record", string>'.
+src/Record.ts(911,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(fa: Record<string, A>, f: (a: A) => HKT<F, O.Option<B>>) => HKT<F, Record<string, B>>' is not assignable to type 'Wither1<"Record">'.
+src/Record.ts(912,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, B, C>(fa: Record<string, A>, f: (a: A) => HKT<F, Either<B, C>>) => HKT<F, Separated<Record<string, B>, Record<...>>>' is not assignable to type 'Wilt1<"Record">'.
+src/StateT.ts(60,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/StateT.ts(83,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/StateT.ts(110,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/StateT.ts(150,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/StateT.ts(165,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/StateT.ts(186,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/StateT.ts(335,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Store.ts(55,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Strong.ts(89,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Strong.ts(131,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Strong.ts(169,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Strong.ts(196,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/These.ts(524,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(f: (a: A) => HKT<F, B>) => <E>(ta: These<E, A>) => HKT<F, These<E, B>>' is not assignable to type 'PipeableTraverse2<"These">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/These.ts(532,14): error TS2322: Type '<F>(F: Applicative<F>) => <E, A>(ta: These<E, HKT<F, A>>) => HKT<F, These<E, A>>' is not assignable to type 'Sequence2<"These">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/These.ts(625,3): error TS2322: Type '<F>(F: Applicative<F>) => <E, A, B>(ta: These<E, A>, f: (a: A) => HKT<F, B>) => HKT<F, These<E, B>>' is not assignable to type 'Traverse2<"These">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/These.ts(706,3): error TS2322: Type '<F>(F: Applicative<F>) => <E, A, B>(ta: These<E, A>, f: (a: A) => HKT<F, B>) => HKT<F, These<E, B>>' is not assignable to type 'Traverse2<"These">'.
+src/TheseT.ts(58,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(79,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(100,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(123,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(161,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(213,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(246,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(273,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(328,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(383,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(404,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/TheseT.ts(555,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Traversable.ts(357,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Traversable.ts(387,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Traversable.ts(532,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Tree.ts(158,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Tree.ts(188,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/Tree.ts(407,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(f: (a: A) => HKT<F, B>) => (ta: Tree<A>) => HKT<F, Tree<B>>' is not assignable to type 'PipeableTraverse1<"Tree">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Tree.ts(425,14): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A>(ta: Tree<HKT<F, A>>) => HKT<F, Tree<A>>' is not assignable to type 'Sequence1<"Tree">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Tree.ts(587,3): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: Tree<A>, f: (a: A) => HKT<F, B>) => HKT<F, Tree<B>>' is not assignable to type 'Traverse1<"Tree">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Tree.ts(658,3): error TS2322: Type '<F>(F: ApplicativeHKT<F>) => <A, B>(ta: Tree<A>, f: (a: A) => HKT<F, B>) => HKT<F, Tree<B>>' is not assignable to type 'Traverse1<"Tree">'.
+src/Tuple.ts(251,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, B>(f: (a: A) => HKT<F, B>) => <E>(as: [A, E]) => HKT<F, [B, E]>' is not assignable to type 'PipeableTraverse2<"Tuple">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative3<any>' is not assignable to type 'Applicative<any>'.
+src/Tuple.ts(260,14): error TS2322: Type '<F>(F: Applicative<F>) => <A, E>(fas: [HKT<F, A>, E]) => HKT<F, [A, E]>' is not assignable to type 'Sequence2<"Tuple">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Tuple.ts(358,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, S, B>(ta: [A, S], f: (a: A) => HKT<F, B>) => HKT<F, [B, S]>' is not assignable to type 'Traverse2<"Tuple">'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Applicative4<any>' is not assignable to type 'Applicative<any>'.
+src/Tuple.ts(400,3): error TS2322: Type '<F>(F: Applicative<F>) => <A, S, B>(ta: [A, S], f: (a: A) => HKT<F, B>) => HKT<F, [B, S]>' is not assignable to type 'Traverse2<"Tuple">'.
+src/ValidationT.ts(86,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/WriterT.ts(165,17): error TS2394: This overload signature is not compatible with its implementation signature.
+src/pipeable.ts(1332,17): error TS2394: This overload signature is not compatible with its implementation signature.
+test/util.ts(42,80): error TS2322: Type '<F>(F: Apply<F>, MT: FromTask<F>, run: (fa: HKT<F, unknown>) => Promise<unknown>) => Promise<void>' is not assignable to type 'AssertParSeq'.
+  Types of parameters 'F' and 'F' are incompatible.
+    Type 'Apply4<any>' is not assignable to type 'Apply<any>'.
+      Types of property 'ap' are incompatible.
+        Type '<S, R, E, A, B>(fab: Kind4<any, S, R, E, (a: A) => B>, fa: Kind4<any, S, R, E, A>) => Kind4<any, S, R, E, B>' is not assignable to type '<A, B>(fab: HKT<any, (a: A) => B>, fa: HKT<any, A>) => HKT<any, B>'.
+
+
+
+Standard error:
