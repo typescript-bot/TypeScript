@@ -85,7 +85,7 @@ test-bundles: info Visit https://yarnpkg.com/en/docs/cli/run for documentation a
 @fluentui/react-conformance: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-conformance/tsconfig.json"
 @fluentui/react-conformance: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/packages/react-conformance/tsconfig.json
 @fluentui/react-conformance: [XX:XX:XX XM] ■ Executing: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-conformance/tsconfig.json"
-@fluentui/react-conformance: Done in ?s.
+@fluentui/react-conformance: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 @fluentui/react-theme: yarn run vX.X.X
 @fluentui/react-theme: $ just-scripts ts
 @fluentui/react-theme: [XX:XX:XX XM] ■ Running /office-ui-fabric-react/node_modules/typescript/lib/tsc.js with /office-ui-fabric-react/packages/react-theme/tsconfig.json
@@ -517,6 +517,27 @@ Standard error:
 @fluentui/scripts:     1 import { BeachballConfig } from 'beachball';
 @fluentui/scripts:                ~~~~~~~~~~~~~~~
 @fluentui/scripts:     'BeachballConfig' is declared here.
+@fluentui/scripts: dangerjs/detectNonApprovedDependencies/utils/getVersionConstraints.ts:48:84 - error TS2339: Property 'stack' does not exist on type 'unknown'.
+@fluentui/scripts: 48     throw new Error(`There was an error reading the ${packageJsonPath} file: ${err.stack}`);
+@fluentui/scripts:                                                                                       ~~~~~
+@fluentui/scripts: gulp/plugins/gulp-component-menu-behaviors.ts:113:30 - error TS2339: Property 'message' does not exist on type 'unknown'.
+@fluentui/scripts: 113         gutil.colors.red(err.message),
+@fluentui/scripts:                                  ~~~~~~~
+@fluentui/scripts: gulp/plugins/gulp-component-menu-behaviors.ts:114:31 - error TS2339: Property 'stack' does not exist on type 'unknown'.
+@fluentui/scripts: 114         gutil.colors.gray(err.stack),
+@fluentui/scripts:                                   ~~~~~
+@fluentui/scripts: gulp/plugins/gulp-example-menu.ts:73:30 - error TS2339: Property 'message' does not exist on type 'unknown'.
+@fluentui/scripts: 73         gutil.colors.red(err.message),
+@fluentui/scripts:                                 ~~~~~~~
+@fluentui/scripts: gulp/plugins/gulp-example-menu.ts:74:31 - error TS2339: Property 'stack' does not exist on type 'unknown'.
+@fluentui/scripts: 74         gutil.colors.gray(err.stack),
+@fluentui/scripts:                                  ~~~~~
+@fluentui/scripts: gulp/plugins/gulp-react-docgen.ts:57:30 - error TS2339: Property 'message' does not exist on type 'unknown'.
+@fluentui/scripts: 57         gutil.colors.red(err.message),
+@fluentui/scripts:                                 ~~~~~~~
+@fluentui/scripts: gulp/plugins/gulp-react-docgen.ts:58:31 - error TS2339: Property 'stack' does not exist on type 'unknown'.
+@fluentui/scripts: 58         gutil.colors.gray(err.stack),
+@fluentui/scripts:                                  ~~~~~
 @fluentui/scripts: gulp/plugins/util/docgen.ts:585:44 - error TS2339: Property 'trim' does not exist on type '"" | SymbolDisplayPart[]'.
 @fluentui/scripts:   Property 'trim' does not exist on type 'SymbolDisplayPart[]'.
 @fluentui/scripts: 585       const trimmedText = (tag.text || '').trim();
@@ -579,6 +600,9 @@ Standard error:
 @fluentui/scripts: updateReleaseNotes/pullRequests.ts:2:10 - error TS2305: Module '"beachball"' has no exported member 'ChangelogEntry'.
 @fluentui/scripts: 2 import { ChangelogEntry } from 'beachball';
 @fluentui/scripts:            ~~~~~~~~~~~~~~
+@fluentui/scripts: updateReleaseNotes/releases.ts:23:17 - error TS2339: Property 'status' does not exist on type 'unknown'.
+@fluentui/scripts: 23         if (err.status === 404) {
+@fluentui/scripts:                    ~~~~~~
 @fluentui/scripts: updateReleaseNotes/types.ts:1:10 - error TS2305: Module '"beachball"' has no exported member 'ChangelogJsonEntry'.
 @fluentui/scripts: 1 import { ChangelogJsonEntry } from 'beachball';
 @fluentui/scripts:            ~~~~~~~~~~~~~~~~~~
@@ -589,7 +613,7 @@ Standard error:
 @fluentui/scripts:   Type 'typeof import("/office-ui-fabric-react/node_modules/clean-webpack-plugin/dist/clean-webpack-plugin")' has no construct signatures.
 @fluentui/scripts: 84     new CleanWebpackPlugin([paths.base('stats')], {
 @fluentui/scripts:            ~~~~~~~~~~~~~~~~~~
-@fluentui/scripts: Found 26 errors.
+@fluentui/scripts: Found 34 errors.
 @fluentui/scripts: [XX:XX:XX XM] x ------------------------------------
 @fluentui/scripts: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/scripts: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
@@ -614,6 +638,69 @@ test-bundles: [XX:XX:XX XM] x ------------------------------------
 test-bundles: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 test-bundles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 test-bundles: error Command failed with exit code 1.
+@fluentui/react-conformance: [XX:XX:XX XM] x Error detected while running 'ts:esm'
+@fluentui/react-conformance: [XX:XX:XX XM] x ------------------------------------
+@fluentui/react-conformance: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-conformance/tsconfig.json"
+@fluentui/react-conformance:     at ChildProcess.exithandler (child_process.js:308:12)
+@fluentui/react-conformance:     at ChildProcess.emit (events.js:314:20)
+@fluentui/react-conformance:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
+@fluentui/react-conformance:     at maybeClose (internal/child_process.js:1022:16)
+@fluentui/react-conformance:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
+@fluentui/react-conformance:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
+@fluentui/react-conformance: [XX:XX:XX XM] x stdout:
+@fluentui/react-conformance: [XX:XX:XX XM] x src/defaultTests.tsx:33:72 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 33         throw new Error(defaultErrorMessages['has-docblock'](testInfo, e, description, wordCount));
+@fluentui/react-conformance:                                                                           ~
+@fluentui/react-conformance: src/defaultTests.tsx:51:77 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 51         throw new Error(defaultErrorMessages['exports-component'](testInfo, e, Object.keys(componentFile)));
+@fluentui/react-conformance:                                                                                ~
+@fluentui/react-conformance: src/defaultTests.tsx:64:77 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 64         throw new Error(defaultErrorMessages['component-renders'](testInfo, e));
+@fluentui/react-conformance:                                                                                ~
+@fluentui/react-conformance: src/defaultTests.tsx:86:85 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 86         throw new Error(defaultErrorMessages['component-has-displayname'](testInfo, e));
+@fluentui/react-conformance:                                                                                        ~
+@fluentui/react-conformance: src/defaultTests.tsx:112:81 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 112         throw new Error(defaultErrorMessages['component-handles-ref'](testInfo, e));
+@fluentui/react-conformance:                                                                                     ~
+@fluentui/react-conformance: src/defaultTests.tsx:151:82 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 151         throw new Error(defaultErrorMessages['component-has-root-ref'](testInfo, e));
+@fluentui/react-conformance:                                                                                      ~
+@fluentui/react-conformance: src/defaultTests.tsx:181:13 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 181             e,
+@fluentui/react-conformance:                 ~
+@fluentui/react-conformance: src/defaultTests.tsx:217:13 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 217             e,
+@fluentui/react-conformance:                 ~
+@fluentui/react-conformance: src/defaultTests.tsx:236:81 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 236         throw new Error(defaultErrorMessages['name-matches-filename'](testInfo, e));
+@fluentui/react-conformance:                                                                                     ~
+@fluentui/react-conformance: src/defaultTests.tsx:255:78 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 255         throw new Error(defaultErrorMessages['exported-top-level'](testInfo, e));
+@fluentui/react-conformance:                                                                                  ~
+@fluentui/react-conformance: src/defaultTests.tsx:274:78 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 274         throw new Error(defaultErrorMessages['has-top-level-file'](testInfo, e));
+@fluentui/react-conformance:                                                                                  ~
+@fluentui/react-conformance: src/defaultTests.tsx:295:88 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 295         throw new Error(defaultErrorMessages['is-static-property-of-parent'](testInfo, e));
+@fluentui/react-conformance:                                                                                            ~
+@fluentui/react-conformance: src/defaultTests.tsx:377:73 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 377         throw new Error(defaultErrorMessages['as-renders-fc'](testInfo, e));
+@fluentui/react-conformance:                                                                             ~
+@fluentui/react-conformance: src/defaultTests.tsx:409:82 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 409         throw new Error(defaultErrorMessages['as-renders-react-class'](testInfo, e));
+@fluentui/react-conformance:                                                                                      ~
+@fluentui/react-conformance: src/defaultTests.tsx:437:78 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 437         throw new Error(defaultErrorMessages['as-passes-as-value'](testInfo, e));
+@fluentui/react-conformance:                                                                                  ~
+@fluentui/react-conformance: src/defaultTests.tsx:468:75 - error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
+@fluentui/react-conformance: 468         throw new Error(defaultErrorMessages['as-renders-html'](testInfo, e));
+@fluentui/react-conformance:                                                                               ~
+@fluentui/react-conformance: Found 16 errors.
+@fluentui/react-conformance: [XX:XX:XX XM] x ------------------------------------
+@fluentui/react-conformance: [XX:XX:XX XM] x Error previously detected. See above for error messages.
+@fluentui/react-conformance: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
+@fluentui/react-conformance: error Command failed with exit code 1.
 @fluentui/webpack-utilities: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/webpack-utilities: [XX:XX:XX XM] x ------------------------------------
 @fluentui/webpack-utilities: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/webpack-utilities/tsconfig.json"
@@ -621,8 +708,11 @@ test-bundles: error Command failed with exit code 1.
 @fluentui/webpack-utilities:     at ChildProcess.emit (events.js:314:20)
 @fluentui/webpack-utilities:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
 @fluentui/webpack-utilities:     at maybeClose (internal/child_process.js:1022:16)
-@fluentui/webpack-utilities:     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
-@fluentui/webpack-utilities:     at Process.callbackTrampoline (internal/async_hooks.js:126:14)
+@fluentui/webpack-utilities:     at Socket.<anonymous> (internal/child_process.js:444:11)
+@fluentui/webpack-utilities:     at Socket.emit (events.js:314:20)
+@fluentui/webpack-utilities:     at Socket.EventEmitter.emit (domain.js:506:15)
+@fluentui/webpack-utilities:     at Pipe.<anonymous> (net.js:675:12)
+@fluentui/webpack-utilities:     at Pipe.callbackTrampoline (internal/async_hooks.js:126:14)
 @fluentui/webpack-utilities: [XX:XX:XX XM] x stdout:
 @fluentui/webpack-utilities: [XX:XX:XX XM] x src/fabricAsyncLoaderInclude.ts:7:1 - error TS1203: Export assignment cannot be used when targeting ECMAScript modules. Consider using 'export default' or another module format instead.
 @fluentui/webpack-utilities: 7 export = (input: string) =>
@@ -634,7 +724,6 @@ test-bundles: error Command failed with exit code 1.
 @fluentui/webpack-utilities: Found 1 error.
 @fluentui/webpack-utilities: [XX:XX:XX XM] x ------------------------------------
 @fluentui/webpack-utilities: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/webpack-utilities: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/webpack-utilities: error Command failed with exit code 1.
 @fluentui/accessibility: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/accessibility: [XX:XX:XX XM] x Command not defined: ts
@@ -713,9 +802,9 @@ test-bundles: error Command failed with exit code 1.
 @fluentui/common-styles: [XX:XX:XX XM] x Error previously detected. See above for error messages.
 @fluentui/common-styles: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/common-styles: error Command failed with exit code 1.
-@fluentui/react-focus: [XX:XX:XX XM] x Error detected while running '_wrapFunction'
+@fluentui/react-focus: [XX:XX:XX XM] x Error detected while running 'ts:esm'
 @fluentui/react-focus: [XX:XX:XX XM] x ------------------------------------
-@fluentui/react-focus: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib-commonjs --module commonjs --project "/office-ui-fabric-react/packages/react-focus/tsconfig.json"
+@fluentui/react-focus: [XX:XX:XX XM] x Error: Command failed: /usr/local/bin/node "/office-ui-fabric-react/node_modules/typescript/lib/tsc.js" --pretty --target es5 --outDir lib --module esnext --project "/office-ui-fabric-react/packages/react-focus/tsconfig.json"
 @fluentui/react-focus:     at ChildProcess.exithandler (child_process.js:308:12)
 @fluentui/react-focus:     at ChildProcess.emit (events.js:314:20)
 @fluentui/react-focus:     at ChildProcess.EventEmitter.emit (domain.js:506:15)
@@ -730,7 +819,7 @@ test-bundles: error Command failed with exit code 1.
 @fluentui/react-focus: Found 1 error.
 @fluentui/react-focus: [XX:XX:XX XM] x ------------------------------------
 @fluentui/react-focus: [XX:XX:XX XM] x Error previously detected. See above for error messages.
-@fluentui/react-focus: [XX:XX:XX XM] x Other tasks that did not complete: [ts:esm]
+@fluentui/react-focus: [XX:XX:XX XM] x Other tasks that did not complete: [ts:commonjs]
 @fluentui/react-focus: error Command failed with exit code 1.
 @fluentui/circulars-test: [XX:XX:XX XM] x Cannot find config file "null". Please create a file called "just.config.js" in the root of the project next to "package.json".
 @fluentui/circulars-test: [XX:XX:XX XM] x Command not defined: ts
