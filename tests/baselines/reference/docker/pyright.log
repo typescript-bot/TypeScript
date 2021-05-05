@@ -1,9 +1,68 @@
-Exit Code: 0
+Exit Code: 2
 Standard output:
+pyright-internal: src/analyzer/packageTypeVerifier.ts(127,18): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/packageTypeVerifier.ts(127,28): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/packageTypeVerifier.ts(128,25): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/packageTypeVerifier.ts(128,50): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(580,22): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(580,32): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(581,29): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(581,54): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(946,22): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(946,32): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(947,29): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(947,54): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(995,26): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(995,36): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(996,33): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/analyzer/sourceFile.ts(996,58): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/backgroundThreadBase.ts(96,57): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/backgroundThreadBase.ts(100,64): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/backgroundThreadBase.ts(100,80): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/pyright.ts(146,15): error TS2322: Type 'unknown' is not assignable to type '{ name: string; optionName: string; }'.
+pyright-internal: src/tests/harness/fourslash/fourSlashParser.ts(171,106): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/tests/harness/fourslash/testState.ts(136,79): error TS2571: Object is of type 'unknown'.
+pyright-internal: src/tests/harness/vfs/filesystem.ts(413,17): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/packageTypeVerifier.ts(127,18): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/packageTypeVerifier.ts(127,28): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/packageTypeVerifier.ts(128,25): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/packageTypeVerifier.ts(128,50): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(580,22): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(580,32): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(581,29): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(581,54): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(946,22): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(946,32): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(947,29): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(947,54): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(995,26): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(995,36): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(996,33): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(996,58): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/backgroundThreadBase.ts(96,57): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/backgroundThreadBase.ts(100,64): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/backgroundThreadBase.ts(100,80): error TS2571: Object is of type 'unknown'.
+pyright: ../pyright-internal/src/pyright.ts(146,15): error TS2322: Type 'unknown' is not assignable to type '{ name: string; optionName: string; }'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(580,22): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(580,32): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(581,29): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(581,54): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(946,22): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(946,32): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(947,29): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(947,54): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(995,26): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(995,36): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(996,33): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(996,58): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/backgroundThreadBase.ts(96,57): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/backgroundThreadBase.ts(100,64): error TS2571: Object is of type 'unknown'.
+vscode-pyright: ../pyright-internal/src/backgroundThreadBase.ts(100,80): error TS2571: Object is of type 'unknown'.
 
 
 
 Standard error:
 lerna notice cli vX.X.X
 lerna info Executing command in 3 packages: "tsc --noEmit"
+lerna ERR! Received non-zero exit code 2 during execution
 lerna success exec Executed command in 3 packages: "tsc --noEmit"

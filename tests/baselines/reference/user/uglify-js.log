@@ -224,6 +224,7 @@ node_modules/uglify-js/lib/parse.js(388,19): error TS2345: Argument of type 'num
 node_modules/uglify-js/lib/parse.js(454,32): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 node_modules/uglify-js/lib/parse.js(465,32): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 node_modules/uglify-js/lib/parse.js(515,20): error TS2339: Property 'raw_source' does not exist on type 'RegExp'.
+node_modules/uglify-js/lib/parse.js(518,25): error TS2571: Object is of type 'unknown'.
 node_modules/uglify-js/lib/parse.js(633,57): error TS2339: Property 'push' does not exist on type 'never'.
 node_modules/uglify-js/lib/parse.js(639,32): error TS2345: Argument of type 'never[]' is not assignable to parameter of type 'never'.
 node_modules/uglify-js/lib/parse.js(737,13): error TS2531: Object is possibly 'null'.
@@ -303,6 +304,7 @@ node_modules/uglify-js/lib/sourcemap.js(180,31): error TS2339: Property 'index' 
 node_modules/uglify-js/lib/sourcemap.js(188,34): error TS2339: Property 'index' does not exist on type 'any[]'.
 node_modules/uglify-js/lib/transform.js(47,21): error TS2345: Argument of type 'this' is not assignable to parameter of type 'TreeWalker'.
   Type 'TreeTransformer' is missing the following properties from type 'TreeWalker': currentNode, filter, root, whatToShow, and 10 more.
+node_modules/uglify-js/lib/utils.js(74,24): error TS2571: Object is of type 'unknown'.
 node_modules/uglify-js/tools/exports.js(1,1): error TS2303: Circular definition of import alias '"Dictionary"'.
 node_modules/uglify-js/tools/exports.js(2,1): error TS2303: Circular definition of import alias '"is_statement"'.
 node_modules/uglify-js/tools/exports.js(3,1): error TS2303: Circular definition of import alias '"List"'.

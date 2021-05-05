@@ -38,3 +38,8 @@ Error: Command failed with exit code 1: rollup -c --environment COMMIT:7e6a76e,N
   isCanceled: false,
   killed: false
 }
+[!] Error: Could not resolve entry module (packages/compiler-dom/src/esm-index.ts).
+Error: Could not resolve entry module (packages/compiler-dom/src/esm-index.ts).
+    at error (/vue-next/node_modules/rollup/dist/shared/rollup.js:5239:30)
+    at ModuleLoader.loadEntryModule (/vue-next/node_modules/rollup/dist/shared/rollup.js:18677:20)
+    at async Promise.all (index 0)
