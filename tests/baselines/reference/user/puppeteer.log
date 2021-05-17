@@ -1,8 +1,13 @@
 Exit Code: 2
 Standard output:
+src/common/BrowserConnector.ts(54,14): error TS1323: Dynamic imports are only supported when the '--module' flag is set to 'es2020', 'esnext', 'commonjs', 'amd', 'system', or 'umd'.
+src/common/BrowserConnector.ts(55,14): error TS1323: Dynamic imports are only supported when the '--module' flag is set to 'es2020', 'esnext', 'commonjs', 'amd', 'system', or 'umd'.
+src/common/JSHandle.ts(567,24): error TS1323: Dynamic imports are only supported when the '--module' flag is set to 'es2020', 'esnext', 'commonjs', 'amd', 'system', or 'umd'.
 src/common/fetch.ts(21,3): error TS2322: Type '((input: RequestInfo, init?: RequestInit) => Promise<Response>) | typeof import("../../../node_modules/@types/node-fetch/index")' is not assignable to type '(input: RequestInfo, init?: RequestInit) => Promise<Response>'.
   Type 'typeof import("../../../node_modules/@types/node-fetch/index")' is not assignable to type '(input: RequestInfo, init?: RequestInit) => Promise<Response>'.
     Type 'typeof import("../../../node_modules/@types/node-fetch/index")' provides no match for the signature '(input: RequestInfo, init?: RequestInit): Promise<Response>'.
+src/common/fetch.ts(21,25): error TS1323: Dynamic imports are only supported when the '--module' flag is set to 'es2020', 'esnext', 'commonjs', 'amd', 'system', or 'umd'.
+src/common/helper.ts(367,20): error TS1323: Dynamic imports are only supported when the '--module' flag is set to 'es2020', 'esnext', 'commonjs', 'amd', 'system', or 'umd'.
 
 
 
