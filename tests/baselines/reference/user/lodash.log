@@ -182,8 +182,12 @@ node_modules/lodash/_overRest.js(27,27): error TS2532: Object is possibly 'undef
 node_modules/lodash/_overRest.js(28,22): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_overRest.js(31,15): error TS2538: Type 'undefined' cannot be used as an index type.
 node_modules/lodash/_stackDelete.js(11,19): error TS2339: Property '__data__' does not exist on type 'stackDelete'.
-node_modules/lodash/_stackSet.js(21,22): error TS2339: Property '__data__' does not exist on type 'ListCache'.
-node_modules/lodash/_stackSet.js(24,26): error TS2339: Property 'size' does not exist on type 'ListCache'.
+node_modules/lodash/_stackSet.js(20,7): error TS2358: The left-hand side of an 'instanceof' expression must be of type 'any', an object type or a type parameter.
+node_modules/lodash/_stackSet.js(21,22): error TS2339: Property '__data__' does not exist on type 'never'.
+node_modules/lodash/_stackSet.js(24,26): error TS2339: Property 'size' does not exist on type 'never'.
+node_modules/lodash/_stackSet.js(27,5): error TS2322: Type 'MapCache' is not assignable to type 'undefined'.
+node_modules/lodash/_stackSet.js(29,3): error TS2532: Object is possibly 'undefined'.
+node_modules/lodash/_stackSet.js(30,15): error TS2532: Object is possibly 'undefined'.
 node_modules/lodash/_unicodeWords.js(62,20): error TS8024: JSDoc '@param' tag has name 'The', but there is no parameter with that name.
 node_modules/lodash/_updateWrapDetails.js(34,5): error TS1223: 'returns' tag already specified.
 node_modules/lodash/_wrapperClone.js(14,20): error TS2339: Property 'clone' does not exist on type 'LazyWrapper'.

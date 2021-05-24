@@ -1,0 +1,8 @@
+Exit Code: 2
+Standard output:
+node_modules/mini-store/cjs/types.d.ts(2,33): error TS7016: Could not find a declaration file for module 'hoist-non-react-statics'. '../../../tests/cases/user/antd/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/hoist-non-react-statics` if it exists or add a new declaration (.d.ts) file containing `declare module 'hoist-non-react-statics';`
+
+
+
+Standard error:
