@@ -8,6 +8,10 @@ lib/adapters/http.js(116,22): error TS2345: Argument of type 'string | null' is 
   Type 'null' is not assignable to type 'string'.
 lib/adapters/http.js(153,17): error TS2531: Object is possibly 'null'.
 lib/adapters/http.js(153,40): error TS2531: Object is possibly 'null'.
+lib/adapters/http.js(181,16): error TS2345: Argument of type '{ path: string; method: any; headers: any; agent: any; agents: { http: any; https: any; }; auth: string | undefined; }' is not assignable to parameter of type 'ClientRequestArgs'.
+  Types of property 'auth' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string | null'.
+      Type 'undefined' is not assignable to type 'string | null'.
 lib/adapters/http.js(250,23): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
 lib/adapters/http.js(256,44): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
 lib/adapters/http.js(262,13): error TS2322: Type 'string' is not assignable to type 'Buffer'.
