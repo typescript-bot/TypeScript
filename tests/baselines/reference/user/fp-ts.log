@@ -1,0 +1,12 @@
+Exit Code: 2
+Standard output:
+test/Option.ts(303,33): error TS2532: Object is possibly 'undefined'.
+test/Option.ts(304,33): error TS2532: Object is possibly 'undefined'.
+test/Option.ts(312,33): error TS2532: Object is possibly 'undefined'.
+test/Option.ts(313,33): error TS2532: Object is possibly 'undefined'.
+test/Option.ts(321,33): error TS2532: Object is possibly 'undefined'.
+test/Option.ts(322,33): error TS2532: Object is possibly 'undefined'.
+
+
+
+Standard error:

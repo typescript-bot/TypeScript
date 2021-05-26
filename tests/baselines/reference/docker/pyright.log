@@ -1,9 +1,1377 @@
-Exit Code: 0
+Exit Code: 2
 Standard output:
+pyright-internal: src/analyzer/analysis.ts(87,13): error TS2322: Type 'Error | undefined' is not assignable to type 'Error'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Error'.
+pyright-internal: src/analyzer/analyzerNodeInfo.ts(153,5): error TS2322: Type 'string[] | undefined' is not assignable to type 'string[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string[]'.
+pyright-internal: src/analyzer/backgroundAnalysisProgram.ts(41,9): error TS2322: Type 'BackgroundAnalysisBase | undefined' is not assignable to type 'BackgroundAnalysisBase'.
+pyright-internal:   Type 'undefined' is not assignable to type 'BackgroundAnalysisBase'.
+pyright-internal: src/analyzer/backgroundAnalysisProgram.ts(42,9): error TS2322: Type 'MaxAnalysisTime | undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright-internal:   Type 'undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright-internal: src/analyzer/backgroundAnalysisProgram.ts(118,9): error TS2322: Type 'AnalysisCompleteCallback | undefined' is not assignable to type 'AnalysisCompleteCallback'.
+pyright-internal:   Type 'undefined' is not assignable to type 'AnalysisCompleteCallback'.
+pyright-internal: src/analyzer/binder.ts(1583,25): error TS2322: Type 'AliasDeclaration | undefined' is not assignable to type 'AliasDeclaration'.
+pyright-internal:   Type 'undefined' is not assignable to type 'AliasDeclaration'.
+pyright-internal: src/analyzer/binder.ts(1919,17): error TS2322: Type 'ParseNode | undefined' is not assignable to type 'ParseNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ParseNode'.
+pyright-internal: src/analyzer/binder.ts(1932,9): error TS2322: Type 'FlowLabel[] | undefined' is not assignable to type 'FlowLabel[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel[]'.
+pyright-internal: src/analyzer/binder.ts(1939,9): error TS2322: Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(1940,9): error TS2322: Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(1944,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(1945,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(2259,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(2260,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(2307,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/analyzer/binder.ts(2721,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(2722,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright-internal: src/analyzer/binder.ts(2898,25): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/analyzer/binder.ts(3014,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/binder.ts(3015,25): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/analyzer/binder.ts(3017,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/binder.ts(3077,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/binder.ts(3146,27): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/importResolver.ts(133,13): error TS2322: Type 'undefined' is not assignable to type 'ImportResult'.
+pyright-internal: src/analyzer/importResolver.ts(870,13): error TS2322: Type 'PyTypedInfo | undefined' is not assignable to type 'PyTypedInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'PyTypedInfo'.
+pyright-internal: src/analyzer/importResolver.ts(872,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/importResolver.ts(1439,76): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+pyright-internal: src/analyzer/program.ts(249,9): error TS2322: Type '{ sourceFile: SourceFile; isTracked: true; isOpenByClient: false; isTypeshedFile: false; isThirdPartyImport: boolean; isThirdPartyPyTypedPresent: boolean; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+pyright-internal:   Types of property 'diagnosticsVersion' are incompatible.
+pyright-internal:     Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(262,41): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/program.ts(279,13): error TS2322: Type '{ sourceFile: SourceFile; isTracked: false; isOpenByClient: true; isTypeshedFile: false; isThirdPartyImport: false; isThirdPartyPyTypedPresent: false; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+pyright-internal:   Types of property 'diagnosticsVersion' are incompatible.
+pyright-internal:     Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(292,45): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/program.ts(299,13): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(302,9): error TS2532: Object is possibly 'undefined'.
+pyright-internal: src/analyzer/program.ts(655,13): error TS2322: Type '{ sourceFile: SourceFile; isTracked: false; isOpenByClient: false; isTypeshedFile: false; isThirdPartyImport: false; isThirdPartyPyTypedPresent: false; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+pyright-internal:   Types of property 'diagnosticsVersion' are incompatible.
+pyright-internal:     Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(668,45): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/program.ts(671,14): error TS2532: Object is possibly 'undefined'.
+pyright-internal: src/analyzer/program.ts(672,13): error TS2532: Object is possibly 'undefined'.
+pyright-internal: src/analyzer/program.ts(675,43): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/program.ts(676,38): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/program.ts(679,16): error TS2532: Object is possibly 'undefined'.
+pyright-internal: src/analyzer/program.ts(774,9): error TS2322: Type '{ symbolTable: SymbolTable; dunderAllNames: string[] | undefined; readonly docString: string | undefined; }' is not assignable to type 'ImportLookupResult'.
+pyright-internal:   Types of property 'docString' are incompatible.
+pyright-internal:     Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:       Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/program.ts(1054,21): error TS2322: Type 'Map<string, IndexResults> | undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright-internal: src/analyzer/program.ts(1111,17): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(1844,21): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(2094,25): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/program.ts(2121,9): error TS2322: Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/program.ts(2125,13): error TS2322: Type 'SourceFileInfo | undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright-internal: src/analyzer/scope.ts(81,9): error TS2322: Type 'Scope | undefined' is not assignable to type 'Scope'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Scope'.
+pyright-internal: src/analyzer/service.ts(117,9): error TS2322: Type 'MaxAnalysisTime | undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright-internal:   Type 'undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright-internal: src/analyzer/service.ts(118,9): error TS2322: Type 'BackgroundAnalysisProgramFactory | undefined' is not assignable to type 'BackgroundAnalysisProgramFactory'.
+pyright-internal:   Type 'undefined' is not assignable to type 'BackgroundAnalysisProgramFactory'.
+pyright-internal: src/analyzer/service.ts(503,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/service.ts(504,9): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+pyright-internal:   Type 'undefined' is not assignable to type 'PythonVersion'.
+pyright-internal: src/analyzer/service.ts(613,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/analyzer/service.ts(651,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(374,9): error TS2322: Type 'undefined' is not assignable to type 'ParseResults'.
+pyright-internal: src/analyzer/sourceFile.ts(375,9): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+pyright-internal: src/analyzer/sourceFile.ts(384,9): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+pyright-internal: src/analyzer/sourceFile.ts(385,9): error TS2322: Type 'undefined' is not assignable to type 'IndexResults'.
+pyright-internal: src/analyzer/sourceFile.ts(402,17): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+pyright-internal: src/analyzer/sourceFile.ts(403,17): error TS2322: Type 'undefined' is not assignable to type 'IndexResults'.
+pyright-internal: src/analyzer/sourceFile.ts(418,13): error TS2322: Type 'undefined' is not assignable to type 'TextDocument'.
+pyright-internal: src/analyzer/sourceFile.ts(560,21): error TS2322: Type 'ImportResult | undefined' is not assignable to type 'ImportResult'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ImportResult'.
+pyright-internal: src/analyzer/sourceFile.ts(561,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(562,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(563,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(604,17): error TS2322: Type 'undefined' is not assignable to type 'ImportResult[]'.
+pyright-internal: src/analyzer/sourceFile.ts(605,17): error TS2322: Type 'undefined' is not assignable to type 'ImportResult'.
+pyright-internal: src/analyzer/sourceFile.ts(623,13): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/analyzer/sourceFile.ts(840,13): error TS2345: Argument of type '{ nameMap: AbbreviationMap | undefined; libraryMap: Map<string, IndexResults> | undefined; getModuleSymbolsMap: () => ModuleSymbolMap; }' is not assignable to parameter of type 'AutoImportMaps'.
+pyright-internal:   Types of property 'nameMap' are incompatible.
+pyright-internal:     Type 'AbbreviationMap | undefined' is not assignable to type 'AbbreviationMap'.
+pyright-internal:       Type 'undefined' is not assignable to type 'Map<string, AbbreviationInfo>'.
+pyright-internal: src/analyzer/sourceFile.ts(882,13): error TS2345: Argument of type '{ nameMap: AbbreviationMap | undefined; libraryMap: Map<string, IndexResults> | undefined; getModuleSymbolsMap: () => ModuleSymbolMap; }' is not assignable to parameter of type 'AutoImportMaps'.
+pyright-internal:   Types of property 'nameMap' are incompatible.
+pyright-internal:     Type 'AbbreviationMap | undefined' is not assignable to type 'AbbreviationMap'.
+pyright-internal:       Type 'undefined' is not assignable to type 'Map<string, AbbreviationInfo>'.
+pyright-internal: src/analyzer/sourceFile.ts(1036,13): error TS2322: Type 'Scope | undefined' is not assignable to type 'Scope'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Scope'.
+pyright-internal: src/analyzer/sourceFile.ts(1037,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(1038,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(1039,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(1152,13): error TS2322: Type 'ImportResult | undefined' is not assignable to type 'ImportResult'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ImportResult'.
+pyright-internal: src/analyzer/sourceFile.ts(1153,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(1154,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/sourceFile.ts(1155,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(1673,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(1699,17): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal: src/analyzer/typeEvaluator.ts(2297,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(2299,33): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(2368,25): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal:   Type 'undefined' is not assignable to type 'boolean'.
+pyright-internal: src/analyzer/typeEvaluator.ts(2369,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(3010,45): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(3010,68): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright-internal: src/analyzer/typeEvaluator.ts(3440,25): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright-internal: src/analyzer/typeEvaluator.ts(4377,81): error TS2322: Type 'ClassType | ObjectType | TypeVarType | undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright-internal: src/analyzer/typeEvaluator.ts(4868,29): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeEvaluator.ts(5609,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(6090,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(6315,21): error TS2322: Type 'ClassType | ObjectType | undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright-internal: src/analyzer/typeEvaluator.ts(6390,25): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeEvaluator.ts(6977,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(7435,13): error TS2322: Type 'UnionableType | UnionType | undefined' is not assignable to type 'Type'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeEvaluator.ts(7724,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(7794,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(7807,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8081,29): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8137,37): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8182,29): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8198,13): error TS2322: Type 'TypeVarType | undefined' is not assignable to type 'TypeVarType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TypeVarType'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8199,13): error TS2322: Type 'FunctionArgument[] | undefined' is not assignable to type 'FunctionArgument[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionArgument[]'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8200,13): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8380,13): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal: src/analyzer/typeEvaluator.ts(8411,17): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright-internal: src/analyzer/typeEvaluator.ts(9562,33): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(10390,29): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright-internal: src/analyzer/typeEvaluator.ts(10991,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(10993,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(11927,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright-internal: src/analyzer/typeEvaluator.ts(12176,25): error TS2322: Type 'TypeVarType[] | undefined' is not assignable to type 'TypeVarType[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TypeVarType[]'.
+pyright-internal: src/analyzer/typeEvaluator.ts(12901,21): error TS2322: Type 'DataClassBehaviors | undefined' is not assignable to type 'DataClassBehaviors'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DataClassBehaviors'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13171,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13358,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13360,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13361,17): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13363,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13683,21): error TS2322: Type 'DataClassBehaviors | undefined' is not assignable to type 'DataClassBehaviors'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DataClassBehaviors'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13765,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13837,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13840,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13876,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13877,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+pyright-internal:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+pyright-internal: src/analyzer/typeEvaluator.ts(13881,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(16432,21): error TS2322: Type 'never[] | undefined' is not assignable to type '(Type | undefined)[]'.
+pyright-internal:   Type 'undefined' is not assignable to type '(Type | undefined)[]'.
+pyright-internal: src/analyzer/typeEvaluator.ts(18689,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeEvaluator.ts(22061,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeStubWriter.ts(73,17): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright-internal: src/analyzer/typeStubWriter.ts(75,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeUtils.ts(682,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeUtils.ts(1119,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeUtils.ts(1792,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/typeUtils.ts(1933,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeUtils.ts(2037,5): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeVarMap.ts(172,57): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeVarMap.ts(172,70): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/typeVarMap.ts(172,81): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal:   Type 'undefined' is not assignable to type 'boolean'.
+pyright-internal: src/analyzer/types.ts(141,13): error TS2322: Type 'TypeVarType[] | undefined' is not assignable to type 'TypeVarType[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TypeVarType[]'.
+pyright-internal: src/analyzer/types.ts(142,13): error TS2322: Type 'Type[] | undefined' is not assignable to type 'Type[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Type[]'.
+pyright-internal: src/analyzer/types.ts(446,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright-internal: src/analyzer/types.ts(447,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright-internal: src/analyzer/types.ts(451,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/types.ts(471,9): error TS2322: Type '(UnionableType | UnionType)[] | undefined' is not assignable to type 'Type[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Type[]'.
+pyright-internal: src/analyzer/types.ts(477,9): error TS2322: Type '(UnionableType | UnionType)[] | undefined' is not assignable to type 'Type[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Type[]'.
+pyright-internal: src/analyzer/types.ts(490,9): error TS2322: Type 'LiteralValue | undefined' is not assignable to type 'LiteralValue'.
+pyright-internal:   Type 'undefined' is not assignable to type 'LiteralValue'.
+pyright-internal: src/analyzer/types.ts(505,9): error TS2322: Type 'Map<string, TypedDictEntry> | undefined' is not assignable to type 'Map<string, TypedDictEntry>'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Map<string, TypedDictEntry>'.
+pyright-internal: src/analyzer/types.ts(998,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/types.ts(1039,13): error TS2322: Type 'ClassType | ObjectType | undefined' is not assignable to type 'ClassType | ObjectType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ClassType | ObjectType'.
+pyright-internal: src/analyzer/types.ts(1056,17): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/types.ts(1060,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright-internal: src/analyzer/types.ts(1061,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/types.ts(1121,9): error TS2322: Type 'SpecializedFunctionTypes | undefined' is not assignable to type 'SpecializedFunctionTypes'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SpecializedFunctionTypes'.
+pyright-internal: src/analyzer/types.ts(1132,17): error TS2322: Type '(FunctionParameter | { category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; })[]' is not assignable to type 'FunctionParameter[]'.
+pyright-internal:   Type 'FunctionParameter | { category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; }' is not assignable to type 'FunctionParameter'.
+pyright-internal:     Type '{ category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; }' is not assignable to type 'FunctionParameter'.
+pyright-internal:       Types of property 'name' are incompatible.
+pyright-internal:         Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:           Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/types.ts(1183,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/analyzer/types.ts(1689,9): error TS2322: Type 'undefined' is not assignable to type 'Type'.
+pyright-internal: src/backgroundAnalysis.ts(21,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/common/configOptions.ts(50,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/common/configOptions.ts(1228,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/common/configOptions.ts(1238,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/common/configOptions.ts(1292,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/common/configOptions.ts(1304,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/common/configOptions.ts(1425,9): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+pyright-internal:   Type 'undefined' is not assignable to type 'PythonVersion'.
+pyright-internal: src/languageServerBase.ts(285,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageServerBase.ts(659,17): error TS2322: Type 'MarkupContent | undefined' is not assignable to type 'string | MarkupContent'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string | MarkupContent'.
+pyright-internal: src/languageServerBase.ts(660,17): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+pyright-internal:   Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(44,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(45,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(46,5): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(47,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(48,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(57,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(58,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(59,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(96,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(97,5): error TS2322: Type 'string[] | undefined' is not assignable to type 'string[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string[]'.
+pyright-internal: src/languageService/analyzerServiceExecutor.ts(98,5): error TS2322: Type 'DiagnosticSeverityOverridesMap | undefined' is not assignable to type 'DiagnosticSeverityOverridesMap'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DiagnosticSeverityOverridesMap'.
+pyright-internal: src/languageService/autoImporter.ts(106,46): error TS2322: Type '13 | undefined' is not assignable to type 'SymbolKind'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SymbolKind'.
+pyright-internal: src/languageService/autoImporter.ts(371,25): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright-internal: src/languageService/autoImporter.ts(373,25): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal:   Type 'undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal: src/languageService/autoImporter.ts(391,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/autoImporter.ts(392,17): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright-internal: src/languageService/autoImporter.ts(394,17): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal:   Type 'undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal: src/languageService/autoImporter.ts(396,17): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/autoImporter.ts(519,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/autoImporter.ts(520,21): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright-internal: src/languageService/autoImporter.ts(521,21): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal: src/languageService/autoImporter.ts(522,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/autoImporter.ts(524,21): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/autoImporter.ts(627,13): error TS2322: Type '{ symbolName: string | undefined; importName: string; importFrom: string | undefined; filePath: string; dotCount: number; moduleNameAndType: ModuleNameAndType; }' is not assignable to type 'ImportParts'.
+pyright-internal:   Types of property 'symbolName' are incompatible.
+pyright-internal:     Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:       Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/autoImporter.ts(743,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/autoImporter.ts(774,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/autoImporter.ts(801,13): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/autoImporter.ts(844,25): error TS2322: Type 'IndexAliasData | undefined' is not assignable to type 'IndexAliasData'.
+pyright-internal:   Type 'undefined' is not assignable to type 'IndexAliasData'.
+pyright-internal: src/languageService/autoImporter.ts(846,25): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal: src/languageService/completionProvider.ts(774,21): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal:   Type 'undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/completionProvider.ts(903,29): error TS2322: Type '2 | undefined' is not assignable to type 'InsertTextFormat'.
+pyright-internal:   Type 'undefined' is not assignable to type 'InsertTextFormat'.
+pyright-internal: src/languageService/completionProvider.ts(1118,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/completionProvider.ts(1128,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/completionProvider.ts(1476,15): error TS2322: Type 'Map<string, IndexResults> | undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright-internal: src/languageService/completionProvider.ts(1495,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/completionProvider.ts(1496,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/completionProvider.ts(1499,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/completionProvider.ts(1510,25): error TS2322: Type '{ textEdit: TextEdit; additionalTextEdits: TextEditAction[] | undefined; }' is not assignable to type 'Edits'.
+pyright-internal:   Types of property 'additionalTextEdits' are incompatible.
+pyright-internal:     Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal:       Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright-internal: src/languageService/completionProvider.ts(1710,25): error TS2322: Type 'ObjectType | undefined' is not assignable to type 'ObjectType'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ObjectType'.
+pyright-internal: src/languageService/completionProvider.ts(1920,112): error TS2345: Argument of type '{ autoImportText: string | undefined; funcParensDisabled: boolean | undefined; edits: Edits | undefined; }' is not assignable to parameter of type 'CompletionDetail'.
+pyright-internal:   Types of property 'funcParensDisabled' are incompatible.
+pyright-internal:     Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/completionProvider.ts(1930,90): error TS2345: Argument of type '{ funcParensDisabled: boolean | undefined; edits: Edits | undefined; }' is not assignable to parameter of type 'CompletionDetail'.
+pyright-internal:   Types of property 'funcParensDisabled' are incompatible.
+pyright-internal:     Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/completionProvider.ts(2189,13): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(80,5): error TS2322: Type '{ originalName: string; modulePath: string; kind: SymbolKind; itemKind: 5 | 2 | 8 | 10 | 3 | 22 | 4 | 6 | 7 | 9 | 12 | 13 | 17 | 19 | 20 | 21 | 25 | 23 | 24 | undefined; }' is not assignable to type 'IndexAliasData'.
+pyright-internal:   Types of property 'itemKind' are incompatible.
+pyright-internal:     Type '5 | 2 | 8 | 10 | 3 | 22 | 4 | 6 | 7 | 9 | 12 | 13 | 17 | 19 | 20 | 21 | 25 | 23 | 24 | undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal:       Type 'undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(233,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(402,9): error TS2322: Type '5 | 2 | 8 | 10 | 3 | 22 | 4 | 6 | 7 | 9 | 12 | 13 | 17 | 19 | 20 | 21 | 25 | 23 | 24 | undefined' is not assignable to type 'CompletionItemKind'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(403,9): error TS2322: Type 'IndexAliasData | undefined' is not assignable to type 'IndexAliasData'.
+pyright-internal:   Type 'undefined' is not assignable to type 'IndexAliasData'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(407,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Range'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(408,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Range'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(409,9): error TS2322: Type 'IndexSymbolData[] | undefined' is not assignable to type 'IndexSymbolData[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'IndexSymbolData[]'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(425,9): error TS2322: Type '1[] | undefined' is not assignable to type '1[]'.
+pyright-internal:   Type 'undefined' is not assignable to type '1[]'.
+pyright-internal: src/languageService/documentSymbolProvider.ts(426,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/signatureHelpProvider.ts(146,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/languageService/signatureHelpProvider.ts(168,13): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+pyright-internal:   Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/parser/parseNodes.ts(211,13): error TS2322: Type 'SuiteNode | undefined' is not assignable to type 'IfNode | SuiteNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'IfNode | SuiteNode'.
+pyright-internal: src/parser/parseNodes.ts(735,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parseNodes.ts(736,13): error TS2322: Type 'DecoratorNode[] | undefined' is not assignable to type 'DecoratorNode[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'DecoratorNode[]'.
+pyright-internal: src/parser/parseNodes.ts(1188,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parseNodes.ts(1920,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parseNodes.ts(1987,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/parser/parseNodes.ts(2072,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright-internal: src/parser/parser.ts(293,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parser.ts(1323,9): error TS2322: Type 'SuiteNode | undefined' is not assignable to type 'SuiteNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'SuiteNode'.
+pyright-internal: src/parser/parser.ts(3264,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parser.ts(3268,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parser.ts(3272,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright-internal: src/parser/parser.ts(3779,39): error TS2322: Type 'ErrorNode | undefined' is not assignable to type 'ErrorNode'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ErrorNode'.
+pyright-internal: src/parser/tokenizerTypes.ts(200,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(226,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(252,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(272,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(291,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(332,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(362,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(381,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/parser/tokenizerTypes.ts(400,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright-internal: src/pyright.ts(417,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/pyright.ts(418,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/pyright.ts(478,32): error TS2532: Object is possibly 'undefined'.
+pyright-internal: src/pyright.ts(479,30): error TS2532: Object is possibly 'undefined'.
+pyright-internal: src/pyright.ts(669,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Range'.
+pyright-internal: src/pyright.ts(670,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/fourslash/fourSlashParser.ts(294,29): error TS2322: Type 'Marker | undefined' is not assignable to type 'Marker'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Marker'.
+pyright-internal: src/tests/harness/fourslash/fourSlashParser.ts(338,29): error TS2322: Type 'Marker | undefined' is not assignable to type 'Marker'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Marker'.
+pyright-internal: src/tests/harness/fourslash/fourSlashParser.ts(359,29): error TS2322: Type 'Marker | undefined' is not assignable to type 'Marker'.
+pyright-internal:   Type 'undefined' is not assignable to type 'Marker'.
+pyright-internal: src/tests/harness/fourslash/testLanguageService.ts(62,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/fourslash/testLanguageService.ts(63,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/fourslash/testLanguageService.ts(64,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:   Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/fourslash/testLanguageService.ts(65,13): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/tests/harness/fourslash/testLanguageService.ts(66,13): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright-internal: src/tests/harness/fourslash/testState.ts(666,41): error TS2322: Type 'any[] | undefined' is not assignable to type 'any[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'any[]'.
+pyright-internal: src/tests/harness/fourslash/testState.ts(727,25): error TS2322: Type 'any[] | undefined' is not assignable to type 'any[]'.
+pyright-internal:   Type 'undefined' is not assignable to type 'any[]'.
+pyright-internal: src/tests/harness/fourslash/testState.ts(1318,9): error TS2322: Type 'undefined' is not assignable to type 'MultiMap<Range>'.
+pyright-internal: src/tests/harness/vfs/factory.ts(136,66): error TS2345: Argument of type '{ files: FileSet; cwd: string | undefined; meta: {}; }' is not assignable to parameter of type 'FileSystemOptions'.
+pyright-internal:   Types of property 'cwd' are incompatible.
+pyright-internal:     Type 'string | undefined' is not assignable to type 'string'.
+pyright-internal:       Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/vfs/filesystem.ts(1246,17): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/vfs/filesystem.ts(1247,17): error TS2322: Type 'undefined' is not assignable to type 'FileSystemResolver'.
+pyright-internal: src/tests/harness/vfs/filesystem.ts(1337,17): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright-internal: src/tests/harness/vfs/filesystem.ts(1338,17): error TS2322: Type 'undefined' is not assignable to type 'FileSystemResolver'.
+pyright-internal: src/tests/harness/vfs/filesystem.ts(1339,17): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright-internal: src/tests/testUtils.ts(105,9): error TS2322: Type 'undefined' is not assignable to type 'Scope'.
+pyright-internal: src/tests/testUtils.ts(179,17): error TS2322: Type 'ParseResults | undefined' is not assignable to type 'ParseResults'.
+pyright-internal:   Type 'undefined' is not assignable to type 'ParseResults'.
+pyright-internal: src/tests/testUtils.ts(191,17): error TS2322: Type 'undefined' is not assignable to type 'ParseResults'.
+pyright: ../pyright-internal/src/analyzer/analysis.ts(87,13): error TS2322: Type 'Error | undefined' is not assignable to type 'Error'.
+pyright:   Type 'undefined' is not assignable to type 'Error'.
+pyright: ../pyright-internal/src/analyzer/analyzerNodeInfo.ts(153,5): error TS2322: Type 'string[] | undefined' is not assignable to type 'string[]'.
+pyright:   Type 'undefined' is not assignable to type 'string[]'.
+pyright: ../pyright-internal/src/analyzer/backgroundAnalysisProgram.ts(41,9): error TS2322: Type 'BackgroundAnalysisBase | undefined' is not assignable to type 'BackgroundAnalysisBase'.
+pyright:   Type 'undefined' is not assignable to type 'BackgroundAnalysisBase'.
+pyright: ../pyright-internal/src/analyzer/backgroundAnalysisProgram.ts(42,9): error TS2322: Type 'MaxAnalysisTime | undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright:   Type 'undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright: ../pyright-internal/src/analyzer/backgroundAnalysisProgram.ts(118,9): error TS2322: Type 'AnalysisCompleteCallback | undefined' is not assignable to type 'AnalysisCompleteCallback'.
+pyright:   Type 'undefined' is not assignable to type 'AnalysisCompleteCallback'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1583,25): error TS2322: Type 'AliasDeclaration | undefined' is not assignable to type 'AliasDeclaration'.
+pyright:   Type 'undefined' is not assignable to type 'AliasDeclaration'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1919,17): error TS2322: Type 'ParseNode | undefined' is not assignable to type 'ParseNode'.
+pyright:   Type 'undefined' is not assignable to type 'ParseNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1932,9): error TS2322: Type 'FlowLabel[] | undefined' is not assignable to type 'FlowLabel[]'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel[]'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1939,9): error TS2322: Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1940,9): error TS2322: Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1944,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(1945,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(2259,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(2260,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(2307,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(2721,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(2722,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(2898,25): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(3014,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(3015,25): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(3017,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(3077,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/binder.ts(3146,27): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/importResolver.ts(133,13): error TS2322: Type 'undefined' is not assignable to type 'ImportResult'.
+pyright: ../pyright-internal/src/analyzer/importResolver.ts(870,13): error TS2322: Type 'PyTypedInfo | undefined' is not assignable to type 'PyTypedInfo'.
+pyright:   Type 'undefined' is not assignable to type 'PyTypedInfo'.
+pyright: ../pyright-internal/src/analyzer/importResolver.ts(872,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/importResolver.ts(1439,76): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+pyright: ../pyright-internal/src/analyzer/program.ts(249,9): error TS2322: Type '{ sourceFile: SourceFile; isTracked: true; isOpenByClient: false; isTypeshedFile: false; isThirdPartyImport: boolean; isThirdPartyPyTypedPresent: boolean; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+pyright:   Types of property 'diagnosticsVersion' are incompatible.
+pyright:     Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(262,41): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/program.ts(279,13): error TS2322: Type '{ sourceFile: SourceFile; isTracked: false; isOpenByClient: true; isTypeshedFile: false; isThirdPartyImport: false; isThirdPartyPyTypedPresent: false; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+pyright:   Types of property 'diagnosticsVersion' are incompatible.
+pyright:     Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(292,45): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/program.ts(299,13): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(302,9): error TS2532: Object is possibly 'undefined'.
+pyright: ../pyright-internal/src/analyzer/program.ts(655,13): error TS2322: Type '{ sourceFile: SourceFile; isTracked: false; isOpenByClient: false; isTypeshedFile: false; isThirdPartyImport: false; isThirdPartyPyTypedPresent: false; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+pyright:   Types of property 'diagnosticsVersion' are incompatible.
+pyright:     Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(668,45): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/program.ts(671,14): error TS2532: Object is possibly 'undefined'.
+pyright: ../pyright-internal/src/analyzer/program.ts(672,13): error TS2532: Object is possibly 'undefined'.
+pyright: ../pyright-internal/src/analyzer/program.ts(675,43): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/program.ts(676,38): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/program.ts(679,16): error TS2532: Object is possibly 'undefined'.
+pyright: ../pyright-internal/src/analyzer/program.ts(774,9): error TS2322: Type '{ symbolTable: SymbolTable; dunderAllNames: string[] | undefined; readonly docString: string | undefined; }' is not assignable to type 'ImportLookupResult'.
+pyright:   Types of property 'docString' are incompatible.
+pyright:     Type 'string | undefined' is not assignable to type 'string'.
+pyright:       Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/program.ts(1054,21): error TS2322: Type 'Map<string, IndexResults> | undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright:   Type 'undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright: ../pyright-internal/src/analyzer/program.ts(1111,17): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(1844,21): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(2094,25): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/program.ts(2121,9): error TS2322: Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/program.ts(2125,13): error TS2322: Type 'SourceFileInfo | undefined' is not assignable to type 'SourceFileInfo'.
+pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+pyright: ../pyright-internal/src/analyzer/scope.ts(81,9): error TS2322: Type 'Scope | undefined' is not assignable to type 'Scope'.
+pyright:   Type 'undefined' is not assignable to type 'Scope'.
+pyright: ../pyright-internal/src/analyzer/service.ts(117,9): error TS2322: Type 'MaxAnalysisTime | undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright:   Type 'undefined' is not assignable to type 'MaxAnalysisTime'.
+pyright: ../pyright-internal/src/analyzer/service.ts(118,9): error TS2322: Type 'BackgroundAnalysisProgramFactory | undefined' is not assignable to type 'BackgroundAnalysisProgramFactory'.
+pyright:   Type 'undefined' is not assignable to type 'BackgroundAnalysisProgramFactory'.
+pyright: ../pyright-internal/src/analyzer/service.ts(503,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/service.ts(504,9): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+pyright:   Type 'undefined' is not assignable to type 'PythonVersion'.
+pyright: ../pyright-internal/src/analyzer/service.ts(613,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/analyzer/service.ts(651,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(374,9): error TS2322: Type 'undefined' is not assignable to type 'ParseResults'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(375,9): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(384,9): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(385,9): error TS2322: Type 'undefined' is not assignable to type 'IndexResults'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(402,17): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(403,17): error TS2322: Type 'undefined' is not assignable to type 'IndexResults'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(418,13): error TS2322: Type 'undefined' is not assignable to type 'TextDocument'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(560,21): error TS2322: Type 'ImportResult | undefined' is not assignable to type 'ImportResult'.
+pyright:   Type 'undefined' is not assignable to type 'ImportResult'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(561,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(562,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(563,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(604,17): error TS2322: Type 'undefined' is not assignable to type 'ImportResult[]'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(605,17): error TS2322: Type 'undefined' is not assignable to type 'ImportResult'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(623,13): error TS2322: Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(840,13): error TS2345: Argument of type '{ nameMap: AbbreviationMap | undefined; libraryMap: Map<string, IndexResults> | undefined; getModuleSymbolsMap: () => ModuleSymbolMap; }' is not assignable to parameter of type 'AutoImportMaps'.
+pyright:   Types of property 'nameMap' are incompatible.
+pyright:     Type 'AbbreviationMap | undefined' is not assignable to type 'AbbreviationMap'.
+pyright:       Type 'undefined' is not assignable to type 'Map<string, AbbreviationInfo>'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(882,13): error TS2345: Argument of type '{ nameMap: AbbreviationMap | undefined; libraryMap: Map<string, IndexResults> | undefined; getModuleSymbolsMap: () => ModuleSymbolMap; }' is not assignable to parameter of type 'AutoImportMaps'.
+pyright:   Types of property 'nameMap' are incompatible.
+pyright:     Type 'AbbreviationMap | undefined' is not assignable to type 'AbbreviationMap'.
+pyright:       Type 'undefined' is not assignable to type 'Map<string, AbbreviationInfo>'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1036,13): error TS2322: Type 'Scope | undefined' is not assignable to type 'Scope'.
+pyright:   Type 'undefined' is not assignable to type 'Scope'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1037,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1038,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1039,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1152,13): error TS2322: Type 'ImportResult | undefined' is not assignable to type 'ImportResult'.
+pyright:   Type 'undefined' is not assignable to type 'ImportResult'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1153,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1154,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1155,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(1673,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(1699,17): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2297,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2299,33): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2368,25): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright:   Type 'undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2369,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright:   Type 'undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(3010,45): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(3010,68): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(3440,25): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(4377,81): error TS2322: Type 'ClassType | ObjectType | TypeVarType | undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright:   Type 'undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(4868,29): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(5609,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6090,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6315,21): error TS2322: Type 'ClassType | ObjectType | undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright:   Type 'undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6390,25): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6977,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7435,13): error TS2322: Type 'UnionableType | UnionType | undefined' is not assignable to type 'Type'.
+pyright:   Type 'undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7724,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7794,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7807,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8081,29): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8137,37): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8182,29): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8198,13): error TS2322: Type 'TypeVarType | undefined' is not assignable to type 'TypeVarType'.
+pyright:   Type 'undefined' is not assignable to type 'TypeVarType'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8199,13): error TS2322: Type 'FunctionArgument[] | undefined' is not assignable to type 'FunctionArgument[]'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionArgument[]'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8200,13): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8380,13): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8411,17): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(9562,33): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(10390,29): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(10991,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(10993,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(11927,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright:   Type 'undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(12176,25): error TS2322: Type 'TypeVarType[] | undefined' is not assignable to type 'TypeVarType[]'.
+pyright:   Type 'undefined' is not assignable to type 'TypeVarType[]'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(12901,21): error TS2322: Type 'DataClassBehaviors | undefined' is not assignable to type 'DataClassBehaviors'.
+pyright:   Type 'undefined' is not assignable to type 'DataClassBehaviors'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13171,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13358,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13360,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13361,17): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13363,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13683,21): error TS2322: Type 'DataClassBehaviors | undefined' is not assignable to type 'DataClassBehaviors'.
+pyright:   Type 'undefined' is not assignable to type 'DataClassBehaviors'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13765,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13837,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13840,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13876,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13877,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+pyright:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13881,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(16432,21): error TS2322: Type 'never[] | undefined' is not assignable to type '(Type | undefined)[]'.
+pyright:   Type 'undefined' is not assignable to type '(Type | undefined)[]'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(18689,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(22061,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeStubWriter.ts(73,17): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright: ../pyright-internal/src/analyzer/typeStubWriter.ts(75,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeUtils.ts(682,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeUtils.ts(1119,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeUtils.ts(1792,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/typeUtils.ts(1933,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeUtils.ts(2037,5): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeVarMap.ts(172,57): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright:   Type 'undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeVarMap.ts(172,70): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/typeVarMap.ts(172,81): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright:   Type 'undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/analyzer/types.ts(141,13): error TS2322: Type 'TypeVarType[] | undefined' is not assignable to type 'TypeVarType[]'.
+pyright:   Type 'undefined' is not assignable to type 'TypeVarType[]'.
+pyright: ../pyright-internal/src/analyzer/types.ts(142,13): error TS2322: Type 'Type[] | undefined' is not assignable to type 'Type[]'.
+pyright:   Type 'undefined' is not assignable to type 'Type[]'.
+pyright: ../pyright-internal/src/analyzer/types.ts(446,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright:   Type 'undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright: ../pyright-internal/src/analyzer/types.ts(447,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+pyright: ../pyright-internal/src/analyzer/types.ts(451,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/types.ts(471,9): error TS2322: Type '(UnionableType | UnionType)[] | undefined' is not assignable to type 'Type[]'.
+pyright:   Type 'undefined' is not assignable to type 'Type[]'.
+pyright: ../pyright-internal/src/analyzer/types.ts(477,9): error TS2322: Type '(UnionableType | UnionType)[] | undefined' is not assignable to type 'Type[]'.
+pyright:   Type 'undefined' is not assignable to type 'Type[]'.
+pyright: ../pyright-internal/src/analyzer/types.ts(490,9): error TS2322: Type 'LiteralValue | undefined' is not assignable to type 'LiteralValue'.
+pyright:   Type 'undefined' is not assignable to type 'LiteralValue'.
+pyright: ../pyright-internal/src/analyzer/types.ts(505,9): error TS2322: Type 'Map<string, TypedDictEntry> | undefined' is not assignable to type 'Map<string, TypedDictEntry>'.
+pyright:   Type 'undefined' is not assignable to type 'Map<string, TypedDictEntry>'.
+pyright: ../pyright-internal/src/analyzer/types.ts(998,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1039,13): error TS2322: Type 'ClassType | ObjectType | undefined' is not assignable to type 'ClassType | ObjectType'.
+pyright:   Type 'undefined' is not assignable to type 'ClassType | ObjectType'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1056,17): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright:   Type 'undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1060,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1061,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1121,9): error TS2322: Type 'SpecializedFunctionTypes | undefined' is not assignable to type 'SpecializedFunctionTypes'.
+pyright:   Type 'undefined' is not assignable to type 'SpecializedFunctionTypes'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1132,17): error TS2322: Type '(FunctionParameter | { category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; })[]' is not assignable to type 'FunctionParameter[]'.
+pyright:   Type 'FunctionParameter | { category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; }' is not assignable to type 'FunctionParameter'.
+pyright:     Type '{ category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; }' is not assignable to type 'FunctionParameter'.
+pyright:       Types of property 'name' are incompatible.
+pyright:         Type 'string | undefined' is not assignable to type 'string'.
+pyright:           Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1183,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/analyzer/types.ts(1689,9): error TS2322: Type 'undefined' is not assignable to type 'Type'.
+pyright: ../pyright-internal/src/backgroundAnalysis.ts(21,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/common/configOptions.ts(50,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/common/configOptions.ts(1228,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/common/configOptions.ts(1238,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/common/configOptions.ts(1292,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/common/configOptions.ts(1304,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/common/configOptions.ts(1425,9): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+pyright:   Type 'undefined' is not assignable to type 'PythonVersion'.
+pyright: ../pyright-internal/src/languageServerBase.ts(285,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageServerBase.ts(659,17): error TS2322: Type 'MarkupContent | undefined' is not assignable to type 'string | MarkupContent'.
+pyright:   Type 'undefined' is not assignable to type 'string | MarkupContent'.
+pyright: ../pyright-internal/src/languageServerBase.ts(660,17): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+pyright:   Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(44,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(45,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(46,5): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(47,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(48,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(57,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(58,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(59,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(96,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(97,5): error TS2322: Type 'string[] | undefined' is not assignable to type 'string[]'.
+pyright:   Type 'undefined' is not assignable to type 'string[]'.
+pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(98,5): error TS2322: Type 'DiagnosticSeverityOverridesMap | undefined' is not assignable to type 'DiagnosticSeverityOverridesMap'.
+pyright:   Type 'undefined' is not assignable to type 'DiagnosticSeverityOverridesMap'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(106,46): error TS2322: Type '13 | undefined' is not assignable to type 'SymbolKind'.
+pyright:   Type 'undefined' is not assignable to type 'SymbolKind'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(371,25): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(373,25): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright:   Type 'undefined' is not assignable to type 'CompletionItemKind'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(391,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(392,17): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(394,17): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright:   Type 'undefined' is not assignable to type 'CompletionItemKind'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(396,17): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(519,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(520,21): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(521,21): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(522,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(524,21): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(627,13): error TS2322: Type '{ symbolName: string | undefined; importName: string; importFrom: string | undefined; filePath: string; dotCount: number; moduleNameAndType: ModuleNameAndType; }' is not assignable to type 'ImportParts'.
+pyright:   Types of property 'symbolName' are incompatible.
+pyright:     Type 'string | undefined' is not assignable to type 'string'.
+pyright:       Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(743,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(774,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(801,13): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(844,25): error TS2322: Type 'IndexAliasData | undefined' is not assignable to type 'IndexAliasData'.
+pyright:   Type 'undefined' is not assignable to type 'IndexAliasData'.
+pyright: ../pyright-internal/src/languageService/autoImporter.ts(846,25): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(774,21): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright:   Type 'undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(903,29): error TS2322: Type '2 | undefined' is not assignable to type 'InsertTextFormat'.
+pyright:   Type 'undefined' is not assignable to type 'InsertTextFormat'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1118,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1128,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1476,15): error TS2322: Type 'Map<string, IndexResults> | undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright:   Type 'undefined' is not assignable to type 'Map<string, IndexResults>'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1495,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1496,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1499,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1510,25): error TS2322: Type '{ textEdit: TextEdit; additionalTextEdits: TextEditAction[] | undefined; }' is not assignable to type 'Edits'.
+pyright:   Types of property 'additionalTextEdits' are incompatible.
+pyright:     Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+pyright:       Type 'undefined' is not assignable to type 'TextEditAction[]'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1710,25): error TS2322: Type 'ObjectType | undefined' is not assignable to type 'ObjectType'.
+pyright:   Type 'undefined' is not assignable to type 'ObjectType'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1920,112): error TS2345: Argument of type '{ autoImportText: string | undefined; funcParensDisabled: boolean | undefined; edits: Edits | undefined; }' is not assignable to parameter of type 'CompletionDetail'.
+pyright:   Types of property 'funcParensDisabled' are incompatible.
+pyright:     Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(1930,90): error TS2345: Argument of type '{ funcParensDisabled: boolean | undefined; edits: Edits | undefined; }' is not assignable to parameter of type 'CompletionDetail'.
+pyright:   Types of property 'funcParensDisabled' are incompatible.
+pyright:     Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/completionProvider.ts(2189,13): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(80,5): error TS2322: Type '{ originalName: string; modulePath: string; kind: SymbolKind; itemKind: 5 | 2 | 8 | 10 | 3 | 22 | 4 | 6 | 7 | 9 | 12 | 13 | 17 | 19 | 20 | 21 | 25 | 23 | 24 | undefined; }' is not assignable to type 'IndexAliasData'.
+pyright:   Types of property 'itemKind' are incompatible.
+pyright:     Type '5 | 2 | 8 | 10 | 3 | 22 | 4 | 6 | 7 | 9 | 12 | 13 | 17 | 19 | 20 | 21 | 25 | 23 | 24 | undefined' is not assignable to type 'CompletionItemKind'.
+pyright:       Type 'undefined' is not assignable to type 'CompletionItemKind'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(233,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(402,9): error TS2322: Type '5 | 2 | 8 | 10 | 3 | 22 | 4 | 6 | 7 | 9 | 12 | 13 | 17 | 19 | 20 | 21 | 25 | 23 | 24 | undefined' is not assignable to type 'CompletionItemKind'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(403,9): error TS2322: Type 'IndexAliasData | undefined' is not assignable to type 'IndexAliasData'.
+pyright:   Type 'undefined' is not assignable to type 'IndexAliasData'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(407,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+pyright:   Type 'undefined' is not assignable to type 'Range'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(408,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+pyright:   Type 'undefined' is not assignable to type 'Range'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(409,9): error TS2322: Type 'IndexSymbolData[] | undefined' is not assignable to type 'IndexSymbolData[]'.
+pyright:   Type 'undefined' is not assignable to type 'IndexSymbolData[]'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(425,9): error TS2322: Type '1[] | undefined' is not assignable to type '1[]'.
+pyright:   Type 'undefined' is not assignable to type '1[]'.
+pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(426,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/signatureHelpProvider.ts(146,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/languageService/signatureHelpProvider.ts(168,13): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+pyright:   Type 'undefined' is not assignable to type 'number'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(211,13): error TS2322: Type 'SuiteNode | undefined' is not assignable to type 'IfNode | SuiteNode'.
+pyright:   Type 'undefined' is not assignable to type 'IfNode | SuiteNode'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(735,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright:   Type 'undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(736,13): error TS2322: Type 'DecoratorNode[] | undefined' is not assignable to type 'DecoratorNode[]'.
+pyright:   Type 'undefined' is not assignable to type 'DecoratorNode[]'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(1188,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(1920,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(1987,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/parser/parseNodes.ts(2072,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+pyright: ../pyright-internal/src/parser/parser.ts(293,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parser.ts(1323,9): error TS2322: Type 'SuiteNode | undefined' is not assignable to type 'SuiteNode'.
+pyright:   Type 'undefined' is not assignable to type 'SuiteNode'.
+pyright: ../pyright-internal/src/parser/parser.ts(3264,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parser.ts(3268,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parser.ts(3272,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+pyright: ../pyright-internal/src/parser/parser.ts(3779,39): error TS2322: Type 'ErrorNode | undefined' is not assignable to type 'ErrorNode'.
+pyright:   Type 'undefined' is not assignable to type 'ErrorNode'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(200,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(226,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(252,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(272,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(291,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(332,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(362,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(381,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(400,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+pyright: ../pyright-internal/src/pyright.ts(417,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/pyright.ts(418,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+pyright: ../pyright-internal/src/pyright.ts(478,32): error TS2532: Object is possibly 'undefined'.
+pyright: ../pyright-internal/src/pyright.ts(479,30): error TS2532: Object is possibly 'undefined'.
+pyright: ../pyright-internal/src/pyright.ts(669,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+pyright:   Type 'undefined' is not assignable to type 'Range'.
+pyright: ../pyright-internal/src/pyright.ts(670,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/analysis.ts(87,13): error TS2322: Type 'Error | undefined' is not assignable to type 'Error'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Error'.
+vscode-pyright: ../pyright-internal/src/analyzer/analyzerNodeInfo.ts(153,5): error TS2322: Type 'string[] | undefined' is not assignable to type 'string[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/backgroundAnalysisProgram.ts(41,9): error TS2322: Type 'BackgroundAnalysisBase | undefined' is not assignable to type 'BackgroundAnalysisBase'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'BackgroundAnalysisBase'.
+vscode-pyright: ../pyright-internal/src/analyzer/backgroundAnalysisProgram.ts(42,9): error TS2322: Type 'MaxAnalysisTime | undefined' is not assignable to type 'MaxAnalysisTime'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'MaxAnalysisTime'.
+vscode-pyright: ../pyright-internal/src/analyzer/backgroundAnalysisProgram.ts(118,9): error TS2322: Type 'AnalysisCompleteCallback | undefined' is not assignable to type 'AnalysisCompleteCallback'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'AnalysisCompleteCallback'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1583,25): error TS2322: Type 'AliasDeclaration | undefined' is not assignable to type 'AliasDeclaration'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'AliasDeclaration'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1919,17): error TS2322: Type 'ParseNode | undefined' is not assignable to type 'ParseNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ParseNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1932,9): error TS2322: Type 'FlowLabel[] | undefined' is not assignable to type 'FlowLabel[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1939,9): error TS2322: Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1940,9): error TS2322: Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1944,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(1945,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(2259,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(2260,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(2307,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(2721,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(2722,9): error TS2322: Type 'FlowLabel | undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FlowLabel'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(2898,25): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(3014,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(3015,25): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(3017,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(3077,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/binder.ts(3146,27): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/importResolver.ts(133,13): error TS2322: Type 'undefined' is not assignable to type 'ImportResult'.
+vscode-pyright: ../pyright-internal/src/analyzer/importResolver.ts(870,13): error TS2322: Type 'PyTypedInfo | undefined' is not assignable to type 'PyTypedInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'PyTypedInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/importResolver.ts(872,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/importResolver.ts(1439,76): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(249,9): error TS2322: Type '{ sourceFile: SourceFile; isTracked: true; isOpenByClient: false; isTypeshedFile: false; isThirdPartyImport: boolean; isThirdPartyPyTypedPresent: boolean; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+vscode-pyright:   Types of property 'diagnosticsVersion' are incompatible.
+vscode-pyright:     Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(262,41): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(279,13): error TS2322: Type '{ sourceFile: SourceFile; isTracked: false; isOpenByClient: true; isTypeshedFile: false; isThirdPartyImport: false; isThirdPartyPyTypedPresent: false; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+vscode-pyright:   Types of property 'diagnosticsVersion' are incompatible.
+vscode-pyright:     Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(292,45): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(299,13): error TS2322: Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(302,9): error TS2532: Object is possibly 'undefined'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(655,13): error TS2322: Type '{ sourceFile: SourceFile; isTracked: false; isOpenByClient: false; isTypeshedFile: false; isThirdPartyImport: false; isThirdPartyPyTypedPresent: false; diagnosticsVersion: undefined; imports: never[]; importedBy: never[]; shadows: never[]; shadowedBy: never[]; }' is not assignable to type 'SourceFileInfo'.
+vscode-pyright:   Types of property 'diagnosticsVersion' are incompatible.
+vscode-pyright:     Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(668,45): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(671,14): error TS2532: Object is possibly 'undefined'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(672,13): error TS2532: Object is possibly 'undefined'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(675,43): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(676,38): error TS2345: Argument of type 'SourceFileInfo | undefined' is not assignable to parameter of type 'SourceFileInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(679,16): error TS2532: Object is possibly 'undefined'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(774,9): error TS2322: Type '{ symbolTable: SymbolTable; dunderAllNames: string[] | undefined; readonly docString: string | undefined; }' is not assignable to type 'ImportLookupResult'.
+vscode-pyright:   Types of property 'docString' are incompatible.
+vscode-pyright:     Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:       Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(1054,21): error TS2322: Type 'Map<string, IndexResults> | undefined' is not assignable to type 'Map<string, IndexResults>'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Map<string, IndexResults>'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(1111,17): error TS2322: Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(1844,21): error TS2322: Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(2094,25): error TS2322: Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(2121,9): error TS2322: Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/program.ts(2125,13): error TS2322: Type 'SourceFileInfo | undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SourceFileInfo'.
+vscode-pyright: ../pyright-internal/src/analyzer/scope.ts(81,9): error TS2322: Type 'Scope | undefined' is not assignable to type 'Scope'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Scope'.
+vscode-pyright: ../pyright-internal/src/analyzer/service.ts(117,9): error TS2322: Type 'MaxAnalysisTime | undefined' is not assignable to type 'MaxAnalysisTime'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'MaxAnalysisTime'.
+vscode-pyright: ../pyright-internal/src/analyzer/service.ts(118,9): error TS2322: Type 'BackgroundAnalysisProgramFactory | undefined' is not assignable to type 'BackgroundAnalysisProgramFactory'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'BackgroundAnalysisProgramFactory'.
+vscode-pyright: ../pyright-internal/src/analyzer/service.ts(503,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/service.ts(504,9): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'PythonVersion'.
+vscode-pyright: ../pyright-internal/src/analyzer/service.ts(613,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/analyzer/service.ts(651,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(374,9): error TS2322: Type 'undefined' is not assignable to type 'ParseResults'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(375,9): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(384,9): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(385,9): error TS2322: Type 'undefined' is not assignable to type 'IndexResults'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(402,17): error TS2322: Type 'undefined' is not assignable to type 'SymbolTable'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(403,17): error TS2322: Type 'undefined' is not assignable to type 'IndexResults'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(418,13): error TS2322: Type 'undefined' is not assignable to type 'TextDocument'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(560,21): error TS2322: Type 'ImportResult | undefined' is not assignable to type 'ImportResult'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ImportResult'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(561,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(562,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(563,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(604,17): error TS2322: Type 'undefined' is not assignable to type 'ImportResult[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(605,17): error TS2322: Type 'undefined' is not assignable to type 'ImportResult'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(623,13): error TS2322: Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(840,13): error TS2345: Argument of type '{ nameMap: AbbreviationMap | undefined; libraryMap: Map<string, IndexResults> | undefined; getModuleSymbolsMap: () => ModuleSymbolMap; }' is not assignable to parameter of type 'AutoImportMaps'.
+vscode-pyright:   Types of property 'nameMap' are incompatible.
+vscode-pyright:     Type 'AbbreviationMap | undefined' is not assignable to type 'AbbreviationMap'.
+vscode-pyright:       Type 'undefined' is not assignable to type 'Map<string, AbbreviationInfo>'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(882,13): error TS2345: Argument of type '{ nameMap: AbbreviationMap | undefined; libraryMap: Map<string, IndexResults> | undefined; getModuleSymbolsMap: () => ModuleSymbolMap; }' is not assignable to parameter of type 'AutoImportMaps'.
+vscode-pyright:   Types of property 'nameMap' are incompatible.
+vscode-pyright:     Type 'AbbreviationMap | undefined' is not assignable to type 'AbbreviationMap'.
+vscode-pyright:       Type 'undefined' is not assignable to type 'Map<string, AbbreviationInfo>'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1036,13): error TS2322: Type 'Scope | undefined' is not assignable to type 'Scope'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Scope'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1037,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1038,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1039,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1152,13): error TS2322: Type 'ImportResult | undefined' is not assignable to type 'ImportResult'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ImportResult'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1153,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1154,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/sourceFile.ts(1155,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(1673,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(1699,17): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2297,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2299,33): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2368,25): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(2369,25): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(3010,45): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(3010,68): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(3440,25): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(4377,81): error TS2322: Type 'ClassType | ObjectType | TypeVarType | undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(4868,29): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(5609,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6090,17): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6315,21): error TS2322: Type 'ClassType | ObjectType | undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ClassType | ObjectType | TypeVarType'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6390,25): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(6977,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7435,13): error TS2322: Type 'UnionableType | UnionType | undefined' is not assignable to type 'Type'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7724,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7794,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(7807,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8081,29): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8137,37): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8182,29): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8198,13): error TS2322: Type 'TypeVarType | undefined' is not assignable to type 'TypeVarType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TypeVarType'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8199,13): error TS2322: Type 'FunctionArgument[] | undefined' is not assignable to type 'FunctionArgument[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionArgument[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8200,13): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8380,13): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(8411,17): error TS2322: Type 'FunctionParameter | undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionParameter'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(9562,33): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(10390,29): error TS2322: Type 'DiagnosticAddendum | undefined' is not assignable to type 'DiagnosticAddendum'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DiagnosticAddendum'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(10991,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(10993,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(11927,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'UnknownType | ClassType'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(12176,25): error TS2322: Type 'TypeVarType[] | undefined' is not assignable to type 'TypeVarType[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TypeVarType[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(12901,21): error TS2322: Type 'DataClassBehaviors | undefined' is not assignable to type 'DataClassBehaviors'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DataClassBehaviors'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13171,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13358,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13360,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13361,17): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13363,17): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13683,21): error TS2322: Type 'DataClassBehaviors | undefined' is not assignable to type 'DataClassBehaviors'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DataClassBehaviors'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13765,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13837,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13840,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13876,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13877,9): error TS2322: Type 'FunctionDeclaration | undefined' is not assignable to type 'FunctionDeclaration'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'FunctionDeclaration'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(13881,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(16432,21): error TS2322: Type 'never[] | undefined' is not assignable to type '(Type | undefined)[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type '(Type | undefined)[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(18689,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeEvaluator.ts(22061,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeStubWriter.ts(73,17): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeStubWriter.ts(75,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeUtils.ts(682,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeUtils.ts(1119,33): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeUtils.ts(1792,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeUtils.ts(1933,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeUtils.ts(2037,5): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeVarMap.ts(172,57): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeVarMap.ts(172,70): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/typeVarMap.ts(172,81): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(141,13): error TS2322: Type 'TypeVarType[] | undefined' is not assignable to type 'TypeVarType[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TypeVarType[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(142,13): error TS2322: Type 'Type[] | undefined' is not assignable to type 'Type[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Type[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(446,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'UnknownType | ClassType'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(447,17): error TS2322: Type 'UnknownType | ClassType | undefined' is not assignable to type 'UnknownType | ClassType'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(451,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(471,9): error TS2322: Type '(UnionableType | UnionType)[] | undefined' is not assignable to type 'Type[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Type[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(477,9): error TS2322: Type '(UnionableType | UnionType)[] | undefined' is not assignable to type 'Type[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Type[]'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(490,9): error TS2322: Type 'LiteralValue | undefined' is not assignable to type 'LiteralValue'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'LiteralValue'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(505,9): error TS2322: Type 'Map<string, TypedDictEntry> | undefined' is not assignable to type 'Map<string, TypedDictEntry>'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Map<string, TypedDictEntry>'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(998,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1039,13): error TS2322: Type 'ClassType | ObjectType | undefined' is not assignable to type 'ClassType | ObjectType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ClassType | ObjectType'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1056,17): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1060,9): error TS2322: Type 'Type | undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1061,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1121,9): error TS2322: Type 'SpecializedFunctionTypes | undefined' is not assignable to type 'SpecializedFunctionTypes'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SpecializedFunctionTypes'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1132,17): error TS2322: Type '(FunctionParameter | { category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; })[]' is not assignable to type 'FunctionParameter[]'.
+vscode-pyright:   Type 'FunctionParameter | { category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; }' is not assignable to type 'FunctionParameter'.
+vscode-pyright:     Type '{ category: ParameterCategory; name: string | undefined; hasDefault: boolean; isNameSynthesized: boolean; hasDeclaredType: boolean; type: Type; }' is not assignable to type 'FunctionParameter'.
+vscode-pyright:       Types of property 'name' are incompatible.
+vscode-pyright:         Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:           Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1183,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/analyzer/types.ts(1689,9): error TS2322: Type 'undefined' is not assignable to type 'Type'.
+vscode-pyright: ../pyright-internal/src/backgroundAnalysis.ts(21,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/common/configOptions.ts(50,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/common/configOptions.ts(1228,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/common/configOptions.ts(1238,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/common/configOptions.ts(1292,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/common/configOptions.ts(1304,9): error TS2322: Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/common/configOptions.ts(1425,9): error TS2322: Type 'PythonVersion | undefined' is not assignable to type 'PythonVersion'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'PythonVersion'.
+vscode-pyright: ../pyright-internal/src/languageServerBase.ts(285,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageServerBase.ts(449,51): error TS2322: Type 'InitializeResult<any>' is not assignable to type 'HandlerResult<InitializeResult<any>, InitializeError>'.
+vscode-pyright:   Type 'InitializeResult<any>' is missing the following properties from type 'ResponseError<InitializeError>': code, data, toJson, name, message
+vscode-pyright: ../pyright-internal/src/languageServerBase.ts(449,67): error TS2345: Argument of type 'import("/pyright/packages/vscode-pyright/node_modules/vscode-languageserver-protocol/lib/common/protocol").InitializeParams' is not assignable to parameter of type 'import("/pyright/packages/pyright-internal/node_modules/vscode-languageserver-protocol/lib/common/protocol").InitializeParams'.
+vscode-pyright:   Type 'InitializeParams' is not assignable to type '_InitializeParams'.
+vscode-pyright:     Types of property 'capabilities' are incompatible.
+vscode-pyright:       Type 'import("/pyright/packages/vscode-pyright/node_modules/vscode-languageserver-protocol/lib/common/protocol").ClientCapabilities' is not assignable to type 'import("/pyright/packages/pyright-internal/node_modules/vscode-languageserver-protocol/lib/common/protocol").ClientCapabilities'.
+vscode-pyright:         Type 'ClientCapabilities' is not assignable to type '_ClientCapabilities'.
+vscode-pyright:           Types of property 'workspace' are incompatible.
+vscode-pyright:             Type '(WorkspaceClientCapabilities & { workspaceFolders?: boolean; } & { configuration?: boolean; }) | undefined' is not assignable to type 'WorkspaceClientCapabilities'.
+vscode-pyright:               Type 'undefined' is not assignable to type 'WorkspaceClientCapabilities'.
+vscode-pyright: ../pyright-internal/src/languageServerBase.ts(659,17): error TS2322: Type 'MarkupContent | undefined' is not assignable to type 'string | MarkupContent'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string | MarkupContent'.
+vscode-pyright: ../pyright-internal/src/languageServerBase.ts(660,17): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(44,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(45,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(46,5): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(47,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(48,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(57,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(58,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(59,9): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(96,5): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(97,5): error TS2322: Type 'string[] | undefined' is not assignable to type 'string[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string[]'.
+vscode-pyright: ../pyright-internal/src/languageService/analyzerServiceExecutor.ts(98,5): error TS2322: Type 'DiagnosticSeverityOverridesMap | undefined' is not assignable to type 'DiagnosticSeverityOverridesMap'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DiagnosticSeverityOverridesMap'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(106,46): error TS2322: Type '13 | undefined' is not assignable to type 'SymbolKind'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SymbolKind'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(371,25): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(373,25): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(391,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(392,17): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(394,17): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(396,17): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(519,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(520,21): error TS2322: Type 'Symbol | undefined' is not assignable to type 'Symbol'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Symbol'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(521,21): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(522,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(524,21): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(627,13): error TS2322: Type '{ symbolName: string | undefined; importName: string; importFrom: string | undefined; filePath: string; dotCount: number; moduleNameAndType: ModuleNameAndType; }' is not assignable to type 'ImportParts'.
+vscode-pyright:   Types of property 'symbolName' are incompatible.
+vscode-pyright:     Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:       Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(743,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(774,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(801,13): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(844,25): error TS2322: Type 'IndexAliasData | undefined' is not assignable to type 'IndexAliasData'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'IndexAliasData'.
+vscode-pyright: ../pyright-internal/src/languageService/autoImporter.ts(846,25): error TS2322: Type 'CompletionItemKind | undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(774,21): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(903,29): error TS2322: Type '2 | undefined' is not assignable to type 'InsertTextFormat'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'InsertTextFormat'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1118,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1128,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1476,15): error TS2322: Type 'Map<string, IndexResults> | undefined' is not assignable to type 'Map<string, IndexResults>'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Map<string, IndexResults>'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1495,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1496,21): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1499,25): error TS2322: Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1510,25): error TS2322: Type '{ textEdit: TextEdit; additionalTextEdits: TextEditAction[] | undefined; }' is not assignable to type 'Edits'.
+vscode-pyright:   Types of property 'additionalTextEdits' are incompatible.
+vscode-pyright:     Type 'TextEditAction[] | undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright:       Type 'undefined' is not assignable to type 'TextEditAction[]'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1710,25): error TS2322: Type 'ObjectType | undefined' is not assignable to type 'ObjectType'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ObjectType'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1920,112): error TS2345: Argument of type '{ autoImportText: string | undefined; funcParensDisabled: boolean | undefined; edits: Edits | undefined; }' is not assignable to parameter of type 'CompletionDetail'.
+vscode-pyright:   Types of property 'funcParensDisabled' are incompatible.
+vscode-pyright:     Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(1930,90): error TS2345: Argument of type '{ funcParensDisabled: boolean | undefined; edits: Edits | undefined; }' is not assignable to parameter of type 'CompletionDetail'.
+vscode-pyright:   Types of property 'funcParensDisabled' are incompatible.
+vscode-pyright:     Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/completionProvider.ts(2189,13): error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(80,5): error TS2322: Type '{ originalName: string; modulePath: string; kind: SymbolKind; itemKind: 2 | 21 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 22 | 12 | 13 | 17 | 19 | 20 | 25 | 23 | 24 | undefined; }' is not assignable to type 'IndexAliasData'.
+vscode-pyright:   Types of property 'itemKind' are incompatible.
+vscode-pyright:     Type '2 | 21 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 22 | 12 | 13 | 17 | 19 | 20 | 25 | 23 | 24 | undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright:       Type 'undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(233,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(402,9): error TS2322: Type '2 | 21 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 22 | 12 | 13 | 17 | 19 | 20 | 25 | 23 | 24 | undefined' is not assignable to type 'CompletionItemKind'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(403,9): error TS2322: Type 'IndexAliasData | undefined' is not assignable to type 'IndexAliasData'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'IndexAliasData'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(407,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Range'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(408,9): error TS2322: Type 'Range | undefined' is not assignable to type 'Range'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Range'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(409,9): error TS2322: Type 'IndexSymbolData[] | undefined' is not assignable to type 'IndexSymbolData[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'IndexSymbolData[]'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(425,9): error TS2322: Type '1[] | undefined' is not assignable to type '1[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type '1[]'.
+vscode-pyright: ../pyright-internal/src/languageService/documentSymbolProvider.ts(426,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/signatureHelpProvider.ts(146,17): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'string'.
+vscode-pyright: ../pyright-internal/src/languageService/signatureHelpProvider.ts(168,13): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'number'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(211,13): error TS2322: Type 'SuiteNode | undefined' is not assignable to type 'IfNode | SuiteNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'IfNode | SuiteNode'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(735,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(736,13): error TS2322: Type 'DecoratorNode[] | undefined' is not assignable to type 'DecoratorNode[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'DecoratorNode[]'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(1188,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(1920,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(1987,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/parser/parseNodes.ts(2072,13): error TS2322: Type 'NameNode | undefined' is not assignable to type 'NameNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'NameNode'.
+vscode-pyright: ../pyright-internal/src/parser/parser.ts(293,13): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parser.ts(1323,9): error TS2322: Type 'SuiteNode | undefined' is not assignable to type 'SuiteNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'SuiteNode'.
+vscode-pyright: ../pyright-internal/src/parser/parser.ts(3264,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parser.ts(3268,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parser.ts(3272,9): error TS2322: Type 'ExpressionNode | undefined' is not assignable to type 'ExpressionNode'.
+vscode-pyright: ../pyright-internal/src/parser/parser.ts(3779,39): error TS2322: Type 'ErrorNode | undefined' is not assignable to type 'ErrorNode'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'ErrorNode'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(200,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(226,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(252,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(272,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(291,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(332,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(362,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(381,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
+vscode-pyright: ../pyright-internal/src/parser/tokenizerTypes.ts(400,13): error TS2322: Type 'Comment[] | undefined' is not assignable to type 'Comment[]'.
+vscode-pyright:   Type 'undefined' is not assignable to type 'Comment[]'.
 
 
 
 Standard error:
 lerna notice cli vX.X.X
 lerna info Executing command in 3 packages: "tsc --noEmit"
+lerna ERR! Received non-zero exit code 2 during execution
 lerna success exec Executed command in 3 packages: "tsc --noEmit"

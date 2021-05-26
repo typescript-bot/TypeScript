@@ -76,7 +76,7 @@ lib/help.js(137,35): error TS2769: No overload matches this call.
   The last overload gave the following error.
     Argument of type '{ env: {}; stdio: string; }' is not assignable to parameter of type 'SpawnOptions'.
       Types of property 'stdio' are incompatible.
-        Type 'string' is not assignable to type 'StdioOptions | undefined'.
+        Type 'string' is not assignable to type 'StdioOptions'.
 lib/help.js(139,12): error TS2339: Property 'on' does not exist on type 'never'.
   The intersection 'ChildProcessWithoutNullStreams & ChildProcessByStdio<Writable, Readable, Readable> & ... 7 more ... & ChildProcess' was reduced to 'never' because property 'stdin' has conflicting types in some constituents.
 lib/help.js(143,16): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
