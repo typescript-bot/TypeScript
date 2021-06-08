@@ -27,7 +27,11 @@ node_modules/assert/test.js(256,55): error TS2345: Argument of type 'TypeError' 
 node_modules/assert/test.js(262,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 node_modules/assert/test.js(279,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 node_modules/assert/test.js(285,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
+node_modules/assert/test.js(290,24): error TS2571: Object is of type 'unknown'.
 node_modules/assert/test.js(320,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
+node_modules/assert/test.js(329,22): error TS2571: Object is of type 'unknown'.
+node_modules/assert/test.js(336,22): error TS2571: Object is of type 'unknown'.
+node_modules/assert/test.js(342,22): error TS2571: Object is of type 'unknown'.
 node_modules/assert/test.js(346,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 
 

@@ -1,0 +1,10 @@
+Exit Code: 2
+Standard output:
+node_modules/antd/lib/alert/ErrorBoundary.d.ts(12,5): error TS2416: Property 'state' in type 'ErrorBoundary' is not assignable to the same property in base type 'Component<ErrorBoundaryProps, { error?: Error | null; info: { componentStack?: string; }; }, any>'.
+  Type '{ error: undefined; info: { componentStack: string; }; }' is not assignable to type 'Readonly<{ error?: Error | null; info: { componentStack?: string; }; }>'.
+    Types of property 'error' are incompatible.
+      Type 'undefined' is not assignable to type 'Error | null'.
+
+
+
+Standard error:

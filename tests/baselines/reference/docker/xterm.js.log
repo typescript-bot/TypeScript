@@ -3,11 +3,24 @@ Standard output:
 
 > xterm@X.X.X build /xtermjs
 > tsc -b ./tsconfig.all.json
+src/common/CoreTerminal.ts(97,46): error TS2345: Argument of type 'ITerminalOptions' is not assignable to parameter of type 'IPartialTerminalOptions'.
+  Types of property 'fastScrollModifier' are incompatible.
+    Type '"alt" | "ctrl" | "shift" | undefined' is not assignable to type '"alt" | "ctrl" | "shift"'.
+      Type 'undefined' is not assignable to type '"alt" | "ctrl" | "shift"'.
+error TS2688: Cannot find type definition file for '../../../out-test/api/TestUtils'.
+  The file is in the program because:
+    Entry point of type library '../../../out-test/api/TestUtils' specified in compilerOptions
+error TS2688: Cannot find type definition file for '../../../out-test/api/TestUtils'.
+  The file is in the program because:
+    Entry point of type library '../../../out-test/api/TestUtils' specified in compilerOptions
 addons/xterm-addon-ligatures/src/font.ts(6,26): error TS2307: Cannot find module 'font-finder' or its corresponding type declarations.
 addons/xterm-addon-ligatures/src/font.ts(7,44): error TS2307: Cannot find module 'font-ligatures' or its corresponding type declarations.
 addons/xterm-addon-ligatures/src/font.ts(40,31): error TS2352: Conversion of type 'Navigator' to type 'IFontAccessNavigator' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Property 'fonts' is missing in type 'Navigator' but required in type 'IFontAccessNavigator'.
+addons/xterm-addon-ligatures/src/font.ts(50,13): error TS2571: Object is of type 'unknown'.
 addons/xterm-addon-ligatures/src/font.ts(56,38): error TS2352: Conversion of type 'Navigator' to type 'IFontAccessNavigator' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+addons/xterm-addon-ligatures/src/font.ts(65,23): error TS2571: Object is of type 'unknown'.
+addons/xterm-addon-ligatures/src/font.ts(65,33): error TS2571: Object is of type 'unknown'.
 addons/xterm-addon-ligatures/src/font.ts(71,38): error TS2307: Cannot find module 'font-finder' or its corresponding type declarations.
 addons/xterm-addon-ligatures/src/index.ts(7,22): error TS2307: Cannot find module 'font-ligatures' or its corresponding type declarations.
 addons/xterm-addon-ligatures/src/index.ts(75,14): error TS2347: Untyped function calls may not accept type arguments.
@@ -19,6 +32,13 @@ addons/xterm-addon-ligatures/src/index.test.ts(10,32): error TS2307: Cannot find
 addons/xterm-addon-ligatures/src/index.test.ts(26,25): error TS2304: Cannot find name '__dirname'.
 addons/xterm-addon-ligatures/src/index.test.ts(33,25): error TS2304: Cannot find name '__dirname'.
 addons/xterm-addon-ligatures/src/index.test.ts(40,25): error TS2304: Cannot find name '__dirname'.
+addons/xterm-addon-ligatures/src/index.test.ts(210,5): error TS2322: Type 'undefined' is not assignable to type '(text: string) => [number, number][]'.
+error TS2688: Cannot find type definition file for '../../../out-test/api/TestUtils'.
+  The file is in the program because:
+    Entry point of type library '../../../out-test/api/TestUtils' specified in compilerOptions
+error TS2688: Cannot find type definition file for '../../../out-test/api/TestUtils'.
+  The file is in the program because:
+    Entry point of type library '../../../out-test/api/TestUtils' specified in compilerOptions
 
 
 
