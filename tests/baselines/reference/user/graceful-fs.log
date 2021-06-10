@@ -39,6 +39,7 @@ node_modules/graceful-fs/legacy-streams.js(99,36): error TS2339: Property 'start
 node_modules/graceful-fs/legacy-streams.js(102,16): error TS2339: Property 'start' does not exist on type 'WriteStream'.
 node_modules/graceful-fs/legacy-streams.js(106,23): error TS2339: Property 'start' does not exist on type 'WriteStream'.
 node_modules/graceful-fs/legacy-streams.js(115,12): error TS2339: Property 'flush' does not exist on type 'WriteStream'.
+node_modules/graceful-fs/polyfills.js(149,13): error TS2571: Object is of type 'unknown'.
 
 
 

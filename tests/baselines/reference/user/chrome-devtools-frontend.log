@@ -12,7 +12,7 @@ node_modules/chrome-devtools-frontend/front_end/Runtime.js(280,5): error TS2322:
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(283,12): error TS2554: Expected 2-3 arguments, but got 1.
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(525,9): error TS2322: Type 'Window' is not assignable to type 'Window & typeof globalThis'.
   Type 'Window' is missing the following properties from type 'typeof globalThis': globalThis, eval, parseInt, parseFloat, and 825 more.
-node_modules/chrome-devtools-frontend/front_end/Runtime.js(527,49): error TS2352: Conversion of type 'Window & typeof globalThis' to type 'new () => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/Runtime.js(527,55): error TS2352: Conversion of type 'Window & typeof globalThis' to type 'new () => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'Window & typeof globalThis' provides no match for the signature 'new (): any'.
 node_modules/chrome-devtools-frontend/front_end/Runtime.js(539,24): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
@@ -572,17 +572,17 @@ node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/crc-
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/crc-details-renderer.js(161,9): error TS2304: Cannot find name 'Util'.
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/crc-details-renderer.js(184,8): error TS2339: Property 'CriticalRequestChainRenderer' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(12,15): error TS2304: Cannot find name 'DOM'.
-node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(41,42): error TS2352: Conversion of type 'DetailsJSON' to type 'ThumbnailDetails' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(41,49): error TS2352: Conversion of type 'DetailsJSON' to type 'ThumbnailDetails' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'DetailsJSON' is missing the following properties from type 'ThumbnailDetails': url, mimeType
-node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(43,42): error TS2352: Conversion of type 'DetailsJSON' to type 'FilmstripDetails' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(43,49): error TS2352: Conversion of type 'DetailsJSON' to type 'FilmstripDetails' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'DetailsJSON' is missing the following properties from type 'FilmstripDetails': scale, items
-node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(45,38): error TS2352: Conversion of type 'DetailsJSON' to type 'CardsDetailsJSON' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(45,45): error TS2352: Conversion of type 'DetailsJSON' to type 'CardsDetailsJSON' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'DetailsJSON' is missing the following properties from type 'CardsDetailsJSON': header, items
-node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(47,38): error TS2352: Conversion of type 'DetailsJSON' to type 'TableDetailsJSON' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(47,45): error TS2352: Conversion of type 'DetailsJSON' to type 'TableDetailsJSON' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'DetailsJSON' is missing the following properties from type 'TableDetailsJSON': header, items, itemHeaders
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(53,16): error TS2304: Cannot find name 'CriticalRequestChainRenderer'.
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(54,23): error TS2503: Cannot find namespace 'CriticalRequestChainRenderer'.
-node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(56,37): error TS2352: Conversion of type 'DetailsJSON' to type 'ListDetailsJSON' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(56,44): error TS2352: Conversion of type 'DetailsJSON' to type 'ListDetailsJSON' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'DetailsJSON' is missing the following properties from type 'ListDetailsJSON': header, items
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(73,22): error TS2304: Cannot find name 'Util'.
 node_modules/chrome-devtools-frontend/front_end/audits2/lighthouse/renderer/details-renderer.js(77,25): error TS1196: Catch clause variable type annotation must be 'any' or 'unknown' if specified.
@@ -4827,7 +4827,7 @@ node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(89,50): er
 node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(94,42): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(96,45): error TS2339: Property 'createChild' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(98,48): error TS2339: Property 'createChild' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(109,26): error TS2352: Conversion of type 'DataGridNode<any>' to type 'NODE_TYPE' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(109,33): error TS2352: Conversion of type 'DataGridNode<any>' to type 'NODE_TYPE' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   'NODE_TYPE' could be instantiated with an arbitrary type which could be unrelated to 'DataGridNode<any>'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(121,17): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/data_grid/DataGrid.js(123,17): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
@@ -5066,7 +5066,7 @@ node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(20
   'NODE_TYPE' could be instantiated with an arbitrary type which could be unrelated to 'SortableDataGridNode<NODE_TYPE>'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(84,59): error TS2345: Argument of type '{ id: string; title: string; width: number; sortable: true; }' is not assignable to parameter of type 'ColumnDescriptor'.
   Object literal may only specify known properties, and 'width' does not exist in type 'ColumnDescriptor'.
-node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(131,20): error TS2352: Conversion of type 'NODE_TYPE' to type 'SortableDataGridNode<NODE_TYPE>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(131,27): error TS2352: Conversion of type 'NODE_TYPE' to type 'SortableDataGridNode<NODE_TYPE>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
 node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(141,21): error TS2339: Property 'recalculateSiblings' does not exist on type 'NODE_TYPE'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(142,21): error TS2339: Property '_sortChildren' does not exist on type 'NODE_TYPE'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js(165,42): error TS2339: Property 'upperBound' does not exist on type 'NODE_TYPE[]'.
@@ -5094,7 +5094,7 @@ node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(20
 node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(243,33): error TS2339: Property 'flatChildren' does not exist on type 'NODE_TYPE'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(256,50): error TS2339: Property 'offsetHeight' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(257,47): error TS2339: Property 'offsetHeight' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(320,22): error TS2352: Conversion of type 'NODE_TYPE' to type 'ViewportDataGridNode<any>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(320,29): error TS2352: Conversion of type 'NODE_TYPE' to type 'ViewportDataGridNode<any>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
 node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(334,21): error TS2322: Type 'NODE_TYPE[]' is not assignable to type 'ViewportDataGridNode<any>[]'.
   Type 'NODE_TYPE' is not assignable to type 'ViewportDataGridNode<any>'.
 node_modules/chrome-devtools-frontend/front_end/data_grid/ViewportDataGrid.js(363,15): error TS2339: Property 'parent' does not exist on type 'NODE_TYPE'.
@@ -5313,7 +5313,7 @@ node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1246,4
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1251,12): error TS2339: Property 'CSSPrimitiveValue' does not exist on type 'Window & typeof globalThis'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1267,21): error TS2339: Property 'deepPath' does not exist on type 'Event'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1270,12): error TS2339: Property 'FileError' does not exist on type 'Window & typeof globalThis'.
-node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1270,28): error TS2352: Conversion of type '{ NOT_FOUND_ERR: number; ABORT_ERR: number; INVALID_MODIFICATION_ERR: number; NOT_READABLE_ERR: number; }' to type 'new () => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1270,35): error TS2352: Conversion of type '{ NOT_FOUND_ERR: number; ABORT_ERR: number; INVALID_MODIFICATION_ERR: number; NOT_READABLE_ERR: number; }' to type 'new () => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type '{ NOT_FOUND_ERR: number; ABORT_ERR: number; INVALID_MODIFICATION_ERR: number; NOT_READABLE_ERR: number; }' provides no match for the signature 'new (): any'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1270,51): error TS2304: Cannot find name 'FileError'.
 node_modules/chrome-devtools-frontend/front_end/devtools_compatibility.js(1290,26): error TS2339: Property '__originalDOMTokenListToggle' does not exist on type 'DOMTokenList'.
@@ -6279,11 +6279,11 @@ node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUt
 node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(324,5): error TS2741: Property 'internalHandlers' is missing in type '{ eventListeners: any[]; }' but required in type '{ eventListeners: EventListenerObjectInInspectedPage[]; internalHandlers: (() => any)[]; }'.
 node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(371,103): error TS2322: Type '{ type: any; useCapture: any; passive: any; once: any; handler: any; remove: any; }' is not assignable to type 'EventListenerObjectInInspectedPage'.
   Object literal may only specify known properties, and 'remove' does not exist in type 'EventListenerObjectInInspectedPage'.
-node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(420,32): error TS2352: Conversion of type '{ fn: any; data: any; _data: any; }' to type '(arg0: Node) => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(420,39): error TS2352: Conversion of type '{ fn: any; data: any; _data: any; }' to type '(arg0: Node) => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type '{ fn: any; data: any; _data: any; }' provides no match for the signature '(arg0: Node): any'.
 node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(420,39): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(470,16): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
-node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(480,32): error TS2352: Conversion of type '{ fn: any; data: any; _data: any; }' to type '(arg0: Node) => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(480,39): error TS2352: Conversion of type '{ fn: any; data: any; _data: any; }' to type '(arg0: Node) => any' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type '{ fn: any; data: any; _data: any; }' provides no match for the signature '(arg0: Node): any'.
 node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersUtils.js(480,39): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/event_listeners/EventListenersView.js(14,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
@@ -6363,7 +6363,7 @@ node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionServer.js(98
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionTraceProvider.js(27,32): error TS2339: Property 'startTraceRecording' does not exist on type 'typeof extensionServer'.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionTraceProvider.js(31,32): error TS2339: Property 'stopTraceRecording' does not exist on type 'typeof extensionServer'.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionView.js(50,18): error TS2339: Property 'src' does not exist on type 'Element'.
-node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionView.js(74,22): error TS2352: Conversion of type 'Window' to type 'Window[]' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionView.js(74,29): error TS2352: Conversion of type 'Window' to type 'Window[]' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'Window' is missing the following properties from type 'Window[]': pop, push, concat, join, and 27 more.
 node_modules/chrome-devtools-frontend/front_end/extensions/ExtensionView.js(75,74): error TS2339: Property 'contentWindow' does not exist on type 'Element'.
 node_modules/chrome-devtools-frontend/front_end/extensions_test_runner/ExtensionsNetworkTestRunner.js(23,5): error TS2304: Cannot find name 'output'.
@@ -6482,7 +6482,7 @@ node_modules/chrome-devtools-frontend/front_end/formatter_worker/CSSFormatter.js
 node_modules/chrome-devtools-frontend/front_end/formatter_worker/CSSRuleParser.js(17,40): error TS2345: Argument of type '(message: any, targetOrigin: string, transfer?: Transferable[]) => void' is not assignable to parameter of type '(arg0: any) => any'.
 node_modules/chrome-devtools-frontend/front_end/formatter_worker/CSSRuleParser.js(22,12): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 node_modules/chrome-devtools-frontend/front_end/formatter_worker/ESTreeWalker.js(45,10): error TS2339: Property 'parent' does not exist on type 'Node'.
-node_modules/chrome-devtools-frontend/front_end/formatter_worker/ESTreeWalker.js(59,33): error TS2352: Conversion of type 'Node' to type 'TemplateLiteralNode' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/formatter_worker/ESTreeWalker.js(59,40): error TS2352: Conversion of type 'Node' to type 'TemplateLiteralNode' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'Node' is missing the following properties from type 'TemplateLiteralNode': quasis, expressions
 node_modules/chrome-devtools-frontend/front_end/formatter_worker/ESTreeWalker.js(62,52): error TS2345: Argument of type 'TemplateLiteralNode' is not assignable to parameter of type 'Node'.
   Type 'TemplateLiteralNode' is missing the following properties from type 'Node': start, end, type, body, and 16 more.
@@ -8799,7 +8799,7 @@ node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotDataGrids.j
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotDataGrids.js(700,24): error TS2694: Namespace 'Protocol' has no exported member 'HeapProfiler'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotDataGrids.js(713,67): error TS2339: Property '_name' does not exist on type 'HeapSnapshotGridNode'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotDataGrids.js(717,30): error TS2339: Property 'populateNodeBySnapshotObjectId' does not exist on type 'HeapSnapshotGridNode'.
-node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotGridNodes.js(63,16): error TS2352: Conversion of type '{ fieldName1: string; ascending1: string; fieldName2: string; ascending2: string; }' to type 'ComparatorConfig' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotGridNodes.js(63,23): error TS2352: Conversion of type '{ fieldName1: string; ascending1: string; fieldName2: string; ascending2: string; }' to type 'ComparatorConfig' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Types of property 'ascending1' are incompatible.
     Type 'string' is not comparable to type 'boolean'.
 node_modules/chrome-devtools-frontend/front_end/profiler/HeapSnapshotGridNodes.js(104,14): error TS2339: Property '_searchMatched' does not exist on type 'HeapSnapshotGridNode'.
@@ -12668,9 +12668,9 @@ node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(367,42): er
 node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(423,32): error TS2339: Property 'currentQuery' does not exist on type 'Searchable'.
 node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(424,35): error TS2339: Property 'currentQuery' does not exist on type 'Searchable'.
 node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(443,26): error TS2339: Property 'currentQuery' does not exist on type 'Searchable'.
-node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(474,9): error TS2352: Conversion of type 'Searchable' to type 'Replaceable' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(474,16): error TS2352: Conversion of type 'Searchable' to type 'Replaceable' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'Searchable' is missing the following properties from type 'Replaceable': replaceSelectionWith, replaceAllWith
-node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(482,9): error TS2352: Conversion of type 'Searchable' to type 'Replaceable' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(482,16): error TS2352: Conversion of type 'Searchable' to type 'Replaceable' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
 node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(527,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(532,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/ui/SearchableView.js(587,15): error TS2339: Property '__fromRegExpQuery' does not exist on type 'RegExp'.
@@ -13131,7 +13131,7 @@ node_modules/chrome-devtools-frontend/front_end/ui/View.js(163,3): error TS4112:
 node_modules/chrome-devtools-frontend/front_end/ui/View.js(171,3): error TS4112: This member cannot have an 'override' modifier because its containing class 'ProvidedView' does not extend another class.
 node_modules/chrome-devtools-frontend/front_end/ui/View.js(179,3): error TS4112: This member cannot have an 'override' modifier because its containing class 'ProvidedView' does not extend another class.
 node_modules/chrome-devtools-frontend/front_end/ui/View.js(187,3): error TS4112: This member cannot have an 'override' modifier because its containing class 'ProvidedView' does not extend another class.
-node_modules/chrome-devtools-frontend/front_end/ui/View.js(195,47): error TS2352: Conversion of type 'Widget' to type 'ItemsProvider' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/ui/View.js(195,54): error TS2352: Conversion of type 'Widget' to type 'ItemsProvider' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Property 'toolbarItems' is missing in type 'Widget' but required in type 'ItemsProvider'.
 node_modules/chrome-devtools-frontend/front_end/ui/View.js(203,9): error TS4112: This member cannot have an 'override' modifier because its containing class 'ProvidedView' does not extend another class.
 node_modules/chrome-devtools-frontend/front_end/ui/View.js(215,9): error TS4112: This member cannot have an 'override' modifier because its containing class 'ProvidedView' does not extend another class.
@@ -13378,8 +13378,8 @@ node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(180,15): 
 node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(188,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(199,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
 node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(204,15): error TS2355: A function whose declared type is neither 'void' nor 'any' must return a value.
-node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(243,25): error TS2352: Conversion of type 'this' to type 'Project' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
-node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(243,25): error TS2352: Conversion of type 'this' to type 'Project' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(243,32): error TS2352: Conversion of type 'this' to type 'Project' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(243,32): error TS2352: Conversion of type 'this' to type 'Project' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
   Type 'ProjectStore' is missing the following properties from type 'Project': isServiceProject, requestMetadata, requestFileContent, canSetFileContent, and 14 more.
 node_modules/chrome-devtools-frontend/front_end/workspace/Workspace.js(432,27): error TS2339: Property 'valuesArray' does not exist on type 'Map<string, Project>'.
 node_modules/chrome-devtools-frontend/front_end/workspace_diff/WorkspaceDiff.js(38,14): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
