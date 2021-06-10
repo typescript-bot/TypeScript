@@ -2,7 +2,7 @@ Exit Code: 1
 Standard output:
 
 Rush Multi-Project Build Tool 5.X.X - https://rushjs.io
-Node.js version is 16.2.0 (pre-LTS)
+Node.js version is 16.3.0 (pre-LTS)
 Starting "rush rebuild"
 Executing a maximum of ?simultaneous processes...
 ==[ @azure/eslint-plugin-azure-sdk ]==============================[ 1 of 90 ]==
@@ -25,21 +25,21 @@ Executing a maximum of ?simultaneous processes...
 "@azure/event-hubs" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/eventhubs-checkpointstore-blob" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/service-bus" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/eventgrid" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-eventgrid" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-auth" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-core-rest-pipeline" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-anomaly-detector" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-form-recognizer" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/ai-metrics-advisor" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure/attestation" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/container-registry" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-client" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/data-tables" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/eventgrid" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure-tests/perf-eventgrid" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/iot-modelsrepository" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-http" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-storage-blob" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/app-configuration" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure/attestation" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/core-lro" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-admin" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-certificates" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -56,6 +56,7 @@ Executing a maximum of ?simultaneous processes...
 "@azure/synapse-artifacts" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/digital-twins-core" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/identity" is blocked by "@azure/eslint-plugin-azure-sdk".
+"@azure-tests/perf-identity" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/iot-device-update" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/keyvault-common" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/mixedreality-authentication" is blocked by "@azure/eslint-plugin-azure-sdk".
@@ -76,7 +77,6 @@ Executing a maximum of ?simultaneous processes...
 "@azure/test-utils-perfstress" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-ai-form-recognizer" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure-tests/perf-ai-metrics-advisor" is blocked by "@azure/eslint-plugin-azure-sdk".
-"@azure-tests/perf-identity" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils-recorder" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/storage-internal-avro" is blocked by "@azure/eslint-plugin-azure-sdk".
 "@azure/test-utils" is blocked by "@azure/eslint-plugin-azure-sdk".
