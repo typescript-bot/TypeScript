@@ -1,10 +1,9 @@
-Exit Code: 2
+Exit Code: 1
 Standard output:
-node_modules/follow-redirects/index.js(39,17): error TS2345: Argument of type 'this' is not assignable to parameter of type 'Writable'.
-  Type 'RedirectableRequest' is missing the following properties from type 'Writable': writable, writableEnded, writableFinished, writableHighWaterMark, and 27 more.
-node_modules/follow-redirects/index.js(51,10): error TS2339: Property 'on' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(67,8): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
+node_modules/follow-redirects/index.js(74,11): error TS2554: Expected 1 arguments, but got 0.
 node_modules/follow-redirects/index.js(102,10): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
+node_modules/follow-redirects/index.js(102,24): error TS2554: Expected 1 arguments, but got 0.
 node_modules/follow-redirects/index.js(151,10): error TS2339: Property 'on' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(162,14): error TS2339: Property '_timeout' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(163,25): error TS2339: Property '_timeout' does not exist on type 'RedirectableRequest'.
@@ -19,6 +18,7 @@ node_modules/follow-redirects/index.js(193,8): error TS2339: Property 'once' doe
 node_modules/follow-redirects/index.js(252,10): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(288,16): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(336,12): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
+node_modules/follow-redirects/index.js(336,26): error TS2554: Expected 1 arguments, but got 0.
 node_modules/follow-redirects/index.js(358,17): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
 node_modules/follow-redirects/index.js(361,35): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
