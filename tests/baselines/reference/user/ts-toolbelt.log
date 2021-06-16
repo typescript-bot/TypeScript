@@ -1,6 +1,80 @@
 Exit Code: 2
 Standard output:
-index.ts(8,83): error TS2344: Type 'string' does not satisfy the constraint 'number'.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,121): error TS1110: Type expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,168): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,172): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,186): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,207): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,217): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,241): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Any/At.d.ts(24,255): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Iteration/IterationOf.d.ts(20,53): error TS1110: Type expected.
+node_modules/ts-toolbelt/out/Iteration/IterationOf.d.ts(20,60): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Iteration/IterationOf.d.ts(20,74): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/Iteration/Key.d.ts(16,48): error TS1110: Type expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,94): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,115): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,129): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,135): error TS1005: ':' expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,169): error TS1005: '(' expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,177): error TS1005: ',' expected.
+node_modules/ts-toolbelt/out/List/AtLeast.d.ts(25,184): error TS1005: ')' expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,110): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,139): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,153): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,161): error TS1005: ':' expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,196): error TS1005: '(' expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,204): error TS1005: ',' expected.
+node_modules/ts-toolbelt/out/List/Either.d.ts(18,211): error TS1005: ')' expected.
+node_modules/ts-toolbelt/out/List/Has.d.ts(17,130): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Has.d.ts(17,160): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/NonNullable.d.ts(40,126): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/NonNullable.d.ts(40,153): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/NonNullable.d.ts(40,160): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Nullable.d.ts(16,84): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Nullable.d.ts(16,126): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Nullable.d.ts(16,133): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Omit.d.ts(9,88): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Omit.d.ts(9,109): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Pick.d.ts(9,88): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Pick.d.ts(9,109): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Undefinable.d.ts(15,87): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Undefinable.d.ts(15,122): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Undefinable.d.ts(15,129): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Update.d.ts(16,92): error TS1005: '>' expected.
+node_modules/ts-toolbelt/out/List/Update.d.ts(16,115): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/List/Update.d.ts(16,122): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/Object/ListOf.d.ts(26,198): error TS1110: Type expected.
+node_modules/ts-toolbelt/out/Object/ListOf.d.ts(26,211): error TS1109: Expression expected.
+node_modules/ts-toolbelt/out/String/Join.d.ts(7,98): error TS1005: '?' expected.
+node_modules/ts-toolbelt/out/String/Join.d.ts(7,108): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Join.d.ts(7,112): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Join.d.ts(7,139): error TS1005: ',' expected.
+node_modules/ts-toolbelt/out/String/Join.d.ts(7,169): error TS1005: '(' expected.
+node_modules/ts-toolbelt/out/String/Join.d.ts(15,1): error TS1160: Unterminated template literal.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,91): error TS1110: Type expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,100): error TS1005: '}' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,102): error TS1128: Declaration or statement expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,104): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,108): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,115): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,131): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,132): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,137): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(6,141): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(8,13): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(8,22): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(8,29): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Replace.d.ts(15,1): error TS1160: Unterminated template literal.
+node_modules/ts-toolbelt/out/String/Split.d.ts(6,95): error TS1110: Type expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(6,104): error TS1005: '}' expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(6,106): error TS1128: Declaration or statement expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(6,108): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(6,112): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(6,119): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(12,11): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(12,18): error TS1005: ';' expected.
+node_modules/ts-toolbelt/out/String/Split.d.ts(18,1): error TS1160: Unterminated template literal.
 
 
 
