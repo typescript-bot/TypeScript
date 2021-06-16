@@ -1,16 +1,46 @@
 Exit Code: 2
 Standard output:
-lib/ProgressPlugin.js(487,56): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
-lib/ProgressPlugin.js(521,51): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
-lib/cache/IdleFileCachePlugin.js(100,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'string[]'.
-lib/cache/IdleFileCachePlugin.js(108,25): error TS2345: Argument of type 'string' is not assignable to parameter of type 'string[]'.
-lib/cache/PackFileCacheStrategy.js(1112,46): error TS2345: Argument of type 'string' is not assignable to parameter of type 'string[]'.
-lib/cache/PackFileCacheStrategy.js(1145,11): error TS2345: Argument of type 'string' is not assignable to parameter of type 'string[]'.
-lib/cache/PackFileCacheStrategy.js(1178,13): error TS2345: Argument of type 'string' is not assignable to parameter of type 'string[]'.
-lib/cache/PackFileCacheStrategy.js(1220,46): error TS2345: Argument of type 'string' is not assignable to parameter of type 'string[]'.
+declarations/LoaderContext.d.ts(26,28): error TS2749: 'Logger' refers to a value, but is being used as a type here. Did you mean 'typeof Logger'?
+lib/WebpackOptionsApply.js(77,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(89,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(94,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(99,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(109,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(114,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(119,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(123,4): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(466,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(474,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(527,7): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(533,7): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(546,7): error TS2578: Unused '@ts-expect-error' directive.
+lib/WebpackOptionsApply.js(550,7): error TS2578: Unused '@ts-expect-error' directive.
+lib/dependencies/ContextDependencyHelpers.js(49,12): error TS2314: Generic type 'Pick' requires 2 type argument(s).
+lib/dependencies/ContextDependencyHelpers.js(49,40): error TS1009: Trailing comma not allowed.
+lib/dependencies/ContextDependencyHelpers.js(49,41): error TS1003: Identifier expected.
+lib/dependencies/ContextDependencyHelpers.js(49,41): error TS8024: JSDoc '@param' tag has name '', but there is no parameter with that name.
+lib/dependencies/ContextDependencyHelpers.js(49,42): error TS1005: '>' expected.
+lib/hmr/lazyCompilationBackend.js(56,19): error TS2554: Expected 2 arguments, but got 1.
+lib/javascript/EnableChunkLoadingPlugin.js(84,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/javascript/EnableChunkLoadingPlugin.js(92,6): error TS2578: Unused '@ts-expect-error' directive.
 lib/javascript/StartupHelpers.js(51,36): error TS2694: Namespace 'ChunkGraph' has no exported member 'EntryModuleWithChunkGroup'.
 lib/javascript/StartupHelpers.js(129,36): error TS2694: Namespace 'ChunkGraph' has no exported member 'EntryModuleWithChunkGroup'.
-lib/util/deterministicGrouping.js(501,14): error TS2314: Generic type 'GroupedItems' requires 1 type argument(s).
+lib/library/EnableLibraryPlugin.js(82,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(93,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(105,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(116,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(127,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(138,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(149,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(160,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/library/EnableLibraryPlugin.js(172,6): error TS2578: Unused '@ts-expect-error' directive.
+lib/optimize/ModuleConcatenationPlugin.js(628,55): error TS2345: Argument of type 'ModuleGraphConnection[]' is not assignable to parameter of type 'readonly (typeof ModuleGraphConnection)[]'.
+  Type 'ModuleGraphConnection' is missing the following properties from type 'typeof ModuleGraphConnection': prototype, addConnectionStates, TRANSITIVE_ONLY, CIRCULAR_CONNECTION
+lib/optimize/ModuleConcatenationPlugin.js(666,18): error TS2339: Property 'dependency' does not exist on type 'typeof ModuleGraphConnection'.
+lib/optimize/ModuleConcatenationPlugin.js(667,19): error TS2339: Property 'dependency' does not exist on type 'typeof ModuleGraphConnection'.
+lib/optimize/ModuleConcatenationPlugin.js(681,22): error TS2339: Property 'dependency' does not exist on type 'typeof ModuleGraphConnection'.
+lib/optimize/ModuleConcatenationPlugin.js(681,38): error TS2339: Property 'dependency' does not exist on type 'typeof ModuleGraphConnection'.
+lib/optimize/ModuleConcatenationPlugin.js(712,25): error TS2339: Property 'isTargetActive' does not exist on type 'typeof ModuleGraphConnection'.
 
 
 
