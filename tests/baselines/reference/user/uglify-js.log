@@ -158,9 +158,7 @@ node_modules/uglify-js/lib/compress.js(7146,14): error TS2339: Property 'transfo
 node_modules/uglify-js/lib/compress.js(7150,50): error TS2339: Property 'each_argname' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(7216,32): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/compress.js(7305,18): error TS2339: Property 'enclosed' does not exist on type '(Anonymous function)'.
-node_modules/uglify-js/lib/compress.js(7306,17): error TS2532: Object is possibly 'undefined'.
 node_modules/uglify-js/lib/compress.js(7308,18): error TS2339: Property 'variables' does not exist on type '(Anonymous function)'.
-node_modules/uglify-js/lib/compress.js(7309,17): error TS2532: Object is possibly 'undefined'.
 node_modules/uglify-js/lib/compress.js(7508,29): error TS2339: Property 'left' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(7515,30): error TS2339: Property 'right' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/compress.js(7516,31): error TS2339: Property 'operator' does not exist on type '(Anonymous function)'.
@@ -241,11 +239,8 @@ node_modules/uglify-js/lib/parse.js(388,19): error TS2345: Argument of type 'num
 node_modules/uglify-js/lib/parse.js(454,32): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 node_modules/uglify-js/lib/parse.js(465,32): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 node_modules/uglify-js/lib/parse.js(515,20): error TS2339: Property 'raw_source' does not exist on type 'RegExp'.
-node_modules/uglify-js/lib/parse.js(518,25): error TS2571: Object is of type 'unknown'.
 node_modules/uglify-js/lib/parse.js(633,57): error TS2339: Property 'push' does not exist on type 'never'.
 node_modules/uglify-js/lib/parse.js(639,32): error TS2345: Argument of type 'never[]' is not assignable to parameter of type 'never'.
-node_modules/uglify-js/lib/parse.js(644,22): error TS2532: Object is possibly 'undefined'.
-node_modules/uglify-js/lib/parse.js(645,26): error TS2532: Object is possibly 'undefined'.
 node_modules/uglify-js/lib/parse.js(737,13): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(770,69): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(770,83): error TS2531: Object is possibly 'null'.
@@ -263,54 +258,19 @@ node_modules/uglify-js/lib/parse.js(1395,9): error TS2322: Type 'any[]' is not a
 node_modules/uglify-js/lib/parse.js(1401,28): error TS2339: Property 'rest' does not exist on type 'any[]'.
 node_modules/uglify-js/lib/parse.js(1425,51): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1435,25): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1445,23): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1446,24): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1460,34): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1463,34): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1476,32): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1478,27): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1479,28): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1525,43): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1544,43): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1588,35): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1610,19): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1612,20): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1654,17): error TS2454: Variable 'cur' is used before being assigned.
-node_modules/uglify-js/lib/parse.js(1771,41): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1772,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1785,59): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1819,21): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1832,27): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1833,60): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1834,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1835,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1836,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1837,33): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1838,35): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1840,39): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1841,25): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1844,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1848,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1849,17): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1851,38): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1853,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1854,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(1865,36): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1920,32): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(1944,19): error TS2339: Property 'rest' does not exist on type 'any[]'.
 node_modules/uglify-js/lib/parse.js(1945,23): error TS2339: Property 'rest' does not exist on type 'any[]'.
 node_modules/uglify-js/lib/parse.js(1945,71): error TS2339: Property 'rest' does not exist on type 'any[]'.
-node_modules/uglify-js/lib/parse.js(2001,26): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(2016,26): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(2046,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(2086,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(2088,27): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(2095,25): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(2107,20): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(2163,32): error TS2339: Property 'rest' does not exist on type 'any[]'.
-node_modules/uglify-js/lib/parse.js(2203,26): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(2332,60): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/parse.js(2342,44): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(2351,48): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(2377,35): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/parse.js(2480,52): error TS2531: Object is possibly 'null'.
@@ -331,14 +291,7 @@ node_modules/uglify-js/lib/scope.js(130,29): error TS2554: Expected 0 arguments,
 node_modules/uglify-js/lib/scope.js(133,27): error TS2339: Property 'parent' does not exist on type 'TreeWalker'.
 node_modules/uglify-js/lib/scope.js(146,27): error TS2339: Property 'parent' does not exist on type 'TreeWalker'.
 node_modules/uglify-js/lib/scope.js(153,27): error TS2339: Property 'parent' does not exist on type 'TreeWalker'.
-node_modules/uglify-js/lib/scope.js(181,21): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/scope.js(182,21): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/scope.js(183,17): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/scope.js(184,26): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/scope.js(200,13): error TS2531: Object is possibly 'null'.
-node_modules/uglify-js/lib/scope.js(202,23): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/scope.js(206,51): error TS2339: Property 'parent' does not exist on type 'TreeWalker'.
-node_modules/uglify-js/lib/scope.js(216,23): error TS2531: Object is possibly 'null'.
 node_modules/uglify-js/lib/scope.js(248,10): error TS2339: Property 'walk' does not exist on type '(Anonymous function)'.
 node_modules/uglify-js/lib/scope.js(253,29): error TS2554: Expected 0 arguments, but got 1.
 node_modules/uglify-js/lib/scope.js(292,62): error TS2339: Property 'parent' does not exist on type 'TreeWalker'.
@@ -363,7 +316,6 @@ node_modules/uglify-js/lib/sourcemap.js(180,31): error TS2339: Property 'index' 
 node_modules/uglify-js/lib/sourcemap.js(188,34): error TS2339: Property 'index' does not exist on type 'any[]'.
 node_modules/uglify-js/lib/transform.js(47,21): error TS2345: Argument of type 'this' is not assignable to parameter of type 'TreeWalker'.
   Type 'TreeTransformer' is missing the following properties from type 'TreeWalker': currentNode, filter, root, whatToShow, and 10 more.
-node_modules/uglify-js/lib/utils.js(74,24): error TS2571: Object is of type 'unknown'.
 node_modules/uglify-js/tools/exports.js(1,1): error TS2303: Circular definition of import alias '"Dictionary"'.
 node_modules/uglify-js/tools/exports.js(2,1): error TS2303: Circular definition of import alias '"is_statement"'.
 node_modules/uglify-js/tools/exports.js(3,1): error TS2303: Circular definition of import alias '"List"'.

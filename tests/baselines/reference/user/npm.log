@@ -1,11 +1,8 @@
 Exit Code: 2
 Standard output:
 lib/access.js(27,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Access'.
-lib/access.js(197,13): error TS2571: Object is of type 'unknown'.
 lib/adduser.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'AddUser'.
 lib/audit.js(14,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Audit'.
-lib/auth/legacy.js(43,11): error TS2571: Object is of type 'unknown'.
-lib/auth/legacy.js(61,9): error TS2571: Object is of type 'unknown'.
 lib/base-command.js(19,29): error TS2339: Property 'description' does not exist on type 'Function'.
 lib/base-command.js(24,26): error TS2339: Property 'description' does not exist on type 'Function'.
 lib/base-command.js(25,43): error TS2339: Property 'description' does not exist on type 'Function'.
@@ -51,12 +48,6 @@ lib/doctor.js(87,19): error TS2345: Argument of type 'boolean' is not assignable
 lib/doctor.js(97,9): error TS2322: Type 'string | false | any[]' is not assignable to type 'boolean'.
   Type 'string' is not assignable to type 'boolean'.
 lib/doctor.js(103,9): error TS2322: Type 'string | false | any[]' is not assignable to type 'boolean'.
-lib/doctor.js(134,27): error TS2571: Object is of type 'unknown'.
-lib/doctor.js(135,15): error TS2571: Object is of type 'unknown'.
-lib/doctor.js(135,41): error TS2571: Object is of type 'unknown'.
-lib/doctor.js(137,15): error TS2571: Object is of type 'unknown'.
-lib/doctor.js(189,7): error TS2322: Type 'number' is not assignable to type 'null'.
-lib/doctor.js(221,27): error TS2345: Argument of type 'null' is not assignable to parameter of type 'number | undefined'.
 lib/edit.js(17,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Edit'.
 lib/edit.js(61,13): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
 lib/exec.js(42,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Exec'.
@@ -165,9 +156,6 @@ lib/org.js(12,14): error TS2699: Static property 'name' conflicts with built-in 
 lib/outdated.js(22,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Outdated'.
 lib/outdated.js(166,5): error TS2532: Object is possibly 'undefined'.
 lib/outdated.js(236,9): error TS2532: Object is possibly 'undefined'.
-lib/outdated.js(252,9): error TS2571: Object is of type 'unknown'.
-lib/outdated.js(253,9): error TS2571: Object is of type 'unknown'.
-lib/outdated.js(254,9): error TS2571: Object is of type 'unknown'.
 lib/owner.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Owner'.
 lib/owner.js(167,27): error TS2339: Property 'name' does not exist on type 'string'.
 lib/owner.js(167,37): error TS2339: Property 'error' does not exist on type 'string'.
@@ -181,7 +169,6 @@ lib/prefix.js(10,14): error TS2699: Static property 'name' conflicts with built-
 lib/profile.js(46,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Profile'.
 lib/prune.js(13,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Prune'.
 lib/publish.js(33,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Publish'.
-lib/publish.js(166,13): error TS2571: Object is of type 'unknown'.
 lib/rebuild.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Rebuild'.
 lib/rebuild.js(36,33): error TS2554: Expected 0-1 arguments, but got 2.
 lib/repo.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Repo'.
@@ -204,7 +191,6 @@ lib/run-script.js(252,33): error TS2531: Object is possibly 'null'.
 lib/search.js(35,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Search'.
 lib/search/format-package-stream.js(40,19): error TS2339: Property 'emit' does not exist on type 'JSONOutputStream'.
 lib/set-script.js(19,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'SetScript'.
-lib/set-script.js(75,33): error TS2571: Object is of type 'unknown'.
 lib/set.js(9,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Set'.
 lib/shrinkwrap.js(16,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Shrinkwrap'.
 lib/shrinkwrap.js(34,10): error TS2339: Property 'code' does not exist on type 'Error'.
@@ -216,11 +202,7 @@ lib/team.js(13,14): error TS2699: Static property 'name' conflicts with built-in
 lib/test.js(11,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Test'.
 lib/token.js(18,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Token'.
 lib/uninstall.js(15,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Uninstall'.
-lib/uninstall.js(54,15): error TS2571: Object is of type 'unknown'.
-lib/uninstall.js(54,39): error TS2571: Object is of type 'unknown'.
 lib/unpublish.js(19,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Unpublish'.
-lib/unpublish.js(104,20): error TS2571: Object is of type 'unknown'.
-lib/unpublish.js(104,45): error TS2571: Object is of type 'unknown'.
 lib/unpublish.js(141,24): error TS2532: Object is possibly 'undefined'.
 lib/unstar.js(10,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Unstar'.
 lib/update.js(17,14): error TS2699: Static property 'name' conflicts with built-in property 'Function.name' of constructor function 'Update'.
@@ -234,7 +216,6 @@ lib/utils/config/definition.js(53,16): error TS2339: Property 'type' does not ex
 lib/utils/config/definition.js(77,39): error TS2339: Property 'description' does not exist on type 'Definition'.
 lib/utils/config/definition.js(81,30): error TS2339: Property 'deprecated' does not exist on type 'Definition'.
 lib/utils/config/definition.js(82,40): error TS2339: Property 'deprecated' does not exist on type 'Definition'.
-lib/utils/config/definitions.js(19,9): error TS2571: Object is of type 'unknown'.
 lib/utils/config/definitions.js(66,14): error TS2532: Object is possibly 'undefined'.
 lib/utils/config/definitions.js(67,41): error TS2769: No overload matches this call.
   Overload 1 of 2, '(...items: ConcatArray<null>[]): null[]', gave the following error.
