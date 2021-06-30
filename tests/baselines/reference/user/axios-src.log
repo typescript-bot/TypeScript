@@ -53,8 +53,6 @@ lib/core/enhanceError.js(34,26): error TS2339: Property 'columnNumber' does not 
 lib/core/enhanceError.js(37,20): error TS2339: Property 'config' does not exist on type 'Error'.
 lib/core/enhanceError.js(38,18): error TS2339: Property 'code' does not exist on type 'Error'.
 lib/core/settle.js(20,7): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-lib/defaults.js(77,15): error TS2571: Object is of type 'unknown'.
-lib/defaults.js(78,32): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Error'.
 lib/helpers/buildURL.js(22,49): error TS1016: A required parameter cannot follow an optional parameter.
 lib/helpers/cookies.js(16,56): error TS2551: Property 'toGMTString' does not exist on type 'Date'. Did you mean 'toUTCString'?
 lib/helpers/validator.js(3,19): error TS2732: Cannot find module './../../package.json'. Consider using '--resolveJsonModule' to import module with '.json' extension.
