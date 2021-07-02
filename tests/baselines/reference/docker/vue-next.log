@@ -26,7 +26,7 @@ Error: /vue-next/packages/compiler-core/src/transforms/transformExpression.ts(23
 /vue-next/node_modules/brotli/build/encode.js:3
 1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");b.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=b);process.on("uncaughtException",function(a){if(!(a instanceof y))throw a;});b.inspect=function(){return"[Emscripten Module object]"}}else if(x)b.print||(b.print=print),"undefined"!=typeof printErr&&(b.printErr=printErr),b.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},b.readBinary=function(a){if("function"===
                                                                                                                                                                                                                               ^
-Error: Command failed with exit code 1: rollup -c --environment COMMIT:347d901,NODE_ENV:production,TARGET:compiler-core,TYPES:true
+Error: Command failed with exit code 1: rollup -c --environment COMMIT:fc7b640,NODE_ENV:production,TARGET:compiler-core,TYPES:true
     at makeError (/vue-next/node_modules/execa/lib/error.js:59:11)
     at handlePromise (/vue-next/node_modules/execa/index.js:114:26)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
@@ -34,8 +34,8 @@ Error: Command failed with exit code 1: rollup -c --environment COMMIT:347d901,N
     at async runParallel (/vue-next/scripts/build.js:67:9)
     at async buildAll (/vue-next/scripts/build.js:53:3)
     at async run (/vue-next/scripts/build.js:44:5) {
-  shortMessage: 'Command failed with exit code 1: rollup -c --environment COMMIT:347d901,NODE_ENV:production,TARGET:compiler-core,TYPES:true',
-  command: 'rollup -c --environment COMMIT:347d901,NODE_ENV:production,TARGET:compiler-core,TYPES:true',
+  shortMessage: 'Command failed with exit code 1: rollup -c --environment COMMIT:fc7b640,NODE_ENV:production,TARGET:compiler-core,TYPES:true',
+  command: 'rollup -c --environment COMMIT:fc7b640,NODE_ENV:production,TARGET:compiler-core,TYPES:true',
   exitCode: 1,
   signal: undefined,
   signalDescription: undefined,

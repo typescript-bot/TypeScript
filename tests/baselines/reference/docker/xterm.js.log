@@ -7,20 +7,20 @@ Standard output:
 
 
 Standard error:
-/typescript/package/lib/tsc.js:92229
+/typescript/package/lib/tsc.js:92230
                 throw e;
                 ^
 Error: Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isCallExpression'.
     at Object.cast (/typescript/package/lib/tsc.js:1297:25)
-    at visitTypeScriptClassWrapper (/typescript/package/lib/tsc.js:79786:27)
-    at visitCallExpression (/typescript/package/lib/tsc.js:79760:24)
-    at visitorWorker (/typescript/package/lib/tsc.js:78234:28)
-    at visitor (/typescript/package/lib/tsc.js:78155:44)
-    at visitNode (/typescript/package/lib/tsc.js:71133:23)
-    at Object.visitEachChild (/typescript/package/lib/tsc.js:71594:236)
-    at visitVariableDeclaration (/typescript/package/lib/tsc.js:79093:30)
-    at visitorWorker (/typescript/package/lib/tsc.js:78196:28)
-    at visitor (/typescript/package/lib/tsc.js:78155:44)
+    at visitTypeScriptClassWrapper (/typescript/package/lib/tsc.js:79787:27)
+    at visitCallExpression (/typescript/package/lib/tsc.js:79761:24)
+    at visitorWorker (/typescript/package/lib/tsc.js:78235:28)
+    at visitor (/typescript/package/lib/tsc.js:78156:44)
+    at visitNode (/typescript/package/lib/tsc.js:71134:23)
+    at Object.visitEachChild (/typescript/package/lib/tsc.js:71595:236)
+    at visitVariableDeclaration (/typescript/package/lib/tsc.js:79094:30)
+    at visitorWorker (/typescript/package/lib/tsc.js:78197:28)
+    at visitor (/typescript/package/lib/tsc.js:78156:44)
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
 npm ERR! xterm@X.X.X build: `tsc -b ./tsconfig.all.json`
