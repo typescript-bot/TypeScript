@@ -1,6 +1,14 @@
 Exit Code: 2
 Standard output:
+node_modules/@types/node/constants.d.ts(7,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/url-search-params/build/url-search-params.node.js(48,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/url-search-params/build/url-search-params.node.js(115,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/url-search-params/build/url-search-params.node.js(116,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/url-search-params/build/url-search-params.node.js(161,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/url-search-params/build/url-search-params.node.js(174,1): error TS2629: Cannot assign to 'URLSearchParams' because it is a class.
+node_modules/url-search-params/build/url-search-params.node.js(236,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/url-search-params/build/url-search-params.node.js(280,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/url-search-params/build/url-search-params.node.js(282,19): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 
 
 

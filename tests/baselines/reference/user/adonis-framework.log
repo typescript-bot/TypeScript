@@ -1,5 +1,8 @@
 Exit Code: 2
 Standard output:
+node_modules/@types/node/dns.d.ts(311,27): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/dns.d.ts(312,28): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/dns/promises.d.ts(93,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/lib/util.js(24,13): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/providers/ConfigProvider.js(9,33): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
 node_modules/adonis-framework/providers/ConfigProvider.js(14,10): error TS2339: Property 'app' does not exist on type 'ConfigProvider'.
@@ -23,6 +26,7 @@ node_modules/adonis-framework/providers/RouteProvider.js(9,33): error TS2307: Ca
 node_modules/adonis-framework/providers/RouteProvider.js(14,10): error TS2339: Property 'app' does not exist on type 'RouteProvider'.
 node_modules/adonis-framework/providers/ServerProvider.js(9,33): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
 node_modules/adonis-framework/providers/ServerProvider.js(14,10): error TS2339: Property 'app' does not exist on type 'ServerProvider'.
+node_modules/adonis-framework/providers/ServerProvider.js(15,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/providers/SessionProvider.js(9,33): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
 node_modules/adonis-framework/providers/SessionProvider.js(15,10): error TS2339: Property 'app' does not exist on type 'SessionProvider'.
 node_modules/adonis-framework/providers/SessionProvider.js(20,10): error TS2339: Property 'app' does not exist on type 'SessionProvider'.
@@ -95,6 +99,7 @@ node_modules/adonis-framework/src/File/index.js(139,22): error TS2345: Argument 
 node_modules/adonis-framework/src/File/index.js(175,5): error TS2322: Type 'Promise<any>' is not assignable to type 'boolean'.
 node_modules/adonis-framework/src/File/index.js(273,5): error TS2322: Type 'string | boolean' is not assignable to type 'boolean'.
   Type 'string' is not assignable to type 'boolean'.
+node_modules/adonis-framework/src/Helpers/index.js(71,8): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Helpers/index.js(105,3): error TS2322: Type 'null' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(106,3): error TS2322: Type 'null' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(164,18): error TS2554: Expected 3 arguments, but got 2.
@@ -106,8 +111,10 @@ node_modules/adonis-framework/src/Helpers/index.js(240,45): error TS2345: Argume
   Type 'undefined' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Helpers/index.js(256,45): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
+node_modules/adonis-framework/src/Helpers/index.js(316,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Helpers/index.js(330,23): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/Middleware/index.js(13,21): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
+node_modules/adonis-framework/src/Middleware/index.js(48,38): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Middleware/index.js(87,38): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/adonis-framework/src/Middleware/index.js(230,20): error TS8024: JSDoc '@param' tag has name 'Middleware', but there is no parameter with that name.
 node_modules/adonis-framework/src/Request/index.js(64,15): error TS2304: Cannot find name 'Mixed'.
@@ -124,6 +131,7 @@ node_modules/adonis-framework/src/Request/index.js(415,15): error TS2304: Cannot
 node_modules/adonis-framework/src/Request/index.js(417,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Request/index.js(466,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Request/index.js(468,15): error TS2304: Cannot find name 'Mixed'.
+node_modules/adonis-framework/src/Request/index.js(473,48): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Request/index.js(480,14): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Request/index.js(482,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Request/index.js(499,17): error TS2551: Property '_params' does not exist on type 'Request'. Did you mean 'params'?
@@ -132,6 +140,7 @@ node_modules/adonis-framework/src/Request/index.js(572,23): error TS8029: JSDoc 
 node_modules/adonis-framework/src/Request/index.js(600,17): error TS2554: Expected 2 arguments, but got 1.
 node_modules/adonis-framework/src/Request/index.js(600,40): error TS2554: Expected 2 arguments, but got 1.
 node_modules/adonis-framework/src/Request/index.js(663,23): error TS8024: JSDoc '@param' tag has name 'encodings', but there is no parameter with that name.
+node_modules/adonis-framework/src/Request/index.js(678,12): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Response/index.js(44,7): error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
 node_modules/adonis-framework/src/Response/index.js(56,7): error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
 node_modules/adonis-framework/src/Response/index.js(68,7): error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
@@ -139,6 +148,7 @@ node_modules/adonis-framework/src/Response/index.js(76,15): error TS2304: Cannot
 node_modules/adonis-framework/src/Response/index.js(95,16): error TS2304: Cannot find name 'Html'.
 node_modules/adonis-framework/src/Response/index.js(172,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Response/index.js(299,15): error TS2304: Cannot find name 'Mixed'.
+node_modules/adonis-framework/src/Response/index.js(314,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Response/index.js(323,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Route/ResourceCollection.js(39,11): error TS1359: Identifier expected. 'this' is a reserved word that cannot be used here.
 node_modules/adonis-framework/src/Route/ResourceCollection.js(43,40): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
@@ -149,15 +159,20 @@ node_modules/adonis-framework/src/Route/ResourceMember.js(43,40): error TS2345: 
 node_modules/adonis-framework/src/Route/ResourceMember.js(56,31): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
 node_modules/adonis-framework/src/Route/group.js(34,31): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
 node_modules/adonis-framework/src/Route/group.js(43,41): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
+node_modules/adonis-framework/src/Route/group.js(84,5): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/adonis-framework/src/Route/helpers.js(15,30): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Route/helpers.js(22,13): error TS2304: Cannot find name 'Any'.
 node_modules/adonis-framework/src/Route/helpers.js(34,3): error TS2322: Type 'string | string[]' is not assignable to type 'string'.
   Type 'string[]' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Route/helpers.js(42,13): error TS2304: Cannot find name 'Regex'.
+node_modules/adonis-framework/src/Route/helpers.js(47,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Route/helpers.js(54,21): error TS8024: JSDoc '@param' tag has name 'url', but there is no parameter with that name.
+node_modules/adonis-framework/src/Route/helpers.js(69,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Route/helpers.js(131,21): error TS8024: JSDoc '@param' tag has name 'format', but there is no parameter with that name.
 node_modules/adonis-framework/src/Route/index.js(30,5): error TS2322: Type 'null' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Route/index.js(58,3): error TS2322: Type 'null' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Route/index.js(101,21): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
+node_modules/adonis-framework/src/Route/index.js(136,29): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Route/index.js(259,21): error TS2345: Argument of type 'any[]' is not assignable to parameter of type 'string'.
 node_modules/adonis-framework/src/Route/index.js(280,21): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
 node_modules/adonis-framework/src/Route/index.js(321,13): error TS2304: Cannot find name 'Mixed'.
@@ -168,6 +183,7 @@ node_modules/adonis-framework/src/Route/index.js(354,20): error TS2694: Namespac
 node_modules/adonis-framework/src/Route/index.js(368,3): error TS2322: Type 'null' is not assignable to type 'string'.
 node_modules/adonis-framework/src/Route/index.js(396,63): error TS2554: Expected 2 arguments, but got 3.
 node_modules/adonis-framework/src/Route/index.js(407,20): error TS2694: Namespace 'Route' has no exported member 'resources'.
+node_modules/adonis-framework/src/Route/index.js(499,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Route/index.js(501,42): error TS2345: Argument of type 'boolean | undefined' is not assignable to parameter of type 'boolean'.
   Type 'undefined' is not assignable to type 'boolean'.
 node_modules/adonis-framework/src/Route/resource.js(92,25): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
@@ -175,6 +191,7 @@ node_modules/adonis-framework/src/Route/resource.js(93,25): error TS2345: Argume
 node_modules/adonis-framework/src/Route/resource.js(95,25): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
 node_modules/adonis-framework/src/Route/resource.js(96,25): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
 node_modules/adonis-framework/src/Route/resource.js(97,25): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'string'.
+node_modules/adonis-framework/src/Route/resource.js(149,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Route/resource.js(172,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Route/resource.js(172,22): error TS8029: JSDoc '@param' tag has name 'methods', but there is no parameter with that name. It would match 'arguments' if it had an array type.
 node_modules/adonis-framework/src/Route/resource.js(183,45): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
@@ -189,6 +206,7 @@ node_modules/adonis-framework/src/Route/resource.js(296,15): error TS2304: Canno
 node_modules/adonis-framework/src/Route/resource.js(314,62): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type 'any[]'.
 node_modules/adonis-framework/src/Server/helpers.js(17,29): error TS8024: JSDoc '@param' tag has name 'appNamespace', but there is no parameter with that name.
 node_modules/adonis-framework/src/Server/index.js(17,21): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
+node_modules/adonis-framework/src/Server/index.js(36,19): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Server/index.js(54,29): error TS2554: Expected 4 arguments, but got 3.
 node_modules/adonis-framework/src/Server/index.js(137,25): error TS8024: JSDoc '@param' tag has name 'handlers', but there is no parameter with that name.
 node_modules/adonis-framework/src/Server/index.js(252,15): error TS2304: Cannot find name 'instance'.
@@ -198,6 +216,7 @@ node_modules/adonis-framework/src/Session/CookieManager.js(60,15): error TS2304:
 node_modules/adonis-framework/src/Session/CookieManager.js(72,15): error TS2304: Cannot find name 'Stirng'.
 node_modules/adonis-framework/src/Session/Drivers/Cookie/index.js(77,15): error TS2322: Type 'Generator<any, any, any>' is not assignable to type 'boolean'.
 node_modules/adonis-framework/src/Session/Drivers/Cookie/index.js(88,15): error TS2322: Type 'Generator<any, any, any>' is not assignable to type 'boolean'.
+node_modules/adonis-framework/src/Session/Drivers/Cookie/index.js(102,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Session/Drivers/Cookie/index.js(118,14): error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
 node_modules/adonis-framework/src/Session/Drivers/File/index.js(25,14): error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
 node_modules/adonis-framework/src/Session/Drivers/File/index.js(79,15): error TS2505: A generator cannot have a 'void' type annotation.
@@ -208,6 +227,7 @@ node_modules/adonis-framework/src/Session/SessionManager.js(13,21): error TS2307
 node_modules/adonis-framework/src/Session/SessionManager.js(69,22): error TS2339: Property 'drivers' does not exist on type 'Function'.
 node_modules/adonis-framework/src/Session/SessionManager.js(69,49): error TS2339: Property 'drivers' does not exist on type 'Function'.
 node_modules/adonis-framework/src/Session/SessionManager.js(71,76): error TS2339: Property 'drivers' does not exist on type 'Function'.
+node_modules/adonis-framework/src/Session/SessionManager.js(79,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Session/Store.js(28,13): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Session/Store.js(80,13): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Session/index.js(10,14): error TS2304: Cannot find name 'SessionDriver'.
@@ -227,6 +247,7 @@ node_modules/adonis-framework/src/Session/index.js(107,126): error TS2339: Prope
 node_modules/adonis-framework/src/Session/index.js(123,23): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/Session/index.js(137,5): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/Session/index.js(168,15): error TS2322: Type 'Generator<any, any, any>' is not assignable to type 'boolean'.
+node_modules/adonis-framework/src/Session/index.js(173,56): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/Session/index.js(199,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Session/index.js(201,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/Session/index.js(204,15): error TS2322: Type 'Generator<any, any, any>' is not assignable to type 'boolean'.
@@ -239,12 +260,16 @@ node_modules/adonis-framework/src/Session/index.js(267,15): error TS2304: Cannot
 node_modules/adonis-framework/src/Session/index.js(287,15): error TS2322: Type 'Generator<any, any, any>' is not assignable to type 'boolean'.
 node_modules/adonis-framework/src/Session/index.js(293,12): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/Static/index.js(45,18): error TS2794: Expected 1 arguments, but got 0. Did you forget to include 'void' in your type argument to 'Promise'?
+node_modules/adonis-framework/src/View/Form/index.js(26,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/View/Form/index.js(75,11): error TS2532: Object is possibly 'undefined'.
 node_modules/adonis-framework/src/View/Form/index.js(115,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/View/Form/index.js(147,63): error TS2345: Argument of type 'string | any[]' is not assignable to parameter of type 'any[]'.
   Type 'string' is not assignable to type 'any[]'.
 node_modules/adonis-framework/src/View/Form/index.js(151,58): error TS2345: Argument of type 'string | any[]' is not assignable to parameter of type 'any[]'.
   Type 'string' is not assignable to type 'any[]'.
+node_modules/adonis-framework/src/View/Form/index.js(151,58): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/adonis-framework/src/View/Form/index.js(203,36): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/adonis-framework/src/View/Form/index.js(208,36): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/View/Form/index.js(415,37): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string'.
 node_modules/adonis-framework/src/View/Form/index.js(578,25): error TS2554: Expected 2 arguments, but got 1.
 node_modules/adonis-framework/src/View/Form/index.js(601,51): error TS2345: Argument of type 'number | any[]' is not assignable to parameter of type 'string | any[]'.
@@ -253,6 +278,7 @@ node_modules/adonis-framework/src/View/index.js(50,23): error TS8024: JSDoc '@pa
 node_modules/adonis-framework/src/View/index.js(113,15): error TS2304: Cannot find name 'Mixed'.
 node_modules/adonis-framework/src/View/services.js(10,21): error TS2307: Cannot find module 'adonis-fold' or its corresponding type declarations.
 node_modules/adonis-framework/src/View/services.js(25,23): error TS8024: JSDoc '@param' tag has name 'lexer', but there is no parameter with that name.
+node_modules/adonis-framework/src/View/services.js(31,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/adonis-framework/src/View/services.js(34,22): error TS2339: Property 'CallExtensionAsync' does not exist on type 'Function'.
 
 

@@ -1,0 +1,7 @@
+Exit Code: 2
+Standard output:
+../../../../built/local/lib.es2020.bigint.d.ts(655,6): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+
+
+
+Standard error:

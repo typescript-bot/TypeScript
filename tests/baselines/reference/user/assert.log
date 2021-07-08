@@ -1,8 +1,13 @@
 Exit Code: 2
 Standard output:
+node_modules/@types/node/path.d.ts(8,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/process.d.ts(463,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/assert/assert.js(22,34): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/assert/assert.js(39,14): error TS2339: Property 'Buffer' does not exist on type 'typeof globalThis'.
 node_modules/assert/assert.js(39,38): error TS2339: Property 'Buffer' does not exist on type 'typeof globalThis'.
 node_modules/assert/assert.js(40,19): error TS2339: Property 'Buffer' does not exist on type 'typeof globalThis'.
+node_modules/assert/assert.js(281,53): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/assert/assert.js(293,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/assert/test.js(25,5): error TS2367: This condition will always return 'false' since the types 'string | undefined' and 'boolean' have no overlap.
 node_modules/assert/test.js(39,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
 node_modules/assert/test.js(55,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
@@ -10,6 +15,7 @@ node_modules/assert/test.js(74,5): error TS2593: Cannot find name 'test'. Do you
 node_modules/assert/test.js(84,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
 node_modules/assert/test.js(94,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
 node_modules/assert/test.js(103,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
+node_modules/assert/test.js(110,7): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/assert/test.js(120,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
 node_modules/assert/test.js(128,5): error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.
 node_modules/assert/test.js(140,10): error TS2339: Property 'a' does not exist on type 'number[]'.
@@ -28,9 +34,11 @@ node_modules/assert/test.js(250,5): error TS2552: Cannot find name 'test'. Did y
 node_modules/assert/test.js(254,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 node_modules/assert/test.js(256,55): error TS2345: Argument of type 'TypeError' is not assignable to parameter of type 'string'.
 node_modules/assert/test.js(262,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
+node_modules/assert/test.js(276,7): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/assert/test.js(279,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 node_modules/assert/test.js(285,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 node_modules/assert/test.js(290,24): error TS2571: Object is of type 'unknown'.
+node_modules/assert/test.js(308,86): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/assert/test.js(320,5): error TS2552: Cannot find name 'test'. Did you mean 'tests'?
 node_modules/assert/test.js(329,22): error TS2571: Object is of type 'unknown'.
 node_modules/assert/test.js(336,22): error TS2571: Object is of type 'unknown'.

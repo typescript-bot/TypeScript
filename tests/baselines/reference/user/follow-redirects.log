@@ -1,5 +1,10 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(17246,38): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+../../../../built/local/lib.es2020.bigint.d.ts(655,6): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/dns/promises.d.ts(81,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/follow-redirects/debug.js(7,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/follow-redirects/index.js(13,3): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/follow-redirects/index.js(39,17): error TS2345: Argument of type 'this' is not assignable to parameter of type 'Writable'.
   Type 'RedirectableRequest' is missing the following properties from type 'Writable': writable, writableEnded, writableFinished, writableHighWaterMark, and 27 more.
 node_modules/follow-redirects/index.js(51,10): error TS2339: Property 'on' does not exist on type 'RedirectableRequest'.
@@ -16,8 +21,12 @@ node_modules/follow-redirects/index.js(185,21): error TS2339: Property 'socket' 
 node_modules/follow-redirects/index.js(191,8): error TS2339: Property 'on' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(192,8): error TS2339: Property 'once' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(193,8): error TS2339: Property 'once' does not exist on type 'RedirectableRequest'.
+node_modules/follow-redirects/index.js(210,56): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/follow-redirects/index.js(215,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/follow-redirects/index.js(247,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/follow-redirects/index.js(252,10): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(288,16): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
+node_modules/follow-redirects/index.js(308,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/follow-redirects/index.js(336,12): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(358,17): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
   Type 'undefined' is not assignable to type 'string'.
@@ -28,6 +37,7 @@ node_modules/follow-redirects/index.js(390,72): error TS2571: Object is of type 
 node_modules/follow-redirects/index.js(391,13): error TS2339: Property 'cause' does not exist on type 'CustomError'.
 node_modules/follow-redirects/index.js(392,12): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
 node_modules/follow-redirects/index.js(399,10): error TS2339: Property 'emit' does not exist on type 'RedirectableRequest'.
+node_modules/follow-redirects/index.js(438,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/follow-redirects/index.js(517,25): error TS2339: Property 'code' does not exist on type 'Error'.
 
 

@@ -1,6 +1,11 @@
 Exit Code: 2
 Standard output:
+node_modules/@types/node/crypto.d.ts(431,26): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/dns/promises.d.ts(93,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/http2.d.ts(460,39): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/minimatch/minimatch.js(52,3): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/minimatch/minimatch.js(77,17): error TS2551: Property 'minimatch' does not exist on type 'typeof minimatch'. Did you mean 'Minimatch'?
+node_modules/minimatch/minimatch.js(111,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/minimatch/minimatch.js(144,12): error TS2339: Property '_made' does not exist on type 'make'.
 node_modules/minimatch/minimatch.js(146,22): error TS2339: Property 'pattern' does not exist on type 'make'.
 node_modules/minimatch/minimatch.js(147,22): error TS2339: Property 'options' does not exist on type 'make'.
@@ -18,12 +23,18 @@ node_modules/minimatch/minimatch.js(201,22): error TS2339: Property 'options' do
 node_modules/minimatch/minimatch.js(206,23): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(207,16): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(213,36): error TS2532: Object is possibly 'undefined'.
+node_modules/minimatch/minimatch.js(269,29): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/minimatch/minimatch.js(283,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/minimatch/minimatch.js(410,15): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(411,13): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(414,9): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(414,12): error TS2339: Property 'reEnd' does not exist on type '{ type: any; start: number; reStart: number; open: any; close: any; }'.
+node_modules/minimatch/minimatch.js(508,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/minimatch/minimatch.js(509,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/minimatch/minimatch.js(550,7): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/minimatch/minimatch.js(572,32): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(573,28): error TS2532: Object is possibly 'undefined'.
+node_modules/minimatch/minimatch.js(573,40): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/minimatch/minimatch.js(573,40): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(573,43): error TS2339: Property 'reEnd' does not exist on type '{ type: any; start: number; reStart: number; open: any; close: any; }'.
 node_modules/minimatch/minimatch.js(574,27): error TS2532: Object is possibly 'undefined'.
@@ -32,6 +43,7 @@ node_modules/minimatch/minimatch.js(574,41): error TS2532: Object is possibly 'u
 node_modules/minimatch/minimatch.js(574,44): error TS2339: Property 'reEnd' does not exist on type '{ type: any; start: number; reStart: number; open: any; close: any; }'.
 node_modules/minimatch/minimatch.js(575,28): error TS2532: Object is possibly 'undefined'.
 node_modules/minimatch/minimatch.js(575,31): error TS2339: Property 'reEnd' does not exist on type '{ type: any; start: number; reStart: number; open: any; close: any; }'.
+node_modules/minimatch/minimatch.js(594,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/minimatch/minimatch.js(631,10): error TS2339: Property '_glob' does not exist on type 'RegExp'.
 node_modules/minimatch/minimatch.js(632,10): error TS2339: Property '_src' does not exist on type 'RegExp'.
 node_modules/minimatch/minimatch.js(651,18): error TS2339: Property 'set' does not exist on type 'makeRe'.
