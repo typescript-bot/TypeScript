@@ -1,5 +1,9 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.es2017.sharedmemory.d.ts(35,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+../../../../built/local/lib.es2020.bigint.d.ts(655,6): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/perf_hooks.d.ts(49,41): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/timers.d.ts(15,30): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/all.js(32,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/all.js(49,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/all.js(49,46): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -10,9 +14,11 @@ node_modules/async/allLimit.js(41,51): error TS2695: Left side of comma operator
 node_modules/async/allSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/allSeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/allSeries.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/any.js(17,41): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/any.js(33,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/any.js(51,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/any.js(51,46): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/anyLimit.js(13,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/anyLimit.js(28,9): error TS1003: Identifier expected.
 node_modules/async/anyLimit.js(33,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/anyLimit.js(42,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -28,10 +34,12 @@ node_modules/async/apply.js(37,30): error TS1003: Identifier expected.
 node_modules/async/applyEach.js(50,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/applyEachSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/applyEachSeries.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/asyncify.js(20,54): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/asyncify.js(43,14): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/asyncify.js(79,13): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/asyncify.js(87,14): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/asyncify.js(103,10): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/auto.js(11,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/auto.js(13,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/auto.js(14,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/auto.js(36,6): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -67,6 +75,7 @@ node_modules/async/concat.js(42,20): error TS2695: Left side of comma operator i
 node_modules/async/concatLimit.js(9,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/concatLimit.js(10,6): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/concatLimit.js(13,36): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/concatLimit.js(29,37): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/concatLimit.js(54,9): error TS1003: Identifier expected.
 node_modules/async/concatLimit.js(58,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/concatSeries.js(24,9): error TS1003: Identifier expected.
@@ -92,6 +101,7 @@ node_modules/async/dir.js(28,28): error TS1003: Identifier expected.
 node_modules/async/dir.js(28,29): error TS1003: Identifier expected.
 node_modules/async/dir.js(28,30): error TS1003: Identifier expected.
 node_modules/async/dir.js(42,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/dir.js(42,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(3,10): error TS2304: Cannot find name 'define'.
 node_modules/async/dist/async.js(3,35): error TS2304: Cannot find name 'define'.
 node_modules/async/dist/async.js(3,48): error TS2304: Cannot find name 'define'.
@@ -100,14 +110,21 @@ node_modules/async/dist/async.js(31,18): error TS8029: JSDoc '@param' tag has na
 node_modules/async/dist/async.js(31,28): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(31,29): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(31,30): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(105,48): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(196,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(289,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(298,7): error TS2454: Variable 'unmasked' is used before being assigned.
+node_modules/async/dist/async.js(497,12): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(622,80): error TS2339: Property 'nodeType' does not exist on type 'NodeModule'.
 node_modules/async/dist/async.js(748,84): error TS2339: Property 'nodeType' does not exist on type 'NodeModule'.
 node_modules/async/dist/async.js(754,49): error TS2339: Property 'process' does not exist on type 'false | typeof globalThis'.
   Property 'process' does not exist on type 'false'.
+node_modules/async/dist/async.js(794,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(820,12): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(923,32): error TS2554: Expected 2 arguments, but got 1.
 node_modules/async/dist/async.js(1028,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(1086,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(1117,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(1230,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(1251,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(1271,9): error TS1003: Identifier expected.
@@ -115,9 +132,12 @@ node_modules/async/dist/async.js(1294,27): error TS1016: A required parameter ca
 node_modules/async/dist/async.js(1299,18): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(1303,3): error TS2322: Type 'any[] | undefined' is not assignable to type 'any[]'.
   Type 'undefined' is not assignable to type 'any[]'.
+node_modules/async/dist/async.js(1401,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(1509,9): error TS2322: Type 'null' is not assignable to type 'number | undefined'.
 node_modules/async/dist/async.js(1578,20): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(1580,51): error TS2532: Object is possibly 'undefined'.
+node_modules/async/dist/async.js(1581,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(1601,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(1622,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(1681,26): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/async/dist/async.js(1687,30): error TS2532: Object is possibly 'undefined'.
@@ -135,9 +155,15 @@ node_modules/async/dist/async.js(1769,3): error TS2532: Object is possibly 'unde
 node_modules/async/dist/async.js(1773,35): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(1964,30): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/async/dist/async.js(1990,16): error TS2554: Expected 3 arguments, but got 1.
+node_modules/async/dist/async.js(1990,33): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(2012,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(2091,73): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(2094,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(2116,20): error TS2345: Argument of type 'Function | undefined' is not assignable to parameter of type 'number | undefined'.
   Type 'Function' is not assignable to type 'number'.
+node_modules/async/dist/async.js(2129,5): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(2197,13): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(2244,31): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(2274,29): error TS2554: Expected 0 arguments, but got 2.
 node_modules/async/dist/async.js(2418,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(2460,9): error TS1003: Identifier expected.
@@ -155,6 +181,7 @@ node_modules/async/dist/async.js(2724,29): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(2724,30): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(2861,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(2884,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(2904,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(2935,28): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(2935,29): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(2935,30): error TS1003: Identifier expected.
@@ -163,6 +190,7 @@ node_modules/async/dist/async.js(2977,25): error TS2722: Cannot invoke an object
 node_modules/async/dist/async.js(2984,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(2985,28): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(3003,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(3017,31): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(3019,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(3022,9): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(3022,9): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
@@ -171,6 +199,7 @@ node_modules/async/dist/async.js(3035,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3063,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3095,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(3100,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+node_modules/async/dist/async.js(3101,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(3101,28): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(3182,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3206,9): error TS1003: Identifier expected.
@@ -178,8 +207,10 @@ node_modules/async/dist/async.js(3315,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3337,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3447,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3467,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(3514,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(3526,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3564,16): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+node_modules/async/dist/async.js(3604,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(3613,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3640,28): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3640,29): error TS1003: Identifier expected.
@@ -187,6 +218,7 @@ node_modules/async/dist/async.js(3640,30): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3664,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3688,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/dist/async.js(3746,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(3817,28): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(3827,14): error TS2339: Property 'memo' does not exist on type '(...args: any[]) => void'.
 node_modules/async/dist/async.js(3828,14): error TS2339: Property 'unmemoized' does not exist on type '(...args: any[]) => void'.
 node_modules/async/dist/async.js(3844,9): error TS1003: Identifier expected.
@@ -195,15 +227,20 @@ node_modules/async/dist/async.js(3848,24): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3848,25): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(3973,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4108,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(4146,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(4224,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4311,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4381,5): error TS2322: Type 'any[] | {}' is not assignable to type 'any[]'.
   Type '{}' is missing the following properties from type 'any[]': length, pop, push, concat, and 28 more.
+node_modules/async/dist/async.js(4381,12): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(4387,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(4399,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4429,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4449,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4497,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4570,22): error TS1016: A required parameter cannot follow an optional parameter.
+node_modules/async/dist/async.js(4576,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(4597,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(4617,17): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(4617,17): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
   Type 'undefined' is not assignable to type 'Function'.
@@ -211,10 +248,14 @@ node_modules/async/dist/async.js(4634,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4653,33): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/async/dist/async.js(4777,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(4800,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(4863,31): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(4864,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(4931,19): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/async/dist/async.js(4933,23): error TS2339: Property 'info' does not exist on type 'Error'.
+node_modules/async/dist/async.js(4973,44): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(4987,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(5008,9): error TS1003: Identifier expected.
+node_modules/async/dist/async.js(5032,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/dist/async.js(5041,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(5092,40): error TS1016: A required parameter cannot follow an optional parameter.
 node_modules/async/dist/async.js(5104,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
@@ -229,6 +270,11 @@ node_modules/async/dist/async.js(5241,9): error TS1003: Identifier expected.
 node_modules/async/dist/async.js(5329,20): error TS2532: Object is possibly 'undefined'.
 node_modules/async/dist/async.js(5329,20): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
   Type 'undefined' is not assignable to type 'Function'.
+node_modules/async/dist/async.js(5461,12): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(5475,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(5518,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(5535,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/dist/async.js(5579,19): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/doDuring.js(35,9): error TS1003: Identifier expected.
 node_modules/async/doDuring.js(37,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/doDuring.js(39,12): error TS2304: Cannot find name 'AsyncFunction'.
@@ -239,9 +285,11 @@ node_modules/async/doDuring.js(52,25): error TS2722: Cannot invoke an object whi
 node_modules/async/doDuring.js(53,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/doDuring.js(59,25): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/doDuring.js(60,28): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+node_modules/async/doUntil.js(10,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/doUntil.js(22,9): error TS1003: Identifier expected.
 node_modules/async/doUntil.js(24,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/doUntil.js(35,6): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/doUntil.js(39,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/doWhilst.js(36,9): error TS1003: Identifier expected.
 node_modules/async/doWhilst.js(38,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/doWhilst.js(49,17): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -251,6 +299,7 @@ node_modules/async/doWhilst.js(53,21): error TS2695: Left side of comma operator
 node_modules/async/doWhilst.js(55,9): error TS2532: Object is possibly 'undefined'.
 node_modules/async/doWhilst.js(55,9): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
   Type 'undefined' is not assignable to type 'Function'.
+node_modules/async/during.js(3,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/during.js(32,9): error TS1003: Identifier expected.
 node_modules/async/during.js(34,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/during.js(36,12): error TS2304: Cannot find name 'AsyncFunction'.
@@ -269,6 +318,7 @@ node_modules/async/eachLimit.js(34,12): error TS2304: Cannot find name 'AsyncFun
 node_modules/async/eachLimit.js(43,4): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/eachLimit.js(43,44): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/eachLimit.js(43,72): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/eachOf.js(3,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/eachOf.js(8,33): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/eachOf.js(9,33): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/eachOf.js(48,17): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -280,6 +330,7 @@ node_modules/async/eachOfLimit.js(26,9): error TS1003: Identifier expected.
 node_modules/async/eachOfLimit.js(31,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/eachOfLimit.js(39,4): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/eachOfLimit.js(39,44): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/eachOfSeries.js(13,17): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/eachOfSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/eachOfSeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/eachOfSeries.js(34,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -296,6 +347,7 @@ node_modules/async/ensureAsync.js(62,18): error TS2695: Left side of comma opera
 node_modules/async/every.js(32,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/every.js(49,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/every.js(49,46): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/everyLimit.js(3,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/everyLimit.js(28,9): error TS1003: Identifier expected.
 node_modules/async/everyLimit.js(33,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/everyLimit.js(41,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -304,6 +356,8 @@ node_modules/async/everySeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/everySeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/everySeries.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/filter.js(44,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/filter.js(44,45): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/filterLimit.js(3,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/filterLimit.js(25,9): error TS1003: Identifier expected.
 node_modules/async/filterLimit.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/filterSeries.js(24,9): error TS1003: Identifier expected.
@@ -311,6 +365,7 @@ node_modules/async/filterSeries.js(34,20): error TS2695: Left side of comma oper
 node_modules/async/find.js(42,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/find.js(60,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/find.js(60,46): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/findLimit.js(23,47): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/findLimit.js(33,9): error TS1003: Identifier expected.
 node_modules/async/findLimit.js(38,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/findLimit.js(47,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -318,10 +373,12 @@ node_modules/async/findLimit.js(47,51): error TS2695: Left side of comma operato
 node_modules/async/findSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/findSeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/findSeries.js(37,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/foldl.js(10,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/foldl.js(46,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/foldl.js(67,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/foldl.js(68,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/foldl.js(69,6): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/foldl.js(69,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/foldl.js(75,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/foldr.js(25,9): error TS1003: Identifier expected.
 node_modules/async/foldr.js(30,12): error TS2304: Cannot find name 'AsyncFunction'.
@@ -331,6 +388,7 @@ node_modules/async/forEach.js(39,12): error TS2304: Cannot find name 'AsyncFunct
 node_modules/async/forEach.js(80,4): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEach.js(80,32): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEach.js(80,60): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/forEachLimit.js(6,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/forEachLimit.js(29,9): error TS1003: Identifier expected.
 node_modules/async/forEachLimit.js(34,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/forEachLimit.js(43,4): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -338,21 +396,28 @@ node_modules/async/forEachLimit.js(43,44): error TS2695: Left side of comma oper
 node_modules/async/forEachLimit.js(43,72): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEachOf.js(8,33): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEachOf.js(9,33): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/forEachOf.js(30,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/forEachOf.js(48,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEachOf.js(65,39): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEachOf.js(70,22): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/forEachOf.js(70,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/forEachOf.js(70,44): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/forEachOf.js(82,9): error TS1003: Identifier expected.
 node_modules/async/forEachOf.js(84,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/forEachOfLimit.js(26,9): error TS1003: Identifier expected.
 node_modules/async/forEachOfLimit.js(31,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/forEachOfLimit.js(39,4): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/forEachOfLimit.js(39,7): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/forEachOfLimit.js(39,44): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/forEachOfSeries.js(3,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/forEachOfSeries.js(9,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/forEachOfSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/forEachOfSeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/forEachOfSeries.js(34,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forEachSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/forEachSeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/forEachSeries.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/forEachSeries.js(37,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/forever.js(38,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/forever.js(56,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/forever.js(57,17): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -366,19 +431,67 @@ node_modules/async/groupByLimit.js(63,12): error TS2304: Cannot find name 'Async
 node_modules/async/groupBySeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/groupBySeries.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/groupBySeries.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/index.js(6,323): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,362): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,376): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,764): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,780): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,825): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,903): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,920): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,951): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,975): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1018): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1106): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1126): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1179): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1299): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1338): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1440): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1463): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1485): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1502): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1522): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1554): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1573): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1591): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1610): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1624): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1669): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1686): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1705): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1728): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1750): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1767): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1801): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1822): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1837): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1856): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1882): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(6,1918): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(34,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(138,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(158,13): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(506,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(567,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/index.js(580,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/inject.js(46,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/inject.js(67,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/inject.js(68,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/inject.js(69,6): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/inject.js(75,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+node_modules/async/internal/DoublyLinkedList.js(39,5): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/internal/applyEach.js(20,71): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/applyEach.js(24,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/applyEach.js(25,19): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/applyEach.js(28,18): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/consoleFunc.js(24,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/consoleFunc.js(26,25): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/consoleFunc.js(33,22): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/consoleFunc.js(33,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/consoleFunc.js(39,10): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/doParallel.js(20,43): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/doParallelLimit.js(20,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/doParallelLimit.js(20,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/doParallelLimit.js(20,60): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/eachOfLimit.js(32,21): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -388,10 +501,12 @@ node_modules/async/internal/filter.js(64,29): error TS2695: Left side of comma o
 node_modules/async/internal/filter.js(66,18): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/filter.js(72,19): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/filter.js(73,27): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/findGetResult.js(10,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/initialParams.js(9,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/iterator.js(41,18): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/iterator.js(51,10): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/iterator.js(55,21): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/map.js(3,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/map.js(23,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/parallel.js(28,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/parallel.js(31,10): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -399,12 +514,18 @@ node_modules/async/internal/parallel.js(33,27): error TS2695: Left side of comma
 node_modules/async/internal/queue.js(45,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/queue.js(55,15): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/queue.js(60,21): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/queue.js(65,29): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/internal/queue.js(74,31): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/queue.js(80,14): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/queue.js(94,30): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/queue.js(160,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/queue.js(174,27): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/queue.js(199,14): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/internal/reject.js(15,6): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/reject.js(16,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/internal/setImmediate.js(7,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/setImmediate.js(25,21): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/internal/setImmediate.js(39,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/internal/wrapAsync.js(21,32): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/log.js(24,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/log.js(26,28): error TS1003: Identifier expected.
@@ -426,7 +547,9 @@ node_modules/async/mapValuesLimit.js(38,12): error TS2304: Cannot find name 'Asy
 node_modules/async/mapValuesLimit.js(48,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/mapValuesLimit.js(50,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/mapValuesLimit.js(51,6): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/mapValuesLimit.js(58,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/mapValuesLimit.js(58,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+node_modules/async/mapValuesSeries.js(15,54): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/mapValuesSeries.js(24,9): error TS1003: Identifier expected.
 node_modules/async/mapValuesSeries.js(27,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/mapValuesSeries.js(36,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -436,6 +559,8 @@ node_modules/async/memoize.js(75,16): error TS2695: Left side of comma operator 
 node_modules/async/memoize.js(76,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/memoize.js(79,14): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/memoize.js(87,29): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/memoize.js(87,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/async/memoize.js(91,51): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/nextTick.js(21,9): error TS1003: Identifier expected.
 node_modules/async/nextTick.js(25,23): error TS1003: Identifier expected.
 node_modules/async/nextTick.js(25,24): error TS1003: Identifier expected.
@@ -449,6 +574,7 @@ node_modules/async/priorityQueue.js(9,14): error TS2695: Left side of comma oper
 node_modules/async/priorityQueue.js(18,15): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/priorityQueue.js(23,21): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/priorityQueue.js(47,10): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/priorityQueue.js(66,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/priorityQueue.js(84,9): error TS1003: Identifier expected.
 node_modules/async/priorityQueue.js(86,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/queue.js(8,18): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -457,10 +583,12 @@ node_modules/async/queue.js(91,12): error TS2304: Cannot find name 'AsyncFunctio
 node_modules/async/race.js(63,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/race.js(64,11): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/race.js(67,10): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/reduce.js(22,19): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/reduce.js(46,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/reduce.js(67,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/reduce.js(68,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/reduce.js(69,6): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/reduce.js(75,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/reduce.js(75,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/async/reduceRight.js(25,9): error TS1003: Identifier expected.
 node_modules/async/reduceRight.js(30,12): error TS2304: Cannot find name 'AsyncFunction'.
@@ -470,6 +598,7 @@ node_modules/async/reflect.js(33,12): error TS2304: Cannot find name 'AsyncFunct
 node_modules/async/reflect.js(62,16): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/reflect.js(63,13): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/reflect.js(72,30): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/reflect.js(81,18): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/reflectAll.js(33,9): error TS1003: Identifier expected.
 node_modules/async/reflectAll.js(95,10): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/reflectAll.js(96,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -532,6 +661,7 @@ node_modules/async/timeout.js(60,15): error TS2695: Left side of comma operator 
 node_modules/async/timeout.js(62,13): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/timeout.js(69,19): error TS2339: Property 'code' does not exist on type 'Error'.
 node_modules/async/timeout.js(71,23): error TS2339: Property 'info' does not exist on type 'Error'.
+node_modules/async/timeout.js(85,45): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/times.js(25,9): error TS1003: Identifier expected.
 node_modules/async/times.js(28,12): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/times.js(49,20): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -550,6 +680,7 @@ node_modules/async/transform.js(78,17): error TS2695: Left side of comma operato
 node_modules/async/transform.js(79,22): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/transform.js(81,6): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/transform.js(84,9): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+node_modules/async/tryEach.js(14,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/tryEach.js(67,6): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/tryEach.js(68,10): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/tryEach.js(70,27): error TS2695: Left side of comma operator is unused and has no side effects.
@@ -563,6 +694,7 @@ node_modules/async/until.js(37,6): error TS2695: Left side of comma operator is 
 node_modules/async/waterfall.js(8,17): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/waterfall.js(9,11): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/waterfall.js(14,21): error TS2695: Left side of comma operator is unused and has no side effects.
+node_modules/async/waterfall.js(14,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/waterfall.js(15,20): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/waterfall.js(23,19): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/whilst.js(37,12): error TS2304: Cannot find name 'AsyncFunction'.
@@ -574,6 +706,7 @@ node_modules/async/whilst.js(67,21): error TS2695: Left side of comma operator i
 node_modules/async/whilst.js(68,9): error TS2532: Object is possibly 'undefined'.
 node_modules/async/whilst.js(68,9): error TS2684: The 'this' context of type 'Function | undefined' is not assignable to method's 'this' of type 'Function'.
   Type 'undefined' is not assignable to type 'Function'.
+node_modules/async/wrapSync.js(10,41): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/async/wrapSync.js(43,14): error TS2304: Cannot find name 'AsyncFunction'.
 node_modules/async/wrapSync.js(79,13): error TS2695: Left side of comma operator is unused and has no side effects.
 node_modules/async/wrapSync.js(87,14): error TS2695: Left side of comma operator is unused and has no side effects.

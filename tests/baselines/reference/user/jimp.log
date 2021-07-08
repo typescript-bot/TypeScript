@@ -1,0 +1,9 @@
+Exit Code: 2
+Standard output:
+../../../../built/local/lib.es2015.symbol.wellknown.d.ts(135,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+../../../../built/local/lib.es2015.symbol.wellknown.d.ts(204,6): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/stream.d.ts(250,30): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+
+
+
+Standard error:

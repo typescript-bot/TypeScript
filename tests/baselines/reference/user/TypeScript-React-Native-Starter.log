@@ -1,5 +1,7 @@
 Exit Code: 2
 Standard output:
+../../../../../../built/local/lib.es2015.symbol.wellknown.d.ts(212,6): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+components/Hello.tsx(54,13): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/@types/react-native/index.d.ts(8745,18): error TS2717: Subsequent property declarations must have the same type.  Property 'geolocation' must be of type 'Geolocation', but here has type 'GeolocationStatic'.
 
 

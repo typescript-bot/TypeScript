@@ -1,0 +1,21 @@
+Exit Code: 2
+Standard output:
+../../../../../built/local/lib.dom.d.ts(3807,31): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+../../../../../built/local/lib.es2015.symbol.wellknown.d.ts(259,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+../../../../../built/local/lib.es2015.symbol.wellknown.d.ts(270,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/async/index.d.ts(274,35): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/async/index.d.ts(371,35): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/mongodb/index.d.ts(2983,46): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/globals.d.ts(511,36): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/worker_threads.d.ts(78,44): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/nodemailer/lib/smtp-transport.d.ts(106,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+src/app.ts(72,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+src/controllers/user.ts(37,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+src/controllers/user.ts(150,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+src/controllers/user.ts(230,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+src/controllers/user.ts(277,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+src/public/js/main.ts(1,3): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+
+
+
+Standard error:

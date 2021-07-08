@@ -1,5 +1,12 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.dom.d.ts(4305,49): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/console.d.ts(128,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/clone/clone.js(5,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/clone/clone.js(89,36): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/clone/clone.js(112,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/clone/clone.js(133,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/clone/clone.js(141,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/clone/clone.js(167,16): error TS2403: Subsequent variable declarations must have the same type.  Variable 'i' must be of type 'string', but here has type 'number'.
 node_modules/clone/clone.js(167,23): error TS2365: Operator '<' cannot be applied to types 'string' and 'number'.
 node_modules/clone/clone.js(167,43): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
@@ -7,6 +14,8 @@ node_modules/clone/clone.js(176,14): error TS2532: Object is possibly 'undefined
 node_modules/clone/clone.js(186,16): error TS2403: Subsequent variable declarations must have the same type.  Variable 'i' must be of type 'string', but here has type 'number'.
 node_modules/clone/clone.js(186,23): error TS2365: Operator '<' cannot be applied to types 'string' and 'number'.
 node_modules/clone/clone.js(186,52): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
+node_modules/clone/clone.js(224,10): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/clone/clone.js(250,26): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 
 
 

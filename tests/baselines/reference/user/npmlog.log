@@ -1,5 +1,9 @@
 Exit Code: 2
 Standard output:
+../../../../built/local/lib.es2015.symbol.wellknown.d.ts(178,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/dns/promises.d.ts(90,28): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/@types/node/stream.d.ts(475,14): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/npmlog/log.js(31,60): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/npmlog/log.js(82,8): error TS2339: Property 'tracker' does not exist on type 'enableProgress'.
 node_modules/npmlog/log.js(82,34): error TS2339: Property 'showProgress' does not exist on type 'enableProgress'.
 node_modules/npmlog/log.js(83,12): error TS2339: Property '_pause' does not exist on type 'enableProgress'.
@@ -7,6 +11,7 @@ node_modules/npmlog/log.js(84,8): error TS2339: Property 'gauge' does not exist 
 node_modules/npmlog/log.js(90,8): error TS2339: Property 'tracker' does not exist on type 'disableProgress'.
 node_modules/npmlog/log.js(90,46): error TS2339: Property 'showProgress' does not exist on type 'disableProgress'.
 node_modules/npmlog/log.js(91,8): error TS2339: Property 'gauge' does not exist on type 'disableProgress'.
+node_modules/npmlog/log.js(138,48): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/npmlog/log.js(150,12): error TS2339: Property 'progressEnabled' does not exist on type 'pause'.
 node_modules/npmlog/log.js(150,34): error TS2339: Property 'gauge' does not exist on type 'pause'.
 node_modules/npmlog/log.js(159,3): error TS2532: Object is possibly 'undefined'.

@@ -1,10 +1,22 @@
 Exit Code: 2
 Standard output:
 node_modules/bluebird/js/release/assert.js(11,30): error TS2339: Property 'constructor$' does not exist on type 'Error'.
+node_modules/bluebird/js/release/async.js(3,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/async.js(17,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/bind.js(10,70): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/bluebird.js(5,15): error TS2367: This condition will always return 'false' since the types 'PromiseConstructor' and 'typeof Promise' have no overlap.
 node_modules/bluebird/js/release/bluebird.js(10,10): error TS2339: Property 'noConflict' does not exist on type 'typeof Promise'.
+node_modules/bluebird/js/release/call_get.js(96,5): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/call_get.js(97,31): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/call_get.js(97,53): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/cancel.js(80,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/cancel.js(84,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/context.js(53,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/context.js(63,5): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/debuggability.js(73,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/debuggability.js(225,17): error TS2403: Subsequent variable declarations must have the same type.  Variable 'event' must be of type 'CustomEvent<any>', but here has type 'Event'.
 node_modules/bluebird/js/release/debuggability.js(232,26): error TS2339: Property 'detail' does not exist on type 'Event'.
+node_modules/bluebird/js/release/debuggability.js(233,36): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/debuggability.js(258,48): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type '[event: "multipleResolves", listener: MultipleResolveListener]'.
 node_modules/bluebird/js/release/debuggability.js(301,9): error TS2322: Type 'Process' is not assignable to type 'boolean'.
 node_modules/bluebird/js/release/debuggability.js(301,28): error TS2684: The 'this' context of type '((...args: any[]) => Process) | ((name: any, ...args: any[]) => boolean)' is not assignable to method's 'this' of type '(this: null, args_0?: any, ...args_1: any[]) => Process'.
@@ -13,7 +25,12 @@ node_modules/bluebird/js/release/debuggability.js(301,28): error TS2684: The 'th
 node_modules/bluebird/js/release/debuggability.js(456,14): error TS2339: Property '_setBoundTo' does not exist on type 'cancellationPropagateFrom'.
 node_modules/bluebird/js/release/debuggability.js(482,42): error TS2339: Property '_peekContext' does not exist on type 'longStackTracesCaptureStackTrace'.
 node_modules/bluebird/js/release/debuggability.js(562,19): error TS2350: Only a void function can be called with the 'new' keyword.
+node_modules/bluebird/js/release/debuggability.js(592,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/debuggability.js(603,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/debuggability.js(633,59): error TS2554: Expected 0 arguments, but got 1.
+node_modules/bluebird/js/release/debuggability.js(724,23): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/debuggability.js(778,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/debuggability.js(790,5): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/debuggability.js(807,5): error TS2721: Cannot invoke an object which is possibly 'null'.
 node_modules/bluebird/js/release/debuggability.js(825,30): error TS2339: Property 'stack' does not exist on type 'CapturedTrace'.
 node_modules/bluebird/js/release/debuggability.js(831,37): error TS2339: Property 'stack' does not exist on type 'CapturedTrace'.
@@ -21,19 +38,31 @@ node_modules/bluebird/js/release/debuggability.js(870,38): error TS2339: Propert
 node_modules/bluebird/js/release/debuggability.js(922,42): error TS2571: Object is of type 'unknown'.
 node_modules/bluebird/js/release/debuggability.js(931,34): error TS2571: Object is of type 'unknown'.
 node_modules/bluebird/js/release/debuggability.js(950,4): error TS2554: Expected 0 arguments, but got 1.
+node_modules/bluebird/js/release/debuggability.js(956,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/debuggability.js(970,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/direct_resolve.js(12,26): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/direct_resolve.js(34,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/each.js(20,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/each.js(24,26): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/errors.js(10,49): error TS2350: Only a void function can be called with the 'new' keyword.
+node_modules/bluebird/js/release/errors.js(42,34): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/finally.js(24,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/finally.js(50,24): error TS2339: Property 'promise' does not exist on type 'finallyHandler'.
 node_modules/bluebird/js/release/finally.js(51,24): error TS2339: Property 'handler' does not exist on type 'finallyHandler'.
 node_modules/bluebird/js/release/finally.js(55,24): error TS2339: Property 'isFinallyHandler' does not exist on type 'finallyHandler'.
 node_modules/bluebird/js/release/finally.js(64,26): error TS2339: Property 'cancelPromise' does not exist on type 'finallyHandler'.
+node_modules/bluebird/js/release/generators.js(94,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/generators.js(124,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/generators.js(159,21): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/generators.js(190,15): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/generators.js(208,15): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/generators.js(220,16): error TS2554: Expected 0 arguments, but got 1.
+node_modules/bluebird/js/release/join.js(114,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/map.js(14,10): error TS2339: Property 'constructor$' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(15,10): error TS2339: Property '_promise' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(19,26): error TS2339: Property 'length' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(37,10): error TS2551: Property '_init$' does not exist on type 'MappingPromiseArray'. Did you mean '_init'?
+node_modules/bluebird/js/release/map.js(42,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/map.js(43,23): error TS2339: Property '_values' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(44,23): error TS2339: Property 'length' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(54,22): error TS2339: Property '_isResolved' does not exist on type 'MappingPromiseArray'.
@@ -46,17 +75,21 @@ node_modules/bluebird/js/release/map.js(103,32): error TS2339: Property '_totalR
 node_modules/bluebird/js/release/map.js(108,18): error TS2339: Property '_resolve' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(118,23): error TS2339: Property '_values' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(120,18): error TS2339: Property '_isResolved' does not exist on type 'MappingPromiseArray'.
+node_modules/bluebird/js/release/map.js(127,15): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/map.js(134,10): error TS2339: Property '_resolve' does not exist on type 'MappingPromiseArray'.
 node_modules/bluebird/js/release/map.js(163,66): error TS2339: Property 'promise' does not exist on type 'MappingPromiseArray'.
+node_modules/bluebird/js/release/nodeify.js(22,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/nodeify.js(32,19): error TS2339: Property 'cause' does not exist on type 'Error'.
 node_modules/bluebird/js/release/promise.js(4,12): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/promise.js(7,24): error TS2339: Property 'PromiseInspection' does not exist on type 'typeof Promise'.
 node_modules/bluebird/js/release/promise.js(10,27): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/promise.js(18,26): error TS2339: Property 'domain' does not exist on type 'Process'.
+node_modules/bluebird/js/release/promise.js(19,9): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promise.js(38,20): error TS2531: Object is possibly 'null'.
 node_modules/bluebird/js/release/promise.js(44,5): error TS2322: Type '() => { domain: any; async: AsyncResource; }' is not assignable to type '(() => null) | (() => { domain: any; async: null; })'.
   Type '() => { domain: any; async: AsyncResource; }' is not assignable to type '() => null'.
     Type '{ domain: any; async: AsyncResource; }' is not assignable to type 'null'.
+node_modules/bluebird/js/release/promise.js(69,41): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promise.js(86,15): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/promise.js(89,15): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/promise.js(104,10): error TS2339: Property '_promiseCreated' does not exist on type 'Promise'.
@@ -80,6 +113,8 @@ node_modules/bluebird/js/release/promise.js(328,10): error TS2339: Property '_fi
 node_modules/bluebird/js/release/promise.js(333,10): error TS2339: Property '_fireEvent' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(350,10): error TS2339: Property '_fireEvent' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(375,42): error TS2339: Property '_isBound' does not exist on type 'Promise'.
+node_modules/bluebird/js/release/promise.js(417,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/promise.js(435,41): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promise.js(468,26): error TS2339: Property '_propagateFrom' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(489,31): error TS2339: Property '_value' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(491,30): error TS2339: Property '_reason' does not exist on type 'Promise'.
@@ -91,6 +126,7 @@ node_modules/bluebird/js/release/promise.js(516,10): error TS2339: Property '_pu
 node_modules/bluebird/js/release/promise.js(518,18): error TS2339: Property '_execute' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(524,10): error TS2339: Property '_popContext' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(541,19): error TS2350: Only a void function can be called with the 'new' keyword.
+node_modules/bluebird/js/release/promise.js(591,30): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promise.js(593,22): error TS2339: Property '_promiseCancelled' does not exist on type '{}'.
 node_modules/bluebird/js/release/promise.js(607,23): error TS2339: Property '_isResolved' does not exist on type '{}'.
 node_modules/bluebird/js/release/promise.js(609,26): error TS2339: Property '_promiseFulfilled' does not exist on type '{}'.
@@ -99,18 +135,26 @@ node_modules/bluebird/js/release/promise.js(665,14): error TS2339: Property '_at
 node_modules/bluebird/js/release/promise.js(677,14): error TS2339: Property '_dereferenceTrace' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(694,14): error TS2339: Property '_ensurePossibleRejectionHandled' does not exist on type 'Promise'.
 node_modules/bluebird/js/release/promise.js(734,10): error TS2339: Property '_clearCancellationData' does not exist on type 'Promise'.
+node_modules/bluebird/js/release/promise.js(792,82): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promise_array.js(72,18): error TS2339: Property '_resolveEmptyArray' does not exist on type 'PromiseArray'.
 node_modules/bluebird/js/release/promise_array.js(110,76): error TS2554: Expected 0-1 arguments, but got 2.
 node_modules/bluebird/js/release/promise_array.js(112,53): error TS2554: Expected 0 arguments, but got 1.
 node_modules/bluebird/js/release/promisify.js(54,27): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/promisify.js(69,41): error TS2554: Expected 0-1 arguments, but got 3.
+node_modules/bluebird/js/release/promisify.js(90,42): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promisify.js(93,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'i' must be of type 'number', but here has type 'any'.
+node_modules/bluebird/js/release/promisify.js(93,42): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/promisify.js(199,21): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/promisify.js(215,25): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/promisify.js(223,13): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promisify.js(249,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/bluebird/js/release/promisify.js(252,24): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/bluebird/js/release/promisify.js(264,12): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 node_modules/bluebird/js/release/promisify.js(270,15): error TS2350: Only a void function can be called with the 'new' keyword.
+node_modules/bluebird/js/release/promisify.js(284,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/promisify.js(285,15): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/props.js(56,10): error TS2339: Property 'constructor$' does not exist on type 'PropertiesPromiseArray'.
+node_modules/bluebird/js/release/props.js(57,19): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/props.js(58,10): error TS2551: Property '_init$' does not exist on type 'PropertiesPromiseArray'. Did you mean '_init'?
 node_modules/bluebird/js/release/props.js(65,10): error TS2339: Property '_values' does not exist on type 'PropertiesPromiseArray'.
 node_modules/bluebird/js/release/props.js(66,32): error TS2339: Property '_totalResolved' does not exist on type 'PropertiesPromiseArray'.
@@ -122,6 +166,8 @@ node_modules/bluebird/js/release/props.js(75,26): error TS2339: Property '_value
 node_modules/bluebird/js/release/props.js(75,57): error TS2339: Property '_values' does not exist on type 'PropertiesPromiseArray'.
 node_modules/bluebird/js/release/props.js(78,14): error TS2339: Property '_resolve' does not exist on type 'PropertiesPromiseArray'.
 node_modules/bluebird/js/release/props.js(102,53): error TS2339: Property 'promise' does not exist on type 'PropertiesPromiseArray'.
+node_modules/bluebird/js/release/queue.js(10,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/race.js(36,61): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/reduce.js(12,10): error TS2339: Property 'constructor$' does not exist on type 'ReductionPromiseArray'.
 node_modules/bluebird/js/release/reduce.js(22,39): error TS2339: Property '_length' does not exist on type 'ReductionPromiseArray'.
 node_modules/bluebird/js/release/reduce.js(28,10): error TS2339: Property '_promise' does not exist on type 'ReductionPromiseArray'.
@@ -135,9 +181,14 @@ node_modules/bluebird/js/release/reduce.js(144,18): error TS2339: Property 'prom
 node_modules/bluebird/js/release/reduce.js(149,10): error TS2339: Property 'array' does not exist on type 'gotAccum'.
 node_modules/bluebird/js/release/reduce.js(150,42): error TS2339: Property 'value' does not exist on type 'gotAccum'.
 node_modules/bluebird/js/release/reduce.js(150,54): error TS2339: Property 'array' does not exist on type 'gotAccum'.
+node_modules/bluebird/js/release/reduce.js(151,26): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/reduce.js(152,14): error TS2339: Property 'array' does not exist on type 'gotAccum'.
+node_modules/bluebird/js/release/reduce.js(155,36): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/schedule.js(11,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/schedule.js(13,64): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/schedule.js(23,31): error TS2339: Property 'standalone' does not exist on type 'Navigator'.
 node_modules/bluebird/js/release/schedule.js(23,52): error TS2339: Property 'cordova' does not exist on type 'Window & typeof globalThis'.
+node_modules/bluebird/js/release/schedule.js(53,22): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/settle.js(8,10): error TS2339: Property 'constructor$' does not exist on type 'SettledPromiseArray'.
 node_modules/bluebird/js/release/settle.js(13,10): error TS2339: Property '_values' does not exist on type 'SettledPromiseArray'.
 node_modules/bluebird/js/release/settle.js(14,32): error TS2339: Property '_totalResolved' does not exist on type 'SettledPromiseArray'.
@@ -147,6 +198,7 @@ node_modules/bluebird/js/release/settle.js(16,28): error TS2339: Property '_valu
 node_modules/bluebird/js/release/settle.js(37,46): error TS2339: Property 'promise' does not exist on type 'SettledPromiseArray'.
 node_modules/bluebird/js/release/settle.js(41,46): error TS2339: Property 'promise' does not exist on type 'SettledPromiseArray'.
 node_modules/bluebird/js/release/some.js(12,10): error TS2339: Property 'constructor$' does not exist on type 'SomePromiseArray'.
+node_modules/bluebird/js/release/some.js(19,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/some.js(24,14): error TS2339: Property '_resolve' does not exist on type 'SomePromiseArray'.
 node_modules/bluebird/js/release/some.js(27,10): error TS2551: Property '_init$' does not exist on type 'SomePromiseArray'. Did you mean '_init'?
 node_modules/bluebird/js/release/some.js(28,40): error TS2339: Property '_values' does not exist on type 'SomePromiseArray'.
@@ -177,11 +229,23 @@ node_modules/bluebird/js/release/some.js(115,17): error TS2339: Property 'length
 node_modules/bluebird/js/release/some.js(121,12): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/some.js(125,10): error TS2551: Property '_reject' does not exist on type 'SomePromiseArray'. Did you mean '_rejected'?
 node_modules/bluebird/js/release/some.js(133,23): error TS2339: Property 'promise' does not exist on type 'SomePromiseArray'.
+node_modules/bluebird/js/release/synchronous_inspection.js(71,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/thenables.js(50,16): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/thenables.js(50,29): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/timers.js(70,1): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/using.js(7,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/using.js(32,41): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/using.js(78,20): error TS2339: Property 'doDispose' does not exist on type 'Disposer'.
 node_modules/bluebird/js/release/using.js(92,14): error TS2339: Property 'constructor$' does not exist on type 'FunctionDisposer'.
 node_modules/bluebird/js/release/using.js(97,23): error TS2339: Property 'data' does not exist on type 'FunctionDisposer'.
+node_modules/bluebird/js/release/using.js(141,13): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/using.js(193,34): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/using.js(220,20): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/using.js(221,24): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/using.js(223,15): error TS2350: Only a void function can be called with the 'new' keyword.
 node_modules/bluebird/js/release/util.js(18,9): error TS2322: Type 'unknown' is not assignable to type '{}'.
+node_modules/bluebird/js/release/util.js(137,32): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
+node_modules/bluebird/js/release/util.js(299,30): error TS2496: The 'arguments' object cannot be referenced in an arrow function in ES3 and ES5. Consider using a standard function expression.
 node_modules/bluebird/js/release/util.js(405,13): error TS2532: Object is possibly 'undefined'.
 node_modules/bluebird/js/release/util.js(405,33): error TS2532: Object is possibly 'undefined'.
 node_modules/bluebird/js/release/util.js(405,54): error TS2532: Object is possibly 'undefined'.
