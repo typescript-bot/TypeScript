@@ -17,20 +17,20 @@ parser-typescript.js...........info Visit https://yarnpkg.com/en/docs/cli/run fo
 Standard error:
 
 <--- Last few GCs --->
-[18:0x4fb8300]   ?s: Scavenge 3027.3 (3094.0) -> 3023.8 (3096.5) MB, 12.7 / ?s  (average mu = 0.439, current mu = 0.375) allocation failure 
-[18:0x4fb8300]   ?s: Scavenge 3029.7 (3096.5) -> 3025.9 (3114.2) MB, 13.8 / ?s  (average mu = 0.439, current mu = 0.375) allocation failure 
-[18:0x4fb8300]   ?s: Mark-sweep 3039.4 (3114.2) -> 3029.9 (3121.2) MB, 4885.9 / ?s  (average mu = 0.274, current mu = 0.037) allocation failure scavenge might not succeed
+[18:0x54bc090]   ?s: Scavenge 3027.2 (3094.8) -> 3023.8 (3097.1) MB, 12.9 / ?s  (average mu = 0.404, current mu = 0.332) allocation failure 
+[18:0x54bc090]   ?s: Scavenge 3029.6 (3097.1) -> 3025.9 (3115.1) MB, 12.6 / ?s  (average mu = 0.404, current mu = 0.332) allocation failure 
+[18:0x54bc090]   ?s: Mark-sweep 3039.3 (3115.1) -> 3029.8 (3122.1) MB, 4176.9 / ?s  (average mu = 0.249, current mu = 0.038) allocation failure scavenge might not succeed
 <--- JS stacktrace --->
 FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
- 1: 0xb200e0 node::Abort() [/usr/local/bin/node]
- 2: 0xa3c157 node::FatalError(char const*, char const*) [/usr/local/bin/node]
- 3: 0xd083ae v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
- 4: 0xd08727 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
- 5: 0xee9785  [/usr/local/bin/node]
- 6: 0xef84b5 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
- 7: 0xefb5ac v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
- 8: 0xec000c v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/bin/node]
- 9: 0x123695b v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]
-10: 0x1640819  [/usr/local/bin/node]
+ 1: 0xb22900 node::Abort() [/usr/local/bin/node]
+ 2: 0xa3c161 node::FatalError(char const*, char const*) [/usr/local/bin/node]
+ 3: 0xd0b15e v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 4: 0xd0b4d7 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 5: 0xeec565  [/usr/local/bin/node]
+ 6: 0xefb295 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
+ 7: 0xefe38c v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 8: 0xec2dbc v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/bin/node]
+ 9: 0x123977b v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]
+10: 0x16437d9  [/usr/local/bin/node]
 Aborted (core dumped)
 error Command failed with exit code 134.
